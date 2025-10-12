@@ -20,4 +20,11 @@ $$
 \end{align}
 $$
 ## Derivatives
-We get the 
+We get the identities:
+$$
+\begin{align}
+\frac{d}{dx}\cosh(x) &= \sinh(x) \tag{1} \\
+\frac{d}{dx}\sinh(x) &= \cosh(x) \tag{2}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
