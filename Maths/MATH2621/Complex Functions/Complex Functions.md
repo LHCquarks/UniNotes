@@ -10,6 +10,9 @@ tags:
 - [[Affine functions]]
 - [[Polynomials]]
 - [[Exponentials]] ^a86247
+- [[Hyperbolic Trig]]
+- [[Trig functions]]
+- [[Inverse functions]]
 - [[Logarithms]] ^260893
 - [[Roots]] ^f08614
 - [[Analytic Functions]] ^d376d1
