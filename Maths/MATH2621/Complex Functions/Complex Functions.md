@@ -1,0 +1,18 @@
+---
+tags:
+  - Continence
+---
+## Topics
+
+- [[Maths/MATH2621/Complex Functions/Functions|Functions]]  ^fc9d25
+- [[Sketching functions]]
+- [[Linear functions]]
+- [[Affine functions]]
+- [[Polynomials]]
+- [[Exponentials]] ^a86247
+- [[Logarithms]] ^260893
+- [[Roots]] ^f08614
+- [[Analytic Functions]] ^d376d1
+- [[Harmonic Functions]] ^9396ac
+- [[Singularities]] ^7c8334
+- [[Residues]] ^337df2

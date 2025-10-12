@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"027277653311553d","type":"text","text":"AddressSanitizer: heap-buffer-overflow","x":-146,"y":-253,"width":250,"height":60},
+		{"id":"3b7ff5911ccb3c70","type":"text","text":"If you have type-defined a custom data type as a pointer to another type, you may have `malloced` the size of the pointer rather than the size of the data type. ","x":-146,"y":-96,"width":250,"height":236},
+		{"id":"bc9dd51ef8b06024","type":"text","text":"READ: Your program is attempting to read past the end of an array's reserved memory (array index is too high)","x":140,"y":-96,"width":250,"height":189},
+		{"id":"aad5625e6f3950c5","type":"text","text":"WRITE: Your program is attempting to write past the end of an array's reserved memory (array index is too high)","x":440,"y":-96,"width":250,"height":189},
+		{"id":"08f680ed035792b4","type":"text","text":"Address Sanitizer: stack-buffer-overflow","x":240,"y":-253,"width":350,"height":60},
+		{"id":"08abc455fdd6daa0","type":"text","text":"error: dereferencing pointer to incomplete data type","x":-440,"y":-253,"width":250,"height":60},
+		{"id":"bc1da1a220cee193","type":"text","text":"You are trying to access the implementation of an ADT outside it's implementation file","x":-440,"y":-96,"width":250,"height":124},
+		{"id":"4e3ca4f6a487efa1","type":"text","text":"READ: Your program is attempting to read before the start of an array's reserved memory (array index is too low)","x":740,"y":-96,"width":250,"height":189},
+		{"id":"2e5511388246981f","type":"text","text":"WRITE: Your program is attempting to write before the start of an array's reserved memory (array index is too low)","x":1040,"y":-96,"width":250,"height":189},
+		{"id":"6cf24d1f6e16996e","type":"text","text":"Address Sanitizer: stack-buffer-underflow","x":840,"y":-248,"width":350,"height":55}
+	],
+	"edges":[
+		{"id":"2dbc0a5dd15b3b99","fromNode":"08abc455fdd6daa0","fromSide":"bottom","toNode":"bc1da1a220cee193","toSide":"top"},
+		{"id":"b2b3f9fa871fd5d4","fromNode":"027277653311553d","fromSide":"bottom","toNode":"3b7ff5911ccb3c70","toSide":"top"},
+		{"id":"1a19c8479d16aa86","fromNode":"08f680ed035792b4","fromSide":"bottom","toNode":"bc9dd51ef8b06024","toSide":"top"},
+		{"id":"41cb678a87318fe0","fromNode":"08f680ed035792b4","fromSide":"bottom","toNode":"aad5625e6f3950c5","toSide":"top"},
+		{"id":"580c961afb0716dc","fromNode":"6cf24d1f6e16996e","fromSide":"bottom","toNode":"4e3ca4f6a487efa1","toSide":"top"},
+		{"id":"569bd19542395f57","fromNode":"6cf24d1f6e16996e","fromSide":"bottom","toNode":"2e5511388246981f","toSide":"top"}
+	]
+}

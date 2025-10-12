@@ -1,0 +1,5 @@
+This was a experimental set up to measure the speed of light as earth changed it's direction around the sun which proved light's speed was invariant. 
+This set up can measure small distance changed to an extremely high accuracy and so has been used beyond it's original experiment in many other applications.
+## The setup
+We have a laser which indents light upon a partial mirror which will split the light into two beams that travel along two different arms. There are then mirrors at the end of these two arms which reflect the light back towards the partial mirror which once again splits the light so that some with go back to the emitter and some goes to the detector. ![[Pasted image 20250808103601.png]]
+A small change in the distances of the two arms will result in a phase difference between the two light rays resulting in [[Interference]]. The path length difference between the two arms is given by $\Delta PLD = 2(d_2 - d_1)$ thus the phase difference between the two is $\Delta \Phi = \frac{4\pi}{\lambda} (d_2-d_1)$. This results in dark spots when $\frac{2(d_2-d_1)}{\lambda}$ is an integer or $\frac{\lambda}{2}$ intervals. The same applies for bright spots

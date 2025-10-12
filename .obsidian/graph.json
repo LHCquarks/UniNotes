@@ -1,0 +1,37 @@
+{
+  "collapse-filter": false,
+  "search": " -path:Templates ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "tag:#Subjects tag:#Continence  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "tag:#Continence  ",
+      "color": {
+        "a": 1,
+        "rgb": 14099271
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.5,
+  "repelStrength": 15,
+  "linkStrength": 1,
+  "linkDistance": 50,
+  "scale": 0.21326128977490638,
+  "close": true
+}

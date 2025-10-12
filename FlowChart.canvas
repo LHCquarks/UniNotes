@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"1f257675d74b23e7","type":"text","text":"Random Data Input","x":-120,"y":-400,"width":250,"height":60,"color":"2"},
+		{"id":"a7380aa24e578694","type":"text","text":"Sorted Array Input","x":-120,"y":-120,"width":250,"height":60,"color":"2"},
+		{"id":"eec64a6532c708cd","type":"text","text":"Bogosort","x":-500,"y":-120,"width":250,"height":60,"color":"4"},
+		{"id":"a301d0b53e3169b2","type":"text","text":"Selection sort","x":80,"y":80,"width":250,"height":60,"color":"4"},
+		{"id":"b8c9fb40e6e0352c","type":"text","text":"Bubble sort","x":-320,"y":80,"width":250,"height":60,"color":"4"},
+		{"id":"18ac8ae03573271f","type":"text","text":"Naive Quick Sort","x":360,"y":80,"width":250,"height":60,"color":"4"},
+		{"id":"4e31e8377bcdd829","type":"text","text":"Sorted Array Input","x":580,"y":-120,"width":250,"height":60,"color":"2"},
+		{"id":"ed7506dcb346b351","type":"text","text":"Median-of-three Quick Sort","x":559,"y":284,"width":250,"height":60,"color":"4"},
+		{"id":"81b5ece238033c71","type":"text","text":"Random key value pairs","x":764,"y":80,"width":250,"height":60,"color":"2"},
+		{"id":"affd977e7b3ccb4b","type":"text","text":"Merge Sort","x":960,"y":284,"width":250,"height":60,"color":"4"}
+	],
+	"edges":[
+		{"id":"7240c369da2cc6b6","fromNode":"1f257675d74b23e7","fromSide":"bottom","toNode":"eec64a6532c708cd","toSide":"top","color":"2","label":"O(2^n)"},
+		{"id":"55df2deaa919f714","fromNode":"1f257675d74b23e7","fromSide":"bottom","toNode":"a7380aa24e578694","toSide":"top","color":"2","label":"O(n^2)"},
+		{"id":"708fa1868a80c38f","fromNode":"1f257675d74b23e7","fromSide":"bottom","toNode":"4e31e8377bcdd829","toSide":"top","color":"2","label":"O(n log n)"},
+		{"id":"60b6a8f0d0ad4d9e","fromNode":"a7380aa24e578694","fromSide":"bottom","toNode":"b8c9fb40e6e0352c","toSide":"top","color":"2","label":"O(n)"},
+		{"id":"1f46fecc2afd036d","fromNode":"a7380aa24e578694","fromSide":"bottom","toNode":"a301d0b53e3169b2","toSide":"top","color":"2","label":"O(n^2)"},
+		{"id":"47ed62d408574006","fromNode":"4e31e8377bcdd829","fromSide":"bottom","toNode":"18ac8ae03573271f","toSide":"top","color":"2","label":"O(n^2)"},
+		{"id":"26115020debe40cb","fromNode":"4e31e8377bcdd829","fromSide":"bottom","toNode":"81b5ece238033c71","toSide":"top","color":"2","label":"O(n log n)"},
+		{"id":"63541fd972f0c8d3","fromNode":"81b5ece238033c71","fromSide":"bottom","toNode":"ed7506dcb346b351","toSide":"top","color":"2","label":"Unstable"},
+		{"id":"f5750f75593e1c92","fromNode":"81b5ece238033c71","fromSide":"bottom","toNode":"affd977e7b3ccb4b","toSide":"top","color":"2","label":"Stable"}
+	]
+}
