@@ -45,7 +45,7 @@ $$
 $$
 exists or is $+\infty$ then it equals $\rho$
 
-### Sterlings formula
+### Stirling's formula
 this formula might be useful for the above tests:
 $$
 \begin{align}
