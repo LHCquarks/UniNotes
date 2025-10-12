@@ -7,6 +7,7 @@ $$
 $$
 This is simply the Taylor series for the exponential function around $0$ extended to the complex plane. 
 We usually write the power series representation of the exponential function as $\exp(z)$ whilst we write the trig defined form as $e^z$. Despite the different writing conventions they are all the same. 
+![[exp.png]]
 ## Properties
 ### Relation to trig
 Letting $z = x + iy$ we get the formula:
