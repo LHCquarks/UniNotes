@@ -1,7 +1,7 @@
 Suppose that $f(z) = z^n$ were $n \ge 2$ then $f$ is not one-to-one.
 
 We can then restrict $f$ to a region $\Omega$ such that $\Omega = \{ z \in \mathbb C: |Arg(z)| < \pi/n\}.$ Within this domain $f$ becomes one-to-one and we can define an inverse function for it.
-
+![[zto5.png]]
 This particular branch is the principle branch and all other branches are just *constant multiples* of each other where the multiplying factors are the nth roots of unity.
 
 The principle value inverse function is defined as:
@@ -17,3 +17,4 @@ $$
 \frac{\text{PV } z^{1/n}}{nz}
 \end{align}
 $$
+This is because the end points of the defined wedge collapse onto one another at the negative real line.
