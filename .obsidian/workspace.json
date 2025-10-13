@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Functions/Logarithms.md",
+                "file": "Maths/MATH2621/Complex Functions/Polynomials.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Logarithms"
+              "title": "Polynomials"
             }
           }
         ],
@@ -214,6 +214,7 @@
   },
   "active": "4911987aedab9968",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Functions/Logarithms.md",
     "Maths/MATH2621/Complex Functions/Exponentials.md",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/Roots.md",
@@ -251,7 +252,6 @@
     "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Basic Calculus In the Complex Plane/Basic Calculus in the Complex Plane.md",
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
-    "Maths/MATH2621/Complex Functions/Logarithms.md",
     "Comp/COMP2521/Compilers, Sanitisers and Errors/Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
     "Comp/COMP2521/Diagrams/Insertion Sort Animation.gif",

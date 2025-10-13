@@ -19,6 +19,14 @@ $$
 \end{align}
 $$
 where $\arg_\theta$ denotes the argument in the range $(\theta, \theta + 2\pi)$.
+### Multi valued
+We can define
+$$
+\begin{align}
+\log(z) = \ln|z| + i\arg(z)
+\end{align}
+$$
+Note returns a set not a value.
 ## Differentiability
 We get that all $\log_\theta(w)$ is differentiable everywhere except the ray with angle $\theta$ and has the derivative
 $$
