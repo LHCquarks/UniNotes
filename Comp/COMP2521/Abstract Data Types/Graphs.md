@@ -91,45 +91,47 @@ The time complexity of BFS depends on the graph implementation used:
 
 ### BFS Path Finding
 BFS finds the shortest path between the starting vertex and all other vertices in terms of the number of edges. By tracing through the predecessor array starting from `dest`, the shortest path from `dest` to `src` can be found. A stack can be used in conjunction with this method to find the path from `src` to `dest`.
-#### Pseudo code
-    bfsPathFind(G, src, dest):    
-        Input: graph G, vertices src and dest
 
-        ... BFS starting from src ...
+```Pseudo code
+bfsPathFind(G, src, dest):    
+	Input: graph G, vertices src and dest
+	
+	... BFS starting from src ...
+	
+	if predeessor[dest] != -1
+		v = dest
+		while v != src
+			print v, "<-"
+			v = predecessor[v]
+		print src
+```
 
-        if predeessor[dest] != -1
-            v = dest
-            while v != src
-                print v, "<-"
-                v = predecessor[v]
-
-            print src
-
-#### Depth-First-Search
+### Depth-First-Search
 Depth First Search goes as far down one path as possible until it reaches a dead end, then backtracks until it funds a new path to take, and repeats.
 
 DFS can be implemented iteratively using a stack, or recursively.
-
-##### Pseudocode - Iterative Implementation
-    dfs(G, src):
-        Input: graph G, vertex src
-
-        create visited array, initialised to false
-        create predecessor array, initialised to -1
-        create stack S
-
-        push src onto S
-
-        while S is not empty:
-            v = pop from S
-            if visited[v] = true:
-                continue
-            
-            visited[v] = true
-
-            for each neighbour w of v in G where visited[w] = false:
-                predecessor[w] = v
-                push w onto S
+#### Iterative Implementation
+```Pseudo code 
+dfs(G, src):
+	Input: graph G, vertex src
+	
+	create visited array, initialised to false
+	create predecessor array, initialised to -1
+	create stack S
+	
+	push src onto S
+	
+	while S is not empty:
+		v = pop from S
+		if visited[v] = true:
+			continue
+		
+		visited[v] = true
+		
+		for each neighbour w of v in G where visited[w] = false:
+			predecessor[w] = v
+			push w onto S
+```
 
 ##### Pseudocode - Recursive Implementation
     dfs(G, src):    
