@@ -13,7 +13,7 @@ Edges can be (but aren't always) directed, weighted and/or labelled
 #### Graph Terminology
 Graphs can be:
 - **Undirected** or **Directed** (Do edges have direction?)
-- **Unweighted** or **Weighted** (Do edges have an associated scalar?)
+- **Unweighted** or **Weighted** (Do edges have an associated scalar weight?)
 - **Without loops** or **with loops** (Can an edge start and end at the same vertex?)
 - **Non-multigraph** or **multigraph** (Can multiple edges connect a single pair of nodes?)
 - **Connected** or **Disconnected** (Can the graph be separated into multiple parts)
@@ -35,7 +35,6 @@ The E:V ratio of a graph tells us about its sparsity:
 - If E is close to V, the graph is **sparse**
 #### Paths
 A path is a sequence of vertices connected by edges.
-
 - A **simple** path has no repeating vertices
 - A **cycle** is a type of path where only the first and last vertices are the same
 ### Graph Properties
@@ -52,16 +51,14 @@ There are three common implementation methods of a Graph ADT:
 - **Adjacency List**: Array of linked lists containing the adjacent nodes of each node
 - **Array of Adjacent Pairs**: Array, where every entry contains two nodes (and a weight) indicating the edge between these nodes.
 ### Traversal
-
-There are two main types of graph traversal:
+There are two main ways to traverse a graph:
 - **Breadth-First-Search**:
-	-  Finds the shortest path in terms of nodes from any node to another node.
-	- Searches nodes sequentially
-	- Uses a Queue ADT to keep track of which nodes to explore (and the order)
+	- First searches all the closest nodes and then the further out nodes
+	- Uses a Queue to keep track of which nodes to explore (and the order)
+	- Generalization of level order traversal in BSTs
 - **Depth-First-Search**:
-	 - Finds a path from any node to another node
-	- Searches paths sequentially
-	- Uses a Stack ADT to keep track of which nodes to explore (and the order)
+	- Searches entire paths before moving onto another path
+	- Uses a Stack to keep track of which nodes to explore (and the order)
 	
 The pseudocode for each implementation method is the same.
 #### Breadth-First-Search (BFS)
