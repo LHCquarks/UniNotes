@@ -133,22 +133,24 @@ dfs(G, src):
 			push w onto S
 ```
 
-##### Pseudocode - Recursive Implementation
-    dfs(G, src):    
-        Input: graph G, starting vertex src
+#### Recursive Implementation
+```Pseudo code
+dfs(G, src):    
+	Input: graph G, starting vertex src
+	
+	create visited array, initialised to false
+	dfsRec(G, src, visited)
+	
+dfsRec(G, v, visited):
+	Input: Graph G, vertex v, visited array
+	
+	visited[v] = true
+	for each neighbour w of v in G:
+		if visited[w] = false:
+			dfsRec(G, v, visited)
+```
 
-        create visited array, initialised to false
-        dfsRec(G, src, visited)
-
-    dfsRec(G, v, visited):
-        Input: Graph G, vertex v, visited array
-
-        visited[v] = true
-        for each neighbour w of v in G:
-            if visited[w] = false:
-                dfsRec(G, v, visited)
-
-##### Analysis
+#### Analysis
 Recursive and Iterative DFS are both O(V + E) when using the adjacency list representation:
 - Recursive DFS:
     - Each vertex is visited at most once -> O(V)
@@ -158,9 +160,9 @@ Recursive and Iterative DFS are both O(V + E) when using the adjacency list repr
     - Typical stack implementation has O(1) push and pop
     - Each vertex visited at most once -> O(V)
     - For each vertex, all of its edges are considered -> O(E)
-#### DFS Path Checking
+### DFS Path Checking
 - Depth First Search is helpful for checking if a path is present, especially when the nodes being checked are far away from each other. 
-##### Pseudocode
+#### Pseudocode
     dfsHasPath(G, src, dest)
         Input: graph G, vertices src and dest
         Output: true is there is a path from src to dest
