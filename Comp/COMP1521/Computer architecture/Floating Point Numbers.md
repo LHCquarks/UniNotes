@@ -10,7 +10,7 @@ C stores decimals as doubles
 ## In memory
 The big idea of floating point numbers is to represent our numbers in scientific notation on the hardware level.
 
-We take our memory and divide it into 3 regions:
+We take our memory and divide it into 3 regions according to the IEEE standards:
 
 | region          | float length | Double length |
 | --------------- | ------------ | ------------- |
@@ -19,7 +19,7 @@ We take our memory and divide it into 3 regions:
 | fractional bits | 23           | 52            |
 Note: We do not need to store the first digit of the fractional part because we know it will always be 1 if we normalize it into the exponent.
 
-To represent negative exponents we store our actual value + a bias like so `exponent = x + b` where the bias is usually 127. This means that to store an exponent of 5 we put `127 + 5 = 132` into the exponent.
+To represent negative exponents we store our actual value + a bias like so `exponent = x + b` where the bias is usually 127 for floats. This means that to store an exponent of 5 we put `127 + 5 = 132` into the exponent.
 
 ### Special cases
 
