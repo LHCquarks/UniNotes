@@ -58,7 +58,7 @@ when successful **open** will return a file descriptor for a new file
 | O_WRONLY | To write to a file             |
 | O_RDWR   | To read and write to a file    |
 | O_APPEND | To append to the end of a file |
-| O_CREATE | Create a file if none existed  |
+| O_CREAT  | Create a file if none existed  |
 | O_TRUNC  |                                |
 `mode_t mode` describes the permissions to set for the newly created file
 
