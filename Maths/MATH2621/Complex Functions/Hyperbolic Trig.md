@@ -71,3 +71,11 @@ z &= \text{Log}(w + \sqrt{w^2 + 1}) \text{ and} \\
 z &= -\text{Log}(w + \sqrt{w^2 + 1}) + 2i\pi
 \end{align}
 $$
+This is continuous and differentiable for all $w \not = it$ for $t \in \mathbb R$ with $|t| \ge 1$.
+Where
+$$
+\begin{align}
+\frac{d}{dw}(\sinh^{-1}(w)) = \frac{1}{\sqrt{w^2 + 1}}
+\end{align}
+$$
+with all functions the principle kind.
