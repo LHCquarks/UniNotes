@@ -15,7 +15,7 @@ We are able to join two curves $\alpha:[a,b] \rightarrow \mathbb R^2, \beta:[c,d
 then the joined curve is:
 $$
 \begin{align}
-\alpha \cup \beta = \begin{cases} \alpha(t) & a\le t \lt b \\ \beta(t) & c \le t \le d\end{cases}
+\alpha \sqcup \beta = \begin{cases} \alpha(t) & a\le t \lt b \\ \beta(t) & c \le t \le d\end{cases}
 \end{align}
 $$
 ### Reverse curves
