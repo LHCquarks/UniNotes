@@ -70,8 +70,6 @@ To close a file we use `int close(int fd);`.
 ### Read
 To read from a file we use
 `ssize_t read(int fd,);` 
-
-
 ### Write
 `#include <unistd.h>`
 To write to a file we use
