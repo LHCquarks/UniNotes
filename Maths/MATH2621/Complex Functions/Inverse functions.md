@@ -35,3 +35,7 @@ $$
 \end{cases}
 \end{align}
 $$
+## Branch cuts
+Branch cuts occur when we restrict a domain maximally. This means at the edges of our domain have the same value and so will map to the same value. 
+
+This edge is our branch cut and generally results in the function becoming discontinuous at the edge.
