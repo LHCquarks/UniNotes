@@ -36,3 +36,35 @@ $$
 \frac{d}{dx}\sinh(x) &= \cosh(x) \tag{2}
 \end{align}
 $$
+## Inverses
+### $\cosh(z)$
+$$
+\begin{align}
+\cosh(z) &= w \\
+\frac{1}{2}(\exp(z) + \exp(-z)) &= w \\
+\exp(z) + \exp(-z) &= 2w \\
+\exp(z) - 2w &= -\exp(-z) \\
+\exp^2(z) - 2w\exp(z) &= - 1 \\
+(\exp(z) - w)^2 &= w^2 - 1 \\
+\exp(z) - w &= \pm \sqrt{w^2 - 1} \\
+\exp(z) &= \pm \sqrt{w^2 - 1} + w\\
+z &= \log(\pm \sqrt{w^2 - 1} + w) \\
+z &= \text{Log}(\pm \sqrt{w^2 - 1} + w) + 2\pi i k\\
+z &= \ln|\pm \sqrt{w^2 - 1} + w| + i\text{Arg}(w \pm \sqrt{w^2 - 1}) + 2\pi i k\\
+\text{Note: } (w + \sqrt{w^2 - 1})(w - \sqrt{w^2 - 1}) &= 1 \\
+\implies \frac{1}{w+\sqrt{w^2 - 1}} &= w - \sqrt{w^2 - 1} \\
+\implies \text{Log}(w \pm \sqrt{w^2 - 1}) &= \pm \text{Log}(w + \sqrt{w^2 - 1}) + 2 \pi i \\
+\implies z &= \pm \text{Log}(w + \sqrt{w^2 - 1}) + 2 \pi i k \\
+\text{Or for multi valued log and sqrt: } \\
+\implies z &= \log(w + \sqrt{w^2 - 1})\\
+\end{align}
+$$
+
+### $\sinh(z)$
+With basically the same proof as above we get:
+$$
+\begin{align}
+\sinh(z) &= w \\
+z &= \text{Log}(w \pm \sqrt{w^2 + 1})
+\end{align}
+$$

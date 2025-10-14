@@ -68,3 +68,6 @@ $$
 ## Other facts
 ### $|e^{i\theta} - 1| \leq |\theta|$
 #### Proof
+
+## Inverse
+The inverse of the exponential function is $\log(z)$
