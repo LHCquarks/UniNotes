@@ -4,6 +4,11 @@ Linux *syscalls* for manipulating files
 | --- | ----- | -------- |
 | 0   | read  |          |
 | 1   | write |          |
+| 2   | open  |          |
+| 3   | close |          |
+| 4   | stat  |          |
+| 8   | Iseek |          |
+| 33  | dup2  |          |
 Hello world but different:
 ```C
 #include <unistd.h>
@@ -37,7 +42,9 @@ Every processes starts with 3 files:
 | stdout | connected to the terminal | 1     |
 | stderr | connected to the terminal | 2     |
 When you open a file a new **file descriptor** will be returned. If you wish to write to a file you need to use this **file descriptor**
-## C wrappers
+
+The kernel stores a table of these file descriptors to remember what flags a file was opened with and to enforce those flags
+## Base C wrappers
 ### Errors
 If the syscall returns an error then all the C wrappers will return -1 and set errno to an integer value which can be decoded with `<stderr.h>`.
 
@@ -51,7 +58,6 @@ If we want to make a new file we use the command `int open(char *pathname, int f
 
 when successful **open** will return a file descriptor for a new file
 
-
 | Flag     | Use                            |
 | -------- | ------------------------------ |
 | O_RDONLY | To read from a file            |
@@ -59,7 +65,7 @@ when successful **open** will return a file descriptor for a new file
 | O_RDWR   | To read and write to a file    |
 | O_APPEND | To append to the end of a file |
 | O_CREAT  | Create a file if none existed  |
-| O_TRUNC  |                                |
+| O_TRUNC  | Truncates the file to length 0 |
 `mode_t mode` describes the permissions to set for the newly created file
 
 When we open a file we need to **close** a file just like freeing memory
@@ -68,8 +74,18 @@ When we open a file we need to **close** a file just like freeing memory
 To close a file we use `int close(int fd);`.
 
 ### Read
-To read from a file we use
-`ssize_t read(int fd,);` 
+`#include <unistd.h>`
+To read from a file we use either:
+`ssize_t read(int fd, void* buf, size_t n_byte);` 
+`ssize_t read(int fd, void* buf, size_t n_byte, off_t offset);` 
+
+| argument | description                                                  |
+| -------- | ------------------------------------------------------------ |
+| fd       | the file descriptor to read from                             |
+| buf      | the buffer to read the file's content into                   |
+| n_byte   | the number of bytes that are able to be stored in the buffer |
+| offset   | an offset into to file to start reading from                 |
+Returns the number of bytes read
 ### Write
 `#include <unistd.h>`
 To write to a file we use
@@ -81,7 +97,7 @@ where:
 | fd       | the file descriptor to write to |
 | buf      | the buffer to write from        |
 | count    | how many bytes to write         |
-and returns the number of bytes were actually writen
+Returns the number of bytes actually written (memory might be full)
 ### Dup2
 `Dup2` duplicates the contents a file into another file.
 The signature is:
@@ -90,3 +106,40 @@ The signature is:
 
 
 
+
+## stdio functions
+Unlike the base C wrappers the stdio functions will work on all OS's and so is recommended to use this.
+### FILE struct
+The FILE struct is used through the std libc library.
+The FILE struct is called an opaque struct meaning changes depending on the OS
+### printf
+### fopen
+Just like open, fopen will open a file with the mode given:
+`FILE *fopen(const char *pathname, const char *mode);`
+The main difference is that fopen will return a pointer to a FILE struct which is used throughout the high level libc functions.
+
+### fclose
+`int fclose(FILE *stream);`
+closes the file and flushes the remaining buffer into the file
+### fgetc
+Like `getc` but we can provide a FILE stream to read from
+`int fgetc(FILE *stream);`
+### fputc
+Like `putc` but we can provide a FILE steam to write to
+`int fputc(int c, FILE *stream);`
+### fread
+`size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);`
+We typically do not use this to avoid endian conflicts
+### fwrite
+`size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);`
+We typically do not use this to avoid endian conflicts
+### fgets
+Like `gets` but we can provide a FILE stream to read from
+`char *fgets(char *s, int size, FILE *stream);`
+### fputs
+Like `puts` but we can provide a FILE steam to write to
+`char *fputs(char *s, FILE *stream);`
+### fscanf
+### fprintf
+Like `printf` but we can provide a FILE stream to write to
+`int fprintf(FILE *stream, const char *format, ...);`
