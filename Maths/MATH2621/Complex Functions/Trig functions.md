@@ -34,3 +34,22 @@ $$
 \frac{d}{dx}\sin(x) &= \cos(x) \tag{2}
 \end{align}
 $$
+## Inverses
+### $\sin(z)$
+$$
+\begin{align}
+z &= \sin^{-1}(w) \\
+\sin(z) &= w \\
+i w &= i\sin(z) \\
+i w &= \sinh(iz) \\
+\sinh^{-1}(iw) &= iz \\
+z &= -i\sinh^{-1}(iw) \\
+\sin^{-1}(w) &= -i\sinh^{-1}(iw) \\
+\end{align}
+$$
+### $\cos(z)$
+$$
+\begin{align}
+\cos^{-1}(w) &= -i\cosh^{-1}(w)
+\end{align}
+$$
