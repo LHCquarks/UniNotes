@@ -59,7 +59,13 @@ z &= \ln|\pm \sqrt{w^2 - 1} + w| + i\text{Arg}(w \pm \sqrt{w^2 - 1}) + 2\pi i k\
 \implies z &= \log(w + \sqrt{w^2 - 1})\\
 \end{align}
 $$
-This is continuous and differentiable for all $w \not = $
+This is continuous and differentiable for all $w \not \in (-\infty, 1]$ where:
+$$
+\begin{align}
+\frac{d}{dw}(\cosh^{-1}(w)) &= \frac{1}{\sqrt{w+1} \sqrt{w-1}}
+\end{align}
+$$
+
 
 ### $\sinh(z)$
 With basically the same proof as above we get:
