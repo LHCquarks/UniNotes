@@ -65,6 +65,9 @@ With basically the same proof as above we get:
 $$
 \begin{align}
 \sinh(z) &= w \\
-z &= \text{Log}(w \pm \sqrt{w^2 + 1})
+z &= \text{Log}(w \pm \sqrt{w^2 + 1}) \\
+\text{or: } \\
+z &= \text{Log}(w + \sqrt{w^2 + 1}) \text{ and} \\
+z &= -\text{Log}(w + \sqrt{w^2 + 1}) + 2i\pi
 \end{align}
 $$
