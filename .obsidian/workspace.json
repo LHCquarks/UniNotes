@@ -48,20 +48,6 @@
               "icon": "lucide-file",
               "title": "Trig functions"
             }
-          },
-          {
-            "id": "8683999aa3daa194",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/Complex Functions/Exponentials.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Exponentials"
-            }
           }
         ],
         "currentTab": 1
@@ -215,8 +201,12 @@
   "active": "d006b9dfbdc6dca4",
   "lastOpenFiles": [
     "Maths/MATH2621/Complex Functions/Inverse functions.md",
-    "Maths/MATH2621/Complex Functions/Exponentials.md",
     "Maths/MATH2621/Complex Functions/Trig functions.md",
+    "Comp/COMP2521/Tools.md",
+    "Comp/COMP1521/COMP1521.md",
+    "Comp/COMP1521/Operating Systems/Operating Systems.md",
+    "Maths/MATH2621/Complex Functions/Complex Functions.md",
+    "Maths/MATH2621/Complex Functions/Exponentials.md",
     "Maths/MATH2621/Complex Functions/Hyperbolic Trig.md",
     "Maths/MATH2621/Complex Functions/Roots.md",
     "Comp/COMP1521/Computer architecture/Integers.md",
@@ -224,12 +214,10 @@
     "Comp/COMP2521/Abstract Data Types/Binary Search Trees.md",
     "Maths/MATH2621/Complex Functions/Complex powers.md",
     "Maths/MATH2621/Complex Functions/Polynomials.md",
-    "Comp/COMP1521/Operating Systems/Operating Systems.md",
     "Comp/COMP1521/Computer architecture/Floating Point Numbers.md",
     "Comp/COMP1521/Computer architecture/Bitwise Operators.md",
     "Maths/MATH2621/Complex Functions/Logarithms.md",
     "Maths/MATH2621/Complex Functions/res/exp.png",
-    "Maths/MATH2621/Complex Functions/Complex Functions.md",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
     "Maths/MATH2621/Series/Power Series.md",
     "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
@@ -242,7 +230,6 @@
     "Maths/MATH2621/Basic Calculus In the Complex Plane/Differentiation.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
     "Comp/COMP1521/MIPS/Data.md",
-    "Comp/COMP1521/COMP1521.md",
     "Comp/COMP2521/Sorting Algorithms/Quick Sort.md",
     "Comp/COMP2521/Sorting Algorithms/Sorting Algorithms.md",
     "Comp2521 Lab3.md",
@@ -251,7 +238,6 @@
     "sortArand.txt",
     "sortBsorted.txt",
     "Comp/COMP2521/Sorting Algorithms/Insertion Sort.md",
-    "Comp/COMP2521/Sorting Algorithms/Bubble Sort.md",
     "Comp/COMP2521/Sorting Algorithms/res/sorting.gif",
     "Comp/COMP2521/Compilers, Sanitisers and Errors/Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",

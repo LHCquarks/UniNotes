@@ -10,6 +10,7 @@ tags:
 - [[Affine functions]]
 - [[Polynomials]]
 - [[Exponentials]] ^a86247
+- [[Complex powers]]
 - [[Hyperbolic Trig]]
 - [[Trig functions]]
 - [[Inverse functions]]
