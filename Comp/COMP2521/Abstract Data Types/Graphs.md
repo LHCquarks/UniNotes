@@ -259,5 +259,41 @@ dfsRecHasCycle(G, v, prev, visited):
 			return false
 ```
 Note if our graph is disconnected this does not find all cycles
-....
+To solve this we will simply run this again until we have searched every vertex:
+```C
+hasCycle(G):    
+	Input: graph G
+	
+	pick any vertex v in G
+	create visited array, initialised to false
+	for each vertex v of G:
+		if visited[v] == true
+			continue
+		if dfsRecHasCycle(G, v, v, visited)
+			return true
+	
+dfsRecHasCycle(G, v, prev, visited):
+	Input: Graph G, vertex v, vertex previous vertex, visited array
+	
+	visited[v] = true
+	for each neighbour w of v in G:
+		if w == prev:
+			continue
+		if visited[w] == true:
+			return true
+		if dfsRecHasCycle(G, w, v, visited):
+			return true
+		else:
+			return false
+```
 
+## Building a component array
+We can group our nodes into maximally connected sub graphs of the original graph with a component array.
+
+A component array is simply an array with one int per vertex denoting which group it belongs to.
+
+We can construct one of these arrays with a DFS were instead of a visited array we have our components array which is initialized to -1 and for every run of DFS we:
+- set each node visited to our current group number in the component array
+- increase the group number by 1
+- find the next vertex in the graph who's component number is still -1
+- run the grouping on them
