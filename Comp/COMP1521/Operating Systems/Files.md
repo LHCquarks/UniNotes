@@ -112,6 +112,10 @@ Unlike the base C wrappers the stdio functions will work on all OS's and so is r
 ### FILE struct
 The FILE struct is used through the std libc library.
 The FILE struct is called an opaque struct meaning changes depending on the OS
+### General structure
+- `f` at the *end* means that it has a format string. Think `printf`
+- `f` at the *front* means that you can specify the FILE to write to
+
 ### printf
 ### fopen
 Just like open, fopen will open a file with the mode given:
