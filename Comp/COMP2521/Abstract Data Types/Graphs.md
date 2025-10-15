@@ -321,3 +321,28 @@ A Hamiltonian cycle is a Hamiltonian path but the start and end vertex is the sa
 To find this we conduct a search for a Hamiltonian path but at the end check if the final node is adjacent to the first node.
 
 Note that this time we do not have to loop through every vertex as if there is a cycle every vertex is apart of it
+## Euler stuff
+### Eulerian path
+An Eulerian path is like a Hamiltonian path but this time we only care about the edges.
+An Eulerian path is defined as a path that crosses every edge of a graph only once
+
+Euler proved that an Eulerian path exists if and only if there are exactly 2 vertices that have an odd degree. These two vertices are then the start and end of the path.
+
+Time complexity O(V+E)
+### Eulerian Circuit
+This is just an Eulerian path that ends on the same vertex.
+
+Euler proved that an Eulerian path exists if and only if there are no vertices that have an odd degree.
+## Weighted and directed graphs 
+Usually graphs are directed and have some sense of cost associated with an edge
+### Directed graphs
+These are usually called digraphs.
+
+#### Nomenclature
+We define the **In-degree** of a vertex to be the number of edges incoming to the vertex
+We define the **Out-degree** of a vertex to be the number of edges outgoing from the vertex
+
+A digraph is **strongly connected** if there is a path from each node to every other node
+
+A **strongly connected component** is a maximally strongly connected sub graph
+
