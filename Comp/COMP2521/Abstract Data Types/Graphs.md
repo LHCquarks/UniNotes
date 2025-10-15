@@ -297,3 +297,27 @@ We can construct one of these arrays with a DFS were instead of a visited array 
 - increase the group number by 1
 - find the next vertex in the graph who's component number is still -1
 - run the grouping on them
+### Uses
+A component array is very useful for answering the following questions fast:
+- How many components are there in this graph?
+- Is there a path between these two vertexes?
+
+### Maintaining a component array
+When we add a edge to the graph we have to look at the two vertexes it connects and if they are apart of two groups we need to merge the groups
+
+If we delete an edge we need to 
+
+## Hamiltonian stuff
+### Hamiltonian path
+A Hamiltonian path is a path were we do not cross the same vertex more than once and visit every single vertex
+
+To implement this we need to conduct a DFS on each vertex of the graph and if we are able to visit every node once then we return true.
+To do this properly if a DFS fails then we need to set all it's nodes to not visited
+
+Time complexity: $O(V!)$
+### Hamiltonian cycle
+A Hamiltonian cycle is a Hamiltonian path but the start and end vertex is the same
+
+To find this we conduct a search for a Hamiltonian path but at the end check if the final node is adjacent to the first node.
+
+Note that this time we do not have to loop through every vertex as if there is a cycle every vertex is apart of it
