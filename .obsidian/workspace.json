@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
+                "file": "Comp/COMP2521/Abstract Data Types/Binary Search Trees.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Harmonic Functions"
+              "title": "Binary Search Trees"
             }
           },
           {
@@ -185,6 +185,7 @@
   },
   "active": "e5a19b47dac383fa",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
     "Maths/MATH2621/Complex Functions/Exponentials.md",
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
     "Maths/MATH2621/Complex Functions/Analytic Functions.md",
@@ -211,7 +212,6 @@
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
     "Maths/MATH2621/Series/Power Series.md",
-    "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
     "SortB sorted.png",
     "SortB random.png",
     "SortA sorted.png",
