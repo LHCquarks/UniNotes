@@ -115,35 +115,28 @@ The FILE struct is called an opaque struct meaning changes depending on the OS
 ### General structure
 - `f` at the *end* means that it has a format string. Think `printf`
 - `f` at the *front* means that you can specify the FILE to write to
+### Functions
 
-### printf
-### fopen
-Just like open, fopen will open a file with the mode given:
-`FILE *fopen(const char *pathname, const char *mode);`
-The main difference is that fopen will return a pointer to a FILE struct which is used throughout the high level libc functions.
-
-### fclose
-`int fclose(FILE *stream);`
-closes the file and flushes the remaining buffer into the file
-### fgetc
-Like `getc` but we can provide a FILE stream to read from
-`int fgetc(FILE *stream);`
-### fputc
-Like `putc` but we can provide a FILE steam to write to
-`int fputc(int c, FILE *stream);`
-### fread
-`size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);`
-We typically do not use this to avoid endian conflicts
-### fwrite
-`size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);`
-We typically do not use this to avoid endian conflicts
-### fgets
-Like `gets` but we can provide a FILE stream to read from
-`char *fgets(char *s, int size, FILE *stream);`
-### fputs
-Like `puts` but we can provide a FILE steam to write to
-`char *fputs(char *s, FILE *stream);`
-### fscanf
-### fprintf
-Like `printf` but we can provide a FILE stream to write to
-`int fprintf(FILE *stream, const char *format, ...);`
+| function | signature                                                                  |
+| -------- | -------------------------------------------------------------------------- |
+| printf   |                                                                            |
+| scanf    |                                                                            |
+| snprintf |                                                                            |
+| sscanf   |                                                                            |
+| puts     |                                                                            |
+| gets     |                                                                            |
+| putchar  |                                                                            |
+| getchar  |                                                                            |
+| fopen    | `FILE *fopen(const char *pathname, const char *mode);`                     |
+| fclose   | `int fclose(FILE *stream);`                                                |
+| fgetc    | `int fgetc(FILE *stream);`<br>                                             |
+| fputc    | `int fputc(int c, FILE *stream);`                                          |
+| fread    | `size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);`        |
+| fwrite   | `size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);` |
+| fgets    | `char *fgets(char *s, int size, FILE *stream);`                            |
+| fputs    | `char *fputs(char *s, FILE *stream);`                                      |
+| fscanf   |                                                                            |
+| fprintf  | `int fprintf(FILE *stream, const char *format, ...);`                      |
+| fseak    |                                                                            |
+| ftell    |                                                                            |
+| fflush   |                                                                            |
