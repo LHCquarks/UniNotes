@@ -144,3 +144,11 @@ The FILE struct is called an opaque struct meaning changes depending on the OS
 To reduce the amount to system calls when printing / scanning data we store all our io into a buffer. After a while this buffer will get 'flushed' which will actually make a syscall to write / read the data.
 
 Print functions are flushed automatically when a new line charter is printed
+
+## Seeking
+To change our position within a file we can use **seek** functions which allow us to go to:
+- the start / end of a file
+- a certain position in the file
+- an offset from your current position
+
+To find where we are in a file we can use **tell**
