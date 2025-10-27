@@ -152,3 +152,5 @@ To change our position within a file we can use **seek** functions which allow u
 - an offset from your current position
 
 To find where we are in a file we can use **tell**
+### Size of a file
+To find the size of a file first jump to the end of a file then use tell
