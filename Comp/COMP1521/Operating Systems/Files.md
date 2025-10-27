@@ -117,26 +117,30 @@ The FILE struct is called an opaque struct meaning changes depending on the OS
 - `f` at the *front* means that you can specify the FILE to write to
 ### Functions
 
-| function | signature                                                                  |
-| -------- | -------------------------------------------------------------------------- |
-| printf   |                                                                            |
-| scanf    |                                                                            |
-| snprintf |                                                                            |
-| sscanf   |                                                                            |
-| puts     |                                                                            |
-| gets     |                                                                            |
-| putchar  |                                                                            |
-| getchar  |                                                                            |
-| fopen    | `FILE *fopen(const char *pathname, const char *mode);`                     |
-| fclose   | `int fclose(FILE *stream);`                                                |
-| fgetc    | `int fgetc(FILE *stream);`<br>                                             |
-| fputc    | `int fputc(int c, FILE *stream);`                                          |
-| fread    | `size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);`        |
-| fwrite   | `size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);` |
-| fgets    | `char *fgets(char *s, int size, FILE *stream);`                            |
-| fputs    | `char *fputs(char *s, FILE *stream);`                                      |
-| fscanf   |                                                                            |
-| fprintf  | `int fprintf(FILE *stream, const char *format, ...);`                      |
-| fseak    |                                                                            |
-| ftell    |                                                                            |
-| fflush   |                                                                            |
+| function | signature                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------------ |
+| printf   | `int printf(const char *restrict format, ...);`                                                        |
+| scanf    | `int scanf(const char *restrict format, ...);`                                                         |
+| snprintf | `int snprintf(size_t size, char str[restricted size], size_t size, const char *restrict format, ...);` |
+| sscanf   | `int sscanf(const char *restrict str, const char *restrict format, ...);`                              |
+| puts     | `int puts(const char *s);`                                                                             |
+| gets     | `char *gets(char *s);` NOTE: Deprecated for security reasons                                           |
+| putchar  | `int putchar(int c);`                                                                                  |
+| getchar  | `int getchar(void);`                                                                                   |
+| fopen    | `FILE *fopen(const char *pathname, const char *mode);`                                                 |
+| fclose   | `int fclose(FILE *stream);`                                                                            |
+| fgetc    | `int fgetc(FILE *stream);`<br>                                                                         |
+| fputc    | `int fputc(int c, FILE *stream);`                                                                      |
+| fread    | `size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);`                                    |
+| fwrite   | `size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream);`                             |
+| fgets    | `char *fgets(char *s, int size, FILE *stream);`                                                        |
+| fputs    | `char *fputs(char *s, FILE *stream);`                                                                  |
+| fscanf   | `int fscanf(FILE *restrict stream, const char *restrict format, ...);`                                 |
+| fprintf  | `int fprintf(FILE *stream, const char *format, ...);`                                                  |
+| fseek    | `int fseek(FILE *stream, long offset, int whence);`                                                    |
+| ftell    | `long ftell(FILE *stream);`                                                                            |
+| fflush   | `int fflush(FILE *_Nullable stream);`                                                                  |
+### Buffering
+To reduce the amount to system calls when printing / scanning data we store all our io into a buffer. After a while this buffer will get 'flushed' which will actually make a syscall to write / read the data.
+
+Print functions are flushed automatically when a new line charter is printed
