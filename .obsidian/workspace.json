@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ba3d3d43f006d568",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Contour Integrals"
-            }
-          },
-          {
             "id": "b732b6dde8d6457e",
             "type": "leaf",
             "state": {
@@ -49,8 +35,7 @@
               "title": "Contour Integrals"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,6 +185,7 @@
   },
   "active": "b732b6dde8d6457e",
   "lastOpenFiles": [
+    "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
@@ -225,7 +211,6 @@
     "Comp/COMP2521/Sorting Algorithms/Sorting Algorithms.md",
     "Comp/COMP1521/Operating Systems/Operating Systems.md",
     "Comp/COMP1521/Man pages.md",
-    "Maths/MATH2621/Complex Functions/Inverse functions.md",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
     "SortB sorted.png",

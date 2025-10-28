@@ -27,3 +27,10 @@ $$
 \end{align}
 $$
 And $F$ is unique to a constant
+## V2
+Suppose that $\Omega$ is a bounded domain whose boundary $\partial \Omega$ consists of finitely many contours $\Gamma_0, \Gamma_1, ..., \Gamma_n$ then:
+$$
+\begin{align}
+\int_{\partial \Gamma}f(z)dz = \sum_{j=0}^n\int_{\Gamma_n}f(z)dz=0 \\
+\end{align}
+$$
