@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2521/Abstract Data Types/Graphs.md",
+                "file": "Comp/COMP1521/Computer architecture/Floating Point Numbers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Graphs"
+              "title": "Floating Point Numbers"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.50312423706055
+    "width": 246.50312423706055,
+    "collapsed": true
   },
   "right": {
     "id": "1b9a36d433dae292",
@@ -171,6 +172,7 @@
   },
   "active": "ba3d3d43f006d568",
   "lastOpenFiles": [
+    "Comp/COMP2521/Abstract Data Types/Graphs.md",
     "Comp/COMP1521/Operating Systems/Files.md",
     "Comp/COMP1521/Operating Systems/File Systems.md",
     "Comp/COMP1521/COMP1521.md",
@@ -182,7 +184,6 @@
     "Maths/MATH2621/Complex Functions/Exponentials.md",
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
     "Maths/MATH2621/Complex Functions/Analytic Functions.md",
-    "Comp/COMP2521/Abstract Data Types/Graphs.md",
     "Maths/MATH2621/Complex Functions/Hyperbolic Trig.md",
     "Comp/COMP2521/Sorting Algorithms/Bubble Sort.md",
     "Comp/COMP2521/Sorting Algorithms/Sorting Algorithms.md",
