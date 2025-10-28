@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP1521/Computer architecture/Floating Point Numbers.md",
+                "file": "Comp/COMP1521/Operating Systems/File Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Floating Point Numbers"
+              "title": "File Systems"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "e81482993ff6e40f",
   "lastOpenFiles": [
-    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Comp/COMP1521/Computer architecture/Floating Point Numbers.md",
+    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
