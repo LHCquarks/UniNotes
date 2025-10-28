@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "e81482993ff6e40f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cauchy Integral Formula"
+            }
+          },
+          {
             "id": "ec453ce13aad4d4e",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "Contour Integrals"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,11 +198,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b732b6dde8d6457e",
+  "active": "e81482993ff6e40f",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
     "Maths/MATH2621/Complex Specific Calculus/Morera's Theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
