@@ -58,3 +58,7 @@ drwxr-xr-x     - kais 25 Jan  2023   mazes
 ```
 ### Execute directory???
 Executing a directory just allows the user to explore it
+### Chmod command
+The Chmod command is how you change the permissions of a file / directory and can be used in the following ways: 
+
+
