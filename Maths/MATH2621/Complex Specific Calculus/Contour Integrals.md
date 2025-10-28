@@ -30,3 +30,11 @@ We define $\gamma ' = (\gamma_1 ', \gamma_2 ')$.
 If $\gamma (t)$ is continuously differentiable and $\gamma ' (t) \not = 0$ then we call the curve **smooth**
 
 
+## Formula
+A contour integral is defined by
+$$
+\begin{align}
+\int_\gamma f(z) dz = \int_a^b f(\gamma(t))\gamma'(t)dt
+\end{align}
+$$
+<% tp.file.cursor(2) %>
