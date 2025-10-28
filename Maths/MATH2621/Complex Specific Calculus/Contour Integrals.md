@@ -37,4 +37,3 @@ $$
 \int_\gamma f(z) dz = \int_a^b f(\gamma(t))\gamma'(t)dt
 \end{align}
 $$
-<% tp.file.cursor(2) %>
