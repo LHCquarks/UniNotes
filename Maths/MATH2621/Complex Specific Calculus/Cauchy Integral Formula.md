@@ -18,3 +18,11 @@ $$
 \int_\Gamma \frac{\sin(z)}{z}dz &= 2 \pi i\sin(0) = 0\\
 \end{align}
 $$
+## Corollary
+For intergrals of the form
+$$
+\begin{align}
+\int_\Gamma \frac{f(z)}{z-w}dz &= \int_\Delta \frac{f(z)}{z-w}dz
+\end{align}
+$$
+### Mean value formula

@@ -37,3 +37,8 @@ $$
 \int_\gamma f(z) dz = \int_a^b f(\gamma(t))\gamma'(t)dt
 \end{align}
 $$
+$$
+\begin{align}
+f(w) = \frac{1}{2\pi} \int_0^{2\pi} f(w+re^{i\theta})d\theta
+\end{align}
+$$
