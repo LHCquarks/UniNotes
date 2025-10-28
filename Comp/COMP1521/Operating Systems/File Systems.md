@@ -60,5 +60,19 @@ drwxr-xr-x     - kais 25 Jan  2023   mazes
 Executing a directory just allows the user to explore it
 ### Chmod command
 The Chmod command is how you change the permissions of a file / directory and can be used in the following ways: 
+#### Symbolic
+We first specify which user's assess will be changed where:
+- `u` is the user who owns the file
+- `g` is the group who has access to the file
+- `o` is everyone else
+- `a` set for all users
+We then set the permissions they have eg:
+`chmod urwx file_name.txt` will change the owner's permissions to read write and execute
+#### Octal
 
 
+## Links
+### Hard Links
+Hard links make multiple file paths link to the same inode. This means they will not work between different machines because they link to different inodes
+### Symlinks
+Symlinks point one path name to another path name
