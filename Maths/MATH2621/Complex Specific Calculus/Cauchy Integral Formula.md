@@ -18,4 +18,3 @@ $$
 \int_\Gamma \frac{\sin(z)}{z}dz &= 2 \pi i\sin(0) = 0\\
 \end{align}
 $$
-
