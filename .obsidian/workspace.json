@@ -11,10 +11,14 @@
             "id": "e81482993ff6e40f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cauchy's integral theorem"
             }
           }
         ]
@@ -165,13 +169,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96d45fc57194ed4e",
+  "active": "e81482993ff6e40f",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Comp/COMP2521/Graphs",
     "Comp/COMP2521/Untitled.md",
     "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Comp/COMP1521/Operating Systems/File Systems.md",
     "Comp/COMP1521/Computer architecture/Floating Point Numbers.md",
     "Maths/MATH2621/Basic Topology.md",
