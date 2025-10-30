@@ -19,7 +19,7 @@ $$
 \cos^2(z) + \sin^2(z) &= 1 \tag {7} \\
 \end{align}
 $$
-Further we get the relationsips that:
+Further we get the relationships that:
 $$
 \begin{align}
 \sin(iy) &= i\sinh(y) \\

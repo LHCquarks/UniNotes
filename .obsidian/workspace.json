@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Functions/Complex powers.md",
+                "file": "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Complex powers"
-            }
-          },
-          {
-            "id": "05137aee9e806fc4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/Complex Functions/Hyperbolic Trig.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Hyperbolic Trig"
+              "title": "Contour Integrals"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,12 +169,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "05137aee9e806fc4",
+  "active": "e81482993ff6e40f",
   "lastOpenFiles": [
-    "Maths/MATH2621/Complex Functions/Exponentials.md",
     "Maths/MATH2621/Complex Functions/Complex powers.md",
-    "Maths/MATH2621/Complex Functions/Roots.md",
+    "Maths/MATH2621/Complex Functions/Trig functions.md",
     "Maths/MATH2621/Complex Functions/Inverse functions.md",
+    "Maths/MATH2621/Complex Functions/Hyperbolic Trig.md",
+    "Maths/MATH2621/Complex Functions/Exponentials.md",
+    "Maths/MATH2621/Complex Functions/Roots.md",
     "Maths/MATH2621/Complex Functions/Logarithms.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
@@ -208,11 +195,9 @@
     "Comp/COMP1521/COMP1521.md",
     "Comp/COMP2521/Abstract Data Types/Queues.md",
     "Lani Maths.md",
-    "Maths/MATH2621/Complex Functions/Trig functions.md",
     "Comp/COMP2521/Abstract Data Types/Binary Search Trees.md",
     "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
-    "Maths/MATH2621/Complex Functions/Analytic Functions.md",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
     "SortB sorted.png",
