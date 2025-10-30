@@ -19,16 +19,47 @@ $$
 \end{align}
 $$
 ### Reverse curves
-We can instead move through $\gamma$ backwards and this is denoted by $\gamma^*$
-
-### Reperamiterisation
-We can compos $\gamma$ with $h$, written as $\gamma \circ h$, by defining a new interval $[c, d]$ if $h(c) = a$ and $h(d) = b$ and $h(x)$ is bijective.
-
+We can instead move through $\gamma$ backwards and this is denoted by $\gamma^*$ and is given by
+$$
+\begin{align}
+\gamma^*: [-b, -a] \rightarrow \mathbb R^2 \\
+\gamma^*(t) = \gamma(-t)
+\end{align}
+$$
+### Reparametrisation
+Suppose that:
+- $\gamma: [a, b] \rightarrow \mathbb R^2$ is a curve, and
+- $h$ is a *continuous* *bijection* from $[c, d]$ to $[a, b]$ such that $h(c) = a$ and $h(d)= b$
+Then $\gamma \circ h: [c, d] \rightarrow \mathbb R^2$ is also a curve called a reparametrisation of $\gamma$ and has the formula $\gamma(h(t)) = (\gamma_1(h(t)), \gamma_2(h(t)))$ where $t \in [c,d]$.
 ### Smooth curves
-We define $\gamma ' = (\gamma_1 ', \gamma_2 ')$. 
+We define the tangent vector $\gamma ' = (\gamma_1 ', \gamma_2 ')$ provided $\gamma_1'$ and $\gamma_2'$ exist.
 
-If $\gamma (t)$ is continuously differentiable and $\gamma ' (t) \not = 0$ then we call the curve **smooth**
+We say that $\gamma$ is:
+- continuously differentiable if the derivative $\gamma'$ exists and is continuous on $[a, b]$
+- smooth if it is continuously differentiable *and* $\gamma'(t) \not = 0$  for all $t \in [a,b]$
+## Length
+A curve $\gamma: [a, b] \rightarrow \mathbb R^2$ is **piecewise smooth** if it is a join of finitely many smooth curves.
 
+The length of a **piecewise smooth** curve is defined by the formula:
+$$
+\begin{align}
+\text{Length}(\gamma) = \int_a^b |\gamma'(t)| dt
+\end{align}
+$$
+Note that where $\gamma'$ is not defined we just take it's value as $0$ as singular points make no difference.
+## Orientation
+If $\gamma$ is a simple closed curve then taking the complement of the range of gamma gives two disjoint domains:
+- The domain that is bounded is refereed to as the **interior** of the curve written as $\text{Int}(\gamma)$
+- The domain that is unbounded is the **exterior** of the curve written as $\text{Ext}(\gamma)$
+
+We define the **standard orientation** of the curve $\gamma$ as the direction where the $\text{Int}(\gamma)$ is always on the left of the curve. In normal person terms we go along the curve in an (anti-clockwise direction)
+## Line integrals
+Let $\Omega$ be an open subset of $\mathbb R^2$, $V: \Omega \rightarrow \mathbb R^2$ be a vector field on $\Omega$ and $\gamma: [a,b] \rightarrow \mathbb \Omega$ be a **piecewise smooth** curve. Then we define the line integral:
+$$
+\begin{align}
+\int_\gamma V(\vec{s}) d\vec{s} = \int_a^b V(\gamma(t))\cdot\gamma'(t)dt
+\end{align}
+$$
 
 ## Formula
 A contour integral is defined by
