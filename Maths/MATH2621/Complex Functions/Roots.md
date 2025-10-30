@@ -34,5 +34,13 @@ $$
 \end{cases}
 \end{align}
 $$
-or 
-
+or since $z^2 - 1 = (z - 1)(z + 1)$:
+$$
+\begin{align}
+\text{PV } (z^2 - 1)^{1/2} = 
+\begin{cases}
+|z^2 - 1|^{1/2}e^{i\text{Arg}(z - 1) /2} e^{i\text{Arg}(z+1)/2} &\text{when } z \not= \pm1 \\
+0 &\text{when } z = \pm1
+\end{cases}
+\end{align}
+$$
