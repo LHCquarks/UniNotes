@@ -19,7 +19,7 @@ $$
 \end{align}
 $$
 ## Corollary
-For intergrals of the form
+For integrals of the form
 $$
 \begin{align}
 \int_\Gamma \frac{f(z)}{z-w}dz &= \int_\Delta \frac{f(z)}{z-w}dz

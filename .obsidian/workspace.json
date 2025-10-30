@@ -20,37 +20,8 @@
               "icon": "lucide-file",
               "title": "Curves"
             }
-          },
-          {
-            "id": "285658f0d4d481c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Contour Integrals"
-            }
-          },
-          {
-            "id": "0646e10b435f551a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/Path Integral detour/Vector fields.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Vector fields"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,11 +169,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "285658f0d4d481c8",
+  "active": "e322a0edd484023a",
   "lastOpenFiles": [
+    "Comp/COMP1521/Operating Systems/Operating Systems.md",
+    "Comp/COMP1521/Operating Systems/File Systems.md",
+    "Maths/MATH2621/MATH2621.md",
+    "Maths/MATH2621/Path Integral detour/Path Integral Detour.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
+    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Maths/MATH2621/Path Integral detour/Curves.md",
     "Maths/MATH2621/Path Integral detour/Vector fields.md",
-    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Maths/MATH2621/Path Integral detour/Path integrals.md",
     "Maths/MATH2621/Path Integral detour",
     "Maths/MATH2621/Complex Functions/Complex powers.md",
@@ -212,11 +189,8 @@
     "Maths/MATH2621/Complex Functions/Exponentials.md",
     "Maths/MATH2621/Complex Functions/Roots.md",
     "Maths/MATH2621/Complex Functions/Logarithms.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Comp/COMP2521/Graphs",
     "Comp/COMP2521/Untitled.md",
-    "Comp/COMP1521/Operating Systems/File Systems.md",
     "Comp/COMP1521/Computer architecture/Floating Point Numbers.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
@@ -225,9 +199,6 @@
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
     "Comp/COMP1521/Operating Systems/Files.md",
     "Comp/COMP2521/Abstract Data Types/Graphs.md",
-    "Comp/COMP1521/COMP1521.md",
-    "Comp/COMP2521/Abstract Data Types/Queues.md",
-    "Lani Maths.md",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
     "SortB sorted.png",
