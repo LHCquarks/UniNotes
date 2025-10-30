@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
+                "file": "Maths/MATH2621/Complex Functions/Roots.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cauchy's integral theorem"
+              "title": "Roots"
             }
           }
         ]
@@ -171,8 +171,11 @@
   },
   "active": "e81482993ff6e40f",
   "lastOpenFiles": [
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
+    "Maths/MATH2621/Complex Functions/Inverse functions.md",
+    "Maths/MATH2621/Complex Functions/Roots.md",
+    "Maths/MATH2621/Complex Functions/Logarithms.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Comp/COMP2521/Graphs",
     "Comp/COMP2521/Untitled.md",
     "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
@@ -195,8 +198,6 @@
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
     "Maths/MATH2621/Complex Functions/Analytic Functions.md",
     "Maths/MATH2621/Complex Functions/Hyperbolic Trig.md",
-    "Comp/COMP2521/Sorting Algorithms/Bubble Sort.md",
-    "Comp/COMP2521/Sorting Algorithms/Sorting Algorithms.md",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
     "SortB sorted.png",

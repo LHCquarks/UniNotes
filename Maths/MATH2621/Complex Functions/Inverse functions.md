@@ -36,6 +36,11 @@ $$
 \end{align}
 $$
 ## Branch cuts
-Branch cuts occur when we restrict a domain maximally. This means at the edges of our domain have the same value and so will map to the same value. 
+Branch cuts occur when we restrict a domain maximally. This means at the edges of our domain will map to the same value in the image. 
 
 This edge is our branch cut and generally results in the function becoming discontinuous at the edge.
+
+By carefully selecting our restricted domains we are usually able to avoid discontinuities in places that we care about
+
+### Branch points
+Unfortunately for most functions it doesn't matter what branch we take, there will be a few points that will appear in any branch cut. These are called **Branch points**

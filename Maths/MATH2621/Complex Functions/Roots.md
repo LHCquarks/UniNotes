@@ -7,7 +7,11 @@ This particular branch is the principle branch and all other branches are just *
 The principle value inverse function is defined as:
 $$
 \begin{align}
-\text{PV } z^{1/n} = \exp(\text{Log}(z)/n) = |z|^{1/n}e^{i\text{Arg}(z)/n}
+\text{PV } z^{1/n} = 
+\begin{cases}
+\exp(\text{Log}(z)/n) = |z|^{1/n}e^{i\text{Arg}(z)/n} & \text{if } z \not = 0\\ 
+0  & \text{if } {z = 0}
+\end{cases}
 \end{align}
 $$
 ## Differentiable
@@ -18,3 +22,17 @@ $$
 \end{align}
 $$
 This is because the end points of the defined wedge collapse onto one another at the negative real line.
+
+## Roots of polynomials
+Take the root of the polynomial $(z^2 - 1)^{1/2}$. Two ways to define this function are:
+$$
+\begin{align}
+\text{PV } (z^2 - 1)^{1/2} = 
+\begin{cases}
+|z^2 - 1|^{1/2}e^{i\text{Arg}(z^2 - 1) /2} &\text{when } z \not= \pm1 \\
+0 &\text{when } z = \pm1
+\end{cases}
+\end{align}
+$$
+or 
+
