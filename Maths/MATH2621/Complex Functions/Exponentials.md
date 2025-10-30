@@ -6,7 +6,8 @@ $$
 \end{align}
 $$
 This is simply the Taylor series for the exponential function around $0$ extended to the complex plane. 
-We usually write the power series representation of the exponential function as $\exp(z)$ whilst we write the trig defined form as $e^z$. Despite the different writing conventions they are all the same. 
+
+We usually write the exponential function as $\exp(z)$ due to $z^\alpha$ usually referring to the **multi valued** function.
 ![[exp.png]]
 ## Properties
 ### Relation to trig
@@ -65,9 +66,11 @@ $$
 &= e^{\text{Re}(z)}
 \end{align}
 $$
+## Geometry
+$\exp(z)$ takes horizontal lines in the complex plane into rays and vertical lines into circles
+
 ## Other facts
 ### $|e^{i\theta} - 1| \leq |\theta|$
-#### Proof
 
 ## Inverse
 The inverse of the exponential function is $\log(z)$

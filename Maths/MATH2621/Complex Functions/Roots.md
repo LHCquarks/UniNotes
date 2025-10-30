@@ -44,3 +44,5 @@ $$
 \end{cases}
 \end{align}
 $$
+As it turns out the **first** definition is discontinuous on the intervals $(-1, 1)$ and $(-\infty i, \infty i)$ 
+whereas the **second** definition is *only* discontinuous on the interval $(-1, 1)$.
