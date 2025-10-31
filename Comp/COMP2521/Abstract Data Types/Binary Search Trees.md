@@ -129,7 +129,7 @@ There are two methods of rebalancing a tree:
 - **Global Rebalancing**
 	- Visit every node and rebalance its subtree (costly)
 - **Local Rebalancing**
-	- Rebalance small subtrees of a BST with efficient, localised algorithms (imperfect balance)
+	- Rebalance small subtrees of a BST with efficient, localized algorithms (imperfect balance)
 
 #### Global Rebalancing
 - Lift the median node to the root(index $\lfloor size(t)/2 \rfloor$, using integer division to floor)
@@ -137,7 +137,7 @@ There are two methods of rebalancing a tree:
 
 **Problems**
 - Rebalancing Trees can be costly. It's not ideal to rebalance a tree on every insert, so how often? Every `k` inserts?
-- However often we insert, it's a tradeoff. The most ideal solution is specific to each use-case.
+- However often we insert, it's a trade off. The most ideal solution is specific to each use-case.
 ###### Global Rebalancing Implementation
 ```c
 struct node *rebalance(struct node *t) {

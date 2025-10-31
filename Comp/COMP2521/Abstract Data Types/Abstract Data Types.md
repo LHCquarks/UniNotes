@@ -39,7 +39,7 @@ Using abstract data types in c, we will have the implementation in a .c file, th
 - [[Sets]]
 - [[Multiset]]
 - [[Map]]
-- [[Binary Search Trees]]
+- [[Comp/COMP2521/Abstract Data Types/Binary Search Trees]]
 - [[AVL Trees]]
 - [[Graphs]]
 - [[Heaps]] and [[Priority Queues]]
