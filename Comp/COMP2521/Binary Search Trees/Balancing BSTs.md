@@ -65,7 +65,7 @@ There are two methods of rebalancing a tree:
 	- Rebalance small subtrees of a BST with efficient, localized algorithms (imperfect balance)
 
 #### Global Rebalancing
-- Lift the median node to the root(index $\lfloor size(t)/2 \rfloor$, using integer division to floor)
+- Lift the median node to the root (index: $\lfloor size(t)/2 \rfloor$)
 - Rebalance both of its subtrees
 
 **Problems**
