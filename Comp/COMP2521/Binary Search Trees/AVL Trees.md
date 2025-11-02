@@ -114,6 +114,3 @@ avlDelete(struct node *t, int v) {
 	return avlRebalance(t);
 }
 ```
-
-
-These notes are pretty basic. For a better understanding on AVL trees, refer to other sources.
