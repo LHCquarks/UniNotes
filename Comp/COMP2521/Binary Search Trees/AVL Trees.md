@@ -1,4 +1,4 @@
-# Overview
+## Overview
 - AVL Trees are Binary Search Trees which are always height-balanced. 
 - A tree is 'repaired' locally as soon as an imbalance occurs (insertion and deletion).
 - An AVL tree does not need to be size-balanced. The tree below is a perfectly valid AVL tree:
@@ -16,9 +16,8 @@
 ```
 
 - **Trivia:** The name 'AVL' comes from the names of the inventors: Georgy <font color="EB8E7F">A</font>delson-<font color="EB8E7F">V</font>elsky and Evgenii <font color="EB8E7F">L</font>andis
-
-# Implementation
-## Insertion
+## Implementation
+### Insertion
  AVL Trees are easiest implemented recursively:
 - Insert Item Recursively
 - Check and fix imbalances in reverse (from bottom to top - after recursive call)
@@ -79,12 +78,12 @@ Looking at the rebalancing function, there are 4 rebalancing cases:
 
 Storing the height of a subtree in the struct node requires maintenance upon insertion and deletion. Heights of each subtree is recalculated in reverse, using the heights of their children.
 
-### Complexity Analysis
+#### Complexity Analysis
 Like any other binary search tree, the worst-case time complexity of insertion is $O(h)$. However, AVL trees are always balanced, meaning $h=log(n)$. So, the worst-case time complexity of insertion is $O(log(n))$. The same is true for searching.
 
 What about deletion?
 
-## Deletion
+### Deletion
 Deletion follows the same method as insertion:
 - Delete Item recursively
 - Check and fix balance in reverse (after the recursive call)

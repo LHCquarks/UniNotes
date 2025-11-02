@@ -77,7 +77,7 @@ struct node *rebalance(struct node *t) {
 	if (t->size < 3) {
 		return t;
 	}
-
+	
 	t = partition(t, t->size / 2);
 	t->left = rebalance(t->left);
 	t->right = rebalance(t->right);
@@ -132,5 +132,3 @@ struct node *newNode(int v) {
 	return newNode;
 }
 ```
-
-[[AVL Trees]] are types of Binary Search Tree with auto-height balancing upon insertion and deletion, which are performed locally. This allows them to be efficient and the tree is height-balanced (Time complexity for Insertion and Deletion is $O(log(n))$)
