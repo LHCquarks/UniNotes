@@ -22,6 +22,12 @@ struct node {
 	struct node *next;
 }
 ```
+#### Time complexity
+For a hash table with size of $N$ and number of elements is $M$:
+- Lookup / Insertion / Deletion
+	- Best case: $O(M/N)$
+	- Worst case: $O(M)$
+	
 ## Hash functions
 Hash functions map keys into ints. 
 We want our hash functions to be:
