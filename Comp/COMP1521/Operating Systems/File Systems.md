@@ -69,6 +69,9 @@ We first specify which user's assess will be changed where:
 We then set the permissions they have eg:
 `chmod urwx file_name.txt` will change the owner's permissions to read write and execute
 #### Octal
+For each group we represent their permissions with a single octal digit.
+Eg: ``
+
 
 
 ## Links
