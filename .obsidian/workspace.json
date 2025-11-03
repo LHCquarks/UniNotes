@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP1521/Operating Systems/Text Representation.md",
+                "file": "Comp/COMP1521/Operating Systems/Operating Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Text Representation"
+              "title": "Operating Systems"
             }
           }
         ],
@@ -187,6 +187,7 @@
   "active": "a5001296a37f03d2",
   "lastOpenFiles": [
     "Comp/COMP1521/Operating Systems/File Systems.md",
+    "Comp/COMP1521/Operating Systems/Operating Systems.md",
     "Comp/COMP1521/Operating Systems/Text Representation.md",
     "Comp/COMP1521/Operating Systems/Files.md",
     "Comp/COMP2521/Binary Search Trees/Binary Search Trees.md",
@@ -199,7 +200,6 @@
     "Comp/COMP2521/Binary Search Trees/Untitled.md",
     "Maths/MATH2621/Path Integral detour/Curves.md",
     "Comp/COMP2521/Binary Search Trees",
-    "Comp/COMP1521/Operating Systems/Operating Systems.md",
     "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Path Integral detour/Path Integral Detour.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
