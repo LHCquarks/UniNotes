@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP1521/Operating Systems/Files.md",
+                "file": "Comp/COMP1521/Operating Systems/File Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Files"
+              "title": "File Systems"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "161e1dfaec324257",
   "lastOpenFiles": [
+    "Comp/COMP1521/Operating Systems/Files.md",
     "Comp/COMP2521/Binary Search Trees/Binary Search Trees.md",
     "Comp/COMP2521/Abstract Data Types/Abstract Data Types.md",
     "Comp/COMP2521/Binary Search Trees/AVL Trees.md",
@@ -199,7 +200,6 @@
     "Maths/MATH2621/Complex Functions/Roots.md",
     "Maths/MATH2621/Complex Functions/Logarithms.md",
     "Comp/COMP2521/Graphs",
-    "Comp/COMP2521/Untitled.md",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
     "SortB sorted.png",

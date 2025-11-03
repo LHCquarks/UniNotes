@@ -76,3 +76,4 @@ We then set the permissions they have eg:
 Hard links make multiple file paths link to the same inode. This means they will not work between different machines because they link to different inodes
 ### Symlinks
 Symlinks point one path name to another path name
+## Shell expansions
