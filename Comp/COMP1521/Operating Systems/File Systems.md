@@ -70,13 +70,14 @@ We then set the permissions they have eg:
 `chmod urwx file_name.txt` will change the owner's permissions to read write and execute
 #### Octal
 For each group we represent their permissions with a single octal digit.
-Eg: ``
-
-
-
+Eg: `rwe` -> `111` -> `7`
 ## Links
 ### Hard Links
 Hard links make multiple file paths link to the same inode. This means they will not work between different machines because they link to different inodes
 ### Symlinks
 Symlinks point one path name to another path name
 ## Shell expansions
+In the shell we have some special charters which expand to another string.
+Some examples are:
+- `~` -> `/home/kais`
+- `*` -> all files in a directory matching the specified format
