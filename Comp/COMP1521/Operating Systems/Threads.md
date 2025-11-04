@@ -20,3 +20,10 @@ They all have:
 		- `int main(int argc, char *argv[], char *env[])`
 		- `getenv(char *s)` from `stdlib.h`
 	- can be edited through `setenv(const char *envName, const char *value, int overwrite)`
+-  designated address space
+## Multi tasking
+Multiple process will run on the cpu in turns where we switch between the tasks so quickly that it seems as if they are all running at once.
+
+The time slice that each program is offered is dependent on the machine used.
+
+Typically process that handle user input usually get higher priority
