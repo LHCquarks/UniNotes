@@ -15,4 +15,8 @@ They all have:
 	- *LANG* - preferred language
 	- *HOME* - the home dir
 	- *PATH* - where to search for executable
-	- passed in via `extern char **environ;`
+	- passed in via:
+		- `extern char **environ;`
+		- `int main(int argc, char *argv[], char *env[])`
+		- `getenv(char *s)` from `stdlib.h`
+	- can be edited through `setenv(const char *envName, const char *value, int overwrite)`
