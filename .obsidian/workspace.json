@@ -8,31 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ebf3018a4f9c0315",
+            "id": "161faef8d5d49616",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Functions/Analytic Functions.md",
+                "file": "Maths/MATH2621/Series/Taylor Series.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Analytic Functions"
-            }
-          },
-          {
-            "id": "bb44b22e3866ee2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/Complex Functions/Analytic Continuation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Analytic Continuation"
+              "title": "Taylor Series"
             }
           },
           {
@@ -49,8 +35,7 @@
               "title": "MATH2621"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,16 +183,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bb44b22e3866ee2c",
+  "active": "161faef8d5d49616",
   "lastOpenFiles": [
+    "Maths/MATH2621/MATH2621.md",
+    "Maths/MATH2621/Series/Taylor Series.md",
     "Maths/MATH2621/Complex Functions/Analytic Functions.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
+    "Maths/MATH2621/Complex Specific Calculus/Residue Theorem.md",
+    "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Maths/MATH2621/Complex Functions/Analytic Continuation.md",
     "Maths/MATH2621/Complex Specific Calculus/Morera's Theorem.md",
-    "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
-    "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
     "Comp/COMP2521/Abstract Data Types/Map.md",
@@ -224,9 +211,7 @@
     "Comp/COMP2521/Binary Search Trees/Balancing BSTs.md",
     "Comp/COMP2521/Algorithms.md",
     "Comp/COMP2521/Binary Search Trees/Untitled.md",
-    "Maths/MATH2621/Path Integral detour/Curves.md",
     "Comp/COMP2521/Binary Search Trees",
-    "Maths/MATH2621/Path Integral detour/Path Integral Detour.md",
     "Maths/MATH2621/Path Integral detour",
     "Comp/COMP2521/Graphs",
     "Maths/MATH2621/Complex Functions/res/exp.png",
