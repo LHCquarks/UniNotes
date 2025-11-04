@@ -21,6 +21,19 @@ They all have:
 		- `getenv(char *s)` from `stdlib.h`
 	- can be edited through `setenv(const char *envName, const char *value, int overwrite)`
 -  designated address space
+To create process we use:
+- `posix_spawn()`
+- `fork()` - clone your self
+- `exec()`
+- `execv()` - kill your self in the process
+- `execvp()` - kill your self in the process
+To terminate a process we use:
+- `exit()`
+- `_exit()`
+- `kill()`
+To monitor a process we use:
+- `waitpid()`
+
 ## Multi tasking
 Multiple process will run on the cpu in turns where we switch between the tasks so quickly that it seems as if they are all running at once.
 
