@@ -26,3 +26,11 @@ $$
 \end{align}
 $$
 ### Mean value formula
+
+## Generalized Cauchy Integral formula
+With the same setup as the Cauchy Integral formula we get
+$$
+\begin{align}
+f^{(n)}(w) = \frac{n!}{2\pi i}\int_\Gamma \frac{f(z)}{(z-w)^{n + 1}}dz
+\end{align}
+$$
