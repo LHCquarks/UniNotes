@@ -9,4 +9,10 @@ They all have:
 	- can use **getpid()** to get the current PID or **getppid()** to get the parent PID
 - children and parent process
 	- when a parent process terminates all the children process are inherited by the init process
-	- 
+-  environment variables
+	- these are settings related to the environment that a process can read / modify
+	- *TZ* - time zone
+	- *LANG* - preferred language
+	- *HOME* - the home dir
+	- *PATH* - where to search for executable
+	- passed in via `extern char **environ;`
