@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Series/Taylor Series.md",
+                "file": "Comp/COMP2521/Graphs/Graphs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Taylor Series"
+              "title": "Graphs"
             }
           },
           {
@@ -200,8 +200,8 @@
   },
   "active": "22b90639638860c7",
   "lastOpenFiles": [
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Maths/MATH2621/Series/Taylor Series.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Complex Functions/Analytic Functions.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
