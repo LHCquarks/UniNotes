@@ -4,53 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "0234028467c409b5",
+        "id": "5a7c26b60163e363",
         "type": "tabs",
         "children": [
           {
-            "id": "161e1dfaec324257",
+            "id": "ebf3018a4f9c0315",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP1521/Operating Systems/File Systems.md",
+                "file": "Maths/MATH2621/Complex Functions/Analytic Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "File Systems"
+              "title": "Analytic Functions"
             }
           },
           {
-            "id": "493879503607f786",
+            "id": "bb44b22e3866ee2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2521/Abstract Data Types/Abstract Data Types.md",
+                "file": "Maths/MATH2621/Complex Functions/Analytic Continuation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Abstract Data Types"
+              "title": "Analytic Continuation"
             }
           },
           {
-            "id": "76a4ea771214adaf",
+            "id": "101862803e025020",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2521/Abstract Data Types/Map.md",
+                "file": "Maths/MATH2621/MATH2621.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Map"
+              "title": "MATH2621"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,8 +198,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "76a4ea771214adaf",
+  "active": "bb44b22e3866ee2c",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Functions/Analytic Functions.md",
+    "Maths/MATH2621/Complex Functions/Analytic Continuation.md",
+    "Maths/MATH2621/Complex Specific Calculus/Morera's Theorem.md",
+    "Maths/MATH2621/MATH2621.md",
+    "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
+    "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
+    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
     "Comp/COMP2521/Abstract Data Types/Map.md",
     "Comp/COMP2521/Abstract Data Types/Abstract Data Types.md",
     "Comp/COMP2521/Abstract Data Types/Hash Tables.md",
@@ -216,18 +226,8 @@
     "Comp/COMP2521/Binary Search Trees/Untitled.md",
     "Maths/MATH2621/Path Integral detour/Curves.md",
     "Comp/COMP2521/Binary Search Trees",
-    "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Path Integral detour/Path Integral Detour.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
-    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
-    "Maths/MATH2621/Path Integral detour/Vector fields.md",
-    "Maths/MATH2621/Path Integral detour/Path integrals.md",
     "Maths/MATH2621/Path Integral detour",
-    "Maths/MATH2621/Complex Functions/Complex powers.md",
-    "Maths/MATH2621/Complex Functions/Trig functions.md",
-    "Maths/MATH2621/Complex Functions/Inverse functions.md",
-    "Maths/MATH2621/Complex Functions/Hyperbolic Trig.md",
     "Comp/COMP2521/Graphs",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
