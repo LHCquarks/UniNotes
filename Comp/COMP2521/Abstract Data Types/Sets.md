@@ -22,6 +22,10 @@ Basic set operations:
 	- Lookups are $O(n)$
 	- Inserting requires an $O(n)$ lookup and an $O(1)$ insert for $O(n)$
 	- Removing takes an $O(n)$ lookup and an $O(1)$ removal for $O(n)$
+- Hash table
+	- Lookups are $O(1)$
+	- Inserting is $O(1)$
+	- Removing is $O(1)$
 ## Interface
 ```c
 #include <stdbool.h>

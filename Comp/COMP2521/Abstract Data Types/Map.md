@@ -63,7 +63,6 @@ Similar to linear probing, when we get a collision we add a special number to th
 By hashing the key another time we get more *random* behavior, reducing the chance of our items clustering together.
 #### Structs
 
-
 ## Hash functions
 Hash functions map keys into ints. 
 We want our hash functions to be:
