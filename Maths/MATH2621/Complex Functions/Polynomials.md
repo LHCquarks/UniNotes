@@ -21,7 +21,7 @@ $$
 for any polynomial $p(z)$ and $q(z)$.
 ## Differences
 ### Fundamental theorem of algebra
-In the complex world every non constant polynomial can be factorised such that
+In the complex world every non constant polynomial can be factorized such that
 $$
 \begin{align}
 p(z)=c\prod_{j=1}^{d}(z-\alpha_j) \tag{2}
