@@ -23,7 +23,7 @@ Further we get the relationships that:
 $$
 \begin{align}
 \sin(iy) &= i\sinh(y) \\
-\cos(ix) &= \cosh(y)
+\cos(ix) &= \cosh(y) \\
 \end{align}
 $$
 ## Derivatives

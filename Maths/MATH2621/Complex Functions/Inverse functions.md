@@ -2,10 +2,8 @@
 Non one-to-one functions are hard to make a proper inverse for.
 
 If we get given a point that could have resulted from many different inputted values should our inverse function give back all of them or just one? If we give back only one which one?
-
 ## Solutions
 There are two solutions to this problem...
-
 ### Multi values inverse function
 Multi valued inverse functions give back all the points that could have generated a certain output at once. 
 
@@ -36,11 +34,10 @@ $$
 \end{align}
 $$
 ## Branch cuts
-Branch cuts occur when we restrict a domain maximally. This means at the edges of our domain will map to the same value in the image. 
+Branch cuts occur when we restrict a domain maximally. This means the edges of our domain will map to the same value in the image. 
 
 This edge is our branch cut and generally results in the function becoming discontinuous at the edge.
 
 By carefully selecting our restricted domains we are usually able to avoid discontinuities in places that we care about
-
 ### Branch points
 Unfortunately for most functions it doesn't matter what branch we take, there will be a few points that will appear in any branch cut. These are called **Branch points**
