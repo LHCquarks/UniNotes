@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2521/Abstract Data Types/Counter.md",
+                "file": "Maths/MATH2621/Complex Functions/Trig functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Counter"
+              "title": "Trig functions"
             }
           }
         ],
@@ -186,10 +186,12 @@
   },
   "active": "1252ec7754cef4a2",
   "lastOpenFiles": [
+    "Maths/MATH2621/Series/Power Series.md",
+    "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
+    "Comp/COMP2521/Abstract Data Types/Counter.md",
     "Comp/COMP2521/Abstract Data Types/Map.md",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees/Balancing BSTs.md",
-    "Comp/COMP2521/Abstract Data Types/Counter.md",
     "Comp/COMP2521/Abstract Data Types/Sets.md",
     "Comp/COMP1521/Operating Systems/Threads.md",
     "Comp/COMP1521/Operating Systems/Files.md",
@@ -211,7 +213,6 @@
     "Comp/COMP2521/Abstract Data Types/Hash Tables.md",
     "Comp/COMP1521/Operating Systems/Operating Systems.md",
     "Comp/COMP1521/Operating Systems/File Systems.md",
-    "Comp/COMP2521/Binary Search Trees/Binary Search Trees.md",
     "Comp/COMP2521/Binary Search Trees",
     "Maths/MATH2621/Path Integral detour",
     "Comp/COMP2521/Graphs",
