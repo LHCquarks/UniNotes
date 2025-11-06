@@ -1,12 +1,11 @@
 ## What is a function
 It is a machine that takes something/s in and spits something out.
 ### Domain
-The domain is what we are allowed to put into the function. If not specified we usually consider the larges reasonable domain
+The domain is what we are allowed to put into the function. If not specified we usually consider the largest reasonable domain
 ### Co-domain
 This is the set of all possible outputs of the function + some more
 ### Range
 The set of all possible outputs of the function
-
 ## Complex function
 This is when we allow the domain and range to be apart of the complex numbers
 ### Examples
@@ -25,7 +24,7 @@ $$
 f(z) = u(r, \theta) + iv(r, \theta) \tag{2}
 \end{align}
 $$
-where $z = e^{i\theta}$.
+where $z = re^{i\theta}$.
 This can also be a more insightful representation of the function especially if the function has some sort of angular symmetry
 #### Example
 $$
