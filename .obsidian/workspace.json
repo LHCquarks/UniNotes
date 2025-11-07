@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "df17be6a8d14590f",
+        "id": "3d0cc597705c15de",
         "type": "tabs",
         "children": [
           {
-            "id": "1252ec7754cef4a2",
+            "id": "d3c9207a410866da",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/Complex Functions/Complex Functions.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Complex Functions"
-            }
-          },
-          {
-            "id": "a92406e661c029e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/MATH2621.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MATH2621"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,10 +165,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a92406e661c029e9",
+  "active": "d3c9207a410866da",
   "lastOpenFiles": [
-    "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
+    "Maths/MATH2621/MATH2621.md",
+    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
     "Maths/MATH2621/Complex Functions/Analytic Continuation.md",
     "Maths/MATH2621/Complex Functions/Analytic Functions.md",
@@ -212,7 +194,6 @@
     "Comp/COMP2521/Abstract Data Types/Sets.md",
     "Comp/COMP1521/Operating Systems/Threads.md",
     "Comp/COMP1521/Operating Systems/Files.md",
-    "Comp/COMP1521/Operating Systems/Text Representation.md",
     "Comp/COMP2521/Binary Search Trees",
     "Maths/MATH2621/Path Integral detour",
     "Comp/COMP2521/Graphs",
