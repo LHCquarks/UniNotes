@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3d0cc597705c15de",
+        "id": "1b69937638e2dbf8",
         "type": "tabs",
         "children": [
           {
-            "id": "d3c9207a410866da",
+            "id": "cdcdb25459421f8d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Comp/COMP1521/Computer architecture/Computer Architecture.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Computer Architecture"
+              "title": "New tab"
             }
           }
         ]
@@ -169,9 +165,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d3c9207a410866da",
+  "active": "cdcdb25459421f8d",
   "lastOpenFiles": [
     "Comp/COMP1521/Operating Systems/Files.md",
+    "Comp/COMP1521/Computer architecture/Computer Architecture.md",
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
     "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
@@ -197,7 +194,6 @@
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees/Balancing BSTs.md",
     "Comp/COMP2521/Abstract Data Types/Sets.md",
-    "Comp/COMP1521/Operating Systems/Threads.md",
     "Comp/COMP2521/Binary Search Trees",
     "Maths/MATH2621/Path Integral detour",
     "Comp/COMP2521/Graphs",
