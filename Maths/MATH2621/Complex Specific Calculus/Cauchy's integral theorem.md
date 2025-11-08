@@ -14,7 +14,7 @@ $$
 \end{align}
 $$
 ### Existence of primitives
-Suppose we have the contour integral and a **Holomorphic** function $f$
+Suppose we have the contour integral and a **holomorphic** function $f$
 $$
 \begin{align}
 \int_\Gamma f(z)dz
