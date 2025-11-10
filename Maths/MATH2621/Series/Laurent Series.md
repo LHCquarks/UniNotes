@@ -1,4 +1,4 @@
-The Laurent Series of a function is like the Taylor series of a function but we allow negative powers
+The Laurent Series of a function is a generalization of the Taylor series of a function allowing negative powers.
 
 ## Definition
 A Laurent Series is defined on the annulus (ring) $\text A = \{z\in \mathbb C: R_1 < |z - z_0| < R_2\}$ where $R_1 < r < R_2$, $f \in \text H(\text A)$ then:
