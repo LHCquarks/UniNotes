@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Functions/Residues.md",
+                "file": "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Residues"
+              "title": "Evaluating Integrals"
             }
           },
           {
@@ -199,9 +199,9 @@
   },
   "active": "0fe719d63aeed3a5",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Functions/Residues.md",
     "Maths/MATH2621/Series/Laurent Series.md",
     "Maths/MATH2621/Complex Functions/Singularities.md",
-    "Maths/MATH2621/Complex Functions/Residues.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
