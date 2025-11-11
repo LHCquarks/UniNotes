@@ -60,3 +60,6 @@ int pthread_create(
 	void *restrict arg
 );
 ```
+
+### Watch out for thread concurrency issues
+- **Race conditions**
