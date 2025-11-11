@@ -42,3 +42,11 @@ $$
 &= 2\pi i (\alpha_1 + \beta_1)\\
 \end{align}
 $$
+Find the residue at $0$ of $f(z) = 2z\sin(z^{-2})$:
+$$
+\begin{align}
+f(z) &= 2z(z^{-2} - z^{-6}/3! + z^{-10}/5! + ...) \\
+&= 2z^{-1} + ...\\
+\text{Res}(f,0) &= 2
+\end{align}
+$$
