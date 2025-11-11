@@ -8,7 +8,7 @@ The singularity is called a:
 - <span style="color:red">removable singularity</span> if there are no $n \in \mathbb Z^-$ such that $c_n \not = 0$
 - <span style="color: DodgerBlue">pole</span> if there are finitely many terms with a negative power. In this case the largest of these terms $-m$ is the order of the pole and we say $f$ has a <span style="color:DodgerBlue">pole of order m</span>
 
-## examples
+## Examples
 Take 
 $$
 \begin{align}
@@ -36,4 +36,3 @@ $$
 2. there exists a function $F \in \text H(\text B (z_0, R))$ such that $f(z) = (z - z_0)^{-M}F(z)$ and $F(z_0) \not = 0$
 3. $\lim_{z \rightarrow z_0} (z- z_0)^Mf(z)$ exists in $\mathbb C \backslash {0}$
 4. there exists $C \in \mathbb R^+$ and $r \in (0, R)$ such that $|f(z)| \le C|z - z_0|^{-M}$ for all $z \in \text B^\circ(z_0, r)$
-
