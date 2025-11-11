@@ -36,3 +36,16 @@ $$
 2. there exists a function $F \in \text H(\text B (z_0, R))$ such that $f(z) = (z - z_0)^{-M}F(z)$ and $F(z_0) \not = 0$
 3. $\lim_{z \rightarrow z_0} (z- z_0)^Mf(z)$ exists in $\mathbb C \backslash {0}$
 4. there exists $C \in \mathbb R^+$ and $r \in (0, R)$ such that $|f(z)| \le C|z - z_0|^{-M}$ for all $z \in \text B^\circ(z_0, r)$
+### Picard's theorem
+If $f$ has an essential singularity at $z_0$, then for all $\delta > 0$ , the set $\mathbb C \backslash f(\text B^\circ (z_0, \delta))$ has at most one element.
+## Lhopital's rule
+Lhopital's rule holds in the complex case and so can be used to easily find the nature of a singularity:
+Find the type of singularity of $f(z)  = (1 - \cos(z))^2 / z$
+$$
+\begin{align}
+\lim_{z \rightarrow 0} f(z) &= \lim_{z \rightarrow 0} \frac{(1-\cos(z))^2}{z} \\
+&= \lim_{z \rightarrow 0} \frac{(1-\cos(z))\sin(z)}{1} \\
+&= 0
+\end{align}
+$$
+so $f(z)$ has a <span style="color:red">removable singularity</span> that is a zero
