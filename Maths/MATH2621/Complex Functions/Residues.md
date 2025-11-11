@@ -20,9 +20,9 @@ f(z) &= c_{-N}(z - z_0)^{-N} + c_{1-N} (z- z_0) ^{1- N} + ... \\
 & \ \ \ \ \ c_{-1} (z - z_0)^{-1} + c_0 (z- z_0)^0 + ... \\
 (z- z_0)^N f(z) &= c_{-N} (z - z_0)^0 + c_{N-1} (z- z_0)^1 + ... \\
 & \ \ \ \ \ c_{-1} (z - z_0)^{N - 1} + c_0 (z- z_0)^N + ... \\
-\frac{d^N}{dz^N}((z- z_0)^N f(z)) &= (N- 1)! c_{-1}(z- z_0)^0 + ... \\
-\lim_{z \rightarrow z_0} \frac{d^N}{dz^N}(z- z_0)^N f(z) &= (N - 1)! c_{-1} \\
-\implies \text{Res}(f, z_0) &= \frac{1}{(N-1)!}\lim_{z \rightarrow z_0} \frac{d^N}{dz^N}(z- z_0)^N f(z)
+\frac{d^{N-1}}{dz^{N-1}}((z- z_0)^N f(z)) &= (N- 1)! c_{-1}(z- z_0)^0 + ... \\
+\lim_{z \rightarrow z_0} \frac{d^{N-1}}{dz^{N-1}}(z- z_0)^N f(z) &= (N - 1)! c_{-1} \\
+\implies \text{Res}(f, z_0) &= \frac{1}{(N-1)!}\lim_{z \rightarrow z_0} \frac{d^{N-1}}{dz^{N-1}}(z- z_0)^N f(z)
 \end{align}
 $$
 
