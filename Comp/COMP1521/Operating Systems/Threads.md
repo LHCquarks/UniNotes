@@ -63,3 +63,4 @@ int pthread_create(
 
 ### Watch out for thread concurrency issues
 - **Race conditions**
+- **Deadlocks**
