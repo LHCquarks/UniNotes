@@ -40,3 +40,21 @@ Multiple process will run on the cpu in turns where we switch between the tasks 
 The time slice that each program is offered is dependent on the machine used.
 
 Typically process that handle user input usually get higher priority
+
+## Concurrency vs parallelism
+**Concurrency** is where different process execute by switching back and forth.
+
+**parallelism** is where different process executes at the same time
+
+## Threads
+**Threads** share address space reducing the overhead for switching between threads and making it easier to communicate between threads.
+
+We can create a new thread with 
+```
+int pthread_create(
+	pthread_t *restrict thread,
+	const pthread_attr_t *restrict attr,
+	typeof(void *(void *)) *start_routine,
+	void *restrict arg
+);
+```

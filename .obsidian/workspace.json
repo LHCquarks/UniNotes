@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "23544e0123cf1253",
+        "id": "a89444ac9bd687fa",
         "type": "tabs",
         "children": [
           {
-            "id": "806c93becf62d6ef",
+            "id": "e6e4f3297f1f9353",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Series/Laurent Series.md",
+                "file": "Comp/COMP1521/Operating Systems/Threads.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laurent Series"
-            }
-          },
-          {
-            "id": "c7eb9964274c01e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2621/Complex Functions/Singularities.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Singularities"
+              "title": "Threads"
             }
           }
         ]
@@ -183,13 +169,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "806c93becf62d6ef",
+  "active": "e6e4f3297f1f9353",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Functions/Singularities.md",
+    "Maths/MATH2621/Series/Laurent Series.md",
     "Phys/PHYS1241/Waves/Phasors.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Maths/MATH2621/Complex Functions/Residues.md",
-    "Maths/MATH2621/Series/Laurent Series.md",
-    "Maths/MATH2621/Complex Functions/Singularities.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
