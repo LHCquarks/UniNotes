@@ -52,7 +52,7 @@ Typically process that handle user input usually get higher priority
 Despite them sharing the address space they have different stacks and registers
 
 We can create a new thread with 
-```
+```c
 int pthread_create(
 	pthread_t *restrict thread,
 	const pthread_attr_t *restrict attr,
