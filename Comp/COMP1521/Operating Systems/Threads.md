@@ -49,6 +49,8 @@ Typically process that handle user input usually get higher priority
 ## Threads
 **Threads** share address space reducing the overhead for switching between threads and making it easier to communicate between threads.
 
+Despite them sharing the address space they have different stacks and registers
+
 We can create a new thread with 
 ```
 int pthread_create(
