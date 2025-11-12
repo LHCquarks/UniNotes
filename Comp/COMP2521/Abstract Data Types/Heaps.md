@@ -25,7 +25,7 @@ The completeness property means that a heap will always have $\lfloor log_2(n)\r
 ### Implementation Details
 Heaps are usually implemented using an array, where,
 - The `0th` element is not used
-- The `nth` level starts at the array's `2nth` index
+- The `nth` level starts at the array's `(2*n)th` index
 - Array is in order of the tree's level order traversal. This implies the following useful property:
     - For an item at index `i`:
         - Its left child is located at index `2i`
