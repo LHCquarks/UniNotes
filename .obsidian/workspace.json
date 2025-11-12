@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2521/Abstract Data Types/Heaps.md",
+                "file": "Comp/COMP2521/Abstract Data Types/Tries.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Heaps"
+              "title": "Tries"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "e6e4f3297f1f9353",
   "lastOpenFiles": [
+    "Comp/COMP2521/Abstract Data Types/Heaps.md",
     "Comp/COMP1521/Operating Systems/Threads.md",
     "Maths/MATH2621/Complex Functions/Singularities.md",
     "Maths/MATH2621/Series/Laurent Series.md",
@@ -196,7 +197,6 @@
     "Maths/MATH2621/Complex Functions/Inverse functions.md",
     "Maths/MATH2621/Complex Functions/Trig functions.md",
     "Maths/MATH2621/Complex Functions/Hyperbolic Trig.md",
-    "Maths/MATH2621/Complex Functions/Complex powers.md",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
     "Maths/MATH2621/Path Integral detour",

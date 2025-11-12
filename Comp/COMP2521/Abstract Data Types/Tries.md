@@ -22,7 +22,3 @@ Tries are particularly effective for:
 - A trie is implemented using arrays of size 26 (one entry for each letter of the alphabet).
 - Each array entry is an array, containing a children array, a finish bool, and the data associated with the string
 - The end of a string is marked with a finishing node (a node where the finish bool is set to true)
-
-
-
-
