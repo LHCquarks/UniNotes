@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Specific Calculus/Residue Theorem.md",
+                "file": "Comp/COMP1521/Operating Systems/Operating Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Residue Theorem"
+              "title": "Operating Systems"
             }
           }
         ]
@@ -171,6 +171,8 @@
   },
   "active": "e6e4f3297f1f9353",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Functions/Residues.md",
+    "Maths/MATH2621/Complex Specific Calculus/Residue Theorem.md",
     "Comp/COMP1521/Operating Systems/Text Representation.md",
     "Comp/COMP2521/Abstract Data Types/Tries.md",
     "Comp/COMP2521/Abstract Data Types/Heaps.md",
@@ -179,7 +181,6 @@
     "Maths/MATH2621/Series/Laurent Series.md",
     "Phys/PHYS1241/Waves/Phasors.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
-    "Maths/MATH2621/Complex Functions/Residues.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
@@ -196,7 +197,6 @@
     "Maths/MATH2621/Complex Functions/Analytic Functions.md",
     "Maths/MATH2621/Complex Functions/Roots.md",
     "Maths/MATH2621/Complex Functions/Logarithms.md",
-    "Maths/MATH2621/Complex Functions/Inverse functions.md",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
     "Maths/MATH2621/Path Integral detour",
