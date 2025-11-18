@@ -85,4 +85,10 @@ f(t) = \lim_{R \rightarrow \infty} \frac{1}{2\pi i} \int_\lambda \mathcal Lf(z)e
 $$
 where $\lambda$ is the line segment from $\sigma - iR$ to $\sigma + iR$ and $\sigma \in(A, \infty)$ 
 
-Further, if $|\mathcal Lf(t)| \le $
+Further, if $|\mathcal Lf(t)| \le M|z|^{-k}$ then
+$$
+\begin{align}
+f(t) = \sum_{j = 1}^n \text{Res}(\mathcal L f(z) e^{zt}, z = a_j)
+\end{align}
+$$
+where $a_j$ are all the problem points
