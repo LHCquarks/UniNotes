@@ -48,6 +48,12 @@ $$
 \end{align}
 $$
 #### Transform of polynomial
+Just like last but $a = 0$ so:
+$$
+\begin{align}
+\mathcal L(p(t)) &= \sum_{k=0}^Kc_k \frac{k!}{z^{k+1}}\\
+\end{align}
+$$
 ### Derivative
 The derivative of a Laplace transform is 
 $$
@@ -92,3 +98,78 @@ f(t) = \sum_{j = 1}^n \text{Res}(\mathcal L f(z) e^{zt}, z = a_j)
 \end{align}
 $$
 where $a_j$ are all the problem points
+
+## Differential equations
+Take the equation:
+$$
+\begin{align}
+\frac{d^2u}{dt^2} - 2\frac{du}{dt} + u &= t \\
+\text{Take the Laplace of both sides} \\
+\mathcal L(u'') - 2\mathcal L(u') + \mathcal L(u) &= \frac{1}{s} \\
+s^2\mathcal L(u) - u'(0) - zu(0) - 2s\mathcal L(u) + u(0) + \mathcal L(u) &= \frac{1}{s^2} \\
+\text{Let } u(0) = u'(0) &= 0 \\
+s^2\mathcal L(u) - 2s\mathcal L(u) + \mathcal L(u) = \frac{1}{s^2} \\
+\mathcal L(u) = \frac{1}{s^2 (s^2 - 2s + 1)} \\
+\mathcal L(u) = \frac{1}{s^2 (s^2 - 2s + 1)} \\
+\end{align}
+$$
+
+Take the 1d wave equation
+$$
+\begin{align}
+\frac{\partial^2 u}{\partial x^2} &= \frac{\partial^2 u}{\partial t^2}
+\end{align}
+$$
+also take the initial conditions:
+$$
+\begin{align}
+u(x, 0) = \frac{\partial u}{\partial t}(x, 0) = 0\\
+u(0, t) = f(t) \text{ where } f(t) = 0 : \\
+\end{align}
+$$
+taking the laplace transform with respect to t we get
+$$
+\begin{align}
+\frac{\partial^2 \mathcal L u}{\partial x^2} &= s^2 \mathcal L u \\
+\mathcal L u(z, s) &= A(s) e^{sx} + B(s)e^{-sx} \\
+\end{align}
+$$
+To keep our string bounded we assume that $A(s) = 0$ so
+$$
+\begin{align}
+B(s) = \mathcal L u(0,s) = \mathcal L f(s) \\
+\implies u(z, t) = f(t - x) \\
+\end{align}
+$$
+## Convolutions
+The convolution of f and g denoted as $f *g$ is:
+$$
+\begin{align}
+f * g(t) = \int_0^t f(s) g(t-s)ds
+\end{align}
+$$
+We get the properties:
+$$
+\begin{align}
+f*(ag + bh) &= af*g + bf*h\\
+f*g &= g*f \\
+\mathcal L (f*g) &= \mathcal Lf \mathcal Lg
+\end{align}
+$$
+Take the equation:
+$$
+\begin{align}
+u(t) = t^2 - \frac{2}{3} \int_0^t (t-s)^3 u(s)ds
+\end{align}
+$$
+Notice this is the convolution:
+$$
+\begin{align}
+u(t) &= t^2 - \frac{2}{3}t^3 *u(t)\\
+\mathcal Lu &= \frac{2}{z^3} - \frac{4}{z^4} \mathcal Lu \\
+\mathcal Lu &= \frac{2z}{z^4 + 4} \\
+u &= \sum_{j=0}^k \text{Res}(\frac{2z}{z^4 + 1} e^{zt}, z_j) \\
+u &= \sum_{j=0}^k \text{Res}(\frac{2z}{z^4 + 1} e^{zt}, z_j) \\
+u &= \sinh t\sin t \text{ Trust me bro}\\
+\end{align}
+$$
