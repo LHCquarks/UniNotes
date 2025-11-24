@@ -1,5 +1,6 @@
 The Laplace transform takes a function and splits it up into it's exponential parts.
 
+## Exponential types
 We say that a function $f: [0, \infty) \rightarrow \mathbb C$ is **exponential type** $A$ if there exists a constant $C$ such that
 $$
 \begin{align}
@@ -10,7 +11,7 @@ and exponential type $A+$ if it is **exponential type** $A + \epsilon$  for all 
 
 Linear combinations of exponentials of type A and B makes a new function of type $\max\{A, B\}$ and multiples are of type $A + B$A
 
-## Deffinition
+## Definition
 The Laplace transform is defined for functions $f: [0, \infty) \rightarrow \mathbb C$ and is defined as:
 $$
 \begin{align}
