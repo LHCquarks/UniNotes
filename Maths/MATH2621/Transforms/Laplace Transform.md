@@ -101,7 +101,8 @@ s^2\mathcal L(u) - u'(0) - zu(0) - 2s\mathcal L(u) + u(0) + \mathcal L(u) &= \fr
 s^2\mathcal L(u) - 2s\mathcal L(u) + \mathcal L(u) &= \frac{1}{s^2} \\
 \mathcal L(u) &= \frac{1}{s^2 (s^2 - 2s + 1)} \\
 \mathcal L(u) &= \frac{1}{s^2 (s-1)^2} \\
-\mathcal Lu &= \frac{1}{s^2} + \frac{1}{s} + \frac{1}{(s - 1)^2} +\frac{1}{(s - 1)} \\
+\mathcal Lu &= \frac{1}{s^2} + \frac{2}{s} + \frac{1}{(s - 1)^2} - \frac{2}{(s - 1)} \\
+u(t) &= t + 2 + te^t - 2e^t \\
 \end{align}
 $$
 
