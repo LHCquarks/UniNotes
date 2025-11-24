@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Transforms/Laplace Transform.md",
+                "file": "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laplace Transform"
+              "title": "Evaluating Integrals"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "e6e4f3297f1f9353",
   "lastOpenFiles": [
+    "Maths/MATH2621/Transforms/Laplace Transform.md",
     "Comp/COMP1521/Operating Systems/File Systems.md",
     "Comp/COMP1521/Operating Systems/Operating Systems.md",
     "Maths/MATH2621/Complex Functions/Residues.md",
@@ -196,7 +197,6 @@
     "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
     "Maths/MATH2621/Complex Functions/Analytic Continuation.md",
-    "Maths/MATH2621/Complex Functions/Analytic Functions.md",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
     "Maths/MATH2621/Path Integral detour",
