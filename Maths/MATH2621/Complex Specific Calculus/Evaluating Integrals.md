@@ -71,7 +71,35 @@ We then can use the Residue theorem to evaluate this integral as
 $$
 \begin{align}
 \int_\Gamma \frac{1}{z^4 + 1}dz &= 2\pi i \left[\text{Res}\left(f, \frac{1 + i}{\sqrt2}\right) + \text{Res}\left(f, \frac{-1 + i}{\sqrt2}\right)\right] \\
-&= 2\pi i \left[ \right]
+&= 2\pi i \left[ \frac{1}{4((1 + i)/\sqrt2)^3} + \frac{1}{4((-1 + i)\sqrt2)^3 }\right] \\
+&= 2\pi i \left[ \frac{1}{2\sqrt2(-1 + i)} + \frac{1}{2\sqrt2(1 + i)}\right] \\
+&= \frac{\pi i}{\sqrt2} \left[ \frac{-1 - i}{2} + \frac{1 - i}{2}\right] \\
+&= \frac{\pi i}{\sqrt2} (-i) \\
+&= \frac{\pi}{\sqrt2} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Now we can also split this contour integral into two contours: $\Lambda, \Delta$ where $\Lambda$ represents the bottom part of the semicircle that lies on the real line and $\Delta$ is the curved part.
+
+We can then write:
+$$
+\begin{align}
+\int_\Gamma\frac{1}{z^4+1}dz &= \int_\Lambda \frac{1}{z^4 + 1}dz + \int_\Delta \frac{1}{z^4 + 1} dz \\
+\end{align}
+$$
+Obviously as $R$ goes to $\infty$, $\int_\Lambda \frac{1}{z^4 + 1}dz$ goes to $I$
+
+By the ML lemma and the triangle inequality we get that
+$$
+\begin{align}
+\int_\Delta \frac{1}{z^4 + 1}dz &\le \frac{1}{|z^4 + 1|}\text{Length}(\Delta)\\
+&\le \frac{1}{|z^4| + |1|}\pi R\\
+&\le \frac{\pi R}{R^4 + 1}\\
+\end{align}
+$$
+Which tends to $0$ as $R \rightarrow \infty$. Thus in the limit as $R \rightarrow \infty$
+$$
+\begin{align}
+I &= \int_\Gamma \frac{1}{z^4 + 1}dz \\
+&= \frac{\pi}{\sqrt2}
+\end{align}
+$$
