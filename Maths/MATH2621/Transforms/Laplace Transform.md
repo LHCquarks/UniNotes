@@ -87,7 +87,7 @@ $$
 f(t) = \sum_{j = 1}^n \text{Res}(\mathcal L f(z) e^{zt}, z = a_j)
 \end{align}
 $$
-where $a_j$ are all the problem points
+where $a_j$ are the finite points upon which $\mathcal L f$ is not **Holomorphic**
 
 ## Differential equations
 Take the equation:
