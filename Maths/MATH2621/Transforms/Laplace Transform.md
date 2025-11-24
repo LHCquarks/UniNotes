@@ -98,11 +98,16 @@ $$
 \mathcal L(u'') - 2\mathcal L(u') + \mathcal L(u) &= \frac{1}{s} \\
 s^2\mathcal L(u) - u'(0) - zu(0) - 2s\mathcal L(u) + u(0) + \mathcal L(u) &= \frac{1}{s^2} \\
 \text{Let } u(0) = u'(0) &= 0 \\
-s^2\mathcal L(u) - 2s\mathcal L(u) + \mathcal L(u) = \frac{1}{s^2} \\
-\mathcal L(u) = \frac{1}{s^2 (s^2 - 2s + 1)} \\
-\mathcal L(u) = \frac{1}{s^2 (s^2 - 2s + 1)} \\
+s^2\mathcal L(u) - 2s\mathcal L(u) + \mathcal L(u) &= \frac{1}{s^2} \\
+\mathcal L(u) &= \frac{1}{s^2 (s^2 - 2s + 1)} \\
+\mathcal L(u) &= \frac{1}{s^2 (s-1)^2} \\
+\mathcal Lu &= \frac{1}{s^2} + \frac{1}{s} + \frac{1}{(s - 1)^2} +\frac{1}{(s - 1)} \\
 \end{align}
 $$
+
+
+
+
 
 Take the 1d wave equation
 $$
