@@ -12,12 +12,14 @@ and exponential type $A+$ if it is **exponential type** $A + \epsilon$  for all 
 Linear combinations of exponentials of type A and B makes a new function of type $\max\{A, B\}$ and multiples are of type $A + B$A
 
 ## Definition
-The Laplace transform is defined for functions $f: [0, \infty) \rightarrow \mathbb C$ and is defined as:
+The Laplace transform is defined for **locally integrable** and **exponential type A** functions $f: [0, \infty) \rightarrow \mathbb C$ and is defined as:
 $$
 \begin{align}
-\mathcal L_f(z) = \int_0^\infty f(t) e^{-zt}dt\\
+\mathcal Lf&: H_A \rightarrow \mathbb C\\
+\mathcal L_f(z) &= \int_0^\infty f(t) e^{-zt}dt\\
 \end{align}
 $$
+where $H_A$ is the half plane defined as $\{z\in \mathbb C: \text{Re}(z) > A\}$
 ## Properties
 ### Linearity
 The Laplace transform is linear:
@@ -50,7 +52,7 @@ $$
 \mathcal L(p(t)) &= \sum_{k=0}^Kc_k \frac{k!}{z^{k+1}}\\
 \end{align}
 $$
-### Derivative
+### Interaction with derivatives
 The derivative of a Laplace transform is 
 $$
 \begin{align}
@@ -63,19 +65,19 @@ $$
 \mathcal L(f') &= z\mathcal L(f) - f(0)\\
 \end{align}
 $$
+and:
+$$
+\begin{align}
+g(t) &= tf(t) \\
+\mathcal L g(z) &= -\frac{d}{dz}\mathcal Lf(z)
+\end{align}
+$$
 
 ### Translation
 $$
 \begin{align}
 g(t) &= e^{-at}f(t)\\
 \mathcal Lg(z) &= \mathcal L f(z+a) \\
-\end{align}
-$$
-### Der
-$$
-\begin{align}
-g(t) &= tf(t) \\
-\mathcal L g(z) &= -\frac{d}{dz}\mathcal Lf(z)
 \end{align}
 $$
 ## Inversion formula
