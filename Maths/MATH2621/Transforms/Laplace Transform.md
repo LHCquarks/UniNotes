@@ -1,17 +1,12 @@
 The Laplace transform takes a function and splits it up into it's exponential parts.
 
-We say that a function is exponential type $A$ if there exists a constant $C$ such that
+We say that a function $f: [0, \infty) \rightarrow \mathbb C$ is **exponential type** $A$ if there exists a constant $C$ such that
 $$
 \begin{align}
-|f(t)| \le Ce^{At}\\
+|f(t)| \le Ce^{At}\ \ \ \  \forall t\in [0, \infty)\\
 \end{align}
 $$
-and exponential type $A+$ if there exists a constant $C$ such that
-$$
-\begin{align}
-|f(t)| \le Ce^{(A + \epsilon)t}
-\end{align}
-$$
+and exponential type $A+$ if it is **exponential type** $A + \epsilon$  for all $\epsilon \in \mathbb R^+$
 
 Linear combinations of exponentials of type A and B makes a new function of type $\max\{A, B\}$ and multiples are of type $A + B$A
 
