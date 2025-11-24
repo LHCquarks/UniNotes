@@ -90,6 +90,7 @@ $$
 where $a_j$ are the finite points upon which $\mathcal L f$ is not **Holomorphic**
 
 ## Differential equations
+### $\frac{d^2u}{dt^2} - 2\frac{du}{dt} + u = t$
 Take the equation:
 $$
 \begin{align}
@@ -105,11 +106,7 @@ s^2\mathcal L(u) - 2s\mathcal L(u) + \mathcal L(u) &= \frac{1}{s^2} \\
 u(t) &= t + 2 + te^t - 2e^t \\
 \end{align}
 $$
-
-
-
-
-
+### The wave equation
 Take the 1d wave equation
 $$
 \begin{align}
@@ -120,23 +117,45 @@ also take the initial conditions:
 $$
 \begin{align}
 u(x, 0) = \frac{\partial u}{\partial t}(x, 0) = 0\\
-u(0, t) = f(t) \text{ where } f(t) = 0 : \\
+u(0, t) = f(t) \text{ where } f(t) = 0 \text { when } t\in [a, b]\\
 \end{align}
 $$
-taking the laplace transform with respect to t we get
+These initial conditions mimic a string who's center starts at 0 with velocity of 0. Further we drive the middle of the string with the function $f(t)$ which "turns off" in between a and b.
+
+Taking the Laplace transform with respect to t we get
 $$
 \begin{align}
 \frac{\partial^2 \mathcal L u}{\partial x^2} &= s^2 \mathcal L u \\
-\mathcal L u(z, s) &= A(s) e^{sx} + B(s)e^{-sx} \\
 \end{align}
 $$
-To keep our string bounded we assume that $A(s) = 0$ so
+This is just a simple order 2 differential equation of a single variable which solving gives:
 $$
 \begin{align}
-B(s) = \mathcal L u(0,s) = \mathcal L f(s) \\
-\implies u(z, t) = f(t - x) \\
+\mathcal L u(x, s) &= A(s) e^{sx} + B(s)e^{-sx} \\
 \end{align}
 $$
+
+To keep our string bounded at the ends we assume that $A(s) = 0$ so
+$$
+\begin{align}
+\mathcal Lu(x, s) &= B(s)e^{-sx}\\
+\end{align}
+$$
+Now looking at the center of the string by setting $x = 0$ we get
+$$
+\begin{align}
+B(s) &= \mathcal L u(0,s) \\
+&= \mathcal L f(s) \\
+\end{align}
+$$
+Therefore:
+$$
+\begin{align}
+\mathcal Lu (x, s) &= \mathcal Lf(s)e^{-sx} \\
+\implies u(x, t) &= f(t - x) \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 ## Convolutions
 The convolution of f and g denoted as $f *g$ is:
 $$
