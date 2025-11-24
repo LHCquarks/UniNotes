@@ -56,7 +56,7 @@ $$
 The derivative of a Laplace transform is 
 $$
 \begin{align}
-\frac{d}{dz}\mathcal L(f(t)) &= \mathcal L(-tg(t)) \\
+\mathcal L(tf(t)) = -\frac{d}{dz}\mathcal L(f(t))
 \end{align}
 $$
 We also get that
@@ -65,14 +65,6 @@ $$
 \mathcal L(f') &= z\mathcal L(f) - f(0)\\
 \end{align}
 $$
-and:
-$$
-\begin{align}
-g(t) &= tf(t) \\
-\mathcal L g(z) &= -\frac{d}{dz}\mathcal Lf(z)
-\end{align}
-$$
-
 ### Translation
 $$
 \begin{align}
