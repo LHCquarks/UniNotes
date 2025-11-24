@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
+                "file": "Maths/MATH2621/Transforms/Fourier Transform.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Evaluating Integrals"
+              "title": "Fourier Transform"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "e6e4f3297f1f9353",
   "lastOpenFiles": [
-    "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
+    "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
     "Maths/MATH2621/Transforms/Laplace Transform.md",
     "Comp/COMP1521/Operating Systems/File Systems.md",
     "Comp/COMP1521/Operating Systems/Operating Systems.md",
