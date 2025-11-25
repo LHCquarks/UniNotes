@@ -51,3 +51,7 @@ Recursive and Iterative DFS are both O(V + E) when using the adjacency list repr
     - Typical stack implementation has O(1) push and pop
     - Each vertex visited at most once -> O(V)
     - For each vertex, all of its edges are considered -> O(E)
+## Connected components
+To find all the connected components of a graph we perform repeated DFS searches until we have visited all the nodes in the graph.
+
+We switch out our visited array for a group array initialized to -1 and perform DFS on node $0$. We then 
