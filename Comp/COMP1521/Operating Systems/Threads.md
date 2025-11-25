@@ -64,3 +64,63 @@ int pthread_create(
 ### Watch out for thread concurrency issues
 - **Race conditions**
 - **Deadlocks**
+
+### Atomic operations
+To prevent issues where two threads are reading and writing to a global value at the same time we can use atomic operations.
+These operations make sure that read and writes are done in **the same instruction** thus two threads working in parallel will not read and write at the same time. An example is bellow:
+```C
+#include <pthread.h>
+#include <stdatomic.h>
+
+atomic_int global_counter = 0;
+
+void perform_increment(void) {
+	global_counter += 1; 
+}
+
+void *thread_run(void *data) {
+	int n_increments = *(int *)data;
+	for (int i = 0; i < n_increments; i++) {
+		perform_increment();
+	}
+	return NULL;
+}
+```
+
+### Mutex
+Another option to prevent threads from reading and writing at the same time is setting a mutex **lock**.
+
+In order to preform an operation on a variable we demand that the thread first acquires the corresponding **lock** ensuring that no other thread is altering the variable during our function. After we are done changing our variable we then give back our lock by calling **unlock**
+
+Corresponding code is bellow:
+```C
+#include <pthread.h>
+
+int global_counter = 0;
+pthread_mutex_t global_lock = PTHREAD_MUTEX_INITIALIZER;
+
+void perform_increment(void) {
+	pthread_mutex_lock(&global_lock);
+	global_counter += 1;
+	pthread_mutex_unlock(&global_lock);
+}
+
+void *thread_run(void *data) {
+	int n_increments = *(int *)data;
+	
+	for (int i = 0; i < n_increments; i++) {
+		perform_increment();
+	}
+	
+	return NULL;
+}
+```
+
+A possible problem with this method occurs when multiple locks need to be acquired:
+
+Say there are two locks $A$ and $B$ and two threads $T_1$ and $T_2$.
+$T_1$ fetches and gets $A$ whilst $T_2$ fetches and gets $B$. Then say $T_1$ attempts to get $B$ and $T_2$ attempts to get $A$.
+
+Now both threads are waiting for the other thread to finish creating a **deadlock**.
+
+This can easily be avoided by standardizing the order in which locks are fetched and returned
