@@ -183,7 +183,6 @@ u(t) &= t^2 - \frac{2}{3}t^3 *u(t)\\
 \mathcal Lu &= \frac{2}{z^3} - \frac{4}{z^4} \mathcal Lu \\
 \mathcal Lu &= \frac{2z}{z^4 + 4} \\
 u &= \sum_{j=0}^k \text{Res}(\frac{2z}{z^4 + 1} e^{zt}, z_j) \\
-u &= \sum_{j=0}^k \text{Res}(\frac{2z}{z^4 + 1} e^{zt}, z_j) \\
 u &= \sinh t\sin t \text{ Trust me bro}\\
 \end{align}
 $$
