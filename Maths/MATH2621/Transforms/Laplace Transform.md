@@ -117,10 +117,10 @@ also take the initial conditions:
 $$
 \begin{align}
 u(x, 0) = \frac{\partial u}{\partial t}(x, 0) = 0\\
-u(0, t) = f(t) \text{ where } f(t) = 0 \text { when } t\in [a, b]\\
+u(0, t) = f(t) \text{ where } f(t) = 0 \text { when } t\not\in [a, b]\\
 \end{align}
 $$
-These initial conditions mimic a string who's center starts at 0 with velocity of 0. Further we drive the middle of the string with the function $f(t)$ which "turns off" in between a and b.
+These initial conditions mimic a string who's center starts at 0 with velocity of 0. Further we drive the middle of the string with the function $f(t)$ in between a and b.
 
 Taking the Laplace transform with respect to t we get
 $$
@@ -155,7 +155,6 @@ $$
 \implies u(x, t) &= f(t - x) \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
 ## Convolutions
 The convolution of f and g denoted as $f *g$ is:
 $$
