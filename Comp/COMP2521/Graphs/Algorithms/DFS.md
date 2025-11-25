@@ -54,4 +54,8 @@ Recursive and Iterative DFS are both O(V + E) when using the adjacency list repr
 ## Connected components
 To find all the connected components of a graph we perform repeated DFS searches until we have visited all the nodes in the graph.
 
-We switch out our visited array for a group array initialized to -1 and perform DFS on node $0$. We then 
+We switch out our visited array for a group array initialized to -1 and perform DFS on node $0$. Every node we visit we set its respective element in the group array to be $0$. 
+
+We then find the next node which has not been visited and apply DFS on that setting the group element to be $1$ this time. This pattern continues until we have visited every node.
+
+Now every node of every component has the same number and we can easily tell if two nodes are reachable from one another

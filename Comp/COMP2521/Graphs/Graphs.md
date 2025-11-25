@@ -98,10 +98,9 @@ This is just an Eulerian path that ends on the same vertex.
 Euler proved that an Eulerian path exists if and only if there are no vertices that have an odd degree.
 ## Weighted and directed graphs 
 Usually graphs are directed and have some sense of cost associated with an edge
-### Directed graphs
-These are usually called digraphs.
-
 #### Nomenclature
+We call directed graphs **digraphs**
+
 We define the **In-degree** of a vertex to be the number of edges incoming to the vertex
 We define the **Out-degree** of a vertex to be the number of edges outgoing from the vertex
 
