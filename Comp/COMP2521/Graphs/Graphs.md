@@ -119,3 +119,5 @@ Cycle checking:
 Minimum spanning tree:
 - [[Prims Algorithm]]
 - [[Kruskals Algorithm]]
+Transitive Closure:
+- [[Warshall's algorithm]]
