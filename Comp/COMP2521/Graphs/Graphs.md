@@ -114,6 +114,7 @@ Traversal:
 Path finding:
 - [[BFS Path Finding]]
 - [[DFS Path Finding]]
+- [[Dijkstra's Algorithm]]
 Cycle checking:
 - [[Cycle checking]]
 Minimum spanning tree:

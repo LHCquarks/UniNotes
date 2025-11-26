@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "67dba8190a02c191",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Comp/COMP2521/Graphs/Algorithms/Minimum Spanning Trees.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Minimum Spanning Trees"
-            }
-          },
-          {
             "id": "df548b9ec4473874",
             "type": "leaf",
             "state": {
@@ -36,21 +22,49 @@
             }
           },
           {
-            "id": "83a8c7f64a60ea6d",
+            "id": "8c2ac11d1b12aac6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2521/Graphs/Algorithms/Warshall's algorithm.md",
+                "file": "Comp/COMP2521/Graphs/Algorithms/Kruskals Algorithm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Warshall's algorithm"
+              "title": "Kruskals Algorithm"
+            }
+          },
+          {
+            "id": "d6e20799b877d7d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comp/COMP2521/Graphs/Algorithms/Prims Algorithm.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Prims Algorithm"
+            }
+          },
+          {
+            "id": "f2d884c68df43125",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Comp/COMP2521/Graphs/Algorithms/Dijkstra's Algorithm.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dijkstra's Algorithm"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,12 +214,16 @@
   },
   "active": "96d45fc57194ed4e",
   "lastOpenFiles": [
-    "Comp/COMP2521/Graphs/Algorithms/Warshall's algorithm.md",
+    "Comp/COMP2521/Graphs/Algorithms/Kruskals Algorithm.md",
     "Comp/COMP2521/Graphs/Graphs.md",
+    "Comp/COMP2521/Graphs/Algorithms/Prims Algorithm.md",
+    "Comp/COMP2521/Graphs/Algorithms/Dijkstra's Algorithm.md",
+    "Comp/COMP2521/Graphs/Algorithms/Minimum Spanning Trees.md",
+    "Comp/COMP2521/Algorithms.md",
+    "Comp/COMP2521/Graphs/Algorithms/Warshall's algorithm.md",
     "Comp/COMP2521/Graphs/Algorithms/Cycle checking.md",
     "Comp/COMP2521/Graphs/Algorithms/DFS.md",
     "Comp/COMP2521/Graphs/Algorithms/BFS.md",
-    "Comp/COMP2521/Graphs/Algorithms/Minimum Spanning Trees.md",
     "Comp/COMP2521/Graphs/Traversal.md",
     "Comp/COMP2521/Graphs/Algorithms/DFS Path Finding.md",
     "Comp/COMP2521/Graphs/Algorithms/BFS Path Finding.md",
@@ -223,10 +241,6 @@
     "Maths/MATH2621/Complex Specific Calculus/Morera's Theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Residue Theorem.md",
     "Maths/MATH2621/Path Integral detour/Vector fields.md",
-    "Maths/MATH2621/Path Integral detour/Path integrals.md",
-    "Maths/MATH2621/Path Integral detour/Path Integral Detour.md",
-    "Maths/MATH2621/Path Integral detour/Curves.md",
-    "Maths/MATH2621/Series/Laurent Series.md",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
     "Maths/MATH2621/Path Integral detour",
