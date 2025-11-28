@@ -36,6 +36,18 @@
             }
           },
           {
+            "id": "ef0d0ae49e8d2bcf",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.6"
+            }
+          },
+          {
             "id": "85ba3ea2820e52ee",
             "type": "leaf",
             "state": {
@@ -64,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -212,7 +224,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d6e20799b877d7d0",
+  "active": "ef0d0ae49e8d2bcf",
   "lastOpenFiles": [
     "Comp/COMP2521/Graphs/Algorithms/Kruskals Algorithm.md",
     "Comp/COMP2521/Graphs/Algorithms/Prims Algorithm.md",
