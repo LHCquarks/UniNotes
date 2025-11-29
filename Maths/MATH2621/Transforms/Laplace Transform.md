@@ -186,3 +186,9 @@ u &= \sum_{j=0}^k \text{Res}(\frac{2z}{z^4 + 1} e^{zt}, z_j) \\
 u &= \sinh t\sin t \text{ Trust me bro}\\
 \end{align}
 $$
+
+
+
+
+
+
