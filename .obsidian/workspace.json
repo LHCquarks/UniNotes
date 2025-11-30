@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Transforms/Laplace Transform.md",
+                "file": "Maths/MATH2621/Complex Functions/Residues.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laplace Transform"
+              "title": "Residues"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "c78b2aef00462565",
   "lastOpenFiles": [
+    "Maths/MATH2621/Transforms/Laplace Transform.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Maths/MATH2621/Complex Functions/Logarithms.md",
     "Maths/MATH2621/Complex Functions/Residues.md",
@@ -197,7 +198,6 @@
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP1521/Operating Systems/Threads.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
-    "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
     "Maths/MATH2621/Path Integral detour",
