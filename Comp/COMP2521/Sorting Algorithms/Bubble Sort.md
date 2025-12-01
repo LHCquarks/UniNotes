@@ -6,7 +6,7 @@ tags:
   - SortingAlgorithm
 ---
 ## Overview
-- Bubble sort makes  passes from left to right, switching any out-of-order adjacent items as it comes across them.
+- Bubble sort makes passes from left to right, switching any out-of-order adjacent items as it comes across them.
 - The name 'bubble sort' comes from the fact that items 'bubble up' until they reach a larger item.
 - The algorithm stops if no swaps are made in a pass (which is when the array is sorted).
 - Due to the nature of bubble sort, the data is sorted in reverse, because after each pass, the greatest unsorted element bubbles up to its correct slot.
