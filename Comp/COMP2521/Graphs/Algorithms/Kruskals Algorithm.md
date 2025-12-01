@@ -38,6 +38,6 @@ kruskalMst(G):
 			return mst
 ```
 ## Analysis
-Using Cycle / Path checking with an adjacency list  is $O(E\log E + EV) = O(EV)$
+Using Cycle / Path checking with an adjacency list is $O(E\log E + EV) = O(EV)$
 
 Using Cycle / Path checking with an adjacency list  is $O(E\log E + E) = O(E\log E)$

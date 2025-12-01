@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2521/Graphs/Algorithms/Cycle checking.md",
+                "file": "Comp/COMP2521/Graphs/Algorithms/Warshall's algorithm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cycle checking"
+              "title": "Warshall's algorithm"
             }
           }
         ]
@@ -171,6 +171,13 @@
   },
   "active": "c3c6c86f3bb110c5",
   "lastOpenFiles": [
+    "Comp/COMP2521/Graphs/Algorithms/Prims Algorithm.md",
+    "Comp/COMP2521/Graphs/Algorithms/Path Finding.md",
+    "Comp/COMP2521/Graphs/Algorithms/Kruskals Algorithm.md",
+    "Comp/COMP2521/Graphs/Algorithms/Dijkstra's Algorithm.md",
+    "Comp/COMP2521/Graphs/Algorithms/DFS.md",
+    "Comp/COMP2521/Graphs/Algorithms/DFS Path Finding.md",
+    "Comp/COMP2521/Graphs/Algorithms/Cycle checking.md",
     "Comp/COMP2521/Graphs/Algorithms/BFS Path Finding.md",
     "Comp/COMP2521/Graphs/Algorithms/BFS.md",
     "Comp/COMP2521/Graphs/Graphs.md",
@@ -190,13 +197,6 @@
     "Comp/COMP2521/Sorting Algorithms/Sorting Algorithms.md",
     "Comp/COMP2521/Sorting Algorithms/Quick Sort.md",
     "Comp/COMP2521/Sorting Algorithms/Merge Sort.md",
-    "Comp/COMP2521/Sorting Algorithms/Selection Sort.md",
-    "Comp/COMP2521/Sorting Algorithms/Insertion Sort.md",
-    "Comp/COMP2521/Sorting Algorithms/Radix Sort.md",
-    "Comp/COMP2521/Sorting Algorithms/Bubble Sort.md",
-    "Comp/COMP2521/Tools.md",
-    "Comp/COMP2521/Recursion.md",
-    "Comp/COMP2521/Program Efficency.md",
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
