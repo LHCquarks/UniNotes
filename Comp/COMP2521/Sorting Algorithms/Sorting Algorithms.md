@@ -54,5 +54,5 @@ When sorting items, sometimes we care about some factors more than others. Bello
 | [[Merge Sort]]                | <input type="checkbox" unchecked/> | <input type="checkbox" checked/>   | <input type="checkbox" unchecked/> | $O(n\log n)$    |
 | [[Quick Sort]]                | <input type="checkbox" checked/>   | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> | $O(n\log n)$    |
 | [[Heap Sort]]                 | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> |                 |
-| [[Radix Sort]]                | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> |                 |
+| [[Radix Sort]]                | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> | $O(n)$          |
 | [[Key-indexed Counting Sort]] | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> | <input type="checkbox" unchecked/> |                 |
