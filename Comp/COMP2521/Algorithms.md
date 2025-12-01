@@ -1,4 +1,4 @@
-## Searching algorithms
+## Searching array algorithms
 ### Linear search
 Here we check the first number then move to the next and so on
 #### Time complexity

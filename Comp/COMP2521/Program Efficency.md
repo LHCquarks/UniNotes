@@ -1,12 +1,10 @@
 How efficient are algorithms?
 Can we measure this independently of the hardware used?
-
 ## Cases
 ### What is the best-case performance
 Not very good because how often will this occur?
 ### Average performance
 It is kinda hard to find this "average case"
-
 ### Worst case performance
 This is the best because it is fairly easy to find but will give a useful number
 ## Time complexity
