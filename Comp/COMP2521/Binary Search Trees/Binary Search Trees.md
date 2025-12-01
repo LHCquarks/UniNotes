@@ -158,4 +158,4 @@ The above code as a time complexity of $O(h)$
 ## Pitfalls
 Whilst BSTs promise $O(\log(n))$ time complexities, they are *only* able to reach this speed when the tree is balanced.
 
-With base **BSTs** this behavior is not guaranteed and can even be effected by user input!. To counteract this we can use the balancing operations found [[Balancing BSTs|here]] or use an **AVL tree** found [[AVL Trees |here]]
+With base **BSTs** this behavior is not guaranteed and can even be effected by user input! To counteract this we can use the balancing operations found [[Balancing BSTs|here]] or use an **AVL tree** found [[AVL Trees |here]]

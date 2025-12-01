@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2521/Binary Search Trees/Binary Search Trees.md",
+                "file": "Comp/COMP2521/Binary Search Trees/Balancing BSTs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Binary Search Trees"
+              "title": "Balancing BSTs"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "c3c6c86f3bb110c5",
   "lastOpenFiles": [
+    "Comp/COMP2521/Binary Search Trees/Binary Search Trees.md",
     "Comp/COMP2521/Abstract Data Types/Heaps.md",
     "Comp/COMP2521/Abstract Data Types/Map.md",
     "Comp/COMP2521/Abstract Data Types/Counter.md",
@@ -196,7 +197,6 @@
     "Comp/Comp.md",
     "Comp/COMP1521/MIPS/Data.md",
     "Comp/COMP2521/Binary Search Trees/AVL Trees.md",
-    "Comp/COMP2521/Binary Search Trees/BST Traversal.md",
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
