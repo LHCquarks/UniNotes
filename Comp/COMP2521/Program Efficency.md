@@ -57,7 +57,6 @@ In general we do not care about smaller terms in the runtime, instead we only ca
 This mean we get rid of lower order terms.
 
 We also get rid of constant terms as the relative size between inputs does not change with it.
-
 ## Notation
 We can denote the full time complexity as $T(n)$ but when talking about asymptomatic run time we use Big O notation where the asymptotic run time is placed in the brackets after $O$
 
@@ -65,7 +64,6 @@ We can denote the full time complexity as $T(n)$ but when talking about asymptom
 $$
 T(n) = n^2 + 3n - 2 \implies O(n^2)
 $$
-
 ## Categories
 ### Single inputs
 - Constant: 1
