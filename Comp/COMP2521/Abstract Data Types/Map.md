@@ -38,7 +38,7 @@ Deletion has 2 methods:
 	- Long deletion but efficient lookup
 - **Tombstone**:
 	- Replace the item with a **deleted** marker. We then treat this as empty for insertion but filled during lookup
-	- Can result in longer lookups but more efficient lookup
+	- Can result in longer lookups but more efficient deletion
 #### Structs
 ```C
 struct HashTable {
