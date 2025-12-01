@@ -1,5 +1,4 @@
 **Breadth first search** first searches the closest nodes then the further out nodes.
-
 ## Implementation
 We use a **queue** to keep track of the nodes to visit, a visited array to keep track of the nodes we have already visited and a predecessor array to keep track of the found paths.
 
