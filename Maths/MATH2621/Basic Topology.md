@@ -64,7 +64,7 @@ $$\text{B}\degree(z_0, \epsilon) = \{z\in\mathbb{C}:0<|z-z_0|<\epsilon\}$$
 ## Relationship between points and a subset
 For a subset of the complex plane $S$ and a point in the complex plane $z_0$.
 ### Interior point
-A point on the interior of a subset $S$ if there exists a small enough $\epsilon$ such that the ball around $z_0$ with radius $\epsilon$ is a subset of $S$. In other words, a point is considered to be on the interior of a subset if there exists an $\epsilon$ such that
+A point is on the interior of a subset $S$ if there exists a small enough $\epsilon$ such that the ball around $z_0$ with radius $\epsilon$ is a subset of $S$. In other words, a point is considered to be on the interior of a subset if there exists an $\epsilon$ such that
 $$
 \text{B}(z_0,\epsilon) \cap S = \text{B}(z_0, \epsilon)
 $$

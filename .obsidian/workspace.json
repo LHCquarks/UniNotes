@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Basic Calculus In the Complex Plane/Differentiation.md",
+                "file": "Maths/MATH2621/Basic Topology.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Differentiation"
+              "title": "Basic Topology"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "c3c6c86f3bb110c5",
   "lastOpenFiles": [
+    "Maths/MATH2621/Basic Calculus In the Complex Plane/Differentiation.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
     "Comp/COMP2521/Graphs/Algorithms/Warshall's algorithm.md",
     "Comp/COMP2521/Graphs/Algorithms/Prims Algorithm.md",
@@ -196,7 +197,6 @@
     "Comp/COMP2521/Abstract Data Types/Queues.md",
     "Comp/COMP2521/Abstract Data Types/Stacks.md",
     "Comp/COMP2521/Abstract Data Types/Abstract Data Types.md",
-    "Comp/COMP2521/Sorting Algorithms/Sorting Algorithms.md",
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
