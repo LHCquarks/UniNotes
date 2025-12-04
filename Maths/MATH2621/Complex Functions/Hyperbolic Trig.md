@@ -2,7 +2,7 @@
 We define
 $$
 \begin{align}
-\cosh (z) &= \frac{e^z - e^{-z}}{2} = \sum_{n\in \mathbb N} \frac{z^{2n}}{(2n)!}\\
+\cosh (z) &= \frac{e^z + e^{-z}}{2} = \sum_{n\in \mathbb N} \frac{z^{2n}}{(2n)!}\\
 \sinh (z) &= \frac{e^z - e^{-z}}{2} = \sum_{n\in \mathbb N} \frac{z^{2n+1}}{(2n+1)!} \\
 \end{align}
 $$
