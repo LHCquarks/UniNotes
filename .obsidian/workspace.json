@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Duel Number derivative.md",
+                "file": "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Duel Number derivative"
+              "title": "Evaluating Integrals"
             }
           },
           {
@@ -228,8 +228,8 @@
   },
   "active": "62a876d554e32b64",
   "lastOpenFiles": [
-    "func equation.md",
     "Duel Number derivative.md",
+    "func equation.md",
     "Error Messages.canvas",
     "Comp/COMP2521/Sorting Algorithms/Insertion Sort.md",
     "Comp/COMP2521/Sorting Algorithms/Sorting Algorithms.md",

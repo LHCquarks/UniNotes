@@ -7,8 +7,8 @@ $$
 \text{let } \frac{df}{dz} = a + \epsilon b:\\
 \implies a &= u_x, b = v_x \\
 (a + \epsilon b)\epsilon &= u_y + \epsilon v_y \\
-a &= v_y, u_y = 0 \\
-u_x = v_y, u_y = 0
+a &= v_y, u_y = 0 \\\\
+u_x &= v_y, u_y = 0
 \end{align}
 $$
 
