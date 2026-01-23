@@ -5,4 +5,4 @@
 where `SANITIZER` represents the sanitizer you want to use (`address` or `memory`).
 
 
-Some common error messsages are detailed in [[Error Messages.canvas|Error Messages]]
+Some common error messsages are detailed in [[Comp/COMP2521/Compilers, Sanitisers and Errors/Error Messages.canvas|Error Messages]]
