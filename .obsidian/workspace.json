@@ -27,16 +27,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
+                "file": "Maths/MATH2621/Basic Calculus In the Complex Plane/Limits.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Contour Integrals"
+              "title": "Limits"
+            }
+          },
+          {
+            "id": "39e4dd65c85c5c67",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -184,8 +196,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "88d52f66ff879156",
+  "active": "39e4dd65c85c5c67",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Duel Number derivative.md",
     "func equation.md",
@@ -208,7 +221,6 @@
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
     "Maths/MATH2621/Complex Specific Calculus/Residue Theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Morera's Theorem.md",
-    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
