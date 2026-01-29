@@ -41,16 +41,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/MATH2621.md",
+                "file": "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MATH2621"
+              "title": "Complex Specific Calculus"
+            }
+          },
+          {
+            "id": "daf14d4a2f8b1cb0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -198,8 +208,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "39e4dd65c85c5c67",
+  "active": "daf14d4a2f8b1cb0",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
+    "Maths/MATH2621/MATH2621.md",
     "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Duel Number derivative.md",
@@ -223,10 +235,8 @@
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
     "Maths/MATH2621/Complex Specific Calculus/Residue Theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Morera's Theorem.md",
-    "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",

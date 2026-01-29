@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": " -path:Templates path:Comp/COMP2521  ",
+  "collapse-filter": false,
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -32,6 +32,6 @@
   "repelStrength": 12.6597296508801,
   "linkStrength": 1,
   "linkDistance": 95,
-  "scale": 0.33113002836637,
-  "close": false
+  "scale": 0.18024435472211678,
+  "close": true
 }
