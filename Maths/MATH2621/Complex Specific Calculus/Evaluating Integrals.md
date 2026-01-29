@@ -44,6 +44,7 @@ $$
 &= \frac{1}{2i}\int_\gamma \frac{z^2 + 1}{z(5z - 2 z^2 + 2)} dz \\
 \end{align}
 $$
+
 ### Limits of contours
 In the following problems we will define the contour of a semicircle of radius $R$. After that we will show that the contribution that the real line has to the contour dominates all other lines as $R \rightarrow \infty$ thus evaluating the real integral with contour integral techniques
 

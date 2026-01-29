@@ -4,7 +4,7 @@ Suppose that the function $f$ has an isolated singularity at $z_0$ then:
 - The residue of $f$ is the coefficient in front of the $(z - z_0)^{-1}$ term
 We write this residue of $f$ at $z_0$ as $\text{Res}(f, z_0)$
 
-Further, we get that for a holomorphic function with finitely many residues at $z_0, z_1, ... z_k$ and a inside a simple contour $\Gamma$ then:
+Further, we get that for a holomorphic function with finitely many residues at $z_0, z_1, ... z_k$ inside a simple contour $\Gamma$ then:
 $$
 \begin{align}
 \int_\Gamma f(z) dz &= 2\pi i\sum_{n=0}^k \text{Res}(f, z_n)
