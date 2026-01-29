@@ -29,14 +29,14 @@ $$
 Evaluate:
 $$
 \begin{align}
-\int_{-\pi}^\pi \frac{\cos(\theta)}{5 - 4\cos(\theta)} dz
+\int_{-\pi}^\pi \frac{\cos(\theta)}{5 - 4\cos(\theta)} d\theta
 \end{align}
 $$
 Solution:
 $$
 \begin{align}
-\int_{-\pi}^\pi \frac{\cos(\theta)}{5 - 4\cos(\theta)} dz &= 1/2\int_{-\pi}^\pi \frac{e^{i\theta} + e^{-i\theta}}{5 - 4 (e^{i\theta} + e^{-i\theta}) / 2} dz \\
-&= \frac{1}{2}\int_{-\pi}^\pi \frac{e^{i\theta} + e^{-i\theta}}{5e^{i\theta} - 2 (e^{2i\theta} + 1)} e^{i\theta} dz \\
+\int_{-\pi}^\pi \frac{\cos(\theta)}{5 - 4\cos(\theta)} d\theta &= 1/2\int_{-\pi}^\pi \frac{e^{i\theta} + e^{-i\theta}}{5 - 4 (e^{i\theta} + e^{-i\theta}) / 2} d\theta \\
+&= \frac{1}{2}\int_{-\pi}^\pi \frac{e^{i\theta} + e^{-i\theta}}{5e^{i\theta} - 2 (e^{2i\theta} + 1)} e^{i\theta} d\theta \\
 \text{Let } \gamma(\theta) = e^{i\theta}&: \theta \in [-\pi, \pi] \\
 &= \frac{1}{2i}\int_\gamma \frac{z + z^{-1}}{5z - 2 (z^2 + 1)} dz \\
 &= \frac{1}{2i}\int_\gamma \frac{z^2 + 1}{5z^2 - 2 z^3 + 2z} dz \\
