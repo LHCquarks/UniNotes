@@ -11,10 +11,14 @@
             "id": "701d6f90b7f99ce2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Maths/MATH2111/MATH2111.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "MATH2111"
             }
           }
         ]
@@ -167,6 +171,8 @@
   },
   "active": "701d6f90b7f99ce2",
   "lastOpenFiles": [
+    "Maths/MATH2111/MATH2111.md",
+    "Maths/MATH2111",
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
@@ -193,7 +199,6 @@
     "Maths/MATH2621/Complex Functions/Harmonic Functions.md",
     "Maths/MATH2621/Complex Functions/Singularities.md",
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
-    "Maths/MATH2621/Complex Specific Calculus/Morera's Theorem.md",
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
@@ -215,7 +220,6 @@
     "Comp/COMP2521/Compilers, Sanitisers and Errors/Error Messages.canvas",
     "Comp/COMP2521/Diagrams/Insertion Sort Animation.gif",
     "Comp/COMP2521/Sorting Algorithms/res",
-    "Comp/COMP1521/MIPS/res",
     "Comp/COMP2521-Notes/Compilers, Sanitisers and Errors/Error Messages.canvas",
     "Phys/PHYS1241/Waves/Untitled.canvas"
   ]
