@@ -14,7 +14,7 @@ $$
 at $z = 0$. Then we get that
 $$
 \begin{align}
-\sin(z) &= \frac{1}{2\pi i}\int_\Gamma \frac{\sin(z)}{z - 0}dz \\
+\sin(0) &= \frac{1}{2\pi i}\int_\Gamma \frac{\sin(z)}{z - 0}dz \\
 \int_\Gamma \frac{\sin(z)}{z}dz &= 2 \pi i\sin(0) = 0\\
 \end{align}
 $$
