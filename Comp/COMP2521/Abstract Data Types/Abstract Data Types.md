@@ -37,7 +37,7 @@ Using abstract data types in c, we will have the implementation in a .c file, th
 - [[Stacks]]
 - [[Queues]]
 - [[Sets]]
-- [[Multiset]]
+- [[Counter]]
 - [[Map]]
 - [[Binary Search Trees]]
 - [[Graphs]]

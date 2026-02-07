@@ -4,7 +4,7 @@
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
-  "showOrphans": true,
+  "showOrphans": false,
   "collapse-color-groups": false,
   "colorGroups": [
     {
@@ -18,28 +18,28 @@
       "query": "tag:#Continence  ",
       "color": {
         "a": 1,
-        "rgb": 14099271
+        "rgb": 14642208
       }
     },
     {
       "query": "path:Maths  ",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 3056895
       }
     },
     {
       "query": "path:Comp  ",
       "color": {
         "a": 1,
-        "rgb": 5431378
+        "rgb": 13112505
       }
     },
     {
       "query": "path:Phys  ",
       "color": {
         "a": 1,
-        "rgb": 5431473
+        "rgb": 13838119
       }
     }
   ],
@@ -53,6 +53,6 @@
   "repelStrength": 12.6597296508801,
   "linkStrength": 1,
   "linkDistance": 95,
-  "scale": 0.1381781428098777,
-  "close": false
+  "scale": 0.1596005164936077,
+  "close": true
 }

@@ -6,6 +6,7 @@ tags:
 - [[Threads]] ^f1acdf
 - [[Files]] ^4a9de1
 - [[File Systems]]
+- [[Text Representation]]
 ## Shell expansions
 In the shell we have some special charters which expand to another string.
 Some examples are:
