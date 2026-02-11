@@ -5,6 +5,6 @@ tags:
 ## Topic
 
 - [[Limits]] ^032eea
-- [[Continuity]] ^bdf461
+- [[Maths/MATH2621/Basic Calculus In the Complex Plane/Continuity]] ^bdf461
 - [[Differentiation]] ^aac543
 - [[Antiderivatives]] ^e5b56c
