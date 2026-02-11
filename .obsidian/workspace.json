@@ -30,9 +30,21 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          },
+          {
+            "id": "2ca5796ddcaba88a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,7 +191,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9bce62f25a330301",
+  "active": "2ca5796ddcaba88a",
   "lastOpenFiles": [
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
