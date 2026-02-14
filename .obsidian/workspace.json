@@ -8,63 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1016fcf1ac94d748",
+            "id": "7545bdc03c81bb0a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/MATH2111.md",
+                "file": "Maths/MATH2111/Curves and Surfaces/Definition.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MATH2111"
-            }
-          },
-          {
-            "id": "2cb4fb6036bcf6fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Curves and Surfaces"
-            }
-          },
-          {
-            "id": "13e036e706148dd6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Curves and Surfaces"
-            }
-          },
-          {
-            "id": "e7cf36e6c922c523",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2111/Curves and Surfaces/Graphing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Graphing"
+              "title": "Definition"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,12 +168,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7cf36e6c922c523",
+  "active": "7545bdc03c81bb0a",
   "lastOpenFiles": [
+    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Maths/MATH2111/Curves and Surfaces/Definition.md",
     "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
     "Maths/MATH2111/Curves and Surfaces/Continuity.md",
-    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
     "Maths/MATH2111/Curves and Surfaces",
     "Maths/MATH2111/MATH2111.md",

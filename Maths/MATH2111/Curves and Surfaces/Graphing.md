@@ -55,3 +55,28 @@ plt.show()
 ```
 
 ## Surfaces in 3d
+Surfaces can be plotted like this:
+```Python
+import numpy as np
+from matplotlib import pyplot as plt
+
+limits = (-np.sqrt(np.pi), np.sqrt(np.pi))
+
+x = np.linspace(limits[0], limits[1], 1000)
+y = np.linspace(limits[0], limits[1], 1000)
+X, Y = np.meshgrid(x, y)
+Z = np.sin(X**2 + Y**2)
+
+ax = plt.figure().add_subplot(projection="3d")
+suf = ax.plot_surface(X, Y, Z)
+plt.show()
+```
+
+## Colour themes
+I have made a library that sets lots of colour themes for Matplotlib called pyplot_colour_themes. It can be utilized like so:
+```Python
+import pyplot_colour_themes as pct
+pct.tokyo_night()
+```
+The colour schemes available are:
+- **Tokyo_night()**
