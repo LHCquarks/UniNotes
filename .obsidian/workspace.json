@@ -170,10 +170,12 @@
   },
   "active": "7545bdc03c81bb0a",
   "lastOpenFiles": [
-    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
-    "Maths/MATH2111/Curves and Surfaces/Definition.md",
     "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
     "Maths/MATH2111/Curves and Surfaces/Continuity.md",
+    "Maths/MATH2111/Curves and Surfaces/res/Inf.png",
+    "Maths/MATH2111/Curves and Surfaces/res",
+    "Maths/MATH2111/Curves and Surfaces/Definition.md",
+    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
     "Maths/MATH2111/Curves and Surfaces",
     "Maths/MATH2111/MATH2111.md",
@@ -199,7 +201,6 @@
     "Maths/MATH2621/Complex Functions/Residues.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Maths/MATH2621/Complex Specific Calculus/Residue Theorem.md",
-    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
@@ -216,9 +217,7 @@
     "sortBrand.txt",
     "sortAsorted.txt",
     "sortArand.txt",
-    "sortBsorted.txt",
     "Comp/COMP2521/Sorting Algorithms/res/sorting.gif",
-    "Comp/COMP2521/Diagrams/Insertion Sort Animation.gif",
     "Comp/COMP2521-Notes/Compilers, Sanitisers and Errors/Error Messages.canvas",
     "Phys/PHYS1241/Waves/Untitled.canvas"
   ]

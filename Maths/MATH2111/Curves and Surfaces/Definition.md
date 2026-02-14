@@ -11,6 +11,7 @@ Supposing that $c: I \rightarrow \mathbb R ^n$ is a **path**:
 - A **multiple point** is a point $x \in \mathbb R^n$ such that there exist two unique $t_1, t_2 \in I$ such that $c(t_1) = c(t_2)$
 - If $I = [a, b]$ then $c(a)$ and $c(b)$ are **endpoints**
 - A **path** is **closed** iff $c(a) = c(b)$
+![[Inf.png]]
 ## Surfaces
 MATH2111 Does not rigorously define what a surface is and instead just deals with intuitive surfaces.
 ### Paramaterisation
