@@ -39,3 +39,19 @@ plt.contour(X, Y, Z, levels=[1])
 plt.show()
 ```
 ## Curves in 3d
+Curves in 3d described parametrically can be plotted like this:
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+
+ax = plt.figure().add_subplot(projection="3d")
+
+t = np.linspace(0, np.pi)
+
+c = (np.cos(t), np.sin(t), t)
+
+ax.plot(c[0], c[1], c[2])
+plt.show()
+```
+
+## Surfaces in 3d
