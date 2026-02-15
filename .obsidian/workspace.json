@@ -183,8 +183,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "322b2dc08b59d1e3",
+  "active": "96d45fc57194ed4e",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Wave",
+    "Phys/PHYS2111/Matrix",
     "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
     "Phys/PHYS2111/PHYS2111.md",
     "Phys/Phys.md",
@@ -217,7 +219,6 @@
     "Duel Number derivative.md",
     "Maths/Math.md",
     "Maths/MATH2111",
-    "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
@@ -232,7 +233,6 @@
     "FlowChart.png",
     "FlowChart.canvas",
     "sortBrand.txt",
-    "sortAsorted.txt",
     "Comp/COMP2521/Sorting Algorithms/res/sorting.gif",
     "Comp/COMP2521-Notes/Compilers, Sanitisers and Errors/Error Messages.canvas",
     "Phys/PHYS1241/Waves/Untitled.canvas"
