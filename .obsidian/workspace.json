@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/Curves and Surfaces/Continuity.md",
+                "file": "Phys/PHYS2111/PHYS2111.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Continuity"
+              "title": "PHYS2111"
             }
           }
         ]
@@ -170,9 +170,12 @@
   },
   "active": "7545bdc03c81bb0a",
   "lastOpenFiles": [
+    "Phys/Phys.md",
+    "Phys/PHYS2111/PHYS2111.md",
+    "Maths/MATH2111/Curves and Surfaces/Continuity.md",
+    "Phys/PHYS2111",
     "Maths/MATH2621/Complex Functions/Complex powers.md",
     "Maths/MATH2621/Complex Functions/Roots.md",
-    "Maths/MATH2111/Curves and Surfaces/Continuity.md",
     "Maths/MATH2111/Curves and Surfaces/Definition.md",
     "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
     "Maths/MATH2111/Curves and Surfaces/res/Inf.png",
@@ -200,8 +203,6 @@
     "Maths/MATH2111",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
-    "Maths/MATH2621/Complex Functions/Residues.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Comp/COMP2521/Graphs/Algorithms",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Comp/COMP2521/Binary Search Trees",
@@ -217,7 +218,6 @@
     "FlowChart.canvas",
     "sortBrand.txt",
     "sortAsorted.txt",
-    "sortArand.txt",
     "Comp/COMP2521/Sorting Algorithms/res/sorting.gif",
     "Comp/COMP2521-Notes/Compilers, Sanitisers and Errors/Error Messages.canvas",
     "Phys/PHYS1241/Waves/Untitled.canvas"
