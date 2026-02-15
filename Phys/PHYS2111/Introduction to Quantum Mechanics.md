@@ -10,3 +10,4 @@ The following experiments were done and produced some absurd results that forced
 ## What is a particle?
 **A wave.** Thats it: $\lambda = h/p$
 When we decrease the velocity / mass of our object it's wavelength increases which causes greater quantum effects.
+
