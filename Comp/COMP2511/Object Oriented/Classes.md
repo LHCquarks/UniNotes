@@ -8,9 +8,29 @@ Data and methods can also have the following modifiers:
 
 An example of a class is bellow:
 ```Java
-public class Circle extends Object {
-	private static final double PI = 3.14159;
-	public int x = 0, y = 0;
+public class Circle {
+	protected static final double PI = 3.14159;
+	protected int x, y;
+	protected int r;
 	
+	public Circle() {
+		this.x = 0;
+		this.y = 0;
+		this.r = 1;
+	}
+	
+	public Circle(int x, int y, int r) {
+		this.x = x;
+		this.y = y;
+		this.r = r;
+	}
+	
+	public double circumference() {
+		return 2* PI * r;
+	}
+	
+	public double area() {
+		return PI * r * r;
+	}
 }
 ```
