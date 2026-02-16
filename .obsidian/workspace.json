@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2511/COMP2511.md",
+                "file": "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "COMP2511"
+              "title": "Object Oriented Programming"
             }
           }
         ],
@@ -211,14 +211,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96d45fc57194ed4e",
+  "active": "7193216069cc5c2b",
   "lastOpenFiles": [
+    "Comp/COMP2511/COMP2511.md",
+    "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
     "Comp/COMP2511/Architecture",
     "Comp/COMP2511/Patterns",
     "Comp/COMP2511/Design",
     "Comp/COMP2511/Object Oriented",
     "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
-    "Comp/COMP2511/COMP2511.md",
     "Comp/COMP2511",
     "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
     "Phys/PHYS2111/PHYS2111.md",
@@ -251,7 +252,6 @@
     "Comp/COMP2521/Tools.md",
     "Comp/COMP2521/Compilers, Sanitisers and Errors/Compilers.md",
     "func equation.md",
-    "Maths/MATH2111",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
