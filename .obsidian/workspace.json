@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,14 +197,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0a9dba5b25d449ec",
+  "active": "e4e8f8c90d660f1d",
   "lastOpenFiles": [
+    "Comp/COMP2511/Object Oriented/Inheritance.md",
     "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
     "Comp/COMP2511/Object Oriented/Classes.md",
     "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
     "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
     "Phys/PHYS2111/PHYS2111.md",
-    "Comp/COMP2511/Object Oriented/Inheritance.md",
     "Comp/COMP2511/COMP2511.md",
     "Comp/COMP2511/Architecture",
     "Comp/COMP2511/Patterns",
