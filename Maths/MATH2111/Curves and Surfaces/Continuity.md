@@ -51,4 +51,12 @@ $$
 $$
 Now because $\epsilon$ was arbitrary we can make it arbitrarily small meaning $d(x, x') = 0$ which again using the properties of **metrics** means that $x = x'$. Therefore there is only one unique limit of a sequence.
 
-##
+### Definition of cauchy sequences
+A **cauchy** sequence is one where elements get arbitrarily close to one another.
+Mathematically we let $j, k > K$ then a sequence is **cauchy** if $\lim_{K \rightarrow \infty} d(x_j, x_k) = 0$.
+Or in quantifiers:
+$$
+\begin{align}
+\forall\epsilon>0 \ \ \ \ \exists K\in \mathbb Z^+ \ \ \ \ \forall j, k > K \ \ \ \ d(x_j, x_k) < \epsilon
+\end{align}
+$$
