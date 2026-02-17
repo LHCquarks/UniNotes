@@ -73,4 +73,5 @@ $$
 Therefore $d(x_j, x_k) < \epsilon$  thus satisfying the definition of **cauchy**.
 
 Further, taking the contrapositive of this, if a sequence is **not** **cauchy** then the sequence does **not** **converge**
-### 
+### Cauchy in $d_2$ $\implies$ Convergent
+  
