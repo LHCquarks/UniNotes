@@ -27,4 +27,28 @@ $$
 \delta(x, y) &= \frac{d(x, y)}{1 + d(x, y)}
 \end{align}
 $$
+## Convergent and Cauchy Sequences
+### Definition of convergent sequences
+Suppose that $d$ is a **metric** on $\mathbb R^n$.
+A sequence $\{x_k\}_{k=1}^\infty$ in $\mathbb R^n$ is said to be **convergent** with respect to $d$ if:
 
+There exists $x\in \mathbb R^n$ such that $\lim_{k\rightarrow \infty} d(x_k, x) = 0$.
+### Uniqueness of a sequence's limit
+Assume that the sequence $\{x_k\}_{k=1}^\infty$ converges to both $x$ and $x'$ on the metric $d$.
+
+By the definition of the limit for all $\epsilon > 0$  we can find both $K$ and $K'$ such that for all $k$ larger than $K$ and $K'$ respectively we get:
+$$
+\begin{align}
+d(x_k, x) &< \frac{\epsilon}{2} \\
+d(x_k, x') &< \frac{\epsilon}{2}
+\end{align}
+$$
+Now taking $k > \max(K, K')$ and adding the above equations we get $d(x_k, x) + d(x_k, x') < \epsilon$ which using the properties of **metrics** we simplify to:
+$$
+\begin{align}
+0 &\le d(x, x') < \epsilon \\
+\end{align}
+$$
+Now because $\epsilon$ was arbitrary we can make it arbitrarily small meaning $d(x, x') = 0$ which again using the properties of **metrics** means that $x = x'$. Therefore there is only one unique limit of a sequence.
+
+##
