@@ -60,3 +60,17 @@ $$
 \forall\epsilon>0 \ \ \ \ \exists K\in \mathbb Z^+ \ \ \ \ \forall j, k > K \ \ \ \ d(x_j, x_k) < \epsilon
 \end{align}
 $$
+### Convergence $\implies$ Cauchy
+If a sequence $\{x_k\}_{k = 1}^\infty$ is **convergent** with respect to $d$ then:
+Let $K$ be such that $d(x_k, x) < \frac{\epsilon}{2}$ for all $k > K$ then if $j, k > K$ we have that:
+$$
+\begin{align}
+d(x_j, x_k) &\le d(x_j, x) + d(x_k, x) \\
+&< \frac{\epsilon}{2} + \frac{\epsilon}{2} \\
+& = \epsilon
+\end{align}
+$$
+Therefore $d(x_j, x_k) < \epsilon$  thus satisfying the definition of **cauchy**.
+
+Further, taking the contrapositive of this, if a sequence is **not** **cauchy** then the sequence does **not** **converge**
+### 
