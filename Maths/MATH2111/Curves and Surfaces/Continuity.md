@@ -27,6 +27,17 @@ $$
 \delta(x, y) &= \frac{d(x, y)}{1 + d(x, y)}
 \end{align}
 $$
+
+### (strongly) Equivalent metrics
+We say that two **metrics** $d, \delta$ defined on $\mathbb R^n$ are **strongly equivalent** if there a constants $c, C > 0$ such that for all $x, y \in \mathbb R^n$:
+$$
+\begin{align}
+cd(x, y) \le \delta(x, y) \le Cd(x, y) \\
+\end{align}
+$$
+#### Examples
+- $d_p$ is **strongly equivalent** to $d_q$ for all $p, q \in [1, \infty]$ on $\mathbb R^n$
+- The discrete metric is **not** equivalent to $d_p$ for any $p \in [1, \infty]$ on $\mathbb R^n$
 ## Convergent and Cauchy Sequences
 ### Definition of convergent sequences
 Suppose that $d$ is a **metric** on $\mathbb R^n$.
@@ -75,4 +86,24 @@ Therefore $d(x_j, x_k) < \epsilon$  thus satisfying the definition of **cauchy**
 Further, taking the contrapositive of this, if a sequence is **not** **cauchy** then the sequence does **not** **converge**
 ### Cauchy in $d_2$ $\implies$ Convergent
 This is not proven but is true
-###
+
+### Convergence under strongly equivalent metrics
+Suppose that $\delta, d$ are **strongly equivalent** **metrics** on $\mathbb R^n$ and that $\{x_k\}_{k=1}^\infty$  is a sequence on $\mathbb R^n$.
+
+We have that $\{x_k\}_{k=1}^\infty$ is **convergent** on $\delta$ if and **only** if it is **convergent** on $d$.
+We also have the same fact for if the sequence is **cauchy**.
+### Convergence of components
+A sequence $\{x_k\}_{k=1}^\infty$ on $\mathbb R^n$ only **converges** on $d_2$ if and only if all of the sequences of components $\{x_k^{(i)}\}_{k=1}^\infty$ **converge**.
+
+Because $d_2$ is **strongly equivalent** to $d_\infty$ the sequence converges iff
+$$
+\begin{align}
+d_\infty(x_k, x) &< \epsilon \\
+\max_{1 \le i \le n} \left|x_k^{(i)} - x^{(i)} \right| &< \epsilon
+\end{align}
+$$
+Assuming that the sequence converges it is obvious that components must converge for the second inequality to hold
+
+Going the other way we simply take the largest $K_i$ such that the second inequality holds and we can work backwards to find that the total sequence must hold.
+
+
