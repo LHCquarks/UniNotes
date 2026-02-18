@@ -34,5 +34,5 @@ class Circle extends Shape {
 
 **Interfaces** can only have abstract methods but multiple interfaces can be implemented in a subclass.
 ```Java
-interface 
+interface
 ```
