@@ -34,5 +34,35 @@ class Circle extends Shape {
 
 **Interfaces** can only have abstract methods but multiple interfaces can be implemented in a subclass.
 ```Java
-interface
+public interface Shape {
+	public double area();
+	public double perimiter();
+}
+
+public interface Coloured {
+	public int colour();
+}
+```
+and implemented like so:
+```Java
+class Circle implements Shape, Coloured {
+	private double r;
+	private final double PI = 3.1415;
+	
+	public Circle(double radius) {
+		r = radius;
+	}
+	
+	public double area() {
+		return r *r * PI;
+	}
+	
+	public double perimiter() {
+		return 2 * r * PI;
+	}
+	
+	public int colour() {
+		return 1;
+	}
+}
 ```
