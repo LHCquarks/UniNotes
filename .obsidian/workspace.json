@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "130f07ce4075e5f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Comp/COMP2511/Object Oriented/Classes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Classes"
-            }
-          },
-          {
             "id": "e4e8f8c90d660f1d",
             "type": "leaf",
             "state": {
@@ -36,17 +22,17 @@
             }
           },
           {
-            "id": "0a9dba5b25d449ec",
+            "id": "7abe2c791d6733e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2511/Object Oriented/Inheritance.md",
+                "file": "Maths/MATH2111/Analysis/Limits of sequences.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Inheritance"
+              "title": "Limits of sequences"
             }
           }
         ],
@@ -197,8 +183,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e4e8f8c90d660f1d",
+  "active": "7abe2c791d6733e4",
   "lastOpenFiles": [
+    "Maths/MATH2111/Curves and Surfaces/Continuity.md",
+    "Maths/MATH2111/Analysis/Limits of sequences.md",
+    "Maths/MATH2111/Analysis",
     "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
     "Comp/COMP2511/Object Oriented/Inheritance.md",
     "Comp/COMP2511/Object Oriented/Classes.md",
@@ -214,7 +203,6 @@
     "Phys/PHYS2111/Wave",
     "Phys/PHYS2111/Matrix",
     "Phys/Phys.md",
-    "Maths/MATH2111/Curves and Surfaces/Continuity.md",
     "Phys/PHYS2111",
     "Maths/MATH2621/Complex Functions/Complex powers.md",
     "Maths/MATH2621/Complex Functions/Roots.md",
@@ -224,7 +212,6 @@
     "Maths/MATH2111/Curves and Surfaces/res",
     "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Maths/MATH2621/Complex Functions/Complex Functions.md",
-    "Maths/MATH2111/Curves and Surfaces",
     "Maths/MATH2111/MATH2111.md",
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
@@ -237,7 +224,6 @@
     "Comp/COMP2521/Compilers, Sanitisers and Errors/Compilers, Sanitisers and Errors.md",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
-    "Comp/COMP2521/Tools.md",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
     "Maths/MATH2621/Complex Functions/res/exp.png",
     "Maths/MATH2621/Complex Functions/res/zto5.png",
