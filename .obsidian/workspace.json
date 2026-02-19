@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Wave/Untitled.md",
+                "file": "Phys/PHYS2111/Wave/Test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Test"
             }
           }
         ]
@@ -170,8 +170,11 @@
   },
   "active": "e4bca612121e0fc0",
   "lastOpenFiles": [
+    "Phys/PHYS1241/Waves/Optics/Huygen's Principle.md",
+    "Phys/PHYS1241/Waves/Optics/Optics.md",
+    "Phys/PHYS1241/Electricity/Maxwell's Equations.md",
+    "Phys/PHYS2111/Wave/Test.md",
     "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
-    "Phys/PHYS2111/Wave/Untitled.md",
     "Maths/MATH2111/Analysis/Limits of sequences.md",
     "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
     "Comp/COMP2511/Object Oriented/Polymorphism.md",
@@ -204,9 +207,6 @@
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
     "Comp/COMP2521/Graphs/Algorithms/Path Finding.md",
-    "Comp/COMP1521/Operating Systems/Operating Systems.md",
-    "Comp/COMP1521/Operating Systems/Text Representation.md",
-    "Comp/COMP2521/COMP2521.md",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
