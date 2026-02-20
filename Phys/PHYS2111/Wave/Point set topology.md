@@ -1,0 +1,30 @@
+## Definitions
+$|x| = ||x|| = d_2(x, 0)$ is called the **norm** or **magnitude** of $x$
+
+### Open ball
+$\forall a\in \mathbb R^n$ and $\epsilon > 0$ the open ball around $a$ of radius $\epsilon$ is the set
+$$
+\begin{align}
+B(a, \epsilon) = B_\epsilon (a) = \{x \in \mathbb R^n: d(x, a) < \epsilon\}
+\end{align}
+$$
+### Closed ball
+A closed ball is simply the **closure** of it's corresponding open ball. It is equivalently defined as:
+$$
+\begin{align}
+\overline{B(a, \epsilon)} = \overline{B_\epsilon (a)} = \{x \in \mathbb R^n: d(x, a) \le \epsilon\}
+\end{align}
+$$
+### Interior points
+An interior point $x$ of a subset $\Omega$ of $\mathbb R^n$ is a point such that there exists a $r > 0$ such that $B_r(x) \subseteq \Omega$
+### Interior of $\Omega$
+The interior of $\Omega$ denoted as $\text{Int}(\Omega)$ is the set of all interior points in $\Omega$
+### Openness
+A region $\Omega$ is **open** if for every $x \in \Omega$, $x \in \text{Int}(\Omega)$
+### Closure
+A region $\Omega$ is **closed** if $\Omega^c = \mathbb R^n \backslash \Omega$ is **open**
+### Boundary points
+$x\in\mathbb R^n$ is a **boundary point** of $\Omega$ if for every $r > 0$, the sets $B_r(x) \intersect \Omega$ and $B_r(x) \intersect \Omega^c$
+### Boundary of a region
+The boundary of a region $\Omega$ is the set of all boundary points of $\Omega$ and is denoted by $\text{Bd}(\Omega)$ or $\partial \Omega$
+
