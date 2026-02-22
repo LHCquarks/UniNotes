@@ -82,8 +82,8 @@ $$
 \end{align}
 $$
 
-## Conjugate transpose / adjoint operation
-We define the **conjugate transpose** of a vector and scalar as:
+## Conjugate transpose / adjoint operation / Hermitian conjugate
+We define the **Hermitian Conjugate** of a vector and scalar as:
 $$
 \begin{align}
 \ket {av} &= a \ket v \\
