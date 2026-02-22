@@ -83,12 +83,10 @@ $$
 $$
 
 ## Conjugate transpose / adjoint operation / Hermitian conjugate
-We define the **Hermitian Conjugate** of a vector and scalar as:
+We define the **Hermitian Conjugate** as:
 $$
 \begin{align}
-\ket {av} &= a \ket v \\
-\ket {av}^\dagger &= (a \ket v) ^ \dagger \\
-\bra{av}
+(a\ket v)^\dagger &=  ((a\ket v)^T)^*
 \end{align}
 $$
 ## Schwarz Inequality
