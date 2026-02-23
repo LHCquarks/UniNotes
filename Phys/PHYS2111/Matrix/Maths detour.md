@@ -148,4 +148,42 @@ $$
 $$
 Thus equating the two sides again we find that for all $v$: $\braket {(\hat A + \hat B)^\dagger v| w} = \braket{(\hat A^\dagger + \hat B^\dagger)v | w}$ and thus $(\hat A + \hat B)^\dagger = \hat A^\dagger + \hat B^\dagger$ 
 ### $(\hat A\hat B)^\dagger = \hat B^\dagger \hat A^\dagger$
-
+Take a similar setup as above:
+$$
+\begin{align}
+\braket{v | (\hat A \hat B)w} &= \braket{v | (\hat A \hat B)w} \\
+\end{align}
+$$
+Now again by definition the LHS is $\braket{(\hat A \hat B)^\dagger v| w}$. On the RHS we apply the operators sequentially like so:
+$$
+\begin{align}
+\text{RHS} &= \braket{v | \hat A (\hat B w)} \\
+&= \braket{\hat A^\dagger v | \hat B w} \\
+&= \braket{\hat B^\dagger(\hat A^\dagger v) | w} \\
+&= \braket{(\hat B^\dagger \hat A^\dagger) v | w} \\
+\end{align}
+$$
+Thus by the same argument as above $(\hat A \hat B)^\dagger = \hat A^\dagger \hat B^\dagger$
+### Hermitian adjoint of a scalar
+If we have an expression like $\braket{v | cw}$ where c is a scalar then we can take $c$ out like so $c\braket{v | w}$ and put it back into the left hand side like so $\braket{c^*v| w}$ and thus the **Hermitian adjoint** of a scalar is just the conjugate.
+$$
+\begin{align}
+c^\dagger = c^*
+\end{align}
+$$
+### Hermitian adjoint of bras and kets
+Lets consider the inner product between two vectors $\braket{v | w}$. Because the inner product just returns a scalar we can use our previous law to find it's **hermitian adjoint**:
+$$
+\begin{align}
+\braket{v | w}^\dagger &= \braket{v | w}^* \\
+&= \braket{w | v}
+\end{align}
+$$
+Now lets break up the inner product and test what we get:
+$$
+\begin{align}
+\braket{v | w}^\dagger &= (\bra v \ket w)^\dagger \\
+&= \ket w^\dagger \bra v^\dagger
+\end{align}
+$$
+This tells us that the **Hermitian adjoint** of a bra is a ket and vice versa
