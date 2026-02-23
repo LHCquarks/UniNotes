@@ -96,16 +96,30 @@ $$
 &= \braket{z|v} - \frac{\braket{w|v}}{\braket{w|w}}\braket{z|w} \\
 &= \braket{v - \frac{\braket{w | v}}{\braket{w|w}} w|v} - \frac{\braket{w|v}}{\braket{w|w}}\braket{v - \frac{\braket{w | v}}{\braket{w|w}} w|w} \\
 &= \braket{v | v} - \left(\frac{\braket{w | v}}{\braket{w|w}}\right)^*\braket{w|v} - \frac{\braket{w|v}}{\braket{w|w}}\left(\braket{v|w} - \left(\frac{\braket{w | v}}{\braket{w|w}} \right)^* \braket{w|w}\right) \\
-&= \braket{v | v} - \frac{|\braket{w | v}|^2}{\braket{w|w}} - \frac{\braket{w|v}}{\braket{w|w}}\left(\braket{v|w} - \left(\frac{\braket{w | v}}{\braket{w|w}} \right)^* \braket{w|w}\right) \\
+&= \braket{v | v} - \frac{|\braket{w | v}|^2}{\braket{w|w}} - \frac{\braket{w|v}}{\braket{w|w}}\braket{w|v}^* - \frac{\braket{w|v}}{\braket{w|w}}{\braket{w | v}^*} \\
+&= \braket{v | v} - \frac{|\braket{w | v}|^2}{\braket{w|w}} - \frac{|\braket{w|v}|^2}{\braket{w|w}} - \frac{|\braket{w|v}|^2}{\braket{w|w}}\\
+3\frac{|\braket{w | v}|^2}{\braket{w|w}} &\le \braket{v | v}\\
+3|\braket{w | v}|^2 &\le \braket{v | v}\braket{w|w}\\
+|\braket{w | v}|^2 &\le \braket{v | v}\braket{w|w}\\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+
 ## Triangle inequality
 $$
 \begin{align}
 |\ket v + \ket w| \le |\ket v| + |\ket w|
 \end{align}
 $$
+
+### Proof
+Consider: $\braket{v + w | v + w}$
+Then $\braket{v + w | v + w} \ge 0$ and by expanding we get:
+$$
+\begin{align}
+\braket{v + w | v + w} &\ge 0
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 ## Operators
 Operators are objects that when applied to a vector produce another vector.
 
