@@ -31,13 +31,19 @@ The boundary of a region $\Omega$ is the set of all boundary points of $\Omega$ 
 ### Composition of open sets
 Suppose that $\Omega$ is a non-empty **open** set. If $x\in \Omega$  then there is an $\epsilon_x > 0$ such that $B(x, \epsilon_x) \subseteq \Omega$. Hence $\Omega = \bigcup_{x\in \Omega} B(x, \epsilon_x)$.
 Therefore we can write any non-empty **open** set as the union of balls
-### Intersection of sets
-Suppose that $\Omega_1$ and $\Omega_2$ are two **open** sets.  If their intersection is empty then it is also **open**. 
+### Combination of sets
+Suppose that $\Omega_1$ and $\Omega_2$ are two **open** sets.  If their **intersection** is empty then it is also **open**. 
 Otherwise for all $x \in \Omega_1 \cap \Omega_2$ we have $\epsilon_1$ and $\epsilon_2$ such that $B(x, \epsilon_1) \subseteq \Omega_1, B(x, \epsilon_2) \subseteq \Omega_2$.
 
-Taking $\epsilon = \min(\epsilon_1, \epsilon_2)$ we have that $B(x, \epsilon) \subseteq \Omega_1 \cap \Omega_2$ and thus the intersection of $\Omega_1$ and $\Omega_2$ is also **open**.
+Taking $\epsilon = \min(\epsilon_1, \epsilon_2)$ we have that $B(x, \epsilon) \subseteq \Omega_1 \cap \Omega_2$ and thus the **intersection** of $\Omega_1$ and $\Omega_2$ is also **open**.
 
-By induction this holds for any finitely many intersections however it does not hold for infinity many intersections. 
+Similarly the **Union** of two **open** sets is also **open**
 
-The same thing holds for **closed** sets as well
-### 
+The same thing holds for the **union** of **closed** sets as well as the **intersections** of closed sets.
+
+By induction all of these hold for any finitely many combination their respective sets however it does not hold for infinity many combinations. 
+### Cartesian product of two sets
+$A \subseteq \mathbb R^n$ and $B \subseteq \mathbb R^m$ are **open** if and only if $A \times B \subseteq \mathbb R^{n + m}$ 
+### Alternate definition of closure
+A set $\Omega \subseteq \mathbb R^n$ is **closed** if and only if $\partial \Omega \subseteq \Omega$ or in English if it contains all of it's boarder.
+###
