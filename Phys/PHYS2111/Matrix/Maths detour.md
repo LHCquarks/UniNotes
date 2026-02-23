@@ -82,13 +82,6 @@ $$
 \end{align}
 $$
 
-## Conjugate transpose / adjoint operation / Hermitian conjugate
-We define the **Hermitian Conjugate** as:
-$$
-\begin{align}
-(a\ket v)^\dagger &=  ((a\ket v)^T)^*
-\end{align}
-$$
 ## Schwarz Inequality
 For all vectors:
 $$
@@ -100,5 +93,16 @@ $$
 $$
 \begin{align}
 |\ket v + \ket w| \le |\ket v| + |\ket w|
+\end{align}
+$$
+## Operators
+Operators are objects that when applied to a vector produce another vector.
+
+We often denote these as capital letters with a hat on them like so: $\hat E$. They 
+## Conjugate transpose / adjoint operation / Hermitian conjugate
+We define the **Hermitian Conjugate** as:
+$$
+\begin{align}
+(a\ket v)^\dagger &=  ((a\ket v)^T)^*
 \end{align}
 $$
