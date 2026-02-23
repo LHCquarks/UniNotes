@@ -95,7 +95,8 @@ $$
 0 &\le \braket{z | v - \frac{\braket{w|v}}{\braket{w|w}}w} \\
 &= \braket{z|v} - \frac{\braket{w|v}}{\braket{w|w}}\braket{z|w} \\
 &= \braket{v - \frac{\braket{w | v}}{\braket{w|w}} w|v} - \frac{\braket{w|v}}{\braket{w|w}}\braket{v - \frac{\braket{w | v}}{\braket{w|w}} w|w} \\
-&= \braket{v | v} - \left(\frac{\braket{w | v}}{\braket{w|w}}\right)^*\braket{w|v} - \frac{\braket{w|v}}{\braket{w|w}}\braket{v - \frac{\braket{w | v}}{\braket{w|w}} w|w} \\
+&= \braket{v | v} - \left(\frac{\braket{w | v}}{\braket{w|w}}\right)^*\braket{w|v} - \frac{\braket{w|v}}{\braket{w|w}}\left(\braket{v|w} - \left(\frac{\braket{w | v}}{\braket{w|w}} \right)^* \braket{w|w}\right) \\
+&= \braket{v | v} - \frac{|\braket{w | v}|^2}{\braket{w|w}} - \frac{\braket{w|v}}{\braket{w|w}}\left(\braket{v|w} - \left(\frac{\braket{w | v}}{\braket{w|w}} \right)^* \braket{w|w}\right) \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
