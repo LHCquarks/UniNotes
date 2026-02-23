@@ -86,6 +86,19 @@ $$
 |\braket{v | w}|^2 \le \braket{v|v}\braket{w|w}
 \end{align}
 $$
+### Proof
+Consider $\ket z = \ket v - \frac{\braket{w | v}}{\braket{w|w}} \ket w$.
+Now from the 2nd axiom of inner products we know $\braket{z|z} \ge 0$.
+We can therefor expand this to:
+$$
+\begin{align}
+0 &\le \braket{z | v - \frac{\braket{w|v}}{\braket{w|w}}w} \\
+&= \braket{z|v} - \frac{\braket{w|v}}{\braket{w|w}}\braket{z|w} \\
+&= \braket{v - \frac{\braket{w | v}}{\braket{w|w}} w|v} - \frac{\braket{w|v}}{\braket{w|w}}\braket{v - \frac{\braket{w | v}}{\braket{w|w}} w|w} \\
+&= \braket{v | v} - \left(\frac{\braket{w | v}}{\braket{w|w}}\right)^*\braket{w|v} - \frac{\braket{w|v}}{\braket{w|w}}\braket{v - \frac{\braket{w | v}}{\braket{w|w}} w|w} \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 ## Triangle inequality
 $$
 \begin{align}
