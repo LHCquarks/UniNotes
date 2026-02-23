@@ -129,4 +129,23 @@ $$
 \end{align}
 $$
 Because this equation must hold for all $\ket w$ we get that $\hat A = (\hat A^\dagger)^\dagger$.
-###
+### $(\hat A + \hat B)^\dagger = \hat A^\dagger + \hat B^\dagger$
+Start by taking:
+$$
+\begin{align}
+\braket{v | (\hat A + \hat B)w} &= \braket{v | (\hat A + \hat B)w} \\
+\end{align}
+$$
+Now the LHS by definition is $\braket{(\hat A + \hat B)^\dagger v | w}$. For the right hand side we can expand like so:
+$$
+\begin{align}
+\text{RHS} &= \braket{v | \hat A w + \hat B w} \\
+&= \braket{v | \hat A w } + \braket{v| \hat B w} \\
+&= \braket{\hat A^\dagger v | w } + \braket{\hat B^\dagger v| w} \\
+&= \braket{\hat A^\dagger v + \hat B^\dagger v| w} \\
+&= \braket{(\hat A^\dagger + \hat B^\dagger) v| w} \\
+\end{align}
+$$
+Thus equating the two sides again we find that for all $v$: $\braket {(\hat A + \hat B)^\dagger v| w} = \braket{(\hat A^\dagger + \hat B^\dagger)v | w}$ and thus $(\hat A + \hat B)^\dagger = \hat A^\dagger + \hat B^\dagger$ 
+### $(\hat A\hat B)^\dagger = \hat B^\dagger \hat A^\dagger$
+
