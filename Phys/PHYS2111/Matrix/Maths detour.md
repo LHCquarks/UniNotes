@@ -126,7 +126,7 @@ Now substituting in equation 1:
 $$
 \begin{align}
 \braket{v | \hat A w} &= \braket{v | (\hat A^\dagger)^\dagger w} \\
-\ket{\hat A w} &= \ket{(\hat A^\dagger)^\dagger w} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Because this equation must hold for all $\ket w$ we get that $\hat A = (\hat A^\dagger)^\dagger$.
+###
