@@ -116,7 +116,10 @@ Consider: $\braket{v + w | v + w}$
 Then $\braket{v + w | v + w} \ge 0$ and by expanding we get:
 $$
 \begin{align}
-\braket{v + w | v + w} &\ge 0
+0 &\le \braket{v + w | v + w} \\
+&= \braket{v + w | v} + \braket{v + w| w} \\
+&= \braket{v | v} + \braket{w | v} + \braket{v | w} + \braket{w| w} \\
+&= \braket{v | v} + \braket{w | v} + \braket{v | w} + \braket{w| w} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
