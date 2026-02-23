@@ -95,11 +95,21 @@ $$
 ## Operators
 Operators are objects that when applied to a vector produce another vector.
 
-We often denote these as capital letters with a hat on them like so: $\hat E$. They 
-## Conjugate transpose / adjoint operation / Hermitian conjugate
-We define the **Hermitian Conjugate** as:
+We often denote these as capital letters with a hat on them like so: $\hat E$. 
+An example expression is:
+- $\hat E \ket v = \ket{\hat E v}$
+## Hermitian adjoint
+We define the **Hermitian Adjoint** of an **operator** $\hat M$ as as being the operator $\hat M ^\dagger$ that satisfies:
 $$
 \begin{align}
-(a\ket v)^\dagger &=  ((a\ket v)^T)^*
+\braket{u|\hat Mv} &= \braket{\hat M^\dagger u | v} \\
 \end{align}
 $$
+We get the following properties for the **hermitian adjoint**:
+### $(\hat A^\dagger)^\dagger = \hat A$
+$$
+\begin{align}
+
+\end{align}
+$$
+<% tp.file.cursor(2) %>
