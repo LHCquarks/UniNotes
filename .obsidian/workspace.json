@@ -22,16 +22,6 @@
             }
           },
           {
-            "id": "1989f7fb20def395",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
             "id": "4b88bd6f09992a17",
             "type": "leaf",
             "state": {
@@ -44,9 +34,19 @@
               "icon": "lucide-file",
               "title": "PHYS2111"
             }
+          },
+          {
+            "id": "0bf499517c447d03",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,14 +193,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1989f7fb20def395",
+  "active": "0bf499517c447d03",
   "lastOpenFiles": [
+    "Phys/Phys.md",
     "Phys/PHYS2111/PHYS2111.md",
+    "Phys/PHYS2111/Matrix/Matrix mechanics.md",
+    "Phys/PHYS1241/Quantum Mech/light/Compton scattering.md",
     "Maths/MATH2111/Point set topology/Point set topology.md",
     "Phys/PHYS2111/Wave/Test.md",
     "Phys/PHYS2111/Wave/Wave mechanics.md",
     "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
-    "Phys/PHYS2111/Matrix/Matrix mechanics.md",
     "Phys/PHYS2111/Matrix/Maths detour.md",
     "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
     "Maths/MATH2621/Basic Topology.md",
@@ -226,11 +228,9 @@
     "Comp/COMP2511",
     "Phys/PHYS2111/Wave",
     "Phys/PHYS2111/Matrix",
-    "Phys/Phys.md",
     "Phys/PHYS2111",
     "Maths/MATH2621/Complex Functions/Complex powers.md",
     "Maths/MATH2621/Complex Functions/Roots.md",
-    "Maths/MATH2111/Curves and Surfaces/Definition.md",
     "Maths/MATH2111/Curves and Surfaces/res/Inf.png",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
