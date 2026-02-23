@@ -119,7 +119,9 @@ $$
 0 &\le \braket{v + w | v + w} \\
 &= \braket{v + w | v} + \braket{v + w| w} \\
 &= \braket{v | v} + \braket{w | v} + \braket{v | w} + \braket{w| w} \\
-&= \braket{v | v} + \braket{w | v} + \braket{v | w} + \braket{w| w} \\
+&= \braket{v | v} + \braket{w | v} + \braket{w | v}^* + \braket{w| w} \\
+&= \braket{v | v} + 2\text{Re}(\braket{w | v}) + \braket{w| w} \\
+&+ 2\text{Re}(\braket{w | v})= \braket{v | v} + \braket{w| w} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
