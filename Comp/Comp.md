@@ -6,3 +6,4 @@ tags:
 ## Subjects
 - [[COMP1521]]
 - [[COMP2521]]
+- [[COMP2511]]

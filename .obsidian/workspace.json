@@ -4,49 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "e0d43d3059b71e0a",
+        "id": "39ff184d937c99ae",
         "type": "tabs",
         "children": [
           {
-            "id": "8e79d3bbabb6e8d5",
+            "id": "c0c23497eaba12a3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/Matrix/Maths detour.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Maths detour"
-            }
-          },
-          {
-            "id": "4b88bd6f09992a17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/PHYS2111.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PHYS2111"
-            }
-          },
-          {
-            "id": "0bf499517c447d03",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -193,15 +164,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0bf499517c447d03",
+  "active": "c0c23497eaba12a3",
   "lastOpenFiles": [
-    "Phys/Phys.md",
+    "Comp/Comp.md",
+    "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
+    "Comp/COMP2511/COMP2511.md",
     "Phys/PHYS2111/PHYS2111.md",
-    "Phys/PHYS2111/Matrix/Matrix mechanics.md",
-    "Phys/PHYS1241/Quantum Mech/light/Compton scattering.md",
-    "Maths/MATH2111/Point set topology/Point set topology.md",
-    "Phys/PHYS2111/Wave/Test.md",
+    "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
+    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
+    "Maths/MATH2111/Curves and Surfaces/Definition.md",
+    "Maths/MATH2111/Curves and Surfaces/Continuity.md",
+    "Maths/MATH2111/Analysis and Topology/Point set topology.md",
+    "Maths/MATH2111/Analysis and Topology/Analysis and Topology.md",
+    "Maths/MATH2111/Analysis and Topology/Limits of sequences.md",
+    "Maths/MATH2111/Analysis and Topology/Convergent and Cauchy sequences.md",
+    "Maths/MATH2111/Analysis and Topology/Metrics.md",
+    "Maths/MATH2111/MATH2111.md",
+    "Maths/MATH2111/Analysis and Topology",
+    "Maths/Math.md",
     "Phys/PHYS2111/Wave/Wave mechanics.md",
+    "Phys/PHYS2111/Matrix/Matrix mechanics.md",
+    "Phys/Phys.md",
+    "Phys/PHYS1241/Quantum Mech/light/Compton scattering.md",
+    "Phys/PHYS2111/Wave/Test.md",
     "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
     "Phys/PHYS2111/Matrix/Maths detour.md",
     "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
@@ -209,18 +194,7 @@
     "Maths/MATH2111/Point set topology",
     "Phys/PHYS1241/Waves/EM waves.md",
     "Phys/PHYS1241/Waves/Waves.md",
-    "Phys/PHYS1241/Waves/Optics/Huygen's Principle.md",
-    "Phys/PHYS1241/Waves/Optics/Optics.md",
-    "Phys/PHYS1241/Electricity/Maxwell's Equations.md",
-    "Maths/MATH2111/Analysis/Limits of sequences.md",
-    "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
-    "Comp/COMP2511/Object Oriented/Polymorphism.md",
-    "Comp/COMP2511/Object Oriented/Abstract classes and Interfaces.md",
-    "Maths/MATH2111/Curves and Surfaces/Continuity.md",
     "Maths/MATH2111/Analysis",
-    "Comp/COMP2511/Object Oriented/Inheritance.md",
-    "Comp/COMP2511/Object Oriented/Classes.md",
-    "Comp/COMP2511/COMP2511.md",
     "Comp/COMP2511/Architecture",
     "Comp/COMP2511/Patterns",
     "Comp/COMP2511/Design",
@@ -228,9 +202,6 @@
     "Comp/COMP2511",
     "Phys/PHYS2111/Wave",
     "Phys/PHYS2111/Matrix",
-    "Phys/PHYS2111",
-    "Maths/MATH2621/Complex Functions/Complex powers.md",
-    "Maths/MATH2621/Complex Functions/Roots.md",
     "Maths/MATH2111/Curves and Surfaces/res/Inf.png",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",

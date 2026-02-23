@@ -18,39 +18,32 @@
       "query": "tag:#Continence  ",
       "color": {
         "a": 1,
-        "rgb": 14642208
+        "rgb": 2281091
       }
     },
     {
-      "query": "path:Maths  ",
+      "query": "path:Maths/ ",
       "color": {
         "a": 1,
         "rgb": 3056895
       }
     },
     {
-      "query": "path:Comp  ",
+      "query": "path:Comp/",
       "color": {
         "a": 1,
         "rgb": 13112505
       }
     },
     {
-      "query": "path:Phys  ",
+      "query": "path:Phys/",
       "color": {
         "a": 1,
         "rgb": 13838119
       }
-    },
-    {
-      "query": "",
-      "color": {
-        "a": 1,
-        "rgb": 5419488
-      }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -61,5 +54,5 @@
   "linkStrength": 1,
   "linkDistance": 95,
   "scale": 0.2394007770547089,
-  "close": false
+  "close": true
 }

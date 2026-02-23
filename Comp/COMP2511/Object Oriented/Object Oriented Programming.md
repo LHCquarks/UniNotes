@@ -1,3 +1,7 @@
+---
+tags:
+  - Continence
+---
 ## Topics
 - [[Inheritance]]
 - [[Classes]]
