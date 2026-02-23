@@ -107,9 +107,26 @@ $$
 $$
 We get the following properties for the **hermitian adjoint**:
 ### $(\hat A^\dagger)^\dagger = \hat A$
+For arbitrary vectors $\ket v, \ket w$ we have the two equations:
 $$
 \begin{align}
-
+\braket{\hat A ^\dagger v | w} &=\braket{v | \hat A w} \tag {1}\\
+\braket{w | \hat A^\dagger v} &= \braket{(\hat A^\dagger)^\dagger w | v} \tag{2}
+\end{align}
+$$
+Manipulating the 2nd equation we get:
+$$
+\begin{align}
+\braket{\hat A^\dagger v| w}^* &= \braket{(\hat A^\dagger)^\dagger w | v} \\
+\left(\braket{\hat A^\dagger v| w}^*\right)^* &= \braket{(\hat A^\dagger)^\dagger w | v}^* \\
+\braket{\hat A^\dagger v| w} &= \braket{v|(\hat A^\dagger)^\dagger w }
+\end{align}
+$$
+Now substituting in equation 1:
+$$
+\begin{align}
+\braket{v | \hat A w} &= \braket{v | (\hat A^\dagger)^\dagger w} \\
+\ket{\hat A w} &= \ket{(\hat A^\dagger)^\dagger w} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
