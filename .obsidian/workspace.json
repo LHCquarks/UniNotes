@@ -20,8 +20,33 @@
               "icon": "lucide-file",
               "title": "Maths detour"
             }
+          },
+          {
+            "id": "1989f7fb20def395",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "4b88bd6f09992a17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Phys/PHYS2111/PHYS2111.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PHYS2111"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,13 +193,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8e79d3bbabb6e8d5",
+  "active": "1989f7fb20def395",
   "lastOpenFiles": [
-    "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
-    "Phys/PHYS2111/Matrix/Maths detour.md",
-    "Phys/PHYS2111/Wave/Point set topology.md",
-    "Maths/MATH2621/Basic Topology.md",
+    "Phys/PHYS2111/PHYS2111.md",
+    "Maths/MATH2111/Point set topology/Point set topology.md",
     "Phys/PHYS2111/Wave/Test.md",
+    "Phys/PHYS2111/Wave/Wave mechanics.md",
+    "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
+    "Phys/PHYS2111/Matrix/Matrix mechanics.md",
+    "Phys/PHYS2111/Matrix/Maths detour.md",
+    "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
+    "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2111/Point set topology",
     "Phys/PHYS1241/Waves/EM waves.md",
     "Phys/PHYS1241/Waves/Waves.md",
@@ -189,8 +218,6 @@
     "Maths/MATH2111/Analysis",
     "Comp/COMP2511/Object Oriented/Inheritance.md",
     "Comp/COMP2511/Object Oriented/Classes.md",
-    "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
-    "Phys/PHYS2111/PHYS2111.md",
     "Comp/COMP2511/COMP2511.md",
     "Comp/COMP2511/Architecture",
     "Comp/COMP2511/Patterns",
@@ -204,9 +231,7 @@
     "Maths/MATH2621/Complex Functions/Complex powers.md",
     "Maths/MATH2621/Complex Functions/Roots.md",
     "Maths/MATH2111/Curves and Surfaces/Definition.md",
-    "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
     "Maths/MATH2111/Curves and Surfaces/res/Inf.png",
-    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
     "Comp/COMP2521/Diagrams/BST Rotations.png",
