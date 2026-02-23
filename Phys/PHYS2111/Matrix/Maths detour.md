@@ -110,21 +110,6 @@ $$
 |\ket v + \ket w| \le |\ket v| + |\ket w|
 \end{align}
 $$
-
-### Proof
-Consider: $\braket{v + w | v + w}$
-Then $\braket{v + w | v + w} \ge 0$ and by expanding we get:
-$$
-\begin{align}
-0 &\le \braket{v + w | v + w} \\
-&= \braket{v + w | v} + \braket{v + w| w} \\
-&= \braket{v | v} + \braket{w | v} + \braket{v | w} + \braket{w| w} \\
-&= \braket{v | v} + \braket{w | v} + \braket{w | v}^* + \braket{w| w} \\
-&= \braket{v | v} + 2\text{Re}(\braket{w | v}) + \braket{w| w} \\
-&+ 2\text{Re}(\braket{w | v})= \braket{v | v} + \braket{w| w} \\
-\end{align}
-$$
-<% tp.file.cursor(2) %>
 ## Operators
 Operators are objects that when applied to a vector produce another vector.
 
