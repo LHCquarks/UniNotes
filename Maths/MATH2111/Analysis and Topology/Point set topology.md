@@ -50,4 +50,4 @@ Suppose that $\Omega \subseteq \mathbb R^n$. We say that $x\in \mathbb R^n$ is a
 
 The closure of $\Omega$ denoted by $\text{cl}(\Omega)$ of $\overline \Omega$ is the union of $\Omega$ and all it's **limit points**
 
-
+Fairly intuitively we get that a **limit point** of $\Omega$ is either an **interior point** or a **boundary point**.
