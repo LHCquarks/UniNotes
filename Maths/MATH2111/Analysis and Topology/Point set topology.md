@@ -1,4 +1,4 @@
-## Definitions
+## Properties of Sets
 $|x| = ||x|| = d_2(x, 0)$ is called the **norm** or **magnitude** of $x$
 
 ### Open ball
@@ -27,7 +27,6 @@ A region $\Omega$ is **closed** if $\Omega^c = \mathbb R^n \backslash \Omega$ is
 $x\in\mathbb R^n$ is a **boundary point** of $\Omega$ if for every $r > 0$, the sets $B_r(x) \cap \Omega$ and $B_r(x) \cap \Omega^c$
 ### Boundary of a region
 The boundary of a region $\Omega$ is the set of all boundary points of $\Omega$ and is denoted by $\text{Bd}(\Omega)$ or $\partial \Omega$
-## Results
 ### Composition of open sets
 Suppose that $\Omega$ is a non-empty **open** set. If $x\in \Omega$  then there is an $\epsilon_x > 0$ such that $B(x, \epsilon_x) \subseteq \Omega$. Hence $\Omega = \bigcup_{x\in \Omega} B(x, \epsilon_x)$.
 Therefore we can write any non-empty **open** set as the union of balls
@@ -46,4 +45,7 @@ By induction all of these hold for any finitely many combination their respectiv
 $A \subseteq \mathbb R^n$ and $B \subseteq \mathbb R^m$ are **open** if and only if $A \times B \subseteq \mathbb R^{n + m}$ 
 ### Alternate definition of closure
 A set $\Omega \subseteq \mathbb R^n$ is **closed** if and only if $\partial \Omega \subseteq \Omega$ or in English if it contains all of it's boarder.
-###
+## Limit points and Closure
+Suppose that $\Omega \subseteq \mathbb R^n$. We say that $x\in \mathbb R^n$ is a **limit point** of $\Omega$ if there exists a sequence $\{x_k\}_{k = 1}^\infty$ that approaches $x$ such that $x_k \in \Omega \backslash \{x\}$.
+
+The closure of $\Omega$ denoted by $\text{cl}(\Omega)$ of $\overline \Omega$  
