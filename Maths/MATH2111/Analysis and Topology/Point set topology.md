@@ -48,4 +48,6 @@ A set $\Omega \subseteq \mathbb R^n$ is **closed** if and only if $\partial \Ome
 ## Limit points and Closure
 Suppose that $\Omega \subseteq \mathbb R^n$. We say that $x\in \mathbb R^n$ is a **limit point** of $\Omega$ if there exists a sequence $\{x_k\}_{k = 1}^\infty$ that approaches $x$ such that $x_k \in \Omega \backslash \{x\}$.
 
-The closure of $\Omega$ denoted by $\text{cl}(\Omega)$ of $\overline \Omega$  
+The closure of $\Omega$ denoted by $\text{cl}(\Omega)$ of $\overline \Omega$ is the union of $\Omega$ and all it's **limit points**
+
+
