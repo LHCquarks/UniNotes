@@ -36,16 +36,13 @@ Notice how in axiom 3 we only assumed that the inner product was linear on the k
 $$
 \begin{align}
 A &= \braket{au + bv | w} \\
-A^* &= \braket{au + bv | w}^* \\
-&= \braket {w | au + bv} \tag {1}\\ 
-&= a\braket{w|u} + b\braket{w|v} \tag{3}\\
-A &=  (a\braket{w|u} + b\braket{w|v})^* \\
-&=  a^*\braket{w|u}^* + b^*\braket{w|v}^* \\
+&= \braket {w | au + bv}^* \tag {1}\\ 
+&= a^*\braket{w|u}^* + b^*\braket{w|v}^* \tag{3}\\
 &=  a^*\braket{u|w} + b^*\braket{v|w} \\
 
 \end{align}
 $$
-Thus it is linear on the bras but you need to conjugate the coefficients
+We call this property of the left slot anti linearity as the coefficients are conjugated
 ### Orthogonality
 We define two vectors $\ket v, \ket w$ as **orthogonal** if  $\braket{v|w} = \braket {w|v} = 0$.
 
