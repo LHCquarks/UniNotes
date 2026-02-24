@@ -8,3 +8,6 @@ $$
 
 In English this is, if you create a ball in the output space of my function $f$ centered at $b$ then no matter the radius of that ball I can find a ball in my input space centered at $a$ such that all points in my ball map into points in your ball (except maybe the point at $a$).
 
+## Limit of components
+If you have a function $f(x) = (f_1(x), f_2(x), ..., f_n(x))$ then $f(x) \rightarrow b$ as $x \rightarrow a$ if and only if $f_i(x) \rightarrow b_i$ as $x \rightarrow a$ for all $1 \le i \le n$ 
+
