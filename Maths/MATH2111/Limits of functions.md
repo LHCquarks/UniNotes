@@ -15,5 +15,3 @@ If you have a function $f(x) = (f_1(x), f_2(x), ..., f_n(x))$ then $f(x) \righta
 Take a function $f(x)$. Then $\lim_{x \rightarrow a} f(x) = b$ if and only if for every sequence $\{x_k\}_{k = 1}^\infty$ who's limit is $a$, we get $\lim_{k \rightarrow \infty} f(x_k) = b$.
 Whilst this is not useful in proving the existence or value of a limit it can be used to show simple **counterexamples**
 
-
-
