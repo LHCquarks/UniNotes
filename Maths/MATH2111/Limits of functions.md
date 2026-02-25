@@ -41,3 +41,7 @@ Suppose that $\Omega \subseteq \mathbb R^n$  is open and $f: \Omega \rightarrow 
 
 Similarly, if $f: \mathbb R^n \rightarrow \mathbb R^m$. Then $f$ is continuous if and only if $f^{-1}(\Omega)$ is a closed subset of $\mathbb R^n$  for every closed $\Omega \in \mathbb R^m$
 
+## Path connected sets
+A set $\Omega \subseteq \mathbb R^n$ is a path-connected set if for every $x, y \in \Omega$, there is a continuous function $\varphi: [0, 1] \rightarrow \Omega$ such that $\varphi(0) = x$ and $\varphi(1) = y$
+### Union
+If $\Omega_1, \Omega_2$ are path-connected with $\Omega_1 \cap \Omega_2 \not = \varnothing$  then $\Omega_1 \cup \Omega_2$ is path connected
