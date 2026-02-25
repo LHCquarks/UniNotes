@@ -26,3 +26,13 @@ $$
 $$
 ### Continuity of components
 A function $f(x)$ is continuous if and only if $f_i(x)$ are continuous
+
+## Elementary functions
+We say that $f$  is elementary if it is:
+- constant
+- maps $x$ to any of $x_i, \cos x_i, \sin x_i, \text{exp } x_i$
+- is an inverse of an elementary function
+- is a sum or product of elementary functions
+- is a composition of elementary functions
+
+All elementary functions are continuous
