@@ -36,3 +36,5 @@ We say that $f$  is elementary if it is:
 - is a composition of elementary functions
 
 All elementary functions are continuous
+## Continuity of preimages
+Suppose that $\Omega \subseteq \mathbb R^n$  is open and $f: \Omega \rightarrow \mathbb R^m$. Then $f$ is continuous if and only if $f^{-1}(U)$ is open for every open $U \subseteq \mathbb R^m$
