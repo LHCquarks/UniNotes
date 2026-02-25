@@ -24,3 +24,5 @@ $$
 \forall \epsilon > 0 \ \ \ \exists\delta > 0 \ \ \ \forall x \in \Omega \cap B(a, \delta) \ \ \ f(x) \in B(f(a), \epsilon)
 \end{align}
 $$
+### Continuity of components
+A function $f(x)$ is continuous if and only if $f_i(x)$ are continuous
