@@ -38,3 +38,6 @@ We say that $f$  is elementary if it is:
 All elementary functions are continuous
 ## Continuity of preimages
 Suppose that $\Omega \subseteq \mathbb R^n$  is open and $f: \Omega \rightarrow \mathbb R^m$. Then $f$ is continuous if and only if $f^{-1}(U)$ is open for every open $U \subseteq \mathbb R^m$
+
+Similarly, if $f: \mathbb R^n \rightarrow \mathbb R^m$. Then $f$ is continuous if and only if $f^{-1}(\Omega)$ is a closed subset of $\mathbb R^n$  for every closed $\Omega \in \mathbb R^m$
+
