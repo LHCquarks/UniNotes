@@ -16,4 +16,23 @@ Every particle is actually a wave that is linked to a probability distribution w
 	- $\Delta x \Delta p \ge \hbar/2$
 	- $\Delta E \Delta t \ge \hbar / 2$
 - Tells us how the system evolves in time
-- 
+## Derivation of Schrodinger's equation
+Assuming our equation satisfies the wave equation:
+$$
+\begin{align}
+\frac{\partial^2f}{\partial x^2} = \frac{1}{\nu^2} \frac{\partial^2 f}{\partial t^2}
+\end{align}
+$$
+We state that it should follow our equations:
+$$
+\begin{align}
+p &= \hbar k \\
+E &= \hbar \omega
+\end{align}
+$$
+and It should follow the conservation of energy where total energy is given:
+$$
+\begin{align}
+E &= \frac{p^2}{2m} + V
+\end{align}
+$$
