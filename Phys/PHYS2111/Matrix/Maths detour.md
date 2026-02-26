@@ -205,3 +205,54 @@ $$
 \end{align}
 $$
 This tells us that the **Hermitian adjoint** of a bra is a ket and vice versa
+
+## Orthonormal basis
+An **orthonormal basis** of vector space $V$ with dimension $n$ is a set of vectors $\mathcal B\{\ket i: 1 \le i \le n\}$ with the following properties
+- All vectors are **orthogonal**
+	- For $\ket i, \ket j \in \mathcal B: \ket i \not = \ket j$ we have $\braket{i|j} = 0$
+- All vectors are **normal**
+	- For $\ket i \in \mathcal B$ we have $\braket{i|i} = 1$
+- $\mathcal B$ is a basis for the vector space $V$
+	- $\mathcal B$ is linearly independent
+	- All vectors of $V$ are linear combinations of vectors in $\mathcal B$
+
+If we have an **orthonormal basis** we can uniquely expand any vector in terms of the basis like so:
+$$
+\begin{align}
+\ket v = v_0 \ket 0 + v_1 \ket 1 + ... + v_n \ket n
+\end{align}
+$$
+### Kronecker delta
+The kronecker delta is an object defined as such:
+$$
+\begin{align}
+\delta_{i, j} = \begin{cases} 1 & i = j\\ 0 & i \not= j \end{cases}
+\end{align}
+$$
+This object can be a very useful notation especially when working with inner products of orthonormal basis as:
+$$
+\begin{align}
+\braket{i | j} = \delta_{i, j}
+\end{align}
+$$
+Further when we have a double sum involving a kronecker delta it can be collapsed easily:
+$$
+\begin{align}
+\sum_{i} \sum_j a_{i, j} \delta_{i, j} &= \sum_i a_{i, i} \delta_{i, i} \\
+&= \sum_i a_{i, i} (1) \\
+&= \sum_i a_{i, i} \\
+\end{align}
+$$
+### inner product using orthonormal basis
+Take the inner product of two vectors $\ket v, \ket w$ and their inner product
+$$
+\begin{align}
+\braket{v | w} &= \braket{v | \sum_j w_i \ket i} \\
+&= \sum_i w_i\braket{v | i} \\
+&= \sum_i w_i\braket{\sum_j v_j \ket j | i} \\
+&= \sum_i w_i \sum_j v_j^* \braket{ j | i} \\
+&= \sum_i \sum_j w_i v_j^* \braket{ j | i} \\
+&= \sum_i \sum_j w_i v_j^* \delta_{i, j} \\
+&= \sum_i w_i v_i^* \\
+\end{align}
+$$
