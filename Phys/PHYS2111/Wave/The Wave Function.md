@@ -20,7 +20,7 @@ Every particle is actually a wave that is linked to a probability distribution w
 Assuming our equation satisfies the wave equation:
 $$
 \begin{align}
-\frac{\partial^2f}{\partial x^2} = \frac{1}{\nu^2} \frac{\partial^2 f}{\partial t^2}
+\frac{\partial^2f}{\partial x^2} = \frac{1}{\nu^2} \frac{\partial f}{\partial t}
 \end{align}
 $$
 We state that it should follow our equations
