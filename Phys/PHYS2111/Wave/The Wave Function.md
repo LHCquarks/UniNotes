@@ -12,3 +12,8 @@ Every particle is actually a wave that is linked to a probability distribution w
 - The wave function and it's derivative should be continuous and differentiable* and single valued
 - There should be "probability currents" (probability should have to flow to neibouring points in space rather than teleporting)
 - The wave function should contain all necessary information about the system to make predictions
+- There are limits on the certainty with which we can measure certain properties simultaneously
+	- $\Delta x \Delta p \ge \hbar/2$
+	- $\Delta E \Delta t \ge \hbar / 2$
+- Tells us how the system evolves in time
+- 
