@@ -23,16 +23,23 @@ $$
 \frac{\partial^2f}{\partial x^2} = \frac{1}{\nu^2} \frac{\partial^2 f}{\partial t^2}
 \end{align}
 $$
-We state that it should follow our equations:
+We state that it should follow our equations
 $$
 \begin{align}
-p &= \hbar k \\
-E &= \hbar \omega
+p &= \hbar k, \\
+E &= \hbar \omega,
 \end{align}
 $$
-and It should follow the conservation of energy where total energy is given:
+It should follow the conservation of energy where total energy is given by
 $$
 \begin{align}
-E &= \frac{p^2}{2m} + V
+E &= \frac{p^2}{2m} + V,
 \end{align}
 $$
+Solutions should have linear combinations so that
+$$
+\begin{align}
+\Psi = c_1 \Psi_1 + c_2 \Psi_2 \\
+\end{align}
+$$
+
