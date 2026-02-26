@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Matrix/Maths detour.md",
+                "file": "Phys/PHYS2111/Wave/The Wave Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Maths detour"
+              "title": "The Wave Function"
             }
           }
         ]
@@ -170,6 +170,9 @@
   },
   "active": "a5100b578dc85755",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Wave/Wave mechanics.md",
+    "Phys/PHYS2111/Wave/The Wave Function.md",
+    "Phys/PHYS2111/Matrix/Maths detour.md",
     "Maths/MATH2111/Limits of functions.md",
     "Maths/MATH2111/MATH2111.md",
     "Maths/MATH2111/Analysis and Topology/Analysis and Topology.md",
@@ -188,16 +191,13 @@
     "Maths/MATH2111/Analysis and Topology/Limits of sequences.md",
     "Maths/MATH2111/Analysis and Topology",
     "Maths/Math.md",
-    "Phys/PHYS2111/Wave/Wave mechanics.md",
     "Phys/PHYS2111/Matrix/Matrix mechanics.md",
     "Phys/Phys.md",
     "Phys/PHYS1241/Quantum Mech/light/Compton scattering.md",
     "Phys/PHYS2111/Wave/Test.md",
     "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
-    "Phys/PHYS2111/Matrix/Maths detour.md",
     "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
     "Maths/MATH2111/Point set topology",
-    "Phys/PHYS1241/Waves/EM waves.md",
     "Maths/MATH2111/Analysis",
     "Comp/COMP2511/Architecture",
     "Comp/COMP2511/Patterns",
