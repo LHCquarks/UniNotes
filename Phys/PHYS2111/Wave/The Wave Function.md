@@ -39,7 +39,8 @@ $$
 Solutions should have linear combinations so that
 $$
 \begin{align}
-\Psi = c_1 \Psi_1 + c_2 \Psi_2 \\
+\Psi = c_1 \Psi_1 + c_2 \Psi_2. \\
 \end{align}
 $$
+First we will consider a situation where there is no potential energy.
 
