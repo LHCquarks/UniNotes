@@ -46,3 +46,5 @@ A set $\Omega \subseteq \mathbb R^n$ is a path-connected set if for every $x, y 
 ### Union
 If $\Omega_1, \Omega_2$ are path-connected with $\Omega_1 \cap \Omega_2 \not = \varnothing$  then $\Omega_1 \cup \Omega_2$ is path connected
 
+### Generalized intermediate value theorem
+If $\Omega \subseteq \mathbb R^n$ is path-connected and $f: \Omega \rightarrow \mathbb R^n$ is continuous, then $f(\Omega)$ is path connected.
