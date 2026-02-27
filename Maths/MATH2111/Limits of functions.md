@@ -45,6 +45,14 @@ Similarly, if $f: \mathbb R^n \rightarrow \mathbb R^m$. Then $f$ is continuous i
 A set $\Omega \subseteq \mathbb R^n$ is a path-connected set if for every $x, y \in \Omega$, there is a continuous function $\varphi: [0, 1] \rightarrow \Omega$ such that $\varphi(0) = x$ and $\varphi(1) = y$
 ### Union
 If $\Omega_1, \Omega_2$ are path-connected with $\Omega_1 \cap \Omega_2 \not = \varnothing$  then $\Omega_1 \cup \Omega_2$ is path connected
-
 ### Generalized intermediate value theorem
 If $\Omega \subseteq \mathbb R^n$ is path-connected and $f: \Omega \rightarrow \mathbb R^n$ is continuous, then $f(\Omega)$ is path connected.
+## Bounded sets
+A bounded set is a set $\Omega$ if there exists a $M$ that for all elements $x \in \Omega$:
+$$
+\begin{align}
+d(x, 0) \le M
+\end{align}
+$$
+## Compact sets
+A compact set is a set that is both **closed** and **bounded**
