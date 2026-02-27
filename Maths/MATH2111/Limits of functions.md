@@ -56,3 +56,5 @@ d(x, 0) \le M
 $$
 ## Compact sets
 A compact set is a set that is both **closed** and **bounded**
+### Subsequences in compact sets
+Suppose that $\{a_k\}_{k=1}^\infty$ is a sequence of real numbers. Then there is a subsequence $\{a_{k_j}\}_{j = 1}^\infty$  that is monotonic
