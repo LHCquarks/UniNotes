@@ -67,4 +67,3 @@ We repeat this step on our new sequence for all components of out inital sequenc
 
 This means that the theorem is true:
 A set $\Omega \subseteq \mathbb R^n$ is compact if and only if every sequence in $\Omega$ has a convergent subsequence whose limit is in $\Omega$
-## 
