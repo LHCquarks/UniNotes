@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "8baa2dbeb2512973",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
-            }
-          },
-          {
             "id": "69176ca1c64e7b4c",
             "type": "leaf",
             "state": {
@@ -195,10 +183,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8baa2dbeb2512973",
+  "active": "69176ca1c64e7b4c",
   "lastOpenFiles": [
-    "Phys/PHYS1241/Waves/Optics/Slits/Single Slit Diffraction.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Young's Interference Experiment.md",
+    "Phys/PHYS1241/Waves/Optics/Slits/Single Slit Diffraction.md",
     "Phys/PHYS1241/Waves/Phasors.md",
     "Phys/PHYS1241/Waves/Optics/Interference.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Diffraction gratings.md",
