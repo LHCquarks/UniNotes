@@ -77,4 +77,3 @@ f(a) \le f(x) \le f(b)
 \end{align}
 $$
 for all $x \in K$
-
