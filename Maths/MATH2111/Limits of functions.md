@@ -67,3 +67,5 @@ We repeat this step on our new sequence for all components of out inital sequenc
 
 This means that the theorem is true:
 A set $\Omega \subseteq \mathbb R^n$ is compact if and only if every sequence in $\Omega$ has a convergent subsequence whose limit is in $\Omega$
+## Continuous functions and compactness
+For a compact set $K$ and a continuous function $f: K \rightarrow R^n$ we get that the set $f(K)$ is also compact. Thus continuity of functions preserves compactness
