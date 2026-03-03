@@ -35,8 +35,7 @@
               "title": "Single Slit Diffraction"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,10 +182,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "69176ca1c64e7b4c",
+  "active": "a5100b578dc85755",
   "lastOpenFiles": [
-    "Phys/PHYS1241/Waves/Optics/Slits/Young's Interference Experiment.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Single Slit Diffraction.md",
+    "Phys/PHYS1241/Waves/Optics/Slits/Young's Interference Experiment.md",
     "Phys/PHYS1241/Waves/Phasors.md",
     "Phys/PHYS1241/Waves/Optics/Interference.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Diffraction gratings.md",
