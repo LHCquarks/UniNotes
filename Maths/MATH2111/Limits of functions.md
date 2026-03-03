@@ -69,3 +69,12 @@ This means that the theorem is true:
 A set $\Omega \subseteq \mathbb R^n$ is compact if and only if every sequence in $\Omega$ has a convergent subsequence whose limit is in $\Omega$
 ## Continuous functions and compactness
 For a compact set $K$ and a continuous function $f: K \rightarrow R^n$ we get that the set $f(K)$ is also compact. Thus continuity of functions preserves compactness
+## Extreme value theorem
+Suppose that $K \subseteq \mathbb R^n$ is a compact set and $f: K \rightarrow \mathbb R$ is a continuous function. Then $f$ attains both a maximum and a minimum value in $K$ such that:
+$$
+\begin{align}
+f(a) \le f(x) \le f(b)
+\end{align}
+$$
+for all $x \in K$
+
