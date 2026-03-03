@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS1241/Waves/Optics/Slits/Young's Interference Experiment.md",
+                "file": "Maths/MATH2111/Curves and Surfaces/Graphing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Young's Interference Experiment"
+              "title": "Graphing"
             }
           },
           {
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.50312423706055
+    "width": 246.50312423706055,
+    "collapsed": true
   },
   "right": {
     "id": "1b9a36d433dae292",
@@ -184,8 +185,8 @@
   },
   "active": "a5100b578dc85755",
   "lastOpenFiles": [
-    "Phys/PHYS1241/Waves/Optics/Slits/Single Slit Diffraction.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Young's Interference Experiment.md",
+    "Phys/PHYS1241/Waves/Optics/Slits/Single Slit Diffraction.md",
     "Phys/PHYS1241/Waves/Phasors.md",
     "Phys/PHYS1241/Waves/Optics/Interference.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Diffraction gratings.md",
