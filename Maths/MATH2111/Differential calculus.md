@@ -47,3 +47,29 @@ If $f$ is differentiable then:
 - It's derivative is unique
 - All partial derivatives exist
 - $Df(x) = Jf(x)$
+## Derivatives of curves
+The derivative of a curve $c(t) = (c_1(t), c_2(t), ..., c_n(t))$ is given by
+$$
+\begin{align}
+Jc(t) &= \pmatrix{\frac{\partial c_1}{\partial t} \\ \frac{\partial c_2}{\partial t} \\ \ \ \vdots \\ \frac{\partial c_n}{\partial t}} \\
+c'(t) &= \pmatrix{\frac{d c_1}{d t} \\ \frac{d c_2}{d t} \\ \ \ \vdots \\ \frac{d c_n}{d t}}
+\end{align}
+$$
+This can be interpreted as the tangent vector at different points along the curve
+
+For curves $c_1(t), c_2(t)$, a function $f(t): I \rightarrow \mathbb R$ and a $\lambda \in \mathbb R$ we have:
+- $(c_1 + c_2)'(t) = c_1'(t) + c_2'(t)$
+- $(\lambda c_1)'(t) = \lambda c_1'(t)$
+- $(fc_1)'(t) = f'(t)c_1(t) + f(t)c_1'(t)$
+- $(c_1 \cdot c_2)'(t) = c_1'(t) \cdot c_2(t) + c_1(t) \cdot c_2'(t)$
+- If the output dimension of $c_1, c_2$ is 3 then:
+	- $(c_1 \times c_2)'(t) = c_1'(t) \times c_2(t) + c_1(t) \times c_2'(t)$
+- $(c_1 \circ f)'(t) = f'(t)c_1'(f(t))$
+## Generalized chain rule
+If we have the subsets $\Omega \subseteq \mathbb R^n, \Omega' \subseteq \mathbb R^m$ and the functions $f: \Omega \rightarrow \Omega', g: \Omega' \rightarrow \mathbb R^j$.
+Then if $f$ is differentiable at $x_0$ and $g$ is differentiable at $f(x_0)$ then:
+$$
+\begin{align}
+D(g\circ f)(x_0) = Df(x_0)Dg(f(x_0))
+\end{align}
+$$
