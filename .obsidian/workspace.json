@@ -8,35 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f70485889333b68c",
+            "id": "c347a4631e574fdc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/MATH2111.md",
+                "file": "Maths/MATH2111/Differential Calculus/The directional derivative.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MATH2111"
+              "title": "The directional derivative"
             }
           },
           {
-            "id": "5d09446c3bf57bf5",
+            "id": "5eadbdd07135ab3c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH2111/Differential calculus.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Differential calculus"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,14 +178,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96d45fc57194ed4e",
+  "active": "c347a4631e574fdc",
   "lastOpenFiles": [
-    "Differential calculus",
-    "Maths/MATH2111/Differential calculus.md",
+    "Maths/MATH2111/Differential Calculus/The directional derivative.md",
+    "Maths/MATH2111/Analysis and Topology/Analysis and Topology.md",
+    "Maths/MATH2111/Curves and Surfaces/Definition.md",
+    "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
+    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
+    "Maths/MATH2111/Differential Calculus/Differential calculus.md",
+    "Maths/MATH2111/Curves and Surfaces/Continuity.md",
     "Maths/MATH2111/MATH2111.md",
+    "Maths/MATH2111/Differential Calculus/The multivariable derivative.md",
+    "Maths/MATH2111/Differential Calculus",
+    "Differential calculus",
     "Maths/MATH2111/Limits of functions.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Single Slit Diffraction.md",
-    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Young's Interference Experiment.md",
     "Phys/PHYS1241/Waves/Phasors.md",
     "Phys/PHYS1241/Waves/Optics/Interference.md",
@@ -198,19 +200,14 @@
     "Phys/PHYS2111/Wave/The Wave Function.md",
     "Phys/PHYS2111/Wave/Wave mechanics.md",
     "Phys/PHYS2111/Matrix/Maths detour.md",
-    "Maths/MATH2111/Analysis and Topology/Analysis and Topology.md",
     "Maths/MATH2111/Analysis and Topology/Convergent and Cauchy sequences.md",
     "Maths/MATH2111/Analysis and Topology/Metrics.md",
     "Maths/MATH2111/Analysis and Topology/Point set topology.md",
-    "Maths/MATH2111/Curves and Surfaces/Definition.md",
-    "Maths/MATH2111/Curves and Surfaces/Curves and Surfaces.md",
-    "Maths/MATH2111/Curves and Surfaces/Continuity.md",
     "Maths/MATH2621/Basic Topology.md",
     "Comp/Comp.md",
     "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
     "Comp/COMP2511/COMP2511.md",
     "Phys/PHYS2111/PHYS2111.md",
-    "Maths/MATH2111/Analysis and Topology/Limits of sequences.md",
     "Maths/MATH2111/Analysis and Topology",
     "Maths/MATH2111/Point set topology",
     "Maths/MATH2111/Analysis",
@@ -219,8 +216,6 @@
     "Comp/COMP2511/Design",
     "Comp/COMP2511/Object Oriented",
     "Comp/COMP2511",
-    "Phys/PHYS2111/Wave",
-    "Phys/PHYS2111/Matrix",
     "Maths/MATH2111/Curves and Surfaces/res/Inf.png",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",

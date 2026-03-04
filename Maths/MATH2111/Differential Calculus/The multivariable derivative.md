@@ -75,4 +75,3 @@ D(g\circ f)(x_0) = Df(x_0)Dg(f(x_0))
 $$
 ## Partial derivative existence $\implies$ continuous?
 Generally no however, If we strengthen our conditions then our function $f$ is continuous if we have continuous $\frac{\partial f_i}{\partial f_j}$ on an open set around our point.
-
