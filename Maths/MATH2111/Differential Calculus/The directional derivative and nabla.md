@@ -6,3 +6,11 @@ $$
 \end{align}
 $$
 where $\hat{v} = v / |v|$.
+### Better formula
+This definition simplifies to:
+$$
+\begin{align}
+\left(\frac{\partial f}{\partial x_1}(x_0), \frac{\partial f}{\partial x_2}(x_0), ...,\frac{\partial f}{\partial x_n}(x_0) \right) \hat{v}
+\end{align}
+$$
+Because this row vector of derivatives are pretty important we write it as $\nabla f$ pronounced **nabla**
