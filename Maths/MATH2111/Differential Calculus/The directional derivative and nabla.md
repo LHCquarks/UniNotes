@@ -39,4 +39,9 @@ $$
 T_{x_0}f(x) &= \nabla f(x_0) \cdot (x - x_0) + f(x_0)
 \end{align}
 $$
-For implicit surfaces of the form $\phi(x) = 0$ the 
+For implicit surfaces of the form $S = \{x\in \mathbb R^n: \phi(x) = c\}$ we get that $\nabla \phi(x_0)$ is the normal to our surface at the point $x_0 \in S$ and thus our tangent plane is given by:
+$$
+\begin{align}
+T_{\phi,x_0}  = \{x \in \mathbb R^n: \nabla \phi(x_0) \cdot (x - x_0) = 0\}
+\end{align}
+$$
