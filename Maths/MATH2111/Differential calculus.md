@@ -73,3 +73,5 @@ $$
 D(g\circ f)(x_0) = Df(x_0)Dg(f(x_0))
 \end{align}
 $$
+## Partial derivative existence $\implies$ continuous?
+Generally no however, 
