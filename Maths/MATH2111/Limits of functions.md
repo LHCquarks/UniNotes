@@ -63,7 +63,7 @@ If a bounded sequence is monotonic then it converges to its supreemum / infium.
 
 Start with a sequence in $\mathbb R^n$ and for the first component remove terms until we have a monotonic subsequence and therefore a convergent subsequence for the first term.
 
-We repeat this step on our new sequence for all components of out inital sequence and we get out a subsequence which converge for all components and so converges.
+We repeat this step on our new sequence for all components of out initial sequence and we get out a subsequence which converge for all components and so converges.
 
 This means that the theorem is true:
 A set $\Omega \subseteq \mathbb R^n$ is compact if and only if every sequence in $\Omega$ has a convergent subsequence whose limit is in $\Omega$
