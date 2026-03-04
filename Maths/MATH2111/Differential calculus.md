@@ -30,8 +30,8 @@ $$
 \end{align}
 $$
 
-## Jacobin matrix
-The Jacobin matrix of a function $f: \Omega \rightarrow \mathbb R^m$ where $\Omega \subseteq \mathbb R^n$ at a point $x_0 \in \Omega$ is defined as the $m\times n$ matrix:
+## Jacobian matrix
+The Jacobian matrix of a function $f: \Omega \rightarrow \mathbb R^m$ where $\Omega \subseteq \mathbb R^n$ at a point $x_0 \in \Omega$ is defined as the $m\times n$ matrix:
 $$
 \begin{align}
 (Jf(x_0))_{ij} &= \frac{\partial f_i}{\partial x_j}(x_0) \\
@@ -43,3 +43,7 @@ Jf(x_0)&= \begin{pmatrix}
 \end{pmatrix}
 \end{align}
 $$
+If $f$ is differentiable then:
+- It's derivative is unique
+- All partial derivatives exist
+- $Df(x) = Jf(x)$
