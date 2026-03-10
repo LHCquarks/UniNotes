@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
+                "file": "Maths/MATH2111/Differential Calculus/The directional derivative and nabla.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Postulates of Matrix mechanics"
+              "title": "The directional derivative and nabla"
             }
           }
         ]
@@ -170,6 +170,7 @@
   },
   "active": "5eadbdd07135ab3c",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
     "Maths/MATH2111/Limits of functions.md",
     "Maths/MATH2111/Analysis and Topology/Point set topology.md",
     "Maths/MATH2111/Analysis and Topology/Analysis and Topology.md",
@@ -197,7 +198,6 @@
     "Comp/Comp.md",
     "Comp/COMP2511/Object Oriented/Object Oriented Programming.md",
     "Comp/COMP2511/COMP2511.md",
-    "Phys/PHYS2111/PHYS2111.md",
     "Maths/MATH2111/Analysis and Topology",
     "Maths/MATH2111/Point set topology",
     "Maths/MATH2111/Analysis",

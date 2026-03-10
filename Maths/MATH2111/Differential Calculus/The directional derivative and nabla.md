@@ -45,3 +45,29 @@ $$
 T_{\phi,x_0}  = \{x \in \mathbb R^n: \nabla \phi(x_0) \cdot (x - x_0) = 0\}
 \end{align}
 $$
+We can also write our tangent plane to our function $f$ parametrically as:
+$$
+\begin{align}
+T_{f, x_0} = \left\{x = x_0 + \lambda_1
+\begin{pmatrix}
+1 \\ 0 \\ \vdots \\ 0 \\ \frac{\partial f}{\partial x_1}
+\end{pmatrix} + \lambda_2
+\begin{pmatrix}
+0 \\ 1 \\ \vdots \\ 0 \\ \frac{\partial f}{\partial x_2}
+\end{pmatrix} + \dots + \lambda_n 
+\begin{pmatrix}
+0 \\ 0 \\ \vdots \\ 1 \\ \frac{\partial f}{\partial x_n}
+\end{pmatrix}
+\right\}
+\end{align}
+$$
+Further, a tangent line to a surface $f$ in the direction $\hat v$ can be expressed parametrically as:
+$$
+\begin{align}
+L_{f, x_0} = \left\{x = x_0 + \lambda 
+\begin{pmatrix} 
+v_1 \\ v_2 \\ \vdots \\ v_n \\ \frac{\partial f}{\partial v}(x_0)
+\end{pmatrix}
+\right\}
+\end{align}
+$$
