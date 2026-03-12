@@ -27,3 +27,5 @@ f_{x_n x_1}(\vec{a}) & f_{x_nx_2}(\vec{a}) & \dots & f_{x_n x_n}(\vec a) \\
 } (\vec{v} - \vec{a})
 \end{align}
 $$
+This big matrix is called the **Hessian** matrix and is normally written as $H_f(\vec a)$. It is defined as above so that $[H_f(\vec a)]_{i,j} = f_{x_i, x_j}(\vec a)$ 
+
