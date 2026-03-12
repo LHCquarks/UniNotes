@@ -63,5 +63,13 @@ $$
 $$
 And thus all real properties have **Hermitian** operators
 
+We can also find the variance of our values through:
+$$
+\begin{align}
+\text{Var}(\hat A) &=  \braket {\hat A^2} - \braket{\hat A}^2 \\
+&=  \braket {\Psi | \hat A \hat A \Psi} - \braket{\Psi | \hat A \Psi}^2 \\
+\end{align}
+$$
+
 
 
