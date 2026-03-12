@@ -1,46 +1,53 @@
-### New relations:
-$E = h\nu = \hbar \omega$  
-$p = h/\lambda = \hbar k$ 
-### The born interpretation
-Every particle is actually a wave that is linked to a probability distribution where:
-- A high wave amplitude means it is more likely to be there
-- A low amplitude means it is less likely to be there
-### Properties we want the wave function to have in 1d
+In the time just before quantum mechanics, two equations were found that seemed to describe this weird world and using these produced semi-classical mechanics. They were:
+- Planks equation $E = h \nu = \hbar \omega$ 
+- and the deBroglie wavelength $p = h/\lambda = \hbar k$
+
+Assuming particles follow the wave equation the Schrodinger equation was derived:
+$$
+\begin{align}
+i\hbar\frac{\partial \Psi}{\partial t} = \hat H \Psi =  - \frac{\hbar^2}{2m} \frac{\partial^2 \Psi}{\partial x^2} + V\Psi
+\end{align}
+$$
+
+In this equation:
+- $\Psi$ represents the wave function, a solution to the equation
+- $i$ is the imaginary unit
+- $\hbar$ is a constant which equals $\hbar = 1.05 \times 10^{-34}$Js
+- $\hat H$ is the Hamiltonian operator (more on that later)
+- $m$ is the mass of the particle
+- $V$ is the potential energy at the specified location
+## Properties the wave function has in 1d
 - The wave function $\Psi(x, t)$ is a complex valued function
 - The probability density is derived as $P(x, t) = \Psi^*(x, t) \Psi(x, t) = |\Psi(x, t)|^2$
 - The probability distribution should tend to zero as we move further away or: $\lim_{x \rightarrow \infty} P(x, t) = 0$
 - The wave function and it's derivative should be continuous and differentiable* and single valued
-- There should be "probability currents" (probability should have to flow to neibouring points in space rather than teleporting)
+- There should be "probability currents" (probability should have to flow to neighboring points in space rather than teleporting)
 - The wave function should contain all necessary information about the system to make predictions
 - There are limits on the certainty with which we can measure certain properties simultaneously
 	- $\Delta x \Delta p \ge \hbar/2$
 	- $\Delta E \Delta t \ge \hbar / 2$
 - Tells us how the system evolves in time
-## Derivation of Schrodinger's equation
-Assuming our equation satisfies the wave equation:
+- The pdf of the wave function remains normalized over time
+## Operators
+Just like the **matrix** mechanics part of the course operators are objects that we apply to our wave function to measure certain things.
+
+Common operators include:
 $$
 \begin{align}
-\frac{\partial^2f}{\partial x^2} = \frac{1}{\nu^2} \frac{\partial f}{\partial t}
+\hat p &= - i \hbar \frac{\partial}{\partial x}, \\
+\hat x &= x
 \end{align}
 $$
-We state that it should follow our equations
+## Expectation values
+To find the "average" value of a property of our wave function we take the **expectation value** of our wave function after applying the operator. This is denoted by $\braket {\hat A}$ where $\hat A$ is our operator.
+
+This then expands to:
 $$
 \begin{align}
-p &= \hbar k, \\
-E &= \hbar \omega,
+\braket \hat A &=  \braket {\Psi | \hat A \Psi}\\
+&= \int_{-\infty}^\infty \Psi^* \hat A \Psi dx
 \end{align}
 $$
-It should follow the conservation of energy where total energy is given by
-$$
-\begin{align}
-E &= \frac{p^2}{2m} + V,
-\end{align}
-$$
-Solutions should have linear combinations so that
-$$
-\begin{align}
-\Psi = c_1 \Psi_1 + c_2 \Psi_2. \\
-\end{align}
-$$
-First we will consider a situation where there is no potential energy.
+
+
 
