@@ -2,19 +2,17 @@
 The state of a particle is represented by a **vector** $\ket{\psi (t)}$ in a **Hilbert space**.
 
 ## Postulate 2
-Assume $\hat \Omega$ is a linear operator that acts of $\ket v$ such that
+For every observable in classical mechanics there exists a corresponding **linear**, **hermitian** operator in quantum mechanics
+
+## Postulate 3
+The measurement of an observable $\hat \Omega$ in quantum mechanics on a state $\ket \Psi$ will yield one of the eigenvalues of $\omega$ with probability $P(\omega) = |\braket{\omega | \Psi}|^2$. After the measurement the state will change from $\ket \Psi$ to $\ket \omega$.
+
+## Postulate 4
 $$
 \begin{align}
-\hat \Omega \ket v = \ket {v'}
+i \hbar \frac{\partial \Psi}{\partial t} = \hat H \Psi
 \end{align}
 $$
-**Eigenkets** exist for which
-$$
-\begin{align}
-\hat \Omega \ket v = \omega \ket v
-\end{align}
-$$
-Where $\omega$ is the **eigenvalue** and $\ket v$ is a **eigenstate / eigenvector / eigenket**
 
 
 

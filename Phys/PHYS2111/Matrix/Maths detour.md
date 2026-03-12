@@ -256,3 +256,26 @@ $$
 &= \sum_i w_i v_i^* \\
 \end{align}
 $$
+## Operator types
+There are 3 special types of operators:
+- **Hermitian** such that $\hat \Omega = \hat \Omega ^ \dagger$
+- **Anti-Hermitian** such that $\hat \Omega ^ \dagger = - \hat \Omega$
+- **Unitary** such that $\hat \Omega ^ \dagger \hat \Omega = \hat I$
+Key facts about these operators are bellow:
+1. We can decompose any operator $\hat \Lambda$ into hermitian and anti-hermitian parts like so
+$$
+\begin{align}
+\hat \Lambda &= \frac{\hat \Lambda + \hat \Lambda ^\dagger}{2} + \frac{\hat \Lambda - \hat \Lambda^\dagger}{2}
+\end{align}
+$$
+Where the left hand side of the sum is **Hermitian** and the right hand side is **Anti-Hermitian**.
+
+2. Further, **Unitary** operators preserve inner products so:
+$$
+\begin{align}
+\braket{\hat U v_1 | \hat U v_2} &= \braket {v_1 | \hat U^\dagger \hat U v_2} \\
+&= \braket{v_1 | I v_2} \\
+&= \braket {v_1 | v_2}
+\end{align}
+$$
+3. Eigenvalues of **Hermitian** operators are real, and eigenvectors corresponding to distinct eigenvalues are orthogonal

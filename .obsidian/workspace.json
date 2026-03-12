@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Wave/The Wave Function.md",
+                "file": "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Wave Function"
+              "title": "Postulates of Matrix mechanics"
             }
           }
         ],
@@ -185,12 +185,14 @@
   },
   "active": "c48d784aea620b47",
   "lastOpenFiles": [
-    "Phys/PHYS2111/Wave/Wave mechanics.md",
+    "Phys/PHYS2111/Matrix/Maths detour.md",
+    "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
+    "Phys/PHYS2111/Matrix/Matrix mechanics.md",
     "Phys/PHYS2111/Wave/The Wave Function.md",
+    "Phys/PHYS2111/Wave/Wave mechanics.md",
     "Phys/PHYS2111/Wave/Test.md",
     "Maths/MATH2111/Differential Calculus/Taylor Polynomials.md",
     "Maths/MATH2111/Differential Calculus/The directional derivative and nabla.md",
-    "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
     "Maths/MATH2111/Limits of functions.md",
     "Maths/MATH2111/Analysis and Topology/Point set topology.md",
     "Maths/MATH2111/Analysis and Topology/Analysis and Topology.md",
@@ -208,11 +210,9 @@
     "Phys/PHYS1241/Waves/Phasors.md",
     "Phys/PHYS1241/Waves/Optics/Interference.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Diffraction gratings.md",
-    "Phys/PHYS2111/Matrix/Maths detour.md",
     "Maths/MATH2111/Analysis and Topology/Convergent and Cauchy sequences.md",
     "Maths/MATH2111/Analysis and Topology/Metrics.md",
     "Maths/MATH2621/Basic Topology.md",
-    "Comp/Comp.md",
     "Maths/MATH2111/Analysis and Topology",
     "Maths/MATH2111/Point set topology",
     "Maths/MATH2111/Analysis",
