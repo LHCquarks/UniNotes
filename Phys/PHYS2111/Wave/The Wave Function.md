@@ -49,5 +49,19 @@ $$
 \end{align}
 $$
 
+Now because properties of particles are souly real we get that
+$$
+\begin{align}
+\braket \hat A ^* = \braket \hat A
+\end{align}
+$$ and expanding this out we get:
+$$
+\begin{align}
+\braket {\Psi | \hat A \Psi} ^* &= \braket{\Psi | \hat A  \Psi} \\
+\braket {\hat A \Psi | \Psi} &= \braket{\Psi | \hat A  \Psi} \\
+\end{align}
+$$
+And thus all real properties have **Hermitian** operators
+
 
 
