@@ -33,10 +33,9 @@ This big matrix is called the **Hessian** matrix and is normally written as $H_f
 Although it isn't assessed in this course, the kth order taylor polynomial is given by:
 $$
 \begin{align}
-P_{f, k, \vec{a}}(\vec x) = f(\vec a) + \nabla f(\vec a) \cdot (\vec x - \vec a)
+P_{f, k, \vec{a}}(\vec x) &= f(\vec a) + \nabla f(\vec a) \cdot (\vec x - \vec a)
 + \frac{1}{2}(\vec x - \vec a)^T H_f(\vec a) (\vec v - \vec a) \\
-+ \dots
-+ \frac{1}{k!} \sum_{i_1, i_2, \dots, i_k = 1}^{k} \frac{\partial^k f}{\partial i}
+&+ \dots
++ \frac{1}{k!} \sum_{i_1, i_2, \dots, i_k = 1}^{k} \frac{\partial^k f}{\partial x_{i_1} \partial x_{i_2} \dots \partial x_{i_k}} (\vec a) (x_1 - a_1) (x_2 - a_2) \dots (x_n - a_n)
 \end{align}
 $$
-<% tp.file.cursor(2) %>
