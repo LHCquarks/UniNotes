@@ -29,3 +29,11 @@ f_{x_n x_1}(\vec{a}) & f_{x_nx_2}(\vec{a}) & \dots & f_{x_n x_n}(\vec a) \\
 $$
 This big matrix is called the **Hessian** matrix and is normally written as $H_f(\vec a)$. It is defined as above so that $[H_f(\vec a)]_{i,j} = f_{x_i, x_j}(\vec a)$ 
 
+## General formula
+Although it isn't assessed in this course, the kth order taylor polynomial is given by:
+$$
+\begin{align}
+P_{f, k, \vec{a}}(\vec x) = f(\vec a) + \nabla f(\vec a)
+\end{align}
+$$
+<% tp.file.cursor(2) %>
