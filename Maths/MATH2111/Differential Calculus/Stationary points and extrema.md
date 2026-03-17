@@ -118,4 +118,12 @@ $$
 x, y = \pm \sqrt 2
 \end{align}
 $$
+### Multiple constraints (Not assailable)
+If we have multiple constraint surfaces $g_i$ then our equation we have to solve turns into
+$$
+\begin{align}
+\nabla f(\vec a) = \lambda_1 \nabla g_1(\vec a) + \lambda_2 \nabla g_2(\vec a) + \dots + \lambda_n \nabla g_n(\vec a)
+\end{align}
+$$
+This is because now we have that $\nabla f(\vec a)$ is a linear combination of the $\nabla g_n(\vec a)$ constraints.
 
