@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/Differential Calculus/Stationary points and extrema.md",
+                "file": "Phys/PHYS2111/Wave/The Wave Function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stationary points and extrema"
+              "title": "The Wave Function"
             }
           }
         ],
@@ -211,10 +211,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96d45fc57194ed4e",
+  "active": "f9d68610fc0e14ee",
   "lastOpenFiles": [
-    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
+    "Phys/PHYS2111/Wave/Wave mechanics.md",
     "Maths/MATH2111/Differential Calculus/Stationary points and extrema.md",
+    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Maths/MATH2111/Differential Calculus/The multivariable derivative.md",
     "Phys/PHYS2111/Wave/Stationary States.md",
     "Phys/PHYS2111/Wave/The Wave Function.md",
@@ -223,7 +224,6 @@
     "Phys/PHYS2111/Matrix/Spin.md",
     "Phys/PHYS2111/Matrix/Maths detour.md",
     "Phys/PHYS2111/Matrix/Matrix mechanics.md",
-    "Phys/PHYS2111/Wave/Wave mechanics.md",
     "Phys/PHYS2111/Wave/Test.md",
     "Maths/MATH2111/Differential Calculus/Taylor Polynomials.md",
     "Maths/MATH2111/Limits of functions.md",
