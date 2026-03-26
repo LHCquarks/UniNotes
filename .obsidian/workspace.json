@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2511/Design Principles/Refactoring.md",
+                "file": "Comp/COMP2511/Design Patterns/Strategy Pattern.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Refactoring"
+              "title": "Strategy Pattern"
             }
           }
         ],
@@ -185,6 +185,7 @@
   },
   "active": "f9d68610fc0e14ee",
   "lastOpenFiles": [
+    "Comp/COMP2511/Design Principles/Refactoring.md",
     "Comp/COMP2511/COMP2511.md",
     "Comp/COMP2511/COMP2511 Exam Revision.md",
     "Comp/COMP2511/Assignment 2 Task 3.md",
@@ -213,7 +214,6 @@
     "Comp/COMP2511/Object-Oriented Programming/Object Oriented Programming.md",
     "Comp/COMP2511/Object-Oriented Programming/Object Oriented Programming - Fundamentals.md",
     "Comp/COMP2511/Object-Oriented Programming/Method Overriding and Overloading.md",
-    "Comp/COMP2511/Object-Oriented Programming/Interfaces & Multiple Inheritance.md",
     "Comp/COMP2511/Object-Oriented Programming",
     "Comp/COMP2511/Diagrams/UML Diagrams Relationships.png",
     "Comp/COMP2511/Diagrams/UML Diagram Types.png",
