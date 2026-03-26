@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Wave/The Wave Function.md",
+                "file": "Comp/COMP2511/Design Principles/Refactoring.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Wave Function"
+              "title": "Refactoring"
             }
           }
         ],
@@ -185,6 +185,10 @@
   },
   "active": "f9d68610fc0e14ee",
   "lastOpenFiles": [
+    "Comp/COMP2511/COMP2511.md",
+    "Comp/COMP2511/COMP2511 Exam Revision.md",
+    "Comp/COMP2511/Assignment 2 Task 3.md",
+    "Phys/PHYS2111/Wave/The Wave Function.md",
     "Phys/PHYS2111/Wave/Stationary States.md",
     "Phys/PHYS2111/Matrix/Postulates of Matrix mechanics.md",
     "Phys/PHYS2111/Matrix/Spin.md",
@@ -210,9 +214,6 @@
     "Comp/COMP2511/Object-Oriented Programming/Object Oriented Programming - Fundamentals.md",
     "Comp/COMP2511/Object-Oriented Programming/Method Overriding and Overloading.md",
     "Comp/COMP2511/Object-Oriented Programming/Interfaces & Multiple Inheritance.md",
-    "Comp/COMP2511/Object-Oriented Programming/Inheritance and Abstract Classes.md",
-    "Comp/COMP2511/Object-Oriented Programming/Dynamic Binding & Polymorphism.md",
-    "Comp/COMP2511/Object-Oriented Programming/Classes.md",
     "Comp/COMP2511/Object-Oriented Programming",
     "Comp/COMP2511/Diagrams/UML Diagrams Relationships.png",
     "Comp/COMP2511/Diagrams/UML Diagram Types.png",
@@ -225,7 +226,6 @@
     "Comp/COMP2511/Diagrams/Optional Scenario - Behavioural Modelling.png",
     "Comp/COMP2511/Diagrams/Looping Scenario - Behavioural Modelling.png",
     "Comp/COMP2511/Diagrams",
-    "Comp/COMP2511/Design Principles/Software Design Principles.md",
     "Comp/COMP2511/Design Principles",
     "Comp/COMP2511/Design Patterns",
     "Comp/COMP2511/Architecture/Architectural Styles",
