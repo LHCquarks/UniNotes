@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Solving Schrodinger's equation.md",
+                "file": "Maths/MATH2111/Curves and Surfaces/Graphing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solving Schrodinger's equation"
+              "title": "Graphing"
             }
           }
         ],
@@ -199,10 +199,10 @@
   },
   "active": "9f5eb8c167854d54",
   "lastOpenFiles": [
-    "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
-    "Phys/PHYS2111/Solving Schrodinger's equation.md",
-    "Phys/PHYS2111/Wave/Stationary States.md",
     "Comp/COMP2511/Design Principles/Software Design Principles.md",
+    "Phys/PHYS2111/Solving Schrodinger's equation.md",
+    "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
+    "Phys/PHYS2111/Wave/Stationary States.md",
     "Comp/COMP2511/Design Principles/Design Principles.md",
     "Comp/COMP2511/Design Patterns/Strategy Pattern.md",
     "Comp/COMP2511/Design Principles/Refactoring.md",
