@@ -10,7 +10,7 @@ $$
 Now this is equivalent to the matrix product:
 $$
 \begin{align}
-P(x, y) = f(a, b) + \nabla f(a, b)\cdot \pmatrix{x - a \\ y - b} + \frac{1}{2} \pmatrix{x - a & y - a} \pmatrix{f_{xx}(a, b) & f_{xy}(a, b) \\ f_{yx}(a, b) & f_{yy}(a, b)} \pmatrix{x-a \\ y - b}
+P(x, y) = f(a, b) + \nabla f(a, b)\cdot \pmatrix{x - a \\ y - b} + \frac{1}{2} \pmatrix{x - a & y - b} \pmatrix{f_{xx}(a, b) & f_{xy}(a, b) \\ f_{yx}(a, b) & f_{yy}(a, b)} \pmatrix{x-a \\ y - b}
 \end{align}
 $$
 You can check up to the 2nd partial derivatives are all equivalent to the same partials of $f$ 
