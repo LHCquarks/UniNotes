@@ -19,4 +19,11 @@ $$
 \end{align}
 $$
 An example of using them is bellow:
-Say I wanted to measure the spin of a particle in the $\pmatrix{}$
+Say I wanted to measure the spin of a particle in the $\hat v = \pmatrix{1/\sqrt3 \\ 1/\sqrt3 \\ 1/\sqrt3}$ direction. Then:
+$$
+\begin{align}
+\sigma_{\hat v} &= \hat \sigma \cdot \hat v \\
+&= \frac{1}{\sqrt 3}  \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
