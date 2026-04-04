@@ -129,6 +129,23 @@ Operators are objects that when applied to a vector produce another vector.
 We often denote these as capital letters with a hat on them like so: $\hat E$. 
 An example expression is:
 - $\hat E \ket v = \ket{\hat E v}$
+### Eigenvectors and eigenvalues
+For an operator $\hat E$ there exists vectors $\ket {e_i}$ and corresponding values $e_i$ such that:
+$$
+\begin{align}
+\hat E \ket {e_i} = e_i \ket {e_i}
+\end{align}
+$$
+These vectors and values are called **eigenvectors** and **eigenvalues** of $\hat E$ respectively.
+These objects are central to quantum mechanics and as such we will be seeing a lot of them.
+
+If $\hat E$ is a matrix we can find it's **eigenvalues** through solving the polynomial produced from
+$$
+\begin{align}
+\text{det}(\hat E - e_i I) &= 0 \\
+\end{align}
+$$
+We can t
 ## Hermitian adjoint
 We define the **Hermitian Adjoint** of an **operator** $\hat M$ as as being the operator $\hat M ^\dagger$ that satisfies:
 $$
