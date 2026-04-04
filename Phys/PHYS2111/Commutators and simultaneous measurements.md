@@ -33,4 +33,4 @@ $$
 $$
 Thus for our observables to have a shared eigenbasis and for them not to mess with each other their operators must follow the above equation otherwise they will mess with each other and we **can not** know **both** properties of the particle **simultaneously**.
 
-This difference between operators is extremely important and is called the **Comutator** and is written like $[\hat\Lambda, \hat\Omega] = \hat\Lambda\hat\Omega - \hat\Omega\hat\Lambda$.
+This difference between operators is extremely important and is called the **Commutator** and is written like $[\hat\Lambda, \hat\Omega] = \hat\Lambda\hat\Omega - \hat\Omega\hat\Lambda$.
