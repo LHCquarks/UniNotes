@@ -20,8 +20,9 @@ $$
 Because QM only predicts probabilities and because the probability is given by an inner product squared we have that the absolute phase of two vectors does not matter only their relative phase matters:
 $$
 \begin{align}
-|\braket{e^{i\phi}u|e^{i\phi}v}|^2 &= |\braket{u|e^{-i\phi}e^{i\phi} | v}|^2 \\
-&= |\braket{u|e^{-i\phi}e^{i\phi} | v}|^2 \\
+|\braket{e^{i\phi}u|e^{i\phi}v}|^2 &= |e^{-i\phi}e^{i\phi} \braket{u| v}|^2 \\
+&= ||e^{i\phi}|^2\braket{u | v}|^2 \\
+&= |1\braket{u | v}|^2 \\
+&= |\braket{u | v}|^2 \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
