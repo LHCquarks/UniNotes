@@ -3,5 +3,5 @@ tags:
   - Continence
 ---
 Topics:
-- [[Maths detour]]
+- [[Maths of quantum mechanics]]
 - [[Postulates of Matrix mechanics]]
