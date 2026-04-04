@@ -23,7 +23,8 @@ Say I wanted to measure the spin of a particle in the $\hat v = \pmatrix{1/\sqrt
 $$
 \begin{align}
 \sigma_{\hat v} &= \hat \sigma \cdot \hat v \\
-&= \frac{1}{\sqrt 3}  \\
+&= \frac{1}{\sqrt 3} \pmatrix{0 & 1 \\ 1 & 0} + \frac{1}{\sqrt 3} \pmatrix{0 & -i \\ i & \ 0}  + \frac{1}{\sqrt 3} \pmatrix{1 & \  0 \\ 0 & -1}\\
+&= \frac{1}{\sqrt 3} \pmatrix{\ \ \ 1 & 1 - i\\ 1 + i &\  -1} 
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+
