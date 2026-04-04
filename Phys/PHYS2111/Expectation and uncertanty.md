@@ -1,3 +1,4 @@
+## Expectation values
 It is natural to ask what is our expected value of a measurement?
 Well do I have a formula for you!
 
@@ -13,7 +14,7 @@ $$
 \end{align}
 $$
 This is a super easy formula to use!
-
+## Uncertainty
 Now what about uncertainty?
 Well using the formula given from John HSC himself we have that $\text{Var}(\Omega) = \text{E}(\Omega^2) + \text{E}(\Omega)^2$  and thus translated into QM we get:
 $$
