@@ -1,28 +1,40 @@
+Quantum mechanics is basically built off of linear algebra so here we discuss some particularly useful concepts for quantum mechanics:
 ## Vector spaces
 A **Vector space** $V$ is a set that contains elements called **vectors**, is equipped with operations $+$ and $\times$ that operate on two vectors and a vector plus a scalar field $\mathbb F$ respectively.
 
 Further, these vectors and operations must satisfy the following 10 axioms:
-For all vectors $\ket v, \ket w, \ket u \in V$ and scalars $a, b \in \mathbb F$
-1. $\ket v + \ket w \in V$ 
-2. $a \times \ket v \in V$
-3. $\ket v + \ket w = \ket w + \ket v$
-4. $\ket v + (\ket w + \ket u) = (\ket v + \ket w) + \ket u$
-5. There exists $\ket 0$ such that $\ket v + \ket 0 = \ket v$
-6. There exists $\ket {-v}$ such that $\ket v + \ket {-v} = \ket 0$
-7. $a\times (b \times \ket v) = (ab)\times \ket v$
-8. $1\times \ket v = \ket v$
-9. $a \times ( \ket v + \ket w) = a \times \ket v + a \times \ket w$
-10. $(a + b) \times \ket v = a \times \ket v + b \times \ket v$
+For all vectors $\vec{v}, \vec w, \vec u \in V$ and scalars $a, b \in \mathbb F$
+1. $\vec v + \vec w \in V$ 
+2. $a \times \vec v \in V$
+3. $\vec v + \vec w = \vec w + \vec v$
+4. $\vec v + (\vec w + \vec u) = (\vec v + \vec w) + \vec u$
+5. There exists $\vec 0$ such that $\vec v + \vec 0 = \vec v$
+6. There exists $\overrightarrow {(-v)}$ such that $\vec v + \overrightarrow {(-v)} = \vec 0$
+7. $a\times (b \times \vec v) = (ab)\times \vec v$
+8. $1\times \vec v = \vec v$
+9. $a \times ( \vec v + \vec w) = a \times \vec v + a \times \vec w$
+10. $(a + b) \times \vec v = a \times \vec v + b \times \vec v$
+Note that it can be proven that this $\overrightarrow{(-v)}$ is equivalent to $-1 \times \vec v$
+## The dual space
+For any given vector space $V$ there exists another vector space $D$ called the **dual space of $V$** consisting of all linear functions on $V$ that return a scalar in the field of $V$.
 
+For the set of column vectors this is the set of all of the row vectors.
+## Bra-ket notation
+In quantum mechanics we make a lot of use of vectors and their duals and so we have some special notation to make our life easier when dealing with them.
+We represent vectors with kets like this: $\ket v$ and duals with bras like this: $\bra w$.
+Together they form a bra-ket: $\bra w \ket v$. Get it ... bracket.
+
+Although initially this might seem a little silly, (why another standard?) the true power of **bra-ket** notation is realized with **inner products**
 ## Inner product space
 An **inner product space** is a **vector space** equipped with an operation called an **inner product**  that operates on two vectors and returns a scalar. 
 
-In Bra Ket notation we write the inner product between vectors $\ket v, \ket w$ as $\braket {v|w}$.
+In Bra-ket notation we write the inner product between vectors $\ket v, \ket w$ as $\braket {v|w}$.
 An inner product must follow these 3 properties:
 1. $\braket{v|w} = \braket{w|v}^*$
 2. $\braket{v|v} \ge 0$
 	- We also need $\braket{v|v} = 0$ iff $\ket v = \ket 0$
 3. $\braket{u|av + bw} = a\braket{u|v} + b\braket{u|w}$
+Surprisingly, this inner product $\braket{v | w}$ is equivalent to just multiplying $\bra v \ket w$ hence the true power of bra-ket notation is seen, we can easily break apart our inner products into bras and kets and vice versa.
 ### Length of a vector
 From this definition of the inner product of our vectors we are able to define the **length** of our vector as:
 $$
@@ -70,7 +82,7 @@ $$
 \end{align}
 $$
 ### Inner product examples
-For the real valued 3d vectors our inner product is just the dot product
+For the real valued vectors our inner product is just the dot product
 
 For real valued functions defined on $[0, L]$ that have $f(0) = f(L) = 0$ the inner product is:
 $$
@@ -78,7 +90,8 @@ $$
 \int_0^Lf(x)g(x)dx
 \end{align}
 $$
-
+### Hilbert space
+A **Hilbert space** is a real or complex inner product space that is complete (Review Maths2111 point set topology for the definition of completeness). That had finite or infinite dimensions
 ## Schwarz Inequality
 For all vectors:
 $$
@@ -204,10 +217,9 @@ $$
 &= \ket w^\dagger \bra v^\dagger
 \end{align}
 $$
-This tells us that the **Hermitian adjoint** of a bra is a ket and vice versa
-
+This tells us that the **Hermitian adjoint** of a bra is a ket and vice versa. This Is huge as we now know how to transform a ket into it's corresponding bra, just take the hermitian adjoint!
 ## Orthonormal basis
-An **orthonormal basis** of vector space $V$ with dimension $n$ is a set of vectors $\mathcal B\{\ket i: 1 \le i \le n\}$ with the following properties
+An **orthonormal basis** of vector space $V$ with dimension $n \in [0, \infty]$ is a set of vectors $\mathcal B\{\ket i: 1 \le i \le n\}$ with the following properties
 - All vectors are **orthogonal**
 	- For $\ket i, \ket j \in \mathcal B: \ket i \not = \ket j$ we have $\braket{i|j} = 0$
 - All vectors are **normal**
@@ -249,7 +261,7 @@ $$
 \begin{align}
 \braket{v | w} &= \braket{v | \sum_j w_i \ket i} \\
 &= \sum_i w_i\braket{v | i} \\
-&= \sum_i w_i\braket{\sum_j v_j \ket j | i} \\
+&= \sum_i w_i \braket{\left(\sum_j v_j \bra j \right)| i} \\
 &= \sum_i w_i \sum_j v_j^* \braket{ j | i} \\
 &= \sum_i \sum_j w_i v_j^* \braket{ j | i} \\
 &= \sum_i \sum_j w_i v_j^* \delta_{i, j} \\
