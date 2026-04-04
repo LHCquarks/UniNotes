@@ -27,26 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Maths of quantum mechanics.md",
+                "file": "Phys/PHYS2111/Postulates of Quantum mechanics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Maths of quantum mechanics"
-            }
-          },
-          {
-            "id": "15b7bb48fa840e75",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Postulates of Quantum mechanics"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,12 +183,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "15b7bb48fa840e75",
+  "active": "96d45fc57194ed4e",
   "lastOpenFiles": [
-    "Phys/PHYS2111/Maths of quantum mechanics.md",
-    "Phys/PHYS2111/Motivation of quantum mechanics.md",
     "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
+    "Phys/PHYS2111/Postulates of Quantum mechanics.md",
     "Phys/PHYS2111/PHYS2111.md",
+    "Phys/PHYS2111/Motivation of quantum mechanics.md",
+    "Phys/PHYS2111/Maths of quantum mechanics.md",
     "Phys/PHYS2111/Matrix/Spin.md",
     "Maths/MATH2111/Differential Calculus/The multivariable derivative.md",
     "Maths/MATH2111/Differential Calculus/Taylor Polynomials.md",
@@ -220,7 +211,6 @@
     "Comp/COMP2511/Design Principles/Design Principles.md",
     "Comp/COMP2511/Design Patterns/Strategy Pattern.md",
     "Comp/COMP2511/Design Principles/Refactoring.md",
-    "Comp/COMP2511/COMP2511.md",
     "Comp/COMP2511/Tutorials",
     "Comp/COMP2511/Testing Patterns",
     "Comp/COMP2511/Programming Patterns",

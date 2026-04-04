@@ -28,7 +28,7 @@
     },
     {
       "prefix": "",
-      "suffix": "words ",
+      "suffix": " words ",
       "metric": {
         "type": 2,
         "counter": 0

@@ -4,4 +4,4 @@ tags:
 ---
 Topics:
 - [[Maths of quantum mechanics]]
-- [[Postulates of Matrix mechanics]]
+- [[Postulates of Quantum mechanics]]
