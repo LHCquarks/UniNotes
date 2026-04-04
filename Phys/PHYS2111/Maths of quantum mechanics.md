@@ -241,6 +241,18 @@ $$
 \end{align}
 $$
 This tells us that the **Hermitian adjoint** of a bra is a ket and vice versa. This Is huge as we now know how to transform a ket into it's corresponding bra, just take the hermitian adjoint!
+### Hermitian adjoint of a matrix
+Take a matrix $\hat \Omega$, which has matrix elements indexed with $\hat \Omega_{i , j}$ then the hermitian adjoint is found bellow:
+$$
+\begin{align}
+(\hat \Omega ^\dagger)_{i, j} &= \braket{i | \hat \Omega ^\dagger | j} \\
+&= \braket{\hat \Omega i | j} \\
+&= \braket{j | \hat \Omega i }^* \\
+&= \braket{j | \hat \Omega | i }^* \\
+&= (\hat \Omega_{j, i})^* \\
+\end{align}
+$$
+Thus the hermitian conjugate of a matrix is the conjugate transpose of the matrix or in cleaner notation $\hat \Omega^\dagger = (\hat \Omega^T)^*$
 ## Orthonormal basis
 An **orthonormal basis** of vector space $V$ with dimension $n \in [0, \infty]$ is a set of vectors $\mathcal B\{\ket i: 1 \le i \le n\}$ with the following properties
 - All vectors are **orthogonal**
