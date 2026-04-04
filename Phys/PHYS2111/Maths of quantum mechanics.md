@@ -145,7 +145,13 @@ $$
 \text{det}(\hat E - e_i I) &= 0 \\
 \end{align}
 $$
-We can t
+We can then also find the corresponding **eigenvectors** through solving the simultaneous equations produced from
+$$
+\begin{align}
+(\hat E - e_i I) \ket {e_i} &= 0
+\end{align}
+$$
+
 ## Hermitian adjoint
 We define the **Hermitian Adjoint** of an **operator** $\hat M$ as as being the operator $\hat M ^\dagger$ that satisfies:
 $$
