@@ -34,9 +34,19 @@
               "icon": "lucide-file",
               "title": "Maths of quantum mechanics"
             }
+          },
+          {
+            "id": "15b7bb48fa840e75",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,10 +193,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ff16483ad58e5e9",
+  "active": "15b7bb48fa840e75",
   "lastOpenFiles": [
-    "Phys/PHYS2111/Motivation of quantum mechanics.md",
     "Phys/PHYS2111/Maths of quantum mechanics.md",
+    "Phys/PHYS2111/Motivation of quantum mechanics.md",
     "Phys/PHYS2111/Introduction to Quantum Mechanics.md",
     "Phys/PHYS2111/PHYS2111.md",
     "Phys/PHYS2111/Matrix/Spin.md",
