@@ -25,6 +25,8 @@ $$
 \ket {\Psi(t)} = \sum_i \alpha_i(0) e^{-iE_it/\hbar} \ket{\Psi_i}
 \end{align}
 $$
+These eigenstates are also known as stationary states as if our particle is in a single one of these then it remains in over time.
+
 ## Examples
 ### $\hat H = -\mu_bB\sigma_z$
 An electron in a magnetic field pointing in the $z$ direction has a Hamiltonian of $\hat H = -\mu_bB\sigma_z$ where:

@@ -23,4 +23,3 @@ $$
 &= \braket{\Psi | \hat \Omega \hat \Omega | \Psi} - \braket{\Psi | \hat \Omega| \Psi}^2
 \end{align}
 $$
-

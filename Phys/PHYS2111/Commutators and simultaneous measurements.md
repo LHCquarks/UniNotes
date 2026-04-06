@@ -34,3 +34,11 @@ $$
 Thus for our observables to have a shared eigenbasis and for them not to mess with each other their operators must follow the above equation otherwise they will mess with each other and we **can not** know **both** properties of the particle **simultaneously**.
 
 This difference between operators is extremely important and is called the **Commutator** and is written like $[\hat\Lambda, \hat\Omega] = \hat\Lambda\hat\Omega - \hat\Omega\hat\Lambda$.
+## The Uncertainty principle
+The **generalized** uncertainty is given by John uncertain as:
+$$
+\begin{align}
+
+\end{align}
+$$
+<% tp.file.cursor(2) %>

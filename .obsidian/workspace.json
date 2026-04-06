@@ -22,77 +22,7 @@
             }
           },
           {
-            "id": "4ff16483ad58e5e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/Solving Schrodinger's equation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Solving Schrodinger's equation"
-            }
-          },
-          {
-            "id": "6af2e5764cadc4a8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/Postulates of Quantum mechanics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Postulates of Quantum mechanics"
-            }
-          },
-          {
-            "id": "3e485149039b338d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/Solving Schrodinger's equation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Solving Schrodinger's equation"
-            }
-          },
-          {
-            "id": "87b322670bff3e23",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/Common operators.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Common operators"
-            }
-          },
-          {
-            "id": "f9a9cca62a77c94c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/Expectation and uncertanty.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Expectation and uncertanty"
-            }
-          },
-          {
-            "id": "f9907e7fa872c159",
+            "id": "516ecae2b81a6bc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -104,9 +34,23 @@
               "icon": "lucide-file",
               "title": "Commutators and simultaneous measurements"
             }
+          },
+          {
+            "id": "3b307db89ffba57f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Phys/PHYS2111/Expectation and uncertanty.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Expectation and uncertanty"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -253,16 +197,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f9907e7fa872c159",
+  "active": "516ecae2b81a6bc9",
   "lastOpenFiles": [
     "Phys/PHYS2111/Expectation and uncertanty.md",
     "Phys/PHYS2111/Commutators and simultaneous measurements.md",
-    "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS2111/PHYS2111.md",
     "Phys/PHYS2111/Solving Schrodinger's equation.md",
     "Phys/PHYS2111/Postulates of Quantum mechanics.md",
-    "Phys/PHYS2111/Motivation of quantum mechanics.md",
+    "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS2111/Maths of quantum mechanics.md",
+    "Phys/PHYS2111/Motivation of quantum mechanics.md",
     "Phys/PHYS2111/Wave/Stationary States.md",
     "Phys/PHYS2111/Matrix/Matrix mechanics.md",
     "Phys/PHYS2111/Matrix/Spin.md",
