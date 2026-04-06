@@ -38,7 +38,28 @@ This difference between operators is extremely important and is called the **Com
 The **generalized** uncertainty is given by John uncertain as:
 $$
 \begin{align}
+\sigma_A^2\sigma_B^2 \ge \left(\frac{1}{2i} [\hat A, \hat B]\right)^2
+\end{align}
+$$
+This says that that the product of the variances of two different observables is no matter what greater than or equal to the commutator between the two measurements times some constant squared.
 
+### Heisenberg uncertainty principle
+The Heisenberg uncertainty principle is just the generalized uncertainty principle applied to the $\hat x$ and $\hat p$ operators.
+For this we will need to find $[\hat x, \hat p]$ which we can do be applying it to a general wave function $\Psi$
+$$
+\begin{align}
+[\hat x, \hat p]\Psi &= x\frac{\partial \Psi}{\partial x} - \frac{\partial}{\partial x}(x\Psi) \\
+&= x\frac{\partial \Psi}{\partial x} - \frac{\partial}{\partial x}2(\Psi)
+\end{align}
+$$
+<% tp.file.cursor(2) %>
+
+
+Applied to position and momentum we get the relation:
+$$
+\begin{align}
+\sigma_x^2 \sigma_p^2 &\ge \left(\frac{1}{2i} [\hat x, \hat p]\right)^2\\
+&= \left(\frac{1}{2i}\left[x(-i\hbar)\frac{\partial}{\partial x}  - \right]\right)
 \end{align}
 $$
 <% tp.file.cursor(2) %>
