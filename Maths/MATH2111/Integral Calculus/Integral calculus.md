@@ -77,4 +77,12 @@ $$
 D &= [a_1, b_1] \times [a_2, b_2] \times \dots \times [a_n, b_n]
 \end{align}
 $$
-We then take partitions $\mathcal P_i$ of 
+We then take partitions $\mathcal P_i$ of $[a_i, b_i]$ for all $1 \le i \le n$ and consider the partition $\mathcal P$ induced by $\mathcal P_0, \mathcal P_1, \dots, \mathcal P_n$ which subdivides the region $D$ into rectangles
+
+Then as we did in the 1-d case we define the sums:
+$$
+\begin{align}
+\underline S_{\mathbal}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
