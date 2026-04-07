@@ -57,5 +57,12 @@ $$
 \overline S_{\mathcal P} (f) &= \sum_{k = 1}^n (x_n - x_{n-1}) \overline f_k
 \end{align}
 $$
-
+where:
+$$
+\begin{align}
+\underline f_k &= \inf_{x \in [x_{n-1}, x_n]} f(x) \\
+\overline f_k &= \sup_{x \in [x_{n-1}, x_n]} f(x) \\
+\end{align}
+$$
+If there exists a real number $I$ such that $\underline S_{\mathcal P} (f) \le I \le \overline S_{\mathcal P}(f)$  
 ### Definition
