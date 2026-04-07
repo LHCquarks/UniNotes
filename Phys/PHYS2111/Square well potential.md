@@ -123,3 +123,27 @@ D e^{-\beta a} &= A\sin(ka) + B\cos(ka) \tag {3}\\
 -D \beta e^{-\beta a} &= Ak\cos(ka) - B\sin(ka) \tag {4}\\
 \end{align}
 $$
+Adding and subtracting them gives:
+$$
+\begin{align}
+(D + C) e^{-\beta a} &= 2B\cos(ka) \tag{1 + 3} \\
+(D - C) e^{-\beta a} &= 2A\sin(ka) \tag{3 - 1} \\
+(C - D) \beta e^{-\beta a} &= 2Ak\cos(ka) \tag{2 + 4} \\
+(C + D) \beta e^{-\beta a} &= 2Bk\sin(ka) \tag{2 - 4} \\
+\end{align}
+$$
+We can not then divide these equations out as we do not know there are zeros so instead we will consider the odd and even parts of the equations giving:
+$$
+\begin{align}
+k\tan(ka) &= \beta \tag{even} \\
+k\cot(ka) &= -\beta \tag{odd} \\
+\end{align}
+$$
+Now, unfortunately this can not be solved analytically and so need to be solved graphically or numerically. To do this we need to add in one other piece of information which is:
+$$
+\begin{align}
+k^2 + \beta^2 &= \frac{2mE}{\hbar^2} + (V_0 - E) \frac{2m}{\hbar^2} \\
+k^2 + \beta^2 &= \frac{2mV_0}{\hbar^2} \\
+\end{align}
+$$
+Where both equations intersect is where we have bounded solutions for our stationary state which we can then use to find $A, B, C, D$ and thus $\psi(x)$ and finally $\Psi(x, t)$
