@@ -71,4 +71,10 @@ I &= \int_a^b f(x) dx
 \end{align}
 $$
 ### Definition
-Let $D\subset R^n$ be a 
+Let $D\subset R^n$ be a rectangular region:
+$$
+\begin{align}
+D &= [a_1, b_1] \times [a_2, b_2] \times \dots \times [a_n, b_n]
+\end{align}
+$$
+We then take partitions $\mathcal P_i$ of 
