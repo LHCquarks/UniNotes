@@ -86,4 +86,10 @@ $$
 \overline S_{\mathcal P} (f) &= \sum_{R \in \mathcal P} \overline f_R \text{Vol}(R) \\
 \end{align}
 $$
-We then say that $f$ is Riemann integrable on $D$ if for every $\epsilon$
+We then say that $f$ is Riemann integrable on $D$ if for every $\varepsilon > 0$  there exists a partition $\mathcal P$ of $D$ such that
+$$
+\begin{align}
+\overline S_{\mathcal P} (f) - \underline S_{\mathcal P} (f) < \varepsilon
+\end{align}
+$$
+The value that both $\overline S_{\mathcal P} (f), \underline S_{\mathcal P} (f)$ approach as $\varepsilon \rightarrow 0$  
