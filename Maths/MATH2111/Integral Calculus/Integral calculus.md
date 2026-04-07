@@ -48,4 +48,7 @@ $$
 \end{align}
 $$
 ## n-dimensional integrals
+### Recap of 1-d case
+For a function $f: [a, b]\rightarrow \mathbb R$  we can partition the interval $[a, b]$ into $n + 1$ points giving $\mathcal P = \{x_0, x_1, \dots , x_n\}$. 
+
 ### Definition
