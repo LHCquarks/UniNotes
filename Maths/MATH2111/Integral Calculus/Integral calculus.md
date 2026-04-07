@@ -82,7 +82,8 @@ We then take partitions $\mathcal P_i$ of $[a_i, b_i]$ for all $1 \le i \le n$ a
 Then as we did in the 1-d case we define the sums:
 $$
 \begin{align}
-\underline S_{\mathbal}
+\underline S_{\mathcal P} (f) &= \sum_{R \in \mathcal P} \underline f_R \text{Vol}(R) \\
+\overline S_{\mathcal P} (f) &= \sum_{R \in \mathcal P} \overline f_R \text{Vol}(R) \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+We then say that $f$ is Riemann integrable on $D$ if for every $\epsilon$
