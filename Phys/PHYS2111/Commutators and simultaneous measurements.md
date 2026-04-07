@@ -48,18 +48,25 @@ The Heisenberg uncertainty principle is just the generalized uncertainty princip
 For this we will need to find $[\hat x, \hat p]$ which we can do be applying it to a general wave function $\Psi$
 $$
 \begin{align}
-[\hat x, \hat p]\Psi &= x\frac{\partial \Psi}{\partial x} - \frac{\partial}{\partial x}(x\Psi) \\
-&= x\frac{\partial \Psi}{\partial x} - \frac{\partial}{\partial x}2(\Psi)
+[\hat x, \hat p]\Psi &= x (-i\hbar)\frac{\partial \Psi}{\partial x} - (-i\hbar)\frac{\partial}{\partial x}(x\Psi) \\
+&= -i\hbar \left[x\frac{\partial \Psi}{\partial x} - \Psi - x\frac{\partial \Psi}{\partial x} \right]\\
+&= -i\hbar\left[-\Psi\right] \\
+&= i\hbar\Psi \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
-
-
+Thus the commutator $[\hat x, \hat p] = i\hbar$
 Applied to position and momentum we get the relation:
 $$
 \begin{align}
 \sigma_x^2 \sigma_p^2 &\ge \left(\frac{1}{2i} [\hat x, \hat p]\right)^2\\
-&= \left(\frac{1}{2i}\left[x(-i\hbar)\frac{\partial}{\partial x}  - \right]\right)
+&= \left(\frac{1}{2i}[i\hbar]\right)^2 \\
+&= \left(\frac{\hbar}{2}\right)^2 \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Because $\sigma_x, \sigma_p, \hbar / 2 > 0$ we can remove the squares to get Heisenberg's famous principle
+$$
+\begin{align}
+\sigma_x \sigma_p \ge \frac{\hbar}{2}
+\end{align}
+$$
+
