@@ -92,4 +92,10 @@ $$
 \overline S_{\mathcal P} (f) - \underline S_{\mathcal P} (f) < \varepsilon
 \end{align}
 $$
-The value that both $\overline S_{\mathcal P} (f), \underline S_{\mathcal P} (f)$ approach as $\varepsilon \rightarrow 0$  
+The value that both $\overline S_{\mathcal P} (f), \underline S_{\mathcal P} (f)$ approach as $\varepsilon \rightarrow 0$ is the integral of $f$ over the region $D$ denoted by:
+$$
+\begin{align}
+\idotsint_D
+\end{align}
+$$
+<% tp.file.cursor(2) %>
