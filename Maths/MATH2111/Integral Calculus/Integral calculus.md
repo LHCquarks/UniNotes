@@ -105,4 +105,18 @@ $$
 \int_D f(\vec x) d\vec x
 \end{align}
 $$
-For the 3
+For the 2-d case there is also the notation
+$$
+\begin{align}
+\int_D f dA
+\end{align}
+$$
+And likewise for the 3-d case:
+$$
+\begin{align}
+\int_D f dV
+\end{align}
+$$
+### Properties
+Multi-dimensional integrals have the following properties:
+- Linearity: $\int_D [af(\vec x) \pm bg(\vec x)] d\vec x = a\int_D $ 
