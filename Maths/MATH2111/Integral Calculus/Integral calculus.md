@@ -95,7 +95,14 @@ $$
 The value that both $\overline S_{\mathcal P} (f), \underline S_{\mathcal P} (f)$ approach as $\varepsilon \rightarrow 0$ is the integral of $f$ over the region $D$ denoted by:
 $$
 \begin{align}
-\idotsint_D
+\idotsint_D f(x_0, \dots, x_n) dx_0 \dots dx_n
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Where there are $n$ integral signs.
+Sometimes it is also written as
+$$
+\begin{align}
+\int_D f(\vec x) d\vec x
+\end{align}
+$$
+For the 3
