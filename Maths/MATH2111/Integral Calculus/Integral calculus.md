@@ -64,5 +64,11 @@ $$
 \overline f_k &= \sup_{x \in [x_{n-1}, x_n]} f(x) \\
 \end{align}
 $$
-If there exists a real number $I$ such that $\underline S_{\mathcal P} (f) \le I \le \overline S_{\mathcal P}(f)$  
+If there exists a real number $I$ such that $\underline S_{\mathcal P} (f) \le I \le \overline S_{\mathcal P}(f)$  for every partition $\mathcal P$ of $[a, b]$ we say that $f$ is Riemann integrable and we call $I$ the definite integral of $f$ from $a$ to $b$ and we write it like this:
+$$
+\begin{align}
+I &= \int_a^b f(x) dx
+\end{align}
+$$
 ### Definition
+Let $D\subset R^n$ be a 
