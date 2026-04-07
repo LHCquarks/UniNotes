@@ -49,6 +49,13 @@ $$
 $$
 ## n-dimensional integrals
 ### Recap of 1-d case
-For a function $f: [a, b]\rightarrow \mathbb R$  we can partition the interval $[a, b]$ into $n + 1$ points giving $\mathcal P = \{x_0, x_1, \dots , x_n\}$. 
+For a function $f: [a, b]\rightarrow \mathbb R$  we can partition the interval $[a, b]$ into $n + 1$ points giving $\mathcal P = \{x_0, x_1, \dots , x_n\}$ where $a = x_0 < x_1 < \dots < x_n = b$. 
+We then define the sums
+$$
+\begin{align}
+\underline S_{\mathcal P} (f) &= \sum_{k = 1}^n (x_n - x_{n-1}) \underline f_k \\
+\overline S_{\mathcal P} (f) &= \sum_{k = 1}^n (x_n - x_{n-1}) \overline f_k
+\end{align}
+$$
 
 ### Definition
