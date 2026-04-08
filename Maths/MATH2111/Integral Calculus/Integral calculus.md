@@ -166,7 +166,8 @@ $$
 $$
 ## Integrating over arbitrary regions
 I feel that this is best described through examples:
-
+![[Pasted image 20260409080504.png]]
+In the above example to integrate over the region $R$ we notice that we can split
 ## Change of variables
 We can change variables with the formula:
 $$
