@@ -130,8 +130,15 @@ $$
 \begin{align}
 \mathbb 1_C(\vec x) = 
 \begin{cases}
-1 & x\in C \\
+1 & \vec x\in C \\
+0 & \text{Otherwise}
 \end{cases}
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+And thus our integral of $f$ becomes:
+$$
+\begin{align}
+\int_C f(\vec x) d\vec x &= \int_D \mathbb 1_C(\vec x) f(\vec x) d\vec x
+\end{align}
+$$
+Because $\{\vec x : \mathbb 1_C \text{ is discontinuous at } \vec x\} = \partial C$  we can
