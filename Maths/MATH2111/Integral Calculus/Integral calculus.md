@@ -167,7 +167,13 @@ $$
 ## Integrating over arbitrary regions
 I feel that this is best described through examples:
 ![[Pasted image 20260409080504.png]]
-In the above example to integrate over the region $R$ we notice that we can split
+In the above example to integrate over the region $R$ we notice that we can take vertical strips thus we can first integrate with respect to $y$ no problem. We can then build our integral like so:
+$$
+\begin{align}
+{\iint}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 ## Change of variables
 We can change variables with the formula:
 $$
