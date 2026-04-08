@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "Integral calculus"
             }
+          },
+          {
+            "id": "47b21f0cc7eeb2fc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,14 +179,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e5cc0f5a0b25b4d",
+  "active": "47b21f0cc7eeb2fc",
   "lastOpenFiles": [
+    "Maths/MATH2111/Integral Calculus/Integral calculus.md",
     "Comp/COMP2511/Architecture/Architecture.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Architectural Styles.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Microservice Architecture.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Layered Architecture.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Modular Monoliths Architecture.md",
-    "Maths/MATH2111/Integral Calculus/Integral calculus.md",
     "Maths/MATH2111/Integral Calculus",
     "Maths/MATH2111/MATH2111.md",
     "Phys/PHYS2111/Square well potential.md",

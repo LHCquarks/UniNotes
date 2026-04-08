@@ -164,6 +164,8 @@ $$
 &= \int_B \left(\int_A f(\vec x, \vec y) d\vec x\right) d\vec y
 \end{align}
 $$
+## Integrating over arbitrary regions
+Suppose that by Fubini's theorem we want to first integrate 
 ## Change of variables
 We can change variables with the formula:
 $$
