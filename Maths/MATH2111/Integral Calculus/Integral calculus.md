@@ -125,4 +125,13 @@ Multi-dimensional integrals have the following properties:
 ### When is $f$ not Riemann integrable?
 $f$ is not Riemann integrable when the set of discontinuities of $f$ does not have measure $0$. This essentially means that the generalized volume (Measure) of the set of discontinuities have to be zero for $f$ to be Riemann integrable.
 ### Integrating on non-rectangular regions
-For t
+To integrate over a region $C \subset \mathbb R^n$ we take a rectangular region $D$ such that $C \subseteq D \subset \mathbb R^n$  and define the indicator function:
+$$
+\begin{align}
+\mathbb 1_C(\vec x) = 
+\begin{cases}
+1 & x\in C \\
+\end{cases}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
