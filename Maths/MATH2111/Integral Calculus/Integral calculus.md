@@ -164,4 +164,3 @@ $$
 &= \int_B \left(\int_A f(\vec x, \vec y) d\vec x\right) d\vec y
 \end{align}
 $$
-\
