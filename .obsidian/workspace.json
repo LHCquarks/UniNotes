@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2511/Architecture/Architecture.md",
+                "file": "Maths/MATH2111/Integral Calculus/Integral calculus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Architecture"
+              "title": "Integral calculus"
             }
           }
         ]
@@ -170,11 +170,11 @@
   },
   "active": "7e5cc0f5a0b25b4d",
   "lastOpenFiles": [
+    "Comp/COMP2511/Architecture/Architecture.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Architectural Styles.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Microservice Architecture.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Layered Architecture.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Modular Monoliths Architecture.md",
-    "Comp/COMP2511/Architecture/Architecture.md",
     "Maths/MATH2111/Integral Calculus/Integral calculus.md",
     "Maths/MATH2111/Integral Calculus",
     "Maths/MATH2111/MATH2111.md",

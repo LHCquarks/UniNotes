@@ -164,3 +164,11 @@ $$
 &= \int_B \left(\int_A f(\vec x, \vec y) d\vec x\right) d\vec y
 \end{align}
 $$
+## Change of variables
+We can change variables with the formula:
+$$
+\begin{align}
+\int_{F(A)} f(\vec y) d\vec y &= \int_A (f \circ F)(\vec x) |\det(J_F(\vec x))| d\vec x
+\end{align}
+$$
+
