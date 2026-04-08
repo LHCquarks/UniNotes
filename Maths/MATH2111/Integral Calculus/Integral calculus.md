@@ -122,5 +122,6 @@ Multi-dimensional integrals have the following properties:
 - Linearity: $\int_D [af(\vec x) \pm bg(\vec x)] d\vec x = a\int_D f(\vec x)d\vec x \pm b\int_D g(\vec x) d\vec x$ 
 - Monotonicity: if $f(x) \le g(x)$ on $D$ then $\int_D f(\vec x) d\vec x \le \int_D g(\vec x) d\vec x$
 - $\left|\int_D f(\vec x) d\vec x\right| \le \int_D |f(\vec x) |d\vec x$
-### When is $f$ not Riemann Integrable?
-$f$ is not integrable 
+### When is $f$ not Riemann integrable?
+$f$ is not Riemann integrable when the set of discontinuities of $f$ does not have measure $0$. This essentially means that the generalized volume (Measure) of the set of discontinuities have to be zero for $f$ to be Riemann integrable.
+
