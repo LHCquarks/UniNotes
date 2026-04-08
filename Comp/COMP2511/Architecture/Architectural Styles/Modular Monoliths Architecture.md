@@ -35,6 +35,6 @@ To further reduce coupling, partition the data base per-module. Each module shou
 - Deployment: Single unit, easier CI/CD
 **Weaknesses**
 - Reuse: Harder to share utilities
-- One set of characteristics: No per-module customisation
-- Fragile Modularity: Easy to break coupling boundaries
+- One set of characteristics: No per-module customization
+- Fragile Molecularity: Easy to break coupling boundaries
 - Operational Limits: Harder to scale or isolate faults
