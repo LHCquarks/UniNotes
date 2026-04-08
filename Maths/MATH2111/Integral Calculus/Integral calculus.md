@@ -165,7 +165,8 @@ $$
 \end{align}
 $$
 ## Integrating over arbitrary regions
-Suppose that by Fubini's theorem we want to first integrate 
+I feel that this is best described through examples:
+
 ## Change of variables
 We can change variables with the formula:
 $$
