@@ -141,4 +141,6 @@ $$
 \int_C f(\vec x) d\vec x &= \int_D \mathbb 1_C(\vec x) f(\vec x) d\vec x
 \end{align}
 $$
-Because $\{\vec x : \mathbb 1_C \text{ is discontinuous at } \vec x\} = \partial C$  we can
+Because $\{\vec x : \mathbb 1_C \text{ is discontinuous at } \vec x\} = \partial C$  we conclude that for a continuous $f(\vec x)$ we can integrate over $C$ iff the boundary of $C$ has measure zero
+
+## Fubini's theorem
