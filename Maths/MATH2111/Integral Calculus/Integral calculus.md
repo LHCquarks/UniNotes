@@ -119,4 +119,6 @@ $$
 $$
 ### Properties
 Multi-dimensional integrals have the following properties:
-- Linearity: $\int_D [af(\vec x) \pm bg(\vec x)] d\vec x = a\int_D $ 
+- Linearity: $\int_D [af(\vec x) \pm bg(\vec x)] d\vec x = a\int_D f(\vec x)d\vec x \pm b\int_D g(\vec x) d\vec x$ 
+- Monotonicity: if $f(x) \le g(x)$ on $D$ then $\int_D f(\vec x) d\vec x \le \int_D g(\vec x) d\vec x$
+- $\left|\int_D f(\vec x) d\vec x\right| \le \int_D |\$
