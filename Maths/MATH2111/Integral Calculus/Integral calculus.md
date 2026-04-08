@@ -124,4 +124,5 @@ Multi-dimensional integrals have the following properties:
 - $\left|\int_D f(\vec x) d\vec x\right| \le \int_D |f(\vec x) |d\vec x$
 ### When is $f$ not Riemann integrable?
 $f$ is not Riemann integrable when the set of discontinuities of $f$ does not have measure $0$. This essentially means that the generalized volume (Measure) of the set of discontinuities have to be zero for $f$ to be Riemann integrable.
-
+### Integrating on non-rectangular regions
+For t
