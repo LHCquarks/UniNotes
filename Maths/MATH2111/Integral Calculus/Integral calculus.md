@@ -170,10 +170,12 @@ I feel that this is best described through examples:
 In the above example to integrate over the region $R$ we notice that we can take vertical strips thus we can first integrate with respect to $y$ no problem. We can then build our integral like so:
 $$
 \begin{align}
-{\iint}
+\iint_R dA &= \int_{x_0}^{x_1} \int_{\phi_1(x)}^{\phi_2(x)} dydx
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+If we were to then do the x-axis first we would have to split it into two integrals when $\phi_1(x)$ goes  up again to account for the two regions.
+
+When we can do the first method on a region we call it **y-simple**. When we can do it with the x-axis we call it **x-simple**
 ## Change of variables
 We can change variables with the formula:
 $$
