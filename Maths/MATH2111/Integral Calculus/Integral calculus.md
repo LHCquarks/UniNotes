@@ -144,3 +144,16 @@ $$
 Because $\{\vec x : \mathbb 1_C \text{ is discontinuous at } \vec x\} = \partial C$  we conclude that for a continuous $f(\vec x)$ we can integrate over $C$ iff the boundary of $C$ has measure zero
 
 ## Fubini's theorem
+Let $A \subseteq \mathbb R^n$ and $B \subseteq \mathbb R^m$ be rectangular regions. Let $f: A \times B \rightarrow \mathbb R$ be Riemann integrable on $A \times B$. Then for all $x \in A$ except for possibly a set of measure zero the function
+$$
+\begin{align}
+\vec y \rightarrow f(\vec x, \vec y)
+\end{align}
+$$
+is Riemann integrable. Likewise for all $y\in B$ except for possibly a set of measure zero the function
+$$
+\begin{align}
+\vec x \rightarrow f(\vec x, \vec y)
+\end{align}
+$$
+is Rieman
