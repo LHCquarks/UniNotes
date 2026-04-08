@@ -156,4 +156,12 @@ $$
 \vec x \rightarrow f(\vec x, \vec y)
 \end{align}
 $$
-is Rieman
+is Riemann integrable.
+Moreover:
+$$
+\begin{align}
+\int_{A \times B} f dV &= \int_A \left(\int_B f(\vec x, \vec y) d\vec y\right) d\vec x \\
+&= \int_B \left(\int_A f(\vec x, \vec y) d\vec x\right) d\vec y
+\end{align}
+$$
+\
