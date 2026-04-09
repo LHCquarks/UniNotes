@@ -344,6 +344,7 @@ This is essentially representing our function $f(x)$ in the $e^{i\omega x}$ basi
 $$
 \begin{align}
 f(x) = e^{-\frac{1}{2}x^2} &\rightarrow \mathcal F(\omega) = e^{-\frac{1}{2}\omega^2} \\
+f(x) = \begin{cases}1 & |x| \le 1/2 \\ 0 & |x| > 1/2 \end{cases} & \rightarrow \mathcal F(\omega) = \frac{1}{\sqrt{2\pi}} \frac{\sin(\frac{\omega}{2})}{\frac{\omega}{2}} \\
 
 \end{align}
 $$
