@@ -341,6 +341,13 @@ f(x) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \mathcal F(\omega) e^{i\omega
 $$
 This is essentially representing our function $f(x)$ in the $e^{i\omega x}$ basis
 ### Common Fourier Transforms
+$$
+\begin{align}
+f(x) = e^{-\frac{1}{2}x^2} &\rightarrow \mathcal F(\omega) = e^{-\frac{1}{2}\omega^2} \\
+
+\end{align}
+$$
+
 ### Special properties
 We can always decompose a function into odd and even parts so that:
 $$
