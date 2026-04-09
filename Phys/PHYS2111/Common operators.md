@@ -2,7 +2,7 @@ Bellow is listed some common operators and their physical intuition:
 ## $\hat P$
 $\hat P$ is the momentum operator and is given by $-i\hbar \frac{d}{dx}$ in position space and transforms into $\hbar k$ in Fourier space.
 ## $\hat x$
-$\hat x$ is the position operator and is given by $x$ in position space.
+$\hat x$ is the position operator and is given by $x$ in position space and $i\frac{d}{d\omega}$ in Fourier space.
 ## $\hat H$
 $\hat H$ is the Hamiltonian operator and takes many forms depending on the question.
 It most commonly takes the form $\hat H = \frac{\hat p^2}{2m} + V(x)$ but can also take on forms like $\hat H = -\mu_bB\sigma_z$

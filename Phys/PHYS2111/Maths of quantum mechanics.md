@@ -345,10 +345,9 @@ $$
 \begin{align}
 f(x) = e^{-\frac{1}{2}x^2} &\rightarrow \mathcal F(\omega) = e^{-\frac{1}{2}\omega^2} \\
 f(x) = \begin{cases}1 & |x| \le 1/2 \\ 0 & |x| > 1/2 \end{cases} & \rightarrow \mathcal F(\omega) = \frac{1}{\sqrt{2\pi}} \frac{\sin(\frac{\omega}{2})}{\frac{\omega}{2}} \\
-
+f(x) = \cos(x) &\rightarrow \mathcal F(\omega) = \sqrt{2\pi} \frac{1}{2}[\delta(\omega - 1) + \delta(\omega + 1)]
 \end{align}
 $$
-
 ### Special properties
 We can always decompose a function into odd and even parts so that:
 $$
