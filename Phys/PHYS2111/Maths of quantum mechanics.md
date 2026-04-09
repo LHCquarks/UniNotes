@@ -326,3 +326,51 @@ $$
 \end{align}
 $$
 3. Eigenvalues of **Hermitian** operators are real, and eigenvectors corresponding to distinct eigenvalues are orthogonal
+## Fourier Transforms
+In this course we define the Fourier transform of a function $f$ as:
+$$
+\begin{align}
+\mathcal F(\omega) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty f(x) e^{-i\omega x}dx
+\end{align}
+$$
+If we have the Fourier transform of a function then we can derive the original function by:
+$$
+\begin{align}
+f(x) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \mathcal F(\omega) e^{i\omega x} d\omega
+\end{align}
+$$
+This is essentially representing our function $f(x)$ in the $e^{i\omega x}$ basis
+### Common Fourier Transforms
+### Special properties
+We can always decompose a function into odd and even parts so that:
+$$
+\begin{align}
+f(x) &= \text{even}(x) + \text{odd}(x)
+\end{align}
+$$
+and thus ...
+
+The Fourier transform is linear:
+$$
+\begin{align}
+\alpha f(x) + \beta g(x) \rightarrow \alpha\mathcal F(\omega) + \beta \mathcal G(\omega)
+\end{align}
+$$
+Scaling turns into inverse scaling:
+$$
+\begin{align}
+f(ax) \rightarrow \frac{1}{|a|} \mathcal F\left(\frac{\omega}{a}\right)
+\end{align}
+$$
+Derivatives turn into multiplication by $i\omega$:
+$$
+\begin{align}
+\frac{d}{dx}f(x) \rightarrow i\omega\mathcal F(\omega)
+\end{align}
+$$
+Normalization is preserved:
+$$
+\begin{align}
+\int_{-\infty}^\infty |f(x)|^2dx \implies \int_{-\infty}^\infty |\mathcal F(\omega)|^2 d\omega
+\end{align}
+$$
