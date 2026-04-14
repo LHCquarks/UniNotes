@@ -177,6 +177,11 @@ If we were to then do the x-axis first we would have to split it into two integr
 
 When we can do the first method on a region we call it **y-simple**. When we can do it with the x-axis we call it **x-simple**
 ## Change of variables
+Given an integral what is our higher dimensional equivalent to the $u$ sub?
+
+Say we have a region $u, v$ and we have some map $\vec r(u, v)$ that takes us from our $u, v$ world to our $x, y$ world. Then we can consider the image of a small rectangular region in $u, v$ like so:
+
+
 We can change variables with the formula:
 $$
 \begin{align}

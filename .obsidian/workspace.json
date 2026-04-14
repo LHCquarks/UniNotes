@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Maths of quantum mechanics.md",
+                "file": "Maths/MATH2111/Integral Calculus/Integral calculus.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Maths of quantum mechanics"
+              "title": "Integral calculus"
             }
           },
           {
@@ -199,8 +199,8 @@
   },
   "active": "1f2ca867ab91cf10",
   "lastOpenFiles": [
-    "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS2111/Maths of quantum mechanics.md",
+    "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS2111/PHYS2111.md",
     "Maths/MATH2621/Transforms/Fourier Transform.md",
     "Maths/MATH2621/Transforms/Laplace Transform.md",
