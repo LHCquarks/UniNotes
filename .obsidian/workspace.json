@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,8 +197,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ccbb82516ee82b8b",
+  "active": "1f2ca867ab91cf10",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS2111/Maths of quantum mechanics.md",
     "Phys/PHYS2111/PHYS2111.md",
     "Maths/MATH2621/Transforms/Fourier Transform.md",
@@ -217,7 +218,6 @@
     "Maths/MATH2111/MATH2111.md",
     "Phys/PHYS2111/Square well potential.md",
     "Phys/PHYS2111/Solving Schrodinger's equation.md",
-    "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS2111/Untitled 1.md",
     "Phys/PHYS2111/Untitled.md",
     "Phys/PHYS2111/Commutators and simultaneous measurements.md",
