@@ -60,3 +60,15 @@ dA &= \left|d\vec A\right| \\
 \right|
 \end{align}
 $$
+If you wish we can then write this out to be:
+$$
+\begin{align}
+I &= \int_S F(x, y, z) dA \\
+&= \int_S F(S(u, v))
+\begin{Vmatrix}
+\hat \imath & \hat \jmath & \hat k \\
+\frac{\partial x}{\partial u} & \frac{\partial y}{\partial u} & \frac{\partial z}{\partial u} \\
+\frac{\partial x}{\partial v} & \frac{\partial y}{\partial v} & \frac{\partial z}{\partial v} \\
+\end{Vmatrix}
+\end{align}
+$$
