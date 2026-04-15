@@ -287,8 +287,14 @@ $$
 &\ \ \ \ \ \ +\rho\cos\theta\cos\phi[\sin\theta\sin\phi\cdot0 - \rho\cos\theta\sin\phi\cdot\cos\phi]| \\
 &=|-\rho^2\cos^2\theta \sin^3\phi\\
 &\ \ \ \ \ \  - \rho^2\sin^2\theta\sin^3\phi - \rho^2 \sin^2\theta\sin^2\phi \cos\phi \\
-&\ \ \ \ \ \ - \rho^2\cos^2\theta \sin^2\phi \cos \phi| \\
-&=|\rho^2\sin^3\phi + \rho^2\sin^3\phi + \rho^2 \sin^2\phi\cos\phi + \rho^2\sin^2\phi \cos \phi| \\
-&=|\rho^2\sin^3\phi + \rho^2\sin^3\phi + \rho^2 \sin^2\phi\cos\phi + \rho^2\sin^2\phi \cos \phi| \\
+&\ \ \ \ \ \ - \rho^2\cos^2\theta \sin\phi \cos^2\phi| \\
+&=|\rho^2\sin^3\phi + \rho^2 \sin\phi\cos^2\phi | \\
+&=\rho^2|\sin\phi| \\
+\end{align}
+$$
+because $\phi \in [0, \frac{\pi}{2}]$ we know $\sin\phi \ge 0$ thus we can drop the absolute values and get:
+$$
+\begin{align}
+|\det(J)| = \rho^2\sin\phi
 \end{align}
 $$
