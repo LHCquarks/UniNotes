@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "3ba4609997016253",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/MATH2111/Integral Calculus/Vector fields.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Vector fields"
+            }
+          },
+          {
             "id": "a34a51b70bae7627",
             "type": "leaf",
             "state": {
@@ -183,12 +197,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a34a51b70bae7627",
+  "active": "3ba4609997016253",
   "lastOpenFiles": [
     "Maths/MATH2111/Integral Calculus/Integral calculus.md",
+    "Maths/MATH2111/Integral Calculus/Vector fields.md",
+    "Maths/MATH2111/Integral Calculus/Path integrals and Surface integrals.md",
+    "Maths/MATH2621/Path Integral detour/Vector fields.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Basics of the multivariable integral.md",
     "Phys/PHYS2111/Maths of quantum mechanics.md",
-    "Maths/MATH2111/Integral Calculus/Path integrals and Surface integrals.md",
     "Maths/MATH2111/Integral Calculus/Pasted image 20260415154006.png",
     "Maths/MATH2111/MATH2111.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Normal Integrals.md",
@@ -215,7 +231,6 @@
     "Phys/PHYS2111/Solving Schrodinger's equation.md",
     "Phys/PHYS2111/Untitled 1.md",
     "Phys/PHYS2111/Untitled.md",
-    "Phys/PHYS2111/Commutators and simultaneous measurements.md",
     "Comp/COMP2511/Tutorials",
     "Comp/COMP2511/Testing Patterns",
     "Comp/COMP2511/Programming Patterns",
