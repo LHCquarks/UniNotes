@@ -280,9 +280,14 @@ $$
 \begin{Vmatrix}
 \cos\theta \sin\phi & -\rho\sin\theta\sin\phi & \rho\cos\theta\cos\phi\\
 \sin\theta\sin\phi & \rho\cos\theta\sin\phi  & \rho\sin\theta\cos\phi\\
-\sin\phi & 0 & -\rho\sin\phi\\
+\cos\phi & 0 & -\rho\sin\phi\\
 \end{Vmatrix} \\
-&= |r\cos^2\theta + r \sin^2\theta| \\
-&= r
+&= |\cos\theta\sin\phi[\rho\cos\theta\sin\phi \cdot (-\rho\sin\phi) - \rho\sin\theta\cos\phi \cdot 0]\\
+&\ \ \ \ \ \  + \rho\sin\theta\sin\phi[\sin\theta\sin\phi \cdot(-\rho\sin\phi) - \rho\sin\theta\cos\phi \cdot\cos\phi] \\
+&\ \ \ \ \ \ +\rho\cos\theta\cos\phi[\sin\theta\sin\phi\cdot0 - \rho\cos\theta\sin\phi\cdot\cos\phi]| \\
+&=|-\rho^2\cos^2\theta \sin^3\phi\\
+&\ \ \ \ \ \  - \rho^2\sin^2\theta\sin^3\phi - \rho^2 \sin^2\theta\sin^2\phi \cos\phi \\
+&\ \ \ \ \ \ +\rho\cos\theta\cos\phi[\sin\theta\sin\phi\cdot0 - \rho\cos\theta\sin\phi\cdot\sin\phi]| \\
+&\ \ \ \ \ \ - \rho^2\cos^2\theta \sin^2\phi| \\
 \end{align}
 $$
