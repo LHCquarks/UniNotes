@@ -287,7 +287,6 @@ $$
 &\ \ \ \ \ \ +\rho\cos\theta\cos\phi[\sin\theta\sin\phi\cdot0 - \rho\cos\theta\sin\phi\cdot\cos\phi]| \\
 &=|-\rho^2\cos^2\theta \sin^3\phi\\
 &\ \ \ \ \ \  - \rho^2\sin^2\theta\sin^3\phi - \rho^2 \sin^2\theta\sin^2\phi \cos\phi \\
-&\ \ \ \ \ \ +\rho\cos\theta\cos\phi[\sin\theta\sin\phi\cdot0 - \rho\cos\theta\sin\phi\cdot\sin\phi]| \\
-&\ \ \ \ \ \ - \rho^2\cos^2\theta \sin^2\phi| \\
+&\ \ \ \ \ \ - \rho^2\cos^2\theta \sin^2\phi \cos \phi| \\
 \end{align}
 $$
