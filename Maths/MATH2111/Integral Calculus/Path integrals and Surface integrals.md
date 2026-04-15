@@ -43,13 +43,14 @@ $$
 This is all well and good but we have another form of $dA$ where it is the magnitude of a normal vector of our surface $d\vec{A}$. This vector $d\vec{A}$ can be expressed as the cross product of the tangent vectors $d\vec u$ and $d \vec v$ where the tangent vector $d\vec w$ is given by
 $$
 \begin{align}
-d\vec w &= \pmatrix{\frac{\partial x}{\partial w}\\ \frac{\partial y}{\partial w}\\ \frac{\partial z}{\partial w}}
+d\vec w &= \pmatrix{\frac{\partial x}{\partial w}\\ \frac{\partial y}{\partial w}\\ \frac{\partial z}{\partial w}} dw
 \end{align}
 $$
 Therefore we get the formula:
 $$
 \begin{align}
-d\vec A &= \pmatrix{\frac{\partial x}{\partial u} \\ \frac{\partial y}{\partial u} \\ \frac{\partial z}{\partial u}} \times \pmatrix{\frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial v} \\ \frac{\partial z}{\partial v}}
+d\vec A &= \pmatrix{\frac{\partial x}{\partial u} \\ \frac{\partial y}{\partial u} \\ \frac{\partial z}{\partial u}} du \times \pmatrix{\frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial v} \\ \frac{\partial z}{\partial v}} dv \\
+&= \pmatrix{\frac{\partial x}{\partial u} \\ \frac{\partial y}{\partial u} \\ \frac{\partial z}{\partial u}} \times \pmatrix{\frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial v} \\ \frac{\partial z}{\partial v}} dudv \\
 \end{align}
 $$
 and finally:
@@ -57,7 +58,7 @@ $$
 \begin{align}
 dA &= \left|d\vec A\right| \\
 &= \left|\pmatrix{\frac{\partial x}{\partial u} \\ \frac{\partial y}{\partial u} \\ \frac{\partial z}{\partial u}} \times \pmatrix{\frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial v} \\ \frac{\partial z}{\partial v}}
-\right|
+\right| dudv
 \end{align}
 $$
 If you wish we can then write this out to be:
@@ -69,6 +70,8 @@ I &= \int_S F(x, y, z) dA \\
 \hat \imath & \hat \jmath & \hat k \\
 \frac{\partial x}{\partial u} & \frac{\partial y}{\partial u} & \frac{\partial z}{\partial u} \\
 \frac{\partial x}{\partial v} & \frac{\partial y}{\partial v} & \frac{\partial z}{\partial v} \\
-\end{Vmatrix}
+\end{Vmatrix} dudv \\
+&= \int_S F(S(u, v)) \sqrt{\left(\frac{\partial y}{\partial u} \frac{\partial z}{\partial v} - \frac{\partial z}{\partial u} \frac{\partial y}{\partial v}\right)^2 + \left(\frac{\partial x}{\partial u} \frac{\partial z}{\partial v} - \frac{\partial z}{\partial u} \frac{\partial x}{\partial v}\right)^2 + \left(\frac{\partial x}{\partial u} \frac{\partial y}{\partial v} - \frac{\partial y}{\partial u} \frac{\partial x}{\partial v}\right)^2}
+dudv \\
 \end{align}
 $$
