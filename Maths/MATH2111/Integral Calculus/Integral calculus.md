@@ -289,5 +289,6 @@ $$
 &\ \ \ \ \ \  - \rho^2\sin^2\theta\sin^3\phi - \rho^2 \sin^2\theta\sin^2\phi \cos\phi \\
 &\ \ \ \ \ \ - \rho^2\cos^2\theta \sin^2\phi \cos \phi| \\
 &=|\rho^2\sin^3\phi + \rho^2\sin^3\phi + \rho^2 \sin^2\phi\cos\phi + \rho^2\sin^2\phi \cos \phi| \\
+&=|\rho^2\sin^3\phi + \rho^2\sin^3\phi + \rho^2 \sin^2\phi\cos\phi + \rho^2\sin^2\phi \cos \phi| \\
 \end{align}
 $$
