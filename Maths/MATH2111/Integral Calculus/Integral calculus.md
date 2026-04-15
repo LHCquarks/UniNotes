@@ -298,3 +298,5 @@ $$
 |\det(J)| = \rho^2\sin\phi
 \end{align}
 $$
+## Inverse substitution
+Say instead fo 
