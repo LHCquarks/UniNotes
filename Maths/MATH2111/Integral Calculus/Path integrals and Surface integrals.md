@@ -19,4 +19,44 @@ $$
 &= \int_a^b F(x(t), y(t)) \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2}dt \\
 \end{align}
 $$
-These integrals can be used to solve things like
+If we were doing this in 3d then we would get the formula:
+$$
+\begin{align}
+\int_c F(x, y, z) ds &= \int_a^b F(x(t), y(t), z(t)) \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2 + \left(\frac{dz}{dt}\right)^2} dt
+\end{align}
+$$
+## Surface integrals
+Surface integrals are similar to path integrals except we integrate over a surface instead of a path.
+To do this we introduce a second parameter so that for our function $F(x, y, z)$ we have our surface $S(u, v) = (x(u, v), y(u, v), z(u, v))$. We write the surface integral like so:
+$$
+\begin{align}
+I = \int_S F(x, y, z) dA
+\end{align}
+$$
+where $dA$ represents the size of our small patch of area.
+Through our Jacobian:
+$$
+\begin{align}
+I = \iint_S F(S(u, v))|J_S| dudv
+\end{align}
+$$
+This is all well and good but we have another form of $dA$ where it is the magnitude of a normal vector of our surface $d\vec{A}$. This vector $d\vec{A}$ can be expressed as the cross product of the tangent vectors $d\vec u$ and $d \vec v$ where the tangent vector $d\vec w$ is given by
+$$
+\begin{align}
+d\vec w &= \pmatrix{\frac{\partial x}{\partial w}\\ \frac{\partial y}{\partial w}\\ \frac{\partial z}{\partial w}}
+\end{align}
+$$
+Therefore we get the formula:
+$$
+\begin{align}
+d\vec A &= \pmatrix{\frac{\partial x}{\partial u} \\ \frac{\partial y}{\partial u} \\ \frac{\partial z}{\partial u}} \times \pmatrix{\frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial v} \\ \frac{\partial z}{\partial v}}
+\end{align}
+$$
+and finally:
+$$
+\begin{align}
+dA &= \left|d\vec A\right| \\
+&= \left|\pmatrix{\frac{\partial x}{\partial u} \\ \frac{\partial y}{\partial u} \\ \frac{\partial z}{\partial u}} \times \pmatrix{\frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial v} \\ \frac{\partial z}{\partial v}}
+\right|
+\end{align}
+$$
