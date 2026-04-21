@@ -75,5 +75,3 @@ I &= \int_S F(x, y, z) dA \\
 dudv \\
 \end{align}
 $$
-## The Vector path integral
-We can integrate a vector field over a path by dotting the field with our displacement segment $d\vec s$. This type of integral represents how much you are moving with the vector field. In physics we use this to measure the work done against a field.
