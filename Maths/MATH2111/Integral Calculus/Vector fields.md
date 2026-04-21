@@ -72,6 +72,16 @@ $$
 \end{align}
 $$
 It then follows that all conservative vector fields are **irotational**. The converse of this statement is also true on simply connected domains.
+
+Often you will be asked if a vector field is conservative. To test this take the **curl** and if $\nabla \times f = \vec 0$ and the domain of $f$ is simply path connected then your sweet. If $\nabla \times f \not = \vec 0$ then $f$ is not conservative. If these fail then you can try to find $\phi$ by solving the system of PDEs:
+$$
+\begin{align}
+\frac{\partial \phi}{\partial x} &= F_x \\
+\frac{\partial \phi}{\partial y} &= F_y \\
+\frac{\partial \phi}{\partial z} &= F_z \\
+\end{align}
+$$
+As a recap you can simply integrate $F_x$ wrt $x$ treating $y, z$ as constants and then $c$ becomes $c(y, z)$. You can then differentiate your $\psi(x, y, z)$ wrt $y$, find $c(y, z)$ in terms of $c(z)$ then do the same with $z$ to finally find $c(z)$.
 ## The Laplacian
 The **Laplacian** $\Delta$ is defined by $\Delta = \nabla \cdot \nabla$ and so for $f(x, y, z)$ we get:
 $$
