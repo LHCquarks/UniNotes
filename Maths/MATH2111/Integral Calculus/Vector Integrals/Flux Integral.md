@@ -32,3 +32,9 @@ WOW!
 Note that for conservative $F$ we get that both integrals are $0$
 
 ## Gauss' Divergence theorem
+Let $V$ be a bounded solid simple region in 3-d space. Let $F$ be a vector field that is continuously differentiable on $T$. Then:
+$$
+\begin{align}
+\iint_{\partial S} F \cdot d\vec A &= \iiint_V \nabla \cdot F dV
+\end{align}
+$$
