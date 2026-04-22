@@ -38,3 +38,26 @@ $$
 \iint_{\partial S} F \cdot d\vec A &= \iiint_V \nabla \cdot F dV
 \end{align}
 $$
+## Alternate definitions of divergence and curl
+If we define the divergence of a vector field $F$ as:
+$$
+\begin{align}
+\nabla \cdot F &= \lim_{V\rightarrow 0} \frac{1}{V} \iint_S F \cdot d\vec A
+\end{align}
+$$
+Where:
+- S is a surface enclosing a point $p$
+- $V$ is the volume of the region contained by the surface $S$
+From this definition we get original definition of divergence
+
+We can define the divergence of a vector field as:
+$$
+\begin{align}
+\nabla \times F \cdot \hat n&= \lim_{A \rightarrow 0} \frac{1}{A} \int_C F\cdot d\vec s
+\end{align}
+$$
+
+Where:
+- $C$ is a closed loop enclosing a point $p$ 
+- $A$ is the area of region enclosed by $C$
+- $\hat n$ is a vector perpendicular to the surface $A$
