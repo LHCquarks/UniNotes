@@ -37,3 +37,55 @@ $$
 \oint_C F\cdot d \vec s &= 0
 \end{align}
 $$
+## Green's theorem
+Let $\Omega$ be a bounded region who's boundary is $C$. Also let $C$ be peicewise, smooth and simple.
+Let $F$ be a continuously differentiable vector field on $\Omega$. Then:
+$$
+\begin{align}
+\iint_\Omega (\nabla \times F) \cdot d\vec A &= \oint_C F \cdot d\vec s \\
+\end{align}
+$$
+### Using Greens theorem to find areas
+If we select a vector field so that $|\nabla \times F| = 1$ in the direction of $d\vec A$ on the left hand side we have the area of $\Omega$. Using Green's theorem we can then transform this into an integral along the boundary of $\Omega$. An example is below:
+
+Calculate the area bounded by the astroid
+$$
+\begin{align}
+(x^2)^{1/3} + (y^2)^{1/3} &= a^{2/3} \\
+\end{align}
+$$
+where $a > 0$.
+
+This is a flat surface so we simply need
+$$
+\begin{align}
+\frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y} &= 1.\\
+\end{align}
+$$
+A simple curve that solves this is $F(x, y) = \braket{0, x}$. Thus setting up the integral we have:
+$$
+\begin{align}
+\iint_\Omega (\nabla \times \braket{0, x}) d\vec A &= \oint_C \braket{0, x}\cdot d\vec s
+\end{align}
+$$
+Next we find a parametric equation for $C$. Moving $y$ to the left hand side we can solve for x:
+$$
+\begin{align}
+(x^2)^{1/3} &=  a^{2/3} - (y^2)^{1/3}  \\
+x^2 &=  \left(a^{2/3} - (y^2)^{1/3}\right)^3  \\
+x &=  \pm\left(a^{2/3} - (y^2)^{1/3}\right)^{3/2}  \\
+\end{align}
+$$
+Letting $y = t$ we get the two curves:
+$$
+\begin{align}
+c_1(t) &= \braket{-\left(a^{2/3} - (t + a)^{2/3}\right)^{3/2}, t} & t \in [-a, 0]\\
+c_2(t) &= \braket{\left(a^{2/3} - t^{2/3}\right)^{3/2}, t} & t \in [0, a]\\ 
+\end{align}
+$$
+thus we have that
+$$
+\begin{align}
+A &= \int_{-a}^0 \braket{0, t} \cdot c_1'(t) dt +\int_{0}^a \braket{0, t} \cdot c_2'(t) dt \\
+\end{align}
+$$
