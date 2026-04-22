@@ -102,6 +102,7 @@ A &= \int_{0}^{2\pi} \braket{0,a\cos^3(t)} \cdot c'(t) dt \\
 &= \frac{3a^2}{8} \int_0^{2\pi} 1 + \cos(2t) - \frac{1}{2}(1 + \cos(4t)) - (1 -\sin^2(2t)) \cos(2t) dt \\
 &= \frac{3a^2}{8} \int_0^{2\pi} \frac{1}{2} + \frac{1}{2}\cos(4t) + \sin^2(2t) \cos(2t) dt \\
 &= \frac{3a^2}{16} \left [t + \frac{1}{4}\sin(4t) + \frac{1}{6}\sin^3(2t) \right]_0^{2\pi} \\
-&= \frac{3a^2}{16} \left [t + \frac{1}{4}\sin(4t) + \frac{1}{6}\sin^3(2t) \right]_0^{2\pi} \\
+&= \frac{3a^2}{16} \left [2\pi \right] \\
+&= \frac{3a^2\pi}{8} \\
 \end{align}
 $$
