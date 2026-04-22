@@ -97,6 +97,8 @@ A &= \int_{0}^{2\pi} \braket{0,a\cos^3(t)} \cdot c'(t) dt \\
 &= a^2 \int_0^{2\pi} 3(1- \cos^2(t))\cos^4(t) dt \\
 &= 3a^2 \int_0^{2\pi} \cos^4(t) - \cos^6(t) dt \\
 &= 3a^2 \int_0^{2\pi} \frac{1}{4}(1 + \cos(2t))^2 - \frac{1}{8}(1 + \cos(2t))^3 dt \\
-&= \frac{3a^2}{4} \int_0^{2\pi} 1 + 2\cos(2t) + 2\cos^2(2t) - \frac{1}{2}(1 + 3+ \cos(2t))^3 dt \\
+&= \frac{3a^2}{4} \int_0^{2\pi} 1 + 2\cos(2t) + \cos^2(2t) - \frac{1}{2}(1 + 3\cos(2t) + 3\cos^2(2t) + \cos^3(2t)) dt \\
+&= \frac{3a^2}{4} \int_0^{2\pi} \frac{1}{2} + \frac{1}{2}\cos(2t) - \frac{1}{2}\cos^2(2t) - \frac{1}{2}\cos^3(2t) dt \\
+&= \frac{3a^2}{8} \int_0^{2\pi} 1 + \cos(2t) - \cos^2(2t) - \cos^3(2t) dt \\
 \end{align}
 $$
