@@ -42,9 +42,16 @@ Let $\Omega$ be a bounded region who's boundary is $C$. Also let $C$ be peicewis
 Let $F$ be a continuously differentiable vector field on $\Omega$. Then:
 $$
 \begin{align}
-\iint_\Omega (\nabla \times F) \cdot d\vec A &= \oint_C F \cdot d\vec s \\
+\iint_\Omega (\nabla \times F) d\vec A &= \oint_C F \cdot d\vec s \\
 \end{align}
 $$
+As a colliery to Green's theorem (Letting $G = \left(-F_2, F_1\right)$) we get the normal form of Green's theorem:
+$$
+\begin{align}
+\iint_\Omega \nabla \cdot G dA &= \oint_C F \cdot \hat n ds
+\end{align}
+$$
+Note that Green's theorem is for specifically the 2d case and thus $\nabla \times F = \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y}$ 
 ### Using Greens theorem to find areas
 If we select a vector field so that $|\nabla \times F| = 1$ in the direction of $d\vec A$ on the left hand side we have the area of $\Omega$. Using Green's theorem we can then transform this into an integral along the boundary of $\Omega$. An example is below:
 
