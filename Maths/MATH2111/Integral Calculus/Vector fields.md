@@ -92,51 +92,14 @@ $$
 \end{align}
 $$
 ## Divergence and curl in other common coordinates
+The proof of all the below identities come from the alternate definition of divergence and curl as that one is independent of the coordinate system
 ### Cylindrical coordinates
-We know $\nabla \cdot F = \frac{\partial F}{\partial x} +\frac{\partial F}{\partial y}  + \frac{\partial F}{\partial z}$.  We can also write:
 $$
 \begin{align}
-F(r, \theta, z) &= F_r \hat r + F_\theta \hat \theta + F_z \hat z
+\nabla \cdot F(r, \theta, z) &= \frac{1}{r} \frac{\partial}{\partial r} (rF_r) + \frac{1}{r} \frac{\partial F_\theta}{\partial \theta} + \frac{\partial F_z}{\partial z} \\
+\nabla \times F(r, \theta, z) &= \left(\frac{1}{r}\frac{\partial F_z}{\partial \theta} - \frac{\partial F_\theta}{\partial z} \right)\hat r + \left(\frac{\partial F_r}{\partial z} - \frac{\partial F_z}{\partial r} \right)\hat \theta + \left(\frac{1}{r}\frac{\partial}{\partial r}(r F_\theta) -\frac{1}{r}\frac{\partial F_r}{\partial \theta} \right)\hat z
 \end{align}
 $$
-Now we can also define a new function $G(x, y, z) = F(r, \theta, z)$ where:
-$$
-\begin{align}
-G(x, y, z) = \braket{F_r \cos(F_\theta), F_r \sin(F_\theta), F_z}
-\end{align}
-$$
-and using the chain and product rules we get:
-$$
-\begin{align}
-\nabla \cdot G &= \frac{\partial F_r}{\partial x} \cos(F_\theta) - \sin(F_\theta)\frac{\partial F_\theta}{\partial x} F_{r} + \frac{\partial F_r}{\partial y} \sin(F_\theta) + \cos(F_\theta)\frac{\partial F_\theta}{\partial y} F_{r} + \frac{\partial F_z}{\partial z} \\
-\nabla \cdot G &= 
-F_r\left(\cos(F_\theta)\frac{\partial F_\theta}{\partial y} -\sin(F_\theta)\frac{\partial F_\theta}{\partial x} \right) +
-\frac{\partial F_r}{\partial x} \cos(F_\theta) +
-\frac{\partial F_r}{\partial y} \sin(F_\theta) +
-\frac{\partial F_z}{\partial z} \\
-\end{align}
-$$
-Noting that
-$$
-\begin{align}
-\frac{\partial F_\theta}{\partial y} &= \frac{\partial F_\theta}{\partial r} \frac{\partial r}{\partial y} + \frac{\partial F_\theta}{\partial \theta} \frac{\partial \theta}{\partial y} \\
-&= \frac{\partial F_\theta}{\partial r} \frac{1}{\sin(\theta)} + \frac{\partial F_\theta}{\partial \theta} \frac{1}{r\cos(\theta)} \\
-\frac{\partial F_r}{\partial y}&= \frac{\partial F_r}{\partial r} \frac{1}{\sin(\theta)} + \frac{\partial F_r}{\partial \theta} \frac{1}{r\cos(\theta)} \\
-\frac{\partial F_\theta}{\partial x} &= \frac{\partial F_\theta}{\partial r} \frac{1}{\cos(\theta)} + \frac{\partial F_\theta}{\partial \theta} \frac{-1}{r\sin(\theta)} \\
-\frac{\partial F_r}{\partial x} &= \frac{\partial F_r}{\partial r} \frac{1}{\cos(\theta)} + \frac{\partial F_r}{\partial \theta} \frac{-1}{r\sin(\theta)} \\
-\end{align}
-$$
-we can substitute these in to get the mess:
-$$
-\begin{align}
-\nabla \cdot G &= 
-F_r\left(
-\frac{\partial F_\theta}{\partial r} \frac{\cos(F_\theta)}{\sin(\theta)} + \frac{\partial F_\theta}{\partial \theta} \frac{\cos(F_\theta)}{r\cos(\theta)} -
-\frac{\partial F_\theta}{\partial r} \frac{\sin(F_\theta)}{\cos(\theta)} + \frac{\partial F_\theta}{\partial \theta} \frac{-\sin(F_\theta)}{r\sin(\theta)} 
-\right) \\
-& \ \ \ \ +
-\frac{\partial F_r}{\partial r} \frac{\cos(F_\theta)}{\cos(\theta)} + \frac{\partial F_r}{\partial \theta} \frac{-\cos(F_\theta)}{r\sin(\theta)} +
-\frac{\partial F_r}{\partial r} \frac{\sin(F_\theta)}{\sin(\theta)} + \frac{\partial F_r}{\partial \theta} \frac{\sin(F_\theta)}{r\cos(\theta)} +
-\frac{\partial F_z}{\partial z} \\
-\end{align}
-$$
+### Spherical coordinates
+
+
