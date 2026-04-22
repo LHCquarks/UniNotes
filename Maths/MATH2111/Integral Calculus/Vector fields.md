@@ -112,5 +112,3 @@ $$
 + \left(\frac{1}{\rho}\frac{\partial}{\rho}(\rho F_\phi) - \frac{1}{\rho}\frac{\partial \rho}{\partial \phi}\right)
 \end{align}
 $$
-
-
