@@ -62,7 +62,7 @@ $$
 \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y} &= 1.\\
 \end{align}
 $$
-A simple curve that solves this is $F(x, y) = \braket{0, x}$. Thus setting up the integral we have:
+A simple function that solves this is $F(x, y) = \braket{0, x}$. Thus setting up the integral we have:
 $$
 \begin{align}
 \iint_\Omega (\nabla \times \braket{0, x}) d\vec A &= \oint_C \braket{0, x}\cdot d\vec s
@@ -87,5 +87,6 @@ thus we have that
 $$
 \begin{align}
 A &= \int_{-a}^0 \braket{0, t} \cdot c_1'(t) dt +\int_{0}^a \braket{0, t} \cdot c_2'(t) dt \\
+&= \int_{-a}^0 t dt +\int_{0}^a  t dt \\
 \end{align}
 $$
