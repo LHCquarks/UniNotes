@@ -101,5 +101,16 @@ $$
 \end{align}
 $$
 ### Spherical coordinates
+$$
+\begin{align}
+\nabla \cdot F(\rho, \phi, \theta) &=  \frac{1}{\rho^2} \frac{\partial}{\partial \rho} (\rho^2 F_\rho) + \frac{1}{\rho \sin \phi} \frac{\partial}{\partial \phi} (\sin \phi F_\phi) + \frac{1}{\rho \sin \phi} \frac{\partial F_\theta}{\partial \theta} \\
+\nabla \times F(\rho, \phi, \theta) &= 
+\left(\frac{1}{\rho\sin\phi} \frac{\partial}{\partial \phi} (\sin \phi F_\theta) - \frac{1}{\rho \sin \phi} \frac{\partial F_\phi}{\partial \theta} \right)\hat\rho \\
+&\ \ \ \ 
++ \left(\frac{1}{\rho \sin \phi} \frac{\partial F_\rho}{\partial \theta} - \frac{1}{\rho} \frac{\partial}{\partial \rho}(\rho F_\theta)\right) \hat \theta \\
+&\ \ \ \ 
++ \left(\frac{1}{\rho}\frac{\partial}{\rho}(\rho F_\phi) - \frac{1}{\rho}\frac{\partial \rho}{\partial \phi}\right)
+\end{align}
+$$
 
 
