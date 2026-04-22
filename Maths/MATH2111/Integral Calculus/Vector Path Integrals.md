@@ -75,25 +75,26 @@ $$
 \iint_\Omega (\nabla \times \braket{0, x}) d\vec A &= \oint_C \braket{0, x}\cdot d\vec s
 \end{align}
 $$
-Next we find a parametric equation for $C$. Moving $y$ to the left hand side we can solve for x:
+Next we find a parametric equation for $C$. Because we have a some kind of $x^2 + y^2$ lets try $x = A\cos^3(t), y = A\sin^3(t)$. This gives:
 $$
 \begin{align}
-(x^2)^{1/3} &=  a^{2/3} - (y^2)^{1/3}  \\
-x^2 &=  \left(a^{2/3} - (y^2)^{1/3}\right)^3  \\
-x &=  \pm\left(a^{2/3} - (y^2)^{1/3}\right)^{3/2}  \\
+A^{2/3}\cos^2(t) + A^{2/3}\sin^2(t) &= a^{2/3} \\
+A^{2/3} &= a^{2/3} \\
 \end{align}
 $$
-Letting $y = t$ we get the two curves:
+Thus $x = a \cos^3(t), y = a\sin^3(t)$ works so we get the curve:
 $$
 \begin{align}
-c_1(t) &= \braket{-\left(a^{2/3} - (t + a)^{2/3}\right)^{3/2}, t} & t \in [-a, 0]\\
-c_2(t) &= \braket{\left(a^{2/3} - t^{2/3}\right)^{3/2}, t} & t \in [0, a]\\ 
+c(t) &= \braket{a\cos^3(t), a\sin^3(t)} & t\in[0, 2\pi]
 \end{align}
 $$
 thus we have that
 $$
 \begin{align}
-A &= \int_{-a}^0 \braket{0, t} \cdot c_1'(t) dt +\int_{0}^a \braket{0, t} \cdot c_2'(t) dt \\
-&= \int_{-a}^0 t dt +\int_{0}^a  t dt \\
+A &= \int_{0}^{2\pi} \braket{a\cos^3(t),a\sin^3(t)} \cdot c'(t) dt \\
+&= \int_0^{2\pi} a^2 \braket{\cos^3(t), \sin^3(t)} \cdot \braket{-3\sin(t)\cos^2(t), 3\sin^2(t)\cos(t)} dt \\
+&= a^2 \int_0^{2\pi} -3 \sin(t) \cos^5(t) + 3\sin^5(t)\cos(t) dt \\
+&= a^2 \left[\frac{3}{6} \cos^6(t)\right]_0^{2\pi} + a^2\left[\frac{3}{6} \sin^6(t)\right]_0^{2\pi} dt \\
+&= a^2 \left[\frac{3}{6} \cos^6(t)\right]_0^{2\pi} + a^2\left[\frac{3}{6} \sin^6(t)\right]_0^{2\pi} dt \\
 \end{align}
 $$
