@@ -18,3 +18,17 @@ $$
 d\vec A &= \pmatrix{\frac{\partial x}{\partial u} \\ \frac{\partial y}{\partial u} \\ \frac{\partial z}{\partial u}} \times \pmatrix{\frac{\partial x}{\partial v} \\ \frac{\partial y}{\partial v} \\ \frac{\partial z}{\partial v}}
 \end{align}
 $$
+## Boundaries of surfaces
+For a surface $S$ we write it's boundary as $\partial S$. The orientation of the boundary curve is such that when running along the curve the surface is always on your left.
+## Stoke's theorem
+Stoke's theorem is a generalization of Green's theorem and thus has basically the same form except this time it works in 3d.
+$$
+\begin{align}
+\iint_S (\nabla \times F)\cdot d\vec A &= \oint_{\partial S} F \cdot d\vec s
+\end{align}
+$$
+WOW!
+
+Note that for conservative $F$ we get that both integrals are $0$
+
+## Gauss' Divergence theorem
