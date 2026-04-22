@@ -91,10 +91,9 @@ $$
 thus we have that
 $$
 \begin{align}
-A &= \int_{0}^{2\pi} \braket{a\cos^3(t),a\sin^3(t)} \cdot c'(t) dt \\
-&= \int_0^{2\pi} a^2 \braket{\cos^3(t), \sin^3(t)} \cdot \braket{-3\sin(t)\cos^2(t), 3\sin^2(t)\cos(t)} dt \\
-&= a^2 \int_0^{2\pi} -3 \sin(t) \cos^5(t) + 3\sin^5(t)\cos(t) dt \\
-&= a^2 \left[\frac{3}{6} \cos^6(t)\right]_0^{2\pi} + a^2\left[\frac{3}{6} \sin^6(t)\right]_0^{2\pi} dt \\
-&= a^2 \left[\frac{3}{6} \cos^6(t)\right]_0^{2\pi} + a^2\left[\frac{3}{6} \sin^6(t)\right]_0^{2\pi} dt \\
+A &= \int_{0}^{2\pi} \braket{0,a\cos^3(t)} \cdot c'(t) dt \\
+&= \int_0^{2\pi} a^2 \braket{0, \cos^3(t)} \cdot \braket{-3\sin(t)\cos^2(t), 3\sin^2(t)\cos(t)} dt \\
+&= a^2 \int_0^{2\pi} 3\sin^2(t)\cos^4(t) dt \\
+&= a^2 \int_0^{2\pi} 3(1- \cos^2(\cos^4(t) dt \\
 \end{align}
 $$
