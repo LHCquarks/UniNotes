@@ -42,7 +42,7 @@ Let $\Omega$ be a bounded region who's boundary is $C$. Also let $C$ be peicewis
 Let $F$ be a continuously differentiable vector field on $\Omega$. Then:
 $$
 \begin{align}
-\iint_\Omega (\nabla \times F) d\vec A &= \oint_C F \cdot d\vec s \\
+\iint_\Omega (\nabla \times F) \cdot d\vec A &= \oint_C F \cdot d\vec s \\
 \end{align}
 $$
 As a colliery to Green's theorem (Letting $G = \left(-F_2, F_1\right)$) we get the normal form of Green's theorem:
