@@ -48,7 +48,7 @@ $$
 As a colliery to Green's theorem (Letting $G = \left(-F_2, F_1\right)$) we get the normal form of Green's theorem:
 $$
 \begin{align}
-\iint_\Omega \nabla \cdot G dA &= \oint_C F \cdot \hat n ds
+\iint_\Omega \nabla \cdot G dA &= \oint_C G \cdot \hat n ds
 \end{align}
 $$
 Note that Green's theorem is for specifically the 2d case and thus $\nabla \times F = \frac{\partial F_2}{\partial x} - \frac{\partial F_1}{\partial y}$ 
