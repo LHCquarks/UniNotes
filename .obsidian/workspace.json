@@ -4,52 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "ab3850bcb6de1a0a",
+        "id": "52229f25b127be92",
         "type": "tabs",
         "children": [
           {
-            "id": "dfef7ef9f0139e71",
+            "id": "b3cf3c42899ba3f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/Integral Calculus/Normal Integrals/Substitutions.md",
+                "file": "Phys/PHYS2111/Commutators and simultaneous measurements.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Substitutions"
+              "title": "Commutators and simultaneous measurements"
             }
           },
           {
-            "id": "898d9d60e98867e3",
+            "id": "58401d0cf4f7d64a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/Integral Calculus/Vector Integrals/Flux Integral.md",
+                "file": "Phys/PHYS2111/The simple harmonic oscillator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flux Integral"
+              "title": "The simple harmonic oscillator"
             }
           },
           {
-            "id": "66a5b61ff8dca8dd",
+            "id": "aaa3abac51608179",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/Integral Calculus/Vector Integrals/Vector Path Integrals.md",
+                "file": "Phys/PHYS2111/Commutators and simultaneous measurements.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vector Path Integrals"
+              "title": "Commutators and simultaneous measurements"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,15 +197,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dfef7ef9f0139e71",
+  "active": "58401d0cf4f7d64a",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Commutators and simultaneous measurements.md",
+    "Phys/PHYS2111/The simple harmonic oscillator.md",
+    "Maths/MATH2111/Integral Calculus/Vector Integrals/Vector Path Integrals.md",
+    "Maths/MATH2111/Integral Calculus/Vector Integrals/Flux Integral.md",
+    "Maths/MATH2111/Integral Calculus/Normal Integrals/Substitutions.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Basics of the multivariable integral.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Leibniz Rule.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Normal Integrals.md",
-    "Maths/MATH2111/Integral Calculus/Normal Integrals/Substitutions.md",
     "Maths/MATH2111/Integral Calculus/Path integrals and Surface integrals.md",
-    "Maths/MATH2111/Integral Calculus/Vector Integrals/Flux Integral.md",
-    "Maths/MATH2111/Integral Calculus/Vector Integrals/Vector Path Integrals.md",
     "Phys/PHYS2111/Postulates of Quantum mechanics.md",
     "Maths/MATH2111/Integral Calculus/Vector fields.md",
     "Maths/MATH2111/Integral Calculus/Vector Integrals",
@@ -234,8 +237,6 @@
     "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS2111/PHYS2111.md",
     "Maths/MATH2621/Transforms/Fourier Transform.md",
-    "Maths/MATH2621/Transforms/Laplace Transform.md",
-    "Phys/PHYS1241/Waves/Phasors.md",
     "Maths/MATH2111/Integral Calculus",
     "Comp/COMP2511/Tutorials",
     "Comp/COMP2511/Testing Patterns",
