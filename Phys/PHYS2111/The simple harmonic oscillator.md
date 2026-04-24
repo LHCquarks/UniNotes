@@ -57,7 +57,7 @@ $$
 And so
 $$
 \begin{align}
-\hat H &= \hbar \omega \left(a_- a_+ + \frac{1}{2}\right)
+\hat H &= \hbar \omega \left(a_- a_+ - \frac{1}{2}\right)
 \end{align}
 $$
 Similarly:
@@ -115,3 +115,38 @@ $$
 \end{align}
 $$
 ### Solving for the ground state
+If $\ket \psi$ is an eigenvector of $a_+a_-$ then we get:
+$$
+\begin{align}
+\hat H \ket \psi &= \hbar \omega \left(a_-a_+ - \frac{1}{2} \right) \ket \psi \\
+&= \hbar \omega \left(\lambda - \frac{1}{2}\right)\ket \psi
+\end{align}
+$$
+Thus $\ket \psi$ is an eigenvector of $\hat H$.
+Solving the equation
+$$
+\begin{align}
+a_- \ket{\psi_0} &= \ket 0 \\
+\frac{1}{\sqrt{2\hbar m\omega}}(i\hat p + m\omega \hat x) \psi_0 &= 0 \\
+0 &= i\hat p \psi_0 + m\omega \hat x\psi_0 \\
+\hbar \frac{d \psi_0}{d x}&= -m\omega x\psi_0 \\
+\hbar \frac{d \psi_0}{\psi_0}&= -m\omega x dx\\
+\hbar \ln(\psi_0) &= -\frac{m\omega}{2}x^2 + C \\
+\psi_0 &= \exp\left(-\frac{m\omega}{2\hbar}x^2 + C\right) \\
+\psi_0 &= A\exp\left(-\frac{m\omega}{2\hbar}x^2 \right) \\
+\end{align}
+$$
+This is the gausian! Very cool.
+Then to recover our other bounded functions we just need to apply $a_+$ so our solutions are:
+$$
+\begin{align}
+\ket {\psi_n} &= (a_+)^n A_n \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
+\end{align}
+$$
+
+To find the energy of our states first we find the energy of $\ket {\psi_0}$:
+$$
+\begin{align}
+\hat H \ket {\psi_0} &= \hbar \omega\left(a_+a_- \ket {\psi_0} + \frac{1}{2}\right)
+\end{align}
+$$
