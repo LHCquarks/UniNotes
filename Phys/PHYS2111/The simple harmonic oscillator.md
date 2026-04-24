@@ -150,3 +150,31 @@ $$
 \hat H \ket {\psi_0} &= \hbar \omega\left(a_+a_- \ket {\psi_0} + \frac{1}{2}\right)
 \end{align}
 $$
+
+
+
+## Phys problem
+We are given the wave function
+$$
+\begin{align}
+\ket \psi &= \frac{1}{\sqrt{12}} \left[\matrix{\ \ 1 \\ -1 \\ \ \ i} \right] \otimes \left[\matrix{1 \\ i}\right] + \frac{1}{\sqrt{8}} \left[\matrix{\ \ 0 \\ -i \\ \ \ 1}\right]\otimes\left[\matrix{\ \ 1 \\ -i}\right]
+\end{align}
+$$
+and the operators
+$$
+\begin{align}
+\hat L &= \pmatrix{0 & -i & \ \ 0 \\ i & \ \ 0 & -i \\ 0 & \ \ i & \ \ 0}
+\end{align}
+$$
+which acts on the first part of the wave function and
+$$
+\begin{align}
+\hat S &= \pmatrix{0 & -i \\ i & \ \ 0}
+\end{align}
+$$
+which acts on the second part of the wave function.
+
+Find:
+- $\braket{L}$
+- $\braket{S}$
+- $\braket{\hat L \otimes \hat S}$
