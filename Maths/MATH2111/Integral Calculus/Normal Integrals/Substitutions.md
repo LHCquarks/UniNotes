@@ -9,7 +9,7 @@ $$
 dxdy = |\det(J)|dudv
 \end{align}
 $$
-Thus our change of variable formula int the multivariable case is:
+Thus our change of variable formula in the multivariable case is:
 $$
 \begin{align}
 \iint_{F(A)} f(x, y) dxdy &= \iint_{A} f(F(u, v)) |\det(J)| dudv
