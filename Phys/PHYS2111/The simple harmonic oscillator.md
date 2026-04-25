@@ -136,70 +136,26 @@ a_- \ket{\psi_0} &= \ket 0 \\
 \psi_0 &= A\exp\left(-\frac{m\omega}{2\hbar}x^2 \right) \\
 \end{align}
 $$
-This is the gausian! Very cool.
+This is the Gaussian! Very cool.
 Then to recover our other bounded functions we just need to apply $a_+$ so our solutions are:
 $$
 \begin{align}
 \ket {\psi_n} &= (a_+)^n A_n \exp\left(-\frac{m\omega}{2\hbar}x^2\right)
 \end{align}
 $$
+where $A_n$ is found with the normalization condition and is actually $A_n = 1/\sqrt{n!}$.
 
 To find the energy of our states first we find the energy of $\ket {\psi_0}$:
 $$
 \begin{align}
-\hat H \ket {\psi_0} &= \hbar \omega\left(a_+a_- \ket {\psi_0} + \frac{1}{2}\right)
+\hat H \ket {\psi_0} &= \hbar \omega\left(a_+a_- \ket {\psi_0} + \frac{1}{2}\right) \\
+&= \hbar \omega\left(0 + \frac{1}{2}\right) \\
+&= \frac{\hbar \omega}{2}
 \end{align}
 $$
-
-
-
-## Phys problem
-We are given the wave function
+Then the energy of $\ket {\psi_n}$ is:
 $$
 \begin{align}
-\ket \psi &= \frac{1}{\sqrt{12}} \left[\matrix{\ \ 1 \\ -1 \\ \ \ i} \right] \otimes \left[\matrix{1 \\ i}\right] + \frac{1}{\sqrt{8}} \left[\matrix{\ \ 0 \\ -i \\ \ \ 1}\right]\otimes\left[\matrix{\ \ 1 \\ -i}\right]
+E_n &= \hbar \omega\left(n + \frac{1}{2}\right)
 \end{align}
 $$
-and the operators
-$$
-\begin{align}
-\hat L &= \pmatrix{0 & -i & \ \ 0 \\ i & \ \ 0 & -i \\ 0 & \ \ i & \ \ 0}
-\end{align}
-$$
-which acts on the first part of the wave function and
-$$
-\begin{align}
-\hat S &= \pmatrix{0 & -i \\ i & \ \ 0}
-\end{align}
-$$
-which acts on the second part of the wave function.
-
-Find:
-- $\braket{L}$
-- $\braket{S}$
-- $\braket{\hat L \otimes \hat S}$
-### My solution (wrong)
-$$
-\begin{align}
-\braket{L} &= \braket{\psi | \hat L\otimes \hat I | \psi} \\
-&= \bra{\psi} \hat L \otimes \hat I \left(\frac{1}{\sqrt{12}} \left[\matrix{\ \ 1 \\ -1 \\ \ \ i} \right] \otimes \left[\matrix{1 \\ i}\right] + \frac{1}{\sqrt{8}} \left[\matrix{\ \ 0 \\ -i \\ \ \ 1}\right]\otimes\left[\matrix{\ \ 1 \\ -i}\right]\right) \\
-&= \bra \psi \frac{1}{\sqrt{12}} \hat L\otimes \hat I \left[\matrix{\ \ 1 \\ -1 \\ \ \ i} \right] \otimes \left[\matrix{1 \\ i}\right]
-+ \frac{1}{\sqrt{8}} \hat L \otimes \hat I\left[\matrix{\ \ 0 \\ -i \\ \ \ 1}\right]\otimes\left[\matrix{\ \ 1 \\ -i}\right]\\
-&= \bra \psi \frac{1}{\sqrt{12}} \hat L \left[\matrix{\ \ 1 \\ -1 \\ \ \ i} \right] \otimes \hat I\left[\matrix{1 \\ i}\right]
-+ \frac{1}{\sqrt{8}} \hat L \left[\matrix{\ \ 0 \\ -i \\ \ \ 1}\right]\otimes\hat I\left[\matrix{\ \ 1 \\ -i}\right] \\
-&= \bra \psi \frac{1}{\sqrt{12}} \left[\matrix{\ \ \ \ i \\ 1 + i \\ \ -i} \right] \otimes \left[\matrix{1 \\ i}\right]
-+ \frac{1}{\sqrt{8}} \left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{\ \ 1 \\ -i}\right] \\
-&= \left(\frac{1}{\sqrt{12}} \left[\matrix{1 & -1 & -i}\right]\otimes \left[\matrix{1 & -i}\right] + \frac{1}{\sqrt 8} \left[\matrix{0 & i & 1}\right]\otimes \left[\matrix{1 & i}\right]\right) \\ 
-&\ \ \ \ \left(\frac{1}{\sqrt{12}}\left[\matrix{\ \ \ i \\ 1 + i \\ \ -i}\right] \otimes \left[\matrix{1 \\ i}\right] + \frac{1}{\sqrt 8} \left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{\ \ 1 \\ -i}\right]\right) \\
-&= \frac{1}{12}\left[\matrix{1&-1&-i}\right]\left[\matrix{\ \ \ \ i \\ 1 + i \\ \ -i}\right]\otimes \left[\matrix{1 & -i}\right]\left[\matrix{1 \\ i}\right] +
-\frac{1}{4\sqrt 6}\left[\matrix{1&-1&-i}\right]\left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{1 & -i}\right]\left[\matrix{\ 1 \\ -i}\right] \\
-&\ \ \ \ + \frac{1}{4\sqrt 6}\left[\matrix{0&i&1}\right]\left[\matrix{\ \ \ i \\ 1 + i \\ \ -i}\right]\otimes \left[\matrix{1 & i}\right]\left[\matrix{1 \\ i}\right] 
-+ \frac{1}{8}\left[\matrix{0&i&1}\right]\left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{1 & i}\right]\left[\matrix{\ \ 1 \\ -i}\right] \\
-&= \frac{1}{12}(i-1-i-1) (1+1) + \frac{1}{4\sqrt 6} (-1+i-i)(1-1) + \frac{1}{4\sqrt 6}(0 + i-1-i)(1-1) \\
-&\ \ \ \ \ + \frac{1}{8}(0 + 1 + 1)(1 + 1) \\
-&= \frac{1}{12}(-2)(2)+\frac{1}{8}(2)(2) \\
-&= -\frac{1}{3} + \frac{1}{2} \\
-&= \frac{1}{6}
-\end{align}
-$$
-<% tp.file.cursor(2) %>
