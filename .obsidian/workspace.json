@@ -48,6 +48,16 @@
               "icon": "lucide-file",
               "title": "Commutators and simultaneous measurements"
             }
+          },
+          {
+            "id": "f3cd610f7f9ead16",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
         ],
         "currentTab": 1
