@@ -197,7 +197,9 @@ $$
 + \frac{1}{8}\left[\matrix{0&i&1}\right]\left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{1 & i}\right]\left[\matrix{\ \ 1 \\ -i}\right] \\
 &= \frac{1}{12}(i-1-i-1) (1+1) + \frac{1}{4\sqrt 6} (-1+i-i)(1-1) + \frac{1}{4\sqrt 6}(0 + i-1-i)(1-1) \\
 &\ \ \ \ \ + \frac{1}{8}(0 + 1 + 1)(1 + 1) \\
-&= \frac{1}{12}
+&= \frac{1}{12}(-2)(2)+\frac{1}{8}(2)(2) \\
+&= -\frac{1}{3} + \frac{1}{2} \\
+&= \frac{1}{6}
 \end{align}
 $$
 <% tp.file.cursor(2) %>
