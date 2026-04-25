@@ -178,3 +178,22 @@ Find:
 - $\braket{L}$
 - $\braket{S}$
 - $\braket{\hat L \otimes \hat S}$
+### My solution (wrong)
+$$
+\begin{align}
+\braket{L} &= \braket{\psi | \hat L\otimes \hat I | \psi} \\
+&= \bra{\psi} \hat L \otimes \hat I \left(\frac{1}{\sqrt{12}} \left[\matrix{\ \ 1 \\ -1 \\ \ \ i} \right] \otimes \left[\matrix{1 \\ i}\right] + \frac{1}{\sqrt{8}} \left[\matrix{\ \ 0 \\ -i \\ \ \ 1}\right]\otimes\left[\matrix{\ \ 1 \\ -i}\right]\right) \\
+&= \bra \psi \frac{1}{\sqrt{12}} \hat L\otimes \hat I \left[\matrix{\ \ 1 \\ -1 \\ \ \ i} \right] \otimes \left[\matrix{1 \\ i}\right]
++ \frac{1}{\sqrt{8}} \hat L \otimes \hat I\left[\matrix{\ \ 0 \\ -i \\ \ \ 1}\right]\otimes\left[\matrix{\ \ 1 \\ -i}\right]\\
+&= \bra \psi \frac{1}{\sqrt{12}} \hat L \left[\matrix{\ \ 1 \\ -1 \\ \ \ i} \right] \otimes \hat I\left[\matrix{1 \\ i}\right]
++ \frac{1}{\sqrt{8}} \hat L \left[\matrix{\ \ 0 \\ -i \\ \ \ 1}\right]\otimes\hat I\left[\matrix{\ \ 1 \\ -i}\right] \\
+&= \bra \psi \frac{1}{\sqrt{12}} \left[\matrix{\ \ \ \ i \\ 1 + i \\ \ -i} \right] \otimes \left[\matrix{1 \\ i}\right]
++ \frac{1}{\sqrt{8}} \left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{\ \ 1 \\ -i}\right] \\
+&= \left(\frac{1}{\sqrt{12}} \left[\matrix{1 & -1 & -i}\right]\otimes \left[\matrix{1 & -i}\right] + \frac{1}{\sqrt 8} \left[\matrix{0 & i & 1}\right]\otimes \left[\matrix{1 & i}\right]\right) \\ 
+&\ \ \ \ \left(\frac{1}{\sqrt{12}}\left[\matrix{\ \ \ i \\ 1 + i \\ \ -i}\right] \otimes \left[\matrix{1 \\ i}\right] + \frac{1}{\sqrt 8} \left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{\ \ 1 \\ -i}\right]\right) \\
+&= \frac{1}{12}\left[\matrix{1&-1&-i}\right]\left[\matrix{\ \ \ \ i \\ 1 + i \\ \ -i}\right]\otimes \left[\matrix{1 & -i}\right]\left[\matrix{1 \\ i}\right] +
+\frac{1}{4\sqrt 6}\left[\matrix{1&-1&-i}\right]\left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{1 & -i}\right]\left[\matrix{\ 1 \\ -i}\right] \\
+&\ \ \ \ + \frac{1}{4\sqrt 6}\left[\matrix{0&i&1}\right]\left[\matrix{\ \ \ i \\ 1 + i \\ \ -i}\right]\otimes \left[\matrix{1 & -i}\right]\left[\matrix{\ 1 \\ -i}\right] \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
