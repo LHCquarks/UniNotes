@@ -193,7 +193,11 @@ $$
 &\ \ \ \ \left(\frac{1}{\sqrt{12}}\left[\matrix{\ \ \ i \\ 1 + i \\ \ -i}\right] \otimes \left[\matrix{1 \\ i}\right] + \frac{1}{\sqrt 8} \left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{\ \ 1 \\ -i}\right]\right) \\
 &= \frac{1}{12}\left[\matrix{1&-1&-i}\right]\left[\matrix{\ \ \ \ i \\ 1 + i \\ \ -i}\right]\otimes \left[\matrix{1 & -i}\right]\left[\matrix{1 \\ i}\right] +
 \frac{1}{4\sqrt 6}\left[\matrix{1&-1&-i}\right]\left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{1 & -i}\right]\left[\matrix{\ 1 \\ -i}\right] \\
-&\ \ \ \ + \frac{1}{4\sqrt 6}\left[\matrix{0&i&1}\right]\left[\matrix{\ \ \ i \\ 1 + i \\ \ -i}\right]\otimes \left[\matrix{1 & -i}\right]\left[\matrix{\ 1 \\ -i}\right] \\
+&\ \ \ \ + \frac{1}{4\sqrt 6}\left[\matrix{0&i&1}\right]\left[\matrix{\ \ \ i \\ 1 + i \\ \ -i}\right]\otimes \left[\matrix{1 & i}\right]\left[\matrix{1 \\ i}\right] 
++ \frac{1}{8}\left[\matrix{0&i&1}\right]\left[\matrix{-1 \\ -i \\ \ \ 1}\right]\otimes \left[\matrix{1 & i}\right]\left[\matrix{\ \ 1 \\ -i}\right] \\
+&= \frac{1}{12}(i-1-i-1) (1+1) + \frac{1}{4\sqrt 6} (-1+i-i)(1-1) + \frac{1}{4\sqrt 6}(0 + i-1-i)(1-1) \\
+&\ \ \ \ \ + \frac{1}{8}(0 + 1 + 1)(1 + 1) \\
+&= \frac{1}{12}
 \end{align}
 $$
 <% tp.file.cursor(2) %>
