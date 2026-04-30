@@ -3,7 +3,7 @@ Often in software design, the initial design is clean, elegant and well-structur
 - **Rigidity**: Small changes make widespread impact due to interdependencies
 - **Fragility**: One change breaks unrelated parts
 - **Immobility**: Useful components are not transferable
--  **Viscosity**: The environment/process encourages 'hacks' rather than clean design
+- **Viscosity**: The environment/process encourages 'hacks' rather than clean design
 
 Most software rot are caused by bad dependency management/structures, rather than evolving requirements.
 
