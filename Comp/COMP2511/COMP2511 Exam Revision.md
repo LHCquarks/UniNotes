@@ -261,8 +261,12 @@ public final class MathsHelper {
     /**
      * Determine the distance between a satellite and another satellite.
      */
-    public static double getDistance(double satelliteHeight, Angle satelliteAngle, double otherHeight,
-            Angle otherAngle) {
+    public static double getDistance(
+	    double satelliteHeight, 
+	    Angle satelliteAngle, 
+	    double otherHeight,
+        Angle otherAngle
+    ) {
         // convert to euclidean
         double satX = Math.cos(satelliteAngle.toRadians()) * satelliteHeight;
         double satY = Math.sin(satelliteAngle.toRadians()) * satelliteHeight;
