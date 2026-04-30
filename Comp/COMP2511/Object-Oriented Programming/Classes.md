@@ -80,7 +80,7 @@ public boolean equals(Object obj) {
 	// Now check all attributes
 	return true;
 }
-  ```
+```
 
 ## Strings
 - A string is a proper type in java, unlike c. 
