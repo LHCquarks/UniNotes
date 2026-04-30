@@ -313,50 +313,6 @@ public final class MathsHelper {
         return !((0 <= tPos && tPos <= 1) || (0 <= tNeg && tNeg <= 1));
     }
 }
-class Foo {
-    public ArrayList<String> bar() {
-        return new ArrayList<String>();
-    }
-}
-class Foo2 extends Foo {
-    @Override
-    public List<String> bar() {
-        return new ArrayList<String>();
-    }
-}
-for (Entity entity2 : entList) {
-    if (entity.canLoad(entity2)) {
-        if (entity2 instanceof PassengerTrain) {
-            for (Entity entity3 : entList) {
-                if (entity instanceof CargoTrain && !(entity3 instanceof Passenger)) {
-                    if (entity2.canLoad(entity3)) {
-                        canLoad.add(entity3.getId());
-                    }
-                } else if (!(entity instanceof CargoTrain) && entity2.canLoad(entity3)) {
-                    canLoad.add(entity3.getId());
-                }
-            }
-        }
-        canLoad.add(entity2.getId());
-    }
-}
-class StandardUNSWLatePenalty {
-    /**
-     * @postconditions: The late penalty will be at most
-     * the number of days late * 5
-     */
-    public int calculateLatePenalty(LocalDateTime dueDate, LocalDateTime submittedDate) {
-        // ...
-    }
-}
-class COMP2511AssignmentIILatePenalty extends StandardUNSWLatePenalty {
-    /**
-     * @postconditions: The late penalty is the number of days late * 2
-     */
-    public int calculateLatePenalty(LocalDateTime dueDate, LocalDateTime submittedDate) {
-        // ...
-    }
-}
 ```
 
 Which class do you think has better **cohesion**? Justify your answer
