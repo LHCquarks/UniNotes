@@ -117,7 +117,7 @@ Now, consider the following statements about the code:
 - (2) The code doesn’t compile because double inheritance is not possible in Java; ✓
 - (3) The code doesn’t compile because the methods a and b are not marked with @Override
 - (4) The code doesn't compile because you cannot overload a method that is overriding a method in a superclass;
-- (5) The code doesn’t compile because a cannot have its visibility reduced from the superclass to the subclass. 
+- (5) The code doesn’t compile because a cannot have its visibility reduced from the superclass to the subclass. ✓
 - (6) The code does compile.
 
 Which of the following sets of statements about the code are true?
@@ -125,7 +125,7 @@ Which of the following sets of statements about the code are true?
 - A) (1), (2)
 - B) (1), (3), (5)
 - C) (2), (3), (4), (5)
-- **D) (2), (5)**
+- **D) (2), (5)** ✓
 - E) (2), (4), (5)
 - F) (6)
 
@@ -135,7 +135,7 @@ Nick is currently working on a UNSW CSE system. Which of the following statement
 
 - A) The system should be built in Java so that Design Patterns can be used.
 - B) Documentation is unimportant as the code should be written so well it is understandable.
-- **C) The design should allow new engineers to easily join the project after Nick has left.**
+- **C) The design should allow new engineers to easily join the project after Nick has left.** ✓
 - D) Testing the system works is a lower priority than getting it working.
 ## Question 11 (2 marks)
 
