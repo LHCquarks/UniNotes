@@ -20,22 +20,19 @@
 - If there are two constructors for an object, it is good practise to call `this()` to reduce repeated code, and to use `this.setX()`  (use getters and setters in constructors)
 ```java
 public class Circle {
-	protected static final double pi 3.14159;
-	protected int x, y;
-	protected int r;
+	private static final double pi 3.14159;
+	private int x, y;
+	private int r;
 	// Constructor 1
-	public Circle() {
-		this.x = 1;
-		this.y = 1;
-		this.r = 1;
-	}
-	// Constructor 2
 	public Circle(int x, int y, int r) {
 		this.x = x;
 		this.y = y;
 		this.r = r;
 	}
-	// 
+	// Constructor 2
+	public Circle() {
+		this(1, 1, 1);
+	}
 	public double circumference() {
 		return 2 * pi * r;
 	}
@@ -55,7 +52,7 @@ public class Circle {
 	}
 	
 	public void setRadius(int radius) {
-		this.radius = radius.
+		this.radius = radius;
 	}
 }
 ```
