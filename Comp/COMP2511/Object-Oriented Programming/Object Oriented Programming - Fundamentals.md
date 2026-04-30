@@ -17,7 +17,7 @@ A program is like a state machine.
 Inheritance relationships form tree-like hierarchical structures. A **subclass** of a class inherits all of its data and methods, and can contain more. 
 - Note: subclass is a little misleading - a subclass will have **more** behavior/data. A subclass will have everything in the parent class and more, which is dissimilar to a subset in mathematics.
 - In some O-O languages, it is possible for a subclass to inherit data/methods from multiple superclasses. Multiple-Inheritance is not possible in java (this will be touched on again later).
-- **"Is-a" Inheritance relationship** - a `subclass` is a `superclass`. However, do not use inheritance unless all or most attributes/methods make sense. For example, a circle is a(n) oval, but it doesn't make sense for a circle to be a subclass of an oval (oval has width and height, while a circle only has radius)
+- **"Is-a" Inheritance relationship** - a `subclass` is a `superclass`. However, do not use inheritance unless all or most attributes/methods make sense. For example, a circle is an oval, but it doesn't make sense for a circle to be a subclass of an oval (oval has width and height, while a circle only has radius)
 ## Association in OOP
 You might have a class containing an object of another class within it to store its state/attributes. This way, classes can be created using composition of other classes. This is different to Inheritance, which *extends* classes.
 - **"Has-a" Association relationship** - the `parentClass` *has a* `childClass`.
