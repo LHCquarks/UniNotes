@@ -22,41 +22,17 @@
             }
           },
           {
-            "id": "58401d0cf4f7d64a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/The simple harmonic oscillator.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "The simple harmonic oscillator"
-            }
-          },
-          {
-            "id": "aaa3abac51608179",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/Commutators and simultaneous measurements.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Commutators and simultaneous measurements"
-            }
-          },
-          {
             "id": "f3cd610f7f9ead16",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Comp/COMP2511/COMP2511 Exam Revision.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "COMP2511 Exam Revision"
             }
           }
         ],
@@ -207,8 +183,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "58401d0cf4f7d64a",
+  "active": "f3cd610f7f9ead16",
   "lastOpenFiles": [
+    "Comp/COMP2511/Architecture/Software Architecture.md",
     "Phys/PHYS2111/Commutators and simultaneous measurements.md",
     "Phys/PHYS2111/The simple harmonic oscillator.md",
     "Maths/MATH2111/Integral Calculus/Vector Integrals/Vector Path Integrals.md",
@@ -228,7 +205,6 @@
     "Maths/MATH2111/Integral Calculus/res",
     "Phys/PHYS2111/Maths of quantum mechanics.md",
     "Comp/COMP2511/Architecture/Architectural Styles/Microservice Architecture.md",
-    "Comp/COMP2511/Architecture/Software Architecture.md",
     "Comp/COMP2511/Architecture/Logical Components and Modelling using C4.md",
     "Comp/COMP2511/Architecture/Behavioural Modelling.md",
     "Comp/COMP2511/Architecture/Architecture.md",

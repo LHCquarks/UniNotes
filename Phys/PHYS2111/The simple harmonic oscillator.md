@@ -3,7 +3,7 @@ This page details the solution to the Schrodinger equation when $V(x) = \frac{1}
 In classical mechanics the **simple harmonic oscillator** comes up everywhere. Some example are:
 - A spring: $F = -kx \rightarrow V(x) = \frac{1}{2} k x^2$ 
 - Very good approximation to the pendulum: $F = -mg\sin\theta \approx -mg\theta \rightarrow V(\theta) = \frac{1}{2}mg \theta^2$ 
-Further, if we are in a minimum of $V(x)$ then expanding $V(x)$ as a taylor series we get:
+Further, if we are in a minimum of $V(x)$ then expanding $V(x)$ as a Taylor series we get:
 $$
 \begin{align}
 V(x) &= V(x_0) + V'(x_0) (x - x_0) + \frac{1}{2} V''(x_0)(x - x_0)^2 + \dots\\
