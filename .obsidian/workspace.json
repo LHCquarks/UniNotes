@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Comp/COMP2511/Design Principles/Design by Contract.md",
+                "file": "Maths/MATH2111/Differential Calculus/Stationary points and extrema.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design by Contract"
+              "title": "Stationary points and extrema"
             }
           }
         ],
@@ -199,6 +199,8 @@
   },
   "active": "349e38c30051225b",
   "lastOpenFiles": [
+    "Maths/MATH2111/Integral Calculus/Vector fields.md",
+    "Comp/COMP2511/Design Principles/Design by Contract.md",
     "Comp/COMP2511/Design Principles/Design Principles.md",
     "Comp/COMP2511/Design Principles/Domain Modelling & UML Diagrams.md",
     "Comp/COMP2511/Design Principles/Refactoring.md",
@@ -223,8 +225,6 @@
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Basics of the multivariable integral.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Leibniz Rule.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Normal Integrals.md",
-    "Maths/MATH2111/Integral Calculus/Path integrals and Surface integrals.md",
-    "Phys/PHYS2111/Postulates of Quantum mechanics.md",
     "Maths/MATH2111/Integral Calculus/Vector Integrals",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260422085916.png",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260409080504.png",
