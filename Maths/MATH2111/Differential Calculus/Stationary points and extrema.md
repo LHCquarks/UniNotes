@@ -79,10 +79,12 @@ $$
 \end{align}
 $$
 where:
-- $f$ is our function
+- $f$ is our extremizing function
 - $\vec a$ is an extreme point of $f$
 - $\lambda$ is some arbitrary constant
 - $\nabla g$ is a normal vector to our constraint surface
+
+This formula works because stationary points of our surface coincide with the level curves of $f$. Noting that $\nabla f$ is normal to the level curve we know that at a stationary point $\nabla g$ will be in the same direction as $\nabla f$. 
 ### Example
 Say we want to find the min and max values of $f(x, y) = 2x + 2y$ on the constraint of $x^2 + y^2 = 4$. Start by observing that $x^2 + y^2 = 4$ is a compact subset of $\mathbb R^2$ so there is guaranteed to be a global max and min.
 
@@ -118,7 +120,7 @@ $$
 x, y = \pm \sqrt 2
 \end{align}
 $$
-### Multiple constraints (Not assailable)
+### Multiple constraints (Not assessable)
 If we have multiple constraint surfaces $g_i$ then our equation we have to solve turns into
 $$
 \begin{align}
