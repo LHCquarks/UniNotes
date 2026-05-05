@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Square well potential.md",
+                "file": "Phys/PHYS2111/Solving Schrodinger's equation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Square well potential"
+              "title": "Solving Schrodinger's equation"
             }
           },
           {
@@ -198,9 +198,9 @@
   },
   "active": "ed911e113b0ad099",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Square well potential.md",
     "Phys/PHYS2111/Solving Schrodinger's equation.md",
     "Phys/PHYS2111/Common operators.md",
-    "Phys/PHYS2111/Square well potential.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2111/Limits of functions.md",
     "Maths/MATH2111/Differential Calculus/Taylor Polynomials.md",
