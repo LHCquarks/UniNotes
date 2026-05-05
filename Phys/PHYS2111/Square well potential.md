@@ -57,13 +57,13 @@ Now we can also set our two expressions for $k$ equal to find:
 $$
 \begin{align}
 \left(\frac{n\pi}{a}\right)^2 &= k^2 = \frac{2mE_n}{\hbar^2} \\
-E_n &= \frac{\hbar^2 n^2 \pi^2}{2m}
+E_n &= \frac{\hbar^2 n^2 \pi^2}{2ma^2}
 \end{align}
 $$
 Finally, combining with the time part of the Schrodinger equation we get our stationary states to be:
 $$
 \begin{align}
-\Psi_n(x, t) &= \sqrt{\frac{2}{a}}\exp\left(-i\frac{\hbar n^2 \pi^2}{2m}t\right) \sin\left(\frac{n\pi}{a}x\right)
+\Psi_n(x, t) &= \sqrt{\frac{2}{a}}\exp\left(-i\frac{\hbar^2 n^2 \pi^2}{2ma^2}t\right) \sin\left(\frac{n\pi}{a}x\right)
 \end{align}
 $$
 ## The finite square well
