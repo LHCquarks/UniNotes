@@ -1,4 +1,4 @@
-## General method
+	## General method
 1. Find / get given $\hat H$
 2. Find / get given $\ket {\Psi(0)}$
 3. Find the eigenvalues and eigenvectors of the time independent Schrodinger equation:
