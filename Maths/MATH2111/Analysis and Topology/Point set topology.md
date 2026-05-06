@@ -24,7 +24,7 @@ A region $\Omega$ is **open** if for every $x \in \Omega$, $x \in \text{Int}(\Om
 ### Closure
 A region $\Omega$ is **closed** if $\Omega^c = \mathbb R^n \backslash \Omega$ is **open**
 ### Boundary points
-$x\in\mathbb R^n$ is a **boundary point** of $\Omega$ if for every $r > 0$, the sets $B_r(x) \cap \Omega$ and $B_r(x) \cap \Omega^c$
+$x\in\mathbb R^n$ is a **boundary point** of $\Omega$ if for every $r > 0$, the sets $B_r(x) \cap \Omega \not = \varnothing$ and $B_r(x) \cap \Omega^c \not = \varnothing$
 ### Boundary of a region
 The boundary of a region $\Omega$ is the set of all boundary points of $\Omega$ and is denoted by $\text{Bd}(\Omega)$ or $\partial \Omega$
 ### Composition of open sets
