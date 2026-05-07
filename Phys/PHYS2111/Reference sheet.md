@@ -38,7 +38,40 @@ $$
 ### Finite square well
 $$
 \begin{align}
-
+\psi(x) &= 
+\begin{cases}
+Ce^{\beta x} & x < -a \\
+A\sin(kx) + B\cos(kx) & -a \le x \le a \\
+De^{-\beta x} & a < x
+\end{cases} \\
+\beta^2 &= \frac{2m(V_0 - E)}{\hbar^2}
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+### Simple Harmonic Oscillator
+$$
+\begin{align}
+a_- &= \frac{1}{\sqrt{2\hbar m\omega}}(i\hat p + m\omega \hat x) \\
+a_+ &= \frac{1}{\sqrt{2\hbar m\omega}}(-i\hat p + m\omega \hat x) \\
+\ket {\psi_n} &= (a_+)^n A_n \exp\left(-\frac{m\omega}{2\hbar}x^2\right) \\
+A_n &= 1 / \sqrt{n!} \\
+E_n &= \hbar \omega\left(n + \frac{1}{2}\right)\\
+\end{align}
+$$
+### Delta Potential
+Bounded:
+$$
+\begin{align}
+\psi(x) &= \frac{\sqrt{m \alpha}}{\hbar}\exp\left(-\frac{m\alpha|x|}{\hbar^2}\right) \\
+E &= -\frac{m\alpha^2}{2\hbar^2}
+\end{align}
+$$
+Scattering:
+$$
+\begin{align}
+\psi(x) &= \cases{Ae^{ikx} + B e^{-ikx} & x < 0 \\ Ce^{ikx} & x > 0} \\
+r &= \frac{B}{A} = \frac{i\beta}{1 - i\beta}, t= \frac{C}{A}= \frac{1}{1 - i \beta} \\
+R &= \left|\frac{B}{A}\right|^2 = \frac{\beta^2}{1 + \beta^2} \\
+T &= \left|\frac{C}{A}\right|^2 = \frac{1}{1 + \beta^2} \\
+\beta &= \frac{m\alpha}{\hbar^2 k}, k = \frac{\sqrt{2mE}}{\hbar}
+\end{align}
+$$
