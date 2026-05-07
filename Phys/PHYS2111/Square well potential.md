@@ -1,4 +1,4 @@
-## The infinite square well
+	## The infinite square well
 ### Setup
 Take a particle trapped in a box with the potential energy given by the function:
 $$
