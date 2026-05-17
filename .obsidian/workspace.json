@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/Limits of functions.md",
+                "file": "Phys/PHYS2111/Maths of quantum mechanics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Limits of functions"
+              "title": "Maths of quantum mechanics"
             }
           }
         ],
@@ -185,6 +185,7 @@
   },
   "active": "64ce848e65bbeb1f",
   "lastOpenFiles": [
+    "Maths/MATH2111/Limits of functions.md",
     "Phys/PHYS2111/Reference sheet.md",
     "Phys/PHYS2111/Commutators and simultaneous measurements.md",
     "Phys/PHYS2111/Expectation and uncertanty.md",
@@ -209,7 +210,6 @@
     "Maths/MATH2111/Differential Calculus/Taylor Polynomials.md",
     "Maths/MATH2111/Differential Calculus/The directional derivative and nabla.md",
     "Maths/MATH2111/Differential Calculus/The multivariable derivative.md",
-    "Maths/MATH2111/Limits of functions.md",
     "Maths/MATH2111/Analysis and Topology/Point set topology.md",
     "Maths/MATH2111/Integral Calculus/Vector Integrals",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260422085916.png",
