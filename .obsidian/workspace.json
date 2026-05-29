@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2111/Curves and Surfaces/Graphing.md",
+                "file": "Phys/PHYS2111/The Delta Potential.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Graphing"
+              "title": "The Delta Potential"
+            }
+          },
+          {
+            "id": "415020e56a323452",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Phys/PHYS2111/Solving Schrodinger's equation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Solving Schrodinger's equation"
             }
           }
         ],
@@ -185,16 +199,17 @@
   },
   "active": "64ce848e65bbeb1f",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Solving Schrodinger's equation.md",
+    "Phys/PHYS2111/The Delta Potential.md",
+    "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Phys/PHYS2111/Maths of quantum mechanics.md",
     "Maths/MATH2111/Limits of functions.md",
     "Phys/PHYS2111/Reference sheet.md",
     "Phys/PHYS2111/Commutators and simultaneous measurements.md",
     "Phys/PHYS2111/Expectation and uncertanty.md",
     "Phys/PHYS2111/The simple harmonic oscillator.md",
-    "Phys/PHYS2111/Untitled.md",
     "Phys/PHYS2111/PHYS2111.md",
     "Phys/PHYS2111/Square well potential.md",
-    "Phys/PHYS2111/Solving Schrodinger's equation.md",
     "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS2111/Postulates of Quantum mechanics.md",
     "Phys/PHYS2111/Motivation of quantum mechanics.md",
@@ -210,7 +225,6 @@
     "Maths/MATH2111/Differential Calculus/Taylor Polynomials.md",
     "Maths/MATH2111/Differential Calculus/The directional derivative and nabla.md",
     "Maths/MATH2111/Differential Calculus/The multivariable derivative.md",
-    "Maths/MATH2111/Analysis and Topology/Point set topology.md",
     "Maths/MATH2111/Integral Calculus/Vector Integrals",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260422085916.png",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260409080504.png",
