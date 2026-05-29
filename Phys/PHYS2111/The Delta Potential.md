@@ -90,4 +90,4 @@ Ce^{\beta x} + De^{-\beta x} & $x < 0$ \\
 \end{align}
 $$
 Now because the solutions are continuous we will study the case of transmission vs reflection.
-For this we will say that the 
+Using the boundary condition of $x = 0$ we get that $A + B = C + D$
