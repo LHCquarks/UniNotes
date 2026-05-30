@@ -7,4 +7,4 @@ tags:
 - [[The directional derivative and nabla]]
 - [[Taylor polynomials]]
 - [[Stationary points and extrema]]
-- [[The inverse and implicit function theorems]]
+- [[The Implicit and inverse function theorems]]

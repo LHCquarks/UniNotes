@@ -117,21 +117,49 @@ $$
 C = (1 + 2i\beta)A - (1 - 2i\beta) B\\
 \end{align}
 $$
-Also remembering the initial boundry condition we get:
+Also remembering the initial boundary condition we get:
 $$
 \begin{align}
-A+ B = C + D
+A+ B &= C + D \\
+A+ B &= C \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+
 Then:
 $$
 \begin{align}
+r &= \frac{B}{A}\\
+A + B &= (1 + 2i\beta) A - (1 - 2i \beta)B \\
+B + (1 - 2i\beta)B &= (1 + 2i\beta) A - A \\
+B(2 - 2i\beta) &=  2i\beta A \\
+\frac{B}{A} &= \frac{2i}{2 - 2 i \beta}\\
+r &= \frac{i}{1 - i \beta}\\
+\\
 t &= \frac{C}{A} \\
-&= \frac{(1 + 2i\beta)A - (1 - 2i\beta) B}{A} \\
-&= (1 + 2i\beta) - (1 - 2i\beta) \frac{B}{A} \\
-&= (1 + 2i\beta) - (1 - 2i\beta) r \\
-
+&= \frac{A + B}{A} \\
+&= 1 + \frac{B}{A} \\
+&= 1 + \frac{i\beta}{1 - i \beta} \\
+&= \frac{1 - i\beta + i\beta}{1 - i \beta} \\
+&= \frac{1}{1 - i \beta} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Now for the probabilities:
+$$
+\begin{align}
+T &= |t|^2 \\
+&= \frac{1}{1 + \beta^2} \\
+R &= |r|^2 \\
+&= \frac{\beta^2}{1 + \beta^2}
+\end{align}
+$$
+Then remembering the definition for $\beta$ and $k$ we get:
+$$
+\begin{align}
+\beta &= \frac{m\alpha}{\hbar^2 k} \\
+\beta^2 &= \frac{m^2 \alpha^2}{\hbar^4 k^2} \\
+&= \frac{m^2 \alpha^2}{\hbar^4 \frac{2mE}{\hbar^2}} \\
+&= \frac{m^2 \alpha^2}{\hbar^2 2mE} \\
+&= \frac{m \alpha^2}{2\hbar^2 E} \\
+\end{align}
+$$
+

@@ -8,49 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e20de4c1fae2c5ce",
+            "id": "8ff01a80b96da9fe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/The simple harmonic oscillator.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "The simple harmonic oscillator"
-            }
-          },
-          {
-            "id": "64ce848e65bbeb1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/The Delta Potential.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "The Delta Potential"
-            }
-          },
-          {
-            "id": "415020e56a323452",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2111/Solving Schrodinger's equation.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Solving Schrodinger's equation"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,34 +164,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "64ce848e65bbeb1f",
+  "active": "8ff01a80b96da9fe",
   "lastOpenFiles": [
+    "Maths/MATH2111/MATH2111.md",
+    "Maths/MATH2111/Integral Calculus/Integral calculus.md",
+    "Maths/MATH2111/Differential Calculus/Differential calculus.md",
+    "Maths/MATH2111/Differential Calculus/The Implicit and inverse function theorems.md",
+    "Maths/MATH2111/Reference sheet.md",
+    "Phys/PHYS2111/PHYS2111.md",
     "Phys/PHYS2111/Solving Schrodinger's equation.md",
-    "Phys/PHYS2111/The Delta Potential.md",
+    "Phys/PHYS2111/Reference sheet.md",
+    "Phys/PHYS2111/Multiple Particles.md",
+    "Phys/PHYS2111/Common operators.md",
+    "Phys/PHYS2111/Entanglement.md",
+    "Phys/PHYS2111/Solutions to SE/The Delta Potential.md",
+    "Phys/PHYS2111/Solutions to SE",
     "Maths/MATH2111/Curves and Surfaces/Graphing.md",
     "Phys/PHYS2111/Maths of quantum mechanics.md",
     "Maths/MATH2111/Limits of functions.md",
-    "Phys/PHYS2111/Reference sheet.md",
     "Phys/PHYS2111/Commutators and simultaneous measurements.md",
     "Phys/PHYS2111/Expectation and uncertanty.md",
-    "Phys/PHYS2111/The simple harmonic oscillator.md",
-    "Phys/PHYS2111/PHYS2111.md",
-    "Phys/PHYS2111/Square well potential.md",
-    "Phys/PHYS2111/Common operators.md",
+    "Phys/PHYS2111/Solutions to SE/The simple harmonic oscillator.md",
+    "Phys/PHYS2111/Solutions to SE/Square well potential.md",
     "Phys/PHYS2111/Postulates of Quantum mechanics.md",
     "Phys/PHYS2111/Motivation of quantum mechanics.md",
-    "Maths/MATH2111/Reference sheet.md",
     "Maths/MATH2111/Integral Calculus/Vector Integrals/Flux Integral.md",
     "Maths/MATH2111/Integral Calculus/Vector Integrals/Vector Path Integrals.md",
     "Maths/MATH2111/Integral Calculus/Vector fields.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Substitutions.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Basics of the multivariable integral.md",
-    "Maths/MATH2111/Integral Calculus/Normal Integrals/Normal Integrals.md",
-    "Maths/MATH2111/Integral Calculus/Normal Integrals/Leibniz Rule.md",
-    "Maths/MATH2111/Differential Calculus/Stationary points and extrema.md",
-    "Maths/MATH2111/Differential Calculus/Taylor Polynomials.md",
-    "Maths/MATH2111/Differential Calculus/The directional derivative and nabla.md",
-    "Maths/MATH2111/Differential Calculus/The multivariable derivative.md",
     "Maths/MATH2111/Integral Calculus/Vector Integrals",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260422085916.png",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260409080504.png",
@@ -244,7 +212,6 @@
     "Comp/COMP2511/Object-Oriented Programming",
     "Comp/COMP2511/Diagrams/UML Diagrams Relationships.png",
     "Comp/COMP2511/Diagrams",
-    "Comp/COMP2511/Design Principles",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
     "FlowChart.canvas",
