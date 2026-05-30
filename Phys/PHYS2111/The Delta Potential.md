@@ -98,7 +98,7 @@ $$
 -\frac{\hbar^2}{2m} \left[\frac{\partial \psi_{\text{left}}}{\partial x}(\varepsilon) - \frac{\partial \psi_{\text{right}}}{\partial x}(-\varepsilon)\right] -\alpha \left[A + B\right] &= \int_{-\varepsilon}^\varepsilon E\psi dx\\
 -\frac{\hbar^2}{2m} \left[\frac{\partial \psi_{\text{left}}}{\partial x}(0) - \frac{\partial \psi_{\text{right}}}{\partial x}(0)\right] -\alpha \left[A + B\right] &= 0 \\
  ikC - ikD -ikA + ikB &= -\frac{2m\alpha}{\hbar^2}[A + B] \\
- ik(ikC - ikD -ikA + ikB &= -\frac{2m\alpha}{\hbar^2}[A + B] \\
+ ik(C - D - A + B) &= -\frac{2m\alpha}{\hbar^2}[A + B] \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
