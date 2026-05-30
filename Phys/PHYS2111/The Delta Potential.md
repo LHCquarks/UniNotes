@@ -50,8 +50,7 @@ We then integrate both sides in the region $(-\varepsilon, \varepsilon)$ to get:
 $$
 \begin{align}
 \int_{-\varepsilon}^\varepsilon -\frac{\hbar^2}{2m} \frac{\partial^2 \psi}{\partial x^2} dx  + \int_{-\varepsilon}^\varepsilon - \alpha \delta(x) \psi dx &= \int_{-\varepsilon}^\varepsilon E\psi dx \\
--\frac{\hbar^2}{2m} \left[\frac{\partial \psi}{\partial x}\right]_{-\varepsilon}^\varepsilon
--\alpha \psi(0) &= \int_{-\varepsilon}^\varepsilon E\psi dx\\
+-\frac{\hbar^2}{2m} \left[\frac{\partial \psi}{\partial x}\right]_{-\varepsilon}^\varepsilon -\alpha \psi(0) &= \int_{-\varepsilon}^\varepsilon E\psi dx\\
 \end{align}
 $$
 Expanding with the bounded solution we found we get:
@@ -84,12 +83,22 @@ In the unbounded case we know the solutions to be:
 $$
 \begin{align}
 \psi_{E_0}(x) = \cases{
-Ae^{kx} + Be^{-kx} & $x < 0$ \\
-Ce^{\beta x} + De^{-\beta x} & $x < 0$ \\
+Ae^{ikx} + Be^{-ikx} & $x < 0$ \\
+Ce^{ikx} + De^{-ikx} & $x < 0$ \\
 }
 \end{align}
 $$
 Now because the solutions are continuous we will study the case of transmission vs reflection.
 Using the boundary condition of $x = 0$ we get that $A + B = C + D$.
 
-Similar to the bounded case we will
+Similar to the bounded case we will integrate the SE around $(-\varepsilon, \varepsilon)$ and then take the limit as $\varepsilon \rightarrow 0$:
+$$
+\begin{align}
+-\frac{\hbar^2}{2m} \left[\frac{\partial \psi}{\partial x}\right]_{-\varepsilon}^\varepsilon -\alpha \psi(0) &= \int_{-\varepsilon}^\varepsilon E\psi dx\\
+-\frac{\hbar^2}{2m} \left[\frac{\partial \psi_{\text{left}}}{\partial x}(\varepsilon) - \frac{\partial \psi_{\text{right}}}{\partial x}(-\varepsilon)\right] -\alpha \left[A + B\right] &= \int_{-\varepsilon}^\varepsilon E\psi dx\\
+-\frac{\hbar^2}{2m} \left[\frac{\partial \psi_{\text{left}}}{\partial x}(0) - \frac{\partial \psi_{\text{right}}}{\partial x}(0)\right] -\alpha \left[A + B\right] &= 0 \\
+ ikC - ikD -ikA + ikB &= -\frac{2m\alpha}{\hbar^2}[A + B] \\
+ ik(ikC - ikD -ikA + ikB &= -\frac{2m\alpha}{\hbar^2}[A + B] \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
