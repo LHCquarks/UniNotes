@@ -101,4 +101,37 @@ $$
  ik(C - D - A + B) &= -\frac{2m\alpha}{\hbar^2}[A + B] \\
 \end{align}
 $$
+Defining $\beta = \frac{m\alpha}{\hbar^2 k}$ we get:
+$$
+\begin{align}
+i(C - D - A + B) &= -2\beta(A + B) \\
+iC - iD - iA + iB &= -2\beta A -2\beta B \\
+iC - iD  &= (i-2\beta) A -(i+2\beta) B \\
+C - D  &= \frac{(i-2\beta) A -(i+2\beta) B}{i} \\
+C - D  &= (1+2i\beta) A -(1-2i\beta) B \\
+\end{align}
+$$
+Now assuming that there is no backward propagating wave so that $D = 0$ we get the relation:
+$$
+\begin{align}
+C = (1 + 2i\beta)A - (1 - 2i\beta) B\\
+\end{align}
+$$
+Also remembering the initial boundry condition we get:
+$$
+\begin{align}
+A+ B = C + D
+\end{align}
+$$
+<% tp.file.cursor(2) %>
+Then:
+$$
+\begin{align}
+t &= \frac{C}{A} \\
+&= \frac{(1 + 2i\beta)A - (1 - 2i\beta) B}{A} \\
+&= (1 + 2i\beta) - (1 - 2i\beta) \frac{B}{A} \\
+&= (1 + 2i\beta) - (1 - 2i\beta) r \\
+
+\end{align}
+$$
 <% tp.file.cursor(2) %>
