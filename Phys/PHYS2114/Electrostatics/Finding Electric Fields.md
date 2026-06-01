@@ -59,9 +59,8 @@ $$
 Finally, we sum over the entire $ds$ to get:
 $$
 \begin{align}
-E &= \int_0^{2\pi} \frac{1}{4\pi\epsilon_0} \frac{\lambda zds}{(r^2 + z^2)^{3/2}} \\
-&= \frac{2\pi}{4\pi\epsilon_0} \frac{\lambda z}{(r^2 + z^2)^{3/2}} \\
-&= \frac{1}{2\epsilon_0} \frac{\lambda z}{(r^2 + z^2)^{3/2}} \\
+\vec E &= \int_0^{2\pi} \frac{1}{4\pi\epsilon_0} \frac{\lambda zds}{(r^2 + z^2)^{3/2}} \hat k\\
+&= \frac{2\pi r}{4\pi\epsilon_0} \frac{\lambda z}{(r^2 + z^2)^{3/2}} \hat k\\
+&= \frac{1}{2\epsilon_0} \frac{\lambda z r}{(r^2 + z^2)^{3/2}} \hat k\\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
