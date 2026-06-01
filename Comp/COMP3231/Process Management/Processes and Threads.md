@@ -19,3 +19,4 @@ The dispatcher generally works through a whole bunch of queues as shown below.
 ![[Pasted image 20260602073311.png]]
 ## The Process Control Block (PCB)
 The PCB is a table (may or may not be a table in memory) that contains information about the current process. 
+![[Pasted image 20260602074116.png]]
