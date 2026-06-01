@@ -16,7 +16,6 @@ $$
 This would imply by the definition of $V(\vec x)$ the following relationship:
 $$
 \begin{align}
-
+\vec E = -\nabla V
 \end{align}
 $$
-<% tp.file.cursor(2) %>
