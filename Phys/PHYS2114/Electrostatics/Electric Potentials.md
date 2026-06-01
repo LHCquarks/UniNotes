@@ -10,7 +10,13 @@ Where $V(\vec x_0) = 0$.
 The fundamental theorem of line integrals states that
 $$
 \begin{align}
-f(\vec b)
+f(\vec b) - f(\vec a) = \int_{\vec a}^{\vec b} \nabla f \cdot d\vec s
+\end{align}
+$$
+This would imply by the definition of $V(\vec x)$ the following relationship:
+$$
+\begin{align}
+
 \end{align}
 $$
 <% tp.file.cursor(2) %>
