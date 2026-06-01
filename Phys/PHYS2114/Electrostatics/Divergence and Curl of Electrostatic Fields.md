@@ -27,5 +27,5 @@ $$
 \end{align}
 $$
 ## Curl of the Electric field
-Because $\vec E = \nabla V$ and we assume that $V$ is cont differentiable then we get that $\nabla \times \vec E = 0$.
+Because $\vec E = -\nabla V$ and we assume that $V$ is cont differentiable then we get that $\nabla \times \vec E = 0$.
 
