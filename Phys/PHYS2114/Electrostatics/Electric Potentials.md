@@ -1,6 +1,3 @@
----
-aliases:
----
 ## Definition
 The electric potential (voltage) is defined by:
 $$
