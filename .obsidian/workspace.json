@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -197,10 +197,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "64713141fa8194ad",
+  "active": "f437a005842090db",
   "lastOpenFiles": [
-    "Phys/PHYS2113/A new way of thinking.md",
     "Phys/PHYS2113/PHYS2113.md",
+    "Phys/PHYS2113/A new way of thinking.md",
     "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
     "Phys/PHYS2114/Electrostatics/Finding Electric Fields.md",
     "Phys/PHYS2114/Formulas.md",
