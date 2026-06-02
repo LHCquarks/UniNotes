@@ -9,3 +9,7 @@ The **generalized coordinates** of our systems can be our normal $x, y, z$ coord
 Within this course we will be working with the minimum number of coordinates necessary to describe the system.
 
 We will also only consider **Holonomic** systems where the number of degrees of freedom is equal to the dimension of our **configuration space**
+## Physics with generalized coordinates
+Whilst Cartesian coordinates are great and fairly useful, we want to be able to work in more general coordinate systems so we can make use of unique symmetries.
+
+To achieve this we want our laws of **physics should not be dependent on a specific coordinate system**. This is the major advantage of the new formalism of classical we will develop in this subject.
