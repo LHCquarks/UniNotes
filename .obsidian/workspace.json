@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2113/Lagrangian Mechanics/Calculus of Variations.md",
+                "file": "Comp/COMP3231/Process Management/Processes and Threads.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Calculus of Variations"
+              "title": "Processes and Threads"
             }
           },
           {
@@ -184,8 +184,8 @@
   },
   "active": "9ae269c3a45ea67b",
   "lastOpenFiles": [
-    "Phys/PHYS2113/Lagrangian Mechanics/Lagrangian Mechanics.md",
     "Phys/PHYS2113/Lagrangian Mechanics/Calculus of Variations.md",
+    "Phys/PHYS2113/Lagrangian Mechanics/Lagrangian Mechanics.md",
     "Phys/PHYS2113/A new way of thinking.md",
     "Comp/COMP3231/Process Management/Process Management.md",
     "Comp/COMP3231/Process Management/Processes and Threads.md",

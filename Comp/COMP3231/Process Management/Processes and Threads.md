@@ -5,6 +5,8 @@ A process is a term to describe each task and their memory.
 Processes **own resources** and execute logic on one or many **threads**.
 ## What is a thread
 Threads are units of code execution. Unlike a process it does not have it's own memory and must **share** it with other threads in the perant process.
+
+They have their own stack but share the data section and therefore any dynamically allocated data and global variables.
 ## The Dispatcher
 The **Dispatcher** is the component of an operating system that hands the management, interleaving and execution of processes.
 ### Seizing control
