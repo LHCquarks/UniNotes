@@ -1,0 +1,1 @@
+Given a distribution of charged particles
