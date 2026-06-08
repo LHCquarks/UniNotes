@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Solving Schrodinger's equation.md",
+                "file": "Phys/PHYS2113/Lagrangian Mechanics/Calculus of Variations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Solving Schrodinger's equation"
+              "title": "Calculus of Variations"
             }
           },
           {
@@ -184,6 +184,7 @@
   },
   "active": "9ae269c3a45ea67b",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Solving Schrodinger's equation.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Maths/MATH2621/Complex Functions/Logarithms.md",
     "Phys/PHYS2113/Lagrangian Mechanics/Calculus of Variations.md",
@@ -222,7 +223,6 @@
     "Maths/MATH2621/MATH2621.md",
     "Phys/PHYS2114/Electrostatics",
     "Phys/PHYS2113/Special Relativity/Special Relativity.md",
-    "Phys/PHYS2113/Oscillators/Oscillators.md",
     "Phys/PHYS2113/Special Relativity",
     "Phys/PHYS2113/Oscillators",
     "Phys/PHYS2113/Hamiltonian Mechanics",
