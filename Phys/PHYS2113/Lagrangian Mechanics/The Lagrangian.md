@@ -30,6 +30,10 @@ m\ddot a_i  &= F_i \\
 \end{align}
 $$
 omg that is Newton!
+## Hamilton's principle
+Hamilton's principle is:
 
-##
+"The trajectory $\vec x(t)$ of a particle moving from point $P_1 = \vec x(t_0)$ to $P_2 = \vec x(t_1)$ in configuration space is such that the action is stationary" 
+
+But the trajectory of a particle is a physical quantity so it should not depend on the coordinate system used and thus the Euler Lagrange equation work for arbitrary coordinate systems which make Lagrangian mechanics far more general than Newtonian.
 
