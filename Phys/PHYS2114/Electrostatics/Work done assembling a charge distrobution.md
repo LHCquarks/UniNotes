@@ -60,3 +60,4 @@ W &= \epsilon_0 \int_{\mathbb R^3} \vec E^2 d\tau
 \end{align}
 $$
 
+**Note:** These formulas calculate the total energy taken to from each and every charge not just to bring all the charges together so for the case of two discrete particles this will give a different answer that the of the discrete formula.
