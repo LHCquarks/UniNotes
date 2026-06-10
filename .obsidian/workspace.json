@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2113/Lagrangian Mechanics/The Planar Pendulum.md",
+                "file": "Phys/PHYS2113/Lagrangian Mechanics/The Lagrangian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Planar Pendulum"
+              "title": "The Lagrangian"
             }
           }
         ],
@@ -227,9 +227,11 @@
   },
   "active": "b5fa8f3a83654b3f",
   "lastOpenFiles": [
-    "Phys/PHYS2113/Lagrangian Mechanics/The Lagrangian.md",
-    "Phys/PHYS2113/Lagrangian Mechanics/The Planar Pendulum.md",
     "Phys/PHYS2113/Lagrangian Mechanics/Lagrangian Mechanics.md",
+    "Phys/PHYS2113/Lagrangian Mechanics/Examples.md",
+    "Phys/PHYS2113/Lagrangian Mechanics/Pasted image 20260609153910.png",
+    "Phys/PHYS2113/Lagrangian Mechanics/Pasted image 20260609153807.png",
+    "Phys/PHYS2113/Lagrangian Mechanics/The Lagrangian.md",
     "Comp/COMP3231/Process Management/Process control design.md",
     "Comp/COMP3231/Process Management/Processes and Threads.md",
     "Comp/COMP3231/Process Management/Process Management.md",
@@ -258,7 +260,6 @@
     "Comp/COMP3231/Introduction and Overview/Pasted image 20260601170312.png",
     "Comp/COMP3231/Introduction and Overview/Pasted image 20260601162850.png",
     "Comp/COMP3231/Introduction and Overview/What is an Operating System.md",
-    "Comp/COMP3231/Introduction and Overview/Basic S.md",
     "Comp/COMP3231/Introduction and Overview",
     "Comp/COMP3231",
     "Phys/PHYS2114/Electrostatics/Pasted image 20260601141248.png",
@@ -271,8 +272,6 @@
     "Phys/PHYS2113/Hamiltonian Mechanics",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260422085916.png",
     "Maths/MATH2111/Integral Calculus/res/Pasted image 20260409080504.png",
-    "Maths/MATH2111/Integral Calculus/res/Pasted image 20260415184525.png",
-    "Maths/MATH2111/Integral Calculus/res/Pasted image 20260415184136.png",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
     "FlowChart.canvas",
