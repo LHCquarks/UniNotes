@@ -71,7 +71,7 @@ Now we also get
 $$
 \begin{align}
 [a_-, a_+] &= a_- a_+ - a_+ a_- \\
-&= \frac{1}{\hbar \omega} \hat H + \frac{1}{2} - \left(\frac{1}{\hbar \omega} - \frac{1}{2}\right)\\
+&= \frac{1}{\hbar \omega} \hat H + \frac{1}{2} - \left(\frac{1}{\hbar \omega}\hat H - \frac{1}{2}\right)\\
 &= \frac{1}{2} + \frac{1}{2} \\
 &= 1
 \end{align}
