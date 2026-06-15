@@ -111,3 +111,9 @@ $$
 V = \sum_{n=0}^\infty Be^{n\pi x/a} C\sin\left(\frac{n\pi}{a}y\right)
 \end{align}
 $$
+We can then take $C_n = BC$ then sub in $x = 0$ to assert our boundary condition for $V_0$
+$$
+\begin{align}
+V_0(y) = \sum_{n = 0}^\infty C_n \sin\left(\frac{n\pi}{a} y\right)
+\end{align}
+$$
