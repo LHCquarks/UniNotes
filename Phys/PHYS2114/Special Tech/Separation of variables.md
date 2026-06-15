@@ -64,18 +64,18 @@ $$
 \end{align}
 $$
 We notice that $z$ is symmetric and hence we can get rid of it.
-Next we assume that $V = X(x)Y(y)$ so that
+Next we assume that $V = \sum\limits_{n=1}^\infty X_n(x)Y_n(y)$ so that
 $$
 \begin{align}
-Y\frac{\partial^2 X}{\partial x^2} +
-X\frac{\partial^2 Y}{\partial y^2} 
+Y\frac{d^2 X}{d x^2} +
+X\frac{d^2 Y}{d y^2} 
 &= 0 \\
-\frac{1}{X}\frac{\partial^2 X}{\partial x^2} +
-\frac{1}{Y}\frac{\partial^2 Y}{\partial y^2} 
+\frac{1}{X}\frac{d^2 X}{d x^2} +
+\frac{1}{Y}\frac{d^2 Y}{d y^2} 
 &= 0 \\
 \end{align}
 $$
-only varying $x$ gives $\frac{1}{X}\frac{\partial^2 X}{\partial x^2} = c_x$ and vice versa for $y$. Further, we get that $c_x + c_y = 0$ and substituting $c_x = k^2$ we get $c_y = k^2$.
+only varying $x$ gives $\frac{1}{X}\frac{\partial^2 X}{\partial x^2} = c_x$ and vice versa for $y$. Further, we get that $c_x + c_y = 0$ and substituting $c_x = k^2$ we get $c_y = -k^2$.
 Thus our two differential equations become
 $$
 \begin{align}
