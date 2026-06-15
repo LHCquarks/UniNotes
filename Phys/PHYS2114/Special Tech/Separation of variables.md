@@ -76,3 +76,38 @@ X\frac{\partial^2 Y}{\partial y^2}
 \end{align}
 $$
 only varying $x$ gives $\frac{1}{X}\frac{\partial^2 X}{\partial x^2} = c_x$ and vice versa for $y$. Further, we get that $c_x + c_y = 0$ and substituting $c_x = k^2$ we get $c_y = k^2$.
+Thus our two differential equations become
+$$
+\begin{align}
+\frac{d^2 X}{d x^2} &= k^2X \\
+\frac{d^2 Y}{d y^2} &= -k^2Y \\
+\end{align}
+$$
+which when solved give
+$$
+\begin{align}
+X(x) &= Ae^{kx} + Be^{-kx} \\
+Y(y) &= C\sin(ky) + D\cos(ky) \\
+\end{align}
+$$
+Time to sub in the boundary conditions. Subbing in $y = 0$ we get
+$$
+\begin{align}
+0 &= C\sin(0) + D\cos(0) \\
+0 &= D
+\end{align}
+$$
+Then $y = a$
+$$
+\begin{align}
+0 &= C\sin(ka) \\
+ka &= n\pi \\
+k &= \frac{n\pi}{a}
+\end{align}
+$$
+Then $x = \infty$ means that $A = 0$ and so our expression becomes
+$$
+\begin{align}
+V = \sum_{n=0}^\infty Be^{n\pi x/a} C\sin\left(\frac{n\pi}{a}y\right)
+\end{align}
+$$
