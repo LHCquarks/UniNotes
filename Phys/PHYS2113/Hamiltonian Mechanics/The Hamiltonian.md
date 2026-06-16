@@ -62,3 +62,4 @@ $$
 \end{equation}
 $$
 
+These equations hold in all situations even with non-conservative fields
