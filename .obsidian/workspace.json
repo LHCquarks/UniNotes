@@ -4,67 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "91400321c37ec1f3",
+        "id": "ce5291ff01837748",
         "type": "tabs",
         "children": [
           {
-            "id": "f7fed726d1afde16",
+            "id": "9ebecd666c66244f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
+                "file": "Comp/COMP3231/Process Management/Concurrency Scenarios.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electric Fields In Matter"
+              "title": "Concurrency Scenarios"
             }
           },
           {
-            "id": "ab2481f46dfc68ea",
+            "id": "57f2e30d762e0afe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2113/Lagrangian Mechanics/Lagrangian Mechanics.md",
+                "file": "Comp/COMP3231/Process Management/Synchronization mechanisms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lagrangian Mechanics"
-            }
-          },
-          {
-            "id": "22c8582eacb6ac62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2113/Hamiltonian Mechanics/Hamiltonian Mechanics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Hamiltonian Mechanics"
-            }
-          },
-          {
-            "id": "ffc732680897c062",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS2113/Hamiltonian Mechanics/The Hamiltonian.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "The Hamiltonian"
+              "title": "Synchronization mechanisms"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,20 +182,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ffc732680897c062",
+  "active": "9ebecd666c66244f",
   "lastOpenFiles": [
+    "Comp/COMP3231/Process Management/Synchronization mechanisms.md",
+    "Comp/COMP3231/Process Management/Concurrency Scenarios.md",
+    "Comp/COMP3231/Process Management/Pasted image 20260617092201.png",
+    "Comp/COMP3231/Process Management/Pasted image 20260617084540.png",
+    "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
+    "Phys/PHYS2113/Lagrangian Mechanics/Lagrangian Mechanics.md",
     "Phys/PHYS2113/Hamiltonian Mechanics/Hamiltonian Mechanics.md",
     "Phys/PHYS2113/Hamiltonian Mechanics/The Hamiltonian.md",
-    "Phys/PHYS2113/Lagrangian Mechanics/Lagrangian Mechanics.md",
-    "Comp/COMP3231/Process Management/Synchronization mechanisms.md",
     "Phys/PHYS2114/Electric Fields In Matter/Dielectrics.md",
     "Phys/PHYS2114/Electric Fields In Matter/Pasted image 20260616091756.png",
-    "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
     "Phys/PHYS2114/Electrostatics/Conductors.md",
     "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
     "Phys/PHYS2114/Electrostatics/Finding Electric Fields.md",
     "Phys/PHYS2114/Special Tech/Separation of variables.md",
-    "Comp/COMP3231/Process Management/Concurrency Scenarios.md",
     "Phys/PHYS2114/Special Tech/Pasted image 20260615142208.png",
     "Comp/COMP3231/COMP3231.md",
     "Phys/PHYS2113/Lagrangian Mechanics/Examples.md",
@@ -240,7 +213,6 @@
     "Phys/PHYS2114/PHYS2114.md",
     "Maths/MATH2111/Integral Calculus/Path integrals and Surface integrals.md",
     "Phys/PHYS2114/Electrostatics/Electrostatics.md",
-    "Phys/PHYS2114/Electrostatics/Capacitors.md",
     "Phys/PHYS2113/Lagrangian Mechanics/Pasted image 20260609153910.png",
     "Phys/PHYS2113/Lagrangian Mechanics/Pasted image 20260609153807.png",
     "Comp/COMP3231/Process Management/Pasted image 20260602074116.png",
@@ -248,10 +220,8 @@
     "Comp/COMP3231/Process Management/Pasted image 20260602073022.png",
     "Comp/COMP3231/Process Management",
     "Comp/COMP3231/Introduction and Overview/Pasted image 20260601170312.png",
-    "Comp/COMP3231/Introduction and Overview/Pasted image 20260601162850.png",
     "Comp/COMP3231/Introduction and Overview",
     "Comp/COMP3231",
-    "Phys/PHYS2114/Electrostatics/Pasted image 20260601141248.png",
     "Phys/PHYS2114/Magnetostatics",
     "Phys/PHYS2114/Electric Fields In Matter",
     "Phys/PHYS2114/Special Tech",

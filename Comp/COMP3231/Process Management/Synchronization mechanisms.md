@@ -10,7 +10,8 @@ void lock_destroy(struct lock *l);
 void lock_aquire(struct lock *l);
 void lock_release(struct lock *l);
 ```
-To then employ a lock you simply define your lock in global memory, initialize it and then wrap your critical regions acquire and release lock statements.
+### Example use
+To employ a lock you simply define your lock in global memory, initialize it and then wrap your critical regions acquire and release lock statements.
 ```C
 struct lock *l;
 l = lock_create("lock");
@@ -46,7 +47,7 @@ void V(struct semaphore *sem);
 
 `V()` will increase the counter by 1 and if it was 0 initially, it will wake up the first thread in the queue.
 
-An example use of this is
+### Example use
 ```C
 int count;
 struct semaphore *count_mutex;
@@ -102,8 +103,7 @@ void cv_signal(struct cv *cv, struct lock *lock);
 */
 void cv_broadcast(struct cv *cv, struct lock *lock);
 ```
-
-an example use of conditional variables is 
+### Example use
 ```C
 lock_acquire(c_lock);
 while (count == 0) 
