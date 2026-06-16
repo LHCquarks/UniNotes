@@ -63,3 +63,28 @@ $$
 $$
 
 These equations hold in all situations even with non-conservative fields
+
+Bundling these equations into a vector, we get the flow of our phase space.
+$\vec z = (q_i, p_i)$
+$\vec h = \left(-\frac{\partial \mathcal H}{\partial q_i}, \frac{\partial \mathcal H}{\partial p_i}\right)$ 
+then 
+$$
+\begin{align}
+\dot{\vec z} &= \vec h(\vec z, t)
+\end{align}
+$$
+## Advantages
+### Canonical transformations
+In Lagrangian mechanics, if we want to transform from one coordinate system to another we are limited to transforming just the state coordinates $q \rightarrow Q(q)$.
+
+In Hamiltonian mechanics we can utilize both the momenta and the state coordinates in our change of coordinate to get $\vec z \rightarrow \vec Z(\vec z)$. This provides us with more freedom.
+### Cyclic / ignore-able coordinates
+In Lagrangian mechanics if $q$ does not appear in $\mathcal L$ then the canonical momentum is constant. This does not mean that $\dot q$ is constant, however in Hamiltonian mechanics we do not care about $\dot q$ and instead we care about $p$ which remains constant. This means we can just ignore the momenta and reduce our degrees of freedom.
+## Recipe
+The recipe for using the Hamiltonian method is as follows:
+1. chose a suitable set of generalized coordinates $\vec q$
+2. Write down $T$ and $U$ as functions of $\vec q$ and $\dot {\vec q}$ $\rightarrow$ $\mathcal L$
+3. Find the generalized momenta $p_i = \frac{\partial \mathcal L}{\partial \dot q_i}$
+4. Solve for $\dot q_i(\vec p, \vec q)$
+5. Write down $\mathcal H$ as a function of $p$ and $q$
+6. Use Hamilton's equations to find the ODE's
