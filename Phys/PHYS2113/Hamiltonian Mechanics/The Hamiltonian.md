@@ -15,39 +15,38 @@ $$
 \end{align}
 $$
 ## Hamilton's equations
-Consider the 1d case:
 Assuming a conservative system we get that $\mathcal L$ is given by
 $$
 \begin{align}
-\mathcal L &= \mathcal L(q, \dot q) \\
+\mathcal L &= \mathcal L(q_i, \dot q_i) \\
 &= T - U \\
-&= \frac{1}{2} A(q)\dot q^2 - U(q)
+&= \frac{1}{2} A(q_j)\dot q_i^2 - U(q_i)
 \end{align}
 $$
 The generalized momentum is then given by
 $$
 \begin{align}
-p &= \frac{\partial \mathcal L}{\partial \dot q} \\
-&= A(q)\dot q
+p_i &= \frac{\partial \mathcal L}{\partial \dot q_i} \\
+&= A(q_j)\dot q_i
 \end{align}
 $$
-This implies that $\dot q$ is a function of $p$ and $q$ and thus we can write our Hamiltonian as a function of $q$ and $p$
+This implies that $\dot q_i$ is a function of $p_i$ and $q_j$ and thus we can write our Hamiltonian as a function of $q_j$ and $p_i$
 $$
 \begin{align}
-\mathcal H(p, q) = p \dot q(p, q) - \mathcal L \left(q, \dot q(p, q)\right)
+\mathcal H(p_i, q_i) = \sum_i p_i \dot q_i(p_i, q_j) - \mathcal L \left(q_i, \dot q_i(p_i, q_j)\right)
 \end{align}
 $$
 Now considering the derivatives of $\mathcal H$ we get:
 $$
 \begin{align}
-\frac{\partial \mathcal H}{\partial q} &= p \frac{\partial \dot q}{\partial q} - \left[\frac{\partial \mathcal L}{\partial q} + \frac{\partial \mathcal L}{\partial \dot q}\frac{\partial \dot q}{\partial q}\right] \\
- &= p \frac{\partial \dot q}{\partial q} -\frac{\partial \mathcal L}{\partial q} - p\frac{\partial \dot q}{\partial q} \\
- &= - \frac{\partial \mathcal L}{\partial q}\\
- &= - \frac{dp}{dt}\\
-&= -\dot p \\
-\frac{\partial \mathcal H}{\partial p} &= \dot q + p\frac{\partial \dot q}{\partial p} - \frac{\partial \mathcal L}{\partial \dot q} \frac{\partial \dot q}{\partial p} \\
- &= \dot q + p\frac{\partial \dot q}{\partial p} - p \frac{\partial \dot q}{\partial p} \\
- &= \dot q\\
+\frac{\partial \mathcal H}{\partial q_i} &= \sum_jp_j\frac{\partial \dot q_j}{\partial q_i} - \left[\frac{\partial \mathcal L}{\partial q_i} + \sum_j\frac{\partial \mathcal L}{\partial \dot q_j}\frac{\partial \dot q_j}{\partial q_i}\right] \\
+ &= \sum_jp_j \frac{\partial \dot q_j}{\partial q_i} - \frac{\partial \mathcal L}{\partial q_i} - \sum_jp_j\frac{\partial \dot q_j}{\partial q_i} \\
+ &= - \frac{\partial \mathcal L}{\partial q_i}\\
+ &= - \frac{dp_i}{dt}\\
+&= -\dot p_i \\
+\frac{\partial \mathcal H}{\partial p_i} &= \dot q_i + p_i\frac{\partial \dot q_i}{\partial p_i} - \frac{\partial \mathcal L}{\partial \dot q_i} \frac{\partial \dot q_i}{\partial p_i} \\
+ &= \dot q_i + p_i\frac{\partial \dot q_i}{\partial p_i} - p_i \frac{\partial \dot q_i}{\partial p_i} \\
+ &= \dot q_i\\
 \end{align}
 $$
 These two first order ODE's are known as **Hamilton's equations** and they describe the flow of phase space.
@@ -56,8 +55,8 @@ $$
 \begin{equation}
 \boxed{
 \begin{aligned}
-\frac{\partial \mathcal H}{\partial q} &= -\dot p \\
-\frac{\partial \mathcal H}{\partial p} &= \dot q \\
+\frac{\partial \mathcal H}{\partial q_i} &= -\dot p_i \\
+\frac{\partial \mathcal H}{\partial p_i} &= \dot q_i \\
 \end{aligned}
 }
 \end{equation}
