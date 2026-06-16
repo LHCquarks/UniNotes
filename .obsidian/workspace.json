@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2114/Electric Fields In Matter/Dielectrics.md",
+                "file": "Comp/COMP3231/Process Management/Synchronization mechanisms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dielectrics"
+              "title": "Synchronization mechanisms"
             }
           }
         ],
@@ -185,8 +185,8 @@
   },
   "active": "ab2481f46dfc68ea",
   "lastOpenFiles": [
-    "Phys/PHYS2114/Electric Fields In Matter/Pasted image 20260616091756.png",
     "Phys/PHYS2114/Electric Fields In Matter/Dielectrics.md",
+    "Phys/PHYS2114/Electric Fields In Matter/Pasted image 20260616091756.png",
     "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
     "Phys/PHYS2114/Electrostatics/Conductors.md",
     "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
@@ -230,7 +230,6 @@
     "Phys/PHYS2113/Special Relativity",
     "Phys/PHYS2113/Oscillators",
     "Phys/PHYS2113/Hamiltonian Mechanics",
-    "Maths/MATH2111/Integral Calculus/res/Pasted image 20260422085916.png",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
     "FlowChart.canvas",
