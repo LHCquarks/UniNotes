@@ -49,8 +49,8 @@ $$
 \end{align}
 $$
 These are the same properties as the commutators in quantum mechanics. 
-## Poisson brak
-###
+## Poisson brackets of common functions
+### Hamilton's equations
 Lets consider the Poisson brackets of a bunch of different variables:
 $$
 \begin{align}
@@ -65,4 +65,13 @@ $$
 \end{align}
 $$
 And similarly we can recover Hamilton's equations for $\dot q_i$.
+## Commuting functions
+Assuming that a function has no explicit dependence on $t$, ie $\frac{\partial f}{\partial t} = 0$ then we get that
+$$
+\begin{align}
+\frac{df}{dt} &= \{f, \mathcal H\}
+\end{align}
+$$
+and so if $\{f, \mathcal H\} = 0$ then our quantity is conserved.
 
+When we have a Poisson bracket that equals zero, ie $\{f, g\} = 0$ we say that $f$ commutes with $g$.
