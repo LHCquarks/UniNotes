@@ -49,3 +49,15 @@ $$
 \end{align}
 $$
 These are the same properties as the commutators in quantum mechanics. 
+## Uses
+Lets consider the Poisson brackets of a bunch of different variables:
+$$
+\begin{align}
+\dot p_i 
+&= \{p_i, \mathcal H\} + \frac{\partial p_i}{\partial t} \\
+&= \sum_i \left(\frac{\partial p_i}{\partial q_i}\frac{\partial \mathcal}{\partial p_i}
+- \frac{\partial f}{\partial p_i} \frac{\partial \mathcal g}{\partial q_i}\right)
+ + 0 \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
