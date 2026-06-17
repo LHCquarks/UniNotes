@@ -49,15 +49,20 @@ $$
 \end{align}
 $$
 These are the same properties as the commutators in quantum mechanics. 
-## Uses
+## Poisson brak
+###
 Lets consider the Poisson brackets of a bunch of different variables:
 $$
 \begin{align}
 \dot p_i 
 &= \{p_i, \mathcal H\} + \frac{\partial p_i}{\partial t} \\
-&= \sum_i \left(\frac{\partial p_i}{\partial q_i}\frac{\partial \mathcal}{\partial p_i}
-- \frac{\partial f}{\partial p_i} \frac{\partial \mathcal g}{\partial q_i}\right)
+&= \sum_j \left(\frac{\partial p_i}{\partial q_j}\frac{\partial \mathcal H}{\partial p_j}
+- \frac{\partial p_i}{\partial p_j} \frac{\partial \mathcal H}{\partial q_j}\right)
  + 0 \\
+&= \sum_j \left(0\frac{\partial \mathcal H}{\partial p_j}
+- \delta_{ij} \frac{\partial \mathcal H}{\partial q_j}\right)\\
+&= -\frac{\partial \mathcal H}{\partial q_i}\\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+And similarly we can recover Hamilton's equations for $\dot q_i$.
+
