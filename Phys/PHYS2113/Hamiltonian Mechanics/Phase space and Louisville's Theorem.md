@@ -9,3 +9,8 @@ Or, if we restrict our self to $\frac{\partial \mathcal H}{\partial t} = 0$  the
 Each point in phase space has exactly one trajectory passing through it.
 
 This means that phase space trajectories never cross each other.
+
+## Louisville's Theorem
+Consider a bounded volume in phase space and distribute objects within that space uniformly. Let this volume evolve it in time. Because no phase space trajectories can cross, the interior objects can not escape out of the volume. Further, it can be proven that the volume of this area can not change. These facts result in Louisville's theorem:
+
+If a system evolves under Hamiltonian dynamics then the phase space density of the surrounding neighborhood remains constant $\frac{d\rho}{dt} = 0$.
