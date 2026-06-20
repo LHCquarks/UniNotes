@@ -80,3 +80,31 @@ $$
 &= \frac{1}{2\epsilon_0} \frac{\lambda z r}{(r^2 + z^2)^{3/2}} \hat k\\
 \end{align}
 $$
+## Gauss's law
+The process of integration outlined above can be quite tedious and hard so where symmetry allows we can use Gauss's law to simplify our working.
+
+Gauss's law states that the total electric flux over any surface is entirely determined by the total charge enclosed within the object:
+$$
+\begin{align}
+\oint_S \vec E \cdot d\vec A &= \frac{q_{\text{enc}}}{\epsilon_0}
+\end{align}
+$$
+### Example
+Consider a sphere with a uniform charge distribution $\rho$ and a radius of $R$. Then we can consider different spheres centered at the center the charged sphere with the various radii $r$.
+
+Because of the symmetries of our setup, $\vec E$ is always parallel to our $d\vec A$ and is constant across our sphere and thus 
+$$
+\begin{align}
+\oint_S E d A &= \frac{q_{\text{enc}}}{\epsilon_0} \\
+E \oint_S d A &= \frac{q_{\text{enc}}}{\epsilon_0} \\
+E 4\pi r^2 &= \frac{q_{\text{enc}}}{\epsilon_0} \\
+\end{align}
+$$
+If $r > R$ then $q_{\text{enc}} = \rho \frac{4}{3}\pi R^3$ so we get that:
+$$
+\begin{align}
+E &= \frac{\rho R^3}{3\epsilon_0r^2} \\
+\vec E &= \frac{\rho R^3}{3\epsilon_0r^2}\hat r \\
+\end{align}
+$$
+If on the 
