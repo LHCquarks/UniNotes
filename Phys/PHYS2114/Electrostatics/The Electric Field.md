@@ -51,3 +51,32 @@ $$
 \end{align}
 $$
 
+### Example
+Say we have a loop with a linear charge density $\lambda$ with radius $r$. Find $\vec E$ from a distance $z$ above the center of the loop. The setup is shown below
+![[Pasted image 20260601141248.png]]
+Consider an infinitesimal segment along the loop $ds$, then the electric field of that part is given by:
+$$
+\begin{align}
+dE = \frac{1}{4\pi\epsilon_0}\frac{\lambda ds}{r^2 + z^2}
+\end{align}
+$$
+Now, when we rotate around the loop we know all but the vertical components of the $\vec E$ field will be canceled out. The vertical components of the field will be given by:
+$$
+\begin{align}
+dE = \frac{1}{4\pi\epsilon_0}\frac{\lambda ds}{r^2 + z^2} \cos \theta
+\end{align}
+$$
+where $\theta$ is the angle made between the $z$ axis and the $dE$ vector. However it can fairly easily be seen that $\cos \theta = \frac{z}{\sqrt{r^2 + z^2}}$ and thus:
+$$
+\begin{align}
+dE = \frac{1}{4\pi\epsilon_0} \frac{\lambda zds}{(r^2 + z^2)^{3/2}}
+\end{align}
+$$
+Finally, we sum over the entire $ds$ to get:
+$$
+\begin{align}
+\vec E &= \int_0^{2\pi} \frac{1}{4\pi\epsilon_0} \frac{\lambda zds}{(r^2 + z^2)^{3/2}} \hat k\\
+&= \frac{2\pi r}{4\pi\epsilon_0} \frac{\lambda z}{(r^2 + z^2)^{3/2}} \hat k\\
+&= \frac{1}{2\epsilon_0} \frac{\lambda z r}{(r^2 + z^2)^{3/2}} \hat k\\
+\end{align}
+$$
