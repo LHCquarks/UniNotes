@@ -13,7 +13,5 @@ Topics:
 
 
 
-- [[Work done assembling a charge distrobution]]
-- [[Continuity of Electric fields and Electric potentials]]
 - [[Conductors]]
 - [[Capacitors]]
