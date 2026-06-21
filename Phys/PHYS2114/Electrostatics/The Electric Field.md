@@ -107,4 +107,10 @@ E &= \frac{\rho R^3}{3\epsilon_0r^2} \\
 \vec E &= \frac{\rho R^3}{3\epsilon_0r^2}\hat r \\
 \end{align}
 $$
-If on the 
+If on the other hand $r < R$ then $q_{\text{enc}} = \rho \frac{4}{3}\pi r^3$ and thus:
+$$
+\begin{align}
+E &= \frac{\rho r^3}{3 \epsilon_0 r^2} \\
+\vec E&= \frac{\rho r}{3 \epsilon_0} \hat r
+\end{align}
+$$

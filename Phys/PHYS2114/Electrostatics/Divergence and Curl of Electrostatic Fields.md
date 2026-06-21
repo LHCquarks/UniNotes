@@ -10,11 +10,11 @@ This essentially means that the electric flux out of any surface is proportional
 Using the divergence theorem we get:
 $$
 \begin{align}
-\iiint_S \nabla \cdot \vec E d\tau &= \frac{1}{\epsilon_0} \iiint_S \rho d\tau \\
+\int_S \nabla \cdot \vec E d\tau &= \frac{1}{\epsilon_0} \int_S \rho d\tau \\
 \nabla \cdot \vec E &= \frac{\rho}{\epsilon_0} \\
 \end{align}
 $$
-Very cool
+This is a very useful formula for finding the required charge distribution from a given electric field.
 ## Using the differential form of Gauss's law for problems
 Suppose that $\vec E = k r^3 \hat r$. Find $\rho$
 $$
@@ -28,4 +28,5 @@ $$
 $$
 ## Curl of the Electric field
 Because $\vec E = -\nabla V$ and we assume that $V$ is cont differentiable then we get that $\nabla \times \vec E = 0$.
+This formula is useful for simplifying expressions and finding if a given electric field is even possible. 
 
