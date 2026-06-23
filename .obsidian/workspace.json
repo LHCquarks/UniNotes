@@ -11,10 +11,14 @@
             "id": "bfe3210abb0fb759",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Phys/PHYS2113/Hamiltonian Mechanics/Phase space and Louisville's Theorem.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Phase space and Louisville's Theorem"
             }
           }
         ]
@@ -164,7 +168,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "96d45fc57194ed4e",
+  "active": "bfe3210abb0fb759",
   "lastOpenFiles": [
     "Phys/PHYS2113/Symmetries and Noether's Theorem.md",
     "Phys/PHYS2114/Electrostatics/Electrostatics.md",
