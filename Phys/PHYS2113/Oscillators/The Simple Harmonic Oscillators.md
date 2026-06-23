@@ -46,7 +46,12 @@ $$
 Taking $U(x) = \frac{\omega^2}{2}x^2 + \frac{\omega^2}{2}y^2 + \dots$ we can use Lagrangian mechanics to find the equations of motion:
 $$
 \begin{align}
-\mathcal L = \frac{m}{2}(\dot x^2 + \dot y^2 + \dot z^2) - \frac{\omega^2}{2}\left(x^2 + y^2 + z^2\right)
+\mathcal L &= \frac{m}{2}\left(\dot x^2 + \dot y^2 + \dot z^2\right) - \frac{\omega^2}{2}\left(x^2 + y^2 + z^2\right) \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Because all the components are independent so too will be their differential equations and thus for all coordinates
+$$
+\begin{align}
+x(t) = A\cos(\omega t + \phi)
+\end{align}
+$$
