@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2113/Hamiltonian Mechanics/Phase space and Louisville's Theorem.md",
+                "file": "Phys/PHYS2113/Oscillators/Oscillators.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Phase space and Louisville's Theorem"
+              "title": "Oscillators"
+            }
+          },
+          {
+            "id": "0b64cd59281ae7fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Phys/PHYS2113/Oscillators/The Simple Harmonic Oscillators.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Simple Harmonic Oscillators"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,8 +183,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bfe3210abb0fb759",
+  "active": "0b64cd59281ae7fc",
   "lastOpenFiles": [
+    "Phys/PHYS2113/Oscillators/The Simple Harmonic Oscillators.md",
+    "Phys/PHYS2113/Oscillators/Oscillators.md",
+    "Phys/PHYS2113/Hamiltonian Mechanics/Phase space and Louisville's Theorem.md",
     "Phys/PHYS2113/Symmetries and Noether's Theorem.md",
     "Phys/PHYS2114/Electrostatics/Electrostatics.md",
     "Phys/PHYS2114/Electrostatics/Work done assembling a charge distrobution.md",
@@ -181,7 +199,6 @@
     "Phys/PHYS2114/Electrostatics/The Electric Field.md",
     "Phys/PHYS2113/Hamiltonian Mechanics/The Hamiltonian.md",
     "Phys/PHYS2114/Electrostatics/Finding Electric Fields.md",
-    "Phys/PHYS2113/Hamiltonian Mechanics/Phase space and Louisville's Theorem.md",
     "Phys/PHYS2113/Hamiltonian Mechanics/Poisson brackets.md",
     "Phys/PHYS2113/Hamiltonian Mechanics/Hamiltonian Mechanics.md",
     "Comp/COMP3231/Process Management/Concurrency Scenarios.md",
@@ -198,8 +215,6 @@
     "Comp/COMP3231/COMP3231.md",
     "Phys/PHYS2113/Lagrangian Mechanics/Examples.md",
     "Phys/PHYS2113/Lagrangian Mechanics/The Lagrangian.md",
-    "Phys/PHYS2113/PHYS2113.md",
-    "Phys/PHYS2113/Special Relativity/Special Relativity.md",
     "Phys/PHYS2113/Lagrangian Mechanics/Pasted image 20260609153910.png",
     "Phys/PHYS2113/Lagrangian Mechanics/Pasted image 20260609153807.png",
     "Comp/COMP3231/Process Management/Pasted image 20260602074116.png",
