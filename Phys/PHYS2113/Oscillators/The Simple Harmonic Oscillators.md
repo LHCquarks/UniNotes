@@ -33,3 +33,13 @@ $$
 \end{align}
 $$
 and thus our solution is $x(t) = C_1 e^{i\omega t} + C_2 e^{-i\omega t}$. Asserting that $x \in \mathbb R$ we know that $x^* = x$ and so $C_1^* e^{-i\omega t} + C_2^* e^{i \omega t} = C_1 e^{i\omega t} + C_2 e^{-i \omega t}$. By inspection we know $C_1 = C_2^*$ and vice versa.
+
+This has other forms such as:
+$$
+\begin{align}
+x(t) &= C_1 e^{i \omega t} + C_2 e^{-i \omega t} \\
+x(t) &= A\cos(\omega t + \phi ) \\
+x(t) &= \text{Re}(Ae^{i\omega t + \phi }) \\
+\end{align}
+$$
+
