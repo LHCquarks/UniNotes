@@ -42,4 +42,11 @@ x(t) &= A\cos(\omega t + \phi ) \\
 x(t) &= \text{Re}(Ae^{i\omega t + \phi }) \\
 \end{align}
 $$
-
+## Higher dimensions
+Taking $U(x) = \frac{\omega^2}{2}x^2 + \frac{\omega^2}{2}y^2 + \dots$ we can use Lagrangian mechanics to find the equations of motion:
+$$
+\begin{align}
+\mathcal L = \frac{m}{2}(\dot x^2 + \dot y^2 + \dot z^2) - \frac{\omega^2}{2}\left(x^2 + y^2 + z^2\right)
+\end{align}
+$$
+<% tp.file.cursor(2) %>
