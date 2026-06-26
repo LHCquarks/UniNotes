@@ -60,5 +60,23 @@ It can be seen that $\left|-\beta + \sqrt{\beta^2 - \omega_0^2}\right| < \left|-
 Plots of the above curves are below:
 
 ## Critically damped oscillator
+Case (4) results in $\sqrt{\beta^2 - \omega_0^2} = 0$ and thus our equation of motion becomes
+$$
+\begin{align}
+x(t) &= e^{-\beta t} (C_1 + C_2) \\
+&= Ae^{-\beta t}
+\end{align}
+$$
+But wait there is a problem. This equation only has one free variable but we know we need two free variables to alter both the initial location and momentum. This means we are missing a solution. 
 
+The solution we are missing is $x(t) = Bte^{-\beta t}$ and thus our general solution becomes
+$$
+\begin{align}
+x(t) &= e^{- \beta t} (A + B t)
+\end{align}
+$$
+plots of this solution are shown below
 ## The fastest decay rate
+When we consider the above solutions we can see that they all involve some sort of exponential decay. Measuring their decay rate by their limiting decay factor (ie for case (3) the limiting decay factor was $\beta - \sqrt{\beta^2 - \omega_0^2}$) we get the following plot:
+
+As can be seen in the plot the fastest decaying curve is the critically damped case where $\beta = \omega_0$. This can be physically made sense of by thinking about how
