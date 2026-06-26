@@ -22,6 +22,8 @@ V(\vec a) = V(\vec b)
 \end{align}
 $$
 A final note is that the electric field is always **perpendicular** to the surface of the conductor.
+## Cavities in conductors
+
 ## Electrostatic pressure
 It is known that the electric field across a charged surface has the equation:
 $$
