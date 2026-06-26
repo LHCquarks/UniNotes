@@ -55,3 +55,5 @@ $$
 x(t) = A\cos(\omega t + \phi)
 \end{align}
 $$
+
+These solutions are fairly obviously periodic iff $\frac{\omega_x}{\omega_y}, \frac{\omega_y}{\omega_z}, \frac{\omega_x}{\omega_z} \in \mathbb Q$.
