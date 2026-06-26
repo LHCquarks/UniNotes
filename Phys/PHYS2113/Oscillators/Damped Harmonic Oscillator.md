@@ -80,6 +80,6 @@ $$
 plots of this solution are shown below
 ![[critically_damped_plot.svg]]
 ## The fastest decay rate
-When we consider the above solutions we can see that they all involve some sort of exponential decay. Measuring their decay rate by their limiting decay factor (ie for case (3) the limiting decay factor was $\beta - \sqrt{\beta^2 - \omega_0^2}$) we get the following plot:
-
-As can be seen in the plot the fastest decaying curve is the critically damped case where $\beta = \omega_0$. This can be physically made sense of by thinking about how
+When we consider the above solutions we can see that they all involve some sort of exponential decay. Measuring their decay rate by their limiting decay factor (ie for case (3) the limiting decay factor was $\beta - \sqrt{\beta^2 - \omega_0^2}$) we get the following plot
+![[decay_rate_plot.svg]]
+As can be seen in the plot the fastest decaying curve is the critically damped case where $\beta = \omega_0$. This can be physically made sense of as before $\beta = \omega_0$, the oscillator overshoots the setups and so decays slower whilst after $\beta = \omega_0$ the oscillator losses too much energy too fast and thus reaches equilibrium slower like a ball in honey.
