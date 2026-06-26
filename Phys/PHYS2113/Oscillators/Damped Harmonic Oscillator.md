@@ -58,7 +58,8 @@ x(t) &= C_1 e^{-\beta + \sqrt{\beta^2 - \omega_0^2} t} + C_2 e^{-\beta - \sqrt{\
 $$
 It can be seen that $\left|-\beta + \sqrt{\beta^2 - \omega_0^2}\right| < \left|-\beta - \sqrt{\beta^2 - \omega_0^2}\right|$ and thus in the limit as $t \rightarrow \infty$ the first term is the only one that is important.
 
-Plots of the above curves are below:
+Plots of the above curves are below
+![[strongly_damped_plot.svg]]
 
 ## Critically damped oscillator
 Case (4) results in $\sqrt{\beta^2 - \omega_0^2} = 0$ and thus our equation of motion becomes
