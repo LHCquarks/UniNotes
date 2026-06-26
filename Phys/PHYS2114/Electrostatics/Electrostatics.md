@@ -9,5 +9,4 @@ Topics:
 - [[Boundaries of Charged Surfaces]]
 - [[Work and Energy of Electrostatics]]
 - [[Conductors]]
-
 - [[Capacitors]]
