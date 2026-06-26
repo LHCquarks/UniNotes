@@ -10,8 +10,4 @@ Topics:
 - [[Work and Energy of Electrostatics]]
 - [[Conductors]]
 
-
-
-
-- [[Conductors]]
 - [[Capacitors]]
