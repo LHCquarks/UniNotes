@@ -39,6 +39,7 @@ $$
 x(t) = C_1 e^{i\omega_0t} + C_2e^{-i\omega_0 t}
 \end{align}
 $$
+![[simple_harmonic_fig.svg]]
 ## Weakly damped harmonic oscillator
 Case (2) still results in $\beta^2  - \omega_0^2 < 0$ and thus we still get oscillations however now with a decay in in the amplitude. If $\omega_1^2 = \beta^2 - \omega_0^2$ then
 $$
