@@ -47,8 +47,8 @@ $$
 x(t) &= e^{-\beta t}\left(C_1 e^{i\omega_1t} + C_2e^{-i\omega_1 t}\right)
 \end{align}
 $$
-Pots of this solution involve sinusoidal curves within an exponential envelope as shown bellow:
-
+Pots of this solution involve sinusoidal curves within an exponential envelope as shown below:
+![[weakly_damped_plot.svg]]
 ## Strongly damped harmonic oscillator
 Case (3) results in $\beta^2 - \omega_0^2 > 0$ and so will no longer have sinusoidal motion. We then find that our solution is of the form
 $$
