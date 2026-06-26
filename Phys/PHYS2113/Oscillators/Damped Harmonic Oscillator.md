@@ -78,6 +78,7 @@ x(t) &= e^{- \beta t} (A + B t)
 \end{align}
 $$
 plots of this solution are shown below
+![[critically_damped_plot.svg]]
 ## The fastest decay rate
 When we consider the above solutions we can see that they all involve some sort of exponential decay. Measuring their decay rate by their limiting decay factor (ie for case (3) the limiting decay factor was $\beta - \sqrt{\beta^2 - \omega_0^2}$) we get the following plot:
 
