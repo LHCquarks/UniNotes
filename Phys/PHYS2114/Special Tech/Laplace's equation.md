@@ -52,3 +52,5 @@ $V(x)$ **has no maxima / minima** on the interior of the region $V(x)$ is define
 Laplace's equation has many solutions but in the real world voltage only takes one value at some point so what information do we need to know to take our many solutions and filter them to just one?
 
 Laplace's uniqueness theorem states that the solution to Laplace's equation $\nabla^2 V$ is across some volume $\mathcal V$ is uniquely determined if $V$ is specified along the boundary surface $\partial \mathcal V$. 
+## Solving Laplace's equation
+Because of the above uniqueness theorem, if we can find a single solution to Laplace's equation we have solved it for all solutions and thus we can make use of strong techniques that may not always come up with solutions such as **Separation of variables**.
