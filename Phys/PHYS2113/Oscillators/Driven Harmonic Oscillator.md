@@ -83,3 +83,4 @@ x(t) = A\cos(\omega t - \delta) + C_1e^{r_1 t} + C_2 e^{r_2 t}
 \end{align}
 $$
 Further, because the homogeneous case vanishes as $t$ gets large we eventually get left with $x_p(t)$. Because the limiting case of all solutions does not care for the coefficients the limiting solution is called an **attractor** solution whilst all other parts are called the **transient** solutions.
+
