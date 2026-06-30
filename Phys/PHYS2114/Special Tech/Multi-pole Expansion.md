@@ -76,4 +76,19 @@ Where $\vec p = \int \vec r' \rho(\vec r') d\tau'$. This $\vec p$ is called the 
 For discrete charge distributions the definition of $\vec p$ unsurprisingly simplifies to $\vec p = \sum_{i = 1}^n q_i\vec r'_i$.
 For equal and opposite charges this simplifies further to $\vec p = q\vec d$ where $\vec d$ is the vector that points from the negative to positive charge.
 
-Whilst this is known as the dipole term it does not actually describe physical dipoles (where each end of the dipole are separated by a distance) as those have higher order correcting terms but this term does perfectly describe a theoretical dipole
+Whilst this is known as the dipole term it does not actually describe physical dipoles (where each end of the dipole are separated by a distance) as those have higher order correcting terms but this term does perfectly describe a theoretical dipole where $\vec d$ is $0$ whist $\vec p \not = 0$.
+
+### Translation of the origin
+Say we want to find $\vec p$ in two different coordinates that are simply translation-ally different. This means that our displacement vector in our first coordinate space $\vec r$ has the relation to the new coordinate vector: $\vec r = \vec r' + \vec a$.
+Then our dipole becomes:
+$$
+\begin{align}
+\vec p &= \int \vec r\rho(\vec r) d\tau \\
+&= \int (\vec r' + \vec a) \rho'(\vec r') d\tau' \\
+&= \int \vec r' \rho'(\vec r') d\tau' + \int \vec a \rho'(\vec r') d\tau'\\
+&= \vec p' +  \vec a\int \rho'(\vec r') d\tau'\\
+&= \vec p' + \vec aQ\\
+\end{align}
+$$
+Thus the dipole moment changes depending on the reference frame unless the total charge 
+$Q=0$.

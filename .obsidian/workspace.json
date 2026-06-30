@@ -34,9 +34,19 @@
               "icon": "lucide-file",
               "title": "Multi-pole Expansion"
             }
+          },
+          {
+            "id": "a8de055f2f59e70f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -183,11 +193,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "752c1074b324bc7d",
+  "active": "a8de055f2f59e70f",
   "lastOpenFiles": [
+    "Phys/PHYS2114/Special Tech/Multi-pole Expansion.md",
     "Phys/PHYS2114/Special Tech/screenshot-2026-06-30_07-42-35 1.png",
     "Phys/PHYS2114/Special Tech/screenshot-2026-06-30_07-42-35.png",
-    "Phys/PHYS2114/Special Tech/Multi-pole Expansion.md",
     "Phys/PHYS2114/Special Tech/Special Techniques.md",
     "Phys/PHYS2113/Hamiltonian Mechanics/Poisson brackets.md",
     "Comp/COMP3231/Process Management/Synchronization mechanisms.md",
@@ -222,7 +232,6 @@
     "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
     "Comp/COMP3231/Process Management/Pasted image 20260617092201.png",
     "Comp/COMP3231/Process Management/Pasted image 20260617084540.png",
-    "Phys/PHYS2114/Electric Fields In Matter/Pasted image 20260616091756.png",
     "Comp/COMP3231/Process Management",
     "Comp/COMP3231/Introduction and Overview",
     "Comp/COMP3231",
