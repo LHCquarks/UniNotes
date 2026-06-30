@@ -84,3 +84,5 @@ x(t) = A\cos(\omega t - \delta) + C_1e^{r_1 t} + C_2 e^{r_2 t}
 $$
 Further, because the homogeneous case vanishes as $t$ gets large we eventually get left with $x_p(t)$. Because the limiting case of all solutions does not care for the coefficients the limiting solution is called an **attractor** solution whilst all other parts are called the **transient** solutions.
 
+Below is a figure of a weak harmonic oscillator subject to a driving force
+![[driven_weak_damped.svg]]

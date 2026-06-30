@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -211,10 +211,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "386a0bb5f0035cd4",
+  "active": "c0125b256241d792",
   "lastOpenFiles": [
-    "Phys/PHYS2113/Oscillators/Driven Harmonic Oscillator.md",
+    "Phys/PHYS2113/Oscillators/driven_weak_damped.svg",
     "Phys/PHYS2113/Oscillators/Damped Harmonic Oscillator.md",
+    "Phys/PHYS2113/Oscillators/Driven Harmonic Oscillator.md",
     "Phys/PHYS2114/Electric Fields In Matter/Polarization.md",
     "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
     "Phys/PHYS2114/Electric Fields In Matter/Dielectrics.md",
@@ -248,7 +249,6 @@
     "Phys/PHYS2113/Hamiltonian Mechanics/Phase space and Louisville's Theorem.md",
     "Phys/PHYS2113/Symmetries and Noether's Theorem.md",
     "Phys/PHYS2114/Electrostatics/Work done assembling a charge distrobution.md",
-    "Phys/PHYS2114/Electrostatics/Work and Energy of Electrostatics.md",
     "Comp/COMP3231/Process Management/Pasted image 20260617092201.png",
     "Comp/COMP3231/Process Management/Pasted image 20260617084540.png",
     "Comp/COMP3231/Process Management",
