@@ -86,3 +86,11 @@ Further, because the homogeneous case vanishes as $t$ gets large we eventually g
 
 Below is a figure of a weak harmonic oscillator subject to a driving force
 ![[driven_weak_damped.svg]]
+### Resonance
+As seen before the amplitude of our driven wave is given by
+$$
+\begin{align}
+A &= \frac{f_0}{\sqrt{(\omega_0^2 -\omega^2)^2 + 4\beta^2\omega^2}} \\
+\end{align}
+$$
+Plotted against the driving wave this produces the plot:
