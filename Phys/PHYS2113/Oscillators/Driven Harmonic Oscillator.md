@@ -93,4 +93,30 @@ $$
 A &= \frac{f_0}{\sqrt{(\omega_0^2 -\omega^2)^2 + 4\beta^2\omega^2}} \\
 \end{align}
 $$
-Plotted against the driving wave this produces the plot:
+Plotted against the driving wave this produces the plot
+![[amplitude_omega.svg]]
+As can be seen there is a steep peak in $A$ near $\omega_0$ then $A$ quickly reduces but never goes to zero. Further, it can be seen that as $\beta$ increases the peak gets flatter. If we define $\omega_{\text{res}}$ as the $\omega$ that maximizes $A$ we find it through
+$$
+\begin{align}
+\frac{dA}{d\omega} &= \frac{-f_0}{2\left((\omega_0^2 - \omega^2)^2 + 4\beta^2 \omega^2\right)^{3/2}} 
+\left(8\beta^2\omega - 2(\omega_0^2 - \omega^2)2\omega\right) \\
+0 &= \frac{-f_0}{2\left((\omega_0^2 - \omega_{\text{res}}^2)^2 + 4\beta^2 \omega_{\text{res}}^2\right)^{3/2}} 
+\left(8\beta^2\omega_{\text{res}} - 4(\omega_0^2\omega_{\text{res}} - \omega_{\text{res}}^3)\right) \\
+0 &= -4f_0\left((2\beta^2 - \omega_0^2)\omega_{\text{res}} + \omega_{\text{res}}^3\right) \\
+0 &= (2\beta^2 - \omega_0^2)\omega_{\text{res}} + \omega_{\text{res}}^3\\
+0 &= (2\beta^2 - \omega_0^2) + \omega_{\text{res}}^2\\
+\omega_{\text{res}}^2 &= \omega_0^2 - 2\beta^2\\
+\omega_{\text{res}} &= \sqrt{\omega_0^2 - 2\beta^2}\\
+\end{align}
+$$
+At this point $A$ is
+$$
+\begin{align}
+A(\omega_{\text{res}}) &= \frac{f_0}{\sqrt{(\omega_0^2 -\omega_{\text{res}}^2)^2 + 4\beta^2\omega_{\text{res}}^2}} \\
+&= \frac{f_0}{\sqrt{(\omega_0^2 + 2\beta^2 - \omega_0^2)^2 + 4\beta^2(\omega_0^2 - 2 \beta^2)}} \\
+&= \frac{f_0}{\sqrt{(2\beta^2)^2 + 4\beta^2(\omega_0^2 - 2 \beta^2)}} \\
+&= \frac{f_0}{\sqrt{4\beta^4 - 8\beta^4 + 4\beta^2 \omega_0^2}} \\
+&= \frac{f_0}{\sqrt{4\beta^2 \omega_0^2 - 4\beta^4}} \\
+A_{\text{max}}&= \frac{f_0}{2\beta\sqrt{\omega_0^2 - \beta^2}} \\
+\end{align}
+$$
