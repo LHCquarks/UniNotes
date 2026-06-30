@@ -109,14 +109,34 @@ $$
 \omega_{\text{res}} &= \sqrt{\omega_0^2 - 2\beta^2}\\
 \end{align}
 $$
-At this point $A$ is
+### Quality factor
+Another key property of the amplitude omega curve is the width of the peak which we quantify with the "full width of half maximum" which is the distance between the two point on the curve with $A_{\text{FWHM}} = A_{\text{max}}/2$. This is given by:
 $$
 \begin{align}
-A(\omega_{\text{res}}) &= \frac{f_0}{\sqrt{(\omega_0^2 -\omega_{\text{res}}^2)^2 + 4\beta^2\omega_{\text{res}}^2}} \\
-&= \frac{f_0}{\sqrt{(\omega_0^2 + 2\beta^2 - \omega_0^2)^2 + 4\beta^2(\omega_0^2 - 2 \beta^2)}} \\
-&= \frac{f_0}{\sqrt{(2\beta^2)^2 + 4\beta^2(\omega_0^2 - 2 \beta^2)}} \\
-&= \frac{f_0}{\sqrt{4\beta^4 - 8\beta^4 + 4\beta^2 \omega_0^2}} \\
-&= \frac{f_0}{\sqrt{4\beta^2 \omega_0^2 - 4\beta^4}} \\
-A_{\text{max}}&= \frac{f_0}{2\beta\sqrt{\omega_0^2 - \beta^2}} \\
+\frac{A_\text{max}}{A_{\text{FWHM}}} &= \frac{\sqrt{(\omega_0^2 -\omega^2)^2 + 4\beta^2\omega^2}}{\sqrt{(\omega_0^2 -\omega_{\text{res}}^2)^2 + 4\beta^2\omega_{\text{res}}^2}} \\
+2 &= \frac{\sqrt{(\omega_0^2 -\omega^2)^2 + 4\beta^2\omega^2}}{\sqrt{(\omega_0^2 -\omega_{\text{res}}^2)^2 + 4\beta^2\omega_{\text{res}}^2}} \\
+4\left[(\omega_0^2 -\omega_{\text{res}}^2)^2 + 4\beta^2\omega_{\text{res}}^2\right] &= (\omega_0^2 -\omega^2)^2 + 4\beta^2\omega^2 \\
+4\omega_0^4 -8\omega_0^2\omega_{\text{res}}^2 + 4\omega_{\text{res}}^4 + 16\beta^2\omega_{\text{res}}^2 &= \omega_0^4 -2\omega_0^2\omega^2 + \omega^4 + 4\beta^2\omega^2 \\
+4\omega_0^4 -8\omega_0^4 + 4\omega_0^4 + 16\beta^2\omega_0^2 &\approx \omega_0^4 -2\omega_0^2\omega^2 + \omega^4 + 4\beta^2\omega^2 \\
+16\beta^2\omega_0^2 &= \omega_0^4 -2\omega_0^2\omega^2 + \omega^4 + 4\beta^2\omega^2 \\
+0 &= \omega_0^4 -16\beta^2\omega_0^2 +(4 \beta^2-2\omega_0^2)\omega^2 + \omega^4 \\
+\omega^2 &= \frac{2\omega_0^2 - 4\beta^2 \pm \sqrt{(4 \beta^2-2\omega_0^2)^2 - 4\omega_0^4 + 64\beta^2\omega_0^2}}{2} \\
+\omega^2 &= \omega_0^2 - 2\beta^2 \pm \sqrt{16\beta^4 - 16\beta^2\omega_0^2 + 64\beta^2\omega_0^2} \\
+\omega^2 &= \omega_0^2 - 2\beta^2 \pm 4\beta\sqrt{\beta^2 + 3\omega_0^2} \\
+\omega^2 &= \omega_0^2 - 2\beta^2 \pm 4\sqrt{3}\beta\omega_0^2 \\
+\end{align}
+$$
+dot dot dot
+$$
+\begin{align}
+\Delta \omega \approx 2\beta
+\end{align}
+$$
+We can then use this FWHM to define a final dimensionless quantity $Q = \frac{\omega_0}{2\beta}$. The quality factor $Q$ describes how tall the peak is compared to the bandwidth. It is often desirable for this number to be as high as possible in practical applications hence it is refereed to as the "quality factor".
+### Phase
+The phase of the attractor solution is given by
+$$
+\begin{align}
+\delta &= \arctan\left(\frac{2\beta\omega}{\omega_0^2 - \omega^2}\right)
 \end{align}
 $$
