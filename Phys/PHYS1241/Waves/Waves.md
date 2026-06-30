@@ -5,6 +5,6 @@ tags:
 Table of contents:
 - [[EM waves]]
 - [[Phasors]]
-- [[Polarisation]]
+- [[Phys/PHYS1241/Waves/Polarisation]]
 - [[Radiation Pressure]]
 - [[Optics]]

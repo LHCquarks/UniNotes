@@ -18,7 +18,7 @@ Electro-Magnetic waves are a consequence of [[Maxwell's Equations]] and are osci
 - The power of a wave is $P = IA$ where $A$ is the area receiving the power
 - $hf = v = c = \frac{1}{\sqrt{\epsilon_0\mu_0}}$ 
 - Like all other waves EM waves have a [[#Phase]]
-- Light has a [[Polarisation]]
+- Light has a [[Phys/PHYS1241/Waves/Polarisation]]
 ## The spectrum
 Different wavelengths of light are organised into the different categories below:
 ![[Pasted image 20250806121151.png]]
