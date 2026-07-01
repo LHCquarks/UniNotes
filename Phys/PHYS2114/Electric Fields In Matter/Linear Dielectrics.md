@@ -33,3 +33,5 @@ $$
 \epsilon_{\text{below}}\vec E_{\text{below}} &= \sigma_f
 \end{align}
 $$
+## Energy in a capacitor
+Suppose we have a capacitor that has a dielectric between the two plates. The capacitance of the dielectric filled capacitor is given by $C = \epsilon_r C_{\text{vac}}$  
