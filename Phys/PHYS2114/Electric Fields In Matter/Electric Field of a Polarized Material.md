@@ -57,7 +57,7 @@ $$
 \nabla \cdot (\epsilon_0 \vec E + \vec P) &= \rho_f \\
 \end{align}
 $$
-This quantity $\vec D = \epsilon_0 \vec E + \vec P$ is called the electric displacement and has very similar properties to the electric field except it only operates based off of $\rho_f$.
+This quantity $\vec D = \epsilon_0 \vec E + \vec P$ is called the electric displacement and has very similar properties to the electric field except it only operates based off of $\rho_f$. Note that the $\vec E$ that appears in this equation is in fact the total electric field including the effects of polarization.
 
 In the same way as the electric field $\vec D$ follows the integral version of Gauss's law
 $$
@@ -83,4 +83,4 @@ $$
 \vec E_{\text{outside}} &= \frac{\lambda}{2\pi \epsilon_0 s}\hat s
 \end{align}
 $$
-as we got when there was not rubber case
+as we got when there was not rubber case.
