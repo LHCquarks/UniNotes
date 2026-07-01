@@ -34,4 +34,12 @@ $$
 \end{align}
 $$
 ## Energy in a capacitor
-Suppose we have a capacitor that has a dielectric between the two plates. The capacitance of the dielectric filled capacitor is given by $C = \epsilon_r C_{\text{vac}}$  
+Suppose we have a capacitor that has a dielectric between the two plates. The capacitance of the dielectric filled capacitor is given by $C = \epsilon_r C_{\text{vac}}$.
+
+This would indicate that the work done to charge a capacitor is the same as with a normal capacitor but off by a factor of $\epsilon_r$. This is true! Our total work equation becomes
+$$
+\begin{align}
+W &= \frac{1}{2}\int \epsilon_r E^2 d\tau \\
+&= \frac{1}{2}\int \vec D \cdot \vec E d\tau
+\end{align}
+$$
