@@ -43,3 +43,23 @@ W &= \frac{1}{2}\int \epsilon_r E^2 d\tau \\
 &= \frac{1}{2}\int \vec D \cdot \vec E d\tau
 \end{align}
 $$
+### Force removing a dielectric from a charged capacitor
+As you remove a dielectric from a capacitor it will exert a force back on you, lets calculate it.
+
+Assume a setup where we have charged a capacitor and turned off the battery so that $Q$ is constant, then
+$$
+\begin{align}
+W &= \frac{1}{2}CV^2 \\
+&= \frac{1}{2} \frac{Q^2}{C}
+\end{align}
+$$
+Where $C$ is given by $C = \frac{\epsilon_0 w}{d} (\epsilon_r l - \chi_e x)$ thus:
+$$
+\begin{align}
+F &= -\frac{dW}{dx} \\
+&= \frac{Q^2}{2C^2}\frac{dC}{dx} \\
+&= -\frac{1}{2}V^2 \frac{\epsilon_0\chi_ew}{d} \\
+&= -\frac{\epsilon_0\chi_ew}{2d}V^2 \\
+\end{align}
+$$
+
