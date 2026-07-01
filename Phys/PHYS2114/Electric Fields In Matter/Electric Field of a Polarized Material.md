@@ -66,3 +66,21 @@ $$
 \end{align}
 $$
 ### Example use case
+Consider an infinite wire enclosed in a rubber cylindrical casing with radius $a$. To find the electric field inside and outside of the wire we can use the displacement.
+
+Consider the Gaussian cylinder with length $L$ and radius $s$ then by Gauss's law:
+$$
+\begin{align}
+\oint \vec D \cdot d\vec A = q_{f_{\text{enc}}} \\
+D\oint d A = \lambda L \\
+D2\pi sL = \lambda L \\
+\vec D = \frac{\lambda}{2\pi s} \hat s\\
+\end{align}
+$$
+We can then use that $\vec D = (\epsilon_0 \vec E + \vec P)$ to find $\vec E$ if we were to know $\vec P$. For air $\vec P = 0$ thus
+$$
+\begin{align}
+\vec E_{\text{outside}} &= \frac{\lambda}{2\pi \epsilon_0 s}\hat s
+\end{align}
+$$
+as we got when there was not rubber case
