@@ -46,4 +46,23 @@ Bound charges accumulate on the surface of the object
 ![[Pasted image 20260701113527.png|500]]
 Charges are generated at sources and sinks within a material
 ![[Pasted image 20260701113647.png|400]]
-## 
+## Free charges
+Say that our material was not just neutral with a polarization but instead also had charges placed within it according to $\rho_f$. Then Gauss's law reads
+$$
+\begin{align}
+\epsilon_0 \nabla \cdot \vec E &= \rho \\
+&= \rho_b + \rho_f \\
+&= -\nabla \cdot \vec P+ \rho_f \\
+\nabla \cdot (\epsilon_0 \vec E) + \nabla \cdot \vec P&= \rho_f \\
+\nabla \cdot (\epsilon_0 \vec E + \vec P) &= \rho_f \\
+\end{align}
+$$
+This quantity $\vec D = \epsilon_0 \vec E + \vec P$ is called the electric displacement and has very similar properties to the electric field except it only operates based off of $\rho_f$.
+
+In the same way as the electric field $\vec D$ follows the integral version of Gauss's law
+$$
+\begin{align}
+\oint \vec D \cdot d\vec A &= q_{f_{\text{enc}}}
+\end{align}
+$$
+### Example use case
