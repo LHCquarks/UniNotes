@@ -140,3 +140,4 @@ $$
 \delta &= \arctan\left(\frac{2\beta\omega}{\omega_0^2 - \omega^2}\right)
 \end{align}
 $$
+![[phase_omega 1.svg]]

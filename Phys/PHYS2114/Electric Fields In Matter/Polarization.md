@@ -46,6 +46,13 @@ $$
 Now that we have found what happens to different types of molecules we can consider what happens to groups of molecules under an external electric field.
 
 In the case a material is made up of non-polar molecules the electric field will induce dipoles in roughly the same direction as the electric field (if the molecule's polarization is not in the same direction as the electric field the random orientations of the atoms will cancel each other out to produce only one electric field in one direction). 
+
 In the case that the material is instead polar the electric field rotates the molecules so that $\vec p$ aligns with the electric field. Random thermal processes try to disturb this so as soon as the electric field is turned off the the molecules return back to before.
 
-Either way we get a total polarization in the material. This total polarization depends on the volume so we define a value for our materials called the **polarizability** of the material $\vec P$ as the polarization per unit volume 
+Either way we get a total polarization in the material. This total polarization depends on the volume so we define a value for our materials called the **polarizability** of the material $\vec P$ as the polarization per unit volume
+$$
+\begin{align}
+\vec p &= \vec P V
+\end{align}
+$$
+
