@@ -42,5 +42,8 @@ V&= \frac{1}{4\pi\epsilon_0}
 $$
 Thus the electric field produced by a total polarization is equivalent to if there were the above charges present within the material allowing us to use all our powerful tools like Gauss's law
 ### Physical interpretation
-
-
+Bound charges accumulate on the surface of the object
+![[Pasted image 20260701113527.png|500]]
+Charges are generated at sources and sinks within a material
+![[Pasted image 20260701113647.png|400]]
+## 
