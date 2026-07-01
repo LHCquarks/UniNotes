@@ -1,0 +1,46 @@
+A material that has been polarized produces its own electric field in response. This page tries to describe field.
+## Bound charges
+We know that the voltage from a dipole is given from the dipole term in the multi-pole expansion
+$$
+\begin{align}
+V(\vec r) &= \frac{1}{4\pi\epsilon_0} \frac{\vec p \cdot \hat {\mathscr r}}{\mathscr r^2}
+\end{align}
+$$
+By taking $\vec p = \vec P V$ we get $d\vec p = \vec P d\tau$ and so
+$$
+\begin{align}
+dV(\vec r) &= \frac{1}{4\pi\epsilon_0} \frac{d\vec p \cdot \hat {\mathscr r}}{\mathscr r^2} \\
+&= \frac{1}{4\pi\epsilon_0} \frac{\vec P(\vec r') \cdot \hat {\mathscr r}}{\mathscr r^2} d \tau'\\
+V &= \frac{1}{4\pi\epsilon_0} \int_{\mathcal V}\frac{\vec P(\vec r') \cdot \hat {\mathscr r}}{\mathscr r^2} d \tau'\\
+ &= \frac{1}{4\pi\epsilon_0} \int_{\mathcal V} \vec P(\vec r')\cdot \nabla'\left(\frac{1}{\mathscr r}\right) d \tau'\\
+\end{align}
+$$
+Using integration by parts we then get
+$$
+\begin{align}
+V &= \frac{1}{4\pi\epsilon_0} 
+\left[
+\int_\mathcal V \nabla'\cdot \left(\frac{\vec P}{\mathscr r}\right) d \tau' -
+\int_\mathcal V \frac{1}{\mathscr r}\nabla'\cdot \vec P d \tau'
+\right]\\
+&= \frac{1}{4\pi\epsilon_0} 
+\left[
+\oint_{\partial \mathcal V} \frac{1}{\mathscr r} \vec P\cdot d \vec a' -
+\int_\mathcal V \frac{1}{\mathscr r}\nabla'\cdot \vec P d \tau'
+\right]\\
+\end{align}
+$$
+These integrals look like what we would expect from a surface charge density and a volume charge density respectively. By defining the surface bound charge $\sigma_b \equiv \vec P \cdot \hat n$ and the volume bound charge $\rho_b \equiv -\nabla \cdot \vec P$ we can make this observation official.
+$$
+\begin{align}
+V&= \frac{1}{4\pi\epsilon_0} 
+\left[
+\oint_{\partial \mathcal V} \frac{\sigma_b}{\mathscr r}  da' -
+\int_\mathcal V \frac{\rho_b}{\mathscr r} d \tau'
+\right]\\
+\end{align}
+$$
+Thus the electric field produced by a total polarization is equivalent to if there were the above charges present within the material allowing us to use all our powerful tools like Gauss's law
+### Physical interpretation
+
+

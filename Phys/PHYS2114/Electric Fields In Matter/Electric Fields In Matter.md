@@ -2,6 +2,10 @@
 tags:
   - Continence
 ---
-- [[Dielectrics]]
-- [[Polarization|Polarization]]
+- [[Polarization of Materials]]
+- [[Electric Field of a Polarized Material]]
 - 
+
+
+
+- [[Dielectrics]]
