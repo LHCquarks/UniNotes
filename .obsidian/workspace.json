@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
+                "file": "Maths/MATH2111/Integral Calculus/Vector Integrals/Vector Path Integrals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electric Fields In Matter"
+              "title": "Vector Path Integrals"
             }
           },
           {
@@ -184,8 +184,10 @@
   },
   "active": "957b2f9953716bca",
   "lastOpenFiles": [
-    "Phys/PHYS2114/PHYS2114.md",
+    "Maths/MATH2111/Integral Calculus/Integral calculus.md",
+    "Maths/MATH2111/Integral Calculus/Path integrals and Surface integrals.md",
     "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
+    "Phys/PHYS2114/PHYS2114.md",
     "Phys/PHYS2114/Electric Fields In Matter/Electric Field of a Polarized Material.md",
     "Phys/PHYS2114/Electric Fields In Matter/Polarization of Materials.md",
     "Phys/PHYS2114/Special Tech/Special Techniques.md",
@@ -216,8 +218,6 @@
     "Phys/PHYS2114/Special Tech/Laplace's equation.md",
     "Phys/PHYS2113/Oscillators/Oscillators.md",
     "Maths/MATH2111/Curves and Surfaces/Graphing.md",
-    "Phys/PHYS2113/Oscillators/The Simple Harmonic Oscillators.md",
-    "Phys/PHYS2113/Oscillators/Untitled.md",
     "Phys/PHYS2113/Oscillators/res",
     "Phys/PHYS2113/Oscillators/res/decay_rate_plot.svg",
     "Phys/PHYS2113/Oscillators/res/critically_damped_plot.svg",
