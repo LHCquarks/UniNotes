@@ -232,10 +232,17 @@ Exercise:
 A particle has a wave function
 $$
 \begin{align}
-\ket \psi &= \frac{1}{\sqrt {17}} \left[\matrix{-3i- 2} \\ \right]
+\ket \psi &= \frac{1}{\sqrt {17}} \left[\matrix{-3i- 2 \\ 0 \\ -2} \right]
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+and we define a hermitian operator
+$$
+\begin{align}
+\hat \Omega &= \left[\matrix{0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 2}\right]
+\end{align}
+$$
+What is $\braket{\Omega}$ and $P(0)$, $P(2)$
+
 ## Multiple particles
 - Show tensor product
 - Show how it works
