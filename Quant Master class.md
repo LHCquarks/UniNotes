@@ -21,6 +21,7 @@ $$
 - Orthogonality
 - Inner product for complex vectors
 ### Operators
+- Show the notation $\hat E \ket \psi = \ket{\hat E \psi}$
 Exercise:
 apply the mysterious operator
 $$
@@ -33,8 +34,161 @@ $$
 \begin{align}
 \ket {u} &= \pmatrix{1 \\ 0} \\
 \ket {d} &= \pmatrix{0 \\ 1} \\
-\ket {l} &= \pmatrix{1 \\ 0} \\
-\ket {r} &= \pmatrix{1 \\ 0} \\
+\ket {l} &= \frac{1}{\sqrt 2}\pmatrix{-i \\ 1} \\
+\ket {r} &= \frac{1}{\sqrt 2}\pmatrix{i \\ 1} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+- brief recap of eigenvectors / eigenvalues (how to find them and what they are)
+- Describe the importance of eigenvectors and eigenvalues to QM
+Exercise:
+find the eigenvalues / eigen vectors of the operator:
+$$
+\begin{align}
+\sigma_z &= \pmatrix{1 & 0 \\ 0 & -1}
+\end{align}
+$$
+### Hermitian adjoint
+- Define the hermitian adjoint
+- Show $(\hat A ^\dagger)^\dagger = \hat A$
+Exercise:
+show
+$$
+\begin{align}
+(\hat A + \hat B)^\dagger &= \hat A^\dagger + \hat B^\dagger \\
+(\hat A \hat B)^\dagger &= \hat B^\dagger\hat A^\dagger
+\end{align}
+$$
+- State hermitian adjoint of a scalar
+- State hermitian adjoint of bra / ket
+- State hermitian adjoint of a matrix
+### Orthonormal eigenbasis
+### Kronecker delta
+### Hermitian operators
+- Definition
+- Decomposition into hermitian and anti-hermitian
+- Eigenvalues are real, eigenvectors are orthogonal
+Exercise:
+Is $\hat A$ hermitian?
+$$
+\begin{align}
+\sigma_x &= \pmatrix{0 & 1 \\ 1 & 0}
+\end{align}
+$$
+### Unitary operators
+- Definition
+- Preserve inner products
+## Postulates of QM
+### Postulate 1
+The state of a particle is represented by a **vector** $\ket{\psi (t)}$ in a **Hilbert space**.
+### Postulate 2
+For every observable in classical mechanics there exists a corresponding **linear**, **hermitian** operator in quantum mechanics
+### Postulate 3
+The measurement of an observable $\Omega$ in quantum mechanics on a state $\ket \Psi$ will yield one of the eigenvalues of $\hat \Omega$, $\omega$ with probability $P(\omega) = |\braket{\omega | \Psi}|^2$. After the measurement the state will change from $\ket \Psi$ to $\ket \omega$.
+
+### Postulate 4
+$$
+\begin{align}
+i \hbar \frac{\partial \Psi}{\partial t} = \hat H \Psi
+\end{align}
+$$
+
+## Solving the SE
+### Separation of variables
+State that the solution of the SE is unique. Assert our solutions shall be in the form $\Psi(x, t) = \psi(x)\phi(t)$ and get the eigenvector equations
+### Example
+$\hat H = -\mu_bB\sigma_z$
+An electron in a magnetic field pointing in the $z$ direction has a Hamiltonian of $\hat H = -\mu_bB\sigma_z$ where:
+- $\mu_b$ is the Bohr magnaton which measures the magnetic dipole moment of an electron
+- $B$ is the strength of the magnetic field
+- $\sigma_z$ is the 3rd Pauli spin matrix $\pmatrix{1 & 0 \\ 0 & -1}$
+If you wish to further decompose this equation $\mu_b$ equals $\frac{e\hbar}{2m_e}$ where:
+- $e$ is the charge of the electron
+- $m_e$ is the mass of the electron
+It is also given that the initial state of our particle is $\ket {\Psi(0)} = \frac{1}{\sqrt{2}} \pmatrix{1 \\ 1}$
+1. $\hat H = -\mu_b B \sigma_z$
+2. $\ket {\Psi(0)} = \frac{1}{\sqrt{2}} \pmatrix{1 \\ 1}$
+3. Eigenvalues  / Eigenvectors of $\hat H$:
+Eigenvalues given by:
+$$
+\begin{align}
+\det(\hat H - E_i I) &= 0 \\
+\begin{vmatrix} 
+-\mu_b B - E_i & 0 \\ 0 & \mu_b B - E_i
+\end{vmatrix}
+&= 0 \\
+-(\mu_b B+ E_i)(\mu_b B - E_i) &= 0 \\
+(\mu_b B+ E_i)(\mu_b B - E_i) &= 0 \\
+E_i &= \pm \mu_b B \\
+\end{align}
+$$
+Eigenvectors given by:
+$\ket {E_+}$:
+$$
+\begin{align}
+&\left (
+\begin{array}{cc|c}
+- \mu_b B - \mu_b B & 0 & 0 \\
+0 & \mu_b B - \mu_b B & 0
+\end{array}
+\right ) \\
+\rightarrow & 
+\left (
+\begin{array}{cc|c}
+- \mu_b B - \mu_b B & 0 & 0 \\
+0 & 0 & 0
+\end{array}
+\right ) \\
+\rightarrow & \ket {E_+} = \pmatrix{0 \\ \lambda}
+\end{align}
+$$
+We can set our lambda equal to one so we get $\ket {E_+} = \pmatrix{0 \\ 1}$
+$\ket {E_-}$:
+$$
+\begin{align}
+&\left (
+\begin{array}{cc|c}
+- \mu_b B + \mu_b B & 0 & 0 \\
+0 & \mu_b B + \mu_b B & 0
+\end{array}
+\right ) \\
+\rightarrow & 
+\left (
+\begin{array}{cc|c}
+0 & 0 & 0 \\
+0 & \mu_b B + \mu_b B & 0
+\end{array}
+\right ) \\
+\rightarrow & \ket {E_-} = \pmatrix{\lambda \\ 0}
+\end{align}
+$$
+We can set our lambda equal to one so we get $\ket {E_-} = \pmatrix{1 \\ 0}$
+4. Find our initial coefficients:
+$$
+\begin{align}
+\alpha_+ (0) &= \braket{E_+ | \Psi(0)} \\
+&= \pmatrix{1 & 0} \frac{1}{\sqrt{2}} \pmatrix{1 \\ 1} \\
+&= \frac{1}{\sqrt 2} \\
+\alpha_- (0) &= \braket{E_- | \Psi(0)} \\
+&= \pmatrix{0 & 1} \frac{1}{\sqrt{2}} \pmatrix{1 \\ 1} \\
+&= \frac{1}{\sqrt 2} \\
+\end{align}
+$$
+5. Initial state vector:
+$$
+\begin{align}
+\ket {\Psi(0)} &= \frac{1}{\sqrt{2}} \ket{E_+} + \frac{1}{\sqrt{2}} \ket{E_-}
+\end{align}
+$$
+6. Final state vector:
+$$
+\begin{align}
+\ket{\Psi(t)} &= \frac{1}{\sqrt 2} e^{-i E_+ t / \hbar} \ket{E_+} + \frac{1}{\sqrt 2} e^{-iE_- t /\hbar} \ket{E_-} \\
+&= \frac{1}{\sqrt 2} \pmatrix{e^{-iE_+t/\hbar} \\ e^{-iE_-t/\hbar}} \\
+&= \frac{1}{\sqrt 2} \pmatrix{e^{-i\mu_b Bt/\hbar} \\ e^{i\mu_b Bt/\hbar}} \\
+\end{align}
+$$
+
+
+
+
+
