@@ -85,6 +85,18 @@ For every observable in classical mechanics there exists a corresponding **linea
 ### Postulate 3
 The measurement of an observable $\Omega$ in quantum mechanics on a state $\ket \Psi$ will yield one of the eigenvalues of $\hat \Omega$, $\omega$ with probability $P(\omega) = |\braket{\omega | \Psi}|^2$. After the measurement the state will change from $\ket \Psi$ to $\ket \omega$.
 
+Exercise:
+Consider a wave function in the basis $\ket 1, \ket 2, \ket 3$ given by
+$$
+\begin{align}
+\ket \psi &= N (-5 \ket 1 + (i  + 3) \ket 2 + 2\ket 3)
+\end{align}
+$$
+Find:
+- $N$ to normalize the wave function 
+- probability $\ket \psi$ is in state $\ket 1$
+- probability $\ket \psi$ is in state $\ket 2$
+- probability $\ket \psi$ is in state $\ket 3$
 ### Postulate 4
 $$
 \begin{align}
@@ -187,8 +199,48 @@ $$
 &= \frac{1}{\sqrt 2} \pmatrix{e^{-i\mu_b Bt/\hbar} \\ e^{i\mu_b Bt/\hbar}} \\
 \end{align}
 $$
-
-
+## Expectation and uncertainty
+The expectation value of a certain observable $\Omega$ acting on $\ket \Psi$ is represented with $\braket \Omega$ and is given by:
+$$
+\begin{align}
+\braket \Omega &= \sum_i \omega_i P_\Psi(\omega_i) \\
+&= \sum_i \omega_i |\braket{\omega_i | \Psi}|^2 \\
+&= \sum_i \omega_i \braket{\Psi | \omega_i} \braket{\omega_i | \Psi} \\
+&= \sum_i \omega_i \bra{\Psi} \ket{\omega_i} \braket{\omega_i | \Psi} \\
+&= \bra\Psi \sum_i \omega_i \ket{\omega_i} \bra{\omega_i} \ket{\Psi} \\
+&= \bra\Psi \hat \Omega \ket{\Psi} \\
+\end{align}
+$$
+Now what about uncertainty?
+Well using the formula given from John HSC himself we have that $\text{Var}(\Omega) = \text{E}(\Omega^2) + \text{E}(\Omega)^2$  and thus translated into QM we get:
+$$
+\begin{align}
+\sigma_{\Omega}^2 &= \braket{\Omega^2} - \braket{\Omega}^2 \\
+&= \braket{\Psi | \hat \Omega \hat \Omega | \Psi} - \braket{\Psi | \hat \Omega| \Psi}^2
+\end{align}
+$$
+Exercise:
+Given that $\ket \psi = \frac{1}{2}\pmatrix{\sqrt{3} \\ 1}$ find:
+$$
+\begin{align}
+\braket{\sigma_x} \\
+\braket{\sigma_y} \\
+\braket{\sigma_z} \\
+\end{align}
+$$
+Exercise:
+A particle has a wave function
+$$
+\begin{align}
+\ket \psi &= \frac{1}{\sqrt {17}} \left[\matrix{-3i- 2} \\ \right]
+\end{align}
+$$
+<% tp.file.cursor(2) %>
+## Multiple particles
+- Show tensor product
+- Show how it works
+- State conventions
+Apply it on 
 
 
 
