@@ -147,3 +147,10 @@ k^2 + \beta^2 &= \frac{2mV_0}{\hbar^2} \\
 \end{align}
 $$
 Where both equations intersect is where we have bounded solutions for our stationary state which we can then use to find $A, B, C, D$ and thus $\psi(x)$ and finally $\Psi(x, t)$
+
+$$
+\begin{align}
+2\beta^2 &= k^2(\tan^2(ka) + \cot^2(ka))
+\end{align}
+$$
+<% tp.file.cursor(2) %>
