@@ -40,4 +40,5 @@ This is a rough guide on solving the equation with all the key checkpoints.
 	1. The wave function is normalisable (otherwise it would not form a proper pdf)
 	2. The wave function is continuous
 	3. The wave function is continuously differentiable
-4. With these boundary conditions u will arrive at a set of equations that all have to be true. State these or solve them numerically if u want
+4. With these boundary conditions u will arrive at a set of equations that all have to be true. State these or solve them numerically if u want. lmk if u wanna sim ur findings as well
+5. A good sanity check is that you have finite $E$ values.
