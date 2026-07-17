@@ -1,4 +1,4 @@
-vIn Lagrangian mechanics we define the difference between the Kinetic energy $T$ and the potential energy $U$ as the **Lagrangian** $\mathcal L = T - U$. The integral if this object w.r.t time is the action:
+In Lagrangian mechanics we define the difference between the Kinetic energy $T$ and the potential energy $U$ as the **Lagrangian** $\mathcal L = T - U$. The integral if this object w.r.t time is the action:
 $$
 \begin{align}
 S = \int\mathcal L(q_i, \dot q_i, t) dt
