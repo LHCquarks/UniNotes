@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2111/Solutions to SE/Square well potential.md",
+                "file": "Maths/MATH2111/Differential Calculus/Stationary points and extrema.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Square well potential"
+              "title": "Stationary points and extrema"
             }
           }
         ]
@@ -170,6 +170,7 @@
   },
   "active": "ccdb271c3b46cdda",
   "lastOpenFiles": [
+    "Phys/PHYS2111/Solutions to SE/Square well potential.md",
     "Phys/PHYS2111/Solving Schrodinger's equation.md",
     "Phys/PHYS2113/Lagrangian Mechanics/The Lagrangian.md",
     "Phys/PHYS2113/Oscillators/Generalized Oscillators.md",
@@ -177,7 +178,6 @@
     "Phys/PHYS2113/Oscillators/Oscillators.md",
     "QMC Extras.md",
     "Phys/PHYS2111/Solutions to SE/The simple harmonic oscillator.md",
-    "Phys/PHYS2111/Solutions to SE/Square well potential.md",
     "Quant Master class.md",
     "Phys/PHYS2111/Expectation and uncertanty.md",
     "Phys/PHYS2111/Solutions to SE/The Delta Potential.md",
