@@ -24,4 +24,14 @@ $$
 Which describe a wave that moves at exactly $v = c$. This was a problem because by simple Galilean transformations this value should vary between inertial F.O.R however it does not.
 
 ## Action at a distance
-Another oddity of Maxwell's equations was that the electric and magnetic fields updated at a speed limit which was not the case with other fields at the time (ie: the effect of gravity was instant )
+Another oddity of Maxwell's equations was that the electric and magnetic fields updated at a speed limit which was not the case with other fields at the time (gravity). This idea of non-instantaneous interactions was much more pleasing and physicists wondered why cant this be the case with gravity? 
+## Proposed solutions
+In order to solve this crisis of Galilean transformations and Maxwell's equations people proposed a few solutions the most famous of which being the Aether.
+
+### Aether
+In the Aether model they proposed that Maxwell's equations were only true in the reference frame of an object called the Aether that permeated all of space. This solved two problems: the fact that the speed of light ignored Galilean transformations and the fact that EM waves were not traveling through a medium.
+
+### Michelson-Morley experiment
+To test their Aether theory Michelson and Morley conducted their famous experiment where they set up an interferometer and with it measured the speed of two beams of light traveling at right angles to each other. They conducted this experiment at two different points in the year showing that the Aether must have been traveling in the same direction as the earth the entire time an idea that would violate the Aristotle principle and so was discarded. This test basically proved that there did not exist an Aether and another idea must be used.
+### Lorentz transforms
+Using 
