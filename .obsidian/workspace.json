@@ -45,8 +45,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -193,7 +192,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e8e16729510496c7",
+  "active": "6626a0a6486437d0",
   "lastOpenFiles": [
     "Phys/PHYS2113/Special Relativity/Physics Before Special Relativity.md",
     "Phys/PHYS2113/Special Relativity/Special Relativity.md",
