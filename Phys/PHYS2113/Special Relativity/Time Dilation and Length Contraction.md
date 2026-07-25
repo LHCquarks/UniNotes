@@ -47,3 +47,9 @@ l' &= \frac{l}{\gamma}\\
 $$
 which means that length contracts between reference frames.
 ## Rest length
+Similar to time dilation we can define the invariant quantity $l_0$ as the distance between two events in the reference frame in which both events occur at the same time. With this quantity we have the formula
+$$
+\begin{align}
+l &= \frac{l_0}{\gamma}
+\end{align}
+$$
