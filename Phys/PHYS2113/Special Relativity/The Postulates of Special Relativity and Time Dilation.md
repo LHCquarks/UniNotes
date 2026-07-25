@@ -25,7 +25,33 @@ AB^2 &= AD^2 + DB^2 \\
 c^2\Delta t^2_{1/2} &= v^2\Delta t^2_{1/2} + L^2\\
 (c^2 - v^2)\Delta t^2_{1/2} &= L^2\\
 \Delta t^2_{1/2} &=\frac{L^2}{c^2 - v^2}\\
-\Delta t^2_{1/2} &=\frac{L^2}{c^2 - v^2}\\
+\frac{\Delta t^2}{4} &=\frac{L^2}{c^2}\frac{1}{1 - \frac{v^2}{c^2}}\\
+\Delta t^2 &=\frac{4L^2}{c^2}\frac{1}{1 - \frac{v^2}{c^2}}\\
+\Delta t^2 &=\frac{(\Delta t')^2}{1 - \frac{v^2}{c^2}}\\
+\Delta t &=\frac{\Delta t'}{\sqrt{1 - \frac{v^2}{c^2}}}\\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Thus the time between events changed between reference frames. This effect is known as **time dilation**, very weird.
+
+## Notation shorthands
+Because this
+$$
+\begin{align}
+\sqrt{1 - \frac{v^2}{c^2}}
+\end{align}
+$$
+appears a lot in special relativity we will define some symbols to express this more compactly. First, we define a sort of normalized velocity, (sometimes referred to simply as the velocity) as
+$$
+\begin{align}
+\beta = \frac{v}{c}
+\end{align}
+$$
+which is dimensionless. We also define the "Lorentz factor" as 
+$$
+\begin{align}
+\gamma &= \frac{1}{\sqrt{1 - \beta^2}}
+\end{align}
+$$
+
+
+
