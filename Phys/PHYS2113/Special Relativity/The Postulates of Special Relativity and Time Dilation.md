@@ -52,6 +52,25 @@ $$
 \gamma &= \frac{1}{\sqrt{1 - \beta^2}}
 \end{align}
 $$
+## Proper time
+The time dilation formula is
+$$
+\begin{align}
+\Delta t = \gamma\Delta t'
+\end{align}
+$$
+and if we do it the other way round we get
+$$
+\begin{align}
+\Delta t' &= \gamma \Delta t
+\end{align}
+$$
+This is concerning as according to both formulas the other frame experiences time slower than itself. The problem is that we are measuring two different things.
 
+Equation 1 measures the time taken between two events that occur at $x = 0$ in the $\mathcal S'$ reference frame
+
+Equation 2 measures the time taken between two events that occur at $x = 0$ in the $\mathcal S$ reference frame
+
+Thus there is no contradiction. We have a special term for the time between two events from the perspective of a reference frame where both events occur at $x = 0$. This is called the **proper time** and is denoted by $\Delta t_0$. This is an invariant between all frames and so is quite useful.
 
 
