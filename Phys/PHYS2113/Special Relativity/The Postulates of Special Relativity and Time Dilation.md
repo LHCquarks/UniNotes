@@ -20,8 +20,12 @@ We can then consider the elapsed time for the clock in both reference frames:
 Whist frame $\mathcal S'$  sees the light go a distance $2L$ and thus $\Delta t' = \frac{2L}{c}$,  frame $\mathcal S$ observes the light taking a longer path given by
 $$
 \begin{align}
-D &= 2\sqrt{v^2(\Delta t/2)^2 + L^2} \\
-(v\Delta t/2)^2 &= (v \)
+AB^2 &= AD^2 + DB^2 \\
+(c\Delta t_{1/2})^2 &= (v\Delta t_{1/2})^2 + L^2\\
+c^2\Delta t^2_{1/2} &= v^2\Delta t^2_{1/2} + L^2\\
+(c^2 - v^2)\Delta t^2_{1/2} &= L^2\\
+\Delta t^2_{1/2} &=\frac{L^2}{c^2 - v^2}\\
+\Delta t^2_{1/2} &=\frac{L^2}{c^2 - v^2}\\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
