@@ -39,4 +39,11 @@ Equation 2 measures the time taken between two events that occur at $x = 0$ in t
 
 Thus there is no contradiction. We have a special term for the time between two events from the perspective of a reference frame where both events occur at $x = 0$. This is called the **proper time** and is denoted by $\Delta t_0$. This is an invariant between all frames and so is quite useful.
 ## Length contraction
-Similar to time the distance between events change 
+Similar to time, the distance between two events change depending on the reference frame. If in the $\mathcal S$ F.O.R both events happen at $t = 0$ then we get the formula
+$$
+\begin{align}
+l' &= \frac{l}{\gamma}\\
+\end{align}
+$$
+which means that length contracts between reference frames.
+## Rest length
