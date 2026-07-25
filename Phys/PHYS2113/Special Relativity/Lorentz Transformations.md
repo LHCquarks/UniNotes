@@ -57,4 +57,3 @@ x_1' &= \gamma \left(x_1 - vt_1\right) \\
 &= 2 \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
