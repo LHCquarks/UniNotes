@@ -100,4 +100,3 @@ $$
 &= \frac{v_z}{\gamma(1 - \frac{Vv_x}{c^2})} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
