@@ -31,4 +31,13 @@ $$
 \end{align}
 $$
 This was first discovered by Minkowski. Often, instead of $(t,x,y,z)$ we write $(x^0, x^1, x^2, x^3)$ treating time very similarly as a space coordinate.
-
+## The Lorentz transform is a sort of rotation
+If we define an "angle" $\phi$ such that $\beta = \tanh(\phi)$ then our Lorentz transform becomes:
+$$
+\begin{align}
+x'^0 &= \cosh \phi x^0 - \sinh\phi x^1 \\
+x'^1 &= -\sinh \phi x^0 + \cosh \phi x^1
+\end{align}
+$$
+Which is just a rotation using hyperbolic trig functions instead of the normal trig functions. In this sense applying a Lorentz transform is just a hyperbolic rotation
+![[Pasted image 20260728145704.png]]
