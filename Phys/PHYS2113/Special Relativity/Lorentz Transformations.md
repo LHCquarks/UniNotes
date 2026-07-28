@@ -57,3 +57,47 @@ x_1' &= \gamma \left(x_1 - vt_1\right) \\
 &= 2 \\
 \end{align}
 $$
+## Velocity transformations
+### Addition of velocities
+Say we have 3 reference frames: $\mathcal S, \mathcal S', \mathcal S''$ and $\mathcal S''$ is moving with velocity $v_2$ W.R.T $\mathcal S'$ and $\mathcal S'$ is moving with velocity $v_1$ W.R.T $\mathcal S$.
+
+In order to find the velocity of $\mathcal S''$ W.R.T $\mathcal S$ we need to do two Lorentz transforms:
+$$
+\begin{align}
+\pmatrix{ct' \\ x'} &= \gamma_1 \pmatrix{1 & -\beta_1 \\ -\beta_1 & 1} \pmatrix{ct \\ x} \\
+\pmatrix{ct'' \\ x''} &= \gamma_2 \pmatrix{1 & -\beta_2 \\ -\beta_2 & 1}\gamma_1 \pmatrix{1 & -\beta_1 \\ -\beta_1 & 1} \pmatrix{ct \\ x} \\
+&= \gamma_1 \gamma_2 \pmatrix{1 + \beta_1 \beta_2 & -\beta_1 - \beta_2 \\ -\beta_1 - \beta_2 & 1 + \beta_1\beta_2} \pmatrix{ct \\ x} \\
+&= \gamma_1 \gamma_2 [1 + \beta_1\beta_2] \pmatrix{1 & -\frac{\beta_1 + \beta_2}{1 + \beta_1\beta_2} \\ -\frac{\beta_1 + \beta_2}{1 + \beta_1\beta_2} & 1} \pmatrix{ct \\ x} \\
+\end{align}
+$$
+This is just another Lorentz transform where $\gamma = \gamma_1\gamma_2[1 + \beta_1\beta_2]$ and $\beta = \frac{\beta_1 + \beta_2}{1 + \beta_1 \beta_2}$. We can now use $\beta$ to find the velocity of $\mathcal S''$ W.R.T $\mathcal S$:
+$$
+\begin{align}
+\frac{v}{c}&= \beta \\
+&= \frac{\beta_1 + \beta_2}{1 + \beta_1 \beta_2} \\
+v &= \frac{v_1 + v_2}{1 + \frac{v_1 v_2}{c^2}} \\
+\end{align}
+$$
+Thus adding velocities from two different reference frames looks like applying the above formula.
+### Velocity transformations
+This is cool but what about transforming velocities between frames of reference? We can use the Lorentz transforms on differentials:
+$$
+\begin{align}
+dt' &= \gamma(dt - V\frac{dx}{c^2}) \\
+dx' &= \gamma(dx - Vdt) \\
+dy' &= dy \\
+dz' &= dz \\
+\end{align}
+$$
+Dividing the left sides by $dt'$ we get
+$$
+\begin{align}
+\frac{dx'}{dt'} &= \frac{\gamma(dx - Vdt)}{\gamma(dt - V\frac{dx}{c^2})} \\
+&= \frac{v_x - V}{1 - \frac{Vv_x}{c^2}} \\
+\frac{dy'}{dt'} &= \frac{dy}{\gamma(dt - V\frac{dx}{c^2})} \\
+&= \frac{v_y}{\gamma(1 - \frac{Vv_x}{c^2})} \\
+\frac{dz'}{dt'} &= \frac{dz}{\gamma(dt - V\frac{dx}{c^2})} \\
+&= \frac{v_z}{\gamma(1 - \frac{Vv_x}{c^2})} \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>

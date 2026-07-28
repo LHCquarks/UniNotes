@@ -35,4 +35,23 @@ For steady current we know that $\nabla \cdot \vec J = 0$ and so $\frac{d\rho}{d
 This law is effectively a "fifth" Maxwell equation.
 
 ## Ampere's Law
-
+The Ampere-Maxwell law states that
+$$
+\begin{align}
+\vec \nabla \times \vec B &= \mu_0 \vec J + \mu_0\epsilon_0 \frac{\partial \vec E}{\partial t} \\
+\end{align}
+$$
+When $\vec E$ is constant this simplifies to
+$$
+\begin{align}
+\vec \nabla \times \vec B &= \mu_0 \vec J\\
+\end{align}
+$$
+Integrating both sides and applying stokes theorem we get
+$$
+\begin{align}
+\iint \vec \nabla \times \vec B \cdot d \vec A &= \mu_0 \iint \vec J \cdot d\vec A \\
+\int \vec B \cdot d \vec s &= \mu_0 I_{\text{enc}}
+\end{align}
+$$
+This law is really useful in finding the magnetic field of simple, symmetrical setups that we already know the direction of the magnetic field. If we know the direction of the field and its magnitude is constant around some path then we can simplify the above expression as $B = \frac{\mu_0I_{\text{enc}}}{l_{\text{path}}}$ where $l_\text{path}$ is the length of the selected path.
