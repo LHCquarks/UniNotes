@@ -41,3 +41,4 @@ x'^1 &= -\sinh \phi x^0 + \cosh \phi x^1
 $$
 Which is just a rotation using hyperbolic trig functions instead of the normal trig functions. In this sense applying a Lorentz transform is just a hyperbolic rotation
 ![[Pasted image 20260728145704.png]]
+This map of space and time is called space-time and shows that it is hyperbolic in the $x^0$ axis.
