@@ -21,3 +21,18 @@ $$
 \vec J &= \rho \vec v
 \end{align}
 $$
+## The continuity equation
+By the law of conservation of charge we know that for $\rho$ to decrease there must be an outgoing flux of current. By this we get the equation
+$$
+\begin{align}
+\oint_{\partial S} \vec J \cdot d\vec A &= -\frac{d}{dt}\int_S \rho d \tau \\
+\int_S \nabla \cdot \vec J d\tau &= \int_S -\frac{d\rho}{dt} d\tau \\
+\nabla \cdot \vec J &= -\frac{d\rho}{dt}
+\end{align}
+$$
+For steady current we know that $\nabla \cdot \vec J = 0$ and so $\frac{d\rho}{dt} = 0$.
+
+This law is effectively a "fifth" Maxwell equation.
+
+## Ampere's Law
+
