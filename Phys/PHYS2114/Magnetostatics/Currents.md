@@ -12,3 +12,12 @@ Considering a strip of length $dl_\perp$ we can recover the current with $\vec I
 
 ![[Pasted image 20260728131203.png]]
 This can also be rewritten as $\frac{d\vec I}{dl_\perp} = \vec K$
+## Volume current density
+In the exact same way that we extended current to 2d we can extend it to 3d with the volume current density $\vec J$:
+$$
+\begin{align}
+\vec I &= \int \vec J da_\perp \\
+\frac{d\vec I}{da_\perp} &= \vec J \\
+\vec J &= \rho \vec v
+\end{align}
+$$
