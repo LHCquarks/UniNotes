@@ -1,5 +1,4 @@
 Similar to the electric field we have a "Coulomb" type law with the magnetic field. This law is called the Biot-Savart law and can be expressed in the following ways:
-
 $$
 \begin{align}
 d\vec B &= \frac{\mu_0}{4\pi}I\frac{d\vec s \times\hat {\mathscr r}}{\mathscr r^2} \\
