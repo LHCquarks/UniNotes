@@ -8,4 +8,4 @@ tags:
 - [[Lorentz Transformations]]
 - [[Space Time and 4-Vectors]]
 - [[Proper Time and the Line Segment]]
-- [[Displacement]]
+- [[Dynamics]]
