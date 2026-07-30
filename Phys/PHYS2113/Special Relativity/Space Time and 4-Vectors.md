@@ -92,6 +92,3 @@ $$
 a^\mu b_\mu &= \sum_\mu a^\mu \delta^\mu_\nu x^\nu
 \end{align}
 $$
-
-
-

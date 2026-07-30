@@ -7,4 +7,4 @@ tags:
 - [[Time Dilation and Length Contraction]]
 - [[Lorentz Transformations]]
 - [[Space Time and 4-Vectors]]
-- 
+- [[Proper Time and the Line Segment]]
