@@ -23,12 +23,13 @@ x &= (ct, x, y, z)
 $$
 The 2nd vector is obviously a 4-vector so lets test if $k$ is also a 4-vector. The Quotient rule states that if $k^\mu x_\mu$ is invariant in all reference frames then $k$ is indeed a 4-vector and thus transforms like one. Obviously the value of the wave at a specific point in space time should be constant no matter the reference frame and thus the scalar product should be invariant thus $k$ is a 4-vector.
 
-This implies that going from one frame to another $k$ transforms via a Lorentz boost:
+This implies that going from one frame to another $k$ transforms via a Lorentz boost. Assuming that the wave is traveling in the $x$ direction and we are going to a reference frame traveling in the same direction we get:
 $$
 \begin{align}
 k' &= \gamma \pmatrix{1 &-\beta \\ - \beta & 1} k \\
-- \frac{\omega'}{c} &= 
+- \frac{\omega'}{c} &= \gamma(-\frac{\omega}{c} - \beta k^1) \\
+\omega' &= \gamma\omega + c\gamma\beta k^1 \\
+\omega' &= \gamma\omega + \gamma v k^1 \\
 
 \end{align}
 $$
-<% tp.file.cursor(2) %>
