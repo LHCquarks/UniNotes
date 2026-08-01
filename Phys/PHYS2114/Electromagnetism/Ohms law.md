@@ -16,6 +16,8 @@ $$
 V = IR
 \end{align}
 $$
+We will derive this law for a straight conducting wire but the value for $R$ is different for different geometries of wires.
+
 We start the derivation by assuming a conductor where $\vec J$ flows along the direction of the wire ($z$ direction) and the boundary conditions are $z = 0 \implies V = 0, z = L \implies V = V_0$.
 
 Because $\vec J = \sigma \vec E$, we get that $\vec E$ must also be directed along the length of the wire and thus $V$ only varies along the $z$ direction thus by Laplace's equation:
@@ -62,7 +64,39 @@ called the resistivity of the material. Some values for the resistivity of mater
 | Silicon          | $100$                 |
 | Diamond          | $10^{12}-10^{19}$     |
 | Glass            | $10^{9}-10^{13}$      |
-## Mechanism causing Ohm's law
+## Power
+Because normally $P = \vec J \cdot \vec E$ we get that according to Ohm's law:
+$$
+\begin{align}
+P = \sigma E^2
+\end{align}
+$$
+## Drude formula
 The resistivity of a material is caused by impurities "blocking" an electron's path
-![[Pasted image 20260801120643.png]]
+![[Pasted image 20260801121705.png]]
 Here we know that the electron's mean free path is given by $l = v\tau$ 
+Note that because $\vec v$ is not always in the direction of $\vec E$ Ohm's law is not valid on these microscopic distances and is only valid on scales of $\Delta r > l$.
+
+Further, using $F=ma$ we can find the average velocity of the electron:
+$$
+\begin{align}
+m\dot{\vec v} &= e\vec E \\
+\vec v &= \vec v_0 + \frac{e}{m}\vec E t \\
+\braket{\vec v} &= \braket{\vec v_0} + \braket{\frac{e}{m}\vec E t} \\
+&= 0 + \frac{e}{m}\vec E \braket{t} \\
+&= \frac{e}{m}\vec E \tau \\
+\end{align}
+$$
+We know that $\vec J = ne\braket{\vec v}$ where $n$ is the number of electrons per $m^3$. Substituting this in to Ohm's law we get
+$$
+\begin{align}
+\vec J &= \frac{ne^2\tau}{m} \vec E \\
+\end{align}
+$$
+Thus we have a formula for $\sigma$:
+$$
+\begin{align}
+\sigma &= \frac{ne^2\tau}{m}
+\end{align}
+$$
+This is called the Drude formula.
