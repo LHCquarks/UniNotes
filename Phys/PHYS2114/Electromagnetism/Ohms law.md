@@ -51,7 +51,7 @@ $$
 \rho &= \frac{1}{\sigma}
 \end{align}
 $$
-called the resistivity of the material. Some values for the resistivity of materials are bellow
+called the resistivity of the material. Some values for the resistivity of materials at $T = 20^\circ$ are bellow
 
 | Material         | $\rho$                |
 | ---------------- | --------------------- |
@@ -62,3 +62,7 @@ called the resistivity of the material. Some values for the resistivity of mater
 | Silicon          | $100$                 |
 | Diamond          | $10^{12}-10^{19}$     |
 | Glass            | $10^{9}-10^{13}$      |
+## Mechanism causing Ohm's law
+The resistivity of a material is caused by impurities "blocking" an electron's path
+![[Pasted image 20260801120643.png]]
+Here we know that the electron's mean free path is given by $l = v\tau$ 
