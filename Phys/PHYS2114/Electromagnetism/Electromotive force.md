@@ -40,6 +40,33 @@ $$
 
 \end{align}
 $$
+### Differential form of Faraday's law
+By the definition of voltage $\varepsilon = \int_\gamma \vec E \cdot d\vec l$ we can get the differential form of Faraday's law:
+$$
+\begin{align}
+\varepsilon &= -\frac{\partial \phi}{\partial t} \\
+\int_{\partial A} \vec E\cdot  d\vec l &= -\frac{\partial}{\partial t} \int_{A} \vec B\cdot d\vec A \\
+\int_{A} (\vec \nabla \times \vec E) \cdot d\vec A  &= \int_{A} - \frac{\partial \vec B}{\partial t}\cdot d\vec A
+\end{align}
+$$
+Due to $A$ being arbitrary the intergrands must be equal hence:
+$$
+\begin{align}
+\vec \nabla \times \vec E &= -\frac{\partial \vec B}{\partial t}
+\end{align}
+$$
+## Self Inductance
+Consider a loop of wire that carries a current of $I$. This current then creates a magnetic field and hence has a flux. The flux through this wire is proportional to the current in the wire by a factor called the inductance $L$ ($\Phi = L I$). 
+
+$L$ depends on the shape and size of the wire.
+
+By Faraday's law we get that
+$$
+\begin{align}
+\varepsilon &= -L\frac{d I}{dt}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 
 
 
