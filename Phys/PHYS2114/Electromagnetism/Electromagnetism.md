@@ -6,5 +6,6 @@ This is Oleg's section of the course and is very unorganized. This part of the c
 
 Content:
 - [[Ohms law]]
-- [[Electromotive force]]
-- [[Electromagnetic induction]]
+- [[Electromotive Force and Inductance]]
+- [[Energy Density of Magnetic Field]]
+- 

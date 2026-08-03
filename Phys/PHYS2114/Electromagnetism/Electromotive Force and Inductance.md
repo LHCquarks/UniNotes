@@ -66,7 +66,7 @@ $$
 \varepsilon &= -L\frac{d I}{dt}
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+
 
 
 
