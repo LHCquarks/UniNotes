@@ -14,4 +14,32 @@ $$
 V &= \frac{\varepsilon R}{R + R_\text{int}}
 \end{align}
 $$
+## Motional EMF and Faraday's Law
+Faraday's law states:
+$$
+\begin{align}
+\varepsilon &= -\frac{\partial \Phi}{\partial t}
+\end{align}
+$$
+Thus changing $\Phi$ can produce an emf. Now the question is how can we change $\Phi$? From the definition of $\Phi$:
+$$
+\begin{align}
+\Phi &= \int_A \vec B \cdot d\vec A
+\end{align}
+$$
+so we can either vary $\vec B$ over time or $d\vec A$. 
+### Electric generator
+A generator consists of a loop of wire in a constant, uniform magnetic field. The loop is free to spin along an axis perpendicular to $\vec B$ with $\vec A$ making an angle of $\theta$ with the axis both perpendicular to $\vec \omega, \vec B$.
+![[Pasted image 20260803113644.png]]
+Thus $\vec B \cdot \vec A = BA\cos(\omega t)$ and so:
+$$
+\begin{align}
+\Phi &= BA\cos(\omega t) \\
+\varepsilon &= -\frac{\partial \Phi}{\partial t} \\
+\implies \varepsilon &= BA\sin(\omega t) \\
+
+\end{align}
+$$
+
+
 
