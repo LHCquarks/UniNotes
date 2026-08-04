@@ -139,3 +139,21 @@ p^0 &= E/c \\
 p &= (E / c, m\gamma \vec v)
 \end{align}
 $$
+### $E = mc^2$ in its full glory
+Because this momentum vector is a 4-vector it is linear and their length squared is invariant in all reference frames. Thus $E^2 / c^2 - p^2$ is invariant and because $c$ is invariant we get the prettier result
+$$
+\begin{align}
+E^2 - p^2c^2 = (E')^2 - (p')^2c^2
+\end{align}
+$$
+
+For a material particle in it's rest frame $p_0 = (mc, 0, 0, 0)$ and thus for all reference frames
+$$
+\begin{align}
+m_0^2 c^4 &= E^2 - p^2c^2 \\
+E^2 &= m_0^2c^4 + p^2c^2
+\end{align}
+$$
+### Conservation of momentum
+As in Newtonian mechanics momentum and energy are conserved however this just means
+
