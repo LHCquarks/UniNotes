@@ -70,17 +70,6 @@ $$
 \frac{dx}{d\tau} &= \gamma(c, \vec v)
 \end{align}
 $$
-## 4-Momentum
-Now that we have our 4-velocity we can define our 4-momentum as
-$$
-\begin{align}
-p &= m\frac{dx}{d\tau} \\
-&= m\gamma(c, \vec v)
-\end{align}
-$$
-where $m$ is our rest mass. Further, this implies that our old 3-momentum is $m\gamma \vec v$.
-
-Sometimes $m\gamma$ is packaged up into another term $m_\text{rel}$ however this is not a drop in replacement for classical mechanics and so we will not work with it.
 ## 4-Energy
 Consider an atom that is stationary in frame $\mathcal S$ that emits two photons in opposite directions.
 ![[Pasted image 20260804141814.png]]
@@ -128,5 +117,25 @@ There is nothing special about this setup so energy transforms via
 $$
 \begin{align}
 E' &= \gamma E
+\end{align}
+$$
+
+## 4-Momentum
+Now that we have our 4-velocity we can define our 4-momentum as
+$$
+\begin{align}
+p &= m\frac{dx}{d\tau} \\
+&= m\gamma(c, \vec v)
+\end{align}
+$$
+where $m$ is our rest mass. Further, this implies that our old 3-momentum is $m\gamma \vec v$.
+
+Sometimes $m\gamma$ is packaged up into another term $m_\text{rel}$ however this is not a drop in replacement for classical mechanics and so we will not work with it.
+
+It is clear that the the time component of our 4-momentum is the energy of our particle
+$$
+\begin{align}
+p^0 &= E/c \\
+p &= (E / c, m\gamma \vec v)
 \end{align}
 $$
