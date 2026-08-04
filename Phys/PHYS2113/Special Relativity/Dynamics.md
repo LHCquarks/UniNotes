@@ -70,3 +70,63 @@ $$
 \frac{dx}{d\tau} &= \gamma(c, \vec v)
 \end{align}
 $$
+## 4-Momentum
+Now that we have our 4-velocity we can define our 4-momentum as
+$$
+\begin{align}
+p &= m\frac{dx}{d\tau} \\
+&= m\gamma(c, \vec v)
+\end{align}
+$$
+where $m$ is our rest mass. Further, this implies that our old 3-momentum is $m\gamma \vec v$.
+
+Sometimes $m\gamma$ is packaged up into another term $m_\text{rel}$ however this is not a drop in replacement for classical mechanics and so we will not work with it.
+## 4-Energy
+Consider an atom that is stationary in frame $\mathcal S$ that emits two photons in opposite directions.
+![[Pasted image 20260804141814.png]]
+In the $\mathcal S$ frame the atom initially had energy $E_0$ and afterwards had energy $E_1 = E_0 - \Delta E$.
+
+In the frame $\mathcal S'$ moving at a velocity of $v$ relative to $\mathcal S$ we experience a Doppler shift in the photons.
+In this reference frame the initial and final energy is given by $E_1' = E_0' - \Delta E'$.
+
+Using the Doppler shift formula we can get $\Delta E'$ in terms of $\Delta E$:
+$$
+\begin{align}
+\Delta E' &= \sqrt{\frac{1 + \beta}{1 - \beta}}\left(\frac{\Delta E}{2}\right) + \sqrt{\frac{1 - \beta}{1 + \beta}}\left(\frac{\Delta E}{2}\right) \\
+&= \gamma \Delta E
+\end{align}
+$$
+This is different from the stationary frame. 
+
+To recap we have the two equations
+$$
+\begin{align}
+E_1 &= E_0 - \Delta E \\
+E_1' &= E_0' - \gamma \Delta E
+\end{align}
+$$
+Combining these equations we get
+$$
+\begin{align}
+(E_0' - E_0) - (E_1' - E_1) = (\gamma - 1) \Delta E
+\end{align}
+$$
+Now, notice that because the atom is moving in $\mathcal S'$ it must have kinetic energy which we write as
+$$
+\begin{align}
+T_0' &= E_0' - E_0 \\
+T_1' &= E_1' - E_1
+\end{align}
+$$
+and hence
+$$
+\begin{align}
+T_0' - T_1' &= (\gamma - 1) \Delta E
+\end{align}
+$$
+There is nothing special about this setup so energy transforms via 
+$$
+\begin{align}
+E' &= \gamma E
+\end{align}
+$$
