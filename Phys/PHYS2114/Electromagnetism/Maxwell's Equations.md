@@ -48,4 +48,3 @@ $$
 \vec \nabla \times \vec B &= \frac{1}{c}\left(4\pi \vec J + \frac{\partial \vec E}{\partial t}\right)
 \end{align}
 $$
-<% tp.file.cursor(2) %>
