@@ -156,4 +156,6 @@ E^2 &= m_0^2c^4 + p^2c^2
 $$
 ### Conservation of momentum
 As in Newtonian mechanics momentum and energy are conserved however this just means
+that the 4-momentum is conserved for all collisions. This is really useful
+
 
