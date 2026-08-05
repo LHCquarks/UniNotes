@@ -81,3 +81,6 @@ $$
 \vec J&= \frac{\sqrt{2}B_0}{\mu_0\delta}e^{-z/\delta}\cos(z/\delta - \omega t - \pi / 4)\\
 \end{align}
 $$
+The plot of the above can be seen below.
+![[skinEffect.gif|700]]
+As can be seen the current flows mostly on the edge of the material and hence is called the skin effect.
