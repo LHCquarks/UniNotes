@@ -70,3 +70,14 @@ $$
 \end{align}
 $$
 From here it is really easy to find both $\vec J$ and $\vec E$:
+
+For $\vec J$ we use that $\vec \nabla \times \vec B = \mu_0\vec J$ and thus
+$$
+\begin{align}
+\mu_0\vec J &= -\partial_zB_y \hat \imath\\
+&= -B_0\left[-\frac{1}{\delta}e^{-z/\delta}e^{i(z/\delta-\omega t)} + \frac{i}{\delta}e^{z / \delta} e^{i(z / \delta - \omega t)}\right] \\
+&= \frac{B_0}{\delta}(1 - i)e^{-z/\delta}e^{i(z/\delta-\omega t)}\\
+\vec J&= \frac{\sqrt{2}B_0}{\mu_0\delta}e^{-i\pi/4}e^{-z/\delta}e^{i(z/\delta-\omega t)}\\
+\vec J&= \frac{\sqrt{2}B_0}{\mu_0\delta}e^{-z/\delta}\cos(z/\delta - \omega t - \pi / 4)\\
+\end{align}
+$$
