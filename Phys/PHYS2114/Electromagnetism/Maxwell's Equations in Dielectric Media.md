@@ -1,3 +1,4 @@
+## Maxwell's Equations in a Media
 In a vacuum Maxwell's equations can be written:
 $$
 \begin{align}
@@ -30,4 +31,4 @@ $$
 \vec B &= \mu_0 \mu \vec H
 \end{align}
 $$
-and our Maxwell equations remain as above.
+and our Maxwell equations remain as above. Importantly $\rho$ and $\vec J$ are only for external charges in these equations as the internal charges are encapsulated by the $\epsilon$ and $\mu$ terms.

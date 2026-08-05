@@ -11,3 +11,4 @@ Content:
 - [[Phys/PHYS2114/Electromagnetism/Maxwell's Equations|Maxwell's Equations]]
 - [[Energy Flux and Poynting Vector]]
 - [[Maxwell's Equations in Dielectric Media]]
+- [[Skin Effect]]
