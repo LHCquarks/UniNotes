@@ -12,3 +12,5 @@ Content:
 - [[Energy Flux and Poynting Vector]]
 - [[Maxwell's Equations in Dielectric Media]]
 - [[Skin Effect]]
+- [[Potentials and Gauge Invariance]]
+- 
