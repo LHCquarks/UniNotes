@@ -26,13 +26,4 @@ $$
 We will now assume that our wave propagates in the $x$-direction meaning $\vec S \parallel \hat x$  and thus $\vec E, \vec B \perp \hat x$ so $E_x = B_x = 0$. We can also align our coordinate system so that 
 
 
-These two equations are wave equations. Assuming that our wave propagates only in the $x$-direction $(E_x = B_x = 0)$ and assuming that $\vec E$ is only in the $y$-direction we can find the direction of $\vec A$ with:
-$$
-\begin{align}
-\left(\mu_0\epsilon_0\partial^2_t - \partial^2_y\right)E_{y} &= 0 \\
-\left(\mu_0\epsilon_0\partial^2_t - \partial^2_2\right)B_{y, z} &= 0
-\end{align}
-$$
-These equations have the solution $f(x, t) = f_-(x - ct) + f_+(x + ct)$ for arbitrary functions $f_-$ and $f_+$ and with $c = \frac{1}{\sqrt{\mu_0\epsilon_0}}$.
-
-The solution for $f_-$ represents the wave moving to the right whilst $f_+$ represents the wave moving to the left.
+These two equations are wave equations. Assuming that our wave propagates only in the $x$-direction $(E_x = B_x = 0)$.
