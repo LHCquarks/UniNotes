@@ -23,6 +23,17 @@ $$
 \left(\mu_0\epsilon_0\partial^2_t - \nabla^2\right)\vec B &= 0
 \end{align}
 $$
+Thus for each Cartesian component of $\vec E$ and $\vec B$ we get the differential equation
+$$
+\begin{align}
+\mu_0\epsilon_0\frac{\partial^2 f}{\partial t^2} - \frac{\partial^2 f}{\partial x^2} &= 0 \\
+\end{align}
+$$
+This is just the wave equation and has the known solutions $f(x, t) = f_-(x-ct) + f_+(x + ct)$ where $c = \frac{1}{\sqrt{\mu_0\epsilon_0}}$ and $f_-, f_+$ are arbitrary functions. Here $f_-$ propagates from left to right whist $f_+$ propagates from right to left.
+
+## Plane wave solution
+Consider a wave that only depends on $x$. In this case 
+
 We will now assume that our wave propagates in the $x$-direction meaning $\vec S \parallel \hat x$  and thus $\vec E, \vec B \perp \hat x$ so $E_x = B_x = 0$. We can also align our coordinate system so that 
 
 
