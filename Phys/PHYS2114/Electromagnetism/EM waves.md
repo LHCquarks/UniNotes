@@ -24,4 +24,4 @@ $$
 (2) \implies (\mu_0\epsilon_0\partial_t^2 - \nabla^2)\vec A &= 0
 \end{align}
 $$
-
+Now, say that the wave is moving in the $x$-direction which means that
