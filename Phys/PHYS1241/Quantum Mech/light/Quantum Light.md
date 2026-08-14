@@ -1,4 +1,4 @@
-In 1905, in response to max plank's solution to the [[UV catastrophe]] Einstein proposed that light was infact a particle not a [[EM waves|EM wave]]. This theory was proven by the [[Photoelectric Effect]].
+In 1905, in response to max plank's solution to the [[UV catastrophe]] Einstein proposed that light was infact a particle not a [[Phys/PHYS1241/Waves/EM waves|EM wave]]. This theory was proven by the [[Photoelectric Effect]].
 
 ## Properties
 - The energy of a light ray is given by $E = hf$

@@ -13,4 +13,4 @@ Content:
 - [[Maxwell's Equations in Dielectric Media]]
 - [[Skin Effect]]
 - [[Potentials and Gauge Invariance]]
-- 
+- [[Phys/PHYS2114/Electromagnetism/EM waves|EM waves]]
