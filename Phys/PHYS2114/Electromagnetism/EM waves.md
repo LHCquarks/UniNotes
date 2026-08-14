@@ -32,7 +32,29 @@ $$
 This is just the wave equation and has the known solutions $f(x, t) = f_-(x-ct) + f_+(x + ct)$ where $c = \frac{1}{\sqrt{\mu_0\epsilon_0}}$ and $f_-, f_+$ are arbitrary functions. Here $f_-$ propagates from left to right whist $f_+$ propagates from right to left.
 
 ## Plane wave solution
-Consider a wave that only depends on $x$. In this case 
+Consider a wave that only depends on $x$ and $t$. In this case we find that 
+$$
+\begin{align}
+\mu_0\epsilon_0 \frac{\partial^2 E_x}{\partial t^2} - \frac{\partial^2E_x}{\partial x^2} &= 0 \\
+E_x(x, t) &= E_{x, -}(x - ct) + E_{x, +}(x + ct) \\
+\mu_0\epsilon_0 \frac{\partial^2 E_y}{\partial t^2} - \frac{\partial^2E_y}{\partial y^2} &= 0 \\
+\mu_0\epsilon_0 \frac{\partial^2 E_y}{\partial t^2} &= 0 \\
+E_y(x, t) &= E_{y, 1}(x)t + E_{y, 2}(x) \\
+\mu_0\epsilon_0 \frac{\partial^2 E_z}{\partial t^2} - \frac{\partial^2E_z}{\partial z^2} &= 0 \\
+\mu_0\epsilon_0 \frac{\partial^2 E_z}{\partial t^2} &= 0 \\
+E_z(x, t) &= E_{z, 1}(x)t + E_{z, 2}(x) \\
+\mu_0\epsilon_0 \frac{\partial^2 B_x}{\partial t^2} - \frac{\partial^2B_x}{\partial x^2} &= 0 \\
+B_x(x, t) &= B_{x, -}(x - ct) + B_{x, +}(x + ct) \\
+\mu_0\epsilon_0 \frac{\partial^2 B_y}{\partial t^2} - \frac{\partial^2B_y}{\partial y^2} &= 0 \\
+\mu_0\epsilon_0 \frac{\partial^2 B_y}{\partial t^2} &= 0 \\
+B_y(x, t) &= B_{y, 1}(x)t + B_{y, 2}(x) \\
+\mu_0\epsilon_0 \frac{\partial^2 B_z}{\partial t^2} - \frac{\partial^2B_z}{\partial z^2} &= 0 \\
+\mu_0\epsilon_0 \frac{\partial^2 B_z}{\partial t^2} &= 0 \\
+B_z(x, t) &= B_{z, 1}(x)t + B_{z, 2}(x) \\
+
+\end{align}
+$$
+
 
 We will now assume that our wave propagates in the $x$-direction meaning $\vec S \parallel \hat x$  and thus $\vec E, \vec B \perp \hat x$ so $E_x = B_x = 0$. We can also align our coordinate system so that 
 
