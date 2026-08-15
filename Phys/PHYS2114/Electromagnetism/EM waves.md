@@ -104,9 +104,16 @@ $$
 &= \left(\partial_yA_z - \partial zA_y, \partial_z A_x - \partial_xA_z, \partial_x A_y - \partial_y A_x\right) \\
 &= \left(0 - 0, 0 - \partial_xA_z, \partial_x A_y - 0\right) \\
 &= \left(0, - \frac{d A_z}{d\zeta}\frac{\partial \zeta}{\partial x}, \frac{d A_y}{d\zeta}\frac{\partial \zeta}{\partial x}\right) \\
-&= \left(0, - \frac{d A_z}{d\zeta}, \frac{d A_y}{d\zeta}\frac{\partial \zeta}{\partial x}\right) \\
+&= \left(0, - \frac{d A_z}{d\zeta}, \frac{d A_y}{d\zeta}\right) \\
 
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Taking $\vec E \cdot \vec B$ we get
+$$
+\begin{align}
+\vec E \cdot \vec B &= -c\frac{dA_y}{d\zeta}\frac{dA_z}{d\zeta} + c\frac{dA_z}{d\zeta}\frac{dA_y}{d\zeta} \\
+&= 0
+\end{align}
+$$
+so $\vec E$ and $\vec B$ are always perpendicular to each other and the direction of motion.
 
