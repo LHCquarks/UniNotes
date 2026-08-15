@@ -115,5 +115,5 @@ $$
 &= 0
 \end{align}
 $$
-so $\vec E$ and $\vec B$ are always perpendicular to each other and the direction of motion.
+so $\vec E$ and $\vec B$ are always perpendicular to each other and the direction of motion. In-fact we can say more, if $\hat n$ is the direction of propigation w
 
