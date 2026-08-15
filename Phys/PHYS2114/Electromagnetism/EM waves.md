@@ -64,7 +64,9 @@ Relating our potentials back to our fields we have
 $$
 \begin{align}
 \vec B &= \vec \nabla \times \vec A \\
-\vec E &= -\nabla \varphi - \frac{\partial \vec A}{\partial t}
+\vec E &= -\nabla \varphi - \frac{\partial \vec A}{\partial t} \\
+&= 0- \frac{\partial \vec A}{\partial t} \\
+\vec E &= - \frac{\partial \vec A}{\partial t} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
