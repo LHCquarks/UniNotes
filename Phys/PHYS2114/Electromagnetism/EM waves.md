@@ -124,8 +124,9 @@ $$
 Which we can then substitute into the poynting vector to get
 $$
 \begin{align}
-\vec S &= \frac{1}{\mu_0}
+\vec S &= \frac{1}{\mu_0c}\left[\vec E\times \left[\hat n \times \vec E\right]\right] \\
+\vec S &= \frac{1}{\mu_0c}E^2 \hat n
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+
 
