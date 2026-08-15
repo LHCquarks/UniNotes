@@ -115,5 +115,17 @@ $$
 &= 0
 \end{align}
 $$
-so $\vec E$ and $\vec B$ are always perpendicular to each other and the direction of motion. In-fact we can say more, if $\hat n$ is the direction of propigation w
+so $\vec E$ and $\vec B$ are always perpendicular to each other and the direction of motion. In-fact we can say more, if $\hat n$ is the direction of propagation we hat that
+$$
+\begin{align}
+\vec B &= \frac{1}{c} \left[\hat n \times \vec E\right]
+\end{align}
+$$
+Which we can then substitute into the poynting vector to get
+$$
+\begin{align}
+\vec S &= \frac{1}{\mu_0}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 
