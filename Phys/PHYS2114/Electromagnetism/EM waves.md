@@ -143,3 +143,7 @@ $$
 \end{align}
 $$
 where $\omega = c k$ and $k$ is called the wave number.
+## Polarisation
+### $b$ vector representation
+### probability density matrix
+### stoke's parameters
