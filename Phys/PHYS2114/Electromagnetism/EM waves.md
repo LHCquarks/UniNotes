@@ -129,4 +129,17 @@ $$
 \end{align}
 $$
 
-
+## Monochromatic light
+Monochromatic light only has one frequency hence
+$$
+\begin{align}
+\vec E \propto e^{-i\omega t}
+\end{align}
+$$
+We know that $\vec E$ is a function of $x - ct$ hence $\vec E$ must be given by
+$$
+\begin{align}
+\vec E &= \vec E_0 e^{ikx - i\omega t}
+\end{align}
+$$
+where $\omega = c k$ and $k$ is called the wave number.
