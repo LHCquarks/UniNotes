@@ -102,7 +102,9 @@ $$
 \begin{align}
 \vec B &= \vec \nabla \times \vec A \\
 &= \left(\partial_yA_z - \partial zA_y, \partial_z A_x - \partial_xA_z, \partial_x A_y - \partial_y A_x\right) \\
-&= \left(0 - 0, \partial_z A_x - \partial_xA_z, \partial_x A_y - \partial_y A_x\right) \\
+&= \left(0 - 0, 0 - \partial_xA_z, \partial_x A_y - 0\right) \\
+&= \left(0, - \frac{d A_z}{d\zeta}\frac{\partial \zeta}{\partial x}, \frac{d A_y}{d\zeta}\frac{\partial \zeta}{\partial x}\right) \\
+&= \left(0, - \frac{d A_z}{d\zeta}, \frac{d A_y}{d\zeta}\frac{\partial \zeta}{\partial x}\right) \\
 
 \end{align}
 $$
