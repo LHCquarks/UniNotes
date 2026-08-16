@@ -142,8 +142,45 @@ $$
 \vec E &= \vec E_0 e^{ikx - i\omega t}
 \end{align}
 $$
-where $\omega = c k$ and $k$ is called the wave number.
-## Polarisation
+where $\omega = c k$ and $k$ is called the wave number and $\vec E_0$ is some real vector encoding the initial state of the wave. From just the electric field we can get both the vector potential and then the magnetic field so $\vec E$ is sufficient to describe the entire wave.
+## Polarization
 ### $b$ vector representation
+Whist this $\vec E_0$ representation is good and all we can find a more enlightening way of putting it.
+
+Because $\vec E_0$ is an arbitrary complex vector $E_0^2 = E_{0, x}^2 + E_{0, y}^2 + E_{0, z}^2$ is an arbitrary complex number and so we can re-write it as
+$$
+\begin{align}
+E_0^2 &= |E_0^2| e^{-2i\alpha}
+\end{align}
+$$
+For some angle alpha and thus there is some complex vector $\vec b$ such that $b^2 \in \mathbb R$ and 
+$$
+\begin{align}
+\vec E_0 &= \vec b e^{-i\alpha}
+\end{align}
+$$
+Further, we can write this complex vector as $\vec b = \vec b_1 + i\vec b_2$ where $\vec b_1, \vec b_2 \in \mathbb R^3$ and we get
+$$
+\begin{align}
+b^2 &= b_1^2 - b_2^2 + 2i\vec b_1 \cdot \vec b_2
+\end{align}
+$$
+which because $b^2 \in \mathbb R$ implies that $\vec b_1 \perp \vec b_2$.
+
+
+Letting our EM wave travel along the $x$-axis and assuming that $\vec b_1$ is along the $y$-axis we can write our EM wave as:
+$$
+\begin{align}
+E_y &= b_1 \cos (\omega t - kx + \alpha) \\
+E_z &= \pm b_2 \sin(\omega t - kx + \alpha)
+\end{align}
+$$
+and hence our electric field obeys the relationship 
+$$
+\begin{align}
+\frac{E_y^2}{b_1^2} + \frac{E_z^2}{b_2^2} &= 1
+\end{align}
+$$
+the equation for an ellipse. This is called **elliptically polarized light**.
 ### probability density matrix
 ### stoke's parameters
