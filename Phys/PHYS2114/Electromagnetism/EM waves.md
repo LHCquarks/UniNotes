@@ -182,5 +182,7 @@ $$
 \end{align}
 $$
 the equation for an ellipse. This is called **elliptically polarized light**.
+### Partially polarized light
+A crucial assumption we made  
 ### probability density matrix
 ### stoke's parameters
