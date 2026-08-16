@@ -183,6 +183,12 @@ $$
 $$
 the equation for an ellipse. This is called **elliptically polarized light**.
 ### Partially polarized light
-A crucial assumption we made  
+A crucial assumption we made was $\vec E_0$  was independent of time. If however $\vec E_0$ changes slowly throughout time we get our new electric field as
+$$
+\begin{align}
+\vec E &= \vec E_0(t) e^{-i\omega t}
+\end{align}
+$$
+
 ### probability density matrix
 ### stoke's parameters
