@@ -189,6 +189,16 @@ $$
 \vec E &= \vec E_0(t) e^{-i\omega t}
 \end{align}
 $$
+### Polarization density matrix
+Polarization behaves identically to entangled spin in quantum mechanics so we will take a leaf out of their book and construct a spin density matrix.
 
-### probability density matrix
-### stoke's parameters
+Essentially we will construct a matrix with each entry $P_{\alpha, \beta}$ describing the probability that the light is found in a polarization of $\alpha,\beta$. This is done through the time average and normalizing:
+$$
+\begin{align}
+P &= \pmatrix{\over{ad}\\}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
+
+
+### Stoke's parameters
