@@ -192,13 +192,54 @@ $$
 ### Polarization density matrix
 Polarization behaves identically to entangled spin in quantum mechanics so we will take a leaf out of their book and construct a spin density matrix.
 
-Essentially we will construct a matrix with each entry $P_{\alpha, \beta}$ describing the probability that the light is found in a polarization of $\alpha,\beta$. This is done through the time average and normalizing:
+Essentially we will construct a matrix with each entry $P_{\alpha, \beta}$ describing the probability that the light is found in a polarization of $\alpha,\beta$. This is done through the time average and normalizing (letting the trace be $1$):
 $$
 \begin{align}
-P &= \pmatrix{\over{ad}\\}
+P &= \frac{1}{\overline{E_{0,y}E_{0, y}^*} + \overline{E_{0,z} E_{0, z}^*}}\pmatrix{
+\overline{E_{0,y}E_{0, y}^*} & \overline{E_{0,y} E_{0, z}^*} \\
+\overline{E_{0,z}E_{0, y}^*} & \overline{E_{0,z} E_{0, z}^*}
+} \\
+&= \frac{1}{|E_{0,y}|^2 + |E_{0,z}|^2}\pmatrix{
+\overline{E_{0,y}E_{0, y}^*} & \overline{E_{0,y} E_{0, z}^*} \\
+\overline{E_{0,z}E_{0, y}^*} & \overline{E_{0,z} E_{0, z}^*}
+} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+It goes without saying but this is a Hermitian matrix.
 
+For fully polarized light $E_0$ is time independent so the determinate of our polarization density matrix is
+$$
+\begin{align}
+|P| &= E_{0, y}E_{0, y}^*E_{0, z}E_{0, z}^* - E_{0, y}E_{0, z}^* E_{0, z}E_{0, y}^* \\
+&= 0
+\end{align}
+$$
+For fully polarized light it is equally likely for it to be in the $y$-direction as in the $z$-direction and so our PDM becomes
+$$
+\begin{align}
+P &= \frac{1}{2}\pmatrix{1 & 0 \\ 0 & 1} \\
+|P| &= \frac{1}{4}
 
+\end{align}
+$$
+
+We can then numerically define the **degree of polarization** ($p$) of our wave with
+$$
+\begin{align}
+|P| &= \frac{1}{4} ( 1 - p^2)
+\end{align}
+$$
 ### Stoke's parameters
+Because the matrix is hermitian and the trace adds to 1 we only need 3 real numbers to fully parameterize the matrix. These parameters are called **stoke's parameters** and are:
+$$
+\begin{align}
+P &= \frac{1}{2}\pmatrix{1 + \zeta_3 & \zeta_1 - i\zeta_2 \\ \zeta_1 + i \zeta_2 & 1 - \zeta_3 }
+\end{align}
+$$
+The determinate of this matrix is then
+$$
+\begin{align}
+|P| &= \frac{1}{4}(1 - \zeta_1^2 - \zeta_2^2 - \zeta_3^2)
+\end{align}
+$$
+Hence $p = \sqrt{\zeta_1^2 + \zeta_2^2 + \zeta_3^2}$ 
