@@ -1,3 +1,6 @@
+---
+aliases:
+---
 ## From Maxwell's equations
 Consider free space where $\rho = 0, \vec J = 0$ and take the two curl Maxwell equations:
 $$
@@ -243,3 +246,21 @@ $$
 \end{align}
 $$
 Hence $p = \sqrt{\zeta_1^2 + \zeta_2^2 + \zeta_3^2}$ 
+## Refractance and transmisiantce
+Consider 2 media with refractive indices of $n_1$ and $n_2$ respectively and incident a wave with a fixed frequency at an angle $\theta_i$ as in the diagram below
+
+Also consider time $t=0$ thus our equations for our light waves become
+$$
+\begin{align}
+\vec E_i &= \vec E_{0, i}e^{i\vec k_i \cdot \vec r} \\
+\vec E_r &= \vec E_{0, r}e^{i\vec k_r \cdot \vec r} \\
+\vec E_t &= \vec E_{0, t}e^{i\vec k_t \cdot \vec r} \\
+\end{align}
+$$
+Taking $k$ to be the magnitude of the $\vec k$ vector in a vacuum we get expressions for our $k$ values as such:
+$$
+\begin{align}
+k_i &= n_1k(\sin)
+\end{align}
+$$
+<% tp.file.cursor(2) %>
