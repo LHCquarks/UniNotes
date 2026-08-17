@@ -274,3 +274,13 @@ $$
 \end{align}
 $$
 then using Snell's law and noting that $\theta_i = \theta_r$ we get that for all $\vec k_\alpha$ we have that $\vec k_\alpha \cdot \vec r = n_1ky\sin\theta_i$.
+### Transverse Magnetic field
+In this scenario the magnetic field is transverse to the plane in which our incident ray lies and thus points purely in the $z$-direction. This is also commonly referred to the $p$ component. In this case we let $E_{0,i} = \hat z$  and thus we get
+$$
+\begin{align}
+E_i &= e^{i \vec k_i \cdot \vec r} \\
+E_r &= r_pe^{i \vec k_r \cdot \vec r} \\
+E_t &= t_pe^{i \vec k_t \cdot \vec r} \\
+\end{align}
+$$
+
