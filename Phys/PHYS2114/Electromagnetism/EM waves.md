@@ -312,4 +312,27 @@ t_s &= \frac{2n_1 \cos \theta_i}{n_1 \cos\theta_i + n_2\cos\theta_t}
 $$
 The expression we derived in $(2)$ is just Snell's law and with $(3)$ we derived the Fresnel equations for the transverse electric field.
 ### Transverse Magnetic Field
-
+In this case we say that the magnetic field is transverse and points in the $z$-direction. This is called $p$ component. We will make the same assumptions about $E_i$ being unitary and thus we get the equations
+$$
+\begin{align}
+B_i + B_r &= B_t \tag{1}\\
+E_i\sin\theta_i + E_r\sin \theta_r &= E_t\sin\theta_t \tag{2}\\
+E_i\cos\theta_i - E_r\cos \theta_r &= E_t\cos \theta_t \tag {3}
+\end{align}
+$$
+As before $(2)$ gives us Snell's law thus we consider just $(1)$ and $(3)$
+$$
+\begin{align}
+B_i + B_r &= B_t \tag{1}\\ 
+\implies \frac{n_1}{c}e^{i\vec k_i \cdot \vec r} + \frac{n_1}{c}r_p e^{i\vec k_r \cdot \vec r} &= \frac{n_2}{c} t_p e^{i\vec k_t \cdot \vec r} \\
+n_1 + n_1r_p &= n_2 t_p \\
+E_i\cos\theta_i - E_r\cos \theta_r &= E_t\cos \theta_t \tag {3} \\
+\implies \cos\theta_i - \cos \theta_r r_p &= \cos \theta_t t_p \\
+\cos \theta_i &= \frac{n_1}{n_2}(\cos \theta_t  + \cos\theta_tr_p) + \cos \theta_ir_p \\
+n_2\cos \theta_i - n_1 \cos\theta_t &= n_1\cos\theta_tr_p + n_2\cos \theta_ir_p \\
+r_p &= \frac{n_2 \cos \theta_i - n_1 \cos\theta_t}{n_2 \cos \theta_i + n_1 \cos \theta_t}\\
+t_p &= \frac{n_1}{n_2} \left(\frac{n_2 \cos \theta_i - n_1 \cos\theta_t}{n_2 \cos \theta_i + n_1 \cos \theta_t} + \frac{n_2\cos\theta_i + n_1 \cos\theta_t}{n_2\cos\theta_i + n_1\cos\theta_t}\right) \\
+t_p &= \frac{n_1}{n_2} \left(\frac{2n_2 \cos \theta_i}{n_2 \cos \theta_i + n_1 \cos \theta_t}\right) \\
+t_p &= \left(\frac{2n_1 \cos \theta_i}{n_2 \cos \theta_i + n_1 \cos \theta_t}\right) \\
+\end{align}
+$$
