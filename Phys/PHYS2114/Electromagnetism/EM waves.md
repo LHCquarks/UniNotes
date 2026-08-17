@@ -311,3 +311,5 @@ t_s &= \frac{2n_1 \cos \theta_i}{n_1 \cos\theta_i + n_2\cos\theta_t}
 \end{align}
 $$
 The expression we derived in $(2)$ is just Snell's law and with $(3)$ we derived the Fresnel equations for the transverse electric field.
+### Transverse Magnetic Field
+
