@@ -287,7 +287,8 @@ Assuming that the electric and magnetic fields are continuous we get that
 $$
 \begin{align}
 E_i + E_r &= E_t \\
-B_i
+B_i\sin\theta_i \\
+-B_i\cos\theta_i
 \end{align}
 $$
 <% tp.file.cursor(2) %>
