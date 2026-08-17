@@ -248,7 +248,7 @@ $$
 Hence $p = \sqrt{\zeta_1^2 + \zeta_2^2 + \zeta_3^2}$ 
 ## Refractance and transmisiantce
 Consider 2 media with refractive indices of $n_1$ and $n_2$ respectively and incident a wave with a fixed frequency at an angle $\theta_i$ as in the diagram below
-
+![[Pasted image 20260817095743.png]]
 Also consider time $t=0$ thus our equations for our light waves become
 $$
 \begin{align}
@@ -260,7 +260,17 @@ $$
 Taking $k$ to be the magnitude of the $\vec k$ vector in a vacuum we get expressions for our $k$ values as such:
 $$
 \begin{align}
-k_i &= n_1k(\sin)
+\vec k_i &= n_1k(\cos \theta_i \hat x + \sin\theta_i \hat y) \\
+\vec k_r &= n_1k(-\cos\theta_r \hat x + \sin\theta_r \hat y) \\
+\vec k_t &= n_2k(\cos \theta_t \hat x + \sin\theta_t \hat y)
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Dotting with $\vec r$  and evaluating at $x = 0$ we get the expressions
+$$
+\begin{align}
+\vec k_i \cdot \vec r &= n_1ky\sin\theta_i \\
+\vec k_r \cdot \vec r &= n_1ky\sin\theta_r \\
+\vec k_r \cdot \vec r &= n_2ky\sin\theta_t
+\end{align}
+$$
+then using Snell's law and noting that $\theta_i = \theta_r$ we get that for all $\vec k_\alpha$ we have that $\vec k_\alpha \cdot \vec r = n_1ky\sin\theta_i$.
