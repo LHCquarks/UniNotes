@@ -279,16 +279,35 @@ In this scenario the electric field is transverse to the plane in which our inci
 $$
 \begin{align}
 E_i &= e^{i \vec k_i \cdot \vec r} \hat z \\
-E_r &= r_pe^{i \vec k_r \cdot \vec r} \hat z\\
-E_t &= t_pe^{i \vec k_t \cdot \vec r} \hat z\\
+E_r &= r_se^{i \vec k_r \cdot \vec r} \hat z\\
+E_t &= t_se^{i \vec k_t \cdot \vec r} \hat z\\
 \end{align}
 $$
-Assuming that the electric and magnetic fields are continuous we get that
+Assuming that the electric and magnetic fields are continuous and doing a bit of geometry we get that
+![[Pasted image 20260817112409.png]]
 $$
 \begin{align}
-E_i + E_r &= E_t \\
-B_i\sin\theta_i \\
--B_i\cos\theta_i
+E_i + E_r &= E_t \tag{1}\\
+B_i\sin\theta_i + B_r\sin \theta_r &= B_t\sin\theta_t \tag{2}\\
+-B_i\cos\theta_i + B_r\cos \theta_r &= -B_t\cos \theta_t \tag {3}
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+applying $B = \frac{n}{c}E$ and substituting in our expression for $E$ we get
+$$
+\begin{align}
+e^{i \vec k_i \cdot \vec r} + r_s e^{i \vec k_r \cdot \vec r} &= t_s e^{i\vec k_t \cdot \vec r} \tag{1} \\
+\implies 1 + r_s &= t_s \\
+\frac{n_1}{c}\sin\theta_ie^{i\vec k_i\cdot \vec r} + \frac{n_1}{c}\sin\theta_rr_se^{i\vec k_r \cdot \vec r} &= \frac{n_2}{c}\sin\theta_t t_se^{i\vec k_t\cdot \vec r} \tag{2} \\
+\implies n_1 \sin\theta_i + n_1r_s\sin\theta_r &= n_2 t_s\sin \theta_t \\
+n_1 \sin\theta_i (1 + r_s) &= n_2 t_s\sin \theta_t \\
+n_1 \sin\theta_i &= n_2 \sin \theta_t \\
+-\frac{n_1}{c}\cos\theta_ie^{i\vec k_i\cdot \vec r} + \frac{n_1}{c}\cos\theta_rr_se^{i\vec k_r \cdot \vec r} &= -\frac{n_2}{c}\cos\theta_t t_se^{i\vec k_t\cdot \vec r} \tag{3} \\
+\implies n_1\cos\theta_i - n_1\cos\theta_rr_s &= n_2\cos\theta_t t_s \\
+n_1\cos\theta_i &= n_2\cos\theta_t (1 + r_s) + n_1\cos\theta_rr_s\\
+n_1\cos\theta_i - n_2\cos\theta_t &= r_s(n_2\cos\theta_t + n_1\cos\theta_r)\\
+r_s &= \frac{n_1 \cos \theta_i - n_2 \cos \theta_t}{n_2\cos\theta_t + n_1 \cos\theta_r} \\
+r_s &= \frac{n_1 \cos \theta_i - n_2 \cos \theta_t}{n_1 \cos\theta_i + n_2\cos\theta_t} \\
+t_s &= \frac{2n_1 \cos \theta_i}{n_1 \cos\theta_i + n_2\cos\theta_t}
+\end{align}
+$$
+The expression we derived in $(2)$ is just Snell's law and with $(3)$ we derived the Fresnel equations for the transverse electric field.
