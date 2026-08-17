@@ -340,7 +340,9 @@ $$
 In the transverse magnetic case the reflected light is $0$ if $n_2 \cos\theta_i = n_1 \cos\theta_t$ and combining this with Snell's law we get
 $$
 \begin{align}
-n_2\cos\theta_i = n_1 \cos \theta_t \\
+n_2\cos\theta_i &= n_1 \cos \theta_t \\
+n_1\sin\theta_i &= n_2 \sin \theta_t \\
+\implies \tan\theta_i &= \frac{n_2}{n_1}
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+This critical angle is called **Brewster's** angle and is the point where the reflected light is purely transverse electric.
