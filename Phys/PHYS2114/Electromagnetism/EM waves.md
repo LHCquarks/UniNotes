@@ -278,9 +278,9 @@ then using Snell's law and noting that $\theta_i = \theta_r$ we get that for all
 In this scenario the magnetic field is transverse to the plane in which our incident ray lies and thus points purely in the $z$-direction. This is also commonly referred to the $p$ component. In this case we let $E_{0,i} = \hat z$  and thus we get
 $$
 \begin{align}
-E_i &= e^{i \vec k_i \cdot \vec r} \\
-E_r &= r_pe^{i \vec k_r \cdot \vec r} \\
-E_t &= t_pe^{i \vec k_t \cdot \vec r} \\
+E_i &= e^{i \vec k_i \cdot \vec r} \hat z \\
+E_r &= r_pe^{i \vec k_r \cdot \vec r} \hat z\\
+E_t &= t_pe^{i \vec k_t \cdot \vec r} \hat z\\
 \end{align}
 $$
 
