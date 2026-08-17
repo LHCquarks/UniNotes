@@ -336,3 +336,12 @@ t_p &= \frac{n_1}{n_2} \left(\frac{2n_2 \cos \theta_i}{n_2 \cos \theta_i + n_1 \
 t_p &= \left(\frac{2n_1 \cos \theta_i}{n_2 \cos \theta_i + n_1 \cos \theta_t}\right) \\
 \end{align}
 $$
+### Brewster angle
+In the transverse magnetic case the reflected light is $0$ if
+$$
+\begin{align}
+n_2\cos\theta_i = n_1 \cos \theta_t \\
+n_2\cos\theta_
+\end{align}
+$$
+<% tp.file.cursor(2) %>
