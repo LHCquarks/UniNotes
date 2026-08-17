@@ -346,3 +346,4 @@ n_1\sin\theta_i &= n_2 \sin \theta_t \\
 \end{align}
 $$
 This critical angle is called **Brewster's** angle and is the point where the reflected light is purely transverse electric.
+## Radiation of EM waves
