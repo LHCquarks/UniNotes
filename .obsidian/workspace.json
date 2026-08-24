@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2114/Electrostatics/Electrostatics.md",
+                "file": "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electrostatics"
+              "title": "Electric Fields In Matter"
             }
           }
         ]
@@ -172,8 +172,16 @@
   },
   "active": "042b64809aed5f47",
   "lastOpenFiles": [
-    "Phys/PHYS2114/Electrostatics/Divergence and Curl of Electrostatic Fields.md",
+    "Phys/PHYS2114/Electric Fields In Matter/Linear Dielectrics.md",
+    "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
+    "Phys/PHYS2114/Electric Fields In Matter/Electric Field of a Polarized Material.md",
+    "Phys/PHYS2114/Electric Fields In Matter/Polarization of Materials.md",
     "Phys/PHYS2114/Electrostatics/Electrostatics.md",
+    "Phys/PHYS2114/Electrostatics/Capacitors.md",
+    "Phys/PHYS2114/Electrostatics/Conductors.md",
+    "Phys/PHYS2114/Electrostatics/Work and Energy of Electrostatics.md",
+    "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
+    "Phys/PHYS2114/Electrostatics/Divergence and Curl of Electrostatic Fields.md",
     "Phys/PHYS2114/Electrostatics/The Electric Field.md",
     "Phys/PHYS2114/Electrostatics/Untitled.md",
     "Phys/PHYS2114/Magnetostatics/Currents.md",
@@ -181,12 +189,6 @@
     "Phys/PHYS2114/Electromagnetism/Electromagnetism.md",
     "Phys/PHYS2114/Electromagnetism/Ohms law.md",
     "Phys/PHYS2114/Special Tech/Multi-pole Expansion.md",
-    "Phys/PHYS2114/Electric Fields In Matter/Linear Dielectrics.md",
-    "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
-    "Phys/PHYS2114/Electric Fields In Matter/Electric Field of a Polarized Material.md",
-    "Phys/PHYS2114/Electric Fields In Matter/Polarization of Materials.md",
-    "Phys/PHYS2114/Electrostatics/Capacitors.md",
-    "Phys/PHYS2114/Electrostatics/Conductors.md",
     "Phys/PHYS2114/Electrostatics/Boundaries of Charged Surfaces.md",
     "Phys/PHYS2114/Electromagnetism/Potentials and Gauge Invariance.md",
     "Maths/MATH2111/Integral Calculus/Integral calculus.md",
@@ -196,8 +198,6 @@
     "Maths/MATH2111/Differential Calculus/The directional derivative and nabla.md",
     "Maths/MATH2111/Differential Calculus/Differential calculus.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
-    "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
-    "Maths/MATH2621/Complex Specific Calculus/Morera's Theorem.md",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817112409.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817095743.png",
     "Phys/PHYS2114/Electromagnetism/skinEffect.gif",
