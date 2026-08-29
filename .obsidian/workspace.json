@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
+                "file": "Phys/PHYS2113/Special Relativity/Dynamics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electric Fields In Matter"
+              "title": "Dynamics"
             }
           }
         ]
@@ -172,8 +172,17 @@
   },
   "active": "042b64809aed5f47",
   "lastOpenFiles": [
-    "Phys/PHYS2114/Electric Fields In Matter/Linear Dielectrics.md",
+    "Phys/PHYS2113/Special Relativity/Special Relativity.md",
+    "Phys/PHYS2113/Special Relativity/Proper Time and the Line Segment.md",
+    "Phys/PHYS2113/Special Relativity/Space Time and 4-Vectors.md",
+    "Phys/PHYS2113/Oscillators/Generalized Oscillators.md",
+    "Phys/PHYS2113/Oscillators/Oscillators.md",
+    "Phys/PHYS2113/Oscillators/Driven Harmonic Oscillator.md",
+    "Phys/PHYS2113/Oscillators/Damped Harmonic Oscillator.md",
+    "Phys/PHYS2113/Hamiltonian Mechanics/Poisson brackets.md",
+    "Phys/PHYS2113/Hamiltonian Mechanics/Hamiltonian Mechanics.md",
     "Phys/PHYS2114/Electric Fields In Matter/Electric Fields In Matter.md",
+    "Phys/PHYS2114/Electric Fields In Matter/Linear Dielectrics.md",
     "Phys/PHYS2114/Electric Fields In Matter/Electric Field of a Polarized Material.md",
     "Phys/PHYS2114/Electric Fields In Matter/Polarization of Materials.md",
     "Phys/PHYS2114/Electrostatics/Electrostatics.md",
@@ -189,15 +198,6 @@
     "Phys/PHYS2114/Electromagnetism/Electromagnetism.md",
     "Phys/PHYS2114/Electromagnetism/Ohms law.md",
     "Phys/PHYS2114/Special Tech/Multi-pole Expansion.md",
-    "Phys/PHYS2114/Electrostatics/Boundaries of Charged Surfaces.md",
-    "Phys/PHYS2114/Electromagnetism/Potentials and Gauge Invariance.md",
-    "Maths/MATH2111/Integral Calculus/Integral calculus.md",
-    "Phys/PHYS2114/Electromagnetism/Maxwell's Equations.md",
-    "Maths/MATH2111/Integral Calculus/Vector Integrals/Flux Integral.md",
-    "Maths/MATH2111/Differential Calculus/The multivariable derivative.md",
-    "Maths/MATH2111/Differential Calculus/The directional derivative and nabla.md",
-    "Maths/MATH2111/Differential Calculus/Differential calculus.md",
-    "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817112409.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817095743.png",
     "Phys/PHYS2114/Electromagnetism/skinEffect.gif",
