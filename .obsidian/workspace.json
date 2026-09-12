@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2113/Special Relativity/Dynamics.md",
+                "file": "Maths/MATH2111/Integral Calculus/Normal Integrals/Leibniz Rule.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dynamics"
+              "title": "Leibniz Rule"
             }
           }
         ]
@@ -172,6 +172,9 @@
   },
   "active": "042b64809aed5f47",
   "lastOpenFiles": [
+    "Maths/MATH2111/Integral Calculus/Normal Integrals/Basics of the multivariable integral.md",
+    "Phys/PHYS2113/Lagrangian Mechanics/Calculus of Variations.md",
+    "Phys/PHYS2113/Special Relativity/Dynamics.md",
     "Phys/PHYS2113/Special Relativity/Special Relativity.md",
     "Phys/PHYS2113/Special Relativity/Proper Time and the Line Segment.md",
     "Phys/PHYS2113/Special Relativity/Space Time and 4-Vectors.md",
@@ -195,9 +198,6 @@
     "Phys/PHYS2114/Electrostatics/Untitled.md",
     "Phys/PHYS2114/Magnetostatics/Currents.md",
     "Phys/PHYS2114/Electromagnetism/EM waves.md",
-    "Phys/PHYS2114/Electromagnetism/Electromagnetism.md",
-    "Phys/PHYS2114/Electromagnetism/Ohms law.md",
-    "Phys/PHYS2114/Special Tech/Multi-pole Expansion.md",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817112409.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817095743.png",
     "Phys/PHYS2114/Electromagnetism/skinEffect.gif",
