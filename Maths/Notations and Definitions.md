@@ -46,3 +46,26 @@ $$
 |\mathcal S| &= 3
 \end{align}
 $$
+### Russell's paradox
+Consider the set $\mathcal S = \{\text{sets which are not elements of themselves}\}$. Now consider if $\mathcal S$ is an element of itself:
+- if $\mathcal S \in \mathcal S$ then by definition we get that $\mathcal S \not \in \mathcal S$. This can not be true
+- if $\mathcal S \not \in \mathcal S$ then by definition we get that $\mathcal S \in \mathcal S$. This also can not be true
+Thereby $\mathcal S$ is both not an element of itself an is an element of itself which is a contradiction.
+
+The issue is that $\mathcal S$ is not a well defined and thus violates our definition of sets
+## Subsets
+A set $A$ is a **subset** of a set $B$ if and only if every element of $A$ is also an element of $B$. We denote this with $A \subseteq B$  which reads **$A$ is a subset of $B$**.
+
+We can also say **$A$ is not a subset of $B$** with the notation $A \not \subseteq B$. 
+
+We can then say that $\mathbb Z^+ \subseteq \mathbb N \subseteq \mathbb Z \subseteq \mathbb Q \subseteq \mathbb R \subseteq \mathbb C$.
+## Equality
+Now we have defined subsets we can also define equality between sets as:
+
+Sets $A$ and $B$ are **equal** if and only if $A \subseteq B$ and $B \subseteq A$.
+We can denote this as $A = B$.
+## Proper subsets
+We can also define a **proper subset** as
+
+$A$ is a proper subset of $B$ if and only if $A \subseteq B$ and $A \not = B$.
+We can denote this with $A \subset B$ or more explicitly $A \subsetneq B$, $A \subsetneqq B$ or $A\varsubsetneq B$ 
