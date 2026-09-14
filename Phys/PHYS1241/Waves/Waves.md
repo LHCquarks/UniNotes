@@ -7,4 +7,4 @@ Table of contents:
 - [[Phasors]]
 - [[Phys/PHYS1241/Waves/Polarisation]]
 - [[Radiation Pressure]]
-- [[Optics]]
+- [[Phys/PHYS1241/Waves/Optics/Optics]]
