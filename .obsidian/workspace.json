@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH2621/Transforms/Laplace Transform.md",
+                "file": "Maths/Math.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Laplace Transform"
+              "title": "Math"
+            }
+          },
+          {
+            "id": "90024eea08548b72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/MATH1081.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MATH1081"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,8 +185,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "042b64809aed5f47",
+  "active": "90024eea08548b72",
   "lastOpenFiles": [
+    "Maths/MATH1081.md",
+    "Maths/Math.md",
+    "Maths/MATH2621/Transforms/Laplace Transform.md",
     "Maths/MATH2621/Transforms/Fourier Transform.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Substitutions.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Leibniz Rule.md",
@@ -195,9 +213,6 @@
     "Phys/PHYS2114/Electrostatics/Capacitors.md",
     "Phys/PHYS2114/Electrostatics/Conductors.md",
     "Phys/PHYS2114/Electrostatics/Work and Energy of Electrostatics.md",
-    "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
-    "Phys/PHYS2114/Electrostatics/Divergence and Curl of Electrostatic Fields.md",
-    "Phys/PHYS2114/Electrostatics/The Electric Field.md",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817112409.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817095743.png",
     "Phys/PHYS2114/Electromagnetism/skinEffect.gif",

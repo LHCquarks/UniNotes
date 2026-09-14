@@ -6,3 +6,5 @@ tags:
 ## Subjects
 - [[MATH2621 | MATH2621 Higher Complex Analysis]]
 - [[MATH2111 | MATH2111 Higher Several-Variable Calculus]]
+- [[MATH1081 | MATH1081 Discrete Mathematics]]
+- 
