@@ -32,3 +32,8 @@ This can read as **all real numbers $x$ such that $x$ is even**.
 - The set of all **rational numbers**: $\mathbb Q = \left\{\frac{p}{q}: p, q \in \mathbb Z, q \not = 0\right\} = \left\{\frac{p}{q}: p\in \mathbb Z, q\in \mathbb Z^+\right\}$ 
 - The set of all **real numbers**: $\mathbb R = \{\text{the closure of } \mathbb Q\}$ 
 - The set of all **complex number**: $\{a + bi: a, b \in \mathbb R, i^2 = -1\}$
+## The empty set
+There is a special set called the empty set defined as $\emptyset = \{\} = \varnothing$. This set has no elements.
+## Cardinality / size of a set
+We define the **cardinality** or **size** of a set $\mathcal S$ as the number of elements in $\mathcal S$. We can denote this with $|\varnothing| = 0$ 
+
