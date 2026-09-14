@@ -36,4 +36,13 @@ This can read as **all real numbers $x$ such that $x$ is even**.
 There is a special set called the empty set defined as $\emptyset = \{\} = \varnothing$. This set has no elements.
 ## Cardinality / size of a set
 We define the **cardinality** or **size** of a set $\mathcal S$ as the number of elements in $\mathcal S$. We can denote this with $|\varnothing| = 0$ 
-
+## Sets within Sets
+Because sets can contian any object sets can also contain sets eg, $\mathcal S = \{1, 2, \{3, 4\}\}$ is a valid set with the following properties:
+$$
+\begin{align}
+1 &\in \mathcal S \\
+3 &\not \in \mathcal S \\
+\{3, 4\} &\in \mathcal S \\
+|\mathcal S| &= 3
+\end{align}
+$$
