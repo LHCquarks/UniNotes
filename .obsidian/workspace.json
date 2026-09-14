@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "e6923fa3931aabb1",
+        "id": "2703d1b932d8ee86",
         "type": "tabs",
         "children": [
           {
-            "id": "042b64809aed5f47",
+            "id": "b1a3351419f68ceb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/Math.md",
+                "file": "Phys/Phys.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Math"
-            }
-          },
-          {
-            "id": "90024eea08548b72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/Set theory and functions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Set theory and functions"
-            }
-          },
-          {
-            "id": "04d528ff8f879de6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/Notations and Definitions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Notations and Definitions"
+              "title": "Phys"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,14 +170,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04d528ff8f879de6",
+  "active": "b1a3351419f68ceb",
   "lastOpenFiles": [
-    "Maths/Notations and Definitions.md",
-    "Maths/Set theory and functions.md",
+    "Maths/Math.md",
+    "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
+    "Phys/PHYS2114/Electrostatics/Untitled.md",
+    "Maths/MATH1081/MATH1081.md",
+    "Maths/MATH1081/Set Theory and Functions/Notations and Definitions.md",
+    "Maths/MATH1081/Set Theory and Functions",
+    "Maths/MATH1081",
     "Notations / Definition.md",
     "Notations ",
-    "Maths/MATH1081.md",
-    "Maths/Math.md",
     "Maths/MATH2621/Transforms/Laplace Transform.md",
     "Maths/MATH2621/Transforms/Fourier Transform.md",
     "Maths/MATH2111/Integral Calculus/Normal Integrals/Substitutions.md",
@@ -227,7 +201,6 @@
     "Phys/PHYS2114/Electric Fields In Matter/Linear Dielectrics.md",
     "Phys/PHYS2114/Electric Fields In Matter/Electric Field of a Polarized Material.md",
     "Phys/PHYS2114/Electric Fields In Matter/Polarization of Materials.md",
-    "Phys/PHYS2114/Electrostatics/Electrostatics.md",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817112409.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817095743.png",
     "Phys/PHYS2114/Electromagnetism/skinEffect.gif",
@@ -245,8 +218,6 @@
     "Comp/COMP3231/Introduction and Overview",
     "Comp/COMP3231",
     "Phys/PHYS2114/Magnetostatics",
-    "Phys/PHYS2114/Electric Fields In Matter",
-    "Phys/PHYS2114/Special Tech",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
     "FlowChart.canvas",
