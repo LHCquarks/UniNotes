@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH1081.md",
+                "file": "Maths/Set theory and functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MATH1081"
+              "title": "Set theory and functions"
+            }
+          },
+          {
+            "id": "04d528ff8f879de6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/Notations and Definitions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notations and Definitions"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,8 +199,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "90024eea08548b72",
+  "active": "04d528ff8f879de6",
   "lastOpenFiles": [
+    "Maths/Notations and Definitions.md",
+    "Maths/Set theory and functions.md",
+    "Notations / Definition.md",
+    "Notations ",
     "Maths/MATH1081.md",
     "Maths/Math.md",
     "Maths/MATH2621/Transforms/Laplace Transform.md",
@@ -210,9 +228,6 @@
     "Phys/PHYS2114/Electric Fields In Matter/Electric Field of a Polarized Material.md",
     "Phys/PHYS2114/Electric Fields In Matter/Polarization of Materials.md",
     "Phys/PHYS2114/Electrostatics/Electrostatics.md",
-    "Phys/PHYS2114/Electrostatics/Capacitors.md",
-    "Phys/PHYS2114/Electrostatics/Conductors.md",
-    "Phys/PHYS2114/Electrostatics/Work and Energy of Electrostatics.md",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817112409.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817095743.png",
     "Phys/PHYS2114/Electromagnetism/skinEffect.gif",
@@ -232,7 +247,6 @@
     "Phys/PHYS2114/Magnetostatics",
     "Phys/PHYS2114/Electric Fields In Matter",
     "Phys/PHYS2114/Special Tech",
-    "Phys/PHYS2114/Electrostatics",
     "Error Messages.canvas",
     "Comp/COMP2521/Error Messages.canvas",
     "FlowChart.canvas",
