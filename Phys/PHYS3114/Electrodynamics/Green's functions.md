@@ -118,6 +118,15 @@ $$
 \varphi (r) &= \int_{\partial V} V_0 \nabla'G(r';r) \cdot dA'  \\
 \end{align}
 $$
-Now, we can use the free space electrostatic green's function $G(r'; r) = \frac{1}{4\pi} \frac{1}{|r' - r|}$. Using the fact that our setup is rotationally symetric we can limit our $r$ to the $z$-axis and from their apply the cosine law:
+Now, we can use the free space electrostatic green's function $G(r'; r) = \frac{1}{4\pi} \frac{1}{|r' - r|}$. Taking the grad of this function in spherical coordinates gives
 
+Using the fact that our setup is rotationally symetric we can limit our $r$ to the $z$-axis and from their apply the cosine law:
+![[Pasted image 20260915163428.png|424]]
+With $|r'|$ being fixed at $R$ we get:
+$$
+\begin{align}
+G(r';r) &= \frac{1}{4\pi} \frac{1}{r^2 + R^2 - rR\cos\phi}
+\end{align}
+$$
+and so our integral
 
