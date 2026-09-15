@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "2703d1b932d8ee86",
+        "id": "a9151c0dde4e5331",
         "type": "tabs",
         "children": [
           {
-            "id": "b1a3351419f68ceb",
+            "id": "f6f55d4cda7c397c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
+                "file": "Maths/MATH1081/Set Theory and Functions/Notations and Definitions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electrodynamics"
-            }
-          },
-          {
-            "id": "46978fab6c9bf9b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS3114/Electrodynamics/Green's functions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Green's functions"
+              "title": "Notations and Definitions"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,22 +170,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46978fab6c9bf9b8",
+  "active": "f6f55d4cda7c397c",
   "lastOpenFiles": [
-    "Phys/PHYS3114/Electrodynamics/Green's functions.md",
+    "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
     "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
+    "Phys/PHYS3114/Optics/Optics.md",
+    "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Phys/PHYS2111/Multiple Particles.md",
     "Phys/PHYS2111/Motivation of quantum mechanics.md",
     "Phys/PHYS2111/Entanglement.md",
     "Phys/PHYS2111/Common operators.md",
     "Phys/PHYS3114/PHYS3114.md",
     "Phys/Phys.md",
-    "Phys/PHYS3114/Optics/Optics.md",
     "Phys/PHYS3114/Electrodynamics",
     "Phys/PHYS3114/Optics",
     "Phys/PHYS3114",
     "Maths/Math.md",
-    "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
     "Phys/PHYS2114/Electrostatics/Untitled.md",
     "Maths/MATH1081/MATH1081.md",
     "Maths/MATH1081/Set Theory and Functions/Notations and Definitions.md",

@@ -69,3 +69,11 @@ We can also define a **proper subset** as
 
 $A$ is a proper subset of $B$ if and only if $A \subseteq B$ and $A \not = B$.
 We can denote this with $A \subset B$ or more explicitly $A \subsetneq B$, $A \subsetneqq B$ or $A\varsubsetneq B$ 
+## Power sets
+The **power set** of a set $\mathcal S$ is the set containing all subsets of $\mathcal S$:
+$$
+\begin{align}
+\mathcal P(\mathcal S) = \{x: x\subseteq \mathcal S\}
+\end{align}
+$$
+For instance $\mathcal P(\{1, 2, 3\}) = \{\{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}$ 
