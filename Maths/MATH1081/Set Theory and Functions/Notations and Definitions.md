@@ -76,4 +76,22 @@ $$
 \mathcal P(\mathcal S) = \{x: x\subseteq \mathcal S\}
 \end{align}
 $$
-For instance $\mathcal P(\{1, 2, 3\}) = \{\{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}$ 
+For instance $\mathcal P(\{1, 2, 3\}) = \{\{\}, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}$ 
+### Cardinality of $\mathcal P(\mathcal S)$
+Suppose that $\mathcal S$ has $n$ elements.
+Order all the possible subsets sets by their cardinality. We can then determine the number of these sets using combinatorics:
+$$
+\begin{align}
+|x| = 0 &\implies \pmatrix{n \\ 0} \text{ sets} \\
+|x| = 1 &\implies \pmatrix{n \\ 1} \text{ sets} \\
+|x| = 2 &\implies \pmatrix{n \\ 2} \text{ sets} \\
+&\vdots
+\end{align}
+$$
+Thus the total number of sets in our power set is:
+$$
+\begin{align}
+\sum_{j = 0}^n \pmatrix{n \\ j} &= 2^n
+\end{align}
+$$
+by pascall's triangle. Thus $|\mathcal P(\mathcal S)| = 2^{|\mathcal S|}$.
