@@ -67,3 +67,57 @@ $$
 G(x;\zeta) &= \frac{1}{4\pi} \frac{1}{|x - \zeta|}
 \end{align}
 $$
+## Boundary conditions
+Due to $G$ being a building block of the scalar field $\varphi$ we inherit the ambiguity of gauges an so boundary conditions can help us take that ambiguity away.
+
+A general solution to $L[y] = f$ involves both a particular solution and all the homogenous solutions thus a more general form for $\varphi$ with a particular Green's funciton $G_0$ and a homogenous solution $\varphi_{\text{hom}}$ is:
+$$
+\begin{align}
+\varphi(x) &= \int f(\zeta)G_0(x, \zeta)d\zeta + \varphi_{\text{hom}}(x)
+\end{align}
+$$
+### Boundary conditions on the Poisson equation
+Lets solve $\nabla^2 \varphi = -\frac{\rho}{\epsilon_0}$. We will assume we have a Green's function $G$ (the free space electrostatic function will do).
+
+First we will derive Green's first and second identities for general scalar fields $\phi, \psi$ (not dirrectly related to green's functions):
+$$
+\begin{align}
+\nabla \cdot (\phi \nabla \psi) &= \nabla \phi \cdot \nabla \psi + \phi \nabla^2 \psi \\
+\int_V [\nabla \phi \cdot \nabla \psi + \phi \nabla ^2 \psi] dV &= \int_V \nabla \cdot (\phi \nabla \psi) dV \\
+\int_V [\nabla \phi \cdot \nabla \psi + \phi \nabla ^2 \psi] dV &= \int_{\partial V} \phi \nabla \psi \cdot  dA \tag {1}\\ 
+\end{align}
+$$
+then interchanging $\phi$ and $\psi$ and subtracting we get:
+$$
+\begin{align}
+\int_V [\nabla \phi \cdot \nabla \psi - \nabla \psi \cdot \nabla \phi + \phi \nabla ^2 \psi - \psi \nabla ^2 \phi] dV &= \int_{\partial V} [\phi \nabla \psi - \psi \nabla \phi]\cdot  dA \\ 
+\int_V [\phi \nabla ^2 \psi - \psi \nabla ^2 \phi] dV &= \int_{\partial V} [\phi \nabla \psi - \psi \nabla \phi]\cdot  dA \tag{2}\\ 
+\end{align}
+$$
+Substituting $\phi = \varphi(r'), \psi = G(r', r)$ we then get the identity:
+$$
+\begin{align}
+\int_V [\varphi(r') (\nabla^2)' G(r'; r) - G(r';r) (\nabla^2)' \varphi(r')]dV' &= \int_{\partial V} [\varphi(r') \nabla' G(r';r) - G(r';r)\nabla' \varphi(r')]\cdot dA' \\
+\int_V \left[\varphi(r') \delta(r' - r) + G(r';r) \frac{\rho(r')}{\epsilon_0}\right]dV' &= \int_{\partial V} [\varphi(r') \nabla' G(r'; r) - G(r'; r)\nabla' \varphi(r')]\cdot dA' \\
+\varphi(r) + \int_V G(r';r) \frac{\rho(r')}{\epsilon_0}dV' &= \int_{\partial V} [\varphi(r') \nabla' G(r'; r) - G(r'; r)\nabla' \varphi(r')]\cdot dA' \\
+\varphi(r) &=  -\frac{1}{\epsilon_0}\int_V G(r';r) \rho(r')dV'  \\
+&+\int_{\partial V} \varphi(r') \nabla' G(r'; r)\cdot dA' \\
+&-\int_{\partial V} G(r'; r)\nabla' \varphi(r')\cdot dA' \\
+\end{align}
+$$
+These terms have fairly easy to see meanings:
+- The first term is the what we expect from Laplace's eqation
+- The second term is a correcting term for the potential on the boundary
+- The third term is a correcting term for the normal of the potential.
+#### Example
+Say we have a conducting spherical shell set to $\varphi = V_0$ centered on the origin with no internal charge distrobution. Then:
+$$
+\begin{align}
+\varphi (r) &= -\frac{1}{\epsilon_0} \int_V G(r';r)(0) dV' + \int_{\partial V} (V_0) \nabla'G(r';r) \cdot dA' - \int_{\partial V} G(r';r) \nabla' (V_0) \cdot dA' \\
+\varphi (r) &= \int_{\partial V} V_0 \nabla'G(r';r) \cdot dA'  -\int_{\partial V} G(r';r) \vec 0 \cdot dA' \\
+\varphi (r) &= \int_{\partial V} V_0 \nabla'G(r';r) \cdot dA'  \\
+\end{align}
+$$
+Now, we can use the free space electrostatic green's function $G(r'; r) = \frac{1}{4\pi} \frac{1}{|r' - r|}$. Using the fact that our setup is rotationally symetric we can limit our $r$ to the $z$-axis and from their apply the cosine law:
+
+
