@@ -125,7 +125,7 @@ Using the fact that our setup is rotationally symetric we can limit our $r$ to t
 With $|r'|$ being fixed at $R$ we get:
 $$
 \begin{align}
-G(r';r) &= \frac{1}{4\pi} \frac{1}{r^2 + R^2 - rR\cos\phi}
+G(r';r) &= \frac{1}{4\pi} \frac{1}{r^2 + R^2 - 2rR\cos\phi}
 \end{align}
 $$
 and so our integral
