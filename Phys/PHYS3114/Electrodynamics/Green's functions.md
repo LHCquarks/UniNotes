@@ -129,4 +129,3 @@ G(r';r) &= \frac{1}{4\pi} \frac{1}{r^2 + R^2 - rR\cos\phi}
 \end{align}
 $$
 and so our integral
-
