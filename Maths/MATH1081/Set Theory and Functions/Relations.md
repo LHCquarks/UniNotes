@@ -24,3 +24,17 @@ The sets $A$ and $B$ are called **disjoint** if $A \cap B = \varnothing$.
 The sets $A_1, A_2, A_3, \dots, A_k$ are **pairwise disjoint** if for all $i, j \le k$ with $i \not = j$ we have $A_i, A_j$ are disjoint.
 ## Partitioning
 We say that the sets $A_1, A_2, A_3, \dots, A_k$ **partition** $B$ if $A_1, \dots, A_k$ are pairwise disjoint and $A_1\cup A_2 \cup A_3 \cup \dots \cup A_k = B$.
+## Duality of set expressions
+Given a set expression only involving sets, $\cup, \cap, \varnothing, \mathcal U$ and complements we can make the folowing substitutions to produce a new expression
+$$
+\begin{align}
+\cup &\rightarrow \cap \\
+\cap &\rightarrow \cup \\
+\varnothing &\rightarrow \mathcal U \\
+\mathcal U &\rightarrow \varnothing \\
+\end{align}
+$$
+This new expression is called the **dual expression**.
+
+### Duality principle
+Any set statement involving only the above components are true if and only if it's dual is true!
