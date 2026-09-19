@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f6f55d4cda7c397c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH1081/MATH1081.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MATH1081"
-            }
-          },
-          {
             "id": "21463f9811a110ae",
             "type": "leaf",
             "state": {
@@ -36,49 +22,21 @@
             }
           },
           {
-            "id": "bddb601b64e25560",
+            "id": "23ef0301e3345b06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH1081/Set Theory and Functions/Set Algebra laws.md",
+                "file": "Maths/MATH1081/Set Theory and Functions/Objects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Set Algebra laws"
-            }
-          },
-          {
-            "id": "b18043f3053f1bcf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH1081/Set Theory and Functions/Relations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Relations"
-            }
-          },
-          {
-            "id": "ee5225f704df84b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH1081/Set Theory and Functions/Operations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Operations"
+              "title": "Objects"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -227,16 +185,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b18043f3053f1bcf",
+  "active": "23ef0301e3345b06",
   "lastOpenFiles": [
-    "Maths/MATH1081/Set Theory and Functions/Set Algebra laws.md",
     "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
-    "Maths/MATH1081/MATH1081.md",
     "Maths/MATH1081/Set Theory and Functions/Operations.md",
+    "Maths/MATH1081/Set Theory and Functions/Relations.md",
+    "Maths/MATH1081/Set Theory and Functions/Set Algebra laws.md",
+    "Maths/MATH1081/MATH1081.md",
     "Maths/MATH2621/Basic Calculus In the Complex Plane/Differentiation.md",
     "Maths/MATH1081/Set Theory and Functions/Objects.md",
     "Maths/MATH2621/Complex Functions/Analytic Continuation.md",
-    "Maths/MATH1081/Set Theory and Functions/Relations.md",
     "Maths/MATH1081/Set Theory and Functions/Untitled.md",
     "Maths/MATH1081/Set Theory and Functions/Notations and Definitions.md",
     "Phys/PHYS3114/Optics/Optics.md",
