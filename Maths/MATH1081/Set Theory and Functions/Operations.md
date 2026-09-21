@@ -67,3 +67,14 @@ C &= \left(A \cup B\right) \backslash \left(A \cap B\right) \\
 \end{align}
 $$
 We write this as $C = A \ominus B$, $C = A \oplus B$ and $C = A \triangle B$ which reads **C is the symetric diference of A and B** or for $A \ominus B$ we can say **A sym-dif B**.
+
+## Cartisian product
+The Cartisian product of two sets $A$ and $B$ is a new set containing every 2-tuple that can be formed by taking the first element from $A$ and the second from $B$.
+$$
+\begin{align}
+A \times B &= \{(a, b): a \in A \text{ and } b\in B\}
+\end{align}
+$$
+When a set is in a cartisian product with itself we can also write it as $A \times A = A^2$ which is where we get the notation for the coordinate plane $\mathbb R^2$.
+### Cardinalities
+For any sets $A, B$ we have that $|A \times B| = |A||B|$.

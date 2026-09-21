@@ -55,3 +55,9 @@ Further, all sets are subsets of $\mathcal U$.
 Importantly the "all possible objects" can not include the sets containing these object as we will run into Russell's paradox.
 
 If we are working with intervals of the real number line then we could define $\mathcal U = \mathbb R$ but if we are working solely with integers then we can define $\mathcal U = \mathbb Z$.
+## Tuples
+A tuple is a **finite**, **ordered** collection of objects. It is just like a set but order matters and the elements do not have to be unique.
+
+Tuples are writen with rounded brackets like so: $(1, 2, 3, 4) \not = (1, 2, 4, 3)$.
+
+A tuple with size $n$ can also be refered to as an n-tuple and in the special case where $n = 2$ it can also be refered to as an **ordered pair**.

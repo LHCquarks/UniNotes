@@ -22,6 +22,48 @@
             }
           },
           {
+            "id": "db1c00644f495dcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/MATH1081/Set Theory and Functions/Functions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Functions"
+            }
+          },
+          {
+            "id": "247e951d6d75b1be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/MATH1081/Set Theory and Functions/Operations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Operations"
+            }
+          },
+          {
+            "id": "14a600396d5bc8a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Maths/MATH1081/Set Theory and Functions/Relations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Relations"
+            }
+          },
+          {
             "id": "23ef0301e3345b06",
             "type": "leaf",
             "state": {
@@ -35,7 +77,8 @@
               "title": "Objects"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,12 +227,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "21463f9811a110ae",
+  "active": "db1c00644f495dcc",
   "lastOpenFiles": [
-    "Maths/MATH1081/Set Theory and Functions/Objects.md",
     "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
+    "Maths/MATH1081/Set Theory and Functions/Functions.md",
     "Maths/MATH1081/Set Theory and Functions/Operations.md",
     "Maths/MATH1081/Set Theory and Functions/Relations.md",
+    "Maths/MATH1081/Set Theory and Functions/Objects.md",
     "Maths/MATH1081/Set Theory and Functions/Set Algebra laws.md",
     "Maths/MATH1081/MATH1081.md",
     "Maths/MATH2621/Basic Calculus In the Complex Plane/Differentiation.md",
@@ -218,7 +262,6 @@
     "Maths/MATH1081",
     "Notations / Definition.md",
     "Notations ",
-    "Maths/MATH2621/Transforms/Laplace Transform.md",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817112409.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817095743.png",
     "Phys/PHYS2114/Electromagnetism/skinEffect.gif",
