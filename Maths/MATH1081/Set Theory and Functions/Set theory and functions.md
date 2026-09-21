@@ -10,3 +10,5 @@ Set theory first begain in 1874 be **Georg Cantor** and works very well to modde
 - [[Relations]]
 - [[Operations]]
 - [[Set Algebra laws]]
+- [[Function ]]
+- 
