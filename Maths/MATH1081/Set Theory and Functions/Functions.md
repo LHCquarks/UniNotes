@@ -30,5 +30,10 @@ $$
 ## Injectivity
 We define a function as **injective** (one-to-one) iff for all $y \in Y$ there is **at most one** $x\in X$ such that $f(x) = y$.
 
+Note that this does not mean that for all $y$ there exists an $x$ such that $f(x) = y$ but simply there are not two or more $x$. This means the codomain can be larger than the range.
 ## Surjective
 We define a function as **surjective** (onto) iff for all $y \in Y$ there is **at lest one** $x \in X$ such that $f(x) = y$.
+
+This essentially means that the codomain is equal to the range of the function.
+## Bijective
+We define a function as **bijective** iff the function is both **injective** and **surjective**
