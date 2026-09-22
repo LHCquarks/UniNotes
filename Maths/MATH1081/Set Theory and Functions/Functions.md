@@ -28,5 +28,7 @@ f^{-1}(B) &= \{x \in X : f(x) \in B\} \subseteq X
 \end{align}
 $$
 ## Injectivity
-We define a function as **injective** (one-to-one) iff for all $y \in Y$ there is at most one $x\in X$ such that $f(x) = y$.
+We define a function as **injective** (one-to-one) iff for all $y \in Y$ there is **at most one** $x\in X$ such that $f(x) = y$.
+
 ## Surjective
+We define a function as **surjective** (onto) iff for all $y \in Y$ there is **at lest one** $x \in X$ such that $f(x) = y$.
