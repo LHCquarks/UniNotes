@@ -8,77 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "21463f9811a110ae",
+            "id": "99837b902bce1371",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
+                "file": "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Set theory and functions"
-            }
-          },
-          {
-            "id": "db1c00644f495dcc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH1081/Set Theory and Functions/Functions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Functions"
-            }
-          },
-          {
-            "id": "247e951d6d75b1be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH1081/Set Theory and Functions/Operations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Operations"
-            }
-          },
-          {
-            "id": "14a600396d5bc8a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH1081/Set Theory and Functions/Relations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Relations"
-            }
-          },
-          {
-            "id": "23ef0301e3345b06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Maths/MATH1081/Set Theory and Functions/Objects.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Objects"
+              "title": "Fraunhofer Diffraction"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,10 +170,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "db1c00644f495dcc",
+  "active": "99837b902bce1371",
   "lastOpenFiles": [
-    "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
+    "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
+    "Phys/PHYS3114/Optics/Pasted image 20260925074540.png",
+    "Phys/PHYS3114/Optics/Pasted image 20260925073614.png",
+    "Phys/PHYS3114/Optics/Scalar Waves.md",
+    "Phys/PHYS3114/Optics/Pasted image 20260925072843.png",
+    "Phys/PHYS3114/Optics/Pasted image 20260925070801.png",
     "Maths/MATH1081/Set Theory and Functions/Functions.md",
+    "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
     "Maths/MATH1081/Set Theory and Functions/Operations.md",
     "Maths/MATH1081/Set Theory and Functions/Relations.md",
     "Maths/MATH1081/Set Theory and Functions/Objects.md",
@@ -241,7 +190,6 @@
     "Maths/MATH1081/Set Theory and Functions/Untitled.md",
     "Maths/MATH1081/Set Theory and Functions/Notations and Definitions.md",
     "Phys/PHYS3114/Optics/Optics.md",
-    "Phys/PHYS3114/Optics/Scalar Waves.md",
     "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Phys/PHYS2114/PHYS2114.md",
     "Phys/PHYS2114/Formulas.md",
@@ -257,20 +205,14 @@
     "Phys/PHYS3114/Optics",
     "Phys/PHYS3114",
     "Maths/Math.md",
-    "Phys/PHYS2114/Electrostatics/Untitled.md",
     "Maths/MATH1081/Set Theory and Functions",
     "Maths/MATH1081",
-    "Notations / Definition.md",
     "Notations ",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817112409.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260817095743.png",
     "Phys/PHYS2114/Electromagnetism/skinEffect.gif",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260805132457.png",
     "Phys/PHYS2114/Electromagnetism/Pasted image 20260804173304.png",
-    "Phys/PHYS2113/Special Relativity/Pasted image 20260804141814.png",
-    "Phys/PHYS2114/Electromagnetism/Pasted image 20260804075056.png",
-    "Phys/PHYS2114/Electromagnetism/Pasted image 20260804074533.png",
-    "Phys/PHYS2114/Electromagnetism/Pasted image 20260803113644.png",
     "Phys/PHYS2114/Electromagnetism",
     "Phys/PHYS2113/Oscillators/res",
     "Phys/PHYS2113/Oscillators/simple_harmonic_fig.pdf",
