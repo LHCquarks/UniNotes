@@ -37,8 +37,57 @@ $$
 \begin{align}
 R^2 &= z^2 + (\zeta - x)^2 + (\eta - y)^2 \\
 R_0^2 &= \zeta^2 + \eta^2 + z^2 \\
-R^2 &= R_0^2 - 2(\zeta x- \eta y) + x^2 + y^2 \\
-&= R_0^2
+R^2 &= R_0^2 - 2(\zeta x + \eta y) + x^2 + y^2 \\
+&= R_0^2 \left[1 + \frac{- 2(\zeta x + \eta y) + x^2 + y^2}{R_0^2}\right] \\
+R &= R_0 \sqrt{1 + \frac{- 2(\zeta x + \eta y) + x^2 + y^2}{R_0^2} }\\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+We can then use the taylor expansion for $\sqrt{1 + \epsilon} = 1 + \frac{x}{2} + \dots$ to get:
+$$
+\begin{align}
+R &= R_0 - \frac{\zeta x + \eta y}{R_0} + \frac{x^2 + y^2}{2 R_0}
+\end{align}
+$$
+This means that our final field is
+$$
+\begin{align}
+\Phi(\zeta, \eta) &= \frac{\kappa(\chi)e^{ikR_0}}{R_0} \iint f(x, y)e^{ik\alpha(x, y, \zeta, \eta)}dxdy
+\end{align}
+$$
+where
+$$
+\begin{align}
+\alpha(x,y,\zeta,\eta) &= -\frac{\zeta x + \eta y}{R_0} + \frac{x^2 + y^2}{2R_0}
+\end{align}
+$$
+We are now going to make the final and most restrictive approximation that $\frac{x^2 + y^2}{2\lambda R_0} \approx 0$. This is known as the Fraunhofer condition and with this we can arrive out our final conclusion:
+$$
+\begin{align}
+\Phi(\zeta, \eta) &= \frac{\kappa(\chi) e^{ikR_0}}{R_0} \iint f(x, y) e^{-ik \frac{\zeta x + \eta y}{R_0}} dxdy
+\end{align}
+$$
+substiuting in the variables 
+$$
+\begin{align}
+\mu = \frac{\sin \theta }{\lambda} \approx \frac{1}{\lambda} \frac{\zeta}{R_0} \\
+\nu = \frac{\sin \phi }{\lambda} \approx \frac{1}{\lambda} \frac{\eta}{R_0} \\
+\end{align}
+$$
+we have:
+$$
+\begin{align}
+\Phi(\zeta, \eta) &= \frac{\kappa(\chi) e^{ikR_0}}{R_0} \iint f(x, y) e^{-2\pi i(x\mu + y\nu)} dxdy
+\end{align}
+$$
+This is just the 2d-fourier transform!
+$$
+\begin{align}
+\Phi(\zeta, \eta) &= \frac{\kappa(\chi) e^{ikR_0}}{R_0} \mathcal F\{f(x, y)\} \\
+\end{align}
+$$
+Then taking the intensity we get 
+$$
+\begin{align}
+I = \left(\frac{\kappa(\chi)}{R_0}\right)^2 \mathcal F\{f\} \mathcal F^*\{f\}
+\end{align}
+$$
