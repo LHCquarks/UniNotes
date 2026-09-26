@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
+                "file": "Phys/PHYS2114/Electromagnetism/Energy Flux and Poynting Vector.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fraunhofer Diffraction"
+              "title": "Energy Flux and Poynting Vector"
             }
           }
         ]
@@ -172,6 +172,16 @@
   },
   "active": "99837b902bce1371",
   "lastOpenFiles": [
+    "Phys/PHYS2114/Electromagnetism/Potentials and Gauge Invariance.md",
+    "Phys/PHYS2114/Electrostatics/Work and Energy of Electrostatics.md",
+    "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
+    "Phys/PHYS2114/Electrostatics/Electrostatics.md",
+    "Phys/PHYS2114/Electromagnetism/Electromotive Force and Inductance.md",
+    "Phys/PHYS2114/Electromagnetism/Electromagnetism.md",
+    "Phys/PHYS2114/Magnetostatics/Magnetostatics.md",
+    "Phys/PHYS2114/Magnetostatics/Currents.md",
+    "Phys/PHYS2114/Electromagnetism/Energy Flux and Poynting Vector.md",
+    "Phys/PHYS2114/Electromagnetism/Energy Density of Magnetic Field.md",
     "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
     "Phys/PHYS3114/Optics/Pasted image 20260925074540.png",
     "Phys/PHYS3114/Optics/Pasted image 20260925073614.png",
@@ -192,19 +202,10 @@
     "Phys/PHYS3114/Optics/Optics.md",
     "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Phys/PHYS2114/PHYS2114.md",
-    "Phys/PHYS2114/Formulas.md",
     "Phys/PHYS3114/Electrodynamics/Pasted image 20260915163428.png",
-    "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
-    "Phys/PHYS2111/Multiple Particles.md",
-    "Phys/PHYS2111/Motivation of quantum mechanics.md",
-    "Phys/PHYS2111/Entanglement.md",
-    "Phys/PHYS2111/Common operators.md",
-    "Phys/PHYS3114/PHYS3114.md",
-    "Phys/Phys.md",
     "Phys/PHYS3114/Electrodynamics",
     "Phys/PHYS3114/Optics",
     "Phys/PHYS3114",
-    "Maths/Math.md",
     "Maths/MATH1081/Set Theory and Functions",
     "Maths/MATH1081",
     "Notations ",
