@@ -131,3 +131,10 @@ $$
 \end{align}
 $$
 Which agrees with conventional theory.
+
+$$
+\begin{align}
+\mathcal{F}\left{\int_{-\infty}^tx(t)\ dt\right}=\frac{X(\omega)}{j\omega}+\pi X(0)\delta(\omega) \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
