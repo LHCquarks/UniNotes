@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS2114/Electromagnetism/Energy Flux and Poynting Vector.md",
+                "file": "Maths/MATH2111/Differential Calculus/The multivariable derivative.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Energy Flux and Poynting Vector"
+              "title": "The multivariable derivative"
             }
           }
         ]
@@ -172,6 +172,7 @@
   },
   "active": "99837b902bce1371",
   "lastOpenFiles": [
+    "Phys/PHYS2114/Electromagnetism/Energy Flux and Poynting Vector.md",
     "Phys/PHYS2114/Electromagnetism/Potentials and Gauge Invariance.md",
     "Phys/PHYS2114/Electrostatics/Work and Energy of Electrostatics.md",
     "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
@@ -180,7 +181,6 @@
     "Phys/PHYS2114/Electromagnetism/Electromagnetism.md",
     "Phys/PHYS2114/Magnetostatics/Magnetostatics.md",
     "Phys/PHYS2114/Magnetostatics/Currents.md",
-    "Phys/PHYS2114/Electromagnetism/Energy Flux and Poynting Vector.md",
     "Phys/PHYS2114/Electromagnetism/Energy Density of Magnetic Field.md",
     "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
     "Phys/PHYS3114/Optics/Pasted image 20260925074540.png",
