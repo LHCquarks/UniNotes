@@ -5,4 +5,7 @@ In this half of the course we will make a few assumptions to make our problems t
 A lot of the time we will also make assumptions about the scale of things ie the screen is really far away.
 
 The general framework is derived with [[Scalar Waves]] and from this framework we get:
-- 
+- [[Fraunhofer Diffraction]]
+
+We also use tools such as:
+- [[Fourier Transforms]]
