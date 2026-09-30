@@ -130,3 +130,27 @@ $$
 \text{array}(s) &= \sum_{n \in \mathbb Z}\delta(x - n)
 \end{align}
 $$
+## Convolutions
+### Definition and Intuition
+The convolution of two functions $f(x), g(x)$ is defined as 
+$$
+\begin{align}
+(f *g)(u) &= \int_{-\infty}^\infty f(x)g(u - x)dx \\
+&= (f \otimes g)(u)
+\end{align}
+$$
+This operation represents a blending of the two functions and has applications in many areas.
+
+The convolution is:
+- **Commutative**
+- **Associative**
+- **Distributive**
+### Use in "duplicating" functions
+Lets inspect the convolution of some function $f(x)$ with the delta function:
+$$
+\begin{align}
+(f*\delta(x- a))(u) &= \int_{-\infty}^\infty f(x) \delta(u - x + a)dx \\
+&= f(u + a)
+\end{align}
+$$
+Thus 
