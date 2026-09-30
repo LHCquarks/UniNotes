@@ -146,11 +146,28 @@ The convolution is:
 - **Associative**
 - **Distributive**
 ### Use in "duplicating" functions
-Lets inspect the convolution of some function $f(x)$ with the delta function:
+Lets inspect the convolution of some function $f(x)$ with the delta function. First to make things extra clear we will define the new function $g(x) = \delta(x - a)$ and thus:
 $$
 \begin{align}
-(f*\delta(x- a))(u) &= \int_{-\infty}^\infty f(x) \delta(u - x + a)dx \\
-&= f(u + a)
+(f*g)(u) &= \int_{-\infty}^\infty f(x) g(u  -x)dx \\
+&= \int_{-\infty}^\infty f(x) \delta(u - x - a)dx \\
+&= f(u - a)
 \end{align}
 $$
-Thus 
+Thus the delta function shifts $f$ to an arbitrary spot so if we want our function to appear in $a_i$  spots we can just take the convolution:
+$$
+\begin{align}
+f * \left[\sum_i\delta(x - a_i)\right] &= \sum_i f(x - a_i)
+\end{align}
+$$
+We can also scale these functions by multiplying by some coefficients $\alpha_i$.
+
+### Convolution theorem
+The convolution theorem is about how a convolution of two functions behaves under a FT. We get the following two identities:
+$$
+\begin{align}
+\mathcal F \{f * g\} &= \mathcal F\{f\} \cdot \mathcal F\{g\} \\
+\mathcal F \{f\} *\mathcal F\{g\} &= \mathcal F\{f\cdot g\}
+\end{align}
+$$
+
