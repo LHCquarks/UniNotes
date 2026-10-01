@@ -3,12 +3,8 @@ tags:
   - Continence
 ---
 Set theory first begain in 1874 be **Georg Cantor** and works very well to moddel discrete mathematical topics.
-- [[Notations and Definitions]]
-
-
 - [[Objects]]
 - [[Relations]]
 - [[Operations]]
 - [[Set Algebra laws]]
-- [[Maths/MATH1081/Set Theory and Functions/Functions | Functions]]
-- 
+- [[Maths/MATH1081/Set Theory and Functions/Functions |Functions]]
