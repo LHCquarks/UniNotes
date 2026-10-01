@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "ea581751b438b246",
+            "id": "da19ae69e6eaf43a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -199,10 +199,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ea581751b438b246",
+  "active": "da19ae69e6eaf43a",
   "lastOpenFiles": [
     "Maths/MATH1081/Number Theory and Relations/Number theory and relations.md",
     "Maths/MATH1081/Number Theory and Relations/Divisibility.md",
+    "Phys/PHYS2114/Electrostatics/Conductors.md",
     "Maths/MATH1081/Number Theory and Relations",
     "Maths/MATH1081/MATH1081.md",
     "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
@@ -227,7 +228,6 @@
     "Phys/PHYS2114/Electrostatics/Work and Energy of Electrostatics.md",
     "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
     "Phys/PHYS2114/Electrostatics/Electrostatics.md",
-    "Phys/PHYS2114/Electromagnetism/Electromotive Force and Inductance.md",
     "Phys/PHYS3114/Optics/Pasted image 20260925074540.png",
     "Phys/PHYS3114/Optics/Pasted image 20260925073614.png",
     "Phys/PHYS3114/Optics/Pasted image 20260925072843.png",
