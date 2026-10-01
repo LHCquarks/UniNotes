@@ -31,3 +31,4 @@ where $p_k$ are primes and $\alpha_k$ are positive integers
 A common divisor of two integers $a, b$ is another integer $c$ such that $c \mid a$ and $c \mid b$ 
 ### Co-primes
 Two integers $a, b$ are considered **co-prime** or **relatively prime** if their only common divisors are $\pm 1$ and we can notate this as $a \perp b$. 
+## GCD
