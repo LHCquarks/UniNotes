@@ -6,3 +6,4 @@ We find this set particularly interesting because all but one of our normal oper
 Number theory investigates when $\div$ breaks down on $\mathbb Z$ and why.
 ## Content
 - [[Divisibility]]
+- [[GCD]]

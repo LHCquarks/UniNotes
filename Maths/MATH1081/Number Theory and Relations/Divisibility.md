@@ -31,15 +31,3 @@ where $p_k$ are primes and $\alpha_k$ are positive integers
 A common divisor of two integers $a, b$ is another integer $c$ such that $c \mid a$ and $c \mid b$ 
 ### Co-primes
 Two integers $a, b$ are considered **co-prime** or **relatively prime** if their only common divisors are $\pm 1$ and we can notate this as $a \perp b$. 
-## GCD
-The greatest common divisor of two integers $a, b$ when both $a, b$ are not $0$ is the natural number $d \in \mathbb N$ such that:
-- $d \mid a$ and $d \mid b$
-- for all $c \in \mathbb N$ that satisfy $c \mid a$, $c \mid b$ we have that $c \le d$
-### Properties
-- $\gcd(a, 1) = 1$ 
-- $\gcd(a, 0) = |a|$
-- $\gcd(a, \gcd(b, c)) = \gcd(\gcd(a, b), c)$
-- $\gcd(ac, bc) = |c|\gcd(a, b)$
-- if $a \mid bc$ and $\gcd(a, b) = 1$ then $a \mid c$
-- if $a = qb + c$ then $\gcd (a, b) = \gcd(b, c)$
-
