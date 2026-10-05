@@ -8,3 +8,5 @@ Number theory investigates when $\div$ breaks down on $\mathbb Z$ and why.
 - [[Divisibility]]
 - [[GCD]]
 - [[Modular Arithmatic]]
+- [[Relations]]
+- 
