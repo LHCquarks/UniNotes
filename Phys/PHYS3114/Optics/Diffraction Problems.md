@@ -27,11 +27,11 @@ and thus the far field deffraction pattern is:
 $$
 \begin{align}
 \phi(s) &= \mathcal F\{\delta(|x| - d)\} \\
-&= \mathcal F\{\delta(|x| - 1/2 - d + 1/2)\} \\
-&= e^{-2\pi i s(d - 1/2)}\mathcal F\{\delta(|x| - 1/2)\} \\
-&= e^{-2\pi i s(d - 1/2)}\cos(\pi s) \\
-I(s) &= \phi^*(s) \phi(s) \\
-&= \cos^2(\pi s)
+&= \mathcal F\{\delta(x + d)\} + \mathcal F\{\delta(x - d)\} \\
+&= e^{2\pi isd}\mathcal F\{\delta(x)\} + e^{-2\pi i sd}\mathcal F\{\delta(x)\} \\
+&= e^{2\pi isd}\mathcal + e^{-2\pi i sd} \\
+&= 2\cos(2\pi sd) \\
+
 \end{align}
 $$
 <% tp.file.cursor(2) %>
