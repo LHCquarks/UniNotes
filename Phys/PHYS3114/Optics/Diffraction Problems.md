@@ -57,7 +57,17 @@ For a diffraction grating that has:
 we get the aperture function:
 $$
 \begin{align}
-f(x) &= \Pi\left(\frac{x}{w}\right) * \left[\sum_{k=-\infty}^\infty \delta(x + kd)\right] *\Pi
+f(x) &= \left(\Pi\left(\frac{x}{w}\right) * \text{array}\left(\frac{x}{d}\right)\right) \cdot\Pi\left(\frac{nx}{d}\right)
+\end{align}
+$$
+Applying the FT we find:
+$$
+\begin{align}
+\phi(s) &= \mathcal F\{f\} \\
+&= \mathcal F\left\{\Pi\left(\frac{x}{w}\right) * \text{array}\left(\frac{x}{d}\right)\right\} * \mathcal F\left\{\Pi\left(\frac{nx}{d}\right)\right\} \\
+&= \left[\mathcal F\left\{\Pi\left(\frac{x}{w}\right)\right\} \cdot  \mathcal F\left\{\text{array}\left(\frac{x}{d}\right)\right\} \right]* \mathcal F\left\{\Pi\left(\frac{nx}{d}\right)\right\} \\
+&= \left[\frac{\sin(\pi w s)}{\pi s} \cdot  \mathcal F\left\{\sum_{k=-\infty}^\infty \delta(x + kd)\right\} \right]* \mathcal F\left\{\Pi\left(\frac{nx}{d}\right)\right\} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
+
