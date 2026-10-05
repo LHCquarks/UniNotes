@@ -7,4 +7,10 @@ Given numbers $b, c \in \mathbb Z$ the equation $x \text{ mod } b = c$ has infin
 
 Given $x, y$ that both solve the above equation we can write $x \equiv y \pmod{b}$  which reads "$x$ is **congruent** to $y$ under $\text{mod } b$".
 ## Properties of modular arithmetic
+- If $a \equiv b \pmod{m}$ and $k \in \mathbb Z^+$ satisfies $k \mid m$ then $a \equiv b \pmod{k}$
+- If $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$ then $a + c \equiv b + d \pmod{m}$
+- If $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$ then $ac \equiv bd \pmod{m}$
+- $a\equiv b \pmod{m} \iff ak \equiv bk \pmod{mk}$ for all $k \in \mathbb Z^+$
+- If $ak \equiv bk \pmod{m}$ for some $k \in \mathbb Z$ and $\gcd(k, m) = 1$ then $a \equiv b \pmod{m}$
+- If $a \equiv b \pmod{m}$ then $a^k \equiv b^k \pmod{m}$ for all $k \in \mathbb Z^+$
 - 
