@@ -13,4 +13,29 @@ Given $x, y$ that both solve the above equation we can write $x \equiv y \pmod{b
 - $a\equiv b \pmod{m} \iff ak \equiv bk \pmod{mk}$ for all $k \in \mathbb Z^+$
 - If $ak \equiv bk \pmod{m}$ for some $k \in \mathbb Z$ and $\gcd(k, m) = 1$ then $a \equiv b \pmod{m}$
 - If $a \equiv b \pmod{m}$ then $a^k \equiv b^k \pmod{m}$ for all $k \in \mathbb Z^+$
-- 
+## Fermat's little theorem
+Fermat showed that for prime $p$ and integer $a$, as long as $p \not\mid a$ then 
+$$
+\begin{align}
+a^{p - 1} \equiv 1 \pmod{p}
+\end{align}
+$$
+We do not prove this in this course but we can use it to solve problems like:
+
+Simplify $99^{100} \pmod{101}$. 
+$101$ is a prime and $99 \not \mid 101$ so FLT implies $99^{100} \equiv 1 \pmod{101}$
+
+Simplify $99^{909} \pmod{101}$.
+$$
+\begin{align}
+99^{909}&\equiv \left(99^{101}\right)^9 \pmod{101} \\
+&\equiv \left(99^{100} 99\right)^9 \pmod{101} \\
+&\equiv \left(99^{100}\right)^9 99^9 \pmod{101} \\
+&\equiv \left(1\right)^9 99^9 \pmod{101} \\
+&\equiv 99^9 \pmod{101} \\
+&\equiv (-2)^9 \pmod{101} \\
+&\equiv -512 \pmod{101} \\
+&\equiv 94 \pmod{101} \\
+\end{align}
+$$
+
