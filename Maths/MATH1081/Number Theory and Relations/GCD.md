@@ -15,3 +15,40 @@ The lowest common multiple (LCM) of two integers $a, b$ is the positive integer 
 - for all $c\in \mathbb N$ that satisfy the first condition, $d \mid c$
 ### Identity with GCD
 It is known that $\text{lcm}(a, b)\gcd(a, b) = ab$ 
+## Euclidean algorithm
+### Division theorem
+Given two numbers $a, b \in \mathbb Z$ with $b \not=0$, there exists two unique numbers $r, q \in \mathbb Z$ such that both
+$$
+\begin{align}
+a &=qb + r \\
+0 &\le r < |b|
+\end{align}
+$$
+We will prove this for $a \ge 0, b > 0$ but this can fairly easily be extended encompass all of $\mathbb Z$.
+We start with $r_0 = a, q_0 = 0$ and apply the following procedure:
+
+ If $r_i \ge b$ then we can write:
+ $$
+\begin{align}
+a &= q_i b + r_i \\
+&= q_i b + (r_i - b) + b \\
+&= (q_i + 1)b + (r_i - b)
+\end{align}
+$$
+We can then define $q_{i+ 1} = q_i + 1, r_{i + 1} = r_i - b$ and thus we are back in a form of $a = q_{i + 1}b + r_{i + 1}$. We can then continue this process until $r_{n} < |b|$ in which case we will stop and our $q_n, r_n$ will satisfy both our conditions.
+### Algorithm
+The Euclidean algorithm is an algorithm that efficiently computes the $\gcd$ of two integers $a, b$. 
+
+We start by using the divisibility theorem to get two numbers $q_0, r_0$ such that $a = q_0 b + r_0$. By the properties of $\gcd$ we know that $\gcd(a, b) = \gcd(b, r_0)$ and thus we have kicked the can down the road a bit. 
+Importantly, because $0 \le r_0 < |b|$ we have decreased the size of the numbers we are working with and this process is infinity repeatable! Even further, whilst $r$ gets smaller and smaller it must always stay above or equal to $0$ and thus we eventually terminate:
+$$
+\begin{align}
+a &= q_0b + r_0 \\
+b &= q_1 r_0 + r_1 \\
+r_0 &= q_2 r_1 + r_2 \\
+&\ \ \vdots \\
+r_{n-1} &= q_{n+1} r_n + 0
+\end{align}
+$$
+At this point we get that $\gcd(a, b) = \gcd(b, r_0) = \dots = \gcd(r_n, 0) = r_n$ and thus we have found our $\gcd(a, b) = r_n$.
+
