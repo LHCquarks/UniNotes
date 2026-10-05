@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maths/MATH1081/Number Theory and Relations/Relations.md",
+                "file": "Phys/PHYS2114/Electrostatics/Work and Energy of Electrostatics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Relations"
+              "title": "Work and Energy of Electrostatics"
             }
           }
         ],
@@ -201,9 +201,16 @@
   },
   "active": "1b24a7511eb7a9c6",
   "lastOpenFiles": [
+    "Phys/PHYS2114/Electrostatics/The Electric Field.md",
+    "Phys/PHYS2114/Electrostatics/Divergence and Curl of Electrostatic Fields.md",
+    "Phys/PHYS2114/Electrostatics/Electric Potentials.md",
+    "Phys/PHYS2114/Electrostatics/Electrostatics.md",
+    "Phys/PHYS2114/Electrostatics/Boundaries of Charged Surfaces.md",
+    "Phys/PHYS2114/Electrostatics/Conductors.md",
+    "Phys/PHYS2114/Electrostatics/Capacitors.md",
+    "Maths/MATH1081/Number Theory and Relations/Relations.md",
     "Maths/MATH1081/Number Theory and Relations/Divisibility.md",
     "Maths/MATH1081/Number Theory and Relations/GCD.md",
-    "Maths/MATH1081/Number Theory and Relations/Relations.md",
     "Maths/MATH1081/Number Theory and Relations/Number theory and relations.md",
     "Maths/MATH1081/Number Theory and Relations/Modular Arithmatic.md",
     "Maths/MATH1081/Set Theory and Functions/Set Relations.md",
@@ -215,19 +222,12 @@
     "Phys/PHYS2113/Lagrangian Mechanics/The Lagrangian.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Single Slit Diffraction.md",
     "Comp/COMP1521/MIPS/Executable files.md",
-    "Phys/PHYS2114/Electrostatics/Conductors.md",
     "Maths/MATH1081/Number Theory and Relations",
     "Maths/MATH1081/Set Theory and Functions/Set theory and functions.md",
     "Maths/MATH1081/Set Theory and Functions/Operations.md",
     "Maths/MATH1081/Set Theory and Functions/Functions.md",
     "Maths/MATH1081/Set Theory and Functions/Notations and Definitions.md",
     "Phys/PHYS3114/Optics/Fourier Transforms.md",
-    "Phys/PHYS3114/Optics/Optics.md",
-    "Maths/MATH2621/Complex Functions/Residues.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy-Riemann Equations.md",
-    "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
-    "Maths/MATH2621/Complex Specific Calculus/Contour Integrals.md",
     "Phys/PHYS3114/Optics/Pasted image 20260925074540.png",
     "Phys/PHYS3114/Optics/Pasted image 20260925073614.png",
     "Phys/PHYS3114/Optics/Pasted image 20260925072843.png",
