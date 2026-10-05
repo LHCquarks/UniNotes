@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -227,12 +227,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7b952837837c0a9d",
+  "active": "456e4d6d36c00d28",
   "lastOpenFiles": [
-    "Phys/PHYS3114/Optics/Optics.md",
-    "Phys/PHYS3114/Optics/Fourier Transforms.md",
     "Phys/PHYS3114/Optics/Diffraction Problems.md",
+    "Phys/PHYS3114/Optics/Fourier Transforms.md",
+    "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Single Slit Diffraction.md",
+    "Phys/PHYS3114/Optics/Optics.md",
     "Phys/PHYS3114/Optics/Untitled.md",
     "Maths/MATH1081/Number Theory and Relations/Number theory and relations.md",
     "Maths/MATH1081/Set Theory and Functions/Set Relations.md",
@@ -254,7 +255,6 @@
     "Phys/Phys.md",
     "Phys/PHYS2113/PHYS2113.md",
     "Phys/PHYS2113/Lagrangian Mechanics/Lagrangian Mechanics.md",
-    "Phys/PHYS2113/Lagrangian Mechanics/The Lagrangian.md",
     "Maths/MATH1081/Number Theory and Relations",
     "Phys/PHYS3114/Optics/Pasted image 20260925074540.png",
     "Phys/PHYS3114/Optics/Pasted image 20260925073614.png",
