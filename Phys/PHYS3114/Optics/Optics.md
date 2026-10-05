@@ -6,6 +6,7 @@ A lot of the time we will also make assumptions about the scale of things ie the
 
 The general framework is derived with [[Scalar Waves]] and from this framework we get:
 - [[Fraunhofer Diffraction]]
+- [[Diffraction Problems]]
 
 We also use tools such as:
 - [[Fourier Transforms]]
