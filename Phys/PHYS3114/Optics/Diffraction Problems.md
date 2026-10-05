@@ -35,4 +35,18 @@ I &=  4 \cos^2(\pi sd)
 \end{align}
 $$
 ## Real double slits
+We can construct the aperture function through convolutions with dirac delta functions:
+$$
+\begin{align}
+f(x) &= \Pi\left(\frac{x}{w}\right) * [\delta(x + d/2) + \delta(x - d/2)]
+\end{align}
+$$
+These have the form of the two we solved before and thus FT of this will be the product of the two:
+$$
+\begin{align}
+\phi(s) &= \mathcal F\{f\} \\
+&= \frac{\sin(\pi w s)}{\pi s} \cdot 2\cos(\pi sd) \\
+I &=  \frac{4}{\pi^2 s^2}\sin^2(\pi w s)\cos^2(\pi ds)
+\end{align}
+$$
 
