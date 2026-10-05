@@ -20,18 +20,19 @@ where $s = \frac{\sin \theta}{\lambda}$.
 For an ideal double slit (width of slits is $0$) we have the aperture function:
 $$
 \begin{align}
-f(x, y) &= \delta(|x| - d)
+f(x, y) &= \delta(x + d/2) + \delta(x - d/2)
 \end{align}
 $$
-and thus the far field deffraction pattern is:
+and thus the far field diffraction pattern is:
 $$
 \begin{align}
-\phi(s) &= \mathcal F\{\delta(|x| - d)\} \\
-&= \mathcal F\{\delta(x + d)\} + \mathcal F\{\delta(x - d)\} \\
-&= e^{2\pi isd}\mathcal F\{\delta(x)\} + e^{-2\pi i sd}\mathcal F\{\delta(x)\} \\
-&= e^{2\pi isd}\mathcal + e^{-2\pi i sd} \\
-&= 2\cos(2\pi sd) \\
+\phi(s) &= \mathcal F\{\delta(x + d/2)\} + \mathcal F\{\delta(x - d/2)\} \\
+&= e^{\pi isd}\mathcal F\{\delta(x)\} + e^{-\pi i sd}\mathcal F\{\delta(x)\} \\
+&= e^{\pi isd}\mathcal + e^{-\pi i sd} \\
+&= 2\cos(\pi sd) \\
+I &=  4 \cos^2(\pi sd)
 
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+## Real double slits
+
