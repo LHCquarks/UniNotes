@@ -51,4 +51,28 @@ r_{n-1} &= q_{n+1} r_n + 0
 \end{align}
 $$
 At this point we get that $\gcd(a, b) = \gcd(b, r_0) = \dots = \gcd(r_n, 0) = r_n$ and thus we have found our $\gcd(a, b) = r_n$.
+## Reverse Euclidean algorithm / Bezout's identity
+Say that we have performed Euclid's algorithm and as a result have the equations:
+$$
+\begin{align}
+a &= q_0 b + r_0 \\
+b &= q_1 r_0 + r_1 \\
+&\ \ \vdots \\
+r_{n-3} &= q_{n-1} r_{n-2} + r_{n-1} \\
+r_{n-2} &= q_n r_{n-1} + r_n \\
+\end{align}
+$$
 
+we know that $r_n = \gcd(a, b)$ and so we will try and express this in terms of $a, b, x, y$ for some $x, y \in \mathbb Z$. To do this we rearrange all the equations to have the right most $r$ by itself:
+$$
+\begin{align}
+r_0 &= a - q_0 b \\
+r_1 &= b - q_1 r_0 \\
+&\ \ \vdots \\
+r_{n - 1} &= r_{n-3} - q_{n - 1} r_{n - 2} \\
+r_n &= r_{n - 2} - q_n r_{n - 1}
+\end{align}
+$$
+We can then head up the equations substituting in our $r$'s until we get to a point where we have some numbers $x, y$ such that $r_n = x a + y b$. Further, because we substituted expressions that comprise only of addition and multiplication $x, y$ must be integers.
+
+The fact that we can write $\gcd(a, b) = xa + yb$ for some $x, y \in \mathbb Z$ is called **Bezout's identity**.
