@@ -7,3 +7,4 @@ Number theory investigates when $\div$ breaks down on $\mathbb Z$ and why.
 ## Content
 - [[Divisibility]]
 - [[GCD]]
+- [[Modular Arithmatic]]
