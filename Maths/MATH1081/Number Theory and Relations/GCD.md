@@ -76,3 +76,13 @@ $$
 We can then head up the equations substituting in our $r$'s until we get to a point where we have some numbers $x, y$ such that $r_n = x a + y b$. Further, because we substituted expressions that comprise only of addition and multiplication $x, y$ must be integers.
 
 The fact that we can write $\gcd(a, b) = xa + yb$ for some $x, y \in \mathbb Z$ is called **Bezout's identity**.
+## Solving integer linear equations
+Given integers $a,b,c\in \mathbb Z$  does the equation $c = ax + by$ have any solutions for integer $x, y$?
+
+Suppose there exists $x, y\in \mathbb Z$ so that the above is true, then because $\gcd(a, b) \mid a$ and $\gcd(a, b) \mid b$ we have that $\gcd(a, b) \mid (ax + by)$ and thus $\gcd(a, b) \mid c$.
+
+Now suppose that $\gcd(a, b) \mid c$, then $c = \gcd(a, b)k$ for some $k \in \mathbb Z$. By Bezout's identity we know that there exists some $x', y' \in \mathbb Z$  such that $\gcd(a, b) = ax' + by'$. Multiplying by $k$ we get $\gcd(a, b)k = c = a(x'k) + b(y'k)$ and thus $c = ax + by$ for $x = x'k, y = y'k$.
+
+These statements work together to show given integers $a, b, c \in \mathbb Z$ the equation $c = ax +by$ as integer solutions if and only if $\gcd(a, b) \mid c$.
+
+Further, to solve this equation we can use the reverse Euclidean algorithm to get our $x', y'$ and multiply by $k$ to get $x, y$.
