@@ -49,4 +49,15 @@ $$
 I &=  \frac{4}{\pi^2 s^2}\sin^2(\pi w s)\cos^2(\pi ds)
 \end{align}
 $$
-
+## Diffraction Gratings
+For a diffraction grating that has:
+- slits with width $w$
+- a gap between slits of $d$
+- a total number of slits $n$
+we get the aperture function:
+$$
+\begin{align}
+f(x) &= \Pi\left(\frac{x}{w}\right) * \left[\sum_{k=-\infty}^\infty \delta(x + kd)\right] *\Pi
+\end{align}
+$$
+<% tp.file.cursor(2) %>
