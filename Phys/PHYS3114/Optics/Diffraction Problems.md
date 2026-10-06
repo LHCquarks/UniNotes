@@ -66,8 +66,8 @@ $$
 \phi(s) &= \mathcal F\{f\} \\
 &= \mathcal F\left\{\Pi\left(\frac{x}{w}\right) * \text{array}\left(\frac{x}{d}\right)\right\} * \mathcal F\left\{\Pi\left(\frac{nx}{d}\right)\right\} \\
 &= \left[\mathcal F\left\{\Pi\left(\frac{x}{w}\right)\right\} \cdot  \mathcal F\left\{\text{array}\left(\frac{x}{d}\right)\right\} \right]* \mathcal F\left\{\Pi\left(\frac{nx}{d}\right)\right\} \\
-&= \left[\frac{\sin(\pi w s)}{\pi s} \cdot d\text{ array}(dx) \right] * \frac{d}{n}\frac{\sin(\pi ds/n)}{\pi ds/n} \\
-&= \frac{d}{\pi^2}\left[\frac{\sin(\pi w s)}{s} \cdot \text{ array}(dx) \right] * \frac{\sin(\pi ds/n)}{s} \\
+&= \left[\frac{\sin(\pi w s)}{\pi s} \cdot d\text{ array}(ds) \right] * \frac{d}{n}\frac{\sin(\pi ds/n)}{\pi ds/n} \\
+&= \frac{d}{\pi^2}\left[\frac{\sin(\pi w s)}{s} \cdot \text{ array}(ds) \right] * \frac{\sin(\pi ds/n)}{s} \\
 \end{align}
 $$
 the first term ($\frac{\sin(\pi w s)}{s} \cdot \text{array}(ds)$) produces a bunch of Dirac delta functions with area given by $\frac{\sin(\pi w s)}{s}$ and so the convolution simply duplicates the function $\frac{\sin(\pi ds/n)}{s}$ and multiplies by $\frac{\sin(\pi w s)}{s}$ to produce the curve below:
