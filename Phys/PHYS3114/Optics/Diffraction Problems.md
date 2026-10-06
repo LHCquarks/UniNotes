@@ -70,5 +70,6 @@ $$
 &= \frac{d}{\pi^2}\left[\frac{\sin(\pi w s)}{s} \cdot \text{ array}(ds) \right] * \frac{\sin(\pi dsn)}{s} \\
 \end{align}
 $$
-the first term ($\frac{\sin(\pi w s)}{s} \cdot \text{array}(ds)$) produces a bunch of Dirac delta functions with area given by $\frac{\sin(\pi w s)}{s}$ and so the convolution simply duplicates the function $\frac{\sin(\pi dns)}{s}$ and multiplies by $\frac{\sin(\pi w s)}{s}$ to produce the curve below:
-
+the first term ($\frac{\sin(\pi w s)}{s} \cdot \text{array}(ds)$) produces a bunch of Dirac delta functions with area given by $\frac{\sin(\pi w s)}{s}$ and so the convolution simply duplicates the function $\frac{\sin(\pi dns)}{s}$ and multiplies by $\frac{\sin(\pi w s)}{s}$ ( creating an envolope) to produce the curve below:
+![[diffractionGrating.gif]]
+## Resolving power of diffraction gratings
