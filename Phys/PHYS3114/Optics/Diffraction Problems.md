@@ -70,6 +70,11 @@ $$
 &= \frac{d}{\pi^2}\left[\frac{\sin(\pi w s)}{s} \cdot \text{ array}(ds) \right] * \frac{\sin(\pi dsn)}{s} \\
 \end{align}
 $$
-the first term ($\frac{\sin(\pi w s)}{s} \cdot \text{array}(ds)$) produces a bunch of Dirac delta functions with area given by $\frac{\sin(\pi w s)}{s}$ and so the convolution simply duplicates the function $\frac{\sin(\pi dns)}{s}$ and multiplies by $\frac{\sin(\pi w s)}{s}$ ( creating an envolope) to produce the curve below:
+the first term ($\frac{\sin(\pi w s)}{s} \cdot \text{array}(ds)$) produces a bunch of Dirac delta functions with area given by $\frac{\sin(\pi w s)}{s}$ and so the convolution simply duplicates the function $\frac{\sin(\pi dns)}{s}$ and multiplies by $\frac{\sin(\pi w s)}{s}$ ( creating an envelope) to produce the curve below:
 ![[diffractionGrating.gif]]
 ## Resolving power of diffraction gratings
+Diffraction gratings are often used to separate wavelengths of light to analyze them individually but what is the resolving power of these things?
+
+We look to the first order peak and notice that they happen at the first (non-zero) peak of our $\text{array}$ function and thus $1 = ds = \frac{d\sin\theta}{\lambda}$ so $\sin\theta = \frac{\lambda}{d}$. 
+
+Taking the small angle approximation we get $\theta = \frac{\lambda}{d}$. Now, for two intensity patterns to be resolvable we say that the peak of one must be past the first minimum of the other. Bellow shows the cutoff point for resolvability:
