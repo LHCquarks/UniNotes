@@ -1,4 +1,4 @@
-## Single slit
+[[Diffraction gratings]]## Single slit
 Let our aperture be an infinity tall single slit with width $w$, we get the aperture function to be:
 $$
 \begin{align}
