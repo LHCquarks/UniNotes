@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -227,8 +227,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dd68c31af6ba5515",
+  "active": "511381f74db63a2e",
   "lastOpenFiles": [
+    "Phys/PHYS1241/Waves/Optics/Slits/Young's Interference Experiment.md",
     "Phys/PHYS1241/Waves/Optics/Slits/Diffraction gratings.md",
     "Phys/PHYS3114/Optics/Diffraction Problems.md",
     "Phys/PHYS3114/Optics/Fourier Transforms.md",
@@ -254,7 +255,6 @@
     "Maths/MATH1081/Number Theory and Relations/Divisibility.md",
     "Maths/MATH1081/Number Theory and Relations/GCD.md",
     "Maths/MATH1081/Number Theory and Relations/Modular Arithmatic.md",
-    "Maths/MATH1081/MATH1081.md",
     "Maths/MATH1081/Number Theory and Relations",
     "Phys/PHYS3114/Optics/Pasted image 20260925074540.png",
     "Phys/PHYS3114/Optics/Pasted image 20260925073614.png",
