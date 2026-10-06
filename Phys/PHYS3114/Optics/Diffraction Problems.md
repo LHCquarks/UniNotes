@@ -71,14 +71,14 @@ $$
 \end{align}
 $$
 the first term ($\frac{\sin(\pi w s)}{s} \cdot \text{array}(ds)$) produces a bunch of Dirac delta functions with area given by $\frac{\sin(\pi w s)}{s}$ and so the convolution simply duplicates the function $\frac{\sin(\pi dns)}{s}$ and multiplies by $\frac{\sin(\pi w s)}{s}$ ( creating an envelope) to produce the curve below:
-![[diffractionGrating 1.gif]]
+![[diffractionGrating.gif]]
 ## Resolving power of diffraction gratings
 Diffraction gratings arre often used to separate wavelengths of light to analyze them individually but what is the resolving power of these things?
 
 We look to the first order peak and notice that they happen at the first (non-zero) peak of our $\text{array}$ function and thus $1 = ds = \frac{d\sin\theta}{\lambda}$ so $\sin\theta = \frac{\lambda}{d}$. 
 
 Taking the small angle approximation we get $\theta = \frac{\lambda}{d}$. Now, for two intensity patterns to be resolvable we say that the peak of one must be past the first minimum of the other. Bellow shows the cutoff point for resolve-ability:
-
+![[Rayleigh.png]]
 
 The distance between the two peak is thus $\Delta \theta = \frac{\Delta \lambda}{d}$. The distance from a peak to a minimum is the same as asking what the distance from the center to the first minimum of $\frac{\sin(\pi dsn)}{s}$ is, which can easily be seen to be $1 = dsn$  and thus $1 = \frac{dn\sin(\Delta\theta)}{\lambda} = \frac{dn\Delta\theta}{\lambda}$. Finally, we can equate $\Delta \theta$ to get:
 $$
