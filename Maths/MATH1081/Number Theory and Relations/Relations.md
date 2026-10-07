@@ -11,9 +11,9 @@ For a relation $R \subseteq X \times X$ we call it **reflexive** if for all $x \
 For a relation $R \subseteq X \times X$ we call it **symmetric** if for all $x, y \in X$ we have that $x \ R \ y \iff y \ R\ x$.
 ### Transitivity
 For a relation $R \subseteq X \times X$ we call it **transitive** if for all $x, y, z\in X$ we have that $x \ R\ y, y\ R\ z \implies x\ R \ z$. 
-### Equivalence relations
+## Equivalence relations
 A relation $R \subseteq X \times X$ is an **equivalence relation** iff it is **reflexive, symmetric** and **transitive**. If two objects are related by some equivalence relation then we can conclude they are the same in some particular sense.
-## Equivalence classes
+### Equivalence classes
 For a given equivalence relation $\sim\subseteq X \times X$ and an element $a \in X$ we can define the **equivalence class** $[a]$ as the set:
 $$
 \begin{align}
@@ -21,7 +21,26 @@ $$
 \end{align}
 $$
 For example if $\sim$ is defined by setting $x \sim y$ if $x \equiv y \pmod{2}$ then $[0] = \{2k: k\in \mathbb Z\}$.
-### Properties
+#### Properties
 - If $x \in X$ then $x \in [x]$
 - If $x \sim y$ then $[x] = [y]$
 - All the equivalence classes on $X$ **partition** $X$
+## Partial orders
+### Anti-symmetry
+A relation $\preceq$ is considered anti-symmetric if for all $x, y \in X$ whenever $x \preceq y$ and $y \preceq x$  we have that $x = y$.
+### Partial Order
+A relation $\preceq$ is a **partial order** iff it is **reflexive, antisymetric** and **transitive**. 
+
+An example of a partial order is $\le$ or $\subseteq$.
+### Comparable objects
+Two objects $x, y$ are related by the partial order $\preceq$ if **either** $x \preceq y$ or $y \preceq x$.
+
+If two objects are related by a partial order relation we say they are **comparable**.
+Further, if $x \preceq y$ we say that "$x$ **precedes** $y$" and if $y \preceq x$ we say that "$x$ **succeeds** $y$".
+### Partially and totally ordered sets
+If $\preceq$ is a partial order on a set $X$ we call $X$ a **partially ordered set** or **poset** which we can write as $(X, \preceq)$.
+
+Further, if a poset has the property that all it's elements are comparable to each other then our set is a **totally ordered set**. 
+
+An example of one such set is $(\mathbb R, \le)$. 
+
