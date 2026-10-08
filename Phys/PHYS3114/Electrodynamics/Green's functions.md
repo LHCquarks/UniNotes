@@ -70,7 +70,7 @@ $$
 ## Boundary conditions
 Due to $G$ being a building block of the scalar field $\varphi$ we inherit the ambiguity of gauges an so boundary conditions can help us take that ambiguity away.
 
-A general solution to $L[y] = f$ involves both a particular solution and all the homogenous solutions thus a more general form for $\varphi$ with a particular Green's funciton $G_0$ and a homogenous solution $\varphi_{\text{hom}}$ is:
+A general solution to $L[y] = f$ involves both a particular solution and all the homogeneous solutions thus a more general form for $\varphi$ with a particular Green's function $G_0$ and a homogeneous solution $\varphi_{\text{hom}}$ is:
 $$
 \begin{align}
 \varphi(x) &= \int f(\zeta)G_0(x, \zeta)d\zeta + \varphi_{\text{hom}}(x)
@@ -106,11 +106,11 @@ $$
 \end{align}
 $$
 These terms have fairly easy to see meanings:
-- The first term is the what we expect from Laplace's eqation
+- The first term is the what we expect from Laplace's equation
 - The second term is a correcting term for the potential on the boundary
 - The third term is a correcting term for the normal of the potential.
 #### Example
-Say we have a conducting spherical shell set to $\varphi = V_0$ centered on the origin with no internal charge distrobution. Then:
+Say we have a conducting spherical shell set to $\varphi = V_0$ centered on the origin with no internal charge distribution. Then:
 $$
 \begin{align}
 \varphi (r) &= -\frac{1}{\epsilon_0} \int_V G(r';r)(0) dV' + \int_{\partial V} (V_0) \nabla'G(r';r) \cdot dA' - \int_{\partial V} G(r';r) \nabla' (V_0) \cdot dA' \\
@@ -118,14 +118,13 @@ $$
 \varphi (r) &= \int_{\partial V} V_0 \nabla'G(r';r) \cdot dA'  \\
 \end{align}
 $$
-Now, we can use the free space electrostatic green's function $G(r'; r) = \frac{1}{4\pi} \frac{1}{|r' - r|}$. Taking the grad of this function in spherical coordinates gives
-
-Using the fact that our setup is rotationally symetric we can limit our $r$ to the $z$-axis and from there apply the cosine law:
-![[Pasted image 20260915163428.png|424]]
-With $|r'|$ being fixed at $R$ we get:
+We can notice that setting $V_0 = 0$ makes our problem trivial but by gauge symmetry $\varphi + V_0$ produces the same electric field as $\varphi$ and will therefore will solve the boundary conditions. This means that:
 $$
 \begin{align}
-G(r';r) &= \frac{1}{4\pi} \frac{1}{r^2 + R^2 - 2rR\cos\phi}
+\varphi_0(r) &= \int_{\partial V} (0) \nabla' G(r';r) \cdot A' \\
+&= 0 \\
+\varphi (r) &= \varphi_0(r) + V_0 \\
+&= V_0
 \end{align}
 $$
-and so our integral
+Hence inside the sphere $\varphi$ is constant which produces an electric field of $\vec E = 0$ which aligns with what we expect from Guass's law.
