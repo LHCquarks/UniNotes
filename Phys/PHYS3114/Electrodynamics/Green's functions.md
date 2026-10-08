@@ -120,7 +120,7 @@ $$
 $$
 Now, we can use the free space electrostatic green's function $G(r'; r) = \frac{1}{4\pi} \frac{1}{|r' - r|}$. Taking the grad of this function in spherical coordinates gives
 
-Using the fact that our setup is rotationally symetric we can limit our $r$ to the $z$-axis and from their apply the cosine law:
+Using the fact that our setup is rotationally symetric we can limit our $r$ to the $z$-axis and from there apply the cosine law:
 ![[Pasted image 20260915163428.png|424]]
 With $|r'|$ being fixed at $R$ we get:
 $$
