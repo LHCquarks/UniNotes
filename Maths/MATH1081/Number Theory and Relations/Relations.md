@@ -43,4 +43,29 @@ If $\preceq$ is a partial order on a set $X$ we call $X$ a **partially ordered s
 Further, if a poset has the property that all it's elements are comparable to each other then our set is a **totally ordered set**. 
 
 An example of one such set is $(\mathbb R, \le)$. 
+### Minimal and Maximal elements
+A **minimal** element of a poset is an element $x \in X$ such that there is no $y \in X$ such that $y\preceq x$ .
+A **maximal** element of a poset is an element $x \in X$ such that there is no $y \in X$ such that $x\preceq y$ .
 
+Note that multiple elements of $X$ can be maximal and minimal but they can not relate to each other.
+### Greatest and least elements
+The **greatest** element of a poset $(X, \preceq)$ (if it exists) is the element $x \in X$ such that for all $y \in X$ we have that $y \preceq x$.
+
+The **least** element of a poset $(X, \preceq)$ (if it exists) is the element $x\in X$ such that for all $y \in X$ we have that $x \preceq y$.
+
+We have that:
+- The least element is unique
+- The greatest element is unique
+- If $X$ is finite then $(X, \preceq)$ has a **least** element iff there is exactly one **minimal** element
+- If $X$ is finite then $(X, \preceq)$ has a **greatest** element iff there is exactly one **maximal** element
+### Lower and upper bounds
+A **lower bound** of two elements $x, y \in X$ is an element $z\in X$ such that $z \preceq x$ and $z \preceq y$.
+
+A **upper bound** of two elements $x, y \in X$ is an element $z\in X$ such that $x \preceq z$ and $y \preceq z$.
+
+We can then define the functions for the greatest lower bound and least upper bounds as $\text{glb}(x, y)$ and $\text{lub}(x, y)$ respectively.
+
+### Relations other areas
+Take a set $S$ then we can construct the poset $(\mathcal P(S), \subseteq)$. Within this poset $\text{glb}(A, B) = A \cap B$ whilst $\text{lub}(A, B) = A \cup B$.
+
+Take the poset $(\mathbb Z^+, \mid)$ then we have $\text{glb}(a, b) = \gcd(a, b)$ and $\text{lub}(a, b) = \text{lcm}(a, b)$.
