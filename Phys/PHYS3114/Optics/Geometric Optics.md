@@ -28,7 +28,9 @@ y'' &= 0 \\
 y &= mx + c
 \end{align}
 $$
-And thus we have that light travels in a straight line if $n$ is constant. Another question we could ask is what is the index of refraction required to make light travel in a parabola?:
+And thus we have that light travels in a straight line if $n$ is constant.
+### Silly little question I made
+Another question we could ask is what is the index of refraction required to make light travel in a parabola?:
 $$
 \begin{align}
 y(x) &= x^2 \\
@@ -37,11 +39,57 @@ y''(x) &= 2 \\
 \frac{\partial n}{\partial y} &= \frac{\partial n}{\partial x} 2x + \frac{2n}{1 + 4x^2}
 \end{align}
 $$
-Using seperation of variables $n(x, y) = X(x), Y(y)$ gives:
+Using separation of variables $n(x, y) = X(x), Y(y)$ gives:
 $$
 \begin{align}
 X \frac{dY}{dy} &= 2x Y\frac{dX}{dx} + \frac{2XY}{1 + 4x^2} \\
 \frac{1}{Y} \frac{dY}{dy} &= \frac{2x}{X}\frac{dX}{dx} + \frac{2}{1 + 4x^2} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+These two sides must be constant so we get that $\frac{1}{Y}\frac{dY}{dy} = k$ and $\frac{2x}{X}\frac{dX}{dx} + \frac{2}{1 + 4x^2} = k$ for some constant $k$. Thus:
+$$
+\begin{align}
+Y(y) &= Ae^{ky} \\
+\frac{1}{X}\frac{dX}{dx} &= -\frac{1}{x(1 + 4x^2)} + \frac{k}{2x} \\
+\int \frac{dX}{X} &= \int \frac{1}{x(1 + 4x^2)} + \frac{k}{2x}dx\\
+\ln(X) + C &= \int \frac{1}{x} - \frac{4x}{1 + 4x^2}  + \frac{k}{2x}dx\\
+\ln(X) &= \ln x - \frac{1}{2} \ln( 1 + 4x^2) + \frac{k}{2}\ln x + C\\
+X(x) &= A e^{(k/2 + 1)\ln x - \frac{1}{2} \ln( 1 + 4x^2)}\\
+&= A e^{\ln x^{k/2 + 1}}e^{-\ln\sqrt{ 1 + 4x^2}}\\
+&= \frac{B x^{k/2+1}}{\sqrt{ 1 + 4x^2}} \\
+\end{align}
+$$
+Then all we need to do is set a boundary condition for $n(x, y)$ to derive our form for $n(x, y)$ where:
+$$
+\begin{align}
+n(x, y) &= \int_{-\infty}^\infty X_k(x) Y_k(y) dk \\
+&= \int_{-\infty}^\infty \frac{B_k x^{k / 2 + 1}}{\sqrt{1 + 4 x^2}} A_ke^{ky} dk
+\end{align}
+$$
+Lets set the boundary conditions:
+$$
+\begin{align}
+n(x, \infty) &= 0 \\
+n(x, -\infty) &= 0 \\
+\end{align}
+$$
+The first of these says:
+$$
+\begin{align}
+0 &= \int_{-\infty}^\infty \frac{B_k x^{k / 2 + 1}}{\sqrt{1 + 4 x^2}} A_k e^{k \infty} dk
+\end{align}
+$$
+For $k > 0$ we have that $e^{k \infty} = \infty$ and thus $A_k = 0$. 
+Similarly, using $n(x, -\infty) = 0$ we get that $A_k = 0$ for $k < 0$ leaving only $k = 0$. In this case we have that $Y_0(y) = A$ and thus $Y(k, y) = A\delta(k)$. 
+This gives:
+$$
+\begin{align}
+n(x, y) &= \int_{-\infty}^\infty \frac{B_k x^{k / 2 + 1}}{\sqrt{1 + 4 x^2}} A\delta(k) dk \\
+&= A\frac{B_0 x^{0 / 2 + 1}}{\sqrt{1 + 4 x^2}} \\
+&= A\frac{B_0 x}{\sqrt{1 + 4 x^2}} \\
+&= C\frac{x}{\sqrt{1 + 4 x^2}} \\
+\end{align}
+$$
+This is quite cool I think.
+
+
