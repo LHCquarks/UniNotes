@@ -91,5 +91,13 @@ n(x, y) &= \int_{-\infty}^\infty \frac{B_k x^{k / 2 + 1}}{\sqrt{1 + 4 x^2}} A\de
 \end{align}
 $$
 This is quite cool I think.
-
-
+$$
+\begin{align}
+0 &= C\left[\frac{1}{\sqrt{1 + 4x^2}} - \frac{4x^2}{(1 + 4 x^2)^{3/2}}\right]y' + \frac{y''Cx}{(1 + (y')^2)\sqrt{1 + 4x^2}} \\
+0 &= \frac{C}{\sqrt{1 + 4x^2}}\left[\frac{1}{1} - \frac{4x^2}{1 + 4 x^2}\right]y' + \frac{y''Cx}{(1 + (y')^2)\sqrt{1 + 4x^2}} \\
+0 &= \frac{C}{\sqrt{1 + 4x^2}}\frac{1}{1 + 4x^2}y' + \frac{y''Cx}{(1 + (y')^2)\sqrt{1 + 4x^2}} \\
+0 &= \frac{y'}{1 + 4x^2} + \frac{y''x}{1 + (y')^2} \\
+0 &= \frac{(2x)}{1 + 4x^2} + \frac{(2)x}{1 + (2x)^2} \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
