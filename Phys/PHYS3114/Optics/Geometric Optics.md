@@ -101,4 +101,21 @@ $$
 \end{align}
 $$
 ## Eikonal Equation
-There is an alternative way of formulating 
+A completely equivalent formulation of geometric optics is the Eikonal equation
+$$
+\begin{align}
+\nabla S &= n\hat s
+\end{align}
+$$
+Where:
+- $S$ is the wave function
+- $n$ is the index of refraction
+- $\hat s$ is the normal to the wave front
+## Lense theory
+For this we are further going to assume that our rays are all approximatly parrallel to the optical-axis, ie:
+$$
+\begin{align}
+\sin \theta &\approx \theta \\
+\cos \theta &\approx 1
+\end{align}
+$$
