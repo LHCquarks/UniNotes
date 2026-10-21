@@ -100,4 +100,5 @@ $$
 0 &= \frac{(2x)}{1 + 4x^2} + \frac{(2)x}{1 + (2x)^2} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+## Eikonal Equation
+There is an alternative way of formulating 
