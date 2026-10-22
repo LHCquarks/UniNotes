@@ -111,7 +111,7 @@ Where:
 - $S$ is the wave function
 - $n$ is the index of refraction
 - $\hat s$ is the normal to the wave front
-## Lens theory
+## Thin lens theory
 For this we are further going to assume that our rays are all approximately parallel to the optical-axis, ie:
 $$
 \begin{align}
@@ -169,4 +169,4 @@ $$
 \frac{1}{f} &= (n - 1)\left[\frac{1}{R_1} - \frac{1}{R_2}\right]
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Note that there is an implicit sign notation here 
