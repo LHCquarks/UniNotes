@@ -111,11 +111,25 @@ Where:
 - $S$ is the wave function
 - $n$ is the index of refraction
 - $\hat s$ is the normal to the wave front
-## Lense theory
-For this we are further going to assume that our rays are all approximatly parrallel to the optical-axis, ie:
+## Lens theory
+For this we are further going to assume that our rays are all approximately parallel to the optical-axis, ie:
 $$
 \begin{align}
 \sin \theta &\approx \theta \\
 \cos \theta &\approx 1
 \end{align}
 $$
+Consider the following setup of a small-ish lens and a ray traveling through it:
+![[Pasted image 20261022110458.png]]
+Using trig we get:
+$$
+\begin{align}
+\sin \alpha &= \frac{h}{S_0} \\
+\sin \beta &= \frac{h}{S_i} \\
+\sin \gamma &= \frac{h}{R} \\
+\frac{\pi}{2} - \beta &= \theta_2 + \frac{\pi}{2} - \gamma \\
+\gamma - \beta &= \theta_2 \\
+
+\end{align}
+$$
+<% tp.file.cursor(2) %>
