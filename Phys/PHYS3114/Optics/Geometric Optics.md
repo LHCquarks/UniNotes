@@ -129,7 +129,21 @@ $$
 \sin \gamma &= \frac{h}{R} \\
 \frac{\pi}{2} - \beta &= \theta_2 + \frac{\pi}{2} - \gamma \\
 \gamma - \beta &= \theta_2 \\
-
+\end{align}
+$$
+...
+$$
+\begin{align}
+\frac{\sin \theta_2}{S_i - R} &= \frac{\sin \beta}{R} \\
+\frac{n_1 \sin \theta_1}{n_2(S_i - R)} &= \frac{h}{S_iR} \\
+\end{align}
+$$
+...
+$$
+\begin{align}
+\frac{n_1}{S_0} + \frac{n_2}{S_i} &=  \frac{n_1\sin \alpha}{h} + \frac{n_2\sin \beta}{h} \\
+ &= \frac{n_1\sin \alpha + n_2\sin \beta}{R \sin \gamma} \\
+ &= \frac{n_2 - n_1}{R} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
