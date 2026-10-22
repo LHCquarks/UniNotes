@@ -121,4 +121,44 @@ $$
 $$
 Consider the following setup of a small-ish lens and a ray traveling through it:
 ![[Pasted image 20261022110458.png]]
-Using trig we get:
+Snell's law under the small angle approximation gives:
+$$
+\begin{align}
+n_1 \theta_1 = n_2\theta_2
+\end{align}
+$$
+and using trig we get:
+$$
+\begin{align}
+\alpha &= \frac{h}{S_o} \\
+\beta &= \frac{h}{S_i} \\
+\gamma &= \frac{h}{R} \\
+\theta_1 &= \alpha + \gamma \\
+\pi / 2 - \beta &= \theta_2 + \pi / 2- \gamma \\
+- \beta &= \theta_2 - \gamma \\
+\theta_2 &= \gamma - \beta\\
+\end{align}
+$$
+Substituting this into Snell's law we get:
+$$
+\begin{align}
+n_1(\alpha + \gamma) &= n_2 (\gamma - \beta) \\
+n_1\left(\frac{h}{S_o} + \frac{h}{R}\right) &= n_2 \left(\frac{h}{R} - \frac{h}{S_i}\right) \\
+\frac{n_1h}{S_o} + \frac{n_1h}{R} &= \frac{n_2h}{R} - \frac{n_2h}{S_i} \\
+\frac{n_1h}{S_o} + \frac{n_2h}{S_i} &= \frac{n_2h}{R} - \frac{n_1h}{R} \\
+\frac{n_1}{S_o} + \frac{n_2}{S_i} &= \frac{n_2 - n_1}{R} \\
+\end{align}
+$$
+This is quite a cool formula. If we take $S_o \rightarrow \infty$ then we get
+$$
+\begin{align}
+S_i &= \frac{n_2 R}{n_2 - n_1}
+\end{align}
+$$
+and if we take $S_i \rightarrow \infty$ then we get
+$$
+\begin{align}
+S_o &= \frac{n_1R}{n_2 - n_1}
+\end{align}
+$$
+These two points are the focus length $f_o, f_i$ and will be important for our geometry of lenses.
