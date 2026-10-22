@@ -162,3 +162,11 @@ S_o &= \frac{n_1R}{n_2 - n_1}
 \end{align}
 $$
 These two points are the focus length $f_o, f_i$ and will be important for our geometry of lenses.
+
+Similarly, if we have two circles back to back with radii $R_1, R_2$ we get for the focus length $f$:
+$$
+\begin{align}
+\frac{1}{f} &= (n - 1)\left[\frac{1}{R_1} - \frac{1}{R_2}\right]
+\end{align}
+$$
+<% tp.file.cursor(2) %>
