@@ -149,7 +149,29 @@ Because everything is linear we can make heavy use of linear algebra to abstract
 We write the state of our light ray as:
 $$
 \begin{align}
-\pmatrix{n \alpha \\y}
+\pmatrix{n \alpha \\ y}
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+and all interfaces then become matrices that act on our ray vector, for instance:
+#### Vertical medium
+By Snell's law we have $n_2 \alpha_2 = n_1 \alpha_1$ and so our first part should not change and nor should our second part do our matrix is just the identity matrix:
+$$
+\begin{align}
+M &= \pmatrix{1 & 0 \\ 0 & 1}
+\end{align}
+$$
+#### Normal Traversal
+If our ray is just normally traversing a medium of thickness $t$ we have that $y$ needs to change by $\alpha t$ and $n \alpha$ remains unchanged thus our matrix must be:
+$$
+\begin{align}
+M &= \pmatrix{1 & 0 \\ \frac{t}{n} & 1}
+\end{align}
+$$
+#### Lenses
+It is given from on high that going through one side of a lens gives the matrix
+$$
+\begin{align}
+M &= \pmatrix{1 & \frac{n_i - n_t}{R} \\ 0 &1}
+\end{align}
+$$
+
