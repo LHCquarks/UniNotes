@@ -136,3 +136,8 @@ As an example, for a typical lens with both circles curving outward (the one in 
 - $R_2$ is -itive
 thus $f$ is positive and so lies to the right of the lens
 
+![[Pasted image 20261024125012.png|443]]
+We have:
+- $R_1$ is -itive
+- $R_2$ is +itive
+Thus we conclude that $f$ is -itive and so lies to the left of the lens. In this senario the ray passes through the focus virtually (Tracing the ray backwards in a straight line gets you to the focus)
