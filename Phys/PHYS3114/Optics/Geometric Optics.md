@@ -112,7 +112,7 @@ Where:
 - $n$ is the index of refraction
 - $\hat s$ is the normal to the wave front
 ## Thin lens theory
-A thin lens consists of the intersection of two circles of radii $R_1, R_2$ and focuses rays of light that are aligned to the optical axis towards the focus. 
+A thin lens consists of the intersection of two circles of radii $R_1, R_2$ and focuses rays of light that are aligned to the optical axis towards the focus. All incident rays aligned with the optical axis will pass through the focus (all be it it may be virtually).
 ![[Pasted image 20261024112232.png|367]]
 The distance of the focus follows the thin lens equation:
 $$
@@ -120,3 +120,17 @@ $$
 \frac{1}{f} &= (n -1) \left[ \frac{1}{R_1} - \frac{1}{R_2}\right]
 \end{align}
 $$
+Where:
+- $f$ is the distance from the center of the lens to the focus
+- $R_1$ is the radius of the left circle
+- $R_2$ is the radius of the right circle
+This equation has a few assumptions about the sign of the objects:
+- $f$ is positive if it is to the right of the lens and negative if it is to the left
+- $R_1$ is positive if the center of the circle lies to the right
+- $R_2$ is positive if the center of the circle lies to the right
+
+### Typical lenses
+As an example, for a typical lens with both circles curving outward (the one in the diagram above) we get:
+- $R_1$ is +itive
+- $R_2$ is -itive
+thus $f$ is positive and so lies to the right of the lens
