@@ -141,3 +141,15 @@ We have:
 - $R_1$ is -itive
 - $R_2$ is +itive
 Thus we conclude that $f$ is -itive and so lies to the left of the lens. In this senario the ray passes through the focus virtually (Tracing the ray backwards in a straight line gets you to the focus)
+## Matrix methods
+When a light ray interacts with a medium in geometric optics it either changes it's angle or it's height with everything being linear thanks to the small angle approximation.
+
+Because everything is linear we can make heavy use of linear algebra to abstract away our methods and let computers do it easier.
+
+We write the state of our light ray as:
+$$
+\begin{align}
+\pmatrix{n \alpha \\y}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
