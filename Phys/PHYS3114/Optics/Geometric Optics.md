@@ -113,3 +113,10 @@ Where:
 - $\hat s$ is the normal to the wave front
 ## Thin lens theory
 A thin lens consists of the intersection of two circles of radii $R_1, R_2$ and focuses rays of light that are aligned to the optical axis towards the focus. 
+![[Pasted image 20261024112232.png|367]]
+The distance of the focus follows the thin lens equation:
+$$
+\begin{align}
+\frac{1}{f} &= (n -1) \left[ \frac{1}{R_1} - \frac{1}{R_2}\right]
+\end{align}
+$$
