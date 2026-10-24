@@ -130,7 +130,9 @@ This equation has a few assumptions about the sign of the objects:
 - $R_2$ is positive if the center of the circle lies to the right
 
 ### Typical lenses
+![[Pasted image 20261024124517.png]]
 As an example, for a typical lens with both circles curving outward (the one in the diagram above) we get:
 - $R_1$ is +itive
 - $R_2$ is -itive
 thus $f$ is positive and so lies to the right of the lens
+
