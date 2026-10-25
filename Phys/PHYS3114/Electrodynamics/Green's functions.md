@@ -192,6 +192,43 @@ $$
 I(\tau) &= \frac{c}{k} \sin (\tau c k)
 \end{align}
 $$
+#### Finding $G$
+Now that we have $I(\tau) = \frac{c}{k}\sin(\tau ck)$ we can finally do the spacial FT:
+$$
+\begin{align}
+G(\vec R, \tau) &= \int_{\mathbb R^3} \frac{c}{k}\sin(\tau c k) e^{i\vec k \cdot \vec R} \frac{d\vec k}{(2\pi)^3}
+\end{align}
+$$
+We will chose to do this integral in spherical coordinates and align our polar axis with $\vec R$ thus our integral is:
+$$
+\begin{align}
+G(\vec R, \tau) &= \frac{1}{(2\pi)^3}\int_0^\infty \int_0^\pi \int_0^{2\pi} \frac{c}{\rho} \sin(\tau c \rho) e^{iR\rho\cos \varphi} \rho^2 \sin \varphi d\theta d\varphi d\rho \\
+&= \frac{2\pi c}{(2\pi)^3}\int_0^\infty \rho \sin(\tau c \rho)\int_0^\pi e^{iR\rho\cos \varphi} \sin \varphi d\varphi d\rho \\
+&= \frac{c}{(2\pi)^2}\int_0^\infty \rho \sin(\tau c \rho)\left[\frac{1}{iR\rho}e^{iR\rho\cos\varphi}\right]^\pi_0 d\rho \\
+&= \frac{c}{iR(2\pi)^2}\int_0^\infty \sin(\tau c \rho) \left[e^{-iR\rho} - e^{iR\rho}\right]d\rho \\
+&= \frac{c}{R(2\pi)^2}\int_0^\infty \sin(\tau c \rho) \left[-2\sin(R\rho)\right]d\rho \\
+&= \frac{-c}{R2\pi^2}\int_0^\infty \sin(\tau c \rho) \left[\sin(R\rho)\right]d\rho \\
+\end{align}
+$$
+Now we need the identity:
+$$
+\begin{align}
+\int_0^\infty \sin(ax)\sin(bx) = \frac{\pi}{2}\left[\delta(a - b)  - \delta(a + b)\right] \\
+\end{align}
+$$
+and with this we get:
+$$
+\begin{align}
+G(\vec R, \tau) &= \frac{-c}{2\pi^2 R} \frac{\pi}{2} [\delta(\tau c - R) - \delta(\tau c + R)] \\
+&= \frac{-1}{4\pi R} [\delta(\tau - R / c) - \delta(\tau + R/c)] \\
+\end{align}
+$$
+But because $R > 0$ and $\tau > 0$ the second delta function vanishes and we arrive at our answer:
+$$
+\begin{align}
+G(\vec R, \tau) &= \frac{-1}{4\pi R} \delta(\tau - R / c)
+\end{align}
+$$
 
 
 
