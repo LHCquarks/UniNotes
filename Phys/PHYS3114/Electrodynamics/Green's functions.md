@@ -105,7 +105,7 @@ $$
 Now we need to move back into real space but this will pose some issues. The first step is to apply the time FT:
 $$
 \begin{align}
-I(\tau) &= \frac{1}{2\pi} \int_{-\infty}^\infty \frac{e^{-i \omega \tau}}{k^2 - \omega^2 / c^2} d\tau
+I(\tau) &= \frac{1}{2\pi} \int_{-\infty}^\infty \frac{e^{-i \omega \tau}}{k^2 - \omega^2 / c^2} d\omega
 \end{align}
 $$
 #### Finding $I(\tau)$
@@ -187,10 +187,10 @@ $$
 And taking $\eta \rightarrow 0$ we can conclude that:
 $$
 \begin{align}
-I(\tau) &= \frac{2c\pi i}{k} \cos (\tau c k)
+I(\tau) &= \frac{ci}{k} \cos (\tau c k)
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+
 
 
 
