@@ -233,7 +233,6 @@ $$
 For this solution we assumed that $\tau > 0$, this generates whats called the **retarded** solution and is the only physical solution. 
 
 The other solution assumes $\tau < 0$ and is found when we use $-i \eta$ and a contour in the upper plain instead. This is called the **advance** solution and describes how objects in the future affect objects in the past.
-
 ## Boundary conditions
 Due to $G$ being a building block of the scalar field $\varphi$ we inherit the ambiguity of gauges an so boundary conditions can help us take that ambiguity away.
 
@@ -295,3 +294,33 @@ $$
 \end{align}
 $$
 Hence inside the sphere $\varphi$ is constant which produces an electric field of $\vec E = 0$ which aligns with what we expect from Guass's law.
+### Boundary conditions for the d'Alembert operator
+We will consider a similar equation, take:
+$$
+\begin{align}
+\varphi \Box_w'G - G \Box_w' \varphi &= \varphi \nabla'^2 G -  G \nabla'^2 \varphi - \frac{1}{c^2}(\varphi \partial_{t'}^2G - G\partial_{t'}^2\varphi) \\
+&= \nabla' \cdot(\varphi \nabla'G - G \nabla' \varphi) - \frac{1}{c^2}\partial_{t'} (\varphi \partial_{t'} G - G \partial_{t'}\varphi)
+\end{align}
+$$
+Then integrating both sides WRT space and time we get:
+$$
+\begin{align}
+\iint \varphi \Box_w' G - G \Box_w' \varphi dV' dt' &= \iint \nabla' \cdot(\varphi \nabla'G - G \nabla' \varphi) - \frac{1}{c^2}\partial_{t'} (\varphi \partial_{t'} G - G \partial_{t'}\varphi) dV' dt' \\
+&= \int \oint (\varphi \nabla' G - G \nabla'\varphi) \cdot d\vec Adt - \frac{1}{c^2} \int \varphi \partial_{t'}G - G\partial_{t'} \varphi dV' \\
+\end{align}
+$$
+But the LHS simplifies by the definition of $\varphi$ and $G$ to:
+$$
+\begin{align}
+\iint \varphi \Box_w' G - G \Box_w' \varphi dV' dt' &= \iint -\varphi \delta(\vec r - \vec r') \delta(t - t') + Gf dV' dt' \\
+&= -\varphi(\vec r, t) + \iint Gf dV' dt' \\
+\end{align}
+$$
+Thus we have:
+$$
+\begin{align}
+\varphi(\vec r, t) &= \int Gf dV' dt' \\
+&-\int \oint (\varphi \nabla'G - G\nabla'\varphi) \cdot d\vec A dt \\
+&+ \frac{1}{c^2} \int \varphi \partial_{t'} G - G \partial_{t'}\varphi dV'
+\end{align}
+$$
