@@ -204,10 +204,10 @@ $$
 \begin{align}
 G(\vec R, \tau) &= \frac{1}{(2\pi)^3}\int_0^\infty \int_0^\pi \int_0^{2\pi} \frac{c}{\rho} \sin(\tau c \rho) e^{iR\rho\cos \varphi} \rho^2 \sin \varphi d\theta d\varphi d\rho \\
 &= \frac{2\pi c}{(2\pi)^3}\int_0^\infty \rho \sin(\tau c \rho)\int_0^\pi e^{iR\rho\cos \varphi} \sin \varphi d\varphi d\rho \\
-&= \frac{c}{(2\pi)^2}\int_0^\infty \rho \sin(\tau c \rho)\left[\frac{1}{iR\rho}e^{iR\rho\cos\varphi}\right]^\pi_0 d\rho \\
-&= \frac{c}{iR(2\pi)^2}\int_0^\infty \sin(\tau c \rho) \left[e^{-iR\rho} - e^{iR\rho}\right]d\rho \\
-&= \frac{c}{R(2\pi)^2}\int_0^\infty \sin(\tau c \rho) \left[-2\sin(R\rho)\right]d\rho \\
-&= \frac{-c}{R2\pi^2}\int_0^\infty \sin(\tau c \rho) \left[\sin(R\rho)\right]d\rho \\
+&= \frac{c}{(2\pi)^2}\int_0^\infty \rho \sin(\tau c \rho)\left[\frac{-1}{iR\rho}e^{iR\rho\cos\varphi}\right]^\pi_0 d\rho \\
+&= \frac{c}{iR(2\pi)^2}\int_0^\infty \sin(\tau c \rho) \left[e^{iR\rho} - e^{-iR\rho}\right]d\rho \\
+&= \frac{c}{R(2\pi)^2}\int_0^\infty \sin(\tau c \rho) \left[2\sin(R\rho)\right]d\rho \\
+&= \frac{c}{R2\pi^2}\int_0^\infty \sin(\tau c \rho) \left[\sin(R\rho)\right]d\rho \\
 \end{align}
 $$
 Now we need the identity:
@@ -219,8 +219,8 @@ $$
 and with this we get:
 $$
 \begin{align}
-G(\vec R, \tau) &= \frac{-c}{2\pi^2 R} \frac{\pi}{2} [\delta(\tau c - R) - \delta(\tau c + R)] \\
-&= \frac{-1}{4\pi R} [\delta(\tau - R / c) - \delta(\tau + R/c)] \\
+G(\vec R, \tau) &= \frac{c}{2\pi^2 R} \frac{\pi}{2} [\delta(\tau c - R) - \delta(\tau c + R)] \\
+&= \frac{1}{4\pi R} [\delta(\tau - R / c) - \delta(\tau + R/c)] \\
 \end{align}
 $$
 But because $R > 0$ and $\tau > 0$ the second delta function vanishes and we arrive at our answer:
@@ -229,9 +229,10 @@ $$
 G(\vec R, \tau) &= \frac{-1}{4\pi R} \delta(\tau - R / c)
 \end{align}
 $$
+#### Retarded and advanced solutions
+For this solution we assumed that $\tau > 0$, this generates whats called the **retarded** solution and is the only physical solution. 
 
-
-
+The other solution assumes $\tau < 0$ and is found when we use $-i \eta$ and a contour in the upper plain instead. This is called the **advance** solution and describes how objects in the future affect objects in the past.
 
 ## Boundary conditions
 Due to $G$ being a building block of the scalar field $\varphi$ we inherit the ambiguity of gauges an so boundary conditions can help us take that ambiguity away.
