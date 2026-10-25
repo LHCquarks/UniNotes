@@ -130,19 +130,19 @@ Calculating these residues gives:
 $$
 \begin{align}
 \text{Res}(f, ck-i\eta) &= \frac{c^2e^{-i\tau (ck - i\eta)}}{(ck + (ck - i\eta) + i\eta)} \\
-&= \frac{c^2e^{\eta \tau}e^{-i\tau c k}}{2ck} \\
-&= \frac{ce^{\eta \tau}e^{-i\tau c k}}{2k} \\
+&= \frac{c^2e^{-\eta \tau}e^{-i\tau c k}}{2ck} \\
+&= \frac{ce^{-\eta \tau}e^{-i\tau c k}}{2k} \\
 \text{Res}(f, -ck-i\eta) &= \frac{c^2e^{-i\tau (-ck - i\eta)}}{(ck -(-ck - i\eta) - i\eta)} \\
-&= \frac{c^2e^{\eta \tau}e^{i\tau c k}}{2ck} \\
-&= \frac{ce^{\eta \tau}e^{i\tau c k}}{2k} \\
+&= \frac{c^2e^{-\eta \tau}e^{i\tau c k}}{2ck} \\
+&= \frac{ce^{-\eta \tau}e^{i\tau c k}}{2k} \\
 \end{align}
 $$
 And thus:
 $$
 \begin{align}
-J(\tau, \vec k) &= 2\pi i \left[\frac{ce^{\eta \tau}e^{i\tau ck}}{2k} + \frac{ce^{\eta \tau}e^{-i\tau ck}}{2k}\right] \\
-&= \frac{c\pi i}{k}e^{\eta \tau}2\cos(\tau ck)  \\
-&= \frac{2c\pi i}{k}e^{\eta \tau}\cos(\tau ck) 
+J(\tau, \vec k) &= 2\pi i \left[\frac{ce^{-\eta \tau}e^{i\tau ck}}{2k} + \frac{ce^{-\eta \tau}e^{-i\tau ck}}{2k}\right] \\
+&= \frac{c\pi i}{k}e^{-\eta \tau}2\cos(\tau ck)  \\
+&= \frac{2c\pi i}{k}e^{-\eta \tau}\cos(\tau ck) 
 \end{align}
 $$
 Now, we also know that $J(\tau, \vec k) = \int_{\Omega_1}f(z)dz + \int_{\Omega_2}f(z)dz$ but along $\Omega_2$:

@@ -35,8 +35,7 @@
               "title": "Residues"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,8 +188,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0f2612bf339ac746",
+  "active": "9690978008917163",
   "lastOpenFiles": [
+    "Maths/MATH2621/Complex Functions/Residues.md",
     "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Phys/PHYS3114/Electrodynamics/Pasted image 20261025123611.png",
     "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
@@ -198,7 +198,6 @@
     "QMC Extras.md",
     "Quant Master class.md",
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
-    "Maths/MATH2621/Complex Functions/Residues.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
     "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
