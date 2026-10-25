@@ -76,7 +76,51 @@ $$
 $$
 Where $\Box_w$ is the d'Alembertian operator with $\Box_w = \nabla^2 - \frac{1}{c^2}\partial_t^2$.
 
-We start by taking the Fourier transform of both sides with $\nabla^2 \rightarrow k^2, \partial_t^2 \rightarrow \omega^2$
+First we notice that because space is homogeneous and isotropic our greens function can only be concerned with the relative distances between our $\vec r, \vec r'$ and $t, t'$ and thus our function must be of $G(\vec R, \tau)$ where $\vec R = \vec r - \vec r', \tau = t - t'$.
+
+Now, knowing this consider the effects of our $\Box_w$ operator. If we write $\nabla^2$ as the Laplacian acting on the $\vec r$ vector and $\nabla^2_R$ and the laplacian acting on our $\vec R$ vector then:
+$$
+\begin{align}
+\Box_w G &= \nabla^2 G - \frac{1}{c^2}\partial^2_t G \\
+&= \nabla^2_R G - \frac{1}{c^2} \partial_\tau^2 G \\
+-\delta (\vec r - \vec r') \delta(t - t') &= -\delta(\vec R) \delta(\tau)
+\end{align}
+$$
+We are now going to take the 4-d Fourier transform of both sides so it would be good to define them for a sec:
+$$
+\begin{align}
+\mathcal F\{f(\vec R, \tau)\}(\vec k, \omega) &= \int_{\mathbb{R}^3}\int_{-\infty}^\infty f(\vec R, \tau) e^{i(\tau \omega - \vec k \cdot \vec R)} d\tau d\vec R \\
+\mathcal F^{-1}\{f(\vec k, \omega)\}(\vec R, \tau) &= \int_{\mathbb{R}^3}\int_{-\infty}^\infty f(\vec R, \tau) e^{i(\vec k \cdot \vec R - \tau \omega)} \frac{d\tau}{2\pi} \frac{d\vec R}{(2\pi)^3}
+\end{align}
+$$
+Now, taking the 4-d Fourier transform of both sides we get:
+$$
+\begin{align}
+\mathcal F \{\Box_w G\} &= \mathcal F\{-\delta(\vec R) \delta(\tau)\} \\
+\left(-k^2  + \frac{\omega^2}{c^2}\right)\widetilde{\!G} &= -e^{i(\vec 0 \cdot \vec k + 0 \omega)} \\
+\left(-k^2  + \frac{\omega^2}{c^2}\right)\widetilde{\!G} &= -1\\
+\widetilde{\!G} &= \frac{1}{k^2 - \omega^2 / c^2}\\
+\end{align}
+$$
+Now we need to move back into real space but this will pose some issues. The first step is to apply the time FT:
+$$
+\begin{align}
+I(\tau) &= \frac{1}{2\pi} \int_{-\infty}^\infty \frac{e^{-i \omega \tau}}{k^2 - \omega^2 / c^2} d\tau
+\end{align}
+$$
+#### Finding $I(\tau)$
+Now, the intergrand blows up and thus is not integrable so we are going to have to pull off some physics BS re-normalization :). To do this we will define the new contour integral
+$$
+\begin{align}
+J(\tau, \vec k) &= \int_\Omega\frac{e^{-i \tau z}}{k^2 - (z + i \eta)^2 / c^2} dz \\
+ &= \int_\Omega\frac{c^2e^{-i \tau z}}{c^2k^2 - (z + i \eta)^2} dz \\
+ &= \int_\Omega\frac{c^2e^{-i \tau z}}{(ck - z - i\eta)(c k + z + i\eta)} dz
+\end{align}
+$$
+where $\Omega$ is the semi-circle on the bottom half plane with radius $R > |k + i\eta|$.
+The poles of the intergrand are at $z = ck - i\eta, -ck - i\eta$ as shown in the diagram:
+
+
 
 
 ## Boundary conditions
