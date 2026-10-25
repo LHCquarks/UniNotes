@@ -118,8 +118,79 @@ J(\tau, \vec k) &= \int_\Omega\frac{e^{-i \tau z}}{k^2 - (z + i \eta)^2 / c^2} d
 \end{align}
 $$
 where $\Omega$ is the semi-circle on the bottom half plane with radius $R > |k + i\eta|$.
-The poles of the intergrand are at $z = ck - i\eta, -ck - i\eta$ as shown in the diagram:
+Call the intergrand $f(z)$, then the poles of $f(z)$ are at $z = ck - i\eta, -ck - i\eta$ as shown in the diagram:
+![[Pasted image 20261025123611.png|362]]
+Now, by the residue theorem we have:
+$$
+\begin{align}
+J(\tau, \vec k) &= 2\pi i \left[\text{Res}(f, ck - i \eta) + \text{Res}(f, -ck - i \eta)\right] \\
+\end{align}
+$$
+Calculating these residues gives:
+$$
+\begin{align}
+\text{Res}(f, ck-i\eta) &= \frac{c^2e^{-i\tau (ck - i\eta)}}{(ck + (ck - i\eta) + i\eta)} \\
+&= \frac{c^2e^{\eta \tau}e^{-i\tau c k}}{2ck} \\
+&= \frac{ce^{\eta \tau}e^{-i\tau c k}}{2k} \\
+\text{Res}(f, -ck-i\eta) &= \frac{c^2e^{-i\tau (-ck - i\eta)}}{(ck -(-ck - i\eta) - i\eta)} \\
+&= \frac{c^2e^{\eta \tau}e^{i\tau c k}}{2ck} \\
+&= \frac{ce^{\eta \tau}e^{i\tau c k}}{2k} \\
+\end{align}
+$$
+And thus:
+$$
+\begin{align}
+J(\tau, \vec k) &= 2\pi i \left[\frac{ce^{\eta \tau}e^{i\tau ck}}{2k} + \frac{ce^{\eta \tau}e^{-i\tau ck}}{2k}\right] \\
+&= \frac{c\pi i}{k}e^{\eta \tau}2\cos(\tau ck)  \\
+&= \frac{2c\pi i}{k}e^{\eta \tau}\cos(\tau ck) 
+\end{align}
+$$
+Now, we also know that $J(\tau, \vec k) = \int_{\Omega_1}f(z)dz + \int_{\Omega_2}f(z)dz$ but along $\Omega_2$:
+$$
+\begin{align}
+|f(z)| &= \frac{c^2|e^{-i\tau z}|}{|(ck - z - i\eta)(c k + z + i\eta)|} \\
+&= \frac{c^2|e^{-\tau\text{Im}(z)}|}{|ck - z - i\eta||c k + z + i\eta|} \\
+\end{align}
+$$
+If we take $\tau < 0$ then we have:
+$$
+\begin{align}
+|f(z)| &\le \frac{e^0}{|z - (ck - i\eta)|\cdot|z - (-ck - i\eta)|} \\
+&\le \frac{1}{||z| - |ck - i\eta||\cdot ||z| - |-ck - i\eta||} \\
+&\le \frac{1}{|R - |ck - i\eta||\cdot|R - |ck + i\eta||} \\
+\end{align}
+$$
+By the ML-lemma we know that:
+$$
+\begin{align}
+\left |\int_{\Omega_2}f(z) dz\right| &\le \text{max}(|f(z)|) L \\
+&\le \frac{1}{|R - |ck - i\eta||\cdot|R - |ck + i\eta||} \pi R\\
+&\le \frac{1}{\left|1 - \frac{|ck - i\eta|}{R}\right|\cdot|R - |ck + i\eta||}\\
+\end{align}
+$$
+As $R \rightarrow \infty$ we thus have that:
+$$
+\begin{align}
+\lim_{R \rightarrow \infty}\left |\int_{\Omega_2}f(z) dz\right| &\le \lim_{R \rightarrow \infty} \frac{1}{\left|1 - \frac{|ck - i\eta|}{R}\right|\cdot|R - |ck + i\eta||}\\
+&\le \frac{1}{|1 - 0| \cdot |\infty - |ck + i \eta||} \\
+&\le \frac{1}{\infty} \\
+&\le 0 \\
 
+\end{align}
+$$
+And thus the contribution of $\Omega_2$ vanishes finally allowing us to conclude that
+$$
+\begin{align}
+\int_{-\infty}^\infty \frac{e^{-i\tau \omega}}{k^2 - (\omega + i\eta)^2/c^2} d\omega &= \frac{2c\pi i}{k}e^{\eta \tau}\cos(\tau ck) 
+\end{align}
+$$
+And taking $\eta \rightarrow 0$ we can conclude that:
+$$
+\begin{align}
+I(\tau) &= \frac{2c\pi i}{k} \cos (\tau c k)
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 
 
 
