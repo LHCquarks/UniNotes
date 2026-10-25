@@ -17,7 +17,6 @@ For regular vectors we get that $|w+z|^2 = |w|^2 + 2\langle w, z \rangle + |z|^2
 This means that the inner product of a complex number is $$\langle w,z\rangle = 2Re(w\bar z)$$
 ### Triangle inequality
 $$|w+z| \leq |w| + |z|\tag{2}$$ 
-
 ### The Circle inequality
 #### Lemma
 For all complex numbers $w$ and $z$

@@ -67,6 +67,18 @@ $$
 G(x;\zeta) &= \frac{1}{4\pi} \frac{1}{|x - \zeta|}
 \end{align}
 $$
+### d'Alembert Green's function
+We want to solve the equation:
+$$
+\begin{align}
+\Box_w G(\vec r, t; \vec r', t') &= -\delta(\vec r - \vec r') \delta(t - t')
+\end{align}
+$$
+Where $\Box_w$ is the d'Alembertian operator with $\Box_w = \nabla^2 - \frac{1}{c^2}\partial_t^2$.
+
+We start by taking the Fourier transform of both sides with $\nabla^2 \rightarrow k^2, \partial_t^2 \rightarrow \omega^2$
+
+
 ## Boundary conditions
 Due to $G$ being a building block of the scalar field $\varphi$ we inherit the ambiguity of gauges an so boundary conditions can help us take that ambiguity away.
 
