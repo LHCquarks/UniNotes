@@ -123,9 +123,11 @@ Call the intergrand $f(z)$, then the poles of $f(z)$ are at $z = ck - i\eta, -ck
 Now, by the residue theorem we have:
 $$
 \begin{align}
-J(\tau, \vec k) &= 2\pi i \left[\text{Res}(f, ck - i \eta) + \text{Res}(f, -ck - i \eta)\right] \\
+J(\tau, \vec k) &= -2\pi i \left[\text{Res}(f, ck - i \eta) + \text{Res}(f, -ck - i \eta)\right] \\
 \end{align}
 $$
+The minus sign being there because we are going clockwise so that $\Omega_1$ goes from negative to positive.
+
 Calculating these residues gives:
 $$
 \begin{align}
@@ -140,9 +142,9 @@ $$
 And thus:
 $$
 \begin{align}
-J(\tau, \vec k) &= 2\pi i \left[\frac{ce^{-\eta \tau}e^{i\tau ck}}{2k} - \frac{ce^{-\eta \tau}e^{-i\tau ck}}{2k}\right] \\
-&= \frac{c\pi i}{k}e^{-\eta \tau}2i\sin(\tau ck)  \\
-&= -\frac{2c\pi}{k}e^{-\eta \tau}\sin(\tau ck) 
+J(\tau, \vec k) &= -2\pi i \left[\frac{ce^{-\eta \tau}e^{i\tau ck}}{2k} - \frac{ce^{-\eta \tau}e^{-i\tau ck}}{2k}\right] \\
+&= -\frac{c\pi i}{k}e^{-\eta \tau}2i\sin(\tau ck)  \\
+&= \frac{2c\pi}{k}e^{-\eta \tau}\sin(\tau ck) 
 \end{align}
 $$
 Now, we also know that $J(\tau, \vec k) = \int_{\Omega_1}f(z)dz + \int_{\Omega_2}f(z)dz$ but along $\Omega_2$:
@@ -181,13 +183,13 @@ $$
 And thus the contribution of $\Omega_2$ vanishes finally allowing us to conclude that
 $$
 \begin{align}
-\int_{-\infty}^\infty \frac{e^{-i\tau \omega}}{k^2 - (\omega + i\eta)^2/c^2} d\omega &= -\frac{2c\pi}{k}e^{-\eta \tau}\sin(\tau ck) 
+\int_{-\infty}^\infty \frac{e^{-i\tau \omega}}{k^2 - (\omega + i\eta)^2/c^2} d\omega &= \frac{2c\pi}{k}e^{-\eta \tau}\sin(\tau ck) 
 \end{align}
 $$
 And taking $\eta \rightarrow 0$ we can conclude that:
 $$
 \begin{align}
-I(\tau) &= -\frac{c}{k} \sin (\tau c k)
+I(\tau) &= \frac{c}{k} \sin (\tau c k)
 \end{align}
 $$
 
