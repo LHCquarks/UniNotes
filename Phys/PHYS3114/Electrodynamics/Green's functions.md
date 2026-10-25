@@ -129,9 +129,9 @@ $$
 Calculating these residues gives:
 $$
 \begin{align}
-\text{Res}(f, ck-i\eta) &= \frac{c^2e^{-i\tau (ck - i\eta)}}{(ck + (ck - i\eta) + i\eta)} \\
-&= \frac{c^2e^{-\eta \tau}e^{-i\tau c k}}{2ck} \\
-&= \frac{ce^{-\eta \tau}e^{-i\tau c k}}{2k} \\
+\text{Res}(f, ck-i\eta) &= -\frac{c^2e^{-i\tau (ck - i\eta)}}{(ck + (ck - i\eta) + i\eta)} \\
+&= -\frac{c^2e^{-\eta \tau}e^{-i\tau c k}}{2ck} \\
+&= -\frac{ce^{-\eta \tau}e^{-i\tau c k}}{2k} \\
 \text{Res}(f, -ck-i\eta) &= \frac{c^2e^{-i\tau (-ck - i\eta)}}{(ck -(-ck - i\eta) - i\eta)} \\
 &= \frac{c^2e^{-\eta \tau}e^{i\tau c k}}{2ck} \\
 &= \frac{ce^{-\eta \tau}e^{i\tau c k}}{2k} \\
@@ -140,19 +140,19 @@ $$
 And thus:
 $$
 \begin{align}
-J(\tau, \vec k) &= 2\pi i \left[\frac{ce^{-\eta \tau}e^{i\tau ck}}{2k} + \frac{ce^{-\eta \tau}e^{-i\tau ck}}{2k}\right] \\
-&= \frac{c\pi i}{k}e^{-\eta \tau}2\cos(\tau ck)  \\
-&= \frac{2c\pi i}{k}e^{-\eta \tau}\cos(\tau ck) 
+J(\tau, \vec k) &= 2\pi i \left[\frac{ce^{-\eta \tau}e^{i\tau ck}}{2k} - \frac{ce^{-\eta \tau}e^{-i\tau ck}}{2k}\right] \\
+&= \frac{c\pi i}{k}e^{-\eta \tau}2i\sin(\tau ck)  \\
+&= -\frac{2c\pi}{k}e^{-\eta \tau}\sin(\tau ck) 
 \end{align}
 $$
 Now, we also know that $J(\tau, \vec k) = \int_{\Omega_1}f(z)dz + \int_{\Omega_2}f(z)dz$ but along $\Omega_2$:
 $$
 \begin{align}
 |f(z)| &= \frac{c^2|e^{-i\tau z}|}{|(ck - z - i\eta)(c k + z + i\eta)|} \\
-&= \frac{c^2|e^{-\tau\text{Im}(z)}|}{|ck - z - i\eta||c k + z + i\eta|} \\
+&= \frac{c^2|e^{\tau\text{Im}(z)}|}{|ck - z - i\eta||c k + z + i\eta|} \\
 \end{align}
 $$
-If we take $\tau < 0$ then we have:
+If we take $\tau > 0$ then we have:
 $$
 \begin{align}
 |f(z)| &\le \frac{e^0}{|z - (ck - i\eta)|\cdot|z - (-ck - i\eta)|} \\
@@ -181,13 +181,13 @@ $$
 And thus the contribution of $\Omega_2$ vanishes finally allowing us to conclude that
 $$
 \begin{align}
-\int_{-\infty}^\infty \frac{e^{-i\tau \omega}}{k^2 - (\omega + i\eta)^2/c^2} d\omega &= \frac{2c\pi i}{k}e^{\eta \tau}\cos(\tau ck) 
+\int_{-\infty}^\infty \frac{e^{-i\tau \omega}}{k^2 - (\omega + i\eta)^2/c^2} d\omega &= -\frac{2c\pi}{k}e^{-\eta \tau}\sin(\tau ck) 
 \end{align}
 $$
 And taking $\eta \rightarrow 0$ we can conclude that:
 $$
 \begin{align}
-I(\tau) &= \frac{ci}{k} \cos (\tau c k)
+I(\tau) &= -\frac{c}{k} \sin (\tau c k)
 \end{align}
 $$
 
