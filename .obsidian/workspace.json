@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS3114/Electrodynamics/Green's functions.md",
+                "file": "Phys/PHYS3114/Optics/Diffraction Problems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Green's functions"
+              "title": "Diffraction Problems"
             }
           }
         ]
@@ -176,9 +176,9 @@
   },
   "active": "9690978008917163",
   "lastOpenFiles": [
+    "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Maths/MATH2621/Complex Functions/Residues.md",
     "Phys/PHYS2114/Electromagnetism/EM waves.md",
-    "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Phys/PHYS3114/Electrodynamics/Pasted image 20261025123611.png",
     "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
     "Phys/PHYS3114/Optics/Geometric Optics.md",
