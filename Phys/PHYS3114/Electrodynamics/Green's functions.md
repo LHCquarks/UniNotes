@@ -226,13 +226,13 @@ $$
 But because $R > 0$ and $\tau > 0$ the second delta function vanishes and we arrive at our answer:
 $$
 \begin{align}
-G(\vec R, \tau) &= \frac{-1}{4\pi R} \delta(\tau - R / c)
+G(\vec R, \tau) &= \frac{1}{4\pi R} \delta(\tau - R / c)
 \end{align}
 $$
 #### Retarded and advanced solutions
 For this solution we assumed that $\tau > 0$, this generates whats called the **retarded** solution and is the only physical solution. 
 
-The other solution assumes $\tau < 0$ and is found when we use $-i \eta$ and a contour in the upper plain instead. This is called the **advance** solution and describes how objects in the future affect objects in the past.
+The other solution assumes $\tau < 0$ and is found when we use $-i \eta$ and a contour in the upper plane instead. This is called the **advance** solution and describes how objects in the future affect objects in the past.
 ## Boundary conditions
 Due to $G$ being a building block of the scalar field $\varphi$ we inherit the ambiguity of gauges an so boundary conditions can help us take that ambiguity away.
 
