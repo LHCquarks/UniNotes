@@ -245,7 +245,7 @@ $$
 ### Boundary conditions on the Poisson equation
 Lets solve $\nabla^2 \varphi = -\frac{\rho}{\epsilon_0}$. We will assume we have a Green's function $G$ (the free space electrostatic function will do).
 
-First we will derive Green's first and second identities for general scalar fields $\phi, \psi$ (not dirrectly related to green's functions):
+First we will derive Green's first and second identities for general scalar fields $\phi, \psi$ (not directly related to green's functions):
 $$
 \begin{align}
 \nabla \cdot (\phi \nabla \psi) &= \nabla \phi \cdot \nabla \psi + \phi \nabla^2 \psi \\
