@@ -157,9 +157,9 @@ $$
 If we take $\tau > 0$ then we have:
 $$
 \begin{align}
-|f(z)| &\le \frac{e^0}{|z - (ck - i\eta)|\cdot|z - (-ck - i\eta)|} \\
-&\le \frac{1}{||z| - |ck - i\eta||\cdot ||z| - |-ck - i\eta||} \\
-&\le \frac{1}{|R - |ck - i\eta||\cdot|R - |ck + i\eta||} \\
+|f(z)| &\le \frac{c^2e^0}{|z - (ck - i\eta)|\cdot|z - (-ck - i\eta)|} \\
+&\le \frac{c^2}{||z| - |ck - i\eta||\cdot ||z| - |-ck - i\eta||} \\
+&\le \frac{c^2}{|R - |ck - i\eta||\cdot|R - |ck + i\eta||} \\
 \end{align}
 $$
 By the ML-lemma we know that:
