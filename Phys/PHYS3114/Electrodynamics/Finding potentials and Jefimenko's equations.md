@@ -87,7 +87,7 @@ $$
 \nabla F(\vec r, t_r) &= -\dot F(\vec r', t_r)\frac{\hat R}{c}
 \end{align}
 $$
-Applying this property on a charge density we get:
+Note that in these scenarios $\dot F = \frac{\partial F}{\partial t'}$ and we are simply evaluating this at the retarded time. Applying this property on a charge density we get:
 $$
 \begin{align}
 \nabla \left(\frac{\rho(\vec r', t_r)}{R}\right) &= \rho(\vec r', t_r) \nabla \left(\frac{1}{R}\right) + \frac{1}{R}\nabla \rho(\vec r', t_r) \\
