@@ -47,3 +47,36 @@ $$
 \vec A(\vec r, t) &= \frac{\mu_0}{4\pi} \int \frac{\vec J(\vec r', t_r)}{R} d^3 r'
 \end{align}
 $$
+## Jefimenko's equations
+Lets start by observing how $\nabla$ applies to our variables $R, t_r$.
+
+For $\nabla R$ we get:
+$$
+\begin{align}
+\nabla R &= \nabla \left(\sqrt{(x - x')^2 + (y - y')^2 + (z - z')^2}\right) \\
+&= \frac{1}{\sqrt{(x - x')^2 + (y - y')^2 + (z - z')^2}} \pmatrix{x - x' \\ y - y' \\ z - z'} \\
+&= \frac{\vec R}{R} \\
+&= \hat R
+\end{align}
+$$
+Further, we get
+$$
+\begin{align}
+\nabla \left(\frac{1}{R}\right) &= -\frac{\hat R}{R^2}
+\end{align}
+$$
+Similarly, for the retarded time we get:
+$$
+\begin{align}
+\nabla t_r &= \nabla t - \frac{1}{c} \nabla R \\
+&= -\frac{\hat R}{c}
+\end{align}
+$$
+These values can then be used to evaluate the gradient of abstract functions $F(\vec r', t')$ like so:
+$$
+\begin{align}
+\frac{\partial F}{\partial x} &= \frac{\partial F}{\partial t_r} \frac{\partial t_r}{\partial x} \\
+&= 
+\end{align}
+$$
+<% tp.file.cursor(2) %>
