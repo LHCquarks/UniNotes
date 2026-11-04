@@ -8,35 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9690978008917163",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS3114/Optics/Optics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Optics"
-            }
-          },
-          {
-            "id": "fb5d13b35575e2a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS3114/Optics/Geometric Optics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Geometric Optics"
-            }
-          },
-          {
             "id": "8479c99841909a76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Electrodynamics"
+            }
+          },
+          {
+            "id": "2345f8b8e5f01041",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,45 +36,17 @@
             }
           },
           {
-            "id": "f917078c2e16c789",
+            "id": "76f92dd2893a549b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS3114/Optics/Fourier Transforms.md",
+                "file": "Phys/PHYS3114/Electrodynamics/Finding potentials and Jefimenko's equations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fourier Transforms"
-            }
-          },
-          {
-            "id": "c7bbdbe471d9cbc4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fraunhofer Diffraction"
-            }
-          },
-          {
-            "id": "1f1f0f38535da956",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Phys/PHYS3114/Optics/Scalar Waves.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Scalar Waves"
+              "title": "Finding potentials and Jefimenko's equations"
             }
           }
         ],
@@ -245,21 +203,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8479c99841909a76",
+  "active": "76f92dd2893a549b",
   "lastOpenFiles": [
+    "Phys/PHYS3114/Electrodynamics/Green's functions.md",
+    "Phys/PHYS3114/Electrodynamics/Finding potentials and Jefimenko's equations.md",
+    "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
+    "Phys/PHYS2114/Electromagnetism/Maxwell's Equations.md",
+    "Phys/PHYS3114/Optics/Scalar Waves.md",
+    "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
+    "Phys/PHYS1241/Waves/Optics/Slits/Young's Interference Experiment.md",
+    "Phys/PHYS1241/Waves/Phasors.md",
     "Phys/PHYS3114/Optics/Geometric Optics.md",
     "Phys/PHYS3114/Optics/Optics.md",
     "Phys/PHYS3114/Optics/Fourier Transforms.md",
-    "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
-    "Phys/PHYS3114/Optics/Scalar Waves.md",
-    "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Phys/PHYS3114/Optics/Diffraction Problems.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Maths/MATH2621/Complex Functions/Residues.md",
     "Phys/PHYS2114/Electromagnetism/EM waves.md",
     "Phys/PHYS3114/Electrodynamics/Pasted image 20261025123611.png",
-    "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
     "QMC Extras.md",
     "Quant Master class.md",
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
@@ -272,14 +234,10 @@
     "Phys/PHYS3114/Optics/Pasted image 20261024125012.png",
     "Phys/PHYS3114/Optics/Pasted image 20261024124517.png",
     "Maths/MATH2111/Differential Calculus/Stationary points and extrema.md",
-    "Maths/MATH2111/Integral Calculus/Normal Integrals/Basics of the multivariable integral.md",
     "Phys/PHYS3114/Optics/Pasted image 20261024112232.png",
     "Phys/PHYS3114/Optics/Pasted image 20261022110458.png",
     "Phys/PHYS3114/Optics/Pasted image 20261022110341.png",
     "Phys/PHYS3114/Optics/Pasted image 20261022105949.png",
-    "Phys/PHYS2113/Oscillators/Driven Harmonic Oscillator.md",
-    "Phys/PHYS3114/Optics/Untitled.md",
-    "Phys/PHYS2113/Oscillators/Damped Harmonic Oscillator.md",
     "Maths/MATH1081/Proofs and logic",
     "Phys/PHYS3114/Optics/Rayleigh.png",
     "Phys/PHYS3114/Optics/diffractionGrating.gif",

@@ -1,1 +1,2 @@
 - [[Green's functions]]
+- [[Finding potentials and Jefimenko's equations]]
