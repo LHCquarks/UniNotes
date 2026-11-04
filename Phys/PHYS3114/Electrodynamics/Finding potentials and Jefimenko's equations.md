@@ -75,8 +75,40 @@ $$
 These values can then be used to evaluate the gradient of abstract functions $F(\vec r', t')$ like so:
 $$
 \begin{align}
-\frac{\partial F}{\partial x} &= \frac{\partial F}{\partial t_r} \frac{\partial t_r}{\partial x} \\
-&= 
+\frac{\partial F}{\partial x}(\vec r', t_r) &= \frac{\partial F}{\partial t_r} \frac{\partial t_r}{\partial x} \\
+ &= \frac{\partial F}{\partial t'} \frac{\partial t'}{\partial t_r} \frac{\partial t_r}{\partial R} \frac{\partial R}{\partial x}\\
+ &= \dot F(\vec r', t_r)(1) \left(-\frac{1}{c}\right) \frac{x - x'}{R}\\
+ &= -\dot F(\vec r', t_r) \frac{\hat R_x}{c} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Thus for any function $F(\vec r', t')$ we have:
+$$
+\begin{align}
+\nabla F(\vec r, t_r) &= -\dot F(\vec r', t_r)\frac{\hat R}{c}
+\end{align}
+$$
+Applying this property on a charge density we get:
+$$
+\begin{align}
+\nabla \left(\frac{\rho(\vec r', t_r)}{R}\right) &= \rho(\vec r', t_r) \nabla \left(\frac{1}{R}\right) + \frac{1}{R}\nabla \rho(\vec r', t_r) \\
+&= -\frac{\rho(\vec r', t_r) \hat R}{R^2} - \frac{\dot \rho(\vec r', t_r) \hat R}{cR}
+\end{align}
+$$
+And thus we can at last use our potential integrals to find an integral for $\vec E$ and $\vec B$:
+$$
+\begin{align}
+\vec E &= -\nabla \varphi - \frac{\partial \vec A}{\partial t} \\
+&= \frac{-1}{4\pi \epsilon_0}\nabla \int_{\mathbb R^3} \frac{\rho(\vec r', t_r)}{R} d^3 r' - \frac{\mu_0}{4\pi} \frac{\partial}{\partial t}\int_{\mathbb R^3} \frac{J(\vec r', t_r)}{R} dr' \\
+&= \frac{-1}{4\pi \epsilon_0} \int_{\mathbb R^3} \nabla \left(\frac{\rho(\vec r', t_r)}{R}\right) d^3 r' - \frac{\mu_0}{4\pi} \int_{\mathbb R^3} \frac{\partial J}{\partial t}\frac{1}{R} dr' \\
+&= \frac{-1}{4\pi \epsilon_0} \int_{\mathbb R^3} -\frac{\rho(\vec r', t_r)}{R^2}\hat R - \frac{\dot \rho(\vec r', t_r)}{cR}\hat R d^3 r' - \frac{\mu_0}{4\pi} \int_{\mathbb R^3} \frac{\dot J(\vec r', t_r)}{R} dr' \\
+&= \frac{1}{4\pi \epsilon_0} \int_{\mathbb R^3} \frac{\rho(\vec r', t_r)}{R^2}\hat R + \frac{\dot \rho(\vec r', t_r)}{cR}\hat R  - \mu_0 \epsilon_0 \frac{\dot J(\vec r', t_r)}{R} dr' \\
+E(\vec r, t)&= \frac{1}{4\pi \epsilon_0} \int_{\mathbb R^3} \frac{\rho(\vec r', t_r)}{R^2}\hat R + \frac{\dot \rho(\vec r', t_r)}{cR}\hat R  - \frac{\dot J(\vec r', t_r)}{c^2R} dr' \\
+\end{align}
+$$
+Similarly, with $\nabla \times \vec A$ and a lot of effort it can be shown:
+$$
+\begin{align}
+\vec B(\vec r, t) &= \frac{\mu_0}{4\pi} \int_{\mathbb R^3} \left[\frac{\vec J(\vec r', t_r)}{R^2} + \frac{\dot J(\vec r', t_r)}{cR}\right] \times \hat R d^3 r'
+\end{align}
+$$
+These are the Jefimenko's equations and give your fields given an arbitrary charge distribution.
