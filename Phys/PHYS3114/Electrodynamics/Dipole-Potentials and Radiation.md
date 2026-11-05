@@ -36,36 +36,28 @@ $$
 We will assert that the total charge is $0$ so the very first term vanishes and then we will also say the final terms vanish as we already have a $\dot \rho / r$ term. This leads to the following integral:
 $$
 \begin{align}
-\varphi(\vec r', t) &\approx \frac{1}{4\pi \epsilon_0}\int_{\mathbb R^3}\frac{r'}{2cr} \dot \rho \cos \alpha - \frac{r'}{r^2} \rho \cos \alpha d^3 r'\\
+\varphi(\vec r, t) &\approx \frac{1}{4\pi \epsilon_0}\int_{\mathbb R^3}\frac{r'}{2cr} \dot \rho \cos \alpha - \frac{r'}{r^2} \rho \cos \alpha d^3 r'\\
 &\approx \frac{1}{4\pi \epsilon_0}\int_{\mathbb R^3}\frac{\hat r \cdot \vec r'}{2cr} \dot \rho - \frac{\hat r \cdot \vec r'}{r^2} \rho d^3 r'\\
 &\approx \frac{1}{4\pi \epsilon_0}\left[\frac{1}{2cr}\hat r\cdot \int_{\mathbb R^3} \dot \rho(\vec r', t_c) \vec r' d^3 r' - \frac{1}{r^2}\hat r \cdot \int_{\mathbb R^3} \vec r' \rho(\vec r', t_c) d^3 r' \right] \\ 
 &\approx \frac{1}{4\pi \epsilon_0}\left[\frac{1}{2cr}\hat r\cdot \dot p(t_c) - \frac{1}{r^2}\hat r  \cdot \vec p(t_c)\right] \\ 
 \end{align}
 $$
+The only problem is this is wrong and should instead be
+$$
+\begin{align}
+\varphi(\vec r, t) &= \frac{1}{4\pi \epsilon_0} \left[ \frac{\hat r \cdot \dot p(t_c)}{2cr} - \frac{\hat r \cdot \vec p(t_c)}{r^2}\right]
+\end{align}
+$$
+Similarly it can be shown somehow that
+$$
+\begin{align}
+\vec A (\vec r, t) &= \frac{\mu_0}{4\pi } \frac{\dot p(t_c)}{r}
+\end{align}
+$$
+Now we find the electric and magnetic fields:
+$$
+\begin{align}
+\nabla \varphi &= 
+\end{align}
+$$
 <% tp.file.cursor(2) %>
-
-and using these our $\varphi(\vec r, t)$ goes to
-$$
-\begin{align}
-\varphi(\vec r, t) &\approx \frac{1}{4\pi \epsilon_0} \int_{\mathbb R^3} \left[\frac{1}{r} - \frac{1}{2r}\left(\frac{r'}{r}\right)^2 - \frac{r'}{r^2}\cos \alpha\right]\left[\rho(\vec r', t_c) + \frac{\dot \rho(\vec r', t_c)}{2c}\left(r'\cos \alpha - \frac{(r')^2}{2r}\right)\right] \\
-&\approx 
-\end{align}
-$$
-Now, because we assumed this was a electric mono-pole no matter the time we have that all but the $n=1$ terms vanish leaving us with:
-$$
-\begin{align}
-\varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0} \frac{1}{r^2} \int_{\mathbb R^3} r' \cos\alpha \rho(\vec r', t_r) dr' \\
- &= \frac{1}{4\pi\epsilon_0} \frac{1}{r^2} \int_{\mathbb R^3} \hat r \cdot \vec r' \rho(\vec r', t_r) dr' \\
- &= \frac{1}{4\pi\epsilon_0} \frac{1}{r^2} \hat r \cdot\int_{\mathbb R^3}  \vec r' \rho(\vec r', t_r) dr' \\
-\end{align}
-$$
-On top of this we can then Taylor expand $\rho(\vec r', t_r)$ in the $t'$ slot around $t_c = t - |r| / c$ like so:
-$$
-\begin{align}
-\rho(\vec r', t_r) &= \rho(\vec r', t_c) + \frac{1}{2}\rho(\vec r', t_c) (t_r - t_c) + \dots \\
-&\approx \rho(\vec r', t_c) + \frac{t - |r' - r| / c - t + |r| / c}{2} \rho(\vec r', t_c) \\
-&\approx \rho(\vec r', t_c) + \frac{|r| - |r' - r|}{c} \rho(\vec r', t_c) \\
-
-\end{align}
-$$
-
