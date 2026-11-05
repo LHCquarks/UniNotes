@@ -24,6 +24,15 @@ $$
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0} \frac{1}{r^2} \int_{\mathbb R^3} r' \cos\alpha \rho(\vec r', t_r) dr' \\
  &= \frac{1}{4\pi\epsilon_0} \frac{1}{r^2} \int_{\mathbb R^3} \hat r \cdot \vec r' \rho(\vec r', t_r) dr' \\
  &= \frac{1}{4\pi\epsilon_0} \frac{1}{r^2} \hat r \cdot\int_{\mathbb R^3}  \vec r' \rho(\vec r', t_r) dr' \\
- &= \frac{1}{4\pi\epsilon_0} \frac{\hat r \cdot \vec p(t_r)}{r^2} \\
 \end{align}
 $$
+On top of this we can then Taylor expand $\rho(\vec r', t_r)$ in the $t'$ slot around $t_c = t - |r| / c$ like so:
+$$
+\begin{align}
+\rho(\vec r', t_r) &= \rho(\vec r', t_c) + \frac{1}{2}\rho(\vec r', t_c) (t_r - t_c) + \dots \\
+&\approx \rho(\vec r', t_c) + \frac{t - |r' - r| / c - t + |r| / c}{2} \rho(\vec r', t_c) \\
+&\approx \rho(\vec r', t_c) + \frac{|r| - |r' - r|}{c} \rho(\vec r', t_c) \\
+
+\end{align}
+$$
+<% tp.file.cursor(2) %>
