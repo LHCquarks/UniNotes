@@ -18,7 +18,7 @@ $$
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\sum_{n = 0}^\infty\frac{1}{r^{n + 1}}  \int_{\mathbb R^3}(r')^n P_n(\cos \alpha) \rho(\vec r', t_r) dr'
 \end{align}
 $$
-Now, because we assumed this was a electric monopole no matter the time we have that all but the $n=1$ terms vanish leaving us with:
+Now, because we assumed this was a electric mono-pole no matter the time we have that all but the $n=1$ terms vanish leaving us with:
 $$
 \begin{align}
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0} \frac{1}{r^2} \int_{\mathbb R^3} r' \cos\alpha \rho(\vec r', t_r) dr' \\
