@@ -33,6 +33,15 @@ $$
 &\approx \frac{1}{r}\left[\rho + \frac{1}{2c}r'\dot \rho \cos \alpha\right] -\frac{r'}{r^2}\rho \cos \alpha -  \frac{1}{2c}\frac{(r')^2}{r^2}\dot \rho\left[\frac{1}{2} - \cos^2 \alpha \right] \\
 \end{align}
 $$
+We will assert that the total charge is $0$ so the very first term vanishes and then we will also say the final terms vanish as we already have a $\dot \rho / r$ term. This leads to the following integral:
+$$
+\begin{align}
+\varphi(\vec r', t) &\approx \frac{1}{4\pi \epsilon_0}\int_{\mathbb R^3}\frac{r'}{2cr} \dot \rho \cos \alpha - \frac{r'}{r^2} \rho \cos \alpha d^3 r'\\
+&\approx \frac{1}{4\pi \epsilon_0}\int_{\mathbb R^3}\frac{\hat r \cdot \vec r'}{2cr} \dot \rho - \frac{\hat r \cdot \vec r'}{r^2} \rho d^3 r'\\
+&\approx \frac{1}{4\pi \epsilon_0}\left[\frac{1}{2cr}\hat r\cdot \int_{\mathbb R^3} \dot \rho(\vec r', t_c) \vec r' d^3 r' - \frac{1}{r^2}\hat r \cdot \int_{\mathbb R^3} \vec r' \rho(\vec r', t_c) d^3 r' \right] \\ 
+&\approx \frac{1}{4\pi \epsilon_0}\left[\frac{1}{2cr}\hat r\cdot \dot p(t_c) - \frac{1}{r^2}\hat r  \cdot \vec p(t_c)\right] \\ 
+\end{align}
+$$
 <% tp.file.cursor(2) %>
 
 and using these our $\varphi(\vec r, t)$ goes to
@@ -59,4 +68,4 @@ $$
 
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+
