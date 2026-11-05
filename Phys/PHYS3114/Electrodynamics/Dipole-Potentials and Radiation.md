@@ -57,7 +57,7 @@ $$
 Now we find the electric and magnetic fields:
 $$
 \begin{align}
-\nabla \varphi &= 
+\nabla \varphi &= \frac{1}{4\pi \epsilon_0} \left[\frac{1}{2c}\nabla \left(\frac{1}{r}\right) \hat r \cdot \dot p(t_c) + \frac{1}{2cr}\nabla (\hat r \cdot \dot p(t_c)) + \right]
 \end{align}
 $$
 <% tp.file.cursor(2) %>
