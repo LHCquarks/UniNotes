@@ -1,2 +1,3 @@
 - [[Green's functions]]
 - [[Finding potentials and Jefimenko's equations]]
+- [[Dipole-Potentials and Radiation]]
