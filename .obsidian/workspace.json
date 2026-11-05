@@ -48,9 +48,21 @@
               "icon": "lucide-file",
               "title": "Finding potentials and Jefimenko's equations"
             }
+          },
+          {
+            "id": "5733275495eff991",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.0"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.15.0"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -203,7 +215,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "76f92dd2893a549b",
+  "active": "5733275495eff991",
   "lastOpenFiles": [
     "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Phys/PHYS3114/Electrodynamics/Finding potentials and Jefimenko's equations.md",
