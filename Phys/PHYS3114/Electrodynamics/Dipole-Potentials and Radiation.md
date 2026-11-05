@@ -30,7 +30,7 @@ $$
 \frac{\rho(\vec r', t_r)}{R} &\approx \left[\frac{1}{r} - \frac{1}{2r}\left(\frac{r'}{r}\right)^2 - \frac{r'}{r^2}\cos \alpha\right]\left[\rho(\vec r', t_c) + \frac{\dot \rho(\vec r', t_c)}{2c}\left(r'\cos \alpha - \frac{(r')^2}{2r}\right)\right] \\
 &\approx \frac{\rho}{r} + \frac{\dot \rho}{2cr}\left(r' \cos \alpha - \frac{(r')^2}{2r}\right) - \frac{r' \rho}{r^2} \cos \alpha  - \frac{r' \dot \rho}{2cr^2} r' \cos^2 \alpha \\
 &\approx \frac{\rho}{r} + \frac{1}{2c}\frac{r'}{r}\dot \rho \cos \alpha - \frac{1}{4c}\left(\frac{r'}{r}\right)^2 \dot \rho - \frac{r' \rho}{r^2} \cos \alpha  - \frac{1}{2c}\left(\frac{r'}{r}\right)^2 \dot \rho \cos^2 \alpha \\
-&\approx \frac{1}{r}\left[\rho + \frac{1}{2c}r'\dot \rho \cos \alpha\right] - \frac{r'}{r^2}\left[\frac{1}{4c}r' \dot \rho - \rho \cos \alpha  - \frac{1}{2c}r' \dot \rho \cos^2 \alpha \right]
+&\approx \frac{1}{r}\left[\rho + \frac{1}{2c}r'\dot \rho \cos \alpha\right] -\frac{r'}{r^2}\rho \cos \alpha -  \frac{1}{2c}\frac{(r')^2}{r^2}\dot \rho\left[\frac{1}{2} - \cos^2 \alpha \right] \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
