@@ -45,7 +45,7 @@ $$
 The only problem is this is wrong and should instead be
 $$
 \begin{align}
-\varphi(\vec r, t) &= \frac{1}{4\pi \epsilon_0} \left[ \frac{\hat r \cdot \dot p(t_c)}{2cr} - \frac{\hat r \cdot \vec p(t_c)}{r^2}\right]
+\varphi(\vec r, t) &= \frac{1}{4\pi \epsilon_0} \left[ \frac{\hat r \cdot \dot p(t_c)}{cr} + \frac{\hat r \cdot \vec p(t_c)}{r^2}\right]
 \end{align}
 $$
 Similarly it can be shown somehow that
@@ -57,7 +57,7 @@ $$
 Now we find the electric and magnetic fields:
 $$
 \begin{align}
-\nabla \varphi &= \frac{1}{4\pi \epsilon_0} \left[\frac{1}{2c}\nabla \left(\frac{1}{r}\right) \hat r \cdot \dot p(t_c) + \frac{1}{2cr}\nabla (\hat r \cdot \dot p(t_c)) - \nabla \left(\frac{1}{r^2}\right)\hat r \cdot \vec p(t_c) - \frac{1}{r^2} \nabla (\hat r \cdot \vec p(t_c))\right] \\
+\nabla \varphi &= \frac{1}{4\pi \epsilon_0} \left[\frac{1}{c}\nabla \left(\frac{1}{r}\right) \hat r \cdot \dot p(t_c) + \frac{1}{cr}\nabla (\hat r \cdot \dot p(t_c)) + \nabla \left(\frac{1}{r^2}\right)\hat r \cdot \vec p(t_c) + \frac{1}{r^2} \nabla (\hat r \cdot \vec p(t_c))\right] \\
 \end{align}
 $$
 Noting the following:
@@ -88,14 +88,16 @@ $$
 Thus we have the electric field to be:
 $$
 \begin{align}
-4\pi \epsilon_0\nabla \varphi &= \frac{1}{2c}\frac{-\hat r}{r^2} \hat r \cdot \dot p(t_c) + \frac{1}{2cr}\left[\frac{\dot p(t_c) - \hat r \cdot \dot p(t_c) \hat r}{r} - \frac{\hat r \cdot \ddot p(t_c)}{c} \hat r\right]\\
-&\ \ \ \  + \frac{2\hat r}{r^2}\hat r \cdot \vec p(t_c) - \frac{1}{r^2} \left[\frac{p(t_c) - \hat r \cdot p(t_c) \hat r}{r} - \frac{\hat r \cdot \dot p(t_c)}{c} \hat r\right]\\
+4\pi \epsilon_0\nabla \varphi &= \frac{1}{c}\frac{-\hat r}{r^2} \hat r \cdot \dot p(t_c) + \frac{1}{cr}\left[\frac{\dot p(t_c) - \hat r \cdot \dot p(t_c) \hat r}{r} - \frac{\hat r \cdot \ddot p(t_c)}{c} \hat r\right]\\
+&\ \ \ \  - \frac{2\hat r}{r^3}\hat r \cdot \vec p(t_c) + \frac{1}{r^2} \left[\frac{p(t_c) - \hat r \cdot p(t_c) \hat r}{r} - \frac{\hat r \cdot \dot p(t_c)}{c} \hat r\right]\\
 
-&= - \frac{\hat r \cdot \dot p(t_c)\hat r}{2cr^2} + \frac{\dot p(t_c)}{2cr^2} - \frac{\hat r \cdot \dot p(t_c) \hat r}{2cr^2} - \frac{\hat r \cdot \ddot p(t_c)}{2c^2r} \hat r\\
-&\ \ \ \  + \frac{2\hat r\cdot \vec p(t_c)\hat r}{r^2} - \frac{p(t_c)}{r^3} + \frac{\hat r \cdot p(t_c) \hat r}{r^3} + \frac{\hat r \cdot \dot p(t_c)}{c r^2} \hat r\\
+&= - \frac{\hat r \cdot \dot p(t_c)\hat r}{cr^2} + \frac{\dot p(t_c)}{cr^2} - \frac{\hat r \cdot \dot p(t_c) \hat r}{cr^2} - \frac{\hat r \cdot \ddot p(t_c)}{c^2r} \hat r\\
+&\ \ \ \  - \frac{2\hat r\cdot \vec p(t_c)\hat r}{r^3} + \frac{\vec p(t_c)}{r^3} - \frac{\hat r \cdot \vec p(t_c) \hat r}{r^3} - \frac{\hat r \cdot \dot p(t_c)}{c r^2} \hat r\\
 
-&=  \frac{\dot p(t_c)}{2cr^2} - \frac{\hat r \cdot \ddot p(t_c)}{2c^2r} \hat r\\
-&\ \ \ \  + \frac{2\hat r\cdot \vec p(t_c)\hat r}{r^2} - \frac{p(t_c)}{r^3} + \frac{\hat r \cdot p(t_c) \hat r}{r^3} \\
+&= - \frac{3\hat r \cdot \dot p(t_c)\hat r}{cr^2} + \frac{\dot p(t_c)}{cr^2} - \frac{\hat r \cdot \ddot p(t_c)}{c^2r} \hat r\\
+&\ \ \ \  - \frac{3\hat r\cdot \vec p(t_c)\hat r}{r^3} + \frac{\vec p(t_c)}{r^3} \\
+
+&= \frac{\dot p(t_c)-3\hat r \cdot \dot p(t_c)\hat r}{cr^2} + \frac{\vec p(t_c)-3\hat r\cdot \vec p(t_c)\hat r}{r^3} - \frac{\hat r \cdot \ddot p(t_c)}{c^2r} \hat r\\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
