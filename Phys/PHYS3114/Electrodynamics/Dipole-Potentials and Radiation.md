@@ -1,3 +1,4 @@
+## Calculating $\vec E, \vec B$ of a dipole
 Assume we have a time varying perfect electric dipole at the origin $\vec p(t)$.
 
 We will start by finding our $\varphi$ and $\vec A$ using our Green's function:
@@ -129,3 +130,13 @@ $$
 \vec B &= \frac{\mu_0}{4\pi} \left[\frac{\dot p \times \hat r}{r^2} + \frac{\ddot p\times \hat r}{cr}\right]
 \end{align}
 $$
+## Radiation
+As we get increasingly far away from the source the only term that matters is the $1 / r$ term. This term retains a constant energy over spherical shells around the source and thus carries all the energy away. We call this radiation.
+
+For our dipole these are:
+$$
+\begin{align}
+\vec E_{\text{rad}} &= \frac{1}{4\pi \epsilon_0}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
