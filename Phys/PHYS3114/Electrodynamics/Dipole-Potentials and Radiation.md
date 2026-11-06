@@ -90,8 +90,12 @@ $$
 \begin{align}
 4\pi \epsilon_0\nabla \varphi &= \frac{1}{2c}\frac{-\hat r}{r^2} \hat r \cdot \dot p(t_c) + \frac{1}{2cr}\left[\frac{\dot p(t_c) - \hat r \cdot \dot p(t_c) \hat r}{r} - \frac{\hat r \cdot \ddot p(t_c)}{c} \hat r\right]\\
 &\ \ \ \  + \frac{2\hat r}{r^2}\hat r \cdot \vec p(t_c) - \frac{1}{r^2} \left[\frac{p(t_c) - \hat r \cdot p(t_c) \hat r}{r} - \frac{\hat r \cdot \dot p(t_c)}{c} \hat r\right]\\
+
 &= - \frac{\hat r \cdot \dot p(t_c)\hat r}{2cr^2} + \frac{\dot p(t_c)}{2cr^2} - \frac{\hat r \cdot \dot p(t_c) \hat r}{2cr^2} - \frac{\hat r \cdot \ddot p(t_c)}{2c^2r} \hat r\\
 &\ \ \ \  + \frac{2\hat r\cdot \vec p(t_c)\hat r}{r^2} - \frac{p(t_c)}{r^3} + \frac{\hat r \cdot p(t_c) \hat r}{r^3} + \frac{\hat r \cdot \dot p(t_c)}{c r^2} \hat r\\
+
+&=  \frac{\dot p(t_c)}{2cr^2} - \frac{\hat r \cdot \ddot p(t_c)}{2c^2r} \hat r\\
+&\ \ \ \  + \frac{2\hat r\cdot \vec p(t_c)\hat r}{r^2} - \frac{p(t_c)}{r^3} + \frac{\hat r \cdot p(t_c) \hat r}{r^3} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
