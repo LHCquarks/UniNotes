@@ -85,7 +85,7 @@ $$
 \nabla \left(\hat r \cdot p(t_c)\right)&= \frac{p(t_c) - \hat r \cdot p(t_c) \hat r}{r} - \frac{\hat r \cdot \dot p(t_c)}{c} \hat r \\
 \end{align}
 $$
-Thus we have the electric field to be:
+Thus we have $-\nabla \varphi$ to be:
 $$
 \begin{align}
 4\pi \epsilon_0\nabla \varphi &= \frac{1}{c}\frac{-\hat r}{r^2} \hat r \cdot \dot p(t_c) + \frac{1}{cr}\left[\frac{\dot p(t_c) - \hat r \cdot \dot p(t_c) \hat r}{r} - \frac{\hat r \cdot \ddot p(t_c)}{c} \hat r\right]\\
@@ -98,6 +98,17 @@ $$
 &\ \ \ \  - \frac{3\hat r\cdot \vec p(t_c)\hat r}{r^3} + \frac{\vec p(t_c)}{r^3} \\
 
 &= \frac{\dot p(t_c)-3\hat r \cdot \dot p(t_c)\hat r}{cr^2} + \frac{\vec p(t_c)-3\hat r\cdot \vec p(t_c)\hat r}{r^3} - \frac{\hat r \cdot \ddot p(t_c)}{c^2r} \hat r\\
+
+-\nabla \varphi &= \frac{1}{4\pi \epsilon_0}\left[\frac{3\hat r \cdot \dot p(t_c)\hat r - \dot p(t_c)}{cr^2} + \frac{3\hat r\cdot \vec p(t_c)\hat r - \vec p(t_c)}{r^3} + \frac{\hat r \cdot \ddot p(t_c)}{c^2r} \hat r\right]\\
+\end{align}
+$$
+We also need to take $\frac{\partial \vec A}{\partial t}$ which is much easier and is given by:
+$$
+\begin{align}
+\frac{\partial \vec A}{\partial t} &= \frac{\partial}{\partial t} \left(\frac{\mu_0}{4\pi } \frac{\dot p(t_c)}{r}\right) \\
+&= \frac{\mu_0}{4\pi} \frac{\ddot p(t_c)}{r} \frac{\partial t_c}{\partial t} \\
+&= \frac{\mu_0}{4\pi} \frac{\ddot p(t_c)}{r} (1) \\
+-\frac{\partial \vec A}{\partial t}&= -\frac{1}{4\pi\epsilon_0 c^2} \frac{\ddot p(t_c)}{r} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
