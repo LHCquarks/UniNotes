@@ -57,7 +57,41 @@ $$
 Now we find the electric and magnetic fields:
 $$
 \begin{align}
-\nabla \varphi &= \frac{1}{4\pi \epsilon_0} \left[\frac{1}{2c}\nabla \left(\frac{1}{r}\right) \hat r \cdot \dot p(t_c) + \frac{1}{2cr}\nabla (\hat r \cdot \dot p(t_c)) + \right]
+\nabla \varphi &= \frac{1}{4\pi \epsilon_0} \left[\frac{1}{2c}\nabla \left(\frac{1}{r}\right) \hat r \cdot \dot p(t_c) + \frac{1}{2cr}\nabla (\hat r \cdot \dot p(t_c)) - \nabla \left(\frac{1}{r^2}\right)\hat r \cdot \vec p(t_c) - \frac{1}{r^2} \nabla (\hat r \cdot \vec p(t_c))\right] \\
+\end{align}
+$$
+Noting the following:
+$$
+\begin{align}
+\nabla \left(\frac{1}{r}\right) &= -\frac{\hat r}{r^2} \\
+\nabla \left(\frac{1}{r^2}\right) &= -2 \frac{\hat r}{r^3} \\
+
+\frac{\partial \hat r_j}{\partial x_i} &= \frac{\partial}{\partial x_i} \left(\frac{x_j}{r}\right) \\ 
+&= \frac{1}{r}\frac{\partial x_j}{\partial x_i} + x_j \frac{\partial}{\partial r}\left(\frac{1}{r}\right) \frac{\partial r}{\partial x_i} \\ 
+&= \frac{1}{r}\delta_{ij} + x_j \frac{-1}{r^2} \frac{x_i}{r} \\ 
+&= \frac{\delta_{ij}}{r} - \frac{1}{r}\frac{x_ix_j}{r^2} \\ 
+&= \frac{\delta_{ij} - \hat r_i\hat r_j}{r} \\ 
+
+\frac{\partial }{\partial x_i} \left(\sum_j \hat r_j \dot p_j(t_c)\right) &= \sum_j \frac{\partial}{\partial x_i} \left(\hat r_j\dot p_j(t_c)\right) \\
+&= \sum_j \left(\frac{\partial \hat r_j}{\partial x_i}\dot p_j(t_c) + \hat r_j \frac{\partial \dot p_j}{\partial x_i}\right) \\
+&= \sum_j \left(\frac{\delta_{ij} - \hat r_i \hat r_j}{r}\dot p_j(t_c) + \hat r_j \frac{\partial \dot p_j}{\partial t_c}\frac{\partial t_c}{\partial x_i}\right) \\
+&= \sum_j \left(\frac{\delta_{ij} - \hat r_i \hat r_j}{r}\dot p_j(t_c) + \hat r_j \ddot p_j(t_c)\frac{-\hat r_i}{c}\right) \\
+&= \sum_j \left(\frac{\delta_{ij}}{r}\dot p_j(t_c) - \frac{\hat r_i \hat r_j}{r}\dot p_j(t_c) - \frac{\hat r_j\hat r_i}{c} \ddot p_j(t_c)\right) \\
+&= \frac{\dot p_i(t_c)}{r} - \frac{\hat r_i \hat r \cdot \dot p(t_c)}{r} - \frac{\hat r_i \hat r \cdot \ddot p(t_c)}{c} \\
+
+\nabla \left(\hat r \cdot \dot p(t_c)\right) &= \frac{\dot p(t_c)}{r} - \frac{\hat r\cdot \dot p(t_c)}{r} \hat r - \frac{\hat r \cdot \ddot p(t_c)}{c} \hat r \\
+&= \frac{\dot p(t_c) - \hat r \cdot \dot p(t_c) \hat r}{r} - \frac{\hat r \cdot \ddot p(t_c)}{c} \hat r \\
+
+\nabla \left(\hat r \cdot p(t_c)\right)&= \frac{p(t_c) - \hat r \cdot p(t_c) \hat r}{r} - \frac{\hat r \cdot \dot p(t_c)}{c} \hat r \\
+\end{align}
+$$
+Thus we have the electric field to be:
+$$
+\begin{align}
+4\pi \epsilon_0\nabla \varphi &= \frac{1}{2c}\frac{-\hat r}{r^2} \hat r \cdot \dot p(t_c) + \frac{1}{2cr}\left[\frac{\dot p(t_c) - \hat r \cdot \dot p(t_c) \hat r}{r} - \frac{\hat r \cdot \ddot p(t_c)}{c} \hat r\right]\\
+&\ \ \ \  + \frac{2\hat r}{r^2}\hat r \cdot \vec p(t_c) - \frac{1}{r^2} \left[\frac{p(t_c) - \hat r \cdot p(t_c) \hat r}{r} - \frac{\hat r \cdot \dot p(t_c)}{c} \hat r\right]\\
+&= - \frac{\hat r \cdot \dot p(t_c)\hat r}{2cr^2} + \frac{\dot p(t_c)}{2cr^2} - \frac{\hat r \cdot \dot p(t_c) \hat r}{2cr^2} - \frac{\hat r \cdot \ddot p(t_c)}{2c^2r} \hat r\\
+&\ \ \ \  + \frac{2\hat r\cdot \vec p(t_c)\hat r}{r^2} - \frac{p(t_c)}{r^3} + \frac{\hat r \cdot p(t_c) \hat r}{r^3} + \frac{\hat r \cdot \dot p(t_c)}{c r^2} \hat r\\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
