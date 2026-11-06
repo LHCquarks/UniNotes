@@ -114,7 +114,18 @@ $$
 Putting all of this together we finally get $\vec E$:
 $$
 \begin{align}
-\vec E &= \frac{1}{4\pi \epsilon_0} \left[\frac{3 \hat r \cdot \dot p(t_c) \hat r - \dot p(t_c)}{cr^2} + \frac{3\hat r\cdot vec p(t_c) \hat r - \vec p(t_c)}{r^3} + \frac{\hat r \cdot \ddot p (t_c) \hat r - \ddot p (t_c)}{c^2r}\right]
+\vec E &= \frac{1}{4\pi \epsilon_0} \left[\frac{3 \hat r \cdot \dot p(t_c) \hat r - \dot p(t_c)}{cr^2} + \frac{3\hat r\cdot \vec p(t_c) \hat r - \vec p(t_c)}{r^3} + \frac{\hat r \cdot \ddot p (t_c) \hat r - \ddot p (t_c)}{c^2r}\right]
 \end{align}
 $$
 Also notice that $\hat r \times (\hat r \times \ddot p) = (\hat r \cdot \ddot p) \hat r - (\hat r \cdot \hat r)\ddot p = (\hat r \cdot \ddot p) \hat r - \ddot p$ and thus the final term can be simplified to:
+$$
+\begin{align}
+\vec E &= \frac{1}{4\pi \epsilon_0} \left[\frac{3 \hat r \cdot \dot p(t_c) \hat r - \dot p(t_c)}{cr^2} + \frac{3\hat r\cdot \vec p(t_c) \hat r - \vec p(t_c)}{r^3} + \frac{\hat r \times (\hat r \times \ddot p(t_c))}{c^2r}\right]
+\end{align}
+$$
+We can then also do $\vec B = \nabla \times \vec A$ to end up with:
+$$
+\begin{align}
+\vec B &= \frac{\mu_0}{4\pi} \left[\frac{\dot p \times \hat r}{r^2} + \frac{\ddot p\times \hat r}{cr}\right]
+\end{align}
+$$
