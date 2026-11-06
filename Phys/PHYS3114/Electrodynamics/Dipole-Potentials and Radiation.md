@@ -111,4 +111,10 @@ $$
 -\frac{\partial \vec A}{\partial t}&= -\frac{1}{4\pi\epsilon_0 c^2} \frac{\ddot p(t_c)}{r} \\
 \end{align}
 $$
+Putting all of this together we finally get $\vec E$:
+$$
+\begin{align}
+\vec E &= \frac{1}{4\pi \epsilon_0} \
+\end{align}
+$$
 <% tp.file.cursor(2) %>
