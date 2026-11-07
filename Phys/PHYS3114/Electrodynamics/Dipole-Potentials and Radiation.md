@@ -153,7 +153,7 @@ $$
 Thus we have:
 $$
 \begin{align}
-B_{\text{rad}} &= \frac{1}{c}\hat r \times \vec E_{\text{rad}}
+\vec B_{\text{rad}} &= \frac{1}{c}\hat r \times \vec E_{\text{rad}}
 \end{align}
 $$
 
