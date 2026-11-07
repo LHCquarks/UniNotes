@@ -156,4 +156,3 @@ $$
 \vec B_{\text{rad}} &= \frac{1}{c}\hat r \times \vec E_{\text{rad}}
 \end{align}
 $$
-
