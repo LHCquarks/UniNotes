@@ -146,8 +146,14 @@ We can also notice that
 $$
 \begin{align}
 \hat r \times [\hat r \times (\hat r \times \ddot p(t_c))] &= \hat r \times [\hat r(\hat r \cdot \ddot p) - (\hat r \cdot \hat r) \ddot p]\\
-&= (\hat r \times \hat r) (\hat r \cdot \ddot p) - (\hat r \times \ddot p) (\hat r \cdot \ddot p) \\
-&= (\ddot p \times \hat r) (\hat r \cdot \ddot p) \\
+&= (\hat r \times \hat r) (\hat r \cdot \ddot p) - (\hat r \times \ddot p) \\
+&= \ddot p \times \hat r \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Thus we have:
+$$
+\begin{align}
+B_{\text{rad}} &= \frac{1}{c}\hat r \times \vec E_{\text{rad}}
+\end{align}
+$$
+
