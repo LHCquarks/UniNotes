@@ -156,3 +156,26 @@ $$
 \vec B_{\text{rad}} &= \frac{1}{c}\hat r \times \vec E_{\text{rad}}
 \end{align}
 $$
+Further, we can calculate the energy flux to be:
+$$
+\begin{align}
+\vec S_{\text{rad}} &= \frac{1}{\mu_0} \vec E_{\text{rad}} \times \vec B_{\text{rad}} \\
+&= \frac{1}{\mu_0 c} \vec E_\text{rad} \times \left(\hat r \times \vec E_\text{rad}\right) \\
+&= \frac{1}{\mu_0 c} \left[\hat r \left(\vec E_\text{rad}\cdot \vec E_\text{rad}\right) - \vec E_\text{rad} \left(\hat r \cdot  \vec E_\text{rad} \right) \right]\\ 
+&= \frac{1}{\mu_0 c} \left[\hat r E_\text{rad}^2 - \vec E_\text{rad} \left(0 \right) \right]\\ 
+&= \frac{E_\text{rad}^2}{\mu_0 c} \hat r  = \epsilon_0 c E_\text{rad}^2 \hat r\\ 
+\end{align}
+$$
+Inspecting $E_\text{rad}^2$ we get:
+$$
+\begin{align}
+E_\text{rad}^2 &= \left|\frac{1}{4\pi \epsilon_0} \frac{\hat r \times (\hat r \times \ddot p(t_c))}{c^2 r} \right|^2 \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left|\hat r \times (\hat r \times \ddot p(t_c)) \right|^2 \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left|(\hat r \cdot \ddot p)\hat r - (\hat r \cdot \hat r) \ddot p \right|^2 \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left|(\hat r \cdot \ddot p)\hat r -\ddot p \right|^2 \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[|(\hat r \cdot \ddot p)\hat r|^2 - 2|(\hat r \cdot \ddot p)\hat r||\ddot p| + |\ddot p|^2 \right] \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[(\hat r \cdot \ddot p)^2 - 2(\hat r \cdot \ddot p)|\ddot p| + |\ddot p|^2 \right] \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[|\ddot p|^2 \sin^2\theta - 2|\ddot p|^2\sin \theta + |\ddot p|^2 \right] \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
