@@ -173,9 +173,29 @@ E_\text{rad}^2 &= \left|\frac{1}{4\pi \epsilon_0} \frac{\hat r \times (\hat r \t
 &= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left|\hat r \times (\hat r \times \ddot p(t_c)) \right|^2 \\
 &= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left|(\hat r \cdot \ddot p)\hat r - (\hat r \cdot \hat r) \ddot p \right|^2 \\
 &= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left|(\hat r \cdot \ddot p)\hat r -\ddot p \right|^2 \\
-&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[|(\hat r \cdot \ddot p)\hat r|^2 - 2|(\hat r \cdot \ddot p)\hat r||\ddot p| + |\ddot p|^2 \right] \\
-&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[(\hat r \cdot \ddot p)^2 - 2(\hat r \cdot \ddot p)|\ddot p| + |\ddot p|^2 \right] \\
-&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[|\ddot p|^2 \sin^2\theta - 2|\ddot p|^2\sin \theta + |\ddot p|^2 \right] \\
+
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[|(\hat r \cdot \ddot p)\hat r|^2 - 2\left[(\hat r \cdot \ddot p)\hat r \cdot \ddot p\right] + |\ddot p|^2 \right] \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[(\hat r \cdot \ddot p)^2 - 2(\hat r \cdot \ddot p)(\hat r \cdot \ddot p) + |\ddot p|^2 \right] \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[|\ddot p|^2 - (\hat r \cdot \ddot p)^2  \right] \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} \left[|\ddot p|^2 - |\ddot p|^2 \cos^2 \theta \right] \\
+&= \frac{1}{16\pi^2 \epsilon_0^2c^4r^2} |\ddot p|^2 \sin^2 \theta \\
+\end{align}
+$$
+and thus our energy flux is:
+$$
+\begin{align}
+\vec S_\text{rad} &= \frac{\epsilon_0 c |\ddot p|^2\sin^2\theta}{16\pi^2 \epsilon_0^2 c^4 r^2} \hat r\\
+&= \frac{|\ddot p(t_r)|^2\sin^2\theta}{16 \pi^2 \epsilon_0c^3 r^2} \hat r
+\end{align}
+$$
+Finally, we can integrate this over a sphere of radius $R$ for the total power lost:
+$$
+\begin{align}
+\mathcal P &= \oint_S \frac{|\ddot p(t_r)|^2\sin^2\theta}{16 \pi^2 \epsilon_0c^3 r^2} \hat r \cdot d\Omega \\
+&= \frac{|\ddot p(t_r)|^2}{16 \pi^2 \epsilon_0c^3R^2}\int_0^{2\pi}\int_0^\pi \sin^2\theta R^2\sin \theta d\theta d\phi \\
+&= \frac{|\ddot p(t_r)|^2}{16 \pi^2 \epsilon_0c^3}\int_0^{2\pi}d\phi\int_0^\pi \sin^3\theta d\theta \\
+&= \frac{|\ddot p(t_r)|^2}{8 \pi \epsilon_0c^3}\frac{4}{3} \\
+&= \frac{|\ddot p(t_r)|^2}{6 \pi \epsilon_0c^3} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
