@@ -198,4 +198,3 @@ $$
 &= \frac{|\ddot p(t_r)|^2}{6 \pi \epsilon_0c^3} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
