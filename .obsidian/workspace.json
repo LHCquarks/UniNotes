@@ -50,17 +50,17 @@
             }
           },
           {
-            "id": "e62179e2ecaebf9a",
+            "id": "dab697734a475ca7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phys/PHYS3114/Electrodynamics/Finding potentials and Jefimenko's equations.md",
+                "file": "Phys/PHYS3114/Electrodynamics/Green's functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Finding potentials and Jefimenko's equations"
+              "title": "Green's functions"
             }
           }
         ],
@@ -217,7 +217,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e62179e2ecaebf9a",
+  "active": "dab697734a475ca7",
   "lastOpenFiles": [
     "Phys/PHYS3114/Electrodynamics/Dipole-Potentials and Radiation.md",
     "Phys/PHYS3114/Electrodynamics/Finding potentials and Jefimenko's equations.md",

@@ -1,5 +1,5 @@
 Consider a single point charge with motion $\vec r_q(t)$ so that $\rho(\vec r', \vec t') = q\delta(\vec r' - \vec r_q(t'))$. 
-
+## Scalar potential
 We can apply the exact same techniques that we used for dipoles to get to 
 $$
 \begin{align}
@@ -22,4 +22,18 @@ $$
 &\approx \frac{1}{4\pi\epsilon_0 r} \left[q + \frac{\dot p \cdot \hat r}{c}\right] \\
 \end{align}
 $$
+## Vector potential
+Our current is given by $q \dot r_q(t)$ and thus our current density is
+$$
+\begin{align}
+\vec J (\vec r', t') &= q \dot r_q(t') \delta(\vec r' - \vec r_q(t'))
+\end{align}
+$$
+We can then use our Green's function for the vector potential to get:
+$$
+\begin{align}
+\vec A(\vec r, t) &= \int
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 
