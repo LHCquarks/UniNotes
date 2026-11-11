@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -217,15 +217,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dab697734a475ca7",
+  "active": "f42d174fc4a5f73c",
   "lastOpenFiles": [
     "Phys/PHYS3114/Electrodynamics/Dipole-Potentials and Radiation.md",
-    "Phys/PHYS3114/Electrodynamics/Finding potentials and Jefimenko's equations.md",
     "Phys/PHYS3114/Electrodynamics/Larmor's Formula.md",
+    "Phys/PHYS3114/Electrodynamics/Green's functions.md",
+    "Phys/PHYS2111/Commutators and simultaneous measurements.md",
+    "Phys/PHYS3114/Electrodynamics/Finding potentials and Jefimenko's equations.md",
     "Phys/PHYS3114/Electrodynamics/Electrodynamics.md",
     "Phys/PHYS2114/Special Tech/Multi-pole Expansion.md",
     "Maths/MATH1081/Set Theory and Functions/Functions.md",
-    "Phys/PHYS3114/Electrodynamics/Green's functions.md",
     "Phys/PHYS2114/Electromagnetism/Maxwell's Equations.md",
     "Phys/PHYS3114/Optics/Scalar Waves.md",
     "Phys/PHYS3114/Optics/Fraunhofer Diffraction.md",
@@ -245,7 +246,6 @@
     "Maths/MATH2621/Complex Specific Calculus/Jordan's Lemma.md",
     "Maths/MATH2621/Basic Topology.md",
     "Maths/MATH2621/Complex Specific Calculus/Evaluating Integrals.md",
-    "Maths/MATH2621/Complex Specific Calculus/Complex Specific Calculus.md",
     "Phys/PHYS3114/Optics/Pasted image 20261024125012.png",
     "Phys/PHYS3114/Optics/Pasted image 20261024124517.png",
     "Phys/PHYS3114/Optics/Pasted image 20261024112232.png",
