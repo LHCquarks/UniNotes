@@ -42,5 +42,5 @@ $$
 &\approx \frac{1}{r}\left[\vec J + \frac{1}{c}r'\dot J \cos \alpha\right] +\frac{r'}{r^2}\vec J \cos \alpha -  \frac{1}{c}\frac{(r')^2}{r^2}\dot J\left[\frac{1}{2} - \cos^2 \alpha \right] \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+
 
