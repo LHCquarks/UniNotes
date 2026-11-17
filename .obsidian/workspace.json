@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Larmor's Formula"
             }
+          },
+          {
+            "id": "3d67f53f9e1cb7aa",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.15.1"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.15.1"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -189,7 +201,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f42d174fc4a5f73c",
+  "active": "3d67f53f9e1cb7aa",
   "lastOpenFiles": [
     "Phys/PHYS2111/Solutions to SE/The simple harmonic oscillator.md",
     "Phys/PHYS3114/Electrodynamics/Larmor's Formula.md",
