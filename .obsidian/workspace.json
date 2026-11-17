@@ -36,15 +36,17 @@
             }
           },
           {
-            "id": "3d67f53f9e1cb7aa",
+            "id": "8f79428a40bd667a",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.15.1"
+                "file": "Phys/PHYS3114/Electrodynamics/Multipole expansion.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.15.1"
+              "icon": "lucide-file",
+              "title": "Multipole expansion"
             }
           }
         ],
@@ -201,10 +203,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d67f53f9e1cb7aa",
+  "active": "8f79428a40bd667a",
   "lastOpenFiles": [
-    "Phys/PHYS2111/Solutions to SE/The simple harmonic oscillator.md",
     "Phys/PHYS3114/Electrodynamics/Larmor's Formula.md",
+    "Phys/PHYS3114/Electrodynamics/Multipole expansion.md",
+    "Phys/PHYS2111/Solutions to SE/The simple harmonic oscillator.md",
     "Phys/PHYS2111/Solutions to SE/Square well potential.md",
     "Phys/PHYS3114/Electrodynamics/Dipole-Potentials and Radiation.md",
     "Phys/PHYS2111/Solutions to SE/The Delta Potential.md",
@@ -228,7 +231,6 @@
     "Phys/PHYS3114/Optics/Fourier Transforms.md",
     "Maths/MATH2621/Complex Specific Calculus/Cauchy Integral Formula.md",
     "Phys/PHYS3114/Optics/Diffraction Problems.md",
-    "Maths/MATH2621/Complex Specific Calculus/Cauchy's integral theorem.md",
     "Phys/PHYS3114/Electrodynamics/Pasted image 20261025123611.png",
     "Phys/PHYS3114/Optics/Pasted image 20261024125012.png",
     "Phys/PHYS3114/Optics/Pasted image 20261024124517.png",
