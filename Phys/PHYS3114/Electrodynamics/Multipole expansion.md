@@ -112,4 +112,20 @@ $$
 &= \frac{\mu_0}{4\pi r} \int_{\mathbb R^3} \vec J(\vec r', t_c)d^3 r' - \frac{\mu_0}{4\pi cr} \int_{\mathbb R^3} \dot J(\vec r', t_c) r'\cos \alpha d^3 r' \\
 \end{align}
 $$
-For the first term we will apply a product 
+For the first term we will apply a vectorial by parts like so:
+$$
+\begin{align}
+\nabla\cdot (r'_i \vec J) &=  \nabla r'_i \cdot \vec J + r'_i \nabla \cdot \vec J \\
+\nabla\cdot (r'_i \vec J) &=  \hat e_i \cdot \vec J - r'_i \dot \rho \\
+\int_{\mathbb R^3}\nabla\cdot (r'_i \vec J)d^3r' &=  \int_{\mathbb R^3} J_i d^3r'- \int_{\mathbb R^3}r'_i \dot \rho d^3r'\\
+\int_{S} r'_i \vec J \cdot d\vec S &=  \int_{\mathbb R^3} J_i d^3r'- \int_{\mathbb R^3}r'_i \dot\rho d^3r'\\
+\end{align}
+$$
+But assuming that $\vec J$ vanishes far before $r$ we have the left hand term to be $0$. Further, we can then replace the component terms ($J_i, r'_i$) with their vectorial counterparts to find
+$$
+\begin{align}
+\int_{\mathbb R^3} \vec J (\vec r', t_c)d^3r' &= \int_{\mathbb R^3} \dot\rho \vec r' d^3 r' \\
+&= \dot p(t_c)
+\end{align}
+$$
+Great, now substituting this back in we have 
