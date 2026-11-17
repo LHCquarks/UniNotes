@@ -128,4 +128,10 @@ $$
 &= \dot p(t_c)
 \end{align}
 $$
-Great, now substituting this back in we have 
+As for the second integral we have
+$$
+\begin{align}
+\int_{\mathbb R^3} \dot J(\vec r', t_c) r'\cos \alpha d^3 r' &= 
+\end{align}
+$$
+
