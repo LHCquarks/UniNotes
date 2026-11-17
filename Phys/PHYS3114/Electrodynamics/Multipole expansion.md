@@ -18,13 +18,28 @@ R &= \sqrt{r^2 + (r')^2 - 2rr'\cos \alpha} \\
 &= r \sqrt{1 + \left(\frac{r'}{r}\right)^2 - 2\left(\frac{r'}{r}\right)\cos \alpha}
 \end{align}
 $$
-We can then use the Taylor expansion for $(1 + x)^{1/2} = 1 + \frac{1}{2}x - \frac{1}{4}x^2 + \mathcal O(x^3)$ and the fact that $\mathcal O(x) = \mathcal O(1/r)$ to get:
+We can then use the Taylor expansion for $(1 + x)^{1/2} = 1 + \frac{1}{2}x - \frac{1}{8}x^2 + \mathcal O(x^3)$ and the fact that $\mathcal O(x) = \mathcal O(r'/r)$ to get:
 $$
 \begin{align}
-R &= r\left[1 + \frac{1}{2}\left(\left(\frac{r'}{r}\right)^2 - 2\left(\frac{r'}{r}\right)\cos \alpha\right) - \frac{1}{4}\left(\left(\frac{r'}{r}\right)^2 - 2\left(\frac{r'}{r}\right)\cos\alpha\right)^2 + \mathcal O\left(\frac{1}{r^3}\right)\right] \\
-&= r + \frac{(r')^2}{2r} - r'\cos \alpha - \frac{r}{4}\left(\left(\frac{r'}{r}\right)^4  - 4\left(\frac{r'}{r}\right)^3 +  4\left(\frac{r'}{r}\right)^2\cos^2\alpha\right) + \mathcal O\left(\frac{1}{r^2}\right) \\
-&= r + \frac{(r')^2}{2r} - r'\cos \alpha - \frac{(r')^4}{4r^3}  + \frac{(r')^3}{r^2} -  \frac{(r')^2}{r}\cos^2\alpha + \mathcal O\left(\frac{1}{r^2}\right) \\
-&= r + \frac{(r')^2}{2r} - r'\cos \alpha -  \frac{(r')^2}{r}\cos^2\alpha + \mathcal O\left(\frac{1}{r^2}\right) \\
+R &= r\left[1 + 
+\frac{1}{2}\left(\left(\frac{r'}{r}\right)^2 - 2\left(\frac{r'}{r}\right)\cos \alpha\right) - 
+\frac{1}{8}\left(\left(\frac{r'}{r}\right)^2 - 2\left(\frac{r'}{r}\right)\cos\alpha\right)^2 + 
+\mathcal O\left(\left[\frac{r'}{r}\right]^3\right)\right] \\
+
+&= r + 
+\frac{(r')^2}{2r} - r'\cos \alpha - 
+\frac{r}{8}\left(\left(\frac{r'}{r}\right)^4  - 4\left(\frac{r'}{r}\right)^3 +  4\left(\frac{r'}{r}\right)^2\cos^2\alpha\right) + 
+\mathcal O\left(\left[\frac{r'}{r}\right]^2\right) \\
+
+&= r + 
+\frac{(r')^2}{2r} - r'\cos \alpha - 
+\frac{(r')^4}{8r^3}  + \frac{(r')^3}{2r^2} -  \frac{(r')^2}{2r}\cos^2\alpha +
+\mathcal O\left(\frac{1}{r^2}\right) \\
+
+&= r + 
+\frac{(r')^2}{2r} - r'\cos \alpha -  
+\frac{(r')^2}{2r}\cos^2\alpha + 
+\mathcal O\left(\frac{1}{r^2}\right) \\
 \end{align}
 $$
 Wonderful, we will store this for when we expand $\rho$ and $\vec J$.
