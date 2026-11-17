@@ -128,10 +128,30 @@ $$
 &= \dot p(t_c)
 \end{align}
 $$
-As for the second integral we have
+Now we just need to simplify the second integral:
 $$
 \begin{align}
-\int_{\mathbb R^3} \dot J(\vec r', t_c) r'\cos \alpha d^3 r' &= 
+\int_{\mathbb R^3} \dot J(\vec r', t_c) r' \cos \alpha d^3 r' &= \int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'
 \end{align}
 $$
+We expect it to result in the time derivative of the magnetic moment which has a formula of
+$$
+\begin{align}
+m = \frac{1}{2}\int_{\mathbb R^3}  \vec r' \times \vec J(\vec r', t_c) d^3r'
+\end{align}
+$$
+as such we will need to introduce a cross product in our expression and we will do so with the triple cross product formula:
+$$
+\begin{align}
+\left[\dot J(\vec r', t_c)  \times \vec r'\right] \times \hat n &= \left(\hat n \cdot \dot J(\vec r', t_c)\right)\vec r' - \left(\hat n \cdot \vec r'\right)\dot J(\vec r', t_c) \\
+\left(\hat n \cdot \vec r'\right)\dot J(\vec r', t_c) &= \left(\hat n \cdot \dot J(\vec r', t_c)\right)\vec r' - \left[\dot J(\vec r', t_c)  \times \vec r'\right] \times \hat n \\
+\end{align}
+$$
+Thus our integral becomes:
+$$
+\begin{align}
+\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r' &= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' - \int_{\mathbb R^3} \left[\dot J(\vec r', t_c) \times \vec r'\right]\times \hat n d^3r' \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 
