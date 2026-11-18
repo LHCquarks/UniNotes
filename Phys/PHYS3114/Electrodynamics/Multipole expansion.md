@@ -152,9 +152,9 @@ $$
 \begin{align}
 \int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r' &= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' - \int_{\mathbb R^3} \left[\dot J(\vec r', t_c) \times \vec r'\right]\times \hat n d^3r' \\
 &= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' - \hat n \times \int_{\mathbb R^3} \vec r' \times \dot J(\vec r', t_c) d^3r' \\ 
-&= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' - 2\hat n \times \vec m(t_c) \\ 
-&= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' + 2\vec m(t_c)\times \hat n \\ 
+&= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' - 2\hat n \times \dot m(t_c) \\ 
+&= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' + 2\dot m(t_c)\times \hat n \\ 
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+This first integral is complicated and we will not really be able to play with it much
 
