@@ -54,21 +54,21 @@ $$
 \begin{align}
 t_r - t_c &= t - R/c - t + r/c \\
 &= \frac{1}{c}\left[r - R\right] \\
-&= \frac{1}{c}\left[r - r + \frac{(r')^2}{2r}\sin^2\alpha - r'\cos \alpha\right] \\
-&= \frac{(r')^2}{2cr}\sin^2\alpha - \frac{r'}{c}\cos \alpha \\
+&= \frac{1}{c}\left[r - r - \frac{(r')^2}{2r}\sin^2\alpha + r'\cos \alpha\right] \\
+&= -\frac{(r')^2}{2cr}\sin^2\alpha + \frac{r'}{c}\cos \alpha \\
 \end{align}
 $$
 We also argue that as $\lambda << r$ we will have that $(\frac{r - R}{c})^2$ vanishes thus our Taylor expansion becomes:
 $$
 \begin{align}
-\rho(\vec r, t_r) &= \rho(\vec r, t_c) + \dot \rho(\vec r, t_c) \left(\frac{(r')^2}{2cr}\sin^2\alpha - \frac{r'}{c}\cos\alpha \right) \\
-\rho(\vec r, t_r) &= \rho(\vec r, t_c) + \dot \rho(\vec r, t_c) \frac{(r')^2}{2cr}\sin^2\alpha - \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha \\
+\rho(\vec r, t_r) &= \rho(\vec r, t_c) + \dot \rho(\vec r, t_c) \left(\frac{r'}{c}\cos\alpha - \frac{(r')^2}{2cr}\sin^2\alpha\right) \\
+\rho(\vec r, t_r) &= \rho(\vec r, t_c) + \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha - \dot \rho(\vec r, t_c) \frac{(r')^2}{2cr}\sin^2\alpha \\
 \end{align}
 $$
 Similarly we can apply the exact same arguments to each component of $\vec J$ and then sum them all back up to get
 $$
 \begin{align}
-\vec J (\vec r, t_r) &= \vec J(\vec r, t_c) + \dot J(\vec r, t_c) \frac{(r')^2}{2cr} \sin^2 \alpha - \dot J(\vec r, t_c) \frac{r'}{c}\cos \alpha
+\vec J (\vec r, t_r) &= \vec J(\vec r, t_c) + \dot J(\vec r, t_c) \frac{r'}{c}\cos \alpha - \dot J(\vec r, t_c) \frac{(r')^2}{2cr} \sin^2 \alpha
 \end{align}
 $$
 Wonderful.
@@ -88,18 +88,18 @@ Great. With this we can finally put it all together to get $\varphi, \vec A$!
 First we will start with $\varphi$ but before we can find $\varphi$ we need to find $\frac{\rho(\vec r', t_r)}{R}$ using our prior expansions like so:
 $$
 \begin{align}
-\frac{\rho(\vec r', t_r)}{R} &= \left[\rho(\vec r, t_c) + \dot \rho(\vec r, t_c) \frac{(r')^2}{2cr}\sin^2\alpha - \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha\right] \cdot \left[\frac{1}{r}\right] \\
-&= \frac{\rho(\vec r, t_c)}{r} + \frac{\dot \rho(\vec r, t_c)\sin^2\alpha}{2c}\left(\frac{r'}{r}\right)^2 - \frac{\dot \rho(\vec r, t_c)r'\cos \alpha}{cr} \\
-&= \frac{\rho(\vec r, t_c)}{r} - \frac{\dot \rho(\vec r, t_c)r'\cos \alpha}{cr} \\
+\frac{\rho(\vec r', t_r)}{R} &= \left[\rho(\vec r, t_c) - \dot \rho(\vec r, t_c) \frac{(r')^2}{2cr}\sin^2\alpha + \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha\right] \cdot \left[\frac{1}{r}\right] \\
+&= \frac{\rho(\vec r, t_c)}{r} - \frac{\dot \rho(\vec r, t_c)\sin^2\alpha}{2c}\left(\frac{r'}{r}\right)^2 + \frac{\dot \rho(\vec r, t_c)r'\cos \alpha}{cr} \\
+&= \frac{\rho(\vec r, t_c)}{r} + \frac{\dot \rho(\vec r, t_c)r'\cos \alpha}{cr} \\
 \end{align}
 $$
 Ok, now we have this we can solve for $\varphi$ like so:
 $$
 \begin{align}
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\int_{\mathbb R^3} \frac{\rho(\vec r', t_r)}{R} d^3r' \\
-\varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\int_{\mathbb R^3} \frac{\rho(\vec r', t_c)}{r} - \frac{\dot \rho(\vec r', t_c) r' \cos\alpha}{cr} d^3r' \\
-\varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0r}\int_{\mathbb R^3} \rho(\vec r', t_c) d^3r' - \frac{1}{4\pi\epsilon_0cr}\int_{\mathbb R^3}\dot \rho(\vec r', t_c) r' \cos\alpha d^3r' \\
-\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0r} - \frac{\dot p(t_c) \cdot \hat n}{4\pi\epsilon_0cr}\\
+\varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\int_{\mathbb R^3} \frac{\rho(\vec r', t_c)}{r} + \frac{\dot \rho(\vec r', t_c) r' \cos\alpha}{cr} d^3r' \\
+\varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0r}\int_{\mathbb R^3} \rho(\vec r', t_c) d^3r' + \frac{1}{4\pi\epsilon_0cr}\int_{\mathbb R^3}\dot \rho(\vec r', t_c) r' \cos\alpha d^3r' \\
+\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0r} + \frac{\dot p(t_c) \cdot \hat n}{4\pi\epsilon_0cr}\\
 \end{align}
 $$
 Very cool.
@@ -107,9 +107,9 @@ Very cool.
 Doing a similar thing with $\vec A$ yeilds:
 $$
 \begin{align}
-\frac{\vec J(\vec r', t_r)}{R} &= \frac{\vec J(\vec r', t_c)}{r} - \frac{\dot J(\vec r', t_c)r'\cos \alpha}{cr} \\
-\vec A &= \frac{\mu_0}{4\pi} \int_{\mathbb R^3} \frac{\vec J(\vec r', t_c)}{r} - \frac{\dot J(\vec r', t_c)r'\cos \alpha}{cr} d^3 r'\\
-&= \frac{\mu_0}{4\pi r} \int_{\mathbb R^3} \vec J(\vec r', t_c)d^3 r' - \frac{\mu_0}{4\pi cr} \int_{\mathbb R^3} \dot J(\vec r', t_c) r'\cos \alpha d^3 r' \\
+\frac{\vec J(\vec r', t_r)}{R} &= \frac{\vec J(\vec r', t_c)}{r} + \frac{\dot J(\vec r', t_c)r'\cos \alpha}{cr} \\
+\vec A &= \frac{\mu_0}{4\pi} \int_{\mathbb R^3} \frac{\vec J(\vec r', t_c)}{r} + \frac{\dot J(\vec r', t_c)r'\cos \alpha}{cr} d^3 r'\\
+&= \frac{\mu_0}{4\pi r} \int_{\mathbb R^3} \vec J(\vec r', t_c)d^3 r' + \frac{\mu_0}{4\pi cr} \int_{\mathbb R^3} \dot J(\vec r', t_c) r'\cos \alpha d^3 r' \\
 \end{align}
 $$
 For the first term we will apply a vectorial by parts like so:
@@ -167,10 +167,10 @@ $$
 Start by finding $\nabla \varphi$ like so:
 $$
 \begin{align}
-\nabla \varphi &= \frac{Q}{4\pi \epsilon_0} \nabla \left(\frac{1}{r}\right) - \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{\dot p(t_c) \cdot \hat n}{r}\right) \\
-&= -\frac{Q}{4\pi \epsilon_0} \frac{\hat n}{r^2} - \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{1}{r}\right)(\dot p(t_c) \cdot \hat n) - \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
-&= \frac{\left[\dot p(t_c) \cdot \hat n\right]\hat n}{4\pi\epsilon_0 c r^2} - \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
-&= - \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
+\nabla \varphi &= \frac{Q}{4\pi \epsilon_0} \nabla \left(\frac{1}{r}\right) + \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{\dot p(t_c) \cdot \hat n}{r}\right) \\
+&= -\frac{Q}{4\pi \epsilon_0} \frac{\hat n}{r^2} + \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{1}{r}\right)(\dot p(t_c) \cdot \hat n) + \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
+&= - \frac{\left[\dot p(t_c) \cdot \hat n\right]\hat n}{4\pi\epsilon_0 c r^2} + \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
+&= \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
 \end{align}
 $$
 We now have to find $\nabla (\dot p(t_c) \cdot \hat n)$. To do this we will analyse the derivatives of each component like so:
@@ -196,7 +196,7 @@ $$
 Finally we can put this together to get $\nabla \varphi$ to be:
 $$
 \begin{align}
-\nabla \varphi &= - \frac{1}{4\pi\epsilon_0 cr} \left[\frac{\dot p(t_c) - \hat n \cdot \dot p(t_c) \hat n}{r} - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n\right] \\
+-\nabla \varphi &=  -\frac{1}{4\pi\epsilon_0 cr} \left[\frac{\dot p(t_c) - \hat n \cdot \dot p(t_c) \hat n}{r} - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n\right] \\
 &= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n \\
 \end{align}
 $$
@@ -211,8 +211,20 @@ Combining these to get $\vec E$ we get:
 $$
 \begin{align}
 \vec E &= -\nabla \varphi - \frac{\partial \vec A}{\partial t} \\
-&= -\frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r} \\
-&= -\frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r} \\
+&= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r} \\
+&= \frac{1}{4\pi\epsilon_0 c^2 r}\left[\hat n \cdot \ddot p(t_c) \hat n - \ddot p(t_c) \right]- \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+But this first term can be simplifed like so:
+$$
+\begin{align}
+(\hat n \cdot \ddot p(t_c)) \hat n - \ddot p (t_c) &= (\hat n \cdot \ddot p(t_c)) \hat n - (\hat n \cdot \hat n) \ddot p (t_c) \\
+&= \hat n \times [\hat n \times \ddot p(t_c)]
+\end{align}
+$$
+and thus
+$$
+\begin{align}
+\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r}
+\end{align}
+$$
