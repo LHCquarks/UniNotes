@@ -156,5 +156,63 @@ $$
 &= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' + 2\dot m(t_c)\times \hat n \\ 
 \end{align}
 $$
-This first integral is complicated and we will not really be able to play with it much
+This first integral is complicated and we will not really be able to manipulate it much so we are gonna set it to zero. One way we can justify this is saying that $\dot J$ is perpendicular to $\hat n$.
+With this we find $\vec A$ to be:
+$$
+\begin{align}
+\vec A &= \frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \dot m(t_c) \times \hat n}{2\pi c r}
+\end{align}
+$$
+## Finding $\vec E$ and $\vec B$
+Start by finding $\nabla \varphi$ like so:
+$$
+\begin{align}
+\nabla \varphi &= \frac{Q}{4\pi \epsilon_0} \nabla \left(\frac{1}{r}\right) - \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{\dot p(t_c) \cdot \hat n}{r}\right) \\
+&= -\frac{Q}{4\pi \epsilon_0} \frac{\hat n}{r^2} - \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{1}{r}\right)(\dot p(t_c) \cdot \hat n) - \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
+&= \frac{\left[\dot p(t_c) \cdot \hat n\right]\hat n}{4\pi\epsilon_0 c r^2} - \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
+&= - \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
+\end{align}
+$$
+We now have to find $\nabla (\dot p(t_c) \cdot \hat n)$. To do this we will analyse the derivatives of each component like so:
+$$
+\begin{align}
+\frac{\partial \hat n_j}{\partial x_i} &= \frac{\partial}{\partial x_i} \left(\frac{x_j}{r}\right) \\ 
+&= \frac{1}{r}\frac{\partial x_j}{\partial x_i} + x_j \frac{\partial}{\partial r}\left(\frac{1}{r}\right) \frac{\partial r}{\partial x_i} \\ 
+&= \frac{1}{r}\delta_{ij} + x_j \frac{-1}{r^2} \frac{x_i}{r} \\ 
+&= \frac{\delta_{ij}}{r} - \frac{1}{r}\frac{x_ix_j}{r^2} \\ 
+&= \frac{\delta_{ij} - \hat n_i\hat n_j}{r} \\ 
 
+\frac{\partial }{\partial x_i} \left(\sum_j \hat n_j \dot p_j(t_c)\right) &= \sum_j \frac{\partial}{\partial x_i} \left(\hat n_j\dot p_j(t_c)\right) \\
+&= \sum_j \left(\frac{\partial \hat n_j}{\partial x_i}\dot p_j(t_c) + \hat n_j \frac{\partial \dot p_j}{\partial x_i}\right) \\
+&= \sum_j \left(\frac{\delta_{ij} - \hat n_i \hat n_j}{r}\dot p_j(t_c) + \hat n_j \frac{\partial \dot p_j}{\partial t_c}\frac{\partial t_c}{\partial x_i}\right) \\
+&= \sum_j \left(\frac{\delta_{ij} - \hat n_i \hat n_j}{r}\dot p_j(t_c) + \hat n_j \ddot p_j(t_c)\frac{-\hat n_i}{c}\right) \\
+&= \sum_j \left(\frac{\delta_{ij}}{r}\dot p_j(t_c) - \frac{\hat n_i \hat n_j}{r}\dot p_j(t_c) - \frac{\hat n_j\hat n_i}{c} \ddot p_j(t_c)\right) \\
+&= \frac{\dot p_i(t_c)}{r} - \frac{\hat n_i \hat n \cdot \dot p(t_c)}{r} - \frac{\hat n_i \hat n \cdot \ddot p(t_c)}{c} \\
+
+\nabla \left(\hat n \cdot \dot p(t_c)\right) &= \frac{\dot p(t_c)}{r} - \frac{\hat n\cdot \dot p(t_c)}{r} \hat n - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n \\
+&= \frac{\dot p(t_c) - \hat n \cdot \dot p(t_c) \hat n}{r} - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n \\
+\end{align}
+$$
+Finally we can put this together to get $\nabla \varphi$ to be:
+$$
+\begin{align}
+\nabla \varphi &= - \frac{1}{4\pi\epsilon_0 cr} \left[\frac{\dot p(t_c) - \hat n \cdot \dot p(t_c) \hat n}{r} - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n\right] \\
+&= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n \\
+\end{align}
+$$
+Next up we must find $\frac{\partial \vec A}{\partial t}$ like so:
+$$
+\begin{align}
+\frac{\partial \vec A}{\partial t} &= \frac{\partial }{\partial t} \left(\frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \dot m(t_c) \times \hat n}{2\pi c r}\right) \\
+&= \frac{\mu_0 \ddot p(t_c)}{4\pi r} + \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi cr}
+\end{align}
+$$
+Combining these to get $\vec E$ we get:
+$$
+\begin{align}
+\vec E &= -\nabla \varphi - \frac{\partial \vec A}{\partial t} \\
+&= -\frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r} \\
+&= -\frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r} \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
