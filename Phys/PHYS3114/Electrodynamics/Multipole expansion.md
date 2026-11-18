@@ -228,3 +228,20 @@ $$
 \vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r}
 \end{align}
 $$
+Now we have $\vec E$ lets find $\vec B$:
+$$
+\begin{align}
+\vec B &= \nabla \times \vec A \\
+&= \nabla \times \left(\frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \dot m(t_c) \times \hat n}{2\pi c r}\right) \\
+&= \frac{\mu_0}{4\pi}\nabla \times \left(\frac{\dot p(t_c)}{r}\right) + \frac{\mu_0}{2\pi c}\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right)   \\  
+\end{align}
+$$
+Breaking this up we will first find the first term:
+$$
+\begin{align}
+\nabla \times \left(\frac{\dot p(t_c)}{r}\right)&= \frac{1}{r}\nabla \times \dot p(t_c) - \dot p(t_c) \times \nabla \left(\frac{1}{r}\right) \\  
+&= \frac{1}{r}\nabla \times \dot p(t_c) + \frac{\dot p(t_c)\times \hat n}{r^2}  \\  
+&= \frac{1}{r}\nabla \times \dot p(t_c) \\  
+\end{align}
+$$
+
