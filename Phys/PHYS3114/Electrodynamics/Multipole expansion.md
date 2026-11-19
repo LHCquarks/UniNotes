@@ -3,11 +3,13 @@ The Multi-pole expansion in electrodynamics is more involved however it gets us 
 2. Taylor expand $\rho(\vec r, t_r)$ and $\vec J (\vec r, t_r)$ in $t$ around $t_c = t - r/c$ using 1.
 3. Taylor expand $1/R$
 4. Use 2. and 3. to find the expansions of $\rho  / R$ and $\vec J / R$ 
-5. Substitute in 4. to the formulas for $\varphi$ and $\vec A$ respectively to find them
-6. Find the $\vec E$ and $\vec B$ radiation from the potential functions
-7. Observe that for the $1/r$ terms $\vec B = \frac{1}{c} \hat n \times \vec E$ 
-8. Get an expression for the Poynting vector
-9. Find the total power radiated from our source
+5. Find $\varphi$ using 4.
+6. Find $\vec A$ using 4.
+7. Find $\vec E$ radiation from potential functions
+8. Find $\vec B$ radiation from the potential functions
+9. Observe that for the $1/r$ terms $\vec B = \frac{1}{c} \hat n \times \vec E$ 
+10. Get an expression for the Poynting vector
+11. Find the total power radiated from our source
 Because we are interested in only the far field of our sources (the radiation) we are going throw away any terms for $\vec E$ and $\vec B$ that fall away faster than $1/r$. Due to all these steps never introducing any $r$ terms when we see a term that is $\mathcal O(1/r^2)$ we will disregard it and throw it away.
 With all that preamble lets start the derivation.
 ## Taylor expanding $R$
@@ -84,7 +86,7 @@ $$
 \end{align}
 $$
 Great. With this we can finally put it all together to get $\varphi, \vec A$!
-## Finding $\varphi$ and $\vec A$
+## Finding $\varphi$
 First we will start with $\varphi$ but before we can find $\varphi$ we need to find $\frac{\rho(\vec r', t_r)}{R}$ using our prior expansions like so:
 $$
 \begin{align}
@@ -103,8 +105,8 @@ $$
 \end{align}
 $$
 Very cool.
-
-Doing a similar thing with $\vec A$ yeilds:
+## Finding $\vec A$
+Doing a similar thing with $\vec A$ yields:
 $$
 \begin{align}
 \frac{\vec J(\vec r', t_r)}{R} &= \frac{\vec J(\vec r', t_c)}{r} + \frac{\dot J(\vec r', t_c)r'\cos \alpha}{cr} \\
@@ -112,13 +114,15 @@ $$
 &= \frac{\mu_0}{4\pi r} \int_{\mathbb R^3} \vec J(\vec r', t_c)d^3 r' + \frac{\mu_0}{4\pi cr} \int_{\mathbb R^3} \dot J(\vec r', t_c) r'\cos \alpha d^3 r' \\
 \end{align}
 $$
-For the first term we will apply a vectorial by parts like so:
+These terms (especially the second) are not trivially solved so we will investigate them seperatly starting with the first.
+### First term
+For the first term we will inspect it by component and use an integration by parts
 $$
 \begin{align}
 \nabla\cdot (r'_i \vec J) &=  \nabla r'_i \cdot \vec J + r'_i \nabla \cdot \vec J \\
 \nabla\cdot (r'_i \vec J) &=  \hat e_i \cdot \vec J - r'_i \dot \rho \\
 \int_{\mathbb R^3}\nabla\cdot (r'_i \vec J)d^3r' &=  \int_{\mathbb R^3} J_i d^3r'- \int_{\mathbb R^3}r'_i \dot \rho d^3r'\\
-\int_{S} r'_i \vec J \cdot d\vec S &=  \int_{\mathbb R^3} J_i d^3r'- \int_{\mathbb R^3}r'_i \dot\rho d^3r'\\
+\oint_{S} r'_i \vec J \cdot d\vec S &=  \int_{\mathbb R^3} J_i d^3r'- \int_{\mathbb R^3}r'_i \dot\rho d^3r'\\
 \end{align}
 $$
 But assuming that $\vec J$ vanishes far before $r$ we have the left hand term to be $0$. Further, we can then replace the component terms ($J_i, r'_i$) with their vectorial counterparts to find
@@ -128,13 +132,14 @@ $$
 &= \dot p(t_c)
 \end{align}
 $$
-Now we just need to simplify the second integral:
+### Second term
+Using $\vec r' \cdot \hat n = r'\cos \alpha$ we get:
 $$
 \begin{align}
 \int_{\mathbb R^3} \dot J(\vec r', t_c) r' \cos \alpha d^3 r' &= \int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'
 \end{align}
 $$
-We expect it to result in the time derivative of the magnetic moment which has a formula of
+We expect it to result in something to do with the time derivative of the magnetic moment which has a formula of
 $$
 \begin{align}
 m = \frac{1}{2}\int_{\mathbb R^3}  \vec r' \times \vec J(\vec r', t_c) d^3r'
@@ -157,6 +162,7 @@ $$
 \end{align}
 $$
 This first integral is complicated and we will not really be able to manipulate it much so we are gonna set it to zero. One way we can justify this is saying that $\dot J$ is perpendicular to $\hat n$.
+### Total integral
 With this we find $\vec A$ to be:
 $$
 \begin{align}
