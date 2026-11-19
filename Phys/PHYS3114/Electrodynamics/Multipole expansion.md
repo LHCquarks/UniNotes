@@ -236,12 +236,22 @@ $$
 &= \frac{\mu_0}{4\pi}\nabla \times \left(\frac{\dot p(t_c)}{r}\right) + \frac{\mu_0}{2\pi c}\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right)   \\  
 \end{align}
 $$
-Breaking this up we will first find the first term:
+Breaking this up we will find the first term:
 $$
 \begin{align}
 \nabla \times \left(\frac{\dot p(t_c)}{r}\right)&= \frac{1}{r}\nabla \times \dot p(t_c) - \dot p(t_c) \times \nabla \left(\frac{1}{r}\right) \\  
 &= \frac{1}{r}\nabla \times \dot p(t_c) + \frac{\dot p(t_c)\times \hat n}{r^2}  \\  
 &= \frac{1}{r}\nabla \times \dot p(t_c) \\  
+&= \frac{1}{r}\left[-\frac{1}{r}\frac{\partial (r\dot p_\phi)}{\partial r}\hat \theta + \frac{1}{r}\frac{\partial (r\dot p_\theta)}{\partial r}\hat \phi \right]\\  
+&= -\frac{\dot p_\phi}{r^2}\hat \theta - \frac{1}{r}\frac{\partial\dot p_\phi}{\partial r}\hat \theta + \frac{\dot p_\theta}{r^2}\hat \phi + \frac{1}{r}\frac{\partial \dot p_\theta}{\partial r}\hat \phi\\  
+&= \frac{\ddot p_\phi(t_c)}{cr}\hat \theta - \frac{\ddot p_\theta(t_c)}{cr} \hat \phi\\  
+&= \frac{\ddot p(t_c)\times \hat n}{cr}
 \end{align}
 $$
-
+and then the second term:
+$$
+\begin{align}
+\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &=
+\end{align}
+$$
+<% tp.file.cursor(2) %>
