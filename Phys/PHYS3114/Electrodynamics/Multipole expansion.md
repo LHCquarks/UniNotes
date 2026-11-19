@@ -251,7 +251,32 @@ $$
 and then the second term:
 $$
 \begin{align}
-\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &=
+\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] - \left[\dot m(t_c) \times \hat n\right] \times \nabla \left(\frac{1}{r}\right) \\
+&= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] + \left[\dot m(t_c) \times \hat n\right] \times \frac{\hat n}{r^2} \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Using the vector triple product formula we get:
+$$
+\begin{align}
+\nabla \times \left[\dot m(t_c) \times \hat n\right] &= \dot m(t_c) [\nabla \cdot \hat n] - \hat n[\nabla \cdot \dot m(t_c)] \\
+&= \dot m(t_c) \left[\frac{1}{r^2}\frac{\partial}{\partial r}(r^2)\right] - \hat n \left[\frac{1}{r^2}\frac{\partial}{\partial r}(r^2 \dot m_r(t_c))\right] \\
+&= \dot m(t_c) \left[\frac{2r}{r^2}\right] - \frac{\hat n}{r^2} \left[2r\dot m_r(t_c) - \frac{r^2 \ddot m_r(t_c)}{c}\right] \\
+&= \frac{2\dot m(t_c)}{r} + \frac{\ddot m_r(t_c)\hat n}{c} - \frac{2\dot m_r(t_c)\hat n}{r} \\
+&= \frac{2\dot m(t_c)}{r} + \frac{\ddot m(t_c)\cdot \hat n}{c}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r}\hat n\\
+\end{align}
+$$
+which finally allows us to write
+$$
+\begin{align}
+\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] + \left[\dot m(t_c) \times \hat n\right] \times \frac{\hat n}{r^2} \\
+&= \frac{1}{r}\left[\frac{2\dot m(t_c)}{r} + \frac{\ddot m(t_c)\cdot \hat n}{c}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r}\hat n\right] + [\dot m(t_c) \times \hat n] \times \frac{\hat n}{r^2} \\
+&= \frac{2\dot m(t_c)}{r^2} + \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r^2}\hat n + [\dot m(t_c) \times \hat n] \times \frac{\hat n}{r^2} \\
+&= \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n  \\
+\end{align}
+$$
+and thus
+$$
+\begin{align}
+\vec B &= \frac{\mu_0}{4\pi}\frac{\ddot p(t_c)\times \hat n}{cr} + \frac{\mu_0}{2\pi c}\frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n   \\  
+\end{align}
+$$
