@@ -139,29 +139,20 @@ $$
 \int_{\mathbb R^3} \dot J(\vec r', t_c) r' \cos \alpha d^3 r' &= \int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'
 \end{align}
 $$
-We expect it to result in something to do with the time derivative of the magnetic moment which has a formula of
+We will now look at this in component form. Define the tensor
 $$
 \begin{align}
-m = \frac{1}{2}\int_{\mathbb R^3}  \vec r' \times \vec J(\vec r', t_c) d^3r'
+I_{ij}(t) &= \int_{\mathbb R^3} r_i'J_j(\vec r', t) d^3r' \\
 \end{align}
 $$
-as such we will need to introduce a cross product in our expression and we will do so with the triple cross product formula:
+Then our integral is just
 $$
 \begin{align}
-\left[\dot J(\vec r', t_c)  \times \vec r'\right] \times \hat n &= \left(\hat n \cdot \dot J(\vec r', t_c)\right)\vec r' - \left(\hat n \cdot \vec r'\right)\dot J(\vec r', t_c) \\
-\left(\hat n \cdot \vec r'\right)\dot J(\vec r', t_c) &= \left(\hat n \cdot \dot J(\vec r', t_c)\right)\vec r' - \left[\dot J(\vec r', t_c)  \times \vec r'\right] \times \hat n \\
+\left(\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'\right)_j &= \hat n_iI_{ij}(t_c)
 \end{align}
 $$
-Thus our integral becomes:
-$$
-\begin{align}
-\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r' &= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' - \int_{\mathbb R^3} \left[\dot J(\vec r', t_c) \times \vec r'\right]\times \hat n d^3r' \\
-&= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' - \hat n \times \int_{\mathbb R^3} \vec r' \times \dot J(\vec r', t_c) d^3r' \\ 
-&= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' - 2\hat n \times \dot m(t_c) \\ 
-&= \int_{\mathbb R^3} \left[\hat n \cdot \dot J(\vec r', t_c)\right]\vec r' d^3 r' + 2\dot m(t_c)\times \hat n \\ 
-\end{align}
-$$
-This first integral is complicated and we will not really be able to manipulate it much so we are gonna set it to zero. One way we can justify this is saying that $\dot J$ is perpendicular to $\hat n$.
+<% tp.file.cursor(2) %>
+
 ### Total integral
 With this we find $\vec A$ to be:
 $$
