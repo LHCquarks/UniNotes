@@ -340,9 +340,3 @@ $$
 &= \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n  \\
 \end{align}
 $$
-and thus
-$$
-\begin{align}
-\vec B &= \frac{\mu_0}{4\pi}\frac{\ddot p(t_c)\times \hat n}{cr} + \frac{\mu_0}{2\pi c}\frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n   \\  
-\end{align}
-$$
