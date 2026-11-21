@@ -354,6 +354,13 @@ $$
 \begin{align}
 \epsilon_{ijk}\partial_j(\epsilon_{klm}\dot m_l \hat n_m) &= \epsilon_{ijk}\epsilon_{klm} \partial_j(\dot m_l) \hat n_m + \epsilon_{ijk}\epsilon_{klm} \dot m_l \partial_j(\hat n_m) \\
 &= -\epsilon_{ijk}\epsilon_{klm} \frac{\dot m_l\hat n_m}{c} \frac{\partial r}{\partial r_j} + \epsilon_{ijk}\epsilon_{klm} \dot m_l \frac{\delta_{jm} - \hat n_j \hat n_m}{r} \\
+&= -\epsilon_{ijk}\epsilon_{klm} \frac{\dot m_l\hat n_m\hat n_j}{c} + \epsilon_{ijk}\epsilon_{klm} \dot m_l \frac{\delta_{jm} - \hat n_j \hat n_m}{r} \\
+\end{align}
+$$
+We will be dividing by $r$ so the 2nd term vanishes leaving:
+$$
+\begin{align}
+-\epsilon_{ijk}\epsilon_{klm} \frac{\dot m_l \hat n_m \hat n_j}{c} &= -\epsilon_{ijk}\frac{(\dot m \times \hat n)_k \hat }{c}
 \end{align}
 $$
 <% tp.file.cursor(2) %>
@@ -387,4 +394,3 @@ $$
 \vec B &= \frac{\mu_0\ddot p(t_c) \times \hat n}{4\pi cr} + \frac{\mu_0(\dddot M\hat n) \times \hat n}{8\pi c^2r} + \frac{\mu_0 \ddot m(t_c) \cdot \hat n}{4\pi c^2r}\hat n
 \end{align}
 $$
-<% tp.file.cursor(2) %>
