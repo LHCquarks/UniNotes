@@ -349,33 +349,19 @@ $$
 &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] \\
 \end{align}
 $$
-Using the vector triple product formula we get:
+Using tensor notation we get:
 $$
 \begin{align}
 \epsilon_{ijk}\partial_j(\epsilon_{klm}\dot m_l \hat n_m) &= \epsilon_{ijk}\epsilon_{klm} \partial_j(\dot m_l) \hat n_m + \epsilon_{ijk}\epsilon_{klm} \dot m_l \partial_j(\hat n_m) \\
-&= -\epsilon_{ijk}\epsilon_{klm} \frac{\dot m_l\hat n_m}{c} \frac{\partial r}{\partial r_j} + \epsilon_{ijk}\epsilon_{klm} \dot m_l \frac{\delta_{jm} - \hat n_j \hat n_m}{r} \\
-&= -\epsilon_{ijk}\epsilon_{klm} \frac{\dot m_l\hat n_m\hat n_j}{c} + \epsilon_{ijk}\epsilon_{klm} \dot m_l \frac{\delta_{jm} - \hat n_j \hat n_m}{r} \\
+&= -\epsilon_{ijk}\epsilon_{klm} \frac{\ddot m_l\hat n_m}{c} \frac{\partial r}{\partial r_j} + \epsilon_{ijk}\epsilon_{klm} \dot m_l \frac{\delta_{jm} - \hat n_j \hat n_m}{r} \\
+&= -\epsilon_{ijk}\epsilon_{klm} \frac{\ddot m_l\hat n_m\hat n_j}{c} + \epsilon_{ijk}\epsilon_{klm} \dot m_l \frac{\delta_{jm} - \hat n_j \hat n_m}{r} \\
 \end{align}
 $$
 We will be dividing by $r$ so the 2nd term vanishes leaving:
 $$
 \begin{align}
--\epsilon_{ijk}\epsilon_{klm} \frac{\dot m_l \hat n_m \hat n_j}{c} &= -\epsilon_{ijk}\frac{(\dot m \times \hat n)_k \hat }{c}
-\end{align}
-$$
-<% tp.file.cursor(2) %>
-
-
-
-
-
-$$
-\begin{align}
-\nabla \times \left[\dot m(t_c) \times \hat n\right] &= \dot m(t_c) [\nabla \cdot \hat n] - \hat n[\nabla \cdot \dot m(t_c)] \\
-&= \dot m(t_c) \left[\frac{1}{r^2}\frac{\partial}{\partial r}(r^2)\right] - \hat n \left[\frac{1}{r^2}\frac{\partial}{\partial r}(r^2 \dot m_r(t_c))\right] \\
-&= \dot m(t_c) \left[\frac{2r}{r^2}\right] - \frac{\hat n}{r^2} \left[2r\dot m_r(t_c) - \frac{r^2 \ddot m_r(t_c)}{c}\right] \\
-&= \frac{2\dot m(t_c)}{r} + \frac{\ddot m_r(t_c)\hat n}{c} - \frac{2\dot m_r(t_c)\hat n}{r} \\
-&= \frac{2\dot m(t_c)}{r} + \frac{\ddot m(t_c)\cdot \hat n}{c}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r}\hat n\\
+-\epsilon_{ijk}\epsilon_{klm} \frac{\ddot m_l \hat n_m \hat n_j}{c} &= -\epsilon_{ijk}\frac{(\ddot m \times \hat n)_k \hat n_j}{c} \\
+&= \frac{(\ddot m \times \hat n)\times \hat n}{c}
 \end{align}
 $$
 which finally allows us to write
