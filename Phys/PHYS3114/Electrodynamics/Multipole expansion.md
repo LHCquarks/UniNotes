@@ -210,18 +210,20 @@ With these new definitions we can find our integral to be:
 $$
 \begin{align}
 \left(\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'\right)_j &= \sum_{i}\hat n_i\dot I_{ij}(t_c) \\
-&= \hat n_i \left(\frac{\ddot M_{ij}(t_c)}{2} + \epsilon_{ijk}\dot m_k(t_c)\right)
+&= \hat n_i \left(\frac{\ddot M_{ij}(t_c)}{2} + \epsilon_{ijk}\dot m_k(t_c)\right) \\
+\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r' &= \frac{\ddot M(t_c)\hat n}{2} + \dot m(t_c) \times \hat n
 \end{align}
 $$
 ### Total integral
 With this we find $\vec A$ to be:
 $$
 \begin{align}
-\vec A &= \frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \dot m(t_c) \times \hat n}{2\pi c r}
+\vec A &= \frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0\ddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \dot m(t_c) \times \hat n}{4\pi cr}\\
 \end{align}
 $$
-## Finding $\vec E$ and $\vec B$
-Start by finding $\nabla \varphi$ like so:
+## Finding $\vec E$
+To do this we first need to find $\nabla \varphi$ and $\frac{\partial \vec A}{\partial t}$ first.
+### Finding $\nabla \varphi$
 $$
 \begin{align}
 \nabla \varphi &= \frac{Q}{4\pi \epsilon_0} \nabla \left(\frac{1}{r}\right) + \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{\dot p(t_c) \cdot \hat n}{r}\right) \\
@@ -257,19 +259,20 @@ $$
 &= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n \\
 \end{align}
 $$
-Next up we must find $\frac{\partial \vec A}{\partial t}$ like so:
+### Finding $\frac{\partial \vec A}{\partial t}$
 $$
 \begin{align}
-\frac{\partial \vec A}{\partial t} &= \frac{\partial }{\partial t} \left(\frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \dot m(t_c) \times \hat n}{2\pi c r}\right) \\
-&= \frac{\mu_0 \ddot p(t_c)}{4\pi r} + \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi cr}
+\frac{\partial \vec A}{\partial t} &= \frac{\partial }{\partial t} \left(\frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \ddot M(t_c) \hat n}{8\pi cr} + \frac{\mu_0 \dot m(t_c) \times \hat n}{4\pi c r}\right) \\
+&= \frac{\mu_0\ddot p(t_c)}{4\pi r} + \frac{\mu_0 \dddot M(t_c) \hat n}{8\pi cr} + \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r}
 \end{align}
 $$
+### Finding $\vec E$
 Combining these to get $\vec E$ we get:
 $$
 \begin{align}
 \vec E &= -\nabla \varphi - \frac{\partial \vec A}{\partial t} \\
-&= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r} \\
-&= \frac{1}{4\pi\epsilon_0 c^2 r}\left[\hat n \cdot \ddot p(t_c) \hat n - \ddot p(t_c) \right]- \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r} \\
+&= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r} \\
+&= \frac{1}{4\pi\epsilon_0 c^2 r}\left[\hat n \cdot \ddot p(t_c) \hat n - \ddot p(t_c) \right]- \frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r} \\
 \end{align}
 $$
 But this first term can be simplifed like so:
@@ -282,18 +285,21 @@ $$
 and thus
 $$
 \begin{align}
-\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{2\pi c r}
+\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r}
 \end{align}
 $$
+## Finding $\vec B$
 Now we have $\vec E$ lets find $\vec B$:
 $$
 \begin{align}
 \vec B &= \nabla \times \vec A \\
-&= \nabla \times \left(\frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \dot m(t_c) \times \hat n}{2\pi c r}\right) \\
-&= \frac{\mu_0}{4\pi}\nabla \times \left(\frac{\dot p(t_c)}{r}\right) + \frac{\mu_0}{2\pi c}\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right)   \\  
+&= \nabla \times \left(\frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \ddot M(t_c)\hat n}{8\pi c r} + \frac{\mu_0 \dot m(t_c) \times \hat n}{4\pi c r}\right) \\
+&= \frac{\mu_0}{4\pi}\nabla \times \left(\frac{\dot p(t_c)}{r}\right) + \frac{\mu_0}{8\pi cr}\nabla \times \left(\frac{\ddot M(t_c)\hat n}{r}\right) +  \frac{\mu_0}{4\pi c}\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right)   \\  
 \end{align}
 $$
-Breaking this up we will find the first term:
+We will now break this up to inspect the terms individually
+### First term
+We find the first term to be:
 $$
 \begin{align}
 \nabla \times \left(\frac{\dot p(t_c)}{r}\right)&= \frac{1}{r}\nabla \times \dot p(t_c) - \dot p(t_c) \times \nabla \left(\frac{1}{r}\right) \\  
@@ -305,7 +311,10 @@ $$
 &= \frac{\ddot p(t_c)\times \hat n}{cr}
 \end{align}
 $$
-and then the second term:
+### Second term
+The second term is:
+### Third term
+The third term is:
 $$
 \begin{align}
 \nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] - \left[\dot m(t_c) \times \hat n\right] \times \nabla \left(\frac{1}{r}\right) \\
