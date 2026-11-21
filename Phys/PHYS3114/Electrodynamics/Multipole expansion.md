@@ -151,7 +151,59 @@ $$
 \left(\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'\right)_j &= \sum_{i}\hat n_i\dot I_{ij}(t_c)
 \end{align}
 $$
-Sick. Now lets investigate this $I_{ij}$ object:
+Sick. Now lets investigate this $I_{ij}$ object
+#### Tensor algebra detour
+To make sense of $I_{ij}$ we will decompose it into it's antisymetric and symmetric parts like so:
+$$
+\begin{align}
+I_{ij} &= \frac{1}{2}(I_{ij} + I_{ji}) + \frac{1}{2}(I_{ij} - I_{ji})
+\end{align}
+$$
+We define the electric quadrapole tensor as:
+$$
+\begin{align}
+M_{ij}(t) &= \int_{\mathbb R^3} \rho(\vec r' , t) r_i' r_j' d^3r' \\
+\dot M_{ij}(t) &= \int_{\mathbb R^3} \dot \rho(\vec r' , t) r_i' r_j' d^3r' \\
+\end{align}
+$$
+by the continuity equation $\dot \rho = - \nabla \cdot \vec J = -\partial_k \vec J_k$ where $k$ is summed over and thus:
+$$
+\begin{align}
+\dot M_{ij}(t) &= -\int_{\mathbb R^3} \partial_k(J_k) r_i'r_j'd^3r' \\
+&= -\oint J_k r_i'r_j' d\Omega + \int_{\mathbb R^3} J_k \partial_k(r_i'r_j') d^3r'
+\end{align}
+$$
+but the surface term vanishes as $J_k$ vanishes leaving just the second term which gives:
+$$
+\begin{align}
+\dot M_{ij}(t) &= \int_{\mathbb R^3} J_k [\delta_{ik}r_j' + r_i'\delta_{jk}] d^3r' \\
+&= \int_{\mathbb R^3} J_k \delta_{ik}r_j' d^3r' + \int_{\mathbb R^3} J_k r_i'\delta_{jk}d^3r' \\
+&= \int_{\mathbb R^3} J_i r_j' d^3r' + \int_{\mathbb R^3} J_j r_i'd^3r' \\
+&= I_{ij} + I_{ji} \\
+\end{align}
+$$
+Thus this $\dot M_{ij}(t)$ is the symmetric part of $I_{ij}$.
+For the anti-symmetric case lets inspect the magnetic dipole moment:
+$$
+\begin{align}
+m(t) &= \frac{1}{2} \int_{\mathbb R^3}  \vec r' \times \vec J(\vec r', t) d^3r' \\
+\end{align}
+$$
+Using the Levi-Civita symbol $\epsilon_{ijk}$ we can simplify this cross product to:
+$$
+\begin{align}
+m_i(t) &= \frac{1}{2}\int_{\mathbb R^3} \epsilon_{ijk} r_j'J_k d^3r' \\
+m_i(t) &= \frac{\epsilon_{ijk}}{2}\int_{\mathbb R^3} r_j'J_k d^3r' \\
+m_i(t) &= \frac{\epsilon_{ijk}}{2}I_{jk} \\
+\end{align}
+$$
+Using the identity that $\epsilon_{ijk}\epsilon_{klm} = \delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}$ we get that:
+$$
+\begin{align}
+\epsilon_{klm}m_i(t)
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 ### Total integral
 With this we find $\vec A$ to be:
 $$
