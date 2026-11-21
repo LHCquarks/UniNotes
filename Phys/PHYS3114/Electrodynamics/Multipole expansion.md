@@ -192,18 +192,27 @@ $$
 Using the Levi-Civita symbol $\epsilon_{ijk}$ we can simplify this cross product to:
 $$
 \begin{align}
-m_i(t) &= \frac{1}{2}\int_{\mathbb R^3} \epsilon_{ijk} r_j'J_k d^3r' \\
-m_i(t) &= \frac{\epsilon_{ijk}}{2}\int_{\mathbb R^3} r_j'J_k d^3r' \\
-m_i(t) &= \frac{\epsilon_{ijk}}{2}I_{jk} \\
+m_k(t) &= \frac{1}{2}\int_{\mathbb R^3} \epsilon_{klm} r_l'J_m d^3r' \\
+m_k(t) &= \frac{\epsilon_{klm}}{2}\int_{\mathbb R^3} r_l'J_m d^3r' \\
+m_k(t) &= \frac{\epsilon_{klm}}{2}I_{lm} \\
 \end{align}
 $$
 Using the identity that $\epsilon_{ijk}\epsilon_{klm} = \delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}$ we get that:
 $$
 \begin{align}
-\epsilon_{klm}m_i(t)
+\epsilon_{ijk}m_k(t) &= \frac{I_{lm}}{2} [\delta_{il}\delta_{jm} - \delta_{im}\delta_{jl}] \\
+&= \frac{1}{2} [I_{ij} - I_{ji}] \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+thus the antisymetric part is just the magnetic dipole moment with this $\epsilon_{ijk}$ sign changer.
+#### Finishing the second integral
+With these new definitions we can find our integral to be:
+$$
+\begin{align}
+\left(\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'\right)_j &= \sum_{i}\hat n_i\dot I_{ij}(t_c) \\
+&= \hat n_i \left(\frac{\ddot M_{ij}(t_c)}{2} + \epsilon_{ijk}\dot m_k(t_c)\right)
+\end{align}
+$$
 ### Total integral
 With this we find $\vec A$ to be:
 $$
