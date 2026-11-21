@@ -368,9 +368,8 @@ which finally allows us to write
 $$
 \begin{align}
 \nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] \\
-&= \frac{1}{r}\left[\frac{2\dot m(t_c)}{r} + \frac{\ddot m(t_c)\cdot \hat n}{c}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r}\hat n\right] \\
-&= \frac{2\dot m(t_c)}{r^2} + \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r^2}\hat n\\
-&= \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n  \\
+&= \frac{1}{r}\left[\frac{(\ddot m(t_c) \times \hat n)\times \hat n}{c}\right] \\
+&= \frac{(\ddot m(t_c) \times \hat n) \times \hat n}{cr}\hat n\\
 \end{align}
 $$
 ### Putting it all together
