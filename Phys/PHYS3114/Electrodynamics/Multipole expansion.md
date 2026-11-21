@@ -294,7 +294,7 @@ $$
 \begin{align}
 \vec B &= \nabla \times \vec A \\
 &= \nabla \times \left(\frac{\mu_0\dot p(t_c)}{4\pi r} + \frac{\mu_0 \ddot M(t_c)\hat n}{8\pi c r} + \frac{\mu_0 \dot m(t_c) \times \hat n}{4\pi c r}\right) \\
-&= \frac{\mu_0}{4\pi}\nabla \times \left(\frac{\dot p(t_c)}{r}\right) + \frac{\mu_0}{8\pi cr}\nabla \times \left(\frac{\ddot M(t_c)\hat n}{r}\right) +  \frac{\mu_0}{4\pi c}\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right)   \\  
+&= \frac{\mu_0}{4\pi}\nabla \times \left(\frac{\dot p(t_c)}{r}\right) + \frac{\mu_0}{8\pi c}\nabla \times \left(\frac{\ddot M(t_c)\hat n}{r}\right) +  \frac{\mu_0}{4\pi c}\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right)   \\  
 \end{align}
 $$
 We will now break this up to inspect the terms individually
@@ -313,6 +313,33 @@ $$
 $$
 ### Second term
 The second term is:
+$$
+\begin{align}
+\nabla \times \left(\frac{\ddot M(t_c)\hat n}{r}\right) &= \frac{1}{r} \nabla \times [\ddot M(t_c) \hat n]- \ddot M(t_c)\hat n \times \nabla\left(\frac{1}{r}\right) \\
+&= \frac{1}{r} \nabla \times [\ddot M(t_c) \hat n] + \frac{\ddot M(t_c)\hat n \times \hat n}{r^2} \\
+&= \frac{1}{r} \nabla \times [\ddot M(t_c) \hat n] \\
+\end{align}
+$$
+We will now fall back to tensor notation to try and understand this curl operation:
+$$
+\begin{align}
+(\nabla \times [\ddot M(t_c) \hat n])_i &= \epsilon_{ijk} \partial_j [\ddot M(t_c) \hat n]_k \\
+&= \epsilon_{ijk} \partial_j (\ddot M_{kl} \hat n_l) \\
+&= \epsilon_{ijk} [\partial_j (\ddot M_{kl}) \hat n_l  + \ddot M_{kl} \partial_j (\hat n_l)] \\
+&= \epsilon_{ijk} \left[-\frac{\dddot M_{kl}\hat n_l}{c}\frac{\partial r}{\partial r_j}  + \ddot M_{kl} \frac{\delta_{jl} - \hat n_j\hat n_l}{r}\right] \\
+&= \epsilon_{ijk} \left[\frac{\ddot M_{kj}}{r}-\frac{\dddot M_{kl}\hat n_l\hat n_j}{c}  - \frac{\ddot M_{kl} \hat n_j\hat n_l}{r}\right] \\
+\end{align}
+$$
+Now, in the original expression  we are dividing be $r$ so we can drop the first and last terms leaving just the central term giving us:
+$$
+\begin{align}
+\left[\nabla \times \left(\frac{\ddot M(t_c)\hat n}{r}\right) \right]_i
+&= -\frac{\epsilon_{ijk}\dddot M_{kl}\hat n_l\hat n_j}{cr} \\
+&= -\frac{\epsilon_{ijk}\left(\dddot M \hat n\right)_k\hat n_j}{cr} \\
+\nabla \times \left(\frac{\ddot M(t_c)\hat n}{r}\right) &= -\frac{\hat n \times (\dddot M\hat n)}{cr} \\
+&= \frac{(\dddot M\hat n) \times \hat n}{cr} \\
+\end{align}
+$$
 ### Third term
 The third term is:
 $$
@@ -340,3 +367,11 @@ $$
 &= \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n  \\
 \end{align}
 $$
+### Putting it all together
+With all of this we can finally write our magnetic field as:
+$$
+\begin{align}
+\vec B &= \frac{\mu_0\ddot p(t_c) \times \hat n}{4\pi cr} + \frac{\mu_0(\dddot M\hat n) \times \hat n}{8\pi c^2r} + \frac{\mu_0 \ddot m(t_c) \cdot \hat n}{4\pi c^2r}\hat n
+\end{align}
+$$
+<% tp.file.cursor(2) %>
