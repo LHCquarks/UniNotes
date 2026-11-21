@@ -352,7 +352,8 @@ $$
 Using the vector triple product formula we get:
 $$
 \begin{align}
-\epsilon_{ijk}\partial_j(\epsilon_{klm}\dot m_l \hat n_m) &= \epsilon_{ijk}\epsilon_{klm} \partial
+\epsilon_{ijk}\partial_j(\epsilon_{klm}\dot m_l \hat n_m) &= \epsilon_{ijk}\epsilon_{klm} \partial_j(\dot m_l) \hat n_m + \epsilon_{ijk}\epsilon_{klm} \dot m_l \partial_j(\hat n_m) \\
+&= -\epsilon_{ijk}\epsilon_{klm} \frac{\dot m_l\hat n_m}{c} \frac{\partial r}{\partial r_j} + \epsilon_{ijk}\epsilon_{klm} \dot m_l \frac{\delta_{jm} - \hat n_j \hat n_m}{r} \\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
