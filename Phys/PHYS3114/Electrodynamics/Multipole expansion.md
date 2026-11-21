@@ -148,10 +148,10 @@ $$
 Then our integral is just
 $$
 \begin{align}
-\left(\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'\right)_j &= \sum_{i}\hat n_iI_{ij}(t_c)
+\left(\int_{\mathbb R^3} \dot J(\vec r', t_c) (\vec r' \cdot \hat n) d^3r'\right)_j &= \sum_{i}\hat n_i\dot I_{ij}(t_c)
 \end{align}
 $$
-
+Sick. Now lets investigate this $I_{ij}$ object:
 ### Total integral
 With this we find $\vec A$ to be:
 $$
