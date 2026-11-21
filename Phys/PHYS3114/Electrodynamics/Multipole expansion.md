@@ -346,9 +346,21 @@ $$
 \begin{align}
 \nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] - \left[\dot m(t_c) \times \hat n\right] \times \nabla \left(\frac{1}{r}\right) \\
 &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] + \left[\dot m(t_c) \times \hat n\right] \times \frac{\hat n}{r^2} \\
+&= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] \\
 \end{align}
 $$
 Using the vector triple product formula we get:
+$$
+\begin{align}
+\epsilon_{ijk}\partial_j(\epsilon_{klm}\dot m_l \hat n_m) &= \epsilon_{ijk}\epsilon_{klm} \partial
+\end{align}
+$$
+<% tp.file.cursor(2) %>
+
+
+
+
+
 $$
 \begin{align}
 \nabla \times \left[\dot m(t_c) \times \hat n\right] &= \dot m(t_c) [\nabla \cdot \hat n] - \hat n[\nabla \cdot \dot m(t_c)] \\
@@ -361,9 +373,9 @@ $$
 which finally allows us to write
 $$
 \begin{align}
-\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] + \left[\dot m(t_c) \times \hat n\right] \times \frac{\hat n}{r^2} \\
-&= \frac{1}{r}\left[\frac{2\dot m(t_c)}{r} + \frac{\ddot m(t_c)\cdot \hat n}{c}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r}\hat n\right] + [\dot m(t_c) \times \hat n] \times \frac{\hat n}{r^2} \\
-&= \frac{2\dot m(t_c)}{r^2} + \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r^2}\hat n + [\dot m(t_c) \times \hat n] \times \frac{\hat n}{r^2} \\
+\nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] \\
+&= \frac{1}{r}\left[\frac{2\dot m(t_c)}{r} + \frac{\ddot m(t_c)\cdot \hat n}{c}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r}\hat n\right] \\
+&= \frac{2\dot m(t_c)}{r^2} + \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n - \frac{2\dot m(t_c)\cdot \hat n}{r^2}\hat n\\
 &= \frac{\ddot m(t_c)\cdot \hat n}{cr}\hat n  \\
 \end{align}
 $$
