@@ -405,6 +405,7 @@ $$
 \vec S &= \frac{1}{\mu_0 c} [\hat n E^2 - \vec E (\vec E \cdot \hat n)] \\
 \end{align}
 $$
+### Finding $\vec E \cdot \hat n$
 We will start with $\vec E \cdot \hat n$:
 $$
 \begin{align}
@@ -413,13 +414,89 @@ $$
 &=- \frac{\mu_0 \hat n \cdot [\dddot M(t_c) \hat n]}{8\pi cr}\\
 \end{align}
 $$
-Now we will find $E^2$ to be:
+### Finding $E^2$
+Now for $E^2$ we will start by breaking up $\vec E$ into its consituent parts:
 $$
 \begin{align}
-E^2 &= \left(\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r}\right)^2 \\
-&= \frac{\mu_0^2}{16\pi^2c^2r^2} \left(c[\hat n \times [\hat n \times \ddot p (t_c) ]] - \frac{1}{2}\dddot M(t_c)\hat n + \hat n \times \ddot m(t_c)\right)^2 \\
-&= \frac{\mu_0^2}{16\pi^2c^2r^2} \left(c^2|\hat n \times [\hat n \times \ddot p (t_c) ]|^2 - c\dddot M(t_c) (\hat n \cdot [\hat n \times (\hat n \times \ddot p(t_c))]) \\ + 2c[\hat n \times (\hat n \times \ddot p(t_c))]\cdot [\hat n \times \ddot m(t_c)] + \frac{1}{4}(\dddot M(t_c))^2 - \dddot M(t_c) \hat n \cdot [\hat n \times \ddot m(t_c)]\\ + |\hat n \times \ddot m(t_c)|^2\right) \\
-&= \frac{\mu_0^2}{16\pi^2c^2r^2} \left(c^2|\hat n (\hat n \cdot \ddot p(t_c) )- \ddot p(t_c)|^2 - 0 + 2c\right)
+\vec E_p &= \frac{\mu_0 \hat n\times [\hat n \times \ddot p(t_c)]}{4\pi r} \\
+\vec E_M &= \frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} \\
+\vec E_m &= \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r}
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+then we get:
+$$
+\begin{align}
+E^2 &= E_p^2 + E_M^2 + E_m^2 - 2\vec E_p\cdot \vec E_M + 2\vec E_p\cdot \vec E_m - 2\vec E_M\cdot \vec E_m
+\end{align}
+$$
+Now we just find all these individual terms:
+#### $E_p^2$
+$$
+\begin{align}
+E_p^2 &= \frac{\mu_0^2}{16\pi^2r^2} |\hat n (\hat n \cdot \ddot p - \ddot p|^2 \\
+&= \frac{\mu_0^2}{16\pi^2r^2} \left[|\hat n(\hat n \cdot \ddot p)|^2 - 2(\hat n \cdot \ddot p) (\hat n \cdot \ddot p) + |\ddot p|^2\right] \\
+&= \frac{\mu_0^2}{16\pi^2r^2} \left[(\hat n \cdot \ddot p)^2 - 2(\hat n \cdot \ddot p)^2 + \ddot p^2\right] \\
+&= \frac{\mu_0^2}{16\pi^2r^2} \left[\ddot p^2 - (\hat n \cdot \ddot p)^2 \right] \\
+\end{align}
+$$
+#### $E_M^2$
+$$
+\begin{align}
+E_M^2 &= \frac{\mu_0^2}{64 \pi^2 c^2 r^2}|\dddot M \hat n|^2 \\
+&= \frac{\mu_0^2(\dddot M \hat n)^2}{64 \pi^2 c^2 r^2}
+\end{align}
+$$
+#### $E_m^2$
+$$
+\begin{align}
+\frac{\mu_0^2}{16 \pi^2 c^2 r^2} |\hat n \times \ddot m|^2 &= \frac{\mu_0^2}{16 \pi^2 c^2 r^2} [|\hat n|^2|\ddot m|^2 - (\hat n \cdot \ddot m)^2] \\
+&= \frac{\mu_0^2}{16 \pi^2 c^2 r^2} [\ddot m^2 - (\hat n \cdot \ddot m)^2]
+\end{align}
+$$
+#### $\vec E_p \cdot \vec E_M$
+$\vec E_M$ is parallel to $\hat n$ whilst $\vec E_p$ is perpendicular to $\hat n$ thus
+$$
+\begin{align}
+\vec E_p \cdot \vec E_M &= 0
+\end{align}
+$$
+#### $\vec E_p \cdot \vec E_m$
+$$
+\begin{align}
+\vec E_p \cdot \vec E_M &= \frac{\mu_0^2}{16\pi^2 c r^2} [\hat n \times (\hat n \times \ddot p)] \cdot [\hat n \times \ddot m] \\
+&= \frac{\mu_0^2}{16\pi^2 c r^2} [\hat n(\hat n \cdot \ddot p) - \ddot p] \cdot [\hat n \times \ddot m] \\
+&= \frac{\mu_0^2}{16\pi^2 c r^2} [\hat n(\hat n \cdot \ddot p) \cdot (\hat n \times \ddot m) - \ddot p\cdot (\hat n \times \ddot m)] \\
+&= \frac{\mu_0^2}{16\pi^2 c r^2} [0 - \ddot p\cdot (\hat n \times \ddot m)] \\
+&= -\frac{\mu_0^2}{16\pi^2 c r^2} \ddot p\cdot (\hat n \times \ddot m) \\
+\end{align}
+$$
+#### $\vec E_M \cdot \vec E_m$
+By the exact same logic as with the $\vec E_p\cdot \vec E_M$ case they are perpendicular so their product is $0$
+#### The total
+Putting all this together gives us:
+$$
+\begin{align}
+E^2 &= \frac{\mu_0^2}{16\pi^2 r^2} [\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{\mu_0^2 \dddot M^2}{64 \pi^2 c^2 r^2} + \frac{\mu_0^2}{16 \pi^2 c^2 r^2} [\ddot m^2 - (\hat n \cdot \ddot m)^2] - \frac{\mu_0^2}{16\pi^2 c r^2} \ddot p \cdot (\hat n \times \ddot m)
+\end{align}
+$$
+yay.
+### Putting it all together
+strap in cause this will be long:
+$$
+\begin{align}
+\vec S &= \frac{\mu_0}{16 \pi^2 c r^2} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2]\hat n + \frac{(\dddot M\hat n)^2}{4c^2}\hat n + \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2}\hat n - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c}\hat n \\ + \frac{\hat n \cdot [\dddot M \hat n ]}{2c}[\hat n \times(\hat n \times \ddot p)] - \frac{\hat n \cdot (\dddot M\hat n)}{4c^2}\dddot M\hat n + \frac{\hat n \cdot [\dddot M \hat n]}{2c^2}[\hat n \times \ddot m]\right]
+\end{align}
+$$
+shesh.
+## Finding the radiated energy
+To find the radiated power we first have to find the energy flux across a spherical shell centered at the origin. To do this we simply have to do $\frac{\partial P}{\partial \Omega} = (\vec S \cdot \hat n)r^2$.
+$$
+\begin{align}
+(\vec S \cdot \hat n)r^2 &= \frac{\mu_0}{16\pi^2 c} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{(\dddot M\hat n)^2}{4c^2}+ \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2} - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c} \\ + \frac{\hat n \cdot [\dddot M \hat n ]}{2c}[\hat n \times(\hat n \times \ddot p)]\cdot \hat n  - \frac{\hat n \cdot (\dddot M\hat n)}{4c^2}\dddot M\hat n \cdot \hat n + \frac{\hat n \cdot [\dddot M \hat n]}{2c^2}[\hat n \times \ddot m] \cdot \hat n\right] \\
+&= \frac{\mu_0}{16\pi^2 c} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{(\dddot M\hat n)^2}{4c^2}+ \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2} - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c} \\ + 0  - \frac{(\hat n \cdot (\dddot M\hat n))^2}{4c^2} + 0\right] \\
+&= \frac{\mu_0}{16\pi^2 c} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{(\dddot M\hat n)^2}{4c^2}+ \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2} - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c} \\ - \frac{(\hat n \cdot (\dddot M\hat n))^2}{4c^2} \right] \\
+\end{align}
+$$
+We will now use polar coordinates to inagrate over the spherical shell. Let:
+- the polar axis be along $\hat n$
+- 
