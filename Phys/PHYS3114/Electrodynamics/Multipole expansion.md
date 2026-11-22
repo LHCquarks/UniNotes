@@ -417,7 +417,9 @@ Now we will find $E^2$ to be:
 $$
 \begin{align}
 E^2 &= \left(\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r}\right)^2 \\
-&= \frac{\mu_0^2}{16\pi^2r^2} \left(\hat n \times [\hat n \times \ddot p (t_c) ] - \frac{\ddot M(t_c)\hat n}{2c} + \right)
+&= \frac{\mu_0^2}{16\pi^2c^2r^2} \left(c[\hat n \times [\hat n \times \ddot p (t_c) ]] - \frac{1}{2}\dddot M(t_c)\hat n + \hat n \times \ddot m(t_c)\right)^2 \\
+&= \frac{\mu_0^2}{16\pi^2c^2r^2} \left(c^2|\hat n \times [\hat n \times \ddot p (t_c) ]|^2 - c\dddot M(t_c) (\hat n \cdot [\hat n \times (\hat n \times \ddot p(t_c))]) \\ + 2c[\hat n \times (\hat n \times \ddot p(t_c))]\cdot [\hat n \times \ddot m(t_c)] + \frac{1}{4}(\dddot M(t_c))^2 - \dddot M(t_c) \hat n \cdot [\hat n \times \ddot m(t_c)]\\ + |\hat n \times \ddot m(t_c)|^2\right) \\
+&= \frac{\mu_0^2}{16\pi^2c^2r^2} \left(c^2|\hat n (\hat n \cdot \ddot p(t_c) )- \ddot p(t_c)|^2 - 0 + 2c\right)
 \end{align}
 $$
 <% tp.file.cursor(2) %>
