@@ -508,8 +508,57 @@ $$
 \begin{align}
 P &= \oint (\vec S \cdot \hat n)r^2 d\Omega \\
 \frac{16\pi^2 c P}{\mu_0} &= \oint \ddot p^2 - \ddot p^2\cos^2\varphi d\Omega + \frac{1}{4c^2}\oint (\ddot M \hat n)^2 d\Omega \\
-&\ \ \ \ + \frac{1}{c^2} \oint \ddot m - \ddot m^2(\sin \varphi \sin \varphi_m \cos(\theta - \theta_m) + \cos \varphi \cos \varphi_m)^2d\Omega \\
-&\ \ \ \ - \frac{\ddot p}{c} \oint 
+&\ \ \ \ + \frac{1}{c^2} \oint \ddot m^2 - \ddot m^2(\sin \varphi \sin \varphi_m \cos(\theta - \theta_m) + \cos \varphi \cos \varphi_m)^2d\Omega \\
+&\ \ \ \ - \frac{\ddot p}{c} \oint \sin \varphi \cos \theta \sin \varphi_m\sin\theta_m - \sin\varphi_m \cos\theta_m \sin \varphi \sin\theta d\Omega \\
+&\ \ \ \ - \frac{1}{4c^2} \oint  (\hat n \cdot (\dddot M \hat n))^2 d\Omega
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+We will solve all but the 2nd and final integral as they involve a term that is hard to integrate generally.
+### Integral 1
+For integral 1 we have:
+$$
+\begin{align}
+\ddot p^2 \int_0^{2\pi}\int_0^\pi (1 - \cos^2 \varphi) \sin \varphi d\varphi d\theta  &= 2\pi\ddot p^2 \left[\int_0^\pi \sin \varphi d\varphi -\int_0^\pi \cos^2 \varphi \sin \varphi d\varphi\right] \\
+&= 2\pi\ddot p^2 \left[[-\cos \varphi]_0^\pi +\left[\frac{\cos^3 \varphi}{3}\right]_0^\pi\right]  \\
+&= 2\pi\ddot p^2 \left[2 - \frac{2}{3}\right]  \\
+&= 2\pi\ddot p^2 \left[\frac{4}{3}\right]  \\
+&= \frac{8\pi\ddot p^2}{3}\\
+\end{align}
+$$
+### Integral 3
+For integral 3 we have:
+$$
+\begin{align}
+&\ \ \ \ \ \ \oint \ddot m^2 - \ddot m^2(\sin \varphi \sin \varphi_m \cos(\theta - \theta_m) + \cos \varphi \cos \varphi_m)^2d\Omega \\
+&= \ddot m^2\int_0^{2\pi}\int_0^\pi \sin\varphi - \sin^3\varphi \sin^2\varphi_m \cos^2(\theta - \theta_m) - 2\sin^2\varphi \cos\varphi \sin\varphi_m\cos\varphi_m\cos(\theta - \theta_m) \\
+&\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ - \cos^2\varphi \cos^2\varphi_m \sin\varphi d\varphi d\theta \\
+&= \ddot m^2(2\pi)(2) - \ddot m^2\left[\sin^2\varphi_m\int_0^{2\pi}\cos^2(\theta - \theta_m) d\theta\int_0^\pi \sin^3 \varphi d\varphi + \\
+2\sin\varphi_m\cos\varphi_m\int_0^{2\pi}\cos(\theta - \theta_m)d\theta\int_0^\pi \sin^2\varphi \cos \varphi d\varphi + \cos^2\varphi_m(2\pi)\int_0^\pi \cos^2\varphi \sin \varphi d\varphi\right] \\
+&= 4\pi\ddot m^2 - \ddot m^2\left[\sin^2\varphi_m\left[\frac{\theta - \theta_m}{2} - \frac{\sin(2\theta - 2\theta_m)}{4}\right]_0^{2\pi}\left[-\cos\varphi+\frac{1}{3}\cos^3 \varphi\right]_0^\pi + \\
+2\sin\varphi_m\cos\varphi_m\left[\sin(\theta - \theta_m)\right]_0^{2\pi}\left[\frac{\sin^3 \varphi}{3}\right]_0^\pi - 2\pi\cos^2\varphi_m\left[\frac{\cos^3\varphi}{3}\right]_0^\pi\right] \\
+&= 4\pi\ddot m^2 - \ddot m^2\left[\sin^2\varphi_m\left[\pi - 0\right]\left[2 -\frac{2}{3}\right] + 2\sin\varphi_m\cos\varphi_m\left[0\right]\left[0\right] + 2\pi\cos^2\varphi_m\left[\frac{2}{3}\right]\right] \\
+&= 4\pi\ddot m^2 - \ddot m^2\left[\frac{4\pi}{3}\sin^2\varphi_m + \frac{4\pi}{3}\cos^2\varphi_m\right] \\
+&= 4\pi\ddot m^2 - \frac{4\pi\ddot m^2}{3}\\
+&= \frac{8\pi\ddot m^2}{3}\\
+\end{align}
+$$
+### Integral 4
+We will now solve integral 4:
+$$
+\begin{align}
+&\ \ \ \ \ \ \oint \sin \varphi \cos \theta \sin \varphi_m\sin\theta_m - \sin\varphi_m \cos\theta_m \sin \varphi \sin\theta d\Omega \\
+&= \sin\varphi_m\oint \sin\varphi(\sin \theta_m\cos\theta - \sin\theta\cos\theta_m) d\Omega \\
+&= -\sin\varphi_m\oint \sin\varphi\sin(\theta - \theta_m) d\Omega \\
+&= -\sin\varphi_m\int_0^{2\pi}\int_0^\pi \sin^2\varphi\sin(\theta - \theta_m) d\varphi d\theta \\
+&= -\sin\varphi_m\int_0^{2\pi}\sin(\theta - \theta_m)d\theta\int_0^\pi \sin^2\varphi d\varphi \\
+&= -\sin\varphi_m(0)\int_0^\pi \sin^2\varphi d\varphi \\
+&= 0
+\end{align}
+$$
+### Putting it together
+With these integrals we get the total radiated power to be:
+$$
+\begin{align}
+P &= \frac{\mu_0}{16\pi^2 c} \left[\frac{8\pi \ddot p^2}{3} + \frac{1}{4c^2}\oint (\dddot M \hat n)^2 d\Omega + \frac{8\pi \ddot m^2}{3c^2} - \frac{1}{4c^2} \oint (\hat n \cdot (\dddot M \hat n))^2 d\Omega \right]
+\end{align}
+$$
