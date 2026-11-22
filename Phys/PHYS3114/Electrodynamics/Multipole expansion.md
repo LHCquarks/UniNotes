@@ -497,6 +497,17 @@ $$
 &= \frac{\mu_0}{16\pi^2 c} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{(\dddot M\hat n)^2}{4c^2}+ \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2} - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c} \\ - \frac{(\hat n \cdot (\dddot M\hat n))^2}{4c^2} \right] \\
 \end{align}
 $$
-We will now use polar coordinates to inagrate over the spherical shell. Let:
-- the polar axis be along $\hat n$
-- 
+We will now use polar coordinates to integrate over the spherical shell. Let:
+- the polar axis be along $\ddot p$
+- the azimuthal angle be $\varphi$
+- the polar angle be $\theta$
+- $\ddot m = (|\ddot m|, \varphi_m, \theta_m)$
+
+That means that the total power is given by:
+$$
+\begin{align}
+P &= \oint (\vec S \cdot \hat n)r^2 d\Omega \\
+\frac{16\pi^2 c P}{\mu_0}&= \oint \ddot p^2 - \ddot p^2\cos^2\varphi d\Omega + \frac{1}{4c^2}\oint (\ddot M \hat n)^2 d\Omega + \oint \frac{1}{c^2} \ddot m - 
+\end{align}
+$$
+<% tp.file.cursor(2) %>
