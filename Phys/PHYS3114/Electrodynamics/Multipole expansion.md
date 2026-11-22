@@ -285,7 +285,8 @@ $$
 and thus
 $$
 \begin{align}
-\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r}
+\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \\
+\vec E &= \frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \\
 \end{align}
 $$
 ## Finding $\vec B$
@@ -339,7 +340,8 @@ $$
 \nabla \times \left(\frac{\ddot M(t_c)\hat n}{r}\right) &= -\frac{\hat n \times (\dddot M\hat n)}{cr} \\
 &= \frac{(\dddot M\hat n) \times \hat n}{cr} \\
 \end{align}
-$$
+$$\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \\
+
 ### Third term
 The third term is:
 $$
@@ -369,13 +371,22 @@ $$
 \begin{align}
 \nabla \times \left(\frac{\dot m(t_c) \times \hat n}{r}\right) &= \frac{1}{r}\nabla \times \left[\dot m(t_c)\times \hat n\right] \\
 &= \frac{1}{r}\left[\frac{(\ddot m(t_c) \times \hat n)\times \hat n}{c}\right] \\
-&= \frac{(\ddot m(t_c) \times \hat n) \times \hat n}{cr}\hat n\\
+&= \frac{(\ddot m(t_c) \times \hat n) \times \hat n}{cr}\\
 \end{align}
 $$
 ### Putting it all together
 With all of this we can finally write our magnetic field as:
 $$
 \begin{align}
-\vec B &= \frac{\mu_0\ddot p(t_c) \times \hat n}{4\pi cr} + \frac{\mu_0(\dddot M\hat n) \times \hat n}{8\pi c^2r} + \frac{\mu_0 \ddot m(t_c) \cdot \hat n}{4\pi c^2r}\hat n
+\vec B &= \frac{\mu_0\ddot p(t_c) \times \hat n}{4\pi cr} - \frac{\mu_0 \hat n \times(\dddot M\hat n)}{8\pi c^2r} + \frac{\mu_0 [\hat n \times (\hat n \times \ddot m(t_c))]}{4\pi c^2r}
 \end{align}
 $$
+## Relationship between $\vec B$ and $\vec E$
+Consider $\frac{1}{c}\hat n \times \vec E$, this gives:
+$$
+\begin{align}
+\frac{1}{c}\hat n \times \vec E &= \frac{1}{c}\hat n \times \left[\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \right] \\
+&= \frac{1}{c}\left[\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \right] \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
