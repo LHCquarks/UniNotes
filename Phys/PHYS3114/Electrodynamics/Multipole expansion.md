@@ -386,7 +386,38 @@ Consider $\frac{1}{c}\hat n \times \vec E$, this gives:
 $$
 \begin{align}
 \frac{1}{c}\hat n \times \vec E &= \frac{1}{c}\hat n \times \left[\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \right] \\
-&= \frac{1}{c}\left[\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \right] \\
+&= \frac{1}{c}\left[\frac{\mu_0}{4\pi r}\hat n \times [\hat n(\hat n \cdot \ddot p(t_c)) - \ddot p(t_c)(\hat n \cdot \hat n)]-\frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c r} \right] \\
+&= \frac{1}{c}\left[\frac{\mu_0}{4\pi r}[\hat n \times \hat n(\hat n \cdot \ddot p(t_c)) - \hat n \times \ddot p(t_c)]-\frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c r} \right] \\
+&= \frac{1}{c}\left[\frac{\mu_0}{4\pi r}[\vec 0 - \hat n \times \ddot p(t_c)]-\frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c r} \right] \\
+&= -\frac{\mu_0\hat n \times \ddot p(t_c)}{4\pi c r} - \frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi c^2r} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c^2 r} \\
+&= \frac{\mu_0\ddot p(t_c)\times \hat n}{4\pi c r} - \frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi c^2r} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c^2 r} \\
+&= \vec B\\
+\end{align}
+$$
+This means that for all radiation the $\vec E$ and $\vec B$ fields travel perpendicular to each other, very cool.
+## Finding the Poynting vector
+Now lets find the Poynting vector. By definition
+$$
+\begin{align}
+\vec S &= \frac{1}{\mu_0} \vec E \times \vec B \\
+\vec S &= \frac{1}{\mu_0 c} \vec E \times [\hat n \times \vec E] \\
+\vec S &= \frac{1}{\mu_0 c} [\hat n (\vec E \cdot \vec E) - \vec E (\hat n \cdot \vec E)] \\
+\vec S &= \frac{1}{\mu_0 c} [\hat n E^2 - \vec E (\vec E \cdot \hat n)] \\
+\end{align}
+$$
+We will start with $\vec E \cdot \hat n$:
+$$
+\begin{align}
+\vec E \cdot \hat n &= \frac{\mu_0 \hat n \cdot [\hat n \times [\hat n \times \ddot p(t_c)]]}{4\pi r} - \frac{\mu_0 \hat n \cdot [\dddot M(t_c) \hat n]}{8\pi cr} + \frac{\mu_0 \hat n \cdot [\hat n \times \ddot m(t_c)]}{4\pi c r} \\
+&= 0 - \frac{\mu_0 \hat n \cdot [\dddot M(t_c) \hat n]}{8\pi cr} + 0 \\
+&=- \frac{\mu_0 \hat n \cdot [\dddot M(t_c) \hat n]}{8\pi cr}\\
+\end{align}
+$$
+Now we will find $E^2$ to be:
+$$
+\begin{align}
+E^2 &= \left(\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r}\right)^2 \\
+&= \frac{\mu_0^2}{16\pi^2r^2} \left(\hat n \times [\hat n \times \ddot p (t_c) ] - \frac{\ddot M(t_c)\hat n}{2c} + \right)
 \end{align}
 $$
 <% tp.file.cursor(2) %>
