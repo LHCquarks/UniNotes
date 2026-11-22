@@ -340,8 +340,7 @@ $$
 \nabla \times \left(\frac{\ddot M(t_c)\hat n}{r}\right) &= -\frac{\hat n \times (\dddot M\hat n)}{cr} \\
 &= \frac{(\dddot M\hat n) \times \hat n}{cr} \\
 \end{align}
-$$\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \\
-
+$$
 ### Third term
 The third term is:
 $$
