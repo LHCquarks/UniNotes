@@ -507,7 +507,7 @@ That means that the total power is given by:
 $$
 \begin{align}
 P &= \oint (\vec S \cdot \hat n)r^2 d\Omega \\
-\frac{16\pi^2 c P}{\mu_0}&= \oint \ddot p^2 - \ddot p^2\cos^2\varphi d\Omega + \frac{1}{4c^2}\oint (\ddot M \hat n)^2 d\Omega + \oint \frac{1}{c^2} \ddot m - 
+\frac{16\pi^2 c P}{\mu_0}&= \oint \ddot p^2 - \ddot p^2\cos^2\varphi d\Omega + \frac{1}{4c^2}\oint (\ddot M \hat n)^2 d\Omega +\frac{1}{c^2} \oint \ddot m - ()
 \end{align}
 $$
 <% tp.file.cursor(2) %>
