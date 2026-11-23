@@ -577,7 +577,16 @@ $$
 \end{align}
 $$
 ### $\frac{1}{\mu_0c}\oint E_M^2r^2 d\Omega$
-We will solve this integral with
+We will solve this integral using tensor notation an standard spherical coordintes.
+$$
+\begin{align}
+\frac{1}{\mu_0 c} \oint E^2_M r^2 d\Omega &= \frac{1}{\mu_0 c} \oint \frac{\mu_0^2}{64 \pi^2 c^2 r^2}\left[(\dddot M \cdot \hat n)^2 - (\hat n \cdot \dddot M \cdot \hat n)^2 \right] r^2 d\Omega  \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \oint (\dddot M_{ij}n_j)(\dddot M_{ij}n_j) - n_i\dddot M_{ij}n_j d\Omega \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \oint  \dddot M_{ij}\dddot M_{ij} n_jn_j- n_in_j\dddot M_{ij} d\Omega \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \oint  \dddot M_{ij}\dddot M_{ij} n_jn_j- n_i\dddot M_{ij}n_j d\Omega \\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 ### $\frac{1}{\mu_0c}\oint E_m^2r^2 d\Omega$
 ### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_Mr^2 d\Omega$
 ### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_mr^2 d\Omega$
