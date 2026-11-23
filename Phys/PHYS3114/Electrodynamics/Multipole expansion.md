@@ -565,25 +565,44 @@ Whist solving most of these integrals we will encounter a lot of the expression 
 $$
 \begin{align}
 \oint n_1n_1 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi\cos^2\theta \sin\varphi d\varphi d\theta \\
+&= \left[\frac{\theta}{2} +\frac{\sin(2\theta)}{4}\right]_0^{2\pi} \left[-\cos \varphi + \frac{\cos^3 \varphi}{3}\right]_0^\pi \\
+&= \left[\frac{2\pi}{2}+\frac{0}{4}\right]\left[2 - \frac{2}{3}\right] \\
+&= \frac{4\pi}{3} \\
+\oint n_2n_2 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi\sin^2\theta \sin\varphi d\varphi d\theta \\
 &= \left[\frac{\theta}{2} -\frac{\sin(2\theta)}{4}\right]_0^{2\pi} \left[-\cos \varphi + \frac{\cos^3 \varphi}{3}\right]_0^\pi \\
-&= \left[0-\right]
+&= \left[\frac{2\pi}{2}-\frac{0}{4}\right]\left[2 - \frac{2}{3}\right] \\
+&= \frac{4\pi}{3} \\
+\oint n_3n_3 d\Omega &= \int_0^{2\pi} \int_0^\pi \cos^2\varphi\sin\varphi d\varphi d\theta \\
+&= 2\pi\left[-\frac{\cos^3\varphi}{3}\right]_0^\pi\\
+&= 2\pi\left[\frac{2}{3}\right]\\
+&= \frac{4\pi}{3} \\
+\oint n_1n_2 d\Omega &= \int_0^{2\pi}\int_0^\pi \sin^2\varphi\sin\theta\cos\theta \sin\varphi d\varphi d\theta \\
+&= \left[-\cos\varphi +\frac{\cos^3 \varphi}{3}\right]_0^{2\pi} \left[-\frac{\cos(2\theta)}{4}\right]_0^\pi \\
+&= \left[2 - \frac{2}{3}\right]\left[0\right] \\
+&= 0 \\
+\oint n_1n_3 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi \cos\theta \cos\varphi d\varphi d\theta \\
+&= \left[\frac{\sin^3\varphi}{3}\right]_0^\pi \left[\sin\theta\right]_0^{2\pi} \\
+&= \left[\frac{0}{3}\right]\left[0\right] \\
+&= 0 \\
+\oint n_2n_3 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi \sin\theta \cos \varphi d\varphi d\theta \\
+&= \left[\frac{\sin^3 \varphi}{3}\right]_0^{2\pi} \left[-\cos \theta\right]_0^{2\pi} \\
+&= \left[0\right]\left[0\right] \\
+&= 0
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Thus we have our identity $\oint n_in_j d\Omega = \frac{4\pi}{3} \delta_{ij}$.
 ### $\frac{1}{\mu_0c}\oint E_p^2r^2 d\Omega$
-We will solve this integral in spherical coordinates with:
-- The $\hat z$ axis along $\ddot p$
-- The azumuthal angle $\varphi$
-- The polar angle $\theta$
 $$
 \begin{align}
 \frac{1}{\mu_0 c}\oint E_p^2 r^2 d\Omega &= \frac{1}{\mu_0 c} \oint \frac{\mu_0^2}{16 \pi^2 r^2}[\ddot p^2 - (\hat n \cdot \ddot p)^2]r^2 d\Omega \\
-&= \frac{\mu_0}{16 \pi^2 c} \int_0^{2\pi}\int_0^\pi [\ddot p^2 - \ddot p^2 \cos^2 \varphi] \sin \varphi d\varphi d\theta \\
-&= \frac{\mu_0\ddot p^2}{16 \pi^2 c} (2\pi) \int_0^\pi \sin\varphi -  \cos^2 \varphi \sin \varphi d\varphi \\
-&= \frac{\mu_0\ddot p^2}{8 \pi c}\left[-\cos \varphi + \frac{\cos^3\varphi}{3}\right]_0^\pi \\
-&= \frac{\mu_0\ddot p^2}{8 \pi c}\left[2 - \frac{2}{3}\right] \\
-&= \frac{\mu_0\ddot p^2}{8 \pi c}\left[\frac{4}{3}\right] \\
-&= \frac{\mu_0\ddot p^2}{6 \pi c} \\
+&= \frac{\mu_0}{16\pi^2c} \oint\ddot p^2 - (\hat n \cdot\ddot p)^2 d\Omega \\
+&= \frac{\mu_0}{16\pi^2 c} \left[\oint \ddot p^2 d\Omega - \oint(\hat n \cdot \ddot p)^2 d\Omega\right] \\
+&= \frac{\mu_0}{16\pi^2 c} \left[4\pi\ddot p^2 - \oint(\ddot p_in_i)(\ddot p_jn_j) d\Omega\right] \\
+&= \frac{\mu_0}{16\pi^2 c} \left[4\pi\ddot p^2 - \ddot p_i \ddot p_j\oint n_in_j d\Omega\right] \\
+&= \frac{\mu_0}{16\pi^2 c} \left[4\pi\ddot p^2 - \ddot p_i \ddot p_j\frac{4\pi \delta_{ij}}{3}\right] \\
+&= \frac{\mu_0}{16\pi^2 c} \left[4\pi\ddot p^2 - \ddot p^2\frac{4\pi}{3}\right] \\
+&= \frac{\mu_0\ddot p^2}{4\pi c} \left[\frac{2}{3}\right] \\
+&= \frac{\mu_0\ddot p^2}{6\pi c} \\
 \end{align}
 $$
 ### $\frac{1}{\mu_0c}\oint E_M^2r^2 d\Omega$
@@ -591,9 +610,11 @@ We will solve this integral using tensor notation an standard spherical coordint
 $$
 \begin{align}
 \frac{1}{\mu_0 c} \oint E^2_M r^2 d\Omega &= \frac{1}{\mu_0 c} \oint \frac{\mu_0^2}{64 \pi^2 c^2 r^2}\left[(\dddot M \cdot \hat n)^2 - (\hat n \cdot \dddot M \cdot \hat n)^2 \right] r^2 d\Omega  \\
-&= \frac{\mu_0}{64 \pi^2 c^3} \oint (\dddot M_{ij}n_j)(\dddot M_{ij}n_j) - n_i\dddot M_{ij}n_j d\Omega \\
-&= \frac{\mu_0}{64 \pi^2 c^3} \oint  \dddot M_{ij}\dddot M_{ij} n_jn_j- n_in_j\dddot M_{ij} d\Omega \\
-&= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ij}\dddot M_{ij} \oint n_jn_j d\Omega- \dddot M_{ij}\oint n_in_j d\Omega\right] \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \oint (\dddot M_{ij}n_j)(\dddot M_{ik}n_k) - n_i\dddot M_{ij}n_j d\Omega \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \oint  \dddot M_{ij}\dddot M_{ik} n_jn_k- n_in_j\dddot M_{ij} d\Omega \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ij}\dddot M_{ik} \oint n_jn_k d\Omega- \dddot M_{ij}\oint n_in_j d\Omega\right] \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ij}\dddot M_{ik} \frac{4\pi \delta_{jk}}{3} - \dddot M_{ij}\frac{4\pi\delta_{ij}}{3}\right] \\
+&= \frac{\mu_0}{48 \pi c^3} \left[\dddot M_{ik}\dddot M_{ik} - \dddot M_{ii}\right] \\
 \end{align}
 $$
 Now, 
