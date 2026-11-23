@@ -613,6 +613,7 @@ $$
 &= \frac{4\pi}{15}
 \end{align}
 $$
+$i=j=3, k = 1, l = 2$:
 
 ### $\frac{1}{\mu_0c}\oint E_p^2r^2 d\Omega$
 $$
