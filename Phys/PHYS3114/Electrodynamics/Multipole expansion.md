@@ -105,10 +105,28 @@ $$
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\int_{\mathbb R^3} \frac{\rho(\vec r', t_c)}{r} + \frac{\dot \rho(\vec r', t_c) r' \cos\alpha}{cr} + \frac{\ddot \rho(\vec r', t_c)(r')^2}{2c^2r}\cos^2 \alpha d^3r' \\
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0r}\int_{\mathbb R^3} \rho(\vec r', t_c) d^3r' + \frac{1}{4\pi\epsilon_0cr}\int_{\mathbb R^3}\dot \rho(\vec r', t_c) r' \cos\alpha d^3r' \\
 &\ \ \ \ \  + \frac{1}{8\pi\epsilon_0 c^2 r}\int_{\mathbb R^3} \ddot \rho(\vec r', t_c) (r'^2) \cos^2 \alpha d^3r'\\
-\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0r} + \frac{\dot p(t_c) \cdot \hat n}{4\pi\epsilon_0cr} + \\
+\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0r} + \frac{\dot p(t_c) \cdot \hat n}{4\pi\epsilon_0cr} + \int_{\mathbb R^3} \ddot \rho (\vec r' \cdot \hat n)^2 d^3 r'   \\ 
 \end{align}
 $$
 Very cool.
+### Tensor Algebra aside
+We will now try to simplify the third term of our scalar potential using a new object we will define.
+
+Define the electric quadrapole tensor as:
+$$
+\begin{align}
+M_{ij}(t) &= \int_{\mathbb R^3} \rho(\vec r' , t) r_i' r_j' d^3r' \\
+\end{align}
+$$
+Our integral has the form:
+$$
+\begin{align}
+\int_{\mathbb R^3} \ddot \rho(\vec r', t_c)  (r_i'n_i)^2 d^3 r' &= \int_{\mathbb R^3} \ddot \rho(\vec r', t_c) \left[(r')_1^2n_1^2 + (r')_2^2 n_2^2 + (r')_3^2 n_3^2 \\+ 2r_1'r_2'n_1n_2 + 2r_1'r_3'n_1n_2 + 2r_2'r_3'n_2n_3\right] d^3 r' \\
+&= n_in_i\int_{\mathbb R^3} \ddot\rho(\vec r', t_c) r_i'r_i'd^3r' + n_in_j\int_{\mathbb R^3} \ddot \rho(\vec r', t_c) r_i' r_j' d^3r'\\
+&= n_in_i M_{ii} + n_in_j M_{i, j}
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 ## Finding $\vec A$
 Doing a similar thing with $\vec A$ yields:
 $$
