@@ -527,10 +527,11 @@ $$
 $$
 \begin{align}
 \vec E_p \cdot \vec E_M &= \frac{\mu_0^2}{32\pi^2 cr^2}[(\hat n \cdot \ddot p)\hat n - \ddot p] \cdot [(\hat n \cdot \dddot M \cdot \hat n) \hat n - \dddot M \cdot \hat n]\\
-&= \frac{\mu_0^2}{32\pi^2 cr^2}[(\hat n \cdot \ddot p)(\hat n \cdot \dddot M\cdot \hat n)(\hat n \cdot \hat n) - (\hat n \cdot \dddot M \cdot \hat n)(\ddot p\cdot \hat n) - ] 
+&= \frac{\mu_0^2}{32\pi^2 cr^2}\left[(\hat n \cdot \ddot p)(\hat n \cdot \dddot M\cdot \hat n)(\hat n \cdot \hat n) - (\hat n \cdot \dddot M \cdot \hat n)(\ddot p\cdot \hat n) \\
+- (\hat n \cdot \dddot M \cdot \hat n)(\ddot p \cdot \hat n) + (\ddot p \cdot \dddot M \cdot \hat n)\right] \\
+&= \frac{\mu_0^2}{32\pi^2cr^2} \left[\ddot p \cdot \dddot M \cdot \hat n - (\hat n \cdot \dddot M \cdot \hat n)(\ddot p \cdot \hat n )\right]
 \end{align}
 $$
-<% tp.file.cursor(2) %>
 #### $\vec E_p \cdot \vec E_m$
 $$
 \begin{align}
@@ -542,32 +543,46 @@ $$
 \end{align}
 $$
 #### $\vec E_M \cdot \vec E_m$
-By the exact same logic as with the $\vec E_p\cdot \vec E_M$ case they are perpendicular so their product is $0$
-#### The total
-Putting all this together gives us:
 $$
 \begin{align}
-E^2 &= \frac{\mu_0^2}{16\pi^2 r^2} [\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{\mu_0^2 \dddot M^2}{64 \pi^2 c^2 r^2} + \frac{\mu_0^2}{16 \pi^2 c^2 r^2} [\ddot m^2 - (\hat n \cdot \ddot m)^2] - \frac{\mu_0^2}{16\pi^2 c r^2} \ddot p \cdot (\hat n \times \ddot m)
+\vec E_M\cdot \vec E_m &= \frac{\mu_0^2}{32 \pi^2 c^2 r^2} \left[(\hat n \cdot \dddot M \cdot \hat n)\hat n - \dddot M \cdot \hat n\right] \cdot \left[\hat n \times \ddot m\right] \\
+&= \frac{\mu_0^2}{32\pi^2 c^2 r^2} \left[(\hat n \cdot \dddot M \cdot \hat n)(\hat n \cdot [\hat n \times \ddot m]) - (\hat n \times \ddot m) \cdot (\dddot M\cdot \hat n)\right] \\
+&= \frac{\mu_0^2}{32\pi^2 c^2 r^2} \left[\vec 0- (\hat n \times \ddot m) \cdot (\dddot M\cdot \hat n)\right] \\
+&= -\frac{\mu_0^2}{32\pi^2 c^2 r^2} (\hat n \times \ddot m) \cdot (\dddot M\cdot \hat n) \\
 \end{align}
 $$
-yay.
-### Putting it all together
-strap in cause this will be long:
-$$
-\begin{align}
-\vec S &= \frac{\mu_0}{16 \pi^2 c r^2} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2]\hat n + \frac{(\dddot M\hat n)^2}{4c^2}\hat n + \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2}\hat n - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c}\hat n \\ + \frac{\hat n \cdot [\dddot M \hat n ]}{2c}[\hat n \times(\hat n \times \ddot p)] - \frac{\hat n \cdot (\dddot M\hat n)}{4c^2}\dddot M\hat n + \frac{\hat n \cdot [\dddot M \hat n]}{2c^2}[\hat n \times \ddot m]\right]
-\end{align}
-$$
-shesh.
 ## Finding the radiated energy
 To find the radiated power we first have to find the energy flux across a spherical shell centered at the origin. To do this we simply have to do $\frac{\partial P}{\partial \Omega} = (\vec S \cdot \hat n)r^2$.
 $$
 \begin{align}
-(\vec S \cdot \hat n)r^2 &= \frac{\mu_0}{16\pi^2 c} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{(\dddot M\hat n)^2}{4c^2}+ \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2} - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c} \\ + \frac{\hat n \cdot [\dddot M \hat n ]}{2c}[\hat n \times(\hat n \times \ddot p)]\cdot \hat n  - \frac{\hat n \cdot (\dddot M\hat n)}{4c^2}\dddot M\hat n \cdot \hat n + \frac{\hat n \cdot [\dddot M \hat n]}{2c^2}[\hat n \times \ddot m] \cdot \hat n\right] \\
-&= \frac{\mu_0}{16\pi^2 c} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{(\dddot M\hat n)^2}{4c^2}+ \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2} - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c} \\ + 0  - \frac{(\hat n \cdot (\dddot M\hat n))^2}{4c^2} + 0\right] \\
-&= \frac{\mu_0}{16\pi^2 c} \left[[\ddot p^2 - (\hat n \cdot \ddot p)^2] + \frac{(\dddot M\hat n)^2}{4c^2}+ \frac{\ddot m^2 - (\hat n \cdot \ddot m)^2}{c^2} - \frac{\ddot p \cdot (\hat n \times \ddot m)}{c} \\ - \frac{(\hat n \cdot (\dddot M\hat n))^2}{4c^2} \right] \\
+(\vec S \cdot \hat n) r^2 &= \frac{E^2r^2}{\mu_0 c}\hat n\cdot \hat n \\
+&= \frac{E^2r^2}{\mu_0 c}
 \end{align}
 $$
+We will now conduct an integral for each of the terms in $E^2$.
+### $\frac{1}{\mu_0c}\oint E_p^2r^2 d\Omega$
+We will solve this integral in spherical coordinates with:
+- The $\hat z$ axis along $\ddot p$
+- The azumuthal angle $\varphi$
+- The polar angle $\theta$
+$$
+\begin{align}
+\frac{1}{\mu_0 c}\oint E_p^2 r^2 d\Omega &= \frac{1}{\mu_0 c} \oint \frac{\mu_0^2}{16 \pi^2 r^2}[\ddot p^2 - (\hat n \cdot \ddot p)^2]r^2 d\Omega \\
+&= \frac{\mu_0}{16 \pi^2 c} \int_0^{2\pi}\int_0^\pi [\ddot p^2 - \ddot p^2 \cos^2 \varphi] \sin \varphi d\varphi d\theta \\
+&= \frac{\mu_0\ddot p^2}{16 \pi^2 c} (2\pi) \int_0^\pi \sin\varphi -  \cos^2 \varphi \sin \varphi d\varphi \\
+&= \frac{\mu_0\ddot p^2}{8 \pi c}\left[-\cos \varphi + \frac{\cos^3\varphi}{3}\right]_0^\pi \\
+&= \frac{\mu_0\ddot p^2}{8 \pi c}\left[2 - \frac{2}{3}\right] \\
+&= \frac{\mu_0\ddot p^2}{8 \pi c}\left[\frac{4}{3}\right] \\
+&= \frac{\mu_0\ddot p^2}{6 \pi c} \\
+\end{align}
+$$
+### $\frac{1}{\mu_0c}\oint E_M^2r^2 d\Omega$
+We will solve this integral with
+### $\frac{1}{\mu_0c}\oint E_m^2r^2 d\Omega$
+### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_Mr^2 d\Omega$
+### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_mr^2 d\Omega$
+### $\frac{2}{\mu_0c}\oint \vec E_M\cdot \vec E_mr^2 d\Omega$
+
 We will now use polar coordinates to integrate over the spherical shell. Let:
 - the polar axis be along $\ddot p$
 - the azimuthal angle be $\varphi$
