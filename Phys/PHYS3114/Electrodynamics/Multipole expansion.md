@@ -561,36 +561,59 @@ $$
 $$
 We will now conduct an integral for each of the terms in $E^2$.
 ### A useful identity
-Whist solving most of these integrals we will encounter a lot of the expression $\oint n_i n_j d\Omega$ so we may as well work on simplifying it. We will unfortunately have to do this by cases so strap in:
+Whist solving most of these integrals we will encounter a lot of the expression $\oint n_i n_j d\Omega$ so we may as well work on simplifying it.
+
+First consider the case where $i = j$, then by symmetry these are all the same as $i = j = 3$:
 $$
 \begin{align}
-\oint n_1n_1 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi\cos^2\theta \sin\varphi d\varphi d\theta \\
-&= \left[\frac{\theta}{2} +\frac{\sin(2\theta)}{4}\right]_0^{2\pi} \left[-\cos \varphi + \frac{\cos^3 \varphi}{3}\right]_0^\pi \\
-&= \left[\frac{2\pi}{2}+\frac{0}{4}\right]\left[2 - \frac{2}{3}\right] \\
-&= \frac{4\pi}{3} \\
-\oint n_2n_2 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi\sin^2\theta \sin\varphi d\varphi d\theta \\
-&= \left[\frac{\theta}{2} -\frac{\sin(2\theta)}{4}\right]_0^{2\pi} \left[-\cos \varphi + \frac{\cos^3 \varphi}{3}\right]_0^\pi \\
-&= \left[\frac{2\pi}{2}-\frac{0}{4}\right]\left[2 - \frac{2}{3}\right] \\
-&= \frac{4\pi}{3} \\
 \oint n_3n_3 d\Omega &= \int_0^{2\pi} \int_0^\pi \cos^2\varphi\sin\varphi d\varphi d\theta \\
 &= 2\pi\left[-\frac{\cos^3\varphi}{3}\right]_0^\pi\\
 &= 2\pi\left[\frac{2}{3}\right]\\
 &= \frac{4\pi}{3} \\
-\oint n_1n_2 d\Omega &= \int_0^{2\pi}\int_0^\pi \sin^2\varphi\sin\theta\cos\theta \sin\varphi d\varphi d\theta \\
-&= \left[-\cos\varphi +\frac{\cos^3 \varphi}{3}\right]_0^{2\pi} \left[-\frac{\cos(2\theta)}{4}\right]_0^\pi \\
-&= \left[2 - \frac{2}{3}\right]\left[0\right] \\
-&= 0 \\
+\end{align}
+$$
+Now, consider the case where $i \not = j$, we can just rotate the sphere around so that it is the same as the $i = 1, j = 3$ case:
+$$
+\begin{align}
 \oint n_1n_3 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi \cos\theta \cos\varphi d\varphi d\theta \\
 &= \left[\frac{\sin^3\varphi}{3}\right]_0^\pi \left[\sin\theta\right]_0^{2\pi} \\
 &= \left[\frac{0}{3}\right]\left[0\right] \\
 &= 0 \\
-\oint n_2n_3 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi \sin\theta \cos \varphi d\varphi d\theta \\
-&= \left[\frac{\sin^3 \varphi}{3}\right]_0^{2\pi} \left[-\cos \theta\right]_0^{2\pi} \\
-&= \left[0\right]\left[0\right] \\
-&= 0
 \end{align}
 $$
+
 Thus we have our identity $\oint n_in_j d\Omega = \frac{4\pi}{3} \delta_{ij}$.
+
+Beyond that we will also need so solve the integral $\oint n_in_jn_kn_l d\Omega$ which we will solve by 4 cases via symmetry:
+
+$i = j = k = l = 3$:
+$$
+\begin{align}
+\oint (n_3)^4 d\Omega &= \int_0^{2\pi} \int_0^\pi \cos^4 \varphi \sin\varphi d\varphi d\theta \\
+&= (2\pi)\left[-\frac{\cos^5\varphi}{5}\right]_0^\pi \\
+&= 2\pi\left[\frac{2}{5}\right] \\
+&= \frac{4\pi}{5}
+\end{align}
+$$
+$i=j=k=3, l = 1$:
+$$
+\begin{align}
+\oint (n_3)^3n_1 d\Omega &= \int_0^{2\pi} \int_0^\pi \cos^3 \varphi \sin^2\varphi \cos \theta d\varphi d\theta \\
+&= \left[\sin \theta\right]_0^{2\pi} \left[\frac{\sin^3\varphi}{3} - \frac{\sin^5\varphi}{5}\right]_0^\pi \\
+&= \left[0\right] \left[\frac{\sin^3\varphi}{3} - \frac{\sin^5\varphi}{5}\right]_0^\pi \\
+&= 0 \\
+\end{align}
+$$
+$i=j=3, k=l=1$:
+$$
+\begin{align}
+\oint (n_3)^2 (n_1)^2 d\Omega &= \int_0^{2\pi} \int_0^\pi \cos^2\varphi \sin^3\varphi\cos^2\theta d\varphi d\theta \\
+&= \left[\frac{\theta}{2} + \frac{\sin(2\theta)}{4}\right]_0^{2\pi} \left[- \frac{\cos^3 \varphi}{3} + \frac{\cos^5 \varphi}{5}\right]_0^{\pi} \\
+&= \left[\frac{2\pi}{2} + 0\right] \left[\frac{2}{3} - \frac{2}{5}\right] \\
+&= \frac{4\pi}{15}
+\end{align}
+$$
+
 ### $\frac{1}{\mu_0c}\oint E_p^2r^2 d\Omega$
 $$
 \begin{align}
