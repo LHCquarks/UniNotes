@@ -105,7 +105,7 @@ $$
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\int_{\mathbb R^3} \frac{\rho(\vec r', t_c)}{r} + \frac{\dot \rho(\vec r', t_c) r' \cos\alpha}{cr} + \frac{\ddot \rho(\vec r', t_c)(r')^2}{2c^2r}\cos^2 \alpha d^3r' \\
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0r}\int_{\mathbb R^3} \rho(\vec r', t_c) d^3r' + \frac{1}{4\pi\epsilon_0cr}\int_{\mathbb R^3}\dot \rho(\vec r', t_c) r' \cos\alpha d^3r' \\
 &\ \ \ \ \  + \frac{1}{8\pi\epsilon_0 c^2 r}\int_{\mathbb R^3} \ddot \rho(\vec r', t_c) (r'^2) \cos^2 \alpha d^3r'\\
-\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0r} + \frac{\dot p(t_c) \cdot \hat n}{4\pi\epsilon_0cr} + \int_{\mathbb R^3} \ddot \rho (\vec r' \cdot \hat n)^2 d^3 r'   \\ 
+\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0r} + \frac{\dot p(t_c) \cdot \hat n}{4\pi\epsilon_0cr} + \frac{1}{8\pi\epsilon_0c^2r}\int_{\mathbb R^3} \ddot \rho (\vec r' \cdot \hat n)^2 d^3 r'   \\ 
 \end{align}
 $$
 Very cool.
@@ -121,13 +121,19 @@ $$
 Our integral has the form:
 $$
 \begin{align}
-\int_{\mathbb R^3} \ddot \rho(\vec r', t_c)  (r_i'n_i)^2 d^3 r' &= \int_{\mathbb R^3} \ddot \rho(\vec r', t_c) \left[(r')_1^2n_1^2 + (r')_2^2 n_2^2 + (r')_3^2 n_3^2 \\+ 2r_1'r_2'n_1n_2 + 2r_1'r_3'n_1n_2 + 2r_2'r_3'n_2n_3\right] d^3 r' \\
-&= n_in_i\int_{\mathbb R^3} \ddot\rho(\vec r', t_c) r_i'r_i'd^3r' + 2n_in_j\int_{\mathbb R^3} \ddot \rho(\vec r', t_c) r_i' r_j' d^3r'\\
-&= n_in_i M_{ii} + 2n_in_j M_{i, j} \\
-&= \hat n ^2 \text{Tr}(M) + 2 \hat n \cdot M\cdot \hat n
+\int_{\mathbb R^3} \ddot \rho(\vec r', t_c)  (r_i'n_i)^2 d^3 r' &= \int_{\mathbb R^3} \ddot \rho(\vec r', t_c) (r_i'n_i)(r_j'n_j) d^3 r' \\
+&= n_in_j\int_{\mathbb R^3} \ddot \rho(\vec r', t_c)r_i'r_j'd^3r'\\
+&= n_in_j\ddot M_{ij} \\
+&= \hat n \cdot \ddot M \cdot \hat n
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+This leaves us with a scalar potential of:
+$$
+\begin{align}
+\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0 r} + \frac{\dot p(t_c) \cdot \hat n}{4\pi c\epsilon_0 r} + \frac{\hat n \cdot M \cdot \hat n}{8\pi\epsilon_0c^2r}
+\end{align}
+$$
+
 ## Finding $\vec A$
 Doing a similar thing with $\vec A$ yields:
 $$
@@ -175,14 +181,14 @@ $$
 \end{align}
 $$
 Sick. Now lets investigate this $I_{ij}$ object
-#### Tensor algebra detour
+#### Another tensor algebra detour
 To make sense of $I_{ij}$ we will decompose it into it's antisymetric and symmetric parts like so:
 $$
 \begin{align}
 I_{ij} &= \frac{1}{2}(I_{ij} + I_{ji}) + \frac{1}{2}(I_{ij} - I_{ji})
 \end{align}
 $$
-We define the electric quadrapole tensor as:
+As a reminder we define the electric quadrapole tensor as:
 $$
 \begin{align}
 M_{ij}(t) &= \int_{\mathbb R^3} \rho(\vec r' , t) r_i' r_j' d^3r' \\
@@ -249,7 +255,7 @@ To do this we first need to find $\nabla \varphi$ and $\frac{\partial \vec A}{\p
 ### Finding $\nabla \varphi$
 $$
 \begin{align}
-\nabla \varphi &= \frac{Q}{4\pi \epsilon_0} \nabla \left(\frac{1}{r}\right) + \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{\dot p(t_c) \cdot \hat n}{r}\right) \\
+\nabla \varphi &= \frac{Q}{4\pi \epsilon_0} \nabla \left(\frac{1}{r}\right) + \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{\dot p(t_c) \cdot \hat n}{r}\right) + \frac{1}{8\pi\epsilon_0 c^2} \nabla \left(\frac{\hat n \cdot \ddot M \cdot \hat n}{r}\right)\\
 &= -\frac{Q}{4\pi \epsilon_0} \frac{\hat n}{r^2} + \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{1}{r}\right)(\dot p(t_c) \cdot \hat n) + \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
 &= - \frac{\left[\dot p(t_c) \cdot \hat n\right]\hat n}{4\pi\epsilon_0 c r^2} + \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
 &= \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
