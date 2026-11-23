@@ -614,7 +614,15 @@ $$
 \end{align}
 $$
 $i=j=3, k = 1, l = 2$:
-
+$$
+\begin{align}
+\oint (n_3)^2 n_1n_2 d\Omega &= \int_0^{2\pi}\int_0^\pi \cos^2\varphi \sin^3\varphi \sin\theta\cos\theta d\varphi d\theta \\
+&= \left[- \frac{\cos(2\theta)}{4}\right]_0^{2\pi} \left[-\frac{\cos^3\varphi}{3} + \frac{\cos^5 \varphi}{5}\right]_0^\pi \\
+&= \left[0\right] \left[-\frac{\cos^3\varphi}{3} + \frac{\cos^5 \varphi}{5}\right]_0^\pi \\
+&= 0
+\end{align}
+$$
+Thus $\oint n_in_jn_kn_l d\Omega = \frac{4\pi}{15}(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl} + \delta_{il}\delta_{jk})$.
 ### $\frac{1}{\mu_0c}\oint E_p^2r^2 d\Omega$
 $$
 \begin{align}
@@ -634,11 +642,12 @@ We will solve this integral using tensor notation an standard spherical coordint
 $$
 \begin{align}
 \frac{1}{\mu_0 c} \oint E^2_M r^2 d\Omega &= \frac{1}{\mu_0 c} \oint \frac{\mu_0^2}{64 \pi^2 c^2 r^2}\left[(\dddot M \cdot \hat n)^2 - (\hat n \cdot \dddot M \cdot \hat n)^2 \right] r^2 d\Omega  \\
-&= \frac{\mu_0}{64 \pi^2 c^3} \oint (\dddot M_{ij}n_j)(\dddot M_{ik}n_k) - n_i\dddot M_{ij}n_j d\Omega \\
-&= \frac{\mu_0}{64 \pi^2 c^3} \oint  \dddot M_{ij}\dddot M_{ik} n_jn_k- n_in_j\dddot M_{ij} d\Omega \\
-&= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ij}\dddot M_{ik} \oint n_jn_k d\Omega- \dddot M_{ij}\oint n_in_j d\Omega\right] \\
-&= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ij}\dddot M_{ik} \frac{4\pi \delta_{jk}}{3} - \dddot M_{ij}\frac{4\pi\delta_{ij}}{3}\right] \\
-&= \frac{\mu_0}{48 \pi c^3} \left[\dddot M_{ik}\dddot M_{ik} - \dddot M_{ii}\right] \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \oint (\dddot M_{ij}n_j)(\dddot M_{ik}n_k) - n_i\dddot M_{ij}n_jn_k\dddot M_{kl}n_l d\Omega \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \oint  \dddot M_{ij}\dddot M_{ik} n_jn_k- n_in_jn_kn_l\dddot M_{ij}\dddot M_{kl} d\Omega \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ij}\dddot M_{ik} \oint n_jn_k d\Omega- \dddot M_{ij}\dddot M_{kl}\oint n_in_jn_kn_l d\Omega\right] \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ji}\dddot M_{ik} \frac{4\pi \delta_{jk}}{3} - \dddot M_{ij}\dddot M_{kl}\frac{4\pi}{15}(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl}+ \delta_{il}\delta_{jk})\right] \\
+&= \frac{\mu_0}{48 \pi c^3} \left[\left(\dddot M^2\right)_{jk} \delta_{jk} - \frac{\dddot M_{ij} \dddot M_{kl}}{5}(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl}+ \delta_{il}\delta_{jk})\right] \\
+&= \frac{\mu_0}{48 \pi c^3} \left[\left(\dddot M^2\right)_{kk} - \frac{\dddot M_{ij} \dddot M_{kl}}{5}\left(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl}+ \delta_{il}\delta_{jk}\right)\right] \\
 \end{align}
 $$
 Now, 
