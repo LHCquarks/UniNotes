@@ -257,10 +257,12 @@ $$
 \begin{align}
 \nabla \varphi &= \frac{Q}{4\pi \epsilon_0} \nabla \left(\frac{1}{r}\right) + \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{\dot p(t_c) \cdot \hat n}{r}\right) + \frac{1}{8\pi\epsilon_0 c^2} \nabla \left(\frac{\hat n \cdot \ddot M \cdot \hat n}{r}\right)\\
 &= -\frac{Q}{4\pi \epsilon_0} \frac{\hat n}{r^2} + \frac{1}{4\pi\epsilon_0 c} \nabla \left(\frac{1}{r}\right)(\dot p(t_c) \cdot \hat n) + \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
-&= - \frac{\left[\dot p(t_c) \cdot \hat n\right]\hat n}{4\pi\epsilon_0 c r^2} + \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
-&= \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) \\
+&\ \ \ \ + \frac{1}{8\pi\epsilon_0c^2} \nabla\left(\frac{1}{r}\right)\hat n \cdot \ddot M \cdot \hat n  + \frac{1}{8\pi\epsilon_0 c^2 r}\nabla(\hat n \cdot \ddot M \cdot \hat n ) \\ 
+&= - \frac{\left[\dot p(t_c) \cdot \hat n\right]\hat n}{4\pi\epsilon_0 c r^2} + \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) - \frac{\hat n \ddot M \hat n }{8\pi \epsilon_0c^2 r^2} + \frac{1}{8\pi\epsilon_0 c^2 r}\nabla(\hat n \cdot \ddot M \cdot \hat n )\\
+&= \frac{1}{4\pi\epsilon_0 cr} \nabla \left(\dot p(t_c) \cdot \hat n\right) +  \frac{1}{8\pi\epsilon_0 c^2 r}\nabla(\hat n \cdot \ddot M \cdot \hat n )\\
 \end{align}
 $$
+#### $\nabla (\dot p(t_c) \cdot \hat n)$
 We now have to find $\nabla (\dot p(t_c) \cdot \hat n)$. To do this we will analyse the derivatives of each component like so:
 $$
 \begin{align}
@@ -278,14 +280,32 @@ $$
 &= \frac{\dot p_i(t_c)}{r} - \frac{\hat n_i \hat n \cdot \dot p(t_c)}{r} - \frac{\hat n_i \hat n \cdot \ddot p(t_c)}{c} \\
 
 \nabla \left(\hat n \cdot \dot p(t_c)\right) &= \frac{\dot p(t_c)}{r} - \frac{\hat n\cdot \dot p(t_c)}{r} \hat n - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n \\
-&= \frac{\dot p(t_c) - \hat n \cdot \dot p(t_c) \hat n}{r} - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n \\
 \end{align}
 $$
+Because we will be multiplying by $1/r$ we can also throw out the $1/r$ terms in the above expression to get:
+$$
+\begin{align}
+\nabla \left(\hat n \cdot \dot p(t_c)\right) &= - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n \\
+\end{align}
+$$
+#### $\nabla (\hat n \cdot \ddot M \cdot \hat n)$
+Using tensor notation and throwing out any $1/r$ terms along the way as we will be diving by $r$ we get:
+$$
+\begin{align}
+[\nabla (\hat n \cdot \ddot M(t_c) \cdot \hat n)]_i &= \partial_i(n_jn_k\ddot M_{jk}) \\
+&= n_k\ddot M_{jk}\partial_i (n_j) + n_j\ddot M_{jk}\partial_i(n_k) + n_jn_k \partial_i(\ddot M_{jk}) \\
+&= n_k\ddot M_{jk}\frac{\delta_{ij} - n_in_j}{r} + n_j \ddot M_{jk} \frac{\delta_{ik} - n_in_k}{r} + n_jn_k\dddot M_{jk} \partial_i(t_c) \\
+&= -\frac{n_jn_k\dddot M_{jk}}{c} \frac{\partial r}{\partial r_i} \\
+&= -\frac{n_jn_k\ddot M_{jk} n_i}{c} \\
+\nabla (\hat n \cdot \ddot M(t_c) \cdot \hat n )&= -\frac{\hat n \cdot \dddot M(t_c) \cdot \hat n }{c}\hat n 
+\end{align}
+$$
+#### Putting it together
 Finally we can put this together to get $\nabla \varphi$ to be:
 $$
 \begin{align}
--\nabla \varphi &=  -\frac{1}{4\pi\epsilon_0 cr} \left[\frac{\dot p(t_c) - \hat n \cdot \dot p(t_c) \hat n}{r} - \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n\right] \\
-&= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n \\
+-\nabla \varphi &=  \frac{1}{4\pi\epsilon_0 cr} \frac{\hat n \cdot \ddot p(t_c)}{c} \hat n + \frac{1}{8\pi\epsilon_0c^2r} \frac{\hat n \cdot \dddot M(t_c) \cdot \hat n}{c}\hat n \\
+&= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n + \frac{\hat n \cdot \dddot M(t_c) \cdot \hat n}{8\pi\epsilon_0c^3 r}\hat n \\
 \end{align}
 $$
 ### Finding $\frac{\partial \vec A}{\partial t}$
@@ -300,22 +320,30 @@ Combining these to get $\vec E$ we get:
 $$
 \begin{align}
 \vec E &= -\nabla \varphi - \frac{\partial \vec A}{\partial t} \\
-&= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r} \\
-&= \frac{1}{4\pi\epsilon_0 c^2 r}\left[\hat n \cdot \ddot p(t_c) \hat n - \ddot p(t_c) \right]- \frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r} \\
+&= \frac{\hat n \cdot \ddot p(t_c)}{4\pi \epsilon_0 c^2 r} \hat n + \frac{\hat n \cdot \dddot M(t_c) \cdot \hat n}{8\pi\epsilon_0c^3 r}\hat n - \frac{\mu_0\ddot p(t_c)}{4\pi r} - \frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} - \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r} \\
+&= \frac{1}{4\pi\epsilon_0 c^2 r}\left[\hat n \cdot \ddot p(t_c) \hat n - \ddot p(t_c) \right] + \frac{1}{8\pi\epsilon_0c^3r}\left[(\hat n \cdot \dddot M(t_c) \cdot \hat n)\hat n  - \dddot M (t_c) \cdot \hat n\right] - \frac{\mu_0 \ddot m(t_c) \times \hat n}{4\pi c r} \\
 \end{align}
 $$
-But this first term can be simplifed like so:
+But this first term can be simplified like so:
 $$
 \begin{align}
 (\hat n \cdot \ddot p(t_c)) \hat n - \ddot p (t_c) &= (\hat n \cdot \ddot p(t_c)) \hat n - (\hat n \cdot \hat n) \ddot p (t_c) \\
 &= \hat n \times [\hat n \times \ddot p(t_c)]
 \end{align}
 $$
-and thus
+and similarly the second term can be simplified like:
 $$
 \begin{align}
-\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \\
-\vec E &= \frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \\
+(\hat n \cdot [\dddot M (t_c) \cdot \hat n])\hat n - \dddot M(t_c) \cdot \hat n &= 
+(\hat n \cdot [\dddot M (t_c) \cdot \hat n])\hat n - (\hat n \cdot \hat n)[\dddot M(t_c) \cdot \hat n] \\
+&= \hat n \times(\hat n \times [\dddot M(t_c) \cdot \hat n])
+\end{align}
+$$
+thus
+$$
+\begin{align}
+\vec E &= \frac{\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi \epsilon_0 c^2 r} + \frac{\hat n \times (\hat n \times [\dddot M (t_c) \cdot \hat n])}{8\pi \epsilon_0 c^2r} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \\
+\vec E &= \frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r} +\frac{\mu_0 \hat n \times (\hat n \times [\dddot M(t_c) \cdot \hat n ])}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \\
 \end{align}
 $$
 ## Finding $\vec B$
@@ -406,40 +434,52 @@ $$
 With all of this we can finally write our magnetic field as:
 $$
 \begin{align}
-\vec B &= \frac{\mu_0\ddot p(t_c) \times \hat n}{4\pi cr} - \frac{\mu_0 \hat n \times(\dddot M\hat n)}{8\pi c^2r} + \frac{\mu_0 [\hat n \times (\hat n \times \ddot m(t_c))]}{4\pi c^2r}
+\vec B &= \frac{\mu_0\ddot p(t_c) \times \hat n}{4\pi cr} + \frac{\mu_0 [\dddot M \cdot \hat n]\times \hat n}{8\pi c^2r} + \frac{\mu_0 [\hat n \times (\hat n \times \ddot m(t_c))]}{4\pi c^2r}
 \end{align}
 $$
 ## Relationship between $\vec B$ and $\vec E$
 Consider $\frac{1}{c}\hat n \times \vec E$, this gives:
 $$
 \begin{align}
-\frac{1}{c}\hat n \times \vec E &= \frac{1}{c}\hat n \times \left[\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}-\frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \right] \\
-&= \frac{1}{c}\left[\frac{\mu_0}{4\pi r}\hat n \times [\hat n(\hat n \cdot \ddot p(t_c)) - \ddot p(t_c)(\hat n \cdot \hat n)]-\frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c r} \right] \\
-&= \frac{1}{c}\left[\frac{\mu_0}{4\pi r}[\hat n \times \hat n(\hat n \cdot \ddot p(t_c)) - \hat n \times \ddot p(t_c)]-\frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c r} \right] \\
-&= \frac{1}{c}\left[\frac{\mu_0}{4\pi r}[\vec 0 - \hat n \times \ddot p(t_c)]-\frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi cr} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c r} \right] \\
-&= -\frac{\mu_0\hat n \times \ddot p(t_c)}{4\pi c r} - \frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi c^2r} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c^2 r} \\
-&= \frac{\mu_0\ddot p(t_c)\times \hat n}{4\pi c r} - \frac{\mu_0 \hat n \times \dddot M(t_c)\hat n}{8\pi c^2r} + \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c^2 r} \\
+\frac{1}{c}\hat n \times \vec E &= \frac{1}{c}\hat n \times 
+\left[
+\frac{\mu_0\hat n \times [\hat n \times \ddot p(t_c)]}{4\pi r}
++ \frac{\mu_0 \hat n \times (\hat n\times [\dddot M(t_c)\cdot\hat n])}{8\pi cr} 
++ \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r} \right] \\
+\end{align}
+$$
+### Simplifying $\hat n \times [\hat n \times (\hat n \times \vec a)]$
+We will briefly explore what happens to $\hat n \times [\hat n \times (\hat n \times \vec a)]$ for some arbitrary $\vec a$ in hopes of simplifying the above expressions.
+$$
+\begin{align}
+\hat n \times [\hat n \times (\hat n \times \vec a)] &= \hat n \times [(\hat n \cdot \vec a)\hat n - (\hat n \cdot \hat n)\vec a]\\
+&= (\hat n \cdot \vec a) (\hat n \times \hat n) - \hat n \times \vec a \\
+&= (\hat n \cdot \vec a) \vec 0 - \hat n \times \vec a \\
+&= \vec a \times \hat n
+\end{align}
+$$
+### Putting it together and interpritations
+$$
+\begin{align}
+&= \frac{1}{c}\left[\frac{\mu_0\ddot p(t_c) \times \hat n}{4\pi r}
++ \frac{\mu_0 [\dddot M\cdot \hat n]\times \hat n}{8\pi cr} 
++ \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c r} \right] \\
+&= \frac{\mu_0\ddot p(t_c) \times \hat n}{4\pi cr}
++ \frac{\mu_0 [\dddot M\cdot \hat n]\times \hat n}{8\pi c^2r} 
++ \frac{\mu_0 \hat n \times [\hat n \times \ddot m(t_c)]}{4\pi c^2 r} \\
 &= \vec B\\
 \end{align}
 $$
-This means that for all radiation the $\vec E$ and $\vec B$ fields travel perpendicular to each other, very cool.
+This means that for all radiation the $\vec E$ and $\vec B$ fields travel perpendicular to each other and because all terms have a cross product with $\hat n$ they travel perpendicular to the propigation dirrection aswell
 ## Finding the Poynting vector
 Now lets find the Poynting vector. By definition
 $$
 \begin{align}
 \vec S &= \frac{1}{\mu_0} \vec E \times \vec B \\
-\vec S &= \frac{1}{\mu_0 c} \vec E \times [\hat n \times \vec E] \\
-\vec S &= \frac{1}{\mu_0 c} [\hat n (\vec E \cdot \vec E) - \vec E (\hat n \cdot \vec E)] \\
-\vec S &= \frac{1}{\mu_0 c} [\hat n E^2 - \vec E (\vec E \cdot \hat n)] \\
-\end{align}
-$$
-### Finding $\vec E \cdot \hat n$
-We will start with $\vec E \cdot \hat n$:
-$$
-\begin{align}
-\vec E \cdot \hat n &= \frac{\mu_0 \hat n \cdot [\hat n \times [\hat n \times \ddot p(t_c)]]}{4\pi r} - \frac{\mu_0 \hat n \cdot [\dddot M(t_c) \hat n]}{8\pi cr} + \frac{\mu_0 \hat n \cdot [\hat n \times \ddot m(t_c)]}{4\pi c r} \\
-&= 0 - \frac{\mu_0 \hat n \cdot [\dddot M(t_c) \hat n]}{8\pi cr} + 0 \\
-&=- \frac{\mu_0 \hat n \cdot [\dddot M(t_c) \hat n]}{8\pi cr}\\
+&= \frac{1}{\mu_0 c} \vec E \times [\hat n \times \vec E] \\
+&= \frac{1}{\mu_0 c} [\hat n (\vec E \cdot \vec E) - \vec E (\hat n \cdot \vec E)] \\
+&= \frac{1}{\mu_0 c} [\hat n E^2 - \vec E (0)] \\
+&= \frac{E^2}{\mu_0 c} \hat n \\
 \end{align}
 $$
 ### Finding $E^2$
@@ -447,21 +487,21 @@ Now for $E^2$ we will start by breaking up $\vec E$ into its consituent parts:
 $$
 \begin{align}
 \vec E_p &= \frac{\mu_0 \hat n\times [\hat n \times \ddot p(t_c)]}{4\pi r} \\
-\vec E_M &= \frac{\mu_0 \dddot M(t_c)\hat n}{8\pi cr} \\
+\vec E_M &= \frac{\mu_0 \hat n \times [\hat n \times (\dddot M \cdot \hat n)]}{8\pi cr} \\
 \vec E_m &= \frac{\mu_0 \hat n \times \ddot m(t_c)}{4\pi c r}
 \end{align}
 $$
 then we get:
 $$
 \begin{align}
-E^2 &= E_p^2 + E_M^2 + E_m^2 - 2\vec E_p\cdot \vec E_M + 2\vec E_p\cdot \vec E_m - 2\vec E_M\cdot \vec E_m
+E^2 &= E_p^2 + E_M^2 + E_m^2 + 2\vec E_p\cdot \vec E_M + 2\vec E_p\cdot \vec E_m + 2\vec E_M\cdot \vec E_m
 \end{align}
 $$
 Now we just find all these individual terms:
 #### $E_p^2$
 $$
 \begin{align}
-E_p^2 &= \frac{\mu_0^2}{16\pi^2r^2} |\hat n (\hat n \cdot \ddot p - \ddot p|^2 \\
+E_p^2 &= \frac{\mu_0^2}{16\pi^2r^2} |\hat n (\hat n \cdot \ddot p) - \ddot p|^2 \\
 &= \frac{\mu_0^2}{16\pi^2r^2} \left[|\hat n(\hat n \cdot \ddot p)|^2 - 2(\hat n \cdot \ddot p) (\hat n \cdot \ddot p) + |\ddot p|^2\right] \\
 &= \frac{\mu_0^2}{16\pi^2r^2} \left[(\hat n \cdot \ddot p)^2 - 2(\hat n \cdot \ddot p)^2 + \ddot p^2\right] \\
 &= \frac{\mu_0^2}{16\pi^2r^2} \left[\ddot p^2 - (\hat n \cdot \ddot p)^2 \right] \\
@@ -470,8 +510,10 @@ $$
 #### $E_M^2$
 $$
 \begin{align}
-E_M^2 &= \frac{\mu_0^2}{64 \pi^2 c^2 r^2}|\dddot M \hat n|^2 \\
-&= \frac{\mu_0^2(\dddot M \hat n)^2}{64 \pi^2 c^2 r^2}
+E_M^2 &= \frac{\mu_0^2}{64 \pi^2 c^2 r^2}|\hat n(\hat n \cdot \dddot M \cdot \hat n) - \dddot M \cdot \hat n|^2 \\
+&= \frac{\mu_0^2}{64 \pi^2 c^2 r^2}\left[|\hat n|^2(\hat n \cdot \dddot M \cdot \hat n)^2 - 2 (\hat n \cdot \dddot M \cdot \hat n) (\hat n \cdot \dddot M \cdot \hat n) + |\dddot M \cdot \hat n|^2\right] \\
+&= \frac{\mu_0^2}{64 \pi^2 c^2 r^2}\left[(\hat n \cdot \dddot M \cdot \hat n)^2 - 2 (\hat n \cdot \dddot M \cdot \hat n)^2 + (\dddot M \cdot \hat n)^2\right] \\
+&= \frac{\mu_0^2}{64 \pi^2 c^2 r^2}\left[(\dddot M \cdot \hat n)^2 - (\hat n \cdot \dddot M \cdot \hat n)^2 \right] \\
 \end{align}
 $$
 #### $E_m^2$
@@ -482,12 +524,13 @@ $$
 \end{align}
 $$
 #### $\vec E_p \cdot \vec E_M$
-$\vec E_M$ is parallel to $\hat n$ whilst $\vec E_p$ is perpendicular to $\hat n$ thus
 $$
 \begin{align}
-\vec E_p \cdot \vec E_M &= 0
+\vec E_p \cdot \vec E_M &= \frac{\mu_0^2}{32\pi^2 cr^2}[(\hat n \cdot \ddot p)\hat n - \ddot p] \cdot [(\hat n \cdot \dddot M \cdot \hat n) \hat n - \dddot M \cdot \hat n]\\
+&= \frac{\mu_0^2}{32\pi^2 cr^2}[(\hat n \cdot \ddot p)(\hat n \cdot \dddot M\cdot \hat n)(\hat n \cdot \hat n) - (\hat n \cdot \dddot M \cdot \hat n)(\ddot p\cdot \hat n) - ] 
 \end{align}
 $$
+<% tp.file.cursor(2) %>
 #### $\vec E_p \cdot \vec E_m$
 $$
 \begin{align}
