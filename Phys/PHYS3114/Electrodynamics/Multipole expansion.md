@@ -561,8 +561,10 @@ $$
 $$
 We will now conduct an integral for each of the terms in $E^2$.
 ### A useful identity
-Whist solving most of these integrals we will encounter a lot of the expression $\oint n_i n_j d\Omega$ so we may as well work on simplifying it.
-
+Whist solving the following integrals we will encounter a lot of integerals of the components of the $\hat n$ vecotor multiplied together (like $\oint n_in_jn_k \dots d\Omega$) so we will explore a few of them to get some useful formulas.
+#### Odd power
+Say that in our expression one of our components appear an odd amount of times, by the symmetry of the sphere and because that makes the function odd we have that the integral must vanish
+#### 2 element case
 First consider the case where $i = j$, then by symmetry these are all the same as $i = j = 3$:
 $$
 \begin{align}
@@ -572,19 +574,15 @@ $$
 &= \frac{4\pi}{3} \\
 \end{align}
 $$
-Now, consider the case where $i \not = j$, we can just rotate the sphere around so that it is the same as the $i = 1, j = 3$ case:
+Now, consider the case where $i \not = j$, then both terms appear an odd amount so the integral vanishes:
 $$
 \begin{align}
-\oint n_1n_3 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi \cos\theta \cos\varphi d\varphi d\theta \\
-&= \left[\frac{\sin^3\varphi}{3}\right]_0^\pi \left[\sin\theta\right]_0^{2\pi} \\
-&= \left[\frac{0}{3}\right]\left[0\right] \\
-&= 0 \\
+\oint n_1n_3 d\Omega &= 0
 \end{align}
 $$
-
 Thus we have our identity $\oint n_in_j d\Omega = \frac{4\pi}{3} \delta_{ij}$.
-
-Beyond that we will also need so solve the integral $\oint n_in_jn_kn_l d\Omega$ which we will solve by 4 cases via symmetry:
+#### 4 element case
+We will also need so solve the integral $\oint n_in_jn_kn_l d\Omega$ which we will solve by 4 cases via symmetry:
 
 $i = j = k = l = 3$:
 $$
@@ -598,10 +596,7 @@ $$
 $i=j=k=3, l = 1$:
 $$
 \begin{align}
-\oint (n_3)^3n_1 d\Omega &= \int_0^{2\pi} \int_0^\pi \cos^3 \varphi \sin^2\varphi \cos \theta d\varphi d\theta \\
-&= \left[\sin \theta\right]_0^{2\pi} \left[\frac{\sin^3\varphi}{3} - \frac{\sin^5\varphi}{5}\right]_0^\pi \\
-&= \left[0\right] \left[\frac{\sin^3\varphi}{3} - \frac{\sin^5\varphi}{5}\right]_0^\pi \\
-&= 0 \\
+\oint (n_3)^3n_1 d\Omega &= 0
 \end{align}
 $$
 $i=j=3, k=l=1$:
@@ -616,10 +611,7 @@ $$
 $i=j=3, k = 1, l = 2$:
 $$
 \begin{align}
-\oint (n_3)^2 n_1n_2 d\Omega &= \int_0^{2\pi}\int_0^\pi \cos^2\varphi \sin^3\varphi \sin\theta\cos\theta d\varphi d\theta \\
-&= \left[- \frac{\cos(2\theta)}{4}\right]_0^{2\pi} \left[-\frac{\cos^3\varphi}{3} + \frac{\cos^5 \varphi}{5}\right]_0^\pi \\
-&= \left[0\right] \left[-\frac{\cos^3\varphi}{3} + \frac{\cos^5 \varphi}{5}\right]_0^\pi \\
-&= 0
+\oint (n_3)^2 n_1n_2 d\Omega &= 0
 \end{align}
 $$
 Thus $\oint n_in_jn_kn_l d\Omega = \frac{4\pi}{15}(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl} + \delta_{il}\delta_{jk})$.
@@ -638,7 +630,7 @@ $$
 \end{align}
 $$
 ### $\frac{1}{\mu_0c}\oint E_M^2r^2 d\Omega$
-We will solve this integral using tensor notation an standard spherical coordintes.
+We will solve this integral using tensor notation.
 $$
 \begin{align}
 \frac{1}{\mu_0 c} \oint E^2_M r^2 d\Omega &= \frac{1}{\mu_0 c} \oint \frac{\mu_0^2}{64 \pi^2 c^2 r^2}\left[(\dddot M \cdot \hat n)^2 - (\hat n \cdot \dddot M \cdot \hat n)^2 \right] r^2 d\Omega  \\
@@ -648,12 +640,37 @@ $$
 &= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ji}\dddot M_{ik} \frac{4\pi \delta_{jk}}{3} - \dddot M_{ij}\dddot M_{kl}\frac{4\pi}{15}(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl}+ \delta_{il}\delta_{jk})\right] \\
 &= \frac{\mu_0}{48 \pi c^3} \left[\left(\dddot M^2\right)_{jk} \delta_{jk} - \frac{\dddot M_{ij} \dddot M_{kl}}{5}(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl}+ \delta_{il}\delta_{jk})\right] \\
 &= \frac{\mu_0}{48 \pi c^3} \left[\left(\dddot M^2\right)_{kk} - \frac{1}{5}\left(\dddot M_{ii} \dddot M_{kk} + \dddot M_{ij} \dddot M_{kj}\delta_{ik}+ \dddot M_{ij}\dddot M_{jl}\delta_{il}\right)\right] \\
+&= \frac{\mu_0}{48 \pi c^3} \left[\left(\dddot M^2\right)_{kk} - \frac{1}{5}\left((\dddot M_{ii})^2 + (\dddot M^2)_{ik} \delta_{ik}+ (\dddot M^2)_{il}\delta_{il}\right)\right] \\
+&= \frac{\mu_0}{48 \pi c^3} \left[\text{Tr}\left(\dddot M^2\right) - \frac{1}{5}\left(\text{Tr}\left(\dddot M\right)^2 + 2\text{Tr}\left(\dddot M^2\right)\right)\right] \\
+&= \frac{\mu_0}{240 \pi c^3} \left[3\text{Tr}\left(\dddot M^2\right) - \text{Tr}\left(\dddot M\right)^2 \right] \\
 \end{align}
 $$
-Now, 
 ### $\frac{1}{\mu_0c}\oint E_m^2r^2 d\Omega$
+$$
+\begin{align}
+\frac{1}{\mu_0 c} \oint E_m^2 r^2 d\Omega &= \frac{1}{\mu_0 c}\oint \frac{\mu_0^2}{16 \pi^2 c^2 r^2} [\ddot m^2 - (\hat n\cdot \ddot m)^2] r^2 d\Omega \\
+&= \frac{\mu_0}{16 \pi^2 c^3 } \left[\oint \ddot m^2 d\Omega - \oint \ddot m_i n_i \ddot m_j n_j d\Omega\right] \\
+&= \frac{\mu_0}{16 \pi^2 c^3 } \left[4\pi\ddot m^2 - \ddot m_i \ddot m_j\oint n_i n_j d\Omega\right] \\
+&= \frac{\mu_0}{16 \pi^2 c^3 } \left[4\pi\ddot m^2 - \ddot m_i \ddot m_j\frac{4\pi}{3}\delta_{ij}\right] \\
+&= \frac{\mu_0\ddot m^2}{4 \pi c^3} \left[1 - \frac{1}{3}\right] \\
+&= \frac{\mu_0\ddot m^2}{6 \pi c^3}  \\
+\end{align}
+$$
 ### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_Mr^2 d\Omega$
+$$
+\begin{align}
+\frac{2}{\mu_0 c} \oint \vec E_p \vec E_M r^2 d\Omega &= \frac{2}{\mu_0 c} \oint 
+\frac{\mu_0^2}{32\pi^2cr^2} \left[\ddot p \cdot \dddot M \cdot \hat n - (\hat n \cdot \dddot M \cdot \hat n)(\ddot p \cdot \hat n )\right] r^2 d\Omega \\
+&= \frac{\mu_0}{16 \pi^2 c^2 } \left[\oint \ddot p\cdot \dddot M \cdot \hat n d\Omega - \oint (\hat n \cdot \dddot M \cdot \hat n)(\ddot p \cdot \hat n) d\Omega\right] \\
+&= \frac{\mu_0}{16 \pi^2 c^2 } \left[\oint \ddot p_i \dddot M_{ij}n_j d\Omega - \oint n_i\dddot M_{ij}n_j\ddot p_k n_k d\Omega\right] \\
+&= \frac{\mu_0}{16 \pi^2 c^2 } \left[\ddot p_i\dddot M_{ij}\oint n_jd\Omega - \dddot M_{ij}\ddot p_k\oint n_in_jn_k d\Omega\right] \\
+&= \frac{\mu_0}{16 \pi^2 c^2 } \left[\ddot p_i\dddot M_{ij}0 - \dddot M_{ij}\ddot p_k0\right] \\
+&= 0
+\end{align}
+$$
+
 ### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_mr^2 d\Omega$
+
 ### $\frac{2}{\mu_0c}\oint \vec E_M\cdot \vec E_mr^2 d\Omega$
 
 We will now use polar coordinates to integrate over the spherical shell. Let:
