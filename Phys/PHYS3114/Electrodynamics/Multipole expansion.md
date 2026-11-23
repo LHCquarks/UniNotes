@@ -647,7 +647,7 @@ $$
 &= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ij}\dddot M_{ik} \oint n_jn_k d\Omega- \dddot M_{ij}\dddot M_{kl}\oint n_in_jn_kn_l d\Omega\right] \\
 &= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ji}\dddot M_{ik} \frac{4\pi \delta_{jk}}{3} - \dddot M_{ij}\dddot M_{kl}\frac{4\pi}{15}(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl}+ \delta_{il}\delta_{jk})\right] \\
 &= \frac{\mu_0}{48 \pi c^3} \left[\left(\dddot M^2\right)_{jk} \delta_{jk} - \frac{\dddot M_{ij} \dddot M_{kl}}{5}(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl}+ \delta_{il}\delta_{jk})\right] \\
-&= \frac{\mu_0}{48 \pi c^3} \left[\left(\dddot M^2\right)_{kk} - \frac{\dddot M_{ij} \dddot M_{kl}}{5}\left(\delta_{ij}\delta_{kl} + \delta_{ik}\delta_{jl}+ \delta_{il}\delta_{jk}\right)\right] \\
+&= \frac{\mu_0}{48 \pi c^3} \left[\left(\dddot M^2\right)_{kk} - \frac{1}{5}\left(\dddot M_{ii} \dddot M_{kk} + \dddot M_{ij} \dddot M_{kj}+ \delta_{il}\delta_{jk}\right)\right] \\
 \end{align}
 $$
 Now, 
