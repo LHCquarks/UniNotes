@@ -122,8 +122,9 @@ Our integral has the form:
 $$
 \begin{align}
 \int_{\mathbb R^3} \ddot \rho(\vec r', t_c)  (r_i'n_i)^2 d^3 r' &= \int_{\mathbb R^3} \ddot \rho(\vec r', t_c) \left[(r')_1^2n_1^2 + (r')_2^2 n_2^2 + (r')_3^2 n_3^2 \\+ 2r_1'r_2'n_1n_2 + 2r_1'r_3'n_1n_2 + 2r_2'r_3'n_2n_3\right] d^3 r' \\
-&= n_in_i\int_{\mathbb R^3} \ddot\rho(\vec r', t_c) r_i'r_i'd^3r' + n_in_j\int_{\mathbb R^3} \ddot \rho(\vec r', t_c) r_i' r_j' d^3r'\\
-&= n_in_i M_{ii} + n_in_j M_{i, j}
+&= n_in_i\int_{\mathbb R^3} \ddot\rho(\vec r', t_c) r_i'r_i'd^3r' + 2n_in_j\int_{\mathbb R^3} \ddot \rho(\vec r', t_c) r_i' r_j' d^3r'\\
+&= n_in_i M_{ii} + 2n_in_j M_{i, j} \\
+&= \hat n ^2 \text{Tr}(M) + 2 \hat n \cdot M\cdot \hat n
 \end{align}
 $$
 <% tp.file.cursor(2) %>
