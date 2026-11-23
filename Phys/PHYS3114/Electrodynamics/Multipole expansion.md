@@ -60,11 +60,13 @@ t_r - t_c &= t - R/c - t + r/c \\
 &= -\frac{(r')^2}{2cr}\sin^2\alpha + \frac{r'}{c}\cos \alpha \\
 \end{align}
 $$
-We also argue that as $\lambda << r$ we will have that $(\frac{r - R}{c})^2$ vanishes thus our Taylor expansion becomes:
+We also argue that as $\lambda << r$ we will have that $(\frac{r - R}{c})^3$ vanishes thus our Taylor expansion becomes:
 $$
 \begin{align}
-\rho(\vec r, t_r) &= \rho(\vec r, t_c) + \dot \rho(\vec r, t_c) \left(\frac{r'}{c}\cos\alpha - \frac{(r')^2}{2cr}\sin^2\alpha\right) \\
-\rho(\vec r, t_r) &= \rho(\vec r, t_c) + \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha - \dot \rho(\vec r, t_c) \frac{(r')^2}{2cr}\sin^2\alpha \\
+\rho(\vec r', t_r) &= \rho + \dot \rho \left(\frac{r'}{c}\cos\alpha - \frac{(r')^2}{2cr}\sin^2\alpha\right) + \frac{\ddot \rho}{2}\left(-\frac{(r')^2}{2cr}\sin^2\alpha + \frac{r'}{c}\cos\alpha \right)^2\\
+\rho(\vec r', t_r) &= \rho + \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha - \dot \rho \frac{(r')^2}{2cr}\sin^2\alpha \\ 
+&\ \ \ \ \ +\frac{\ddot \rho (r')^4}{8c^2r^2}\sin^4\alpha - \frac{\ddot \rho(r')^3}{2c^2 r}\sin^2\alpha \cos\alpha + \frac{\ddot \rho(r')^2}{2c^2}\cos^2 \alpha \\
+\rho(\vec r', t_r) &= \rho + \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha - \dot \rho \frac{(r')^2}{2cr}\sin^2\alpha - \frac{\ddot \rho(r')^3}{2c^2 r}\sin^2\alpha \cos\alpha + \frac{\ddot \rho(r')^2}{2c^2}\cos^2 \alpha \\
 \end{align}
 $$
 Similarly we can apply the exact same arguments to each component of $\vec J$ and then sum them all back up to get
@@ -90,18 +92,20 @@ Great. With this we can finally put it all together to get $\varphi, \vec A$!
 First we will start with $\varphi$ but before we can find $\varphi$ we need to find $\frac{\rho(\vec r', t_r)}{R}$ using our prior expansions like so:
 $$
 \begin{align}
-\frac{\rho(\vec r', t_r)}{R} &= \left[\rho(\vec r, t_c) - \dot \rho(\vec r, t_c) \frac{(r')^2}{2cr}\sin^2\alpha + \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha\right] \cdot \left[\frac{1}{r}\right] \\
-&= \frac{\rho(\vec r, t_c)}{r} - \frac{\dot \rho(\vec r, t_c)\sin^2\alpha}{2c}\left(\frac{r'}{r}\right)^2 + \frac{\dot \rho(\vec r, t_c)r'\cos \alpha}{cr} \\
-&= \frac{\rho(\vec r, t_c)}{r} + \frac{\dot \rho(\vec r, t_c)r'\cos \alpha}{cr} \\
+\frac{\rho(\vec r', t_r)}{R} &= \frac{1}{r}\left[\rho(\vec r, t_c) - \dot \rho(\vec r, t_c) \frac{(r')^2}{2cr}\sin^2\alpha + \dot\rho(\vec r, t_c)\frac{r'}{c}\cos\alpha \\ - \frac{\ddot \rho(r')^3}{2c^2 r}\sin^2\alpha \cos\alpha + \frac{\ddot \rho(r')^2}{2c^2}\cos^2 \alpha  \right] \\
+&= \frac{\rho(\vec r, t_c)}{r} - \frac{\dot \rho(\vec r, t_c)\sin^2\alpha}{2c}\left(\frac{r'}{r}\right)^2 + \frac{\dot \rho(\vec r, t_c)r'\cos \alpha}{cr} \\ 
+&\ \ \ \ \ - \frac{\ddot \rho(r')^3}{2c^2 r^2}\sin^2\alpha \cos\alpha + \frac{\ddot \rho(r')^2}{2c^2r}\cos^2 \alpha \\
+&= \frac{\rho(\vec r, t_c)}{r} + \frac{\dot \rho(\vec r, t_c)r'\cos \alpha}{cr} + \frac{\ddot \rho(r')^2}{2c^2r}\cos^2 \alpha\\
 \end{align}
 $$
 Ok, now we have this we can solve for $\varphi$ like so:
 $$
 \begin{align}
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\int_{\mathbb R^3} \frac{\rho(\vec r', t_r)}{R} d^3r' \\
-\varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\int_{\mathbb R^3} \frac{\rho(\vec r', t_c)}{r} + \frac{\dot \rho(\vec r', t_c) r' \cos\alpha}{cr} d^3r' \\
+\varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0}\int_{\mathbb R^3} \frac{\rho(\vec r', t_c)}{r} + \frac{\dot \rho(\vec r', t_c) r' \cos\alpha}{cr} + \frac{\ddot \rho(\vec r', t_c)(r')^2}{2c^2r}\cos^2 \alpha d^3r' \\
 \varphi(\vec r, t) &= \frac{1}{4\pi\epsilon_0r}\int_{\mathbb R^3} \rho(\vec r', t_c) d^3r' + \frac{1}{4\pi\epsilon_0cr}\int_{\mathbb R^3}\dot \rho(\vec r', t_c) r' \cos\alpha d^3r' \\
-\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0r} + \frac{\dot p(t_c) \cdot \hat n}{4\pi\epsilon_0cr}\\
+&\ \ \ \ \  + \frac{1}{8\pi\epsilon_0 c^2 r}\int_{\mathbb R^3} \ddot \rho(\vec r', t_c) (r'^2) \cos^2 \alpha d^3r'\\
+\varphi(\vec r, t) &= \frac{Q}{4\pi\epsilon_0r} + \frac{\dot p(t_c) \cdot \hat n}{4\pi\epsilon_0cr} + \\
 \end{align}
 $$
 Very cool.
