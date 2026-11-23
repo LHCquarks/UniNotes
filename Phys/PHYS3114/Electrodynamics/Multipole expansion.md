@@ -560,6 +560,16 @@ $$
 \end{align}
 $$
 We will now conduct an integral for each of the terms in $E^2$.
+### A useful identity
+Whist solving most of these integrals we will encounter a lot of the expression $\oint n_i n_j d\Omega$ so we may as well work on simplifying it. We will unfortunately have to do this by cases so strap in:
+$$
+\begin{align}
+\oint n_1n_1 d\Omega &= \int_0^{2\pi} \int_0^\pi \sin^2\varphi\cos^2\theta \sin\varphi d\varphi d\theta \\
+&= \left[\frac{\theta}{2} -\frac{\sin(2\theta)}{4}\right]_0^{2\pi} \left[-\cos \varphi + \frac{\cos^3 \varphi}{3}\right]_0^\pi \\
+&= \left[0-\right]
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 ### $\frac{1}{\mu_0c}\oint E_p^2r^2 d\Omega$
 We will solve this integral in spherical coordinates with:
 - The $\hat z$ axis along $\ddot p$
@@ -583,10 +593,10 @@ $$
 \frac{1}{\mu_0 c} \oint E^2_M r^2 d\Omega &= \frac{1}{\mu_0 c} \oint \frac{\mu_0^2}{64 \pi^2 c^2 r^2}\left[(\dddot M \cdot \hat n)^2 - (\hat n \cdot \dddot M \cdot \hat n)^2 \right] r^2 d\Omega  \\
 &= \frac{\mu_0}{64 \pi^2 c^3} \oint (\dddot M_{ij}n_j)(\dddot M_{ij}n_j) - n_i\dddot M_{ij}n_j d\Omega \\
 &= \frac{\mu_0}{64 \pi^2 c^3} \oint  \dddot M_{ij}\dddot M_{ij} n_jn_j- n_in_j\dddot M_{ij} d\Omega \\
-&= \frac{\mu_0}{64 \pi^2 c^3} \oint  \dddot M_{ij}\dddot M_{ij} n_jn_j- n_i\dddot M_{ij}n_j d\Omega \\
+&= \frac{\mu_0}{64 \pi^2 c^3} \left[\dddot M_{ij}\dddot M_{ij} \oint n_jn_j d\Omega- \dddot M_{ij}\oint n_in_j d\Omega\right] \\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
+Now, 
 ### $\frac{1}{\mu_0c}\oint E_m^2r^2 d\Omega$
 ### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_Mr^2 d\Omega$
 ### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_mr^2 d\Omega$
