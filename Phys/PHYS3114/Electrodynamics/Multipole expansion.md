@@ -687,6 +687,7 @@ $$
 &= -\frac{\mu_0}{16\pi^2 c^3 } \oint \epsilon_{ijk}n_j\ddot m_k \dddot M_{il}n_ld\Omega\\
 &= -\frac{\mu_0}{16\pi^2 c^3 } \epsilon_{ijk}\ddot m_k\dddot M_{il}\oint n_jn_ld\Omega\\
 &= -\frac{\mu_0}{16\pi^2 c^3 } \epsilon_{ijk}\ddot m_k\dddot M_{il}\frac{4\pi}{3}\delta_{jl}\\
+&= -\frac{\mu_0}{12\pi c^3 } \epsilon_{ijk}\ddot m_k\dddot M_{ij}\\
 \end{align}
 $$
 <% tp.file.cursor(2) %>
