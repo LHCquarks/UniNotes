@@ -1,6 +1,6 @@
 The Multi-pole expansion in electrodynamics is more involved however it gets us to some powerful formulas for radiation. This is a long derivation and so deserves an outline of the proof. We will:
 1. Taylor expand $R = |\vec r - \vec r'|$
-2. Taylor expand $\rho(\vec r, t_r)$ and $\vec J (\vec r, t_r)$ in $t$ around $t_c = t - r/c$ using 1.
+2. Taylor expand $\rho(\vec r, t_r)$ and $\vec J (\vec r, t_r)$ in $t$ around $t_c = t - r/c$ using 1. We will also truncate this expansion to 3 terms however infinite is possible
 3. Taylor expand $1/R$
 4. Use 2. and 3. to find the expansions of $\rho  / R$ and $\vec J / R$ 
 5. Find $\varphi$ using 4.
@@ -60,7 +60,7 @@ t_r - t_c &= t - R/c - t + r/c \\
 &= -\frac{(r')^2}{2cr}\sin^2\alpha + \frac{r'}{c}\cos \alpha \\
 \end{align}
 $$
-We also argue that as $\lambda << r$ we will have that $(\frac{r - R}{c})^3$ vanishes thus our Taylor expansion becomes:
+As stated at the start we will truncate this expansion at the 3rd term. Higher order terms correspond to the effects of octa-poles and higher. 
 $$
 \begin{align}
 \rho(\vec r', t_r) &= \rho + \dot \rho \left(\frac{r'}{c}\cos\alpha - \frac{(r')^2}{2cr}\sin^2\alpha\right) + \frac{\ddot \rho}{2}\left(-\frac{(r')^2}{2cr}\sin^2\alpha + \frac{r'}{c}\cos\alpha \right)^2\\
@@ -690,70 +690,21 @@ $$
 &= -\frac{\mu_0}{12\pi c^3 } \epsilon_{ijk}\ddot m_k\dddot M_{ij}\\
 \end{align}
 $$
-<% tp.file.cursor(2) %>
-
-We will now use polar coordinates to integrate over the spherical shell. Let:
-- the polar axis be along $\ddot p$
-- the azimuthal angle be $\varphi$
-- the polar angle be $\theta$
-- $\ddot m = (|\ddot m|, \varphi_m, \theta_m)$
-
-That means that the total power is given by:
+But we can go further. Take $S = \epsilon_{ijk}\ddot m_k \dddot M_{ij}$, because $i,j$ are dummy indicies we can swap them and then use the fact that $\epsilon_{ijk}$ is anti-symmetric and $\dddot M_{ij}$ is symmetric to get:
 $$
 \begin{align}
-P &= \oint (\vec S \cdot \hat n)r^2 d\Omega \\
-\frac{16\pi^2 c P}{\mu_0} &= \oint \ddot p^2 - \ddot p^2\cos^2\varphi d\Omega + \frac{1}{4c^2}\oint (\ddot M \hat n)^2 d\Omega \\
-&\ \ \ \ + \frac{1}{c^2} \oint \ddot m^2 - \ddot m^2(\sin \varphi \sin \varphi_m \cos(\theta - \theta_m) + \cos \varphi \cos \varphi_m)^2d\Omega \\
-&\ \ \ \ - \frac{\ddot p}{c} \oint \sin \varphi \cos \theta \sin \varphi_m\sin\theta_m - \sin\varphi_m \cos\theta_m \sin \varphi \sin\theta d\Omega \\
-&\ \ \ \ - \frac{1}{4c^2} \oint  (\hat n \cdot (\dddot M \hat n))^2 d\Omega
+S &= \epsilon_{ijk} \ddot m_k \dddot M_{ij} \\
+&= \epsilon_{jik} \ddot m_k \dddot M_{ji} \\
+&= -\epsilon_{ijk} \ddot m_k \dddot M_{ij} \\
+&= -S
 \end{align}
 $$
-We will solve all but the 2nd and final integral as they involve a term that is hard to integrate generally.
-### Integral 1
-For integral 1 we have:
-$$
-\begin{align}
-\ddot p^2 \int_0^{2\pi}\int_0^\pi (1 - \cos^2 \varphi) \sin \varphi d\varphi d\theta  &= 2\pi\ddot p^2 \left[\int_0^\pi \sin \varphi d\varphi -\int_0^\pi \cos^2 \varphi \sin \varphi d\varphi\right] \\
-&= 2\pi\ddot p^2 \left[[-\cos \varphi]_0^\pi +\left[\frac{\cos^3 \varphi}{3}\right]_0^\pi\right]  \\
-&= 2\pi\ddot p^2 \left[2 - \frac{2}{3}\right]  \\
-&= 2\pi\ddot p^2 \left[\frac{4}{3}\right]  \\
-&= \frac{8\pi\ddot p^2}{3}\\
-\end{align}
-$$
-### Integral 3
-For integral 3 we have:
-$$
-\begin{align}
-&\ \ \ \ \ \ \oint \ddot m^2 - \ddot m^2(\sin \varphi \sin \varphi_m \cos(\theta - \theta_m) + \cos \varphi \cos \varphi_m)^2d\Omega \\
-&= \ddot m^2\int_0^{2\pi}\int_0^\pi \sin\varphi - \sin^3\varphi \sin^2\varphi_m \cos^2(\theta - \theta_m) - 2\sin^2\varphi \cos\varphi \sin\varphi_m\cos\varphi_m\cos(\theta - \theta_m) \\
-&\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ - \cos^2\varphi \cos^2\varphi_m \sin\varphi d\varphi d\theta \\
-&= \ddot m^2(2\pi)(2) - \ddot m^2\left[\sin^2\varphi_m\int_0^{2\pi}\cos^2(\theta - \theta_m) d\theta\int_0^\pi \sin^3 \varphi d\varphi + \\
-2\sin\varphi_m\cos\varphi_m\int_0^{2\pi}\cos(\theta - \theta_m)d\theta\int_0^\pi \sin^2\varphi \cos \varphi d\varphi + \cos^2\varphi_m(2\pi)\int_0^\pi \cos^2\varphi \sin \varphi d\varphi\right] \\
-&= 4\pi\ddot m^2 - \ddot m^2\left[\sin^2\varphi_m\left[\frac{\theta - \theta_m}{2} - \frac{\sin(2\theta - 2\theta_m)}{4}\right]_0^{2\pi}\left[-\cos\varphi+\frac{1}{3}\cos^3 \varphi\right]_0^\pi + \\
-2\sin\varphi_m\cos\varphi_m\left[\sin(\theta - \theta_m)\right]_0^{2\pi}\left[\frac{\sin^3 \varphi}{3}\right]_0^\pi - 2\pi\cos^2\varphi_m\left[\frac{\cos^3\varphi}{3}\right]_0^\pi\right] \\
-&= 4\pi\ddot m^2 - \ddot m^2\left[\sin^2\varphi_m\left[\pi - 0\right]\left[2 -\frac{2}{3}\right] + 2\sin\varphi_m\cos\varphi_m\left[0\right]\left[0\right] + 2\pi\cos^2\varphi_m\left[\frac{2}{3}\right]\right] \\
-&= 4\pi\ddot m^2 - \ddot m^2\left[\frac{4\pi}{3}\sin^2\varphi_m + \frac{4\pi}{3}\cos^2\varphi_m\right] \\
-&= 4\pi\ddot m^2 - \frac{4\pi\ddot m^2}{3}\\
-&= \frac{8\pi\ddot m^2}{3}\\
-\end{align}
-$$
-### Integral 4
-We will now solve integral 4:
-$$
-\begin{align}
-&\ \ \ \ \ \ \oint \sin \varphi \cos \theta \sin \varphi_m\sin\theta_m - \sin\varphi_m \cos\theta_m \sin \varphi \sin\theta d\Omega \\
-&= \sin\varphi_m\oint \sin\varphi(\sin \theta_m\cos\theta - \sin\theta\cos\theta_m) d\Omega \\
-&= -\sin\varphi_m\oint \sin\varphi\sin(\theta - \theta_m) d\Omega \\
-&= -\sin\varphi_m\int_0^{2\pi}\int_0^\pi \sin^2\varphi\sin(\theta - \theta_m) d\varphi d\theta \\
-&= -\sin\varphi_m\int_0^{2\pi}\sin(\theta - \theta_m)d\theta\int_0^\pi \sin^2\varphi d\varphi \\
-&= -\sin\varphi_m(0)\int_0^\pi \sin^2\varphi d\varphi \\
-&= 0
-\end{align}
-$$
+And thus $S = 0$. This means that this integral also vanishes.
 ### Putting it together
 With these integrals we get the total radiated power to be:
 $$
 \begin{align}
-P &= \frac{\mu_0}{16\pi^2 c} \left[\frac{8\pi \ddot p^2}{3} + \frac{1}{4c^2}\oint (\dddot M \hat n)^2 d\Omega + \frac{8\pi \ddot m^2}{3c^2} - \frac{1}{4c^2} \oint (\hat n \cdot (\dddot M \hat n))^2 d\Omega \right]
+P &= \frac{\mu_0\ddot p^2}{6\pi c} + \frac{\mu_0}{240 \pi c^3} \left[3 \text{Tr}\left(\dddot M^2\right) - \text{Tr}\left(\dddot M\right)^2\right] + \frac{\mu_0 \ddot m^2}{6\pi c^3}
 \end{align}
 $$
+Amazing.
