@@ -42,7 +42,7 @@ g'(t') &= -1 - \frac{1}{c}\frac{dR}{dt'} \\
 &= \hat n \cdot \vec \beta(t') - 1
 \end{align}
 $$
-but because for a massive particle $\beta < 1$ we have that $g'(t') < 0$ and thus $g(t')$ can only have one root. Call this root $t_r$. Further, denote $\kappa = 1 - \hat n \cdot \vec \beta(t')$  
+but because for a massive particle $\beta < 1$ we have that $g'(t') < 0$ and thus $g(t')$ can only have one root. Call this root $t_r$, that is $t = t_r + R(t_r) / c$. Further, denote $\kappa(t') = 1 - \hat n \cdot \vec \beta(t')$  
 
 With this we have:
 $$
@@ -62,3 +62,21 @@ $$
 $$
 
 These are called the Lienard-Wiechert potentials.
+## Finding $\vec E$
+We will need to start differentiating our fields so lets get some basic derivatives out of the way first.
+$$
+\begin{align}
+\frac{dR}{dt_r}  &= -\hat n \cdot \vec v\\
+\frac{dt}{dt_r} &= 1 + \frac{1}{c}\frac{dR}{dt_r} \\
+&= 1 - \frac{1}{c}\hat n \cdot \vec v \\
+&= \kappa \\
+\frac{dt_r}{dt} &= \frac{1}{\kappa} \\
+\frac{d\hat n}{dt_r} &= \frac{d}{dt_r}\left(\frac{\vec R}{R}\right) \\
+&= \frac{1}{R}\frac{d\vec R}{dt_r} - \frac{\vec R}{R^2} \frac{dR}{dt_r} \\
+&= - \frac{\vec v}{R} + \frac{\hat n }{R} \hat n \cdot \vec v \\
+&= \frac{c}{R} [(\hat n \cdot \vec \beta)\hat n - \vec \beta] \\
+&= \frac{c}{R} [\hat n \times (\hat n \times \vec \beta)] \\
+\nabla R &= \frac{dR}{dt_r}
+\end{align}
+$$
+
