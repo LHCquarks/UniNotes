@@ -94,7 +94,9 @@ t &= t_r + R(t_r) / c \\
 \nabla t_r \left(1 - \hat n \cdot \vec \beta\right)&= -\frac{\hat n }{c} \\
 \nabla t_r&=  -\frac{\hat n}{c\kappa(t_r)} \\
 \frac{\hat n}{c\kappa(t_r)} &= \frac{1}{c}\nabla R(t_r) \\
-\nabla R(t_r) &= \frac{\hat n}{\kappa(t_r)}
+\nabla R(t_r) &= \frac{\hat n}{\kappa(t_r)} \\
+\nabla \kappa(t_r) &= \nabla(1 - \hat n \cdot \vec \beta(t_r)) \\
+&= - \nabla (\hat n)\beta
 \end{align}
 $$
 Finally, it is useful to write $D = \kappa(t_r) R(t_r)$ and thus:
