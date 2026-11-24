@@ -670,8 +670,26 @@ $$
 $$
 
 ### $\frac{2}{\mu_0c}\oint \vec E_p\cdot \vec E_mr^2 d\Omega$
-
+$$
+\begin{align}
+\frac{2}{\mu_0 c} \oint \vec E_p \cdot \vec E_m r^2 d\Omega &= \frac{2}{\mu_0 c} \oint -\frac{\mu_0^2}{16\pi^2 c r^2} \ddot p\cdot (\hat n \times \ddot m)r^2 d\Omega \\ 
+&= -\frac{\mu_0}{8\pi^2 c^2} \oint\ddot p \cdot (\hat n \times \ddot m)d\Omega \\
+&= -\frac{\mu_0}{8\pi^2 c^2} \oint\ddot p_i\epsilon_{ijk}n_j\ddot m_k d\Omega \\
+&= -\frac{\mu_0}{8\pi^2 c^2} \epsilon_{ijk}\ddot p_i\ddot m_k \oint\ddot n_j d\Omega \\
+&= 0
+\end{align}
+$$
 ### $\frac{2}{\mu_0c}\oint \vec E_M\cdot \vec E_mr^2 d\Omega$
+$$
+\begin{align}
+\frac{2}{\mu_0 c} \oint \vec E_M \cdot \vec E_m r^2 d\Omega &= \frac{2}{\mu_0 c} \oint -\frac{\mu_0^2}{32\pi^2 c^2 r^2} (\hat n \times \ddot m) \cdot (\dddot M\cdot \hat n) r^2 d\Omega\\
+&= -\frac{\mu_0}{16\pi^2 c^3 } \oint (\hat n \times \ddot m) \cdot (\dddot M \cdot \hat n) d\Omega\\
+&= -\frac{\mu_0}{16\pi^2 c^3 } \oint \epsilon_{ijk}n_j\ddot m_k \dddot M_{il}n_ld\Omega\\
+&= -\frac{\mu_0}{16\pi^2 c^3 } \epsilon_{ijk}\ddot m_k\dddot M_{il}\oint n_jn_ld\Omega\\
+&= -\frac{\mu_0}{16\pi^2 c^3 } \epsilon_{ijk}\ddot m_k\dddot M_{il}\frac{4\pi}{3}\delta_{jl}\\
+\end{align}
+$$
+<% tp.file.cursor(2) %>
 
 We will now use polar coordinates to integrate over the spherical shell. Let:
 - the polar axis be along $\ddot p$
