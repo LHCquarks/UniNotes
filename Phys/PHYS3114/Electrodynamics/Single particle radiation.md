@@ -63,6 +63,7 @@ $$
 
 These are called the Lienard-Wiechert potentials.
 ## Finding $\vec E$
+### Some useful derivatives
 We will need to start differentiating our fields so lets get some basic derivatives out of the way first.
 $$
 \begin{align}
@@ -76,7 +77,30 @@ $$
 &= - \frac{\vec v}{R} + \frac{\hat n }{R} \hat n \cdot \vec v \\
 &= \frac{c}{R} [(\hat n \cdot \vec \beta)\hat n - \vec \beta] \\
 &= \frac{c}{R} [\hat n \times (\hat n \times \vec \beta)] \\
-\nabla R &= \frac{dR}{dt_r}
 \end{align}
 $$
-
+We will also find $\nabla R$ and $\nabla t_r$ by constructing two equations and solving simultaneously:
+$$
+\begin{align}
+(\nabla R(t_r))_i &= \frac{\partial}{\partial r_i}\left(\sqrt{(r_1 - (r_q)_1)^2 + (r_2 - (r_q)_2)^2 + (r_3 - (r_q)_3)^2}\right) \\
+&= \frac{1}{2R}\left[\frac{\partial}{\partial r_i}(r_j - (r_q)_j)^2\right] \\
+&= \frac{1}{2R}\left[2(r_j - (r_q)_j)\left(\frac{\partial r_j}{\partial r_i} - \frac{\partial (r_q)_j}{\partial r_i}\right)\right] \\
+&= n_j\left(\delta_{ij} - \frac{\partial (r_q)_j}{\partial t_r}\frac{\partial t_r}{\partial r_i}\right) \\
+&= n_i - n_jv_j\frac{\partial t_r}{\partial r_i} \\
+\nabla R(t_r) &= \hat n - \hat n\cdot \vec v \nabla t_r  \tag{1}\\
+t &= t_r + R(t_r) / c \\
+0 &= \nabla t_r + \frac{1}{c}\nabla R(t_r) \tag{2}\\
+0 &= \nabla t_r + \frac{\hat n}{c} - \frac{\hat n \cdot \vec v}{c} \nabla t_r \\
+\nabla t_r \left(1 - \hat n \cdot \vec \beta\right)&= -\frac{\hat n }{c} \\
+\nabla t_r&=  -\frac{\hat n}{c\kappa(t_r)} \\
+\frac{\hat n}{c\kappa(t_r)} &= \frac{1}{c}\nabla R(t_r) \\
+\nabla R(t_r) &= \frac{\hat n}{\kappa(t_r)}
+\end{align}
+$$
+Finally, it is useful to write $D = \kappa(t_r) R(t_r)$ and thus:
+$$
+\begin{align}
+\nabla D &= R 
+\end{align}
+$$
+<% tp.file.cursor(2) %>
