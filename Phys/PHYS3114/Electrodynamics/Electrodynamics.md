@@ -1,4 +1,6 @@
 - [[Green's functions]]
 - [[Finding potentials and Jefimenko's equations]]
-- [[Dipole-Potentials and Radiation]]
+- [[Multipole expansion]]
 - [[Larmor's Formula]]
+- [[Single particle radiation]]
+- 
